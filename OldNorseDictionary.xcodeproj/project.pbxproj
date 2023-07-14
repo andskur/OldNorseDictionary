@@ -14,6 +14,7 @@
 		A14FC43F2A6185A8009D91EC /* OldNorseDictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14FC43E2A6185A8009D91EC /* OldNorseDictionaryTests.swift */; };
 		A14FC4492A6185A8009D91EC /* OldNorseDictionaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14FC4482A6185A8009D91EC /* OldNorseDictionaryUITests.swift */; };
 		A14FC44B2A6185A8009D91EC /* OldNorseDictionaryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14FC44A2A6185A8009D91EC /* OldNorseDictionaryUITestsLaunchTests.swift */; };
+		A14FC4582A619670009D91EC /* WordsData.json in Resources */ = {isa = PBXBuildFile; fileRef = A14FC4572A619670009D91EC /* WordsData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		A14FC4442A6185A8009D91EC /* OldNorseDictionaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OldNorseDictionaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14FC4482A6185A8009D91EC /* OldNorseDictionaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldNorseDictionaryUITests.swift; sourceTree = "<group>"; };
 		A14FC44A2A6185A8009D91EC /* OldNorseDictionaryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldNorseDictionaryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A14FC4572A619670009D91EC /* WordsData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WordsData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				A14FC4302A6185A7009D91EC /* Assets.xcassets */,
 				A14FC4322A6185A7009D91EC /* OldNorseDictionary.entitlements */,
 				A14FC4332A6185A7009D91EC /* Preview Content */,
+				A14FC4572A619670009D91EC /* WordsData.json */,
 			);
 			path = OldNorseDictionary;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A14FC4582A619670009D91EC /* WordsData.json in Resources */,
 				A14FC4352A6185A7009D91EC /* Preview Assets.xcassets in Resources */,
 				A14FC4312A6185A7009D91EC /* Assets.xcassets in Resources */,
 			);
