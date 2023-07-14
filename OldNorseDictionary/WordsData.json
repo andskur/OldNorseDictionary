@@ -303,6 +303,20 @@
             "type": "pronoun"
         },
         {
+            "oldNorseWord": "þat",
+            "englishTranslation": "that",
+            "russianTranslation": "то, это",
+            "definition": "That, it",
+            "examples": [],
+            "nominative": "þat",
+            "nominativePlural": "þau",
+            "accusative": "þat",
+            "accusativePlural": "þau",
+            "dative": "því",
+            "dativePlural": "þeim",
+            "type": "pronoun"
+        },
+        {
             "oldNorseWord": "eigi",
             "englishTranslation": "not",
             "russianTranslation": "не",
@@ -365,6 +379,38 @@
             "definition": "Conjunction used to introduce a contrasting or comparative clause",
             "examples": ["Hann er kaldur en þú ert heitur.", "Þau vilja fara, en ég vil ekki."],
             "type": "conjunction"
+        },
+        {
+            "oldNorseWord": "er",
+            "englishTranslation": "which, when",
+            "russianTranslation": "который, когда",
+            "definition": "Relates to the word 'which' or 'when'",
+            "examples": ["Bókin er góð, er er skrifuð á ensku.", "Hann kom í bókasafnið er það var að loka."],
+            "type": "conjunction"
+        },
+        {
+            "oldNorseWord": "já",
+            "englishTranslation": "yes",
+            "russianTranslation": "да",
+            "definition": "",
+            "examples": ["Já, ég vil fara í bókasafnið.", "Hún spurði hvort ég hef lesið þessa bók, og ég sagði já."],
+            "type": "interjection"
+        },
+        {
+            "oldNorseWord": "nei",
+            "englishTranslation": "no",
+            "russianTranslation": "нет",
+            "definition": "",
+            "examples": ["Nei, ég er ekki viss um það.", "Hann spurði hvort ég gæti hjálpað honum, en ég sagði nei."],
+            "type": "interjection"
+        },
+        {
+            "oldNorseWord": "heill",
+            "englishTranslation": "hello",
+            "russianTranslation": "Здравствуй",
+            "definition": "Greetings, hello",
+            "examples": [],
+            "type": "interjection"
         },
         {
             "oldNorseWord": "er",
@@ -573,5 +619,25 @@
             "type": "verb",
             "verbFirst": "vakna",
             "verbSecond": "vakna"
+        },
+        {
+            "oldNorseWord": "kalla",
+            "englishTranslation": "to call, to shout",
+            "russianTranslation": "звать, кричать",
+            "definition": "To call, to shout",
+            "examples": [],
+            "type": "verb",
+            "verbFirst": "kalla",
+            "verbSecond": "kalla"
+        },
+        {
+            "oldNorseWord": "kenna",
+            "englishTranslation": "to know, to recognize",
+            "russianTranslation": "знать, узнавать",
+            "definition": "To know, to recognize",
+            "examples": [],
+            "type": "verb",
+            "verbFirst": "kenna",
+            "verbSecond": "kenni"
         }
 ]

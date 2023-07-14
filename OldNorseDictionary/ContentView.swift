@@ -20,6 +20,7 @@ enum WordType: String, Codable {
     case pronoun
     case adverb
     case conjunction
+    case interjection
     // Add more word types as needed
 }
 
