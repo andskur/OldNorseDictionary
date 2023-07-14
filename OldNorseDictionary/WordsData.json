@@ -335,6 +335,30 @@
             "type": "adverb"
         },
         {
+            "oldNorseWord": "hvárt",
+            "englishTranslation": "whether",
+            "russianTranslation": "ли",
+            "definition": "",
+            "examples": [],
+            "type": "adverb"
+        },
+        {
+            "oldNorseWord": "hví",
+            "englishTranslation": "why",
+            "russianTranslation": "почему, отчего",
+            "definition": "",
+            "examples": [],
+            "type": "adverb"
+        },
+        {
+            "oldNorseWord": "þar",
+            "englishTranslation": "there",
+            "russianTranslation": "там, туда",
+            "definition": "",
+            "examples": [],
+            "type": "adverb"
+        },
+        {
             "oldNorseWord": "en",
             "englishTranslation": "but, than",
             "russianTranslation": "но, чем",
