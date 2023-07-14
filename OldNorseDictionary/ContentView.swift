@@ -28,13 +28,13 @@ struct Word: Codable, Identifiable {
     let definition: String
     let examples: [String]
     let nominative: String? // Optional: Nominative form of the noun/pronoun
-    let nominativePronounce: String? // Optional: Nominative form pronunciation
+    let nominativePlural: String? // Optional: Nominative form pronunciation
     let nominativeDual: String? // Optional: Dual form of the nominative
     let accusative: String? // Optional: Accusative form of the noun/pronoun
-    let accusativePronounce: String? // Optional: Accusative form pronunciation
+    let accusativePlural: String? // Optional: Accusative form pronunciation
     let accusativeDual: String? // Optional: Dual form of the accusative
     let dative: String? // Optional: Dative form of the noun/pronoun
-    let dativePronounce: String? // Optional: Dative form pronunciation
+    let dativePlural: String? // Optional: Dative form pronunciation
     let dativeDual: String? // Optional: Dual form of the dative
     let type: WordType // Type of the word (noun, verb, pronoun, etc.)
 
@@ -52,20 +52,20 @@ struct Word: Codable, Identifiable {
     func generatePlural(form: Form) -> String? {
         switch form {
         case .nominative:
-            if let nominativePronounce = nominativePronounce {
-                return nominativePronounce
+            if let nominativePlural = nominativePlural {
+                return nominativePlural
             } else {
                 return generateNominativePlural()
             }
         case .accusative:
-            if let accusativePronounce = accusativePronounce {
-                return accusativePronounce
+            if let accusativePlural = accusativePlural {
+                return accusativePlural
             } else {
                 return generateAccusativePlural()
             }
         case .dative:
-            if let dativePronounce = dativePronounce {
-                return dativePronounce
+            if let dativePlural = dativePlural {
+                return dativePlural
             } else {
                 return generateDativePlural()
             }
@@ -292,8 +292,9 @@ struct ContentView: View {
                 let nominativeMatchesQuery = word.nominative?.lowercased().contains(lowercaseQuery) == true
                 let accusativeMatchesQuery = word.accusative?.lowercased().contains(lowercaseQuery) == true
                 let dativeMatchesQuery = word.dative?.lowercased().contains(lowercaseQuery) == true
+                let nominativePluralMatchesQuery = word.nominativePlural?.lowercased().contains(lowercaseQuery) == true
                 
-                return wordMatchesQuery || nominativeMatchesQuery || accusativeMatchesQuery || dativeMatchesQuery
+                return wordMatchesQuery || nominativeMatchesQuery || accusativeMatchesQuery || dativeMatchesQuery || nominativePluralMatchesQuery
             }
         case .russianToOldNorse:
             filteredWords = loadedWords.filter { $0.russianTranslation.lowercased().contains(lowercaseQuery) }
@@ -303,8 +304,9 @@ struct ContentView: View {
                 let nominativeMatchesQuery = word.nominative?.lowercased().contains(lowercaseQuery) == true
                 let accusativeMatchesQuery = word.accusative?.lowercased().contains(lowercaseQuery) == true
                 let dativeMatchesQuery = word.dative?.lowercased().contains(lowercaseQuery) == true
+                let nominativePluralMatchesQuery = word.nominativePlural?.lowercased().contains(lowercaseQuery) == true
                 
-                return wordMatchesQuery || nominativeMatchesQuery || accusativeMatchesQuery || dativeMatchesQuery
+                return wordMatchesQuery || nominativeMatchesQuery || accusativeMatchesQuery || dativeMatchesQuery || nominativePluralMatchesQuery
             }
         }
         
