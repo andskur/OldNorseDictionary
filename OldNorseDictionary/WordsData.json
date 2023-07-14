@@ -91,7 +91,7 @@
     "oldNorseWord": "hrafn",
     "englishTranslation": "raven",
     "russianTranslation": "ворон",
-    "nominative": "hrafnr",
+    "nominative": "hrafn",
     "accusative": "hrafn",
     "dative": "hrafni",
     "definition": "A large, black bird known for its intelligence and distinctive call",
@@ -262,5 +262,117 @@
           "definition": "A food made from the pressed curds of milk, often seasoned and aged",
           "examples": [],
           "type": "noun"
+        },
+        {
+            "oldNorseWord": "hann",
+            "englishTranslation": "he",
+            "russianTranslation": "он",
+            "definition": "Third-person singular masculine pronoun",
+            "examples": [],
+            "nominative": "hann",
+            "nominativePronounce": "þeir",
+            "accusative": "hann",
+            "accusativePronounce": "þá",
+            "dative": "honum",
+            "dativePronounce": "þeim",
+            "type": "pronoun"
+        },
+        {
+            "oldNorseWord": "ek",
+            "englishTranslation": "i",
+            "russianTranslation": "я",
+            "definition": "First-person singular pronoun",
+            "examples": ["Ek heiti John.", "Ég elska þig."],
+            "nominative": "ek",
+            "nominativePronounce": "vér",
+            "nominativeDual": "vit",
+            "accusative": "mér",
+            "accusativePronounce": "oss",
+            "accusativeDual": "okkr",
+            "dative": "honum",
+            "dativePronounce": "oss",
+            "dativeDual": "okkr",
+            "type": "pronoun"
+        },
+        {
+            "oldNorseWord": "þú",
+            "englishTranslation": "you",
+            "russianTranslation": "ты",
+            "definition": "Second-person singular pronoun",
+            "examples": ["þú ert vinur minn.", "Þú kemur seinna."],
+            "nominative": "þú",
+            "nominativePronounce": "þér",
+            "nominativeDual": "þit",
+            "accusative": "þik",
+            "accusativePronounce": "yðr",
+            "accusativeDual": "ykkr",
+            "dative": "þér",
+            "dativePronounce": "yðr",
+            "dativeDual": "ykkr",
+            "type": "pronoun"
+        },
+        {
+            "oldNorseWord": "er",
+            "englishTranslation": "is, are",
+            "russianTranslation": "есть, является",
+            "definition": "Third-person singular present indicative of the verb 'vera' (to be)",
+            "examples": ["Hann er góður vinur.", "Þau eru góð börn."],
+            "type": "verb"
+        },
+        {
+            "oldNorseWord": "heitir",
+            "englishTranslation": "is called, is named",
+            "russianTranslation": "зовётся, называется",
+            "definition": "Third-person singular present indicative of the verb 'heita' (to be called)",
+            "examples": ["Hann heitir Ólafur.", "Þau heita Guðrún og Jón."],
+            "type": "verb"
+        },
+        {
+            "oldNorseWord": "á",
+            "englishTranslation": "owns, possesses",
+            "russianTranslation": "владеет, обладает",
+            "definition": "Third-person singular present indicative of the verb 'eiga' (to own, to possess)",
+            "examples": ["Hann á hest.", "Hún á hús."],
+            "type": "verb"
+        },
+        {
+            "oldNorseWord": "hefir",
+            "englishTranslation": "has",
+            "russianTranslation": "имеет",
+            "definition": "Third-person singular present indicative of the verb 'hafa' (to have)",
+            "examples": ["Hún hefir bók.", "Þau hefir hund."],
+            "type": "verb"
+        },
+        {
+            "oldNorseWord": "segir",
+            "englishTranslation": "says",
+            "russianTranslation": "говорит",
+            "definition": "Third-person singular present indicative of the verb 'segja' (to say)",
+            "examples": ["Hann segir bless.", "Hún segir já."],
+            "type": "verb"
+        },
+        {
+            "oldNorseWord": "sér",
+            "englishTranslation": "sees, looks",
+            "russianTranslation": "видит, смотрит",
+            "definition": "Third-person singular present indicative of the verb 'sjá' (to see)",
+            "examples": ["Hún sér blómin.", "Þau sér fugl."],
+            "type": "verb"
+        },
+        {
+            "oldNorseWord": "tekr",
+            "englishTranslation": "takes",
+            "russianTranslation": "берет, забирает",
+            "definition": "Third-person singular present indicative of the verb 'taka' (to take)",
+            "examples": ["Hann tekr bók.", "Hún tekr blómin."],
+            "type": "verb"
+        },
+        {
+            "oldNorseWord": "vegr",
+            "englishTranslation": "kills, attacks",
+            "russianTranslation": "убивает, нападает",
+            "definition": "Third-person singular present indicative of the verb 'vegja' (to kill, to attack)",
+            "examples": ["Hann vegr dreka.", "Hún vegr hund."],
+            "type": "verb"
         }
 ]

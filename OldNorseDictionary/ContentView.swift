@@ -27,11 +27,17 @@ struct Word: Codable, Identifiable {
     let russianTranslation: String
     let definition: String
     let examples: [String]
-    let nominative: String? // Optional: Nominative form of the noun
-    let accusative: String? // Optional: Accusative form of the noun
-    let dative: String? // Optional: Dative form of the noun
-    let type: WordType // Type of the word (noun, verb, etc.)
-    
+    let nominative: String? // Optional: Nominative form of the noun/pronoun
+    let nominativePronounce: String? // Optional: Nominative form pronunciation
+    let nominativeDual: String? // Optional: Dual form of the nominative
+    let accusative: String? // Optional: Accusative form of the noun/pronoun
+    let accusativePronounce: String? // Optional: Accusative form pronunciation
+    let accusativeDual: String? // Optional: Dual form of the accusative
+    let dative: String? // Optional: Dative form of the noun/pronoun
+    let dativePronounce: String? // Optional: Dative form pronunciation
+    let dativeDual: String? // Optional: Dual form of the dative
+    let type: WordType // Type of the word (noun, verb, pronoun, etc.)
+
     var id: String {
         return oldNorseWord
     }
@@ -46,11 +52,23 @@ struct Word: Codable, Identifiable {
     func generatePlural(form: Form) -> String? {
         switch form {
         case .nominative:
-            return generateNominativePlural()
+            if let nominativePronounce = nominativePronounce {
+                return nominativePronounce
+            } else {
+                return generateNominativePlural()
+            }
         case .accusative:
-            return generateAccusativePlural()
+            if let accusativePronounce = accusativePronounce {
+                return accusativePronounce
+            } else {
+                return generateAccusativePlural()
+            }
         case .dative:
-            return generateDativePlural()
+            if let dativePronounce = dativePronounce {
+                return dativePronounce
+            } else {
+                return generateDativePlural()
+            }
         }
     }
     
@@ -117,14 +135,34 @@ struct ContentView: View {
                                 .font(.subheadline)
                                 .fontWeight(.bold)
                             
-                            Text("Singular: \(nominative) (\(wordWithArticle(nominative, form: .nominative, plural: false)))")
+                            Text("Singular: \(nominative)")
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
                             
-                            if let nominativePlural = word.generatePlural(form: .nominative) {
-                                Text("Plural: \(nominativePlural) (\(wordWithArticle(nominativePlural, form: .nominative, plural: true)))")
+                            if word.type == .noun {
+                                let singularArticle = wordWithArticle(nominative, form: .nominative, plural: false)
+                                Text("Singular with Article: \(singularArticle)")
                                     .font(.subheadline)
                                     .foregroundColor(.secondary)
+                            }
+                            
+                            if let nominativeDual = word.nominativeDual {
+                                Text("Dual: \(nominativeDual)")
+                                    .font(.subheadline)
+                                    .foregroundColor(.secondary)
+                            }
+                            
+                            if let nominativePlural = word.generatePlural(form: .nominative) {
+                                Text("Plural: \(nominativePlural)")
+                                    .font(.subheadline)
+                                    .foregroundColor(.secondary)
+                                
+                                if word.type == .noun {
+                                    let pluralArticle = wordWithArticle(nominativePlural, form: .nominative, plural: true)
+                                    Text("Plural with Article: \(pluralArticle)")
+                                        .font(.subheadline)
+                                        .foregroundColor(.secondary)
+                                }
                             }
                         }
                         
@@ -133,14 +171,34 @@ struct ContentView: View {
                                 .font(.subheadline)
                                 .fontWeight(.bold)
                             
-                            Text("Singular: \(accusative) (\(wordWithArticle(accusative, form: .accusative, plural: false)))")
+                            Text("Singular: \(accusative)")
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
                             
-                            if let accusativePlural = word.generatePlural(form: .accusative) {
-                                Text("Plural: \(accusativePlural) (\(wordWithArticle(accusativePlural, form: .accusative, plural: true)))")
+                            if word.type == .noun {
+                                let singularArticle = wordWithArticle(accusative, form: .nominative, plural: false)
+                                Text("Singular with Article: \(singularArticle)")
                                     .font(.subheadline)
                                     .foregroundColor(.secondary)
+                            }
+                            
+                            if let accusativeDual = word.accusativeDual {
+                                Text("Dual: \(accusativeDual)")
+                                    .font(.subheadline)
+                                    .foregroundColor(.secondary)
+                            }
+                            
+                            if let accusativePlural = word.generatePlural(form: .accusative) {
+                                Text("Plural: \(accusativePlural)")
+                                    .font(.subheadline)
+                                    .foregroundColor(.secondary)
+                                
+                                if word.type == .noun {
+                                    let pluralArticle = wordWithArticle(accusativePlural, form: .accusative, plural: true)
+                                    Text("Plural with Article: \(pluralArticle)")
+                                        .font(.subheadline)
+                                        .foregroundColor(.secondary)
+                                }
                             }
                         }
                         
@@ -149,14 +207,34 @@ struct ContentView: View {
                                 .font(.subheadline)
                                 .fontWeight(.bold)
                             
-                            Text("Singular: \(dative) (\(wordWithArticle(dative, form: .dative, plural: false)))")
+                            Text("Singular: \(dative)")
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
                             
-                            if let dativePlural = word.generatePlural(form: .dative) {
-                                Text("Plural: \(dativePlural) (\(wordWithArticle(dativePlural, form: .dative, plural: true)))")
+                            if word.type == .noun {
+                                let singularArticle = wordWithArticle(dative, form: .dative, plural: false)
+                                Text("Singular with Article: \(singularArticle)")
                                     .font(.subheadline)
                                     .foregroundColor(.secondary)
+                            }
+                            
+                            if let dativeDual = word.dativeDual {
+                                Text("Dual: \(dativeDual)")
+                                    .font(.subheadline)
+                                    .foregroundColor(.secondary)
+                            }
+                            
+                            if let dativePlural = word.generatePlural(form: .dative) {
+                                Text("Plural: \(dativePlural)")
+                                    .font(.subheadline)
+                                    .foregroundColor(.secondary)
+                                
+                                if word.type == .noun {
+                                    let pluralArticle = wordWithArticle(dativePlural, form: .dative, plural: true)
+                                    Text("Plural with Article: \(pluralArticle)")
+                                        .font(.subheadline)
+                                        .foregroundColor(.secondary)
+                                }
                             }
                         }
                         
@@ -180,9 +258,9 @@ struct ContentView: View {
         switch form {
         case .nominative:
             if plural {
-                article = "inn"
-            } else {
                 article = "nir"
+            } else {
+                article = "inn"
             }
         case .accusative:
             if plural {
