@@ -180,7 +180,9 @@
       "englishTranslation": "man",
       "russianTranslation": "человек",
       "nominative": "maðr",
+      "nominativePlural": "menn",
       "accusative": "mann",
+      "accusativePlural": "menn",
       "dative": "manni",
       "definition": "An adult human male",
       "examples": [],
@@ -196,17 +198,6 @@
       "definition": "A person who steals or commits theft",
       "examples": [],
       "type": "noun"
-    },
-    {
-        "oldNorseWord": "draumr",
-        "englishTranslation": "dream",
-        "russianTranslation": "сон, мечта",
-        "nominative": "draumr",
-        "accusative": "draum",
-        "dative": "draumi",
-        "definition": "A series of thoughts, images, or emotions that occur during sleep",
-        "examples": [],
-        "type": "noun"
     },
     {
         "oldNorseWord": "draumr",
@@ -312,67 +303,251 @@
             "type": "pronoun"
         },
         {
+            "oldNorseWord": "eigi",
+            "englishTranslation": "not",
+            "russianTranslation": "не",
+            "definition": "Negative particle, indicating negation or denial",
+            "examples": ["Hann kemur eigi.", "Þau vilja eigi fara."],
+            "type": "adverb"
+        },
+        {
+            "oldNorseWord": "hér",
+            "englishTranslation": "here",
+            "russianTranslation": "здесь",
+            "definition": "Adverb indicating location, referring to the current place or position",
+            "examples": ["Hann er hér.", "Þau búa hér."],
+            "type": "adverb"
+        },
+        {
+            "oldNorseWord": "ok",
+            "englishTranslation": "also, too",
+            "russianTranslation": "также, тоже",
+            "definition": "Adverb indicating addition or inclusion, used to connect and emphasize similar ideas",
+            "examples": ["Hún er góð ok.", "Þau vilja fara ok."],
+            "type": "adverb"
+        },
+        {
+            "oldNorseWord": "nú",
+            "englishTranslation": "now",
+            "russianTranslation": "теперь, сейчас",
+            "definition": "At the present time; at this moment",
+            "examples": [],
+            "type": "adverb"
+        },
+        {
+            "oldNorseWord": "en",
+            "englishTranslation": "but, than",
+            "russianTranslation": "но, чем",
+            "definition": "Conjunction used to introduce a contrasting or comparative clause",
+            "examples": ["Hann er kaldur en þú ert heitur.", "Þau vilja fara, en ég vil ekki."],
+            "type": "conjunction"
+        },
+        {
             "oldNorseWord": "er",
             "englishTranslation": "is, are",
             "russianTranslation": "есть, является",
             "definition": "Third-person singular present indicative of the verb 'vera' (to be)",
             "examples": ["Hann er góður vinur.", "Þau eru góð börn."],
-            "type": "verb"
+            "type": "verb",
+            "conjugation": {
+                "singular": {
+                    "firstPerson": "em",
+                },
+                "plural": {
+                    "firstPerson": "erum",
+                    "thirdPerson": "eru"
+                }
+            },
+            "verbFirst": "er",
+            "verbSecond": "eru"
         },
         {
-            "oldNorseWord": "heitir",
+            "oldNorseWord": "heita",
             "englishTranslation": "is called, is named",
             "russianTranslation": "зовётся, называется",
             "definition": "Third-person singular present indicative of the verb 'heita' (to be called)",
             "examples": ["Hann heitir Ólafur.", "Þau heita Guðrún og Jón."],
-            "type": "verb"
+            "type": "verb",
+            "verbFirst": "heita",
+            "verbSecond": "heiti"
         },
         {
-            "oldNorseWord": "á",
+            "oldNorseWord": "eigu",
             "englishTranslation": "owns, possesses",
             "russianTranslation": "владеет, обладает",
             "definition": "Third-person singular present indicative of the verb 'eiga' (to own, to possess)",
             "examples": ["Hann á hest.", "Hún á hús."],
-            "type": "verb"
+            "type": "verb",
+            "conjugation": {
+                "singular": {
+                    "thirdPerson": "á",
+                },
+                "plural": {
+                    "firstPerson": "eigum",
+                    "thirdPerson": "eigu"
+                }
+            },
+            "verbFirst": "eigu",
+            "verbSecond": "á"
         },
         {
-            "oldNorseWord": "hefir",
+            "oldNorseWord": "hafa",
             "englishTranslation": "has",
             "russianTranslation": "имеет",
             "definition": "Third-person singular present indicative of the verb 'hafa' (to have)",
             "examples": ["Hún hefir bók.", "Þau hefir hund."],
-            "type": "verb"
+            "type": "verb",
+            "conjugation": {
+                "plural": {
+                    "firstPerson": "höfum",
+                }
+            },
+            "verbFirst": "hafa",
+            "verbSecond": "hefi"
         },
         {
-            "oldNorseWord": "segir",
+            "oldNorseWord": "segja",
             "englishTranslation": "says",
             "russianTranslation": "говорит",
             "definition": "Third-person singular present indicative of the verb 'segja' (to say)",
             "examples": ["Hann segir bless.", "Hún segir já."],
-            "type": "verb"
+            "type": "verb",
+            "verbFirst": "segja",
+            "verbSecond": "segi"
         },
         {
-            "oldNorseWord": "sér",
+            "oldNorseWord": "sjá",
             "englishTranslation": "sees, looks",
             "russianTranslation": "видит, смотрит",
             "definition": "Third-person singular present indicative of the verb 'sjá' (to see)",
             "examples": ["Hún sér blómin.", "Þau sér fugl."],
-            "type": "verb"
+            "type": "verb",
+            "conjugation": {
+                "plural": {
+                    "firstPerson": "sjám",
+                }
+            },
+            "verbFirst": "sjá",
+            "verbSecond": "sé"
         },
         {
-            "oldNorseWord": "tekr",
+            "oldNorseWord": "taka",
             "englishTranslation": "takes",
             "russianTranslation": "берет, забирает",
             "definition": "Third-person singular present indicative of the verb 'taka' (to take)",
             "examples": ["Hann tekr bók.", "Hún tekr blómin."],
-            "type": "verb"
+            "type": "verb",
+            "conjugation": {
+                "plural": {
+                    "firstPerson": "tökum",
+                }
+            },
+            "verbFirst": "taka",
+            "verbSecond": "tek"
         },
         {
-            "oldNorseWord": "vegr",
+            "oldNorseWord": "vega",
             "englishTranslation": "kills, attacks",
             "russianTranslation": "убивает, нападает",
             "definition": "Third-person singular present indicative of the verb 'vegja' (to kill, to attack)",
             "examples": ["Hann vegr dreka.", "Hún vegr hund."],
-            "type": "verb"
+            "type": "verb",
+            "verbFirst": "vega",
+            "verbSecond": "veg"
+        },
+        {
+            "oldNorseWord": "vilja",
+            "englishTranslation": "wants",
+            "russianTranslation": "хочет",
+            "definition": "Third-person singular present tense form of the verb 'vilia' (to want)",
+            "examples": ["Hann vill fara í bókasafn.", "Hún vill borða köku."],
+            "type": "verb",
+            "conjugation": {
+                "singular": {
+                    "thirdPerson": "vill",
+                }
+            },
+            "verbFirst": "vilja",
+            "verbSecond": "vil"
+        },
+        {
+            "oldNorseWord": "bíða",
+            "englishTranslation": "to wait, to wait for",
+            "russianTranslation": "ждать, пережидать",
+            "definition": "Infinitive form of the verb 'bíða' (to wait, to wait for)",
+            "examples": [],
+            "type": "verb",
+            "verbFirst": "bíða",
+            "verbSecond": "bíð"
+        },
+        {
+            "oldNorseWord": "deyja",
+            "englishTranslation": "to die",
+            "russianTranslation": "умирать, умереть",
+            "definition": "Infinitive form of the verb 'deyja' (to die)",
+            "examples": [],
+            "type": "verb",
+            "verbFirst": "deyja",
+            "verbSecond": "dey"
+        },
+        {
+            "oldNorseWord": "flýja",
+            "englishTranslation": "to flee, to run away",
+            "russianTranslation": "бежать, убегать",
+            "definition": "Infinitive form of the verb 'flýja' (to flee, to run away)",
+            "examples": [],
+            "type": "verb",
+            "verbFirst": "flýja",
+            "verbSecond": "flý"
+        },
+        {
+            "oldNorseWord": "hata",
+            "englishTranslation": "to hate",
+            "russianTranslation": "ненавидеть",
+            "definition": "Infinitive form of the verb 'hata' (to hate)",
+            "examples": [],
+            "type": "verb",
+            "verbFirst": "hata",
+            "verbSecond": "hata"
+        },
+        {
+            "oldNorseWord": "hlaupa",
+            "englishTranslation": "to run",
+            "russianTranslation": "бежать, бегать",
+            "definition": "Infinitive form of the verb 'hlaupa' (to run)",
+            "examples": [],
+            "type": "verb",
+            "verbFirst": "hlaupa",
+            "verbSecond": "hleyp"
+        },
+        {
+            "oldNorseWord": "koma",
+            "englishTranslation": "to come",
+            "russianTranslation": "приходить, приезжать",
+            "definition": "Infinitive form of the verb 'koma' (to come)",
+            "examples": [],
+            "type": "verb",
+            "verbFirst": "koma",
+            "verbSecond": "köm"
+        },
+        {
+            "oldNorseWord": "mæla",
+            "englishTranslation": "to speak, to say",
+            "russianTranslation": "говорить, сказать",
+            "definition": "Infinitive form of the verb 'mæla' (to speak, to say)",
+            "examples": [],
+            "type": "verb",
+            "verbFirst": "mæla",
+            "verbSecond": "mæli"
+        },
+        {
+            "oldNorseWord": "vakna",
+            "englishTranslation": "to wake up",
+            "russianTranslation": "просыпаться, пробуждаться",
+            "definition": "Infinitive form of the verb 'vakna' (to wake up)",
+            "examples": [],
+            "type": "verb",
+            "verbFirst": "vakna",
+            "verbSecond": "vakna"
         }
 ]

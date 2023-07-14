@@ -18,11 +18,14 @@ enum WordType: String, Codable {
     case noun
     case verb
     case pronoun
+    case adverb
+    case conjunction
     // Add more word types as needed
 }
 
+
 struct Word: Codable, Identifiable {
-    let oldNorseWord: String
+    var oldNorseWord: String
     let englishTranslation: String
     let russianTranslation: String
     let definition: String
@@ -37,16 +40,71 @@ struct Word: Codable, Identifiable {
     let dativePlural: String? // Optional: Dative form pronunciation
     let dativeDual: String? // Optional: Dual form of the dative
     let type: WordType // Type of the word (noun, verb, pronoun, etc.)
+    let conjugation: Conjugation?
+    let verbFirst: String?
+    let verbSecond: String?
 
     var id: String {
         return oldNorseWord
     }
     
+    struct Conjugation: Codable {
+        let singular: Persons?
+        let plural: Persons?
+     }
+    
+    
+    struct Persons: Codable {
+        let firstPerson: String?
+        let secondPerson: String?
+        let thirdPerson: String?
+    }
     
     enum Form {
         case nominative
         case accusative
         case dative
+    }
+    
+    enum Person {
+        case first
+        case third
+    }
+    
+    
+    func generateConjugation(person: Person, plural: Bool) -> String? {
+        switch person {
+        case .first:
+            if plural {
+                if let firstPerson = conjugation?.plural?.firstPerson {
+                    return firstPerson
+                } else if let verbFirst = verbFirst{
+                    return  (verbFirst.dropLast()) + "um"
+                }
+            } else {
+                if let firstPerson = conjugation?.singular?.firstPerson {
+                    return firstPerson
+                } else if let verbSecond = verbSecond{
+                    return verbSecond
+                }
+            }
+        case .third:
+            if plural {
+                if let thirdPerson = conjugation?.plural?.thirdPerson {
+                    return thirdPerson
+                } else if let verbFirst = verbFirst{
+                    return verbFirst
+                }
+            } else {
+                if let thirdPerson = conjugation?.singular?.thirdPerson {
+                    return thirdPerson
+                }  else if let verbSecond = verbSecond{
+                    return verbSecond + "r"
+                }
+            }
+        }
+        
+        return ""
     }
     
     func generatePlural(form: Form) -> String? {
@@ -72,7 +130,7 @@ struct Word: Codable, Identifiable {
         }
     }
     
-    private func generateNominativePlural() -> String? {
+    func generateNominativePlural() -> String? {
         guard let nominative = accusative else {
             return nil
         }
@@ -80,7 +138,7 @@ struct Word: Codable, Identifiable {
         return "\(nominative)ar"
     }
     
-    private func generateAccusativePlural() -> String? {
+    func generateAccusativePlural() -> String? {
         guard let accusative = accusative else {
             return nil
         }
@@ -88,7 +146,7 @@ struct Word: Codable, Identifiable {
         return "\(accusative)a"
     }
     
-    private func generateDativePlural() -> String? {
+    func generateDativePlural() -> String? {
         guard let dative = accusative else {
             return nil
         }
@@ -99,16 +157,16 @@ struct Word: Codable, Identifiable {
 
 struct ContentView: View {
     @State private var searchQuery: String = ""
-    @State private var searchDirection: SearchDirection = .englishToOldNorse
+    @State private var searchDirection: SearchDirection = .oldNorseToRussian
     @State private var loadedWords: [Word] = []
 
     var body: some View {
         VStack {
             Picker("Search Direction", selection: $searchDirection) {
-                Text("English to Old Norse").tag(SearchDirection.englishToOldNorse)
-                Text("Old Norse to English").tag(SearchDirection.oldNorseToEnglish)
-                Text("Russian to Old Norse").tag(SearchDirection.russianToOldNorse)
                 Text("Old Norse to Russian").tag(SearchDirection.oldNorseToRussian)
+                Text("Russian to Old Norse").tag(SearchDirection.russianToOldNorse)
+                Text("Old Norse to English").tag(SearchDirection.oldNorseToEnglish)
+                Text("English to Old Norse").tag(SearchDirection.englishToOldNorse)
             }
             .pickerStyle(SegmentedPickerStyle())
             .padding()
@@ -130,6 +188,32 @@ struct ContentView: View {
                             Text("\(word.russianTranslation) (\(word.oldNorseWord))")
                         }
                         
+                        if word.type == .verb {
+                            if let singularFirstPerson = word.generateConjugation(person: .first, plural: false) {
+                                Text("First Person Singular: \(singularFirstPerson)")
+                                    .font(.subheadline)
+                                    .foregroundColor(.secondary)
+                            }
+                            
+                            if let pluralFirstPerson = word.generateConjugation(person: .first, plural: true) {
+                                Text("First Person Plural: \(pluralFirstPerson)")
+                                    .font(.subheadline)
+                                    .foregroundColor(.secondary)
+                            }
+                            
+                            if let singularThirdPerson = word.generateConjugation(person: .third, plural: false) {
+                                Text("Third Person Singular: \(singularThirdPerson)")
+                                    .font(.subheadline)
+                                    .foregroundColor(.secondary)
+                            }
+                            
+                            if let pluralThirdPerson = word.generateConjugation(person: .third, plural: true) {
+                                Text("Third Person Plural: \(pluralThirdPerson)")
+                                    .font(.subheadline)
+                                    .foregroundColor(.secondary)
+                            }
+                        }
+                        
                         if let nominative = word.nominative {
                             Text("Nominative:")
                                 .font(.subheadline)
@@ -138,6 +222,7 @@ struct ContentView: View {
                             Text("Singular: \(nominative)")
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
+                            
                             
                             if word.type == .noun {
                                 let singularArticle = wordWithArticle(nominative, form: .nominative, plural: false)
@@ -258,13 +343,13 @@ struct ContentView: View {
         switch form {
         case .nominative:
             if plural {
-                article = "nir"
+                article = "inir"
             } else {
                 article = "inn"
             }
         case .accusative:
             if plural {
-                article = "na"
+                article = "ina"
             } else {
                 article = "inn"
             }
@@ -295,8 +380,12 @@ struct ContentView: View {
                 let nominativePluralMatchesQuery = word.generatePlural(form: .nominative)?.lowercased().contains(lowercaseQuery) == true
                 let accusativePluralMatchesQuery = word.generatePlural(form: .accusative)?.lowercased().contains(lowercaseQuery) == true
                 let dativePluralMatchesQuery = word.generatePlural(form: .dative)?.lowercased().contains(lowercaseQuery) == true
+                let firstSingularMatchesQuery = word.generateConjugation(person: .first, plural: false)?.lowercased().contains(lowercaseQuery) == true
+                let thirdSingularMatchesQuery = word.generateConjugation(person: .third, plural: false)?.lowercased().contains(lowercaseQuery) == true
+                let firstPluralMatchesQuery = word.generateConjugation(person: .first, plural: true)?.lowercased().contains(lowercaseQuery) == true
+                let thirdPluralMatchesQuery = word.generateConjugation(person: .third, plural: true)?.lowercased().contains(lowercaseQuery) == true
                 
-                return wordMatchesQuery || nominativeMatchesQuery || accusativeMatchesQuery || dativeMatchesQuery || nominativePluralMatchesQuery || accusativePluralMatchesQuery || dativePluralMatchesQuery
+                return wordMatchesQuery || nominativeMatchesQuery || accusativeMatchesQuery || dativeMatchesQuery || nominativePluralMatchesQuery || accusativePluralMatchesQuery || dativePluralMatchesQuery || firstSingularMatchesQuery || thirdSingularMatchesQuery || firstPluralMatchesQuery || thirdPluralMatchesQuery
             }
         case .russianToOldNorse:
             filteredWords = loadedWords.filter { $0.russianTranslation.lowercased().contains(lowercaseQuery) }
@@ -309,8 +398,12 @@ struct ContentView: View {
                 let nominativePluralMatchesQuery = word.generatePlural(form: .nominative)?.lowercased().contains(lowercaseQuery) == true
                 let accusativePluralMatchesQuery = word.generatePlural(form: .accusative)?.lowercased().contains(lowercaseQuery) == true
                 let dativePluralMatchesQuery = word.generatePlural(form: .dative)?.lowercased().contains(lowercaseQuery) == true
+                let firstSingularMatchesQuery = word.generateConjugation(person: .first, plural: false)?.lowercased().contains(lowercaseQuery) == true
+                let thirdSingularMatchesQuery = word.generateConjugation(person: .third, plural: false)?.lowercased().contains(lowercaseQuery) == true
+                let firstPluralMatchesQuery = word.generateConjugation(person: .first, plural: true)?.lowercased().contains(lowercaseQuery) == true
+                let thirdPluralMatchesQuery = word.generateConjugation(person: .third, plural: true)?.lowercased().contains(lowercaseQuery) == true
                 
-                return wordMatchesQuery || nominativeMatchesQuery || accusativeMatchesQuery || dativeMatchesQuery || nominativePluralMatchesQuery || accusativePluralMatchesQuery || dativePluralMatchesQuery
+                return wordMatchesQuery || nominativeMatchesQuery || accusativeMatchesQuery || dativeMatchesQuery || nominativePluralMatchesQuery || accusativePluralMatchesQuery || dativePluralMatchesQuery || firstSingularMatchesQuery || thirdSingularMatchesQuery || firstPluralMatchesQuery || thirdPluralMatchesQuery
             }
         }
         
