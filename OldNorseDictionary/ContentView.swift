@@ -292,9 +292,11 @@ struct ContentView: View {
                 let nominativeMatchesQuery = word.nominative?.lowercased().contains(lowercaseQuery) == true
                 let accusativeMatchesQuery = word.accusative?.lowercased().contains(lowercaseQuery) == true
                 let dativeMatchesQuery = word.dative?.lowercased().contains(lowercaseQuery) == true
-                let nominativePluralMatchesQuery = word.nominativePlural?.lowercased().contains(lowercaseQuery) == true
+                let nominativePluralMatchesQuery = word.generatePlural(form: .nominative)?.lowercased().contains(lowercaseQuery) == true
+                let accusativePluralMatchesQuery = word.generatePlural(form: .accusative)?.lowercased().contains(lowercaseQuery) == true
+                let dativePluralMatchesQuery = word.generatePlural(form: .dative)?.lowercased().contains(lowercaseQuery) == true
                 
-                return wordMatchesQuery || nominativeMatchesQuery || accusativeMatchesQuery || dativeMatchesQuery || nominativePluralMatchesQuery
+                return wordMatchesQuery || nominativeMatchesQuery || accusativeMatchesQuery || dativeMatchesQuery || nominativePluralMatchesQuery || accusativePluralMatchesQuery || dativePluralMatchesQuery
             }
         case .russianToOldNorse:
             filteredWords = loadedWords.filter { $0.russianTranslation.lowercased().contains(lowercaseQuery) }
@@ -304,9 +306,11 @@ struct ContentView: View {
                 let nominativeMatchesQuery = word.nominative?.lowercased().contains(lowercaseQuery) == true
                 let accusativeMatchesQuery = word.accusative?.lowercased().contains(lowercaseQuery) == true
                 let dativeMatchesQuery = word.dative?.lowercased().contains(lowercaseQuery) == true
-                let nominativePluralMatchesQuery = word.nominativePlural?.lowercased().contains(lowercaseQuery) == true
+                let nominativePluralMatchesQuery = word.generatePlural(form: .nominative)?.lowercased().contains(lowercaseQuery) == true
+                let accusativePluralMatchesQuery = word.generatePlural(form: .accusative)?.lowercased().contains(lowercaseQuery) == true
+                let dativePluralMatchesQuery = word.generatePlural(form: .dative)?.lowercased().contains(lowercaseQuery) == true
                 
-                return wordMatchesQuery || nominativeMatchesQuery || accusativeMatchesQuery || dativeMatchesQuery || nominativePluralMatchesQuery
+                return wordMatchesQuery || nominativeMatchesQuery || accusativeMatchesQuery || dativeMatchesQuery || nominativePluralMatchesQuery || accusativePluralMatchesQuery || dativePluralMatchesQuery
             }
         }
         
