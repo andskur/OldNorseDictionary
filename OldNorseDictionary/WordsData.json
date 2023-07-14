@@ -240,5 +240,27 @@
         "definition": "Any nutritious substance that is eaten, drunk, or otherwise taken into the body to sustain life",
         "examples": [],
         "type": "noun"
-      }
+      },
+      {
+          "oldNorseWord": "munnr",
+          "englishTranslation": "mouth",
+          "russianTranslation": "рот",
+          "nominative": "munnr",
+          "accusative": "munn",
+          "dative": "muni",
+          "definition": "The opening through which food passes into the body and vocal sounds are emitted",
+          "examples": [],
+          "type": "noun"
+        },
+        {
+          "oldNorseWord": "ostr",
+          "englishTranslation": "cheese",
+          "russianTranslation": "сыр",
+          "nominative": "ostr",
+          "accusative": "ostr",
+          "dative": "ostri",
+          "definition": "A food made from the pressed curds of milk, often seasoned and aged",
+          "examples": [],
+          "type": "noun"
+        }
 ]
