@@ -70,10 +70,10 @@ class WordSearchController: ObservableObject {
             let nominativePluralMatchesQuery = word.generatePlural(form: .nominative)?.lowercased().contains(lowercaseQuery) == true
             let accusativePluralMatchesQuery = word.generatePlural(form: .accusative)?.lowercased().contains(lowercaseQuery) == true
             let dativePluralMatchesQuery = word.generatePlural(form: .dative)?.lowercased().contains(lowercaseQuery) == true
-            let firstSingularMatchesQuery = word.generateConjugation(person: .first, plural: false)?.lowercased().contains(lowercaseQuery) == true
-            let thirdSingularMatchesQuery = word.generateConjugation(person: .third, plural: false)?.lowercased().contains(lowercaseQuery) == true
-            let firstPluralMatchesQuery = word.generateConjugation(person: .first, plural: true)?.lowercased().contains(lowercaseQuery) == true
-            let thirdPluralMatchesQuery = word.generateConjugation(person: .third, plural: true)?.lowercased().contains(lowercaseQuery) == true
+            let firstSingularMatchesQuery = word.generateConjugation(person: .first, number: .singular)?.lowercased().contains(lowercaseQuery) == true
+            let thirdSingularMatchesQuery = word.generateConjugation(person: .third, number: .singular)?.lowercased().contains(lowercaseQuery) == true
+            let firstPluralMatchesQuery = word.generateConjugation(person: .first, number: .plural)?.lowercased().contains(lowercaseQuery) == true
+            let thirdPluralMatchesQuery = word.generateConjugation(person: .third, number: .plural)?.lowercased().contains(lowercaseQuery) == true
             
             return wordMatchesQuery || nominativeMatchesQuery || accusativeMatchesQuery || dativeMatchesQuery || nominativePluralMatchesQuery || accusativePluralMatchesQuery || dativePluralMatchesQuery || firstSingularMatchesQuery || thirdSingularMatchesQuery || firstPluralMatchesQuery || thirdPluralMatchesQuery
         }

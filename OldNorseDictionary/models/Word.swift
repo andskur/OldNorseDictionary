@@ -7,12 +7,6 @@
 
 import Foundation
 
-enum NounForm: String, Codable {
-    case nominative
-    case accusative
-    case dative
-}
-
 enum WordType: String, Codable {
     case noun
     case verb
@@ -40,6 +34,7 @@ struct Word: Codable, Identifiable {
     let dativePlural: String? // Optional: Dative form pronunciation
     let dativeDual: String? // Optional: Dual form of the dative
     let type: WordType // Type of the word (noun, verb, pronoun, etc.)
+    let cases: Cases?
     let conjugation: Conjugation?
     let verbFirst: String?
     let verbSecond: String?
@@ -48,46 +43,144 @@ struct Word: Codable, Identifiable {
         return oldNorseWord
     }
     
-    enum Form {
-        case nominative
-        case accusative
-        case dative
+    enum Number {
+        case singular
+        case dual
+        case plural
+    }
+
+    
+    func neutralNounForm() -> String? {
+        var neutralNoun = oldNorseWord
+        
+        if neutralNoun.last == "r" {
+            neutralNoun.removeLast()
+        }
+        
+        return neutralNoun
     }
     
-    enum Person {
-        case first
-        case third
+    func generateNounCase(nounCase: Case, number: Number, article: Bool) -> String? {
+        switch nounCase {
+        case .nominative:
+            return generateNominative(number: number, article: article)
+        case .accusative:
+            return generateAccusative(number: number, article: article)
+        case .dative:
+            return generateDative(number: number, article: article)
+        }
     }
     
+    func generateNominative(number: Number, article: Bool) -> String? {
+        let nominativeCase = oldNorseWord
+
+        switch number {
+        case .singular:
+            if let nominativeCaseSingular = cases?.nominative?.singular {
+                return nominativeCaseSingular
+            }
+        case .dual:
+            if let nominativeCaseDual = cases?.nominative?.dual {
+                return nominativeCaseDual
+            }
+        case .plural:
+            if let nominativeCasePlural = cases?.nominative?.plural {
+                return nominativeCasePlural
+            }
+            
+            
+            if let neutral = neutralNounForm() {
+                return "\(neutral)ar"
+            }
+        }
+        
+        return nominativeCase
+    }
     
-    func generateConjugation(person: Person, plural: Bool) -> String? {
+    func generateAccusative(number: Number, article: Bool) -> String? {
+        let accusativeCase = neutralNounForm()
+        
+        switch number {
+        case .singular:
+            if let accusativeCaseSingular = cases?.accusative?.singular {
+                return accusativeCaseSingular
+            }
+        case .dual:
+            if let accusativeCaseDual = cases?.accusative?.dual {
+                return accusativeCaseDual
+            }
+        case .plural:
+            if let accusativeCasePlural = cases?.accusative?.plural {
+                return accusativeCasePlural
+            }
+            
+            if let neutral = neutralNounForm() {
+                return "\(neutral)a"
+            }
+        }
+
+        return accusativeCase
+    }
+    
+    func generateDative(number: Number, article: Bool) -> String? {
+        let dativeCase = neutralNounForm()
+        
+        switch number {
+        case .singular:
+            if let dativeCaseSingular = cases?.dative?.singular {
+                return dativeCaseSingular
+            }
+            
+            if let neutral = neutralNounForm() {
+                return "\(neutral)i"
+            }
+            
+        case .dual:
+            if let dativeCaseDual = cases?.dative?.dual {
+                return dativeCaseDual
+            }
+        case .plural:
+            if let dativeCasePlural = cases?.dative?.plural {
+                return dativeCasePlural
+            }
+            
+            if let neutral = neutralNounForm() {
+                return "\(neutral)um"
+            }
+        }
+
+        return dativeCase
+    }
+    
+    func generateConjugation(person: Person, number: Number) -> String? {
         switch person {
         case .first:
-            if plural {
-                if let firstPerson = conjugation?.plural?.firstPerson {
-                    return firstPerson
-                } else if let verbFirst = verbFirst{
-                    return  (verbFirst.dropLast()) + "um"
-                }
-            } else {
+            switch number {
+            case .singular:
                 if let firstPerson = conjugation?.singular?.firstPerson {
                     return firstPerson
                 } else if let verbSecond = verbSecond{
                     return verbSecond
                 }
-            }
-        case .third:
-            if plural {
-                if let thirdPerson = conjugation?.plural?.thirdPerson {
-                    return thirdPerson
+            case .dual, .plural:
+                if let firstPerson = conjugation?.plural?.firstPerson {
+                    return firstPerson
                 } else if let verbFirst = verbFirst{
-                    return verbFirst
-                }
-            } else {
+                    return  (verbFirst.dropLast()) + "um"
+                }            }
+        case .third:
+            switch number {
+            case .singular:
                 if let thirdPerson = conjugation?.singular?.thirdPerson {
                     return thirdPerson
                 }  else if let verbSecond = verbSecond{
                     return verbSecond + "r"
+                }
+            case .dual, .plural:
+                if let thirdPerson = conjugation?.plural?.thirdPerson {
+                    return thirdPerson
+                } else if let verbFirst = verbFirst{
+                    return verbFirst
                 }
             }
         }
@@ -95,7 +188,7 @@ struct Word: Codable, Identifiable {
         return ""
     }
     
-    func generatePlural(form: Form) -> String? {
+    func generatePlural(form: Case) -> String? {
         switch form {
         case .nominative:
             if let nominativePlural = nominativePlural {

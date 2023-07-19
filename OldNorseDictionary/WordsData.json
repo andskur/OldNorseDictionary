@@ -8,7 +8,7 @@
     "dative": "álfi",
     "definition": "A supernatural being of Germanic mythology, typically depicted as a small, elusive figure",
     "examples": [],
-    "type": "noun"
+    "type": "noun",
   },
   {
     "oldNorseWord": "baugr",
@@ -283,7 +283,24 @@
             "dative": "honum",
             "dativePlural": "oss",
             "dativeDual": "okkr",
-            "type": "pronoun"
+            "type": "pronoun",
+            "cases": {
+                "nominative": {
+                    "singular": "ek",
+                    "dual": "vit",
+                    "plural": "vér"
+                },
+                "accusative": {
+                    "singular": "mér",
+                    "dual": "okkr",
+                    "plural": "oss"
+                },
+                "dative": {
+                    "singular": "honum",
+                    "dual": "okkr",
+                    "plural": "oss"
+                }
+            }
         },
         {
             "oldNorseWord": "þú",
