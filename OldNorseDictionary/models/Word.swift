@@ -24,15 +24,6 @@ struct Word: Codable, Identifiable {
     let russianTranslation: String
     let definition: String
     let examples: [String]
-    let nominative: String? // Optional: Nominative form of the noun/pronoun
-    let nominativePlural: String? // Optional: Nominative form pronunciation
-    let nominativeDual: String? // Optional: Dual form of the nominative
-    let accusative: String? // Optional: Accusative form of the noun/pronoun
-    let accusativePlural: String? // Optional: Accusative form pronunciation
-    let accusativeDual: String? // Optional: Dual form of the accusative
-    let dative: String? // Optional: Dative form of the noun/pronoun
-    let dativePlural: String? // Optional: Dative form pronunciation
-    let dativeDual: String? // Optional: Dual form of the dative
     let type: WordType // Type of the word (noun, verb, pronoun, etc.)
     let cases: Cases?
     let conjugation: Conjugation?
@@ -85,9 +76,7 @@ struct Word: Codable, Identifiable {
             if let nominativeCasePlural = cases?.nominative?.plural {
                 nominativeCase = nominativeCasePlural
             } else {
-                if let neutral = neutralNounForm() {
-                    nominativeCase += "ar"
-                }
+                nominativeCase += "ar"
             }
             
             if article {

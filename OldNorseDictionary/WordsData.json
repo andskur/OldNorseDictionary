@@ -413,6 +413,7 @@
             "conjugation": {
                 "singular": {
                     "firstPerson": "em",
+                    "thirdPerson": "er",
                 },
                 "plural": {
                     "firstPerson": "erum",
@@ -589,7 +590,7 @@
             "examples": [],
             "type": "verb",
             "verbFirst": "koma",
-            "verbSecond": "köm"
+            "verbSecond": "køm"
         },
         {
             "oldNorseWord": "mæla",

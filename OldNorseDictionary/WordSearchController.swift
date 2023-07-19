@@ -64,15 +64,18 @@ class WordSearchController: ObservableObject {
         let lowercaseQuery = query.lowercased()
         return words.filter { word in
             let wordMatchesQuery = word.oldNorseWord.lowercased().contains(lowercaseQuery)
-            let nominativeMatchesQuery = word.nominative?.lowercased().contains(lowercaseQuery) == true
-            let accusativeMatchesQuery = word.accusative?.lowercased().contains(lowercaseQuery) == true
-            let dativeMatchesQuery = word.dative?.lowercased().contains(lowercaseQuery) == true
+            let nominativeSingularMatchesQuery = word.generateNominative(number: Number.singular, article: false)?.lowercased().contains(lowercaseQuery) == true
+            let nominativePluralMatchesQuery = word.generateNominative(number: Number.plural, article: false)?.lowercased().contains(lowercaseQuery) == true
+            let accusativeSingularMatchesQuery = word.generateAccusative(number: Number.singular, article: false)?.lowercased().contains(lowercaseQuery) == true
+            let accusativePluralMatchesQuery = word.generateAccusative(number: Number.plural, article: false)?.lowercased().contains(lowercaseQuery) == true
+            let dativeSingularMatchesQuery = word.generateDative(number: Number.singular, article: false)?.lowercased().contains(lowercaseQuery) == true
+            let dativePluralMatchesQuery = word.generateDative(number: Number.plural, article: false)?.lowercased().contains(lowercaseQuery) == true
             let firstSingularMatchesQuery = word.generateConjugation(person: .first, number: .singular)?.lowercased().contains(lowercaseQuery) == true
             let thirdSingularMatchesQuery = word.generateConjugation(person: .third, number: .singular)?.lowercased().contains(lowercaseQuery) == true
             let firstPluralMatchesQuery = word.generateConjugation(person: .first, number: .plural)?.lowercased().contains(lowercaseQuery) == true
             let thirdPluralMatchesQuery = word.generateConjugation(person: .third, number: .plural)?.lowercased().contains(lowercaseQuery) == true
             
-            return wordMatchesQuery || nominativeMatchesQuery || accusativeMatchesQuery || dativeMatchesQuery || firstSingularMatchesQuery || thirdSingularMatchesQuery || firstPluralMatchesQuery || thirdPluralMatchesQuery
+            return wordMatchesQuery || nominativeSingularMatchesQuery || nominativePluralMatchesQuery || accusativeSingularMatchesQuery || accusativePluralMatchesQuery || dativeSingularMatchesQuery || dativePluralMatchesQuery || firstSingularMatchesQuery || thirdSingularMatchesQuery || firstPluralMatchesQuery || thirdPluralMatchesQuery
         }
     }
 }
