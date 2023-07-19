@@ -42,12 +42,6 @@ struct Word: Codable, Identifiable {
     var id: String {
         return oldNorseWord
     }
-    
-    enum Number {
-        case singular
-        case dual
-        case plural
-    }
 
     
     func neutralNounForm() -> String? {
@@ -72,12 +66,16 @@ struct Word: Codable, Identifiable {
     }
     
     func generateNominative(number: Number, article: Bool) -> String? {
-        let nominativeCase = oldNorseWord
+        var nominativeCase = oldNorseWord
 
         switch number {
         case .singular:
             if let nominativeCaseSingular = cases?.nominative?.singular {
                 return nominativeCaseSingular
+            }
+            
+            if article {
+                return nominativeCase + "inn"
             }
         case .dual:
             if let nominativeCaseDual = cases?.nominative?.dual {
@@ -90,7 +88,11 @@ struct Word: Codable, Identifiable {
             
             
             if let neutral = neutralNounForm() {
-                return "\(neutral)ar"
+                nominativeCase =  "\(neutral)ar"
+                
+                if article {
+                    nominativeCase += "inir"
+                }
             }
         }
         
@@ -98,12 +100,16 @@ struct Word: Codable, Identifiable {
     }
     
     func generateAccusative(number: Number, article: Bool) -> String? {
-        let accusativeCase = neutralNounForm()
+        var accusativeCase = neutralNounForm()
         
         switch number {
         case .singular:
             if let accusativeCaseSingular = cases?.accusative?.singular {
-                return accusativeCaseSingular
+                accusativeCase = accusativeCaseSingular
+                
+                if article {
+                    accusativeCase! += "inn"
+                }
             }
         case .dual:
             if let accusativeCaseDual = cases?.accusative?.dual {
@@ -115,7 +121,11 @@ struct Word: Codable, Identifiable {
             }
             
             if let neutral = neutralNounForm() {
-                return "\(neutral)a"
+                accusativeCase = "\(neutral)a"
+                
+                if article {
+                    accusativeCase! += "ina"
+                }
             }
         }
 
@@ -123,7 +133,7 @@ struct Word: Codable, Identifiable {
     }
     
     func generateDative(number: Number, article: Bool) -> String? {
-        let dativeCase = neutralNounForm()
+        var dativeCase = neutralNounForm()
         
         switch number {
         case .singular:
@@ -132,7 +142,11 @@ struct Word: Codable, Identifiable {
             }
             
             if let neutral = neutralNounForm() {
-                return "\(neutral)i"
+                dativeCase = "\(neutral)i"
+                
+                if article {
+                    dativeCase! += "inum"
+                }
             }
             
         case .dual:
@@ -145,7 +159,11 @@ struct Word: Codable, Identifiable {
             }
             
             if let neutral = neutralNounForm() {
-                return "\(neutral)um"
+                dativeCase = "\(neutral)um"
+                
+                if article {
+                    dativeCase! += "um"
+                }
             }
         }
 
