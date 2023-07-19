@@ -12,33 +12,43 @@ struct WordDetailView: View {
     let searchDirection: SearchDirection
     
     func verbDetailViewContent() -> some View {
-        Group {
-            if let singularFirstPerson = word.generateConjugation(person: .first, number: .singular) {
-                Text("First Person Singular: \(singularFirstPerson)")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-            }
+        ForEach(Person.allCases, id: \.rawValue) { person in
+
             
-            if let pluralFirstPerson = word.generateConjugation(person: .first, number: .plural) {
-                Text("First Person Plural: \(pluralFirstPerson)")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-            }
-            
-            if let singularThirdPerson = word.generateConjugation(person: .third, number: .singular) {
-                Text("Third Person Singular: \(singularThirdPerson)")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-            }
-            
-            if let pluralThirdPerson = word.generateConjugation(person: .third, number: .plural) {
-                Text("Third Person Plural: \(pluralThirdPerson)")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
+            ForEach(Number.allCases, id: \.rawValue) { num in
+                HStack {
+                    verbRow(person: person, num: num)
+                }
             }
         }
     }
     
+    func verbRow(person: Person, num: Number) -> some View {
+        return HStack {
+            if num != Number.dual {
+                if let singularFirstPerson = word.generateConjugation(person: person, number: num) {
+                    Text("\(person.rawValue.capitalized) Person \(num.rawValue.capitalized): \(singularFirstPerson)")
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                }
+            }
+        }
+    }
+    
+    func nounDetailViewContent() -> some View {
+        ForEach(Case.allCases, id: \.rawValue) { c in
+            Text("\(c.rawValue.capitalized):")
+                .font(.subheadline)
+                .fontWeight(.bold)
+            
+            ForEach(Number.allCases, id: \.rawValue) { num in
+                HStack {
+                    nounceRow(c: c,num: num)
+                }
+            }
+        }
+    }
+
     func nounceRow(c: Case, num: Number) -> some View {
         return HStack {
             if !(word.type != .pronoun && num == .dual) {
@@ -56,21 +66,6 @@ struct WordDetailView: View {
                     }
                 }
             }
-        }
-    }
-    
-    func nounDetailViewContent() -> some View {
-        ForEach(Case.allCases, id: \.rawValue) { c in
-            Text("\(c.rawValue.capitalized):")
-                .font(.subheadline)
-                .fontWeight(.bold)
-            
-            ForEach(Number.allCases, id: \.rawValue) { num in
-                HStack {
-                    nounceRow(c: c,num: num)
-                }
-            }
-            
         }
     }
     

@@ -3,9 +3,6 @@
     "oldNorseWord": "álfr",
     "englishTranslation": "elf",
     "russianTranslation": "эльф",
-    "nominative": "álfr",
-    "accusative": "álf",
-    "dative": "álfi",
     "definition": "A supernatural being of Germanic mythology, typically depicted as a small, elusive figure",
     "examples": [],
     "type": "noun",
@@ -14,9 +11,6 @@
     "oldNorseWord": "baugr",
     "englishTranslation": "ring",
     "russianTranslation": "кольцо",
-    "nominative": "baugr",
-    "accusative": "baug",
-    "dative": "baugi",
     "definition": "A circular band worn as an ornament or a symbol of authority or membership",
     "examples": [],
     "type": "noun"
@@ -25,9 +19,6 @@
     "oldNorseWord": "brandr",
     "englishTranslation": "sword",
     "russianTranslation": "меч",
-    "nominative": "brandr",
-    "accusative": "brand",
-    "dative": "brandi",
     "definition": "A weapon with a long metal blade and a hilt, used for thrusting or striking",
     "examples": [],
     "type": "noun"
@@ -36,9 +27,6 @@
     "oldNorseWord": "draugr",
     "englishTranslation": "ghost",
     "russianTranslation": "драуг",
-    "nominative": "draugr",
-    "accusative": "draug",
-    "dative": "draugi",
     "definition": "An undead creature in Norse mythology, often associated with burial mounds",
     "examples": [],
     "type": "noun"
@@ -47,9 +35,6 @@
     "oldNorseWord": "dvergr",
     "englishTranslation": "dwarf",
     "russianTranslation": "дверг",
-    "nominative": "dvergr",
-    "accusative": "dverg",
-    "dative": "dvergi",
     "definition": "A member of a mythical race of short, stout beings who are skilled in mining and metalworking",
     "examples": [],
     "type": "noun"
@@ -58,9 +43,6 @@
     "oldNorseWord": "haukr",
     "englishTranslation": "hawk",
     "russianTranslation": "ястреб",
-    "nominative": "haukr",
-    "accusative": "hauk",
-    "dative": "hauki",
     "definition": "A bird of prey with keen eyesight, a hooked beak, and powerful talons",
     "examples": [],
     "type": "noun"
@@ -69,9 +51,6 @@
     "oldNorseWord": "hestr",
     "englishTranslation": "horse",
     "russianTranslation": "конь",
-    "nominative": "hestr",
-    "accusative": "hest",
-    "dative": "hesti",
     "definition": "A large, hoofed mammal of the family Equidae, domesticated since ancient times",
     "examples": [],
     "type": "noun"
@@ -80,9 +59,6 @@
     "oldNorseWord": "hjálmr",
     "englishTranslation": "helmet",
     "russianTranslation": "шлем",
-    "nominative": "hjálmr",
-    "accusative": "hjálm",
-    "dative": "hjálmi",
     "definition": "A protective head covering, typically made of metal or leather",
     "examples": [],
     "type": "noun"
@@ -91,9 +67,6 @@
     "oldNorseWord": "hrafn",
     "englishTranslation": "raven",
     "russianTranslation": "ворон",
-    "nominative": "hrafn",
-    "accusative": "hrafn",
-    "dative": "hrafni",
     "definition": "A large, black bird known for its intelligence and distinctive call",
     "examples": [],
     "type": "noun"
@@ -102,9 +75,6 @@
     "oldNorseWord": "konungr",
     "englishTranslation": "king",
     "russianTranslation": "конунг",
-    "nominative": "konungr",
-    "accusative": "konung",
-    "dative": "konungi",
     "definition": "A male ruler of a kingdom; a monarch",
     "examples": [],
     "type": "noun"
@@ -113,9 +83,6 @@
     "oldNorseWord": "jarl",
     "englishTranslation": "earl",
     "russianTranslation": "ярл",
-    "nominative": "jarl",
-    "accusative": "jarl",
-    "dative": "jarli",
     "definition": "A nobleman ranking below a king but above a thane or a chieftain",
     "examples": [],
     "type": "noun"
@@ -124,9 +91,6 @@
     "oldNorseWord": "ormr",
     "englishTranslation": "serpent",
     "russianTranslation": "змей",
-    "nominative": "ormr",
-    "accusative": "orm",
-    "dative": "ormi",
     "definition": "A large snake, especially a mythical one",
     "examples": [],
     "type": "noun"
@@ -135,77 +99,72 @@
     "oldNorseWord": "úlfr",
     "englishTranslation": "wolf",
     "russianTranslation": "волк",
-    "nominative": "úlfr",
-    "accusative": "úlf",
-    "dative": "úlfi",
     "definition": "A carnivorous mammal of the dog family, known for its pack behavior and howling",
     "examples": [],
     "type": "noun"
   },
   {
-    "oldNorseWord": "víkingr",
-    "englishTranslation": "viking",
-    "russianTranslation": "викинг",
-    "nominative": "víkingr",
-    "accusative": "víking",
-    "dative": "víkingi",
-    "definition": "A seafaring warrior and explorer from the late 8th to early 11th centuries",
-    "examples": [],
-    "type": "noun"
+      "oldNorseWord": "víkingr",
+      "englishTranslation": "viking",
+      "russianTranslation": "викинг",
+      "definition": "A seafaring warrior and explorer from the late 8th to early 11th centuries",
+      "examples": [],
+      "type": "noun"
   },
   {
       "oldNorseWord": "bátr",
       "englishTranslation": "boat",
       "russianTranslation": "лодка",
-      "nominative": "bátr",
-      "accusative": "bát",
-      "dative": "báti",
       "definition": "A small watercraft used for transportation or leisure",
       "examples": [],
       "type": "noun"
     },
-    {
+  {
       "oldNorseWord": "geirr",
       "englishTranslation": "spear",
       "russianTranslation": "копьё",
-      "nominative": "geirr",
-      "accusative": "geir",
-      "dative": "geiri",
       "definition": "A long pole weapon with a sharp pointed head, used for thrusting or throwing",
       "examples": [],
       "type": "noun"
     },
     {
-      "oldNorseWord": "maðr",
-      "englishTranslation": "man",
-      "russianTranslation": "человек",
-      "nominative": "maðr",
-      "nominativePlural": "menn",
-      "accusative": "mann",
-      "accusativePlural": "menn",
-      "dative": "manni",
-      "definition": "An adult human male",
-      "examples": [],
-      "type": "noun"
+        "oldNorseWord": "maðr",
+        "englishTranslation": "man",
+        "russianTranslation": "человек",
+        "nominative": "maðr",
+        "nominativePlural": "menn",
+        "accusative": "mann",
+        "accusativePlural": "menn",
+        "dative": "manni",
+        "definition": "An adult human male",
+        "examples": [],
+        "type": "noun",
+        "cases": {
+            "nominative": {
+                "singular": "maðr",
+                "plural": "menn"
+            },
+            "accusative": {
+                "singular": "mann",
+                "plural": "menn"
+            },
+            "dative": {
+                "singular": "manni",
+            }
+        }
     },
     {
-      "oldNorseWord": "þjófr",
-      "englishTranslation": "thief",
-      "russianTranslation": "вор",
-      "nominative": "þjófr",
-      "accusative": "þjóf",
-      "dative": "þjófi",
-      "definition": "A person who steals or commits theft",
-      "examples": [],
-      "type": "noun"
+        "oldNorseWord": "þjófr",
+        "englishTranslation": "thief",
+        "russianTranslation": "вор",
+        "definition": "A person who steals or commits theft",
+        "examples": [],
+        "type": "noun"
     },
     {
         "oldNorseWord": "draumr",
         "englishTranslation": "dream",
         "russianTranslation": "сон, мечта",
-        "nominative": "draumr",
-        "accusative": "draum",
-        "dative": "draumi",
         "definition": "A series of thoughts, images, or emotions that occur during sleep",
         "examples": [],
         "type": "noun"
@@ -214,9 +173,6 @@
         "oldNorseWord": "fiskr",
         "englishTranslation": "fish",
         "russianTranslation": "рыба",
-        "nominative": "fiskr",
-        "accusative": "fisk",
-        "dative": "fiski",
         "definition": "A limbless cold-blooded vertebrate animal with gills and fins",
         "examples": [],
         "type": "noun"
@@ -225,9 +181,6 @@
         "oldNorseWord": "matr",
         "englishTranslation": "food",
         "russianTranslation": "еда, пища",
-        "nominative": "matr",
-        "accusative": "mat",
-        "dative": "mati",
         "definition": "Any nutritious substance that is eaten, drunk, or otherwise taken into the body to sustain life",
         "examples": [],
         "type": "noun"
@@ -236,9 +189,6 @@
           "oldNorseWord": "munnr",
           "englishTranslation": "mouth",
           "russianTranslation": "рот",
-          "nominative": "munnr",
-          "accusative": "munn",
-          "dative": "muni",
           "definition": "The opening through which food passes into the body and vocal sounds are emitted",
           "examples": [],
           "type": "noun"
@@ -247,9 +197,6 @@
           "oldNorseWord": "ostr",
           "englishTranslation": "cheese",
           "russianTranslation": "сыр",
-          "nominative": "ostr",
-          "accusative": "ostr",
-          "dative": "ostri",
           "definition": "A food made from the pressed curds of milk, often seasoned and aged",
           "examples": [],
           "type": "noun"
@@ -266,7 +213,24 @@
             "accusativePlural": "þá",
             "dative": "honum",
             "dativePlural": "þeim",
-            "type": "pronoun"
+            "type": "pronoun",
+            "cases": {
+                "nominative": {
+                    "singular": "ek",
+                    "dual": "vit",
+                    "plural": "vér"
+                },
+                "accusative": {
+                    "singular": "mér",
+                    "dual": "okkr",
+                    "plural": "oss"
+                },
+                "dative": {
+                    "singular": "honum",
+                    "dual": "okkr",
+                    "plural": "oss"
+                }
+            }
         },
         {
             "oldNorseWord": "ek",
@@ -274,15 +238,6 @@
             "russianTranslation": "я",
             "definition": "First-person singular pronoun",
             "examples": ["Ek heiti John.", "Ég elska þig."],
-            "nominative": "ek",
-            "nominativePlural": "vér",
-            "nominativeDual": "vit",
-            "accusative": "mér",
-            "accusativePlural": "oss",
-            "accusativeDual": "okkr",
-            "dative": "honum",
-            "dativePlural": "oss",
-            "dativeDual": "okkr",
             "type": "pronoun",
             "cases": {
                 "nominative": {

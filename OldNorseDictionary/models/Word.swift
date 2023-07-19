@@ -71,11 +71,11 @@ struct Word: Codable, Identifiable {
         switch number {
         case .singular:
             if let nominativeCaseSingular = cases?.nominative?.singular {
-                return nominativeCaseSingular
+                nominativeCase = nominativeCaseSingular
             }
             
             if article {
-                return nominativeCase + "inn"
+                nominativeCase += "inn"
             }
         case .dual:
             if let nominativeCaseDual = cases?.nominative?.dual {
@@ -83,16 +83,16 @@ struct Word: Codable, Identifiable {
             }
         case .plural:
             if let nominativeCasePlural = cases?.nominative?.plural {
-                return nominativeCasePlural
+                nominativeCase = nominativeCasePlural
             }
             
             
             if let neutral = neutralNounForm() {
-                nominativeCase =  "\(neutral)ar"
-                
-                if article {
-                    nominativeCase += "inir"
-                }
+                nominativeCase = "\(neutral)ar"
+            }
+            
+            if article {
+                nominativeCase += "inir"
             }
         }
         
@@ -106,10 +106,10 @@ struct Word: Codable, Identifiable {
         case .singular:
             if let accusativeCaseSingular = cases?.accusative?.singular {
                 accusativeCase = accusativeCaseSingular
-                
-                if article {
-                    accusativeCase! += "inn"
-                }
+            }
+            
+            if article {
+                accusativeCase! += "inn"
             }
         case .dual:
             if let accusativeCaseDual = cases?.accusative?.dual {
@@ -117,15 +117,13 @@ struct Word: Codable, Identifiable {
             }
         case .plural:
             if let accusativeCasePlural = cases?.accusative?.plural {
-                return accusativeCasePlural
+                accusativeCase = accusativeCasePlural
+            } else {
+                accusativeCase! += "a"
             }
             
-            if let neutral = neutralNounForm() {
-                accusativeCase = "\(neutral)a"
-                
-                if article {
-                    accusativeCase! += "ina"
-                }
+            if article {
+                accusativeCase! += "ina"
             }
         }
 
@@ -138,15 +136,15 @@ struct Word: Codable, Identifiable {
         switch number {
         case .singular:
             if let dativeCaseSingular = cases?.dative?.singular {
-                return dativeCaseSingular
+                dativeCase = dativeCaseSingular
             }
             
             if let neutral = neutralNounForm() {
                 dativeCase = "\(neutral)i"
-                
-                if article {
-                    dativeCase! += "inum"
-                }
+            }
+            
+            if article {
+                dativeCase! += "inum"
             }
             
         case .dual:
@@ -155,15 +153,15 @@ struct Word: Codable, Identifiable {
             }
         case .plural:
             if let dativeCasePlural = cases?.dative?.plural {
-                return dativeCasePlural
+                dativeCase = dativeCasePlural
             }
             
             if let neutral = neutralNounForm() {
                 dativeCase = "\(neutral)um"
-                
-                if article {
-                    dativeCase! += "um"
-                }
+            }
+            
+            if article {
+                dativeCase! += "um"
             }
         }
 
@@ -204,52 +202,5 @@ struct Word: Codable, Identifiable {
         }
         
         return ""
-    }
-    
-    func generatePlural(form: Case) -> String? {
-        switch form {
-        case .nominative:
-            if let nominativePlural = nominativePlural {
-                return nominativePlural
-            } else {
-                return generateNominativePlural()
-            }
-        case .accusative:
-            if let accusativePlural = accusativePlural {
-                return accusativePlural
-            } else {
-                return generateAccusativePlural()
-            }
-        case .dative:
-            if let dativePlural = dativePlural {
-                return dativePlural
-            } else {
-                return generateDativePlural()
-            }
-        }
-    }
-    
-    func generateNominativePlural() -> String? {
-        guard let nominative = accusative else {
-            return nil
-        }
-        
-        return "\(nominative)ar"
-    }
-    
-    func generateAccusativePlural() -> String? {
-        guard let accusative = accusative else {
-            return nil
-        }
-        
-        return "\(accusative)a"
-    }
-    
-    func generateDativePlural() -> String? {
-        guard let dative = accusative else {
-            return nil
-        }
-        
-        return "\(dative)um"
     }
 }

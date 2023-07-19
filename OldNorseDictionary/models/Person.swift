@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Person {
+enum Person: String, CaseIterable {
     case first
     case third
 }

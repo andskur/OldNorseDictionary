@@ -19,7 +19,7 @@ struct CaseNumber: Codable {
     let plural: String?
 }
 
-enum Case: String, CaseIterable{
+enum Case: String, CaseIterable {
     case nominative
     case accusative
     case dative
