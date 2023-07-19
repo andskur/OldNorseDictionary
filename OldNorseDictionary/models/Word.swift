@@ -84,11 +84,10 @@ struct Word: Codable, Identifiable {
         case .plural:
             if let nominativeCasePlural = cases?.nominative?.plural {
                 nominativeCase = nominativeCasePlural
-            }
-            
-            
-            if let neutral = neutralNounForm() {
-                nominativeCase = "\(neutral)ar"
+            } else {
+                if let neutral = neutralNounForm() {
+                    nominativeCase += "ar"
+                }
             }
             
             if article {
@@ -123,7 +122,11 @@ struct Word: Codable, Identifiable {
             }
             
             if article {
-                accusativeCase! += "ina"
+                if accusativeCase?.last == "n" {
+                    accusativeCase! += "ina"
+                } else {
+                    accusativeCase! += "na"
+                }
             }
         }
 
@@ -154,10 +157,8 @@ struct Word: Codable, Identifiable {
         case .plural:
             if let dativeCasePlural = cases?.dative?.plural {
                 dativeCase = dativeCasePlural
-            }
-            
-            if let neutral = neutralNounForm() {
-                dativeCase = "\(neutral)um"
+            } else {
+                dativeCase! += "um"
             }
             
             if article {

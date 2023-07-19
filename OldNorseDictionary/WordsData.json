@@ -216,19 +216,16 @@
             "type": "pronoun",
             "cases": {
                 "nominative": {
-                    "singular": "ek",
-                    "dual": "vit",
-                    "plural": "vér"
+                    "singular": "hann",
+                    "plural": "þeir"
                 },
                 "accusative": {
-                    "singular": "mér",
-                    "dual": "okkr",
-                    "plural": "oss"
+                    "singular": "hann",
+                    "plural": "þá"
                 },
                 "dative": {
                     "singular": "honum",
-                    "dual": "okkr",
-                    "plural": "oss"
+                    "plural": "þeim"
                 }
             }
         },
@@ -246,12 +243,12 @@
                     "plural": "vér"
                 },
                 "accusative": {
-                    "singular": "mér",
+                    "singular": "mik",
                     "dual": "okkr",
                     "plural": "oss"
                 },
                 "dative": {
-                    "singular": "honum",
+                    "singular": "mér",
                     "dual": "okkr",
                     "plural": "oss"
                 }
@@ -263,16 +260,30 @@
             "russianTranslation": "ты",
             "definition": "Second-person singular pronoun",
             "examples": ["þú ert vinur minn.", "Þú kemur seinna."],
-            "nominative": "þú",
-            "nominativePlural": "þér",
-            "nominativeDual": "þit",
             "accusative": "þik",
             "accusativePlural": "yðr",
             "accusativeDual": "ykkr",
             "dative": "þér",
             "dativePlural": "yðr",
             "dativeDual": "ykkr",
-            "type": "pronoun"
+            "type": "pronoun",
+            "cases": {
+                "nominative": {
+                    "singular": "þú",
+                    "dual": "þit",
+                    "plural": "þér"
+                },
+                "accusative": {
+                    "singular": "þik",
+                    "dual": "ykkr",
+                    "plural": "yðr"
+                },
+                "dative": {
+                    "singular": "þér",
+                    "dual": "ykkr",
+                    "plural": "yðr"
+                }
+            }
         },
         {
             "oldNorseWord": "þat",
@@ -280,13 +291,21 @@
             "russianTranslation": "то, это",
             "definition": "That, it",
             "examples": [],
-            "nominative": "þat",
-            "nominativePlural": "þau",
-            "accusative": "þat",
-            "accusativePlural": "þau",
-            "dative": "því",
-            "dativePlural": "þeim",
-            "type": "pronoun"
+            "type": "pronoun",
+            "cases": {
+                "nominative": {
+                    "singular": "þat",
+                    "plural": "þau"
+                },
+                "accusative": {
+                    "singular": "þat",
+                    "plural": "þau"
+                },
+                "dative": {
+                    "singular": "því",
+                    "plural": "þeim"
+                }
+            }
         },
         {
             "oldNorseWord": "eigi",
