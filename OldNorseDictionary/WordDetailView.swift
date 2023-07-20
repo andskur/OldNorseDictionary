@@ -12,61 +12,102 @@ struct WordDetailView: View {
     let searchDirection: SearchDirection
     
     func verbDetailViewContent() -> some View {
-        ForEach(Person.allCases, id: \.rawValue) { person in
-
+        Grid() {
+            gridHeader()
+            
+            Divider()
+            
+            ForEach(Person.allCases, id: \.rawValue) { person in
+                GridRow {
+                    Section {
+                        Text("\(person.rawValue.capitalized):")
+                            .font(.subheadline)
+                            .fontWeight(.bold)
+                    }.frame(width: 100, height: 10).padding(5)
+                    
+                    ForEach(Number.allCases, id: \.rawValue) { num in
+                        verbRow(person: person, num: num)
+                    }
+                }.padding(5)
+                
+                Divider()
+            }
+            
+        }.border(.white)
+    }
+    
+    func gridHeader() -> some View {
+        GridRow {
+            Color.clear.frame(width: 100)
             
             ForEach(Number.allCases, id: \.rawValue) { num in
-                HStack {
-                    verbRow(person: person, num: num)
+                if !(word.type != .pronoun && num == .dual) {
+                    Section {
+                        Text(num.rawValue.capitalized)
+                    }.frame(width: 100, height: 10).padding(8)
                 }
             }
         }
     }
     
     func verbRow(person: Person, num: Number) -> some View {
-        return HStack {
+        return Section {
             if num != Number.dual {
                 if let singularFirstPerson = word.generateConjugation(person: person, number: num) {
-                    Text("\(person.rawValue.capitalized) Person \(num.rawValue.capitalized): \(singularFirstPerson)")
+                    Text("\(singularFirstPerson)")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                 }
             }
-        }
+        }.frame(width: 120, height: 10).padding(5)
     }
     
-    func nounDetailViewContent() -> some View {
-        ForEach(Case.allCases, id: \.rawValue) { c in
-            Text("\(c.rawValue.capitalized):")
-                .font(.subheadline)
-                .fontWeight(.bold)
-            
-            ForEach(Number.allCases, id: \.rawValue) { num in
-                HStack {
-                    nounceRow(c: c,num: num)
-                }
-            }
-        }
-    }
-
     func nounceRow(c: Case, num: Number) -> some View {
-        return HStack {
+        return Section {
             if !(word.type != .pronoun && num == .dual) {
                 if let wordWithCase = word.generateNounCase(nounCase: c, number: num, article: false) {
-                    Text("\(num.rawValue.capitalized): \(wordWithCase)")
+                    Text("\(wordWithCase)" + withArticle(c: c, num: num)!)
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                 }
-                
-                if word.type == .noun {
-                    if let wordWithCase = word.generateNounCase(nounCase: c, number: num, article: true) {
-                        Text("(\(wordWithCase))")
+            }
+        }.frame(width: 120, height: 10).padding(5)
+    }
+
+    func nounDetailViewContent() -> some View {
+        Grid() {
+            gridHeader()
+            
+            Divider()
+            
+            ForEach(Case.allCases, id: \.rawValue) { c in
+                GridRow {
+                    Section {
+                        Text("\(c.rawValue.capitalized):")
                             .font(.subheadline)
-                            .foregroundColor(.secondary)
+                            .fontWeight(.bold)
+                    }.frame(width: 100, height: 10).padding(5)
+                    
+                    ForEach(Number.allCases, id: \.rawValue) { num in
+                        nounceRow(c: c,num: num)
                     }
-                }
+                }.padding(5)
+                
+                Divider()
+            }
+        }.border(.white)
+    }
+    
+
+    
+    func withArticle(c: Case, num: Number) -> String? {
+        if word.type == .noun {
+            if let wordWithCase = word.generateNounCase(nounCase: c, number: num, article: true) {
+                return " (\(wordWithCase))"
             }
         }
+        
+        return ""
     }
     
     var body: some View {

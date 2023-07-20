@@ -65,17 +65,22 @@ class WordSearchController: ObservableObject {
         return words.filter { word in
             let wordMatchesQuery = word.oldNorseWord.lowercased().contains(lowercaseQuery)
             let nominativeSingularMatchesQuery = word.generateNominative(number: Number.singular, article: false)?.lowercased().contains(lowercaseQuery) == true
+            let nominativeDualMatchesQuery = word.generateNominative(number: Number.dual, article: false)?.lowercased().contains(lowercaseQuery) == true
             let nominativePluralMatchesQuery = word.generateNominative(number: Number.plural, article: false)?.lowercased().contains(lowercaseQuery) == true
             let accusativeSingularMatchesQuery = word.generateAccusative(number: Number.singular, article: false)?.lowercased().contains(lowercaseQuery) == true
+            let accusativeDualMatchesQuery = word.generateAccusative(number: Number.dual, article: false)?.lowercased().contains(lowercaseQuery) == true
             let accusativePluralMatchesQuery = word.generateAccusative(number: Number.plural, article: false)?.lowercased().contains(lowercaseQuery) == true
             let dativeSingularMatchesQuery = word.generateDative(number: Number.singular, article: false)?.lowercased().contains(lowercaseQuery) == true
+            let dativeDualMatchesQuery = word.generateDative(number: Number.dual, article: false)?.lowercased().contains(lowercaseQuery) == true
             let dativePluralMatchesQuery = word.generateDative(number: Number.plural, article: false)?.lowercased().contains(lowercaseQuery) == true
             let firstSingularMatchesQuery = word.generateConjugation(person: .first, number: .singular)?.lowercased().contains(lowercaseQuery) == true
+            let secondSingularMatchesQuery = word.generateConjugation(person: .second, number: .singular)?.lowercased().contains(lowercaseQuery) == true
             let thirdSingularMatchesQuery = word.generateConjugation(person: .third, number: .singular)?.lowercased().contains(lowercaseQuery) == true
             let firstPluralMatchesQuery = word.generateConjugation(person: .first, number: .plural)?.lowercased().contains(lowercaseQuery) == true
+            let secondPluralMatchesQuery = word.generateConjugation(person: .second, number: .plural)?.lowercased().contains(lowercaseQuery) == true
             let thirdPluralMatchesQuery = word.generateConjugation(person: .third, number: .plural)?.lowercased().contains(lowercaseQuery) == true
             
-            return wordMatchesQuery || nominativeSingularMatchesQuery || nominativePluralMatchesQuery || accusativeSingularMatchesQuery || accusativePluralMatchesQuery || dativeSingularMatchesQuery || dativePluralMatchesQuery || firstSingularMatchesQuery || thirdSingularMatchesQuery || firstPluralMatchesQuery || thirdPluralMatchesQuery
+            return wordMatchesQuery || nominativeSingularMatchesQuery || nominativeDualMatchesQuery || nominativePluralMatchesQuery || accusativeSingularMatchesQuery || accusativeDualMatchesQuery || accusativePluralMatchesQuery || dativeSingularMatchesQuery || dativeDualMatchesQuery || dativePluralMatchesQuery || firstSingularMatchesQuery || secondSingularMatchesQuery || thirdSingularMatchesQuery || firstPluralMatchesQuery || secondPluralMatchesQuery || thirdPluralMatchesQuery
         }
     }
 }
