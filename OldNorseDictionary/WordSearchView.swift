@@ -13,13 +13,10 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Picker("Search Direction", selection: $controller.searchDirection) {
-                Text("Old Norse to Russian").tag(SearchDirection.oldNorseToRussian)
-                Text("Russian to Old Norse").tag(SearchDirection.russianToOldNorse)
-                Text("Old Norse to English").tag(SearchDirection.oldNorseToEnglish)
-                Text("English to Old Norse").tag(SearchDirection.englishToOldNorse)
+                ForEach(SearchDirection.allCases, id: \.rawValue) { direction in
+                    Text(searchDiractionDesc(direction: direction)).tag(direction)
+                }
             }
-            .pickerStyle(SegmentedPickerStyle())
-            .padding()
             
             TextField(controller.searchDirection == .englishToOldNorse ? "Enter English word" : "Enter Old Norse word", text: $controller.searchQuery)
                 .textFieldStyle(RoundedBorderTextFieldStyle())

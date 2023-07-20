@@ -1019,7 +1019,12 @@
           "examples": [],
           "type": "verb",
           "verbFirst": "gefa",
-          "verbSecond": "gefi"
+          "verbSecond": "gefi",
+          "conjugation": {
+              "singular": {
+                  "firstPerson": "gef"
+              }
+          },
         },
         {
           "oldNorseWord": "heita",

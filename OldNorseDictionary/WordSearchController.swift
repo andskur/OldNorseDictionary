@@ -7,11 +7,24 @@
 
 import Foundation
 
-enum SearchDirection {
+enum SearchDirection: String, CaseIterable {
+    case oldNorseToRussian
     case englishToOldNorse
     case oldNorseToEnglish
     case russianToOldNorse
-    case oldNorseToRussian
+}
+
+func searchDiractionDesc(direction: SearchDirection) -> String {
+    switch direction {
+    case .englishToOldNorse:
+        return "English to Old Norse"
+    case .oldNorseToEnglish:
+        return "Old Norse to English"
+    case .russianToOldNorse:
+        return "Russian to Old Norse"
+    case .oldNorseToRussian:
+        return "Old Norse to Russian"
+    }
 }
 
 class WordSearchController: ObservableObject {
