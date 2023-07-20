@@ -364,6 +364,22 @@
             "type": "adverb"
         },
         {
+          "oldNorseWord": "mjök",
+          "englishTranslation": "very",
+          "russianTranslation": "очень, весьма",
+          "definition": "Very",
+          "examples": [],
+          "type": "adverb"
+        },
+        {
+          "oldNorseWord": "því",
+          "englishTranslation": "therefore",
+          "russianTranslation": "потому, поэтому",
+          "definition": "Therefore",
+          "examples": [],
+          "type": "adverb"
+        },
+        {
             "oldNorseWord": "en",
             "englishTranslation": "but, than",
             "russianTranslation": "но, чем",
@@ -378,6 +394,22 @@
             "definition": "Relates to the word 'which' or 'when'",
             "examples": ["Bókin er góð, er er skrifuð á ensku.", "Hann kom í bókasafnið er það var að loka."],
             "type": "conjunction"
+        },
+        {
+          "oldNorseWord": "at",
+          "englishTranslation": "that",
+          "russianTranslation": "что, чтобы",
+          "definition": "That",
+          "examples": [],
+          "type": "conjunction"
+        },
+        {
+          "oldNorseWord": "því at",
+          "englishTranslation": "because",
+          "russianTranslation": "потому что, так как",
+          "definition": "Because",
+          "examples": [],
+          "type": "conjunction"
         },
         {
             "oldNorseWord": "já",
@@ -396,9 +428,9 @@
             "type": "interjection"
         },
         {
-            "oldNorseWord": "heill",
-            "englishTranslation": "hello",
-            "russianTranslation": "Здравствуй",
+            "oldNorseWord": "heill!",
+            "englishTranslation": "hello!",
+            "russianTranslation": "Здравствуй!",
             "definition": "Greetings, hello",
             "examples": [],
             "type": "interjection"
@@ -637,5 +669,321 @@
             "type": "verb",
             "verbFirst": "kenna",
             "verbSecond": "kenni"
+        },
+        {
+          "oldNorseWord": "elta",
+          "englishTranslation": "to chase",
+          "russianTranslation": "гнаться",
+          "definition": "To chase, to pursue",
+          "examples": [],
+          "type": "verb",
+          "verbFirst": "elta",
+          "verbSecond": "elti"
+        },
+        {
+          "oldNorseWord": "eta",
+          "englishTranslation": "to eat",
+          "russianTranslation": "есть",
+          "definition": "To eat, to consume",
+          "examples": [],
+          "type": "verb",
+          "verbFirst": "eta",
+          "verbSecond": "et"
+        },
+        {
+          "oldNorseWord": "hræða",
+          "englishTranslation": "to frighten",
+          "russianTranslation": "пугать",
+          "definition": "To frighten, to scare",
+          "examples": [],
+          "type": "verb",
+          "verbFirst": "hræða",
+          "verbSecond": "hræði"
+        },
+        {
+          "oldNorseWord": "opna",
+          "englishTranslation": "to open",
+          "russianTranslation": "открывать",
+          "definition": "To open, to reveal",
+          "examples": [],
+          "type": "verb",
+          "verbFirst": "opna",
+          "verbSecond": "opna"
+        },
+        {
+          "oldNorseWord": "fagr",
+          "englishTranslation": "beautiful",
+          "russianTranslation": "красивый, прекрасный",
+          "definition": "Beautiful, lovely",
+          "examples": [],
+          "type": "adjective",
+          "cases": {
+              "nominative": {
+                  "singular": "fagr",
+                  "plural": "fagrir"
+              },
+              "accusative": {
+                  "singular": "fagran",
+                  "plural": "fagra"
+              }
+          }
+        },
+        {
+          "oldNorseWord": "góðr",
+          "englishTranslation": "good",
+          "russianTranslation": "хороший, добрый",
+          "definition": "Good, kind",
+          "examples": [],
+          "type": "adjective"
+        },
+        {
+          "oldNorseWord": "heill",
+          "englishTranslation": "healthy",
+          "russianTranslation": "здоровый, целый",
+          "definition": "Healthy, whole",
+          "examples": [],
+          "type": "adjective",
+          "cases": {
+              "nominative": {
+                  "singular": "heill",
+                  "plural": "heilir"
+              },
+              "accusative": {
+                  "singular": "heilan",
+                  "plural": "heila"
+              }
+          }
+        },
+        {
+          "oldNorseWord": "illr",
+          "englishTranslation": "bad",
+          "russianTranslation": "плохой, злой",
+          "definition": "Bad, evil",
+          "examples": [],
+          "type": "adjective"
+        },
+        {
+          "oldNorseWord": "ragr",
+          "englishTranslation": "cowardly",
+          "russianTranslation": "трусливый, малодушный",
+          "definition": "Cowardly, timid",
+          "examples": [],
+          "type": "adjective"
+        },
+        {
+          "oldNorseWord": "reiðr",
+          "englishTranslation": "angry",
+          "russianTranslation": "разгневанный, сердитый",
+          "definition": "Angry, furious",
+          "examples": [],
+          "type": "adjective"
+        },
+        {
+          "oldNorseWord": "ríkr",
+          "englishTranslation": "rich",
+          "russianTranslation": "богатый, могучий",
+          "definition": "Rich, mighty",
+          "examples": [],
+          "type": "adjective"
+        },
+        {
+          "oldNorseWord": "smár",
+          "englishTranslation": "small",
+          "russianTranslation": "маленький, небольшой",
+          "definition": "Small, little",
+          "examples": [],
+          "type": "adjective"
+        },
+        {
+          "oldNorseWord": "stórr",
+          "englishTranslation": "big",
+          "russianTranslation": "большой, крупный",
+          "definition": "Big, large",
+          "examples": [],
+          "type": "adjective"
+        },
+        {
+          "oldNorseWord": "beðinn",
+          "englishTranslation": "waiting",
+          "russianTranslation": "ждущий",
+          "definition": "Waiting",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "dáinn",
+          "englishTranslation": "dying",
+          "russianTranslation": "умирающий",
+          "definition": "Dying",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "áttr",
+          "englishTranslation": "possessing",
+          "russianTranslation": "владеющий",
+          "definition": "Possessing",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "eltr",
+          "englishTranslation": "chasing",
+          "russianTranslation": "гоня́щийся",
+          "definition": "Chasing",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "etinn",
+          "englishTranslation": "eating",
+          "russianTranslation": "едящий",
+          "definition": "Eating",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "flýiðr",
+          "englishTranslation": "fleeing",
+          "russianTranslation": "убегающий",
+          "definition": "Fleeing",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "hafðr",
+          "englishTranslation": "having",
+          "russianTranslation": "имеющий",
+          "definition": "Having",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "hataðr",
+          "englishTranslation": "hating",
+          "russianTranslation": "ненавидящий",
+          "definition": "Hating",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "heitinn",
+          "englishTranslation": "called",
+          "russianTranslation": "называющийся",
+          "definition": "Called",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "hlaupinn",
+          "englishTranslation": "running",
+          "russianTranslation": "бежащий",
+          "definition": "Running",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "hræddr",
+          "englishTranslation": "frightening",
+          "russianTranslation": "пугающий",
+          "definition": "Frightening",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "kallaðr",
+          "englishTranslation": "calling",
+          "russianTranslation": "зовущий, кричащий",
+          "definition": "Calling, shouting",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "kenndr",
+          "englishTranslation": "knowing",
+          "russianTranslation": "знающий",
+          "definition": "Knowing",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "kominn",
+          "englishTranslation": "coming",
+          "russianTranslation": "приходящий",
+          "definition": "Coming",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "mæltr",
+          "englishTranslation": "speaking",
+          "russianTranslation": "говорящий",
+          "definition": "Speaking",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "opnaðr",
+          "englishTranslation": "opening",
+          "russianTranslation": "открывающий",
+          "definition": "Opening",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "sagðr",
+          "englishTranslation": "saying",
+          "russianTranslation": "говорящий",
+          "definition": "Saying",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "sénn",
+          "englishTranslation": "seeing",
+          "russianTranslation": "видящий",
+          "definition": "Seeing",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "tekinn",
+          "englishTranslation": "taking",
+          "russianTranslation": "берущий",
+          "definition": "Taking",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "vaknaðr",
+          "englishTranslation": "waking",
+          "russianTranslation": "просыпающийся",
+          "definition": "Waking",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "veginn",
+          "englishTranslation": "killing",
+          "russianTranslation": "убивающий",
+          "definition": "Killing",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "verinn",
+          "englishTranslation": "being",
+          "russianTranslation": "являющийся",
+          "definition": "Being",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "viljaðr",
+          "englishTranslation": "willing",
+          "russianTranslation": "хотящий",
+          "definition": "Willing",
+          "examples": [],
+          "type": "participle"
         }
 ]

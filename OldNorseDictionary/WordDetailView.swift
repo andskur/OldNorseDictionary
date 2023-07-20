@@ -86,7 +86,7 @@ struct WordDetailView: View {
                     verbDetailViewContent()
                 }
                 
-                if word.type == .noun || word.type == .pronoun{
+                if word.type == .noun || word.type == .pronoun || word.type == .adjective || word.type == .participle {
                     nounDetailViewContent()
                 }
 

@@ -14,6 +14,8 @@ enum WordType: String, Codable {
     case adverb
     case conjunction
     case interjection
+    case adjective
+    case participle
     // Add more word types as needed
 }
 
@@ -45,6 +47,18 @@ struct Word: Codable, Identifiable {
         return neutralNoun
     }
     
+    func neutralParticipleForm() -> String? {
+        var neutralForm = oldNorseWord
+        
+        if neutralForm.hasSuffix("inn") {
+            neutralForm.removeLast(3)
+        } else if neutralForm.hasSuffix("ðr") {
+            neutralForm.removeLast()
+        }
+        
+        return neutralForm
+    }
+    
     func generateNounCase(nounCase: Case, number: Number, article: Bool) -> String? {
         switch nounCase {
         case .nominative:
@@ -55,6 +69,7 @@ struct Word: Codable, Identifiable {
             return generateDative(number: number, article: article)
         }
     }
+    
     
     func generateNominative(number: Number, article: Bool) -> String? {
         var nominativeCase = oldNorseWord
@@ -76,7 +91,17 @@ struct Word: Codable, Identifiable {
             if let nominativeCasePlural = cases?.nominative?.plural {
                 nominativeCase = nominativeCasePlural
             } else {
-                nominativeCase += "ar"
+                if type == WordType.adjective {
+                    nominativeCase = neutralNounForm()! + "ir"
+                } else if type == WordType.participle {
+                    if oldNorseWord.hasSuffix("inn") {
+                        nominativeCase = neutralParticipleForm()! + "nir"
+                    } else if oldNorseWord.hasSuffix("ðr") {
+                        nominativeCase = neutralParticipleForm()! + "ir"
+                    }
+                } else {
+                    nominativeCase += "ar"
+                }
             }
             
             if article {
@@ -94,8 +119,16 @@ struct Word: Codable, Identifiable {
         case .singular:
             if let accusativeCaseSingular = cases?.accusative?.singular {
                 accusativeCase = accusativeCaseSingular
+            } else {
+                if type == WordType.adjective {
+                    accusativeCase = neutralNounForm()! + "an"
+                } else if type == WordType.participle {
+                    if oldNorseWord.hasSuffix("ðr") {
+                        accusativeCase = neutralParticipleForm()! + "an"
+                    }
+                }
             }
-            
+                        
             if article {
                 accusativeCase! += "inn"
             }
@@ -107,7 +140,15 @@ struct Word: Codable, Identifiable {
             if let accusativeCasePlural = cases?.accusative?.plural {
                 accusativeCase = accusativeCasePlural
             } else {
-                accusativeCase! += "a"
+                if type == WordType.participle {
+                    if oldNorseWord.hasSuffix("inn") {
+                        accusativeCase = neutralParticipleForm()! + "na"
+                    } else if oldNorseWord.hasSuffix("ðr") {
+                        accusativeCase = neutralParticipleForm()! + "a"
+                    }
+                } else {
+                    accusativeCase! += "a"
+                }
             }
             
             if article {
