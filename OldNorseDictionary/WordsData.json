@@ -197,6 +197,30 @@
           "type": "noun"
         },
         {
+          "oldNorseWord": "grautr",
+          "englishTranslation": "porridge",
+          "russianTranslation": "каша",
+          "definition": "Porridge",
+          "examples": [],
+          "type": "noun"
+        },
+        {
+          "oldNorseWord": "hattr",
+          "englishTranslation": "hat",
+          "russianTranslation": "шляпа, шапка",
+          "definition": "Hat",
+          "examples": [],
+          "type": "noun"
+        },
+        {
+          "oldNorseWord": "knífr",
+          "englishTranslation": "knife",
+          "russianTranslation": "нож",
+          "definition": "Knife",
+          "examples": [],
+          "type": "noun"
+        },
+        {
             "oldNorseWord": "hann",
             "englishTranslation": "he",
             "russianTranslation": "он",
@@ -790,6 +814,76 @@
           "verbSecond": "veiði"
         },
         {
+          "oldNorseWord": "eiga",
+          "englishTranslation": "to be married",
+          "russianTranslation": "быть женатым",
+          "definition": "To be married",
+          "examples": [],
+          "type": "verb",
+          "verbFirst": "eiga",
+          "verbSecond": "eigi"
+        },
+        {
+          "oldNorseWord": "finna",
+          "englishTranslation": "to find",
+          "russianTranslation": "находить, отыскивать",
+          "definition": "To find",
+          "examples": [],
+          "type": "verb",
+          "verbFirst": "finna",
+          "verbSecond": "finni"
+        },
+        {
+          "oldNorseWord": "foera",
+          "englishTranslation": "to bring",
+          "russianTranslation": "приносить, привозить",
+          "definition": "To bring",
+          "examples": [],
+          "type": "verb",
+          "verbFirst": "foera",
+          "verbSecond": "foeri"
+        },
+        {
+          "oldNorseWord": "gefa",
+          "englishTranslation": "to give",
+          "russianTranslation": "давать, дарить",
+          "definition": "To give",
+          "examples": [],
+          "type": "verb",
+          "verbFirst": "gefa",
+          "verbSecond": "gefi"
+        },
+        {
+          "oldNorseWord": "heita",
+          "englishTranslation": "to promise",
+          "russianTranslation": "обещать",
+          "definition": "To promise",
+          "examples": [],
+          "type": "verb",
+          "verbFirst": "heita",
+          "verbSecond": "heitir"
+        },
+        {
+          "oldNorseWord": "hlæja",
+          "englishTranslation": "to laugh",
+          "russianTranslation": "смеяться, высмеивать",
+          "definition": "To laugh",
+          "examples": [],
+          "type": "verb",
+          "verbFirst": "hlæja",
+          "verbSecond": "hlær"
+        },
+        {
+          "oldNorseWord": "kenna",
+          "englishTranslation": "to teach",
+          "russianTranslation": "учить",
+          "definition": "To teach",
+          "examples": [],
+          "type": "verb",
+          "verbFirst": "kenna",
+          "verbSecond": "kenni"
+        },
+        {
           "oldNorseWord": "fagr",
           "englishTranslation": "beautiful",
           "russianTranslation": "красивый, прекрасный",
@@ -1104,9 +1198,6 @@
           "definition": "Going",
           "examples": [],
           "type": "participle",
-          "verbFirst": "fara",
-          "verbSecond": "fer",
-          "participle": "farinn"
         },
         {
           "oldNorseWord": "heyrðr",
@@ -1115,9 +1206,6 @@
           "definition": "Hearing",
           "examples": [],
           "type": "participle",
-          "verbFirst": "heyra",
-          "verbSecond": "heyri",
-          "participle": "heyrðr"
         },
         {
           "oldNorseWord": "spurðr",
@@ -1126,9 +1214,6 @@
           "definition": "Asking",
           "examples": [],
           "type": "participle",
-          "verbFirst": "spyrja",
-          "verbSecond": "spyr",
-          "participle": "spurðr"
         },
         {
           "oldNorseWord": "svaraðr",
@@ -1137,9 +1222,6 @@
           "definition": "Answering",
           "examples": [],
           "type": "participle",
-          "verbFirst": "svara",
-          "verbSecond": "svara",
-          "participle": "svaraðr"
         },
         {
           "oldNorseWord": "veiddr",
@@ -1148,8 +1230,49 @@
           "definition": "Catching",
           "examples": [],
           "type": "participle",
-          "verbFirst": "veiða",
-          "verbSecond": "veiði",
-          "participle": "veiddr"
+        },
+        {
+          "oldNorseWord": "fundinn",
+          "englishTranslation": "finding",
+          "russianTranslation": "находящий",
+          "definition": "Finding",
+          "examples": [],
+          "type": "participle",
+          "verbFirst": "finna",
+          "verbSecond": "finn",
+          "participleForm": "fundinn"
+        },
+        {
+          "oldNorseWord": "foerðr",
+          "englishTranslation": "bringing",
+          "russianTranslation": "приносящий",
+          "definition": "Bringing",
+          "examples": [],
+          "type": "participle",
+          "verbFirst": "foera",
+          "verbSecond": "foeri",
+          "participleForm": "foerðr"
+        },
+        {
+          "oldNorseWord": "gefinn",
+          "englishTranslation": "giving",
+          "russianTranslation": "дающий",
+          "definition": "Giving",
+          "examples": [],
+          "type": "participle",
+          "verbFirst": "gefa",
+          "verbSecond": "gef",
+          "participleForm": "gefinn"
+        },
+        {
+          "oldNorseWord": "hleginn",
+          "englishTranslation": "laughing",
+          "russianTranslation": "смеющийся",
+          "definition": "Laughing",
+          "examples": [],
+          "type": "participle",
+          "verbFirst": "hlæja",
+          "verbSecond": "hlæ",
+          "participleForm": "hleginn"
         }
 ]
