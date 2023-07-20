@@ -170,12 +170,20 @@ struct Word: Codable, Identifiable {
         case .singular:
             if let dativeCaseSingular = cases?.dative?.singular {
                 dativeCase = dativeCaseSingular
+            } else {
+                if type == WordType.participle {
+                    if oldNorseWord.hasSuffix("inn") {
+                        dativeCase = neutralParticipleForm()! + "num"
+                    } else if oldNorseWord.hasSuffix("ðr") {
+                        dativeCase = neutralParticipleForm()! + "um"
+                    }
+                } else {
+                    if let neutral = neutralNounForm() {
+                        dativeCase = "\(neutral)i"
+                    }
+                }
             }
-            
-            if let neutral = neutralNounForm() {
-                dativeCase = "\(neutral)i"
-            }
-            
+        
             if article {
                 dativeCase! += "inum"
             }
@@ -188,7 +196,16 @@ struct Word: Codable, Identifiable {
             if let dativeCasePlural = cases?.dative?.plural {
                 dativeCase = dativeCasePlural
             } else {
-                dativeCase! += "um"
+                if type == WordType.participle {
+                    if oldNorseWord.hasSuffix("inn") {
+                        dativeCase = neutralParticipleForm()! + "num"
+                    } else if oldNorseWord.hasSuffix("ðr") {
+                        dativeCase = neutralParticipleForm()! + "um"
+                    }
+                } else {
+                    dativeCase! += "um"
+
+                }
             }
             
             if article {

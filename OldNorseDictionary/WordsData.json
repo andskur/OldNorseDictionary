@@ -131,11 +131,6 @@
         "oldNorseWord": "maðr",
         "englishTranslation": "man",
         "russianTranslation": "человек",
-        "nominative": "maðr",
-        "nominativePlural": "menn",
-        "accusative": "mann",
-        "accusativePlural": "menn",
-        "dative": "manni",
         "definition": "An adult human male",
         "examples": [],
         "type": "noun",
@@ -207,12 +202,6 @@
             "russianTranslation": "он",
             "definition": "Third-person singular masculine pronoun",
             "examples": [],
-            "nominative": "hann",
-            "nominativePlural": "þeir",
-            "accusative": "hann",
-            "accusativePlural": "þá",
-            "dative": "honum",
-            "dativePlural": "þeim",
             "type": "pronoun",
             "cases": {
                 "nominative": {
@@ -260,17 +249,11 @@
             "russianTranslation": "ты",
             "definition": "Second-person singular pronoun",
             "examples": ["þú ert vinur minn.", "Þú kemur seinna."],
-            "accusative": "þik",
-            "accusativePlural": "yðr",
-            "accusativeDual": "ykkr",
-            "dative": "þér",
-            "dativePlural": "yðr",
-            "dativeDual": "ykkr",
             "type": "pronoun",
             "cases": {
                 "nominative": {
                     "singular": "þú",
-                    "dual": "þit",
+                    "dual": "þik",
                     "plural": "þér"
                 },
                 "accusative": {
@@ -313,7 +296,21 @@
           "russianTranslation": "весь, целый",
           "definition": "All, whole",
           "examples": [],
-          "type": "pronoun"
+          "type": "pronoun",
+          "cases": {
+              "nominative": {
+                  "singular": "allr",
+                  "plural": "allir"
+              },
+              "accusative": {
+                  "singular": "allan",
+                  "plural": "alla"
+              },
+              "dative": {
+                  "singular": "öllum",
+                  "plural": "öllum"
+              }
+          }
         },
         {
           "oldNorseWord": "margr",
