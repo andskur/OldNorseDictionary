@@ -308,6 +308,22 @@
             }
         },
         {
+          "oldNorseWord": "allr",
+          "englishTranslation": "all, whole",
+          "russianTranslation": "весь, целый",
+          "definition": "All, whole",
+          "examples": [],
+          "type": "pronoun"
+        },
+        {
+          "oldNorseWord": "margr",
+          "englishTranslation": "many",
+          "russianTranslation": "многий, многочисленный",
+          "definition": "Many",
+          "examples": [],
+          "type": "pronoun"
+        },
+        {
             "oldNorseWord": "eigi",
             "englishTranslation": "not",
             "russianTranslation": "не",
@@ -376,6 +392,22 @@
           "englishTranslation": "therefore",
           "russianTranslation": "потому, поэтому",
           "definition": "Therefore",
+          "examples": [],
+          "type": "adverb"
+        },
+        {
+          "oldNorseWord": "brátt",
+          "englishTranslation": "soon",
+          "russianTranslation": "скоро, вскоре",
+          "definition": "Soon",
+          "examples": [],
+          "type": "adverb"
+        },
+        {
+          "oldNorseWord": "oft",
+          "englishTranslation": "often",
+          "russianTranslation": "часто, неоднократно",
+          "definition": "Often",
           "examples": [],
           "type": "adverb"
         },
@@ -711,6 +743,56 @@
           "verbSecond": "opna"
         },
         {
+          "oldNorseWord": "fara",
+          "englishTranslation": "to go",
+          "russianTranslation": "идти, ехать",
+          "definition": "To go",
+          "examples": [],
+          "type": "verb",
+          "verbFirst": "fara",
+          "verbSecond": "fer"
+        },
+        {
+          "oldNorseWord": "heyra",
+          "englishTranslation": "to listen, to hear",
+          "russianTranslation": "слушать, слышать",
+          "definition": "To listen, to hear",
+          "examples": [],
+          "type": "verb",
+          "verbFirst": "heyra",
+          "verbSecond": "heyri"
+        },
+        {
+          "oldNorseWord": "spyrja",
+          "englishTranslation": "to ask",
+          "russianTranslation": "спрашивать, справляться",
+          "definition": "To ask",
+          "examples": [],
+          "type": "verb",
+          "verbFirst": "spyrja",
+          "verbSecond": "spyr"
+        },
+        {
+          "oldNorseWord": "svara",
+          "englishTranslation": "to answer",
+          "russianTranslation": "отвечать, давать ответ",
+          "definition": "To answer",
+          "examples": [],
+          "type": "verb",
+          "verbFirst": "svara",
+          "verbSecond": "svara"
+        },
+        {
+          "oldNorseWord": "veiða",
+          "englishTranslation": "to catch, to hunt",
+          "russianTranslation": "ловить, охотиться",
+          "definition": "To catch, to hunt",
+          "examples": [],
+          "type": "verb",
+          "verbFirst": "veiða",
+          "verbSecond": "veiði"
+        },
+        {
           "oldNorseWord": "fagr",
           "englishTranslation": "beautiful",
           "russianTranslation": "красивый, прекрасный",
@@ -799,6 +881,38 @@
           "englishTranslation": "big",
           "russianTranslation": "большой, крупный",
           "definition": "Big, large",
+          "examples": [],
+          "type": "adjective"
+        },
+        {
+          "oldNorseWord": "danskr",
+          "englishTranslation": "Danish",
+          "russianTranslation": "датский",
+          "definition": "Danish",
+          "examples": [],
+          "type": "adjective"
+        },
+        {
+          "oldNorseWord": "glaðr",
+          "englishTranslation": "happy, joyful",
+          "russianTranslation": "радостный, весёлый",
+          "definition": "Happy, joyful",
+          "examples": [],
+          "type": "adjective"
+        },
+        {
+          "oldNorseWord": "svangr",
+          "englishTranslation": "hungry",
+          "russianTranslation": "голодный",
+          "definition": "Hungry",
+          "examples": [],
+          "type": "adjective"
+        },
+        {
+          "oldNorseWord": "svartr",
+          "englishTranslation": "black, dark",
+          "russianTranslation": "чёрный, тёмный",
+          "definition": "Black, dark",
           "examples": [],
           "type": "adjective"
         },
@@ -985,5 +1099,60 @@
           "definition": "Willing",
           "examples": [],
           "type": "participle"
+        },
+        {
+          "oldNorseWord": "farinn",
+          "englishTranslation": "going",
+          "russianTranslation": "идущий",
+          "definition": "Going",
+          "examples": [],
+          "type": "participle",
+          "verbFirst": "fara",
+          "verbSecond": "fer",
+          "participle": "farinn"
+        },
+        {
+          "oldNorseWord": "heyrðr",
+          "englishTranslation": "hearing",
+          "russianTranslation": "слышащий",
+          "definition": "Hearing",
+          "examples": [],
+          "type": "participle",
+          "verbFirst": "heyra",
+          "verbSecond": "heyri",
+          "participle": "heyrðr"
+        },
+        {
+          "oldNorseWord": "spurðr",
+          "englishTranslation": "asking",
+          "russianTranslation": "спрашивающий",
+          "definition": "Asking",
+          "examples": [],
+          "type": "participle",
+          "verbFirst": "spyrja",
+          "verbSecond": "spyr",
+          "participle": "spurðr"
+        },
+        {
+          "oldNorseWord": "svaraðr",
+          "englishTranslation": "answering",
+          "russianTranslation": "отвечающий",
+          "definition": "Answering",
+          "examples": [],
+          "type": "participle",
+          "verbFirst": "svara",
+          "verbSecond": "svara",
+          "participle": "svaraðr"
+        },
+        {
+          "oldNorseWord": "veiddr",
+          "englishTranslation": "catching",
+          "russianTranslation": "ловящий",
+          "definition": "Catching",
+          "examples": [],
+          "type": "participle",
+          "verbFirst": "veiða",
+          "verbSecond": "veiði",
+          "participle": "veiddr"
         }
 ]
