@@ -9,5 +9,6 @@ import Foundation
 
 enum Person: String, CaseIterable {
     case first
+    case second
     case third
 }

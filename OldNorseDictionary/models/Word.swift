@@ -174,6 +174,34 @@ struct Word: Codable, Identifiable {
                 } else if let verbFirst = verbFirst{
                     return  (verbFirst.dropLast()) + "um"
                 }            }
+        case .second:
+            switch number {
+            case .singular:
+                if let secondPerson = conjugation?.singular?.secondPerson {
+                    return secondPerson
+                }  else if let verbSecond = verbSecond{
+                    return verbSecond + "r"
+                }
+            case .dual, .plural:
+                if let secondPerson = conjugation?.plural?.secondPerson {
+                    return secondPerson
+                } else if var verbFirst = verbFirst{
+                    
+                    if verbFirst.last == "a" {
+                        verbFirst.removeLast()
+                    }
+                    
+                    if verbFirst.last == "j" || verbFirst.last == "a" {
+                        verbFirst.removeLast()
+                    }
+                    
+                    if verbFirst.last != "i" {
+                        verbFirst += "i"
+                    }
+                    
+                    return verbFirst + "ð"
+                }
+            }
         case .third:
             switch number {
             case .singular:

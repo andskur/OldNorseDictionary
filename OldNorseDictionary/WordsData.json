@@ -413,25 +413,17 @@
             "conjugation": {
                 "singular": {
                     "firstPerson": "em",
+                    "secondPerson": "ert",
                     "thirdPerson": "er",
                 },
                 "plural": {
                     "firstPerson": "erum",
+                    "secondPerson": "eruð",
                     "thirdPerson": "eru"
                 }
             },
             "verbFirst": "er",
             "verbSecond": "eru"
-        },
-        {
-            "oldNorseWord": "heita",
-            "englishTranslation": "is called, is named",
-            "russianTranslation": "зовётся, называется",
-            "definition": "Third-person singular present indicative of the verb 'heita' (to be called)",
-            "examples": ["Hann heitir Ólafur.", "Þau heita Guðrún og Jón."],
-            "type": "verb",
-            "verbFirst": "heita",
-            "verbSecond": "heiti"
         },
         {
             "oldNorseWord": "eigu",
@@ -443,9 +435,11 @@
             "conjugation": {
                 "singular": {
                     "thirdPerson": "á",
+                    "secondPerson": "átt",
                 },
                 "plural": {
                     "firstPerson": "eigum",
+                    "secondPerson": "eiguð",
                     "thirdPerson": "eigu"
                 }
             },
@@ -468,6 +462,16 @@
             "verbSecond": "hefi"
         },
         {
+            "oldNorseWord": "heita",
+            "englishTranslation": "is called, is named",
+            "russianTranslation": "зовётся, называется",
+            "definition": "Third-person singular present indicative of the verb 'heita' (to be called)",
+            "examples": ["Hann heitir Ólafur.", "Þau heita Guðrún og Jón."],
+            "type": "verb",
+            "verbFirst": "heita",
+            "verbSecond": "heiti"
+        },
+        {
             "oldNorseWord": "segja",
             "englishTranslation": "says",
             "russianTranslation": "говорит",
@@ -487,6 +491,7 @@
             "conjugation": {
                 "plural": {
                     "firstPerson": "sjám",
+                    "secondPerson": "séð",
                 }
             },
             "verbFirst": "sjá",
@@ -526,6 +531,7 @@
             "type": "verb",
             "conjugation": {
                 "singular": {
+                    "secondPerson": "vilt",
                     "thirdPerson": "vill",
                 }
             },
