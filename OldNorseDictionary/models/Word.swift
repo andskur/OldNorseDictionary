@@ -16,7 +16,7 @@ enum WordType: String, Codable {
     case interjection
     case adjective
     case participle
-    // Add more word types as needed
+    case preposition
 }
 
 

@@ -221,6 +221,94 @@
           "type": "noun"
         },
         {
+          "oldNorseWord": "eldr",
+          "englishTranslation": "fire",
+          "russianTranslation": "огонь, пожар",
+          "definition": "Fire",
+          "examples": [],
+          "type": "noun"
+        },
+        {
+          "oldNorseWord": "fors",
+          "englishTranslation": "waterfall",
+          "russianTranslation": "водопад",
+          "definition": "Waterfall",
+          "examples": [],
+          "type": "noun"
+        },
+        {
+          "oldNorseWord": "garðr",
+          "englishTranslation": "city, fence",
+          "russianTranslation": "город, ограда",
+          "definition": "City, fence",
+          "examples": [],
+          "type": "noun"
+        },
+        {
+          "oldNorseWord": "haugr",
+          "englishTranslation": "mound, burial mound",
+          "russianTranslation": "курган, могильная насыпь",
+          "definition": "Mound, burial mound",
+          "examples": [],
+          "type": "noun"
+        },
+        {
+          "oldNorseWord": "heimr",
+          "englishTranslation": "world, country",
+          "russianTranslation": "мир, страна",
+          "definition": "World, country",
+          "examples": [],
+          "type": "noun"
+        },
+        {
+          "oldNorseWord": "hólmr",
+          "englishTranslation": "islet, small island",
+          "russianTranslation": "островок, небольшой остров",
+          "definition": "Islet, small island",
+          "examples": [],
+          "type": "noun"
+        },
+        {
+          "oldNorseWord": "skógr",
+          "englishTranslation": "forest",
+          "russianTranslation": "лес",
+          "definition": "Forest",
+          "examples": [],
+          "type": "noun"
+        },
+        {
+          "oldNorseWord": "vangr",
+          "englishTranslation": "meadow",
+          "russianTranslation": "луг",
+          "definition": "Meadow",
+          "examples": [],
+          "type": "noun"
+        },
+        {
+          "oldNorseWord": "vargr",
+          "englishTranslation": "wolf",
+          "russianTranslation": "волк",
+          "definition": "Wolf",
+          "examples": [],
+          "type": "noun"
+        },
+        {
+          "oldNorseWord": "vágr",
+          "englishTranslation": "bay",
+          "russianTranslation": "залив, бухта",
+          "definition": "Bay",
+          "examples": [],
+          "type": "noun"
+        },
+        {
+          "oldNorseWord": "vegr",
+          "englishTranslation": "path, road",
+          "russianTranslation": "путь, дорога",
+          "definition": "Path, road",
+          "examples": [],
+          "type": "noun"
+        },
+        {
             "oldNorseWord": "hann",
             "englishTranslation": "he",
             "russianTranslation": "он",
@@ -345,6 +433,14 @@
           "type": "pronoun"
         },
         {
+          "oldNorseWord": "sumr",
+          "englishTranslation": "some, certain",
+          "russianTranslation": "некоторый",
+          "definition": "Some, certain",
+          "examples": [],
+          "type": "pronoun"
+        },
+        {
             "oldNorseWord": "eigi",
             "englishTranslation": "not",
             "russianTranslation": "не",
@@ -465,6 +561,54 @@
           "type": "conjunction"
         },
         {
+          "oldNorseWord": "svá",
+          "englishTranslation": "so, thus",
+          "russianTranslation": "так, затем",
+          "definition": "So, thus",
+          "examples": [],
+          "type": "adverb"
+        },
+        {
+          "oldNorseWord": "vel",
+          "englishTranslation": "well, willingly",
+          "russianTranslation": "хорошо, охотно",
+          "definition": "Well, willingly",
+          "examples": [],
+          "type": "adverb"
+        },
+        {
+          "oldNorseWord": "ef",
+          "englishTranslation": "if, in case",
+          "russianTranslation": "если, в случае если",
+          "definition": "If, in case",
+          "examples": [],
+          "type": "conjunction"
+        },
+        {
+          "oldNorseWord": "meðan",
+          "englishTranslation": "while, as long as",
+          "russianTranslation": "пока, в то время как",
+          "definition": "While, as long as",
+          "examples": [],
+          "type": "conjunction"
+        },
+        {
+          "oldNorseWord": "sem",
+          "englishTranslation": "as, like",
+          "russianTranslation": "как, что",
+          "definition": "As, like",
+          "examples": [],
+          "type": "conjunction"
+        },
+        {
+          "oldNorseWord": "svá sem",
+          "englishTranslation": "as, just as",
+          "russianTranslation": "так ... как",
+          "definition": "As, just as",
+          "examples": [],
+          "type": "conjunction"
+        },
+        {
             "oldNorseWord": "já",
             "englishTranslation": "yes",
             "russianTranslation": "да",
@@ -487,6 +631,30 @@
             "definition": "Greetings, hello",
             "examples": [],
             "type": "interjection"
+        },
+        {
+          "oldNorseWord": "eða",
+          "englishTranslation": "or",
+          "russianTranslation": "или, либо",
+          "definition": "Or",
+          "examples": [],
+          "type": "interjection"
+        },
+        {
+          "oldNorseWord": "í",
+          "englishTranslation": "in, on",
+          "russianTranslation": "в, на",
+          "definition": "In, on",
+          "examples": [],
+          "type": "preposition"
+        },
+        {
+          "oldNorseWord": "með",
+          "englishTranslation": "with",
+          "russianTranslation": "с, вместе с",
+          "definition": "With",
+          "examples": [],
+          "type": "preposition"
         },
         {
             "oldNorseWord": "er",
@@ -884,6 +1052,86 @@
           "verbSecond": "kenni"
         },
         {
+          "oldNorseWord": "brenna",
+          "englishTranslation": "to burn, to blaze",
+          "russianTranslation": "гореть, пылать",
+          "definition": "To burn, to blaze",
+          "examples": [],
+          "type": "verb",
+          "verbFirst": "brenna",
+          "verbSecond": "brenn"
+        },
+        {
+          "oldNorseWord": "búa",
+          "englishTranslation": "to live, to dwell",
+          "russianTranslation": "жить, проживать",
+          "definition": "To live, to dwell",
+          "examples": [],
+          "type": "verb",
+          "verbFirst": "búa",
+          "verbSecond": "bý"
+        },
+        {
+          "oldNorseWord": "búa",
+          "englishTranslation": "to equip, to dress",
+          "russianTranslation": "снаряжать, одевать",
+          "definition": "To equip, to dress",
+          "examples": [],
+          "type": "verb",
+          "verbFirst": "búa",
+          "verbSecond": "búa"
+        },
+        {
+          "oldNorseWord": "elda",
+          "englishTranslation": "to cook, to fuel",
+          "russianTranslation": "готовить, топить",
+          "definition": "To cook, to fuel",
+          "examples": [],
+          "type": "verb",
+          "verbFirst": "elda",
+          "verbSecond": "elda"
+        },
+        {
+          "oldNorseWord": "falla",
+          "englishTranslation": "to fall",
+          "russianTranslation": "падать, пасть",
+          "definition": "To fall",
+          "examples": [],
+          "type": "verb",
+          "verbFirst": "falla",
+          "verbSecond": "fell"
+        },
+        {
+          "oldNorseWord": "ganga",
+          "englishTranslation": "to go, to walk",
+          "russianTranslation": "идти, ходить",
+          "definition": "To go, to walk",
+          "examples": [],
+          "type": "verb",
+          "verbFirst": "ganga",
+          "verbSecond": "geng"
+        },
+        {
+          "oldNorseWord": "lifa",
+          "englishTranslation": "to live, to be alive",
+          "russianTranslation": "жить, быть живым",
+          "definition": "To live, to be alive",
+          "examples": [],
+          "type": "verb",
+          "verbFirst": "lifa",
+          "verbSecond": "lifi"
+        },
+        {
+          "oldNorseWord": "sigla",
+          "englishTranslation": "to sail",
+          "russianTranslation": "идти под парусами, плыть на судне",
+          "definition": "To sail",
+          "examples": [],
+          "type": "verb",
+          "verbFirst": "sigla",
+          "verbSecond": "sigli"
+        },
+        {
           "oldNorseWord": "fagr",
           "englishTranslation": "beautiful",
           "russianTranslation": "красивый, прекрасный",
@@ -1004,6 +1252,94 @@
           "englishTranslation": "black, dark",
           "russianTranslation": "чёрный, тёмный",
           "definition": "Black, dark",
+          "examples": [],
+          "type": "adjective"
+        },
+        {
+          "oldNorseWord": "breiðr",
+          "englishTranslation": "wide, broad",
+          "russianTranslation": "большой, широкий",
+          "definition": "Wide, broad",
+          "examples": [],
+          "type": "adjective"
+        },
+        {
+          "oldNorseWord": "djúpr",
+          "englishTranslation": "deep",
+          "russianTranslation": "глубокий",
+          "definition": "Deep",
+          "examples": [],
+          "type": "adjective"
+        },
+        {
+          "oldNorseWord": "fár",
+          "englishTranslation": "few, scarce",
+          "russianTranslation": "немногий, немногочисленный",
+          "definition": "Few, scarce",
+          "examples": [],
+          "type": "adjective"
+        },
+        {
+          "oldNorseWord": "feigr",
+          "englishTranslation": "dying, doomed to die",
+          "russianTranslation": "близкий к смерти, обречённый на смерть",
+          "definition": "Dying, doomed to die",
+          "examples": [],
+          "type": "adjective"
+        },
+        {
+          "oldNorseWord": "gylltr",
+          "englishTranslation": "golden, gilded",
+          "russianTranslation": "золотой, позолоченный",
+          "definition": "Golden, gilded",
+          "examples": [],
+          "type": "adjective"
+        },
+        {
+          "oldNorseWord": "heiðr",
+          "englishTranslation": "clear, bright",
+          "russianTranslation": "чистый, ясный",
+          "definition": "Clear, bright",
+          "examples": [],
+          "type": "adjective"
+        },
+        {
+          "oldNorseWord": "langr",
+          "englishTranslation": "long",
+          "russianTranslation": "длинный, долгий",
+          "definition": "Long",
+          "examples": [],
+          "type": "adjective"
+        },
+        {
+          "oldNorseWord": "norskr",
+          "englishTranslation": "Norwegian",
+          "russianTranslation": "норвежский",
+          "definition": "Norwegian",
+          "examples": [],
+          "type": "adjective"
+        },
+        {
+          "oldNorseWord": "spakr",
+          "englishTranslation": "wise, intelligent",
+          "russianTranslation": "мудрый, умный",
+          "definition": "Wise, intelligent",
+          "examples": [],
+          "type": "adjective"
+        },
+        {
+          "oldNorseWord": "sterkr",
+          "englishTranslation": "strong, powerful",
+          "russianTranslation": "сильный, крепкий",
+          "definition": "Strong, powerful",
+          "examples": [],
+          "type": "adjective"
+        },
+        {
+          "oldNorseWord": "víðr",
+          "englishTranslation": "wide, extensive",
+          "russianTranslation": "широкий, обширный",
+          "definition": "Wide, extensive",
           "examples": [],
           "type": "adjective"
         },
@@ -1238,9 +1574,6 @@
           "definition": "Finding",
           "examples": [],
           "type": "participle",
-          "verbFirst": "finna",
-          "verbSecond": "finn",
-          "participleForm": "fundinn"
         },
         {
           "oldNorseWord": "foerðr",
@@ -1249,9 +1582,6 @@
           "definition": "Bringing",
           "examples": [],
           "type": "participle",
-          "verbFirst": "foera",
-          "verbSecond": "foeri",
-          "participleForm": "foerðr"
         },
         {
           "oldNorseWord": "gefinn",
@@ -1260,9 +1590,6 @@
           "definition": "Giving",
           "examples": [],
           "type": "participle",
-          "verbFirst": "gefa",
-          "verbSecond": "gef",
-          "participleForm": "gefinn"
         },
         {
           "oldNorseWord": "hleginn",
@@ -1271,8 +1598,61 @@
           "definition": "Laughing",
           "examples": [],
           "type": "participle",
-          "verbFirst": "hlæja",
-          "verbSecond": "hlæ",
-          "participleForm": "hleginn"
+        },
+        {
+          "oldNorseWord": "brunninn",
+          "englishTranslation": "burning, blazing",
+          "russianTranslation": "горящий, пылающий",
+          "definition": "Burning, blazing",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "búinn",
+          "englishTranslation": "living, dwelling",
+          "russianTranslation": "живущий",
+          "definition": "Living, dwelling",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "eldaðr",
+          "englishTranslation": "cooking, fueling",
+          "russianTranslation": "готовящий",
+          "definition": "Cooking, fueling",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "fallinn",
+          "englishTranslation": "falling",
+          "russianTranslation": "падающий",
+          "definition": "Falling",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "genginn",
+          "englishTranslation": "going, walking",
+          "russianTranslation": "идущий",
+          "definition": "Going, walking",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "lifaðr",
+          "englishTranslation": "living, being alive",
+          "russianTranslation": "живущий",
+          "definition": "Living, being alive",
+          "examples": [],
+          "type": "participle"
+        },
+        {
+          "oldNorseWord": "siglðr",
+          "englishTranslation": "sailing",
+          "russianTranslation": "идущий под парусом",
+          "definition": "Sailing",
+          "examples": [],
+          "type": "participle"
         }
 ]
