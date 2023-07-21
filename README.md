@@ -1,8 +1,7 @@
 # Old Norse Dictionary 📚
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Swift](https://img.shields.io/badge/Swift-5.5-orange.svg)](https://swift.org/)
-[![iOS](https://img.shields.io/badge/iOS-15.0%2B-blue.svg)](https://developer.apple.com/ios/)
+[![Swift](https://img.shields.io/badge/Swift-5.8-orange.svg)](https://swift.org/)
 
 Welcome to the Old Norse Dictionary app repository! This iOS app allows you to explore the fascinating world of Old Norse language with its extensive collection of nouns, verbs, adjectives, adverbs, and more. Whether you're a language enthusiast, a history buff, or just curious about Old Norse, this app is your gateway to the ancient language of the Vikings.
 
