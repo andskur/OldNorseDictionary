@@ -13,9 +13,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Set up Xcode
-      uses: actions/setup-xcode@v2
-      with:
-        xcode-version: '14.3.1' # Replace with your desired Xcode version if needed
+      run: sudo xcode-select -switch /Applications/Xcode_14.0.app && /usr/bin/xcodebuild -version
 
     - name: Install CocoaPods
       run: |
