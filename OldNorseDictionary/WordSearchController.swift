@@ -35,7 +35,13 @@ class WordSearchController: ObservableObject {
     var filteredWords: [Word] {
         if searchQuery.isEmpty {
             // Show all loaded words when the search query is empty
-            return loadedWords
+            return loadedWords.sorted(by: {
+                if $1.oldNorseWord > $0.oldNorseWord {
+                    return true
+                }
+                
+                return false
+            })
         } else {
             return fetchWordDetails(for: searchQuery, searchDirection: searchDirection)
         }
@@ -99,6 +105,12 @@ class WordSearchController: ObservableObject {
             let thirdPluralMatchesQuery = word.generateConjugation(person: .third, number: .plural)?.lowercased().contains(lowercaseQuery) == true
             
             return wordMatchesQuery || nominativeSingularMatchesQuery || nominativeDualMatchesQuery || nominativePluralMatchesQuery || accusativeSingularMatchesQuery || accusativeDualMatchesQuery || accusativePluralMatchesQuery || dativeSingularMatchesQuery || dativeDualMatchesQuery || dativePluralMatchesQuery || firstSingularMatchesQuery || secondSingularMatchesQuery || thirdSingularMatchesQuery || firstPluralMatchesQuery || secondPluralMatchesQuery || thirdPluralMatchesQuery
-        }
+        }.sorted(by: {
+            if $1.oldNorseWord.count > $0.oldNorseWord.count {
+                return true
+            }
+            
+            return false
+        })
     }
 }
