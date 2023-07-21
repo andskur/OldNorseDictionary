@@ -21,7 +21,5 @@ jobs:
         pod setup
 
     - name: Build and Test
-      run: |
-        pod install
-        xcodebuild test -workspace OldNorseDictionary.xcworkspace -scheme OldNorseDictionaryTests -destination 'platform=iOS Simulator,name=iPhone 14'
+      run: xcodebuild test -workspace OldNorseDictionary.xcworkspace -scheme OldNorseDictionaryTests -destination 'platform=iOS Simulator,name=iPhone 14'
 
