@@ -21,5 +21,5 @@ jobs:
         pod setup
 
     - name: Build and Test
-      run: xcodebuild test -scheme OldNorseDictionary -project OldNorseDictionary.xcodeproj -destination 'platform=macOS,arch=arm64'
+      run: xcodebuild test -scheme OldNorseDictionary -project OldNorseDictionary.xcodeproj -destination 'platform=macOS,arch=x86_64'
 
