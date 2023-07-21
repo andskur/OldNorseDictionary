@@ -100,12 +100,12 @@ struct Word: Codable, Identifiable {
                         nominativeCase = neutralParticipleForm()! + "ir"
                     }
                 } else {
-                    nominativeCase += "ar"
+                    nominativeCase = neutralNounForm()! + "ar"
                 }
             }
             
             if article {
-                nominativeCase += "inir"
+                nominativeCase += "nir"
             }
         }
         
@@ -185,6 +185,10 @@ struct Word: Codable, Identifiable {
             }
         
             if article {
+                if dativeCase?.last == "i" {
+                    dativeCase?.removeLast()
+                }
+                
                 dativeCase! += "inum"
             }
             
@@ -209,6 +213,11 @@ struct Word: Codable, Identifiable {
             }
             
             if article {
+                if dativeCase?.last == "m" {
+                    dativeCase?.removeLast()
+                    dativeCase! += "n"
+                }
+                
                 dativeCase! += "um"
             }
         }
