@@ -33,7 +33,12 @@ class WordSearchController: ObservableObject {
     @Published var loadedWords: [Word] = []
 
     var filteredWords: [Word] {
-        fetchWordDetails(for: searchQuery, searchDirection: searchDirection)
+        if searchQuery.isEmpty {
+            // Show all loaded words when the search query is empty
+            return loadedWords
+        } else {
+            return fetchWordDetails(for: searchQuery, searchDirection: searchDirection)
+        }
     }
     
     init() {
