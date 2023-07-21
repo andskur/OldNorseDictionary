@@ -23,7 +23,7 @@ struct WordDetailView: View {
                         Text("\(person.rawValue.capitalized):")
                             .font(.subheadline)
                             .fontWeight(.bold)
-                    }.frame(width: 100, height: 10).padding(5)
+                    }.frame(height: 10).padding(5)
                     
                     ForEach(Number.allCases, id: \.rawValue) { num in
                         verbRow(person: person, num: num)
@@ -44,7 +44,7 @@ struct WordDetailView: View {
                 if !(word.type != .pronoun && num == .dual) {
                     Section {
                         Text(num.rawValue.capitalized)
-                    }.frame(width: 100, height: 10).padding(8)
+                    }.frame(height: 10).padding(8)
                 }
             }
         }
@@ -59,7 +59,7 @@ struct WordDetailView: View {
                         .foregroundColor(.secondary)
                 }
             }
-        }.frame(width: 120, height: 10).padding(5)
+        }.frame(height: 10).padding(5)
     }
     
     func nounceRow(c: Case, num: Number) -> some View {
@@ -71,7 +71,7 @@ struct WordDetailView: View {
                         .foregroundColor(.secondary)
                 }
             }
-        }.frame(width: 120, height: 10).padding(5)
+        }.frame(height: 10).padding(5)
     }
 
     func nounDetailViewContent() -> some View {
@@ -86,7 +86,7 @@ struct WordDetailView: View {
                         Text("\(c.rawValue.capitalized):")
                             .font(.subheadline)
                             .fontWeight(.bold)
-                    }.frame(width: 100, height: 10).padding(5)
+                    }.frame(height: 10).padding(5)
                     
                     ForEach(Number.allCases, id: \.rawValue) { num in
                         nounceRow(c: c,num: num)
