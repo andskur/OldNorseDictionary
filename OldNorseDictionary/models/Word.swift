@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum WordType: String, Codable {
+enum WordType: String, Codable, CaseIterable {
     case noun
     case verb
     case pronoun

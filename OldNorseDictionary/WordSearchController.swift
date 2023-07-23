@@ -30,10 +30,13 @@ func searchDiractionDesc(direction: SearchDirection) -> String {
 class WordSearchController: ObservableObject {
     @Published var searchQuery: String = ""
     @Published var searchDirection: SearchDirection = .oldNorseToRussian
+    @Published var selectedWordType: WordType?
     @Published var loadedWords: [Word] = []
 
     var filteredWords: [Word] {
-        if searchQuery.isEmpty {
+        if !searchQuery.isEmpty || selectedWordType != nil {
+            return fetchWordDetails(for: searchQuery, searchDirection: searchDirection, wordType: selectedWordType)
+        } else {
             // Show all loaded words when the search query is empty
             return loadedWords.sorted(by: {
                 if $1.oldNorseWord > $0.oldNorseWord {
@@ -42,9 +45,21 @@ class WordSearchController: ObservableObject {
                 
                 return false
             })
-        } else {
-            return fetchWordDetails(for: searchQuery, searchDirection: searchDirection)
         }
+        
+        
+//        if searchQuery.isEmpty {
+//            // Show all loaded words when the search query is empty
+//            return loadedWords.sorted(by: {
+//                if $1.oldNorseWord > $0.oldNorseWord {
+//                    return true
+//                }
+//
+//                return false
+//            })
+//        } else {
+//            return fetchWordDetails(for: searchQuery, searchDirection: searchDirection, wordType: selectedWordType)
+//        }
     }
     
     init() {
@@ -66,19 +81,34 @@ class WordSearchController: ObservableObject {
         }
     }
     
-    func fetchWordDetails(for searchQuery: String, searchDirection: SearchDirection) -> [Word] {
+    func fetchWordDetails(for searchQuery: String, searchDirection: SearchDirection, wordType: WordType?) -> [Word] {
         let lowercaseQuery = searchQuery.lowercased()
-        let filteredWords: [Word]
+        var filteredWords: [Word] = loadedWords
         
-        switch searchDirection {
-        case .englishToOldNorse:
-            filteredWords = loadedWords.filter { $0.englishTranslation.lowercased().contains(lowercaseQuery) }
-        case .oldNorseToEnglish:
-            filteredWords = filterWords(loadedWords, with: lowercaseQuery)
-        case .russianToOldNorse:
-            filteredWords = loadedWords.filter { $0.russianTranslation.lowercased().contains(lowercaseQuery) }
-        case .oldNorseToRussian:
-            filteredWords = filterWords(loadedWords, with: lowercaseQuery)
+        if wordType != nil {
+            filteredWords = filteredWords
+                .filter { $0.type == wordType }
+                .sorted(by: {
+                    if $1.oldNorseWord > $0.oldNorseWord {
+                        return true
+                    }
+                    
+                    return false
+                })
+        }
+
+        
+        if !searchQuery.isEmpty {
+            switch searchDirection {
+            case .englishToOldNorse:
+                filteredWords = filteredWords.filter { $0.englishTranslation.lowercased().contains(lowercaseQuery) }
+            case .oldNorseToEnglish:
+                filteredWords = filterWords(filteredWords, with: lowercaseQuery)
+            case .russianToOldNorse:
+                filteredWords = filteredWords.filter { $0.russianTranslation.lowercased().contains(lowercaseQuery) }
+            case .oldNorseToRussian:
+                filteredWords = filterWords(filteredWords, with: lowercaseQuery)
+            }
         }
         
         return filteredWords
