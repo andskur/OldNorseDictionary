@@ -9,37 +9,57 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var controller = WordSearchController()
+    @State private var isSidebarActive = false
     
-    @State var showingSettings = false
     
-    var body: some View {
-        VStack {
-              Section(
-                header: SectionHeader(
-                  title: "Settings",
-                  isOn: $showingSettings,
-                  onLabel: "Hide",
-                  offLabel: "Show"
-                )
-              ) {
-                if showingSettings {
-                    Form {
-                        Picker("Word Type", selection: $controller.selectedWordType) {
-                            Text("All").tag(Optional<WordType>(nil))
-                            ForEach(WordType.allCases, id: \.self) { wordType in
-                                Text(wordType.rawValue.capitalized).tag(Optional(wordType))
-                            }
-                        }
-
-                        Picker("Search Direction", selection: $controller.searchDirection) {
-                            ForEach(SearchDirection.allCases, id: \.self) { direction in
-                                Text(searchDiractionDesc(direction: direction)).tag(direction)
-                            }
-                        }
+    var setting: some View {
+        Group {
+            #if os(iOS)
+            HStack(spacing: 4) {
+                Spacer()
+                Button(action: {isSidebarActive.toggle() }, label: {
+                    Image(systemName: "xmark.circle")
+                })
+            }
+            
+            .padding(.trailing)
+            #endif
+            
+            Form {
+                Picker("Word Type", selection: $controller.selectedWordType) {
+                    Text("All").tag(Optional<WordType>(nil))
+                    ForEach(WordType.allCases, id: \.self) { wordType in
+                        Text(wordType.rawValue.capitalized).tag(Optional(wordType))
                     }
                 }
-              }.padding()
+
+                Picker("Search Direction", selection: $controller.searchDirection) {
+                    ForEach(SearchDirection.allCases, id: \.self) { direction in
+                        Text(searchDiractionDesc(direction: direction)).tag(direction)
+                    }
+                }
+            }
+            .padding()
             
+         }
+         .padding()
+    }
+    
+    var body: some View {
+        #if os(iOS)
+        Button(action: {isSidebarActive.toggle() }, label: {
+            Spacer()
+            Image(systemName: "gear")
+                
+        })
+        .sheet(isPresented: $isSidebarActive) {
+            setting
+        }
+        .padding(.trailing)
+        #endif
+            
+        // Main Content
+        VStack {
             TextField(controller.searchDirection == .englishToOldNorse ? "Enter English word" : "Enter Old Norse word", text: $controller.searchQuery)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
@@ -56,6 +76,26 @@ struct ContentView: View {
         .onAppear {
             controller.loadWordsData()
         }
+        
+        #if os(macOS)
+        .toolbar {
+            ToolbarItem(placement: .automatic) {
+                Button(action: { isSidebarActive.toggle() }, label: {
+                    Image(systemName: "gear")
+                })
+                .sheet(isPresented: $isSidebarActive) {
+                    HStack(spacing: 4) {
+                        Spacer()
+                        Button(action: {isSidebarActive.toggle() }, label: {
+                            Image(systemName: "xmark.circle")
+                        })
+                    }
+                    
+                    setting
+                }
+            }
+        }
+        #endif
     }
 }
 

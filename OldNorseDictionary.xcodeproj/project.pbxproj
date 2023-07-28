@@ -23,7 +23,6 @@
 		A15829592A68249100BD97D4 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15829582A68249100BD97D4 /* Number.swift */; };
 		A158295B2A6A937300BD97D4 /* WordSearchControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A158295A2A6A937300BD97D4 /* WordSearchControllerTests.swift */; };
 		A194FFFF2A6B20FD008F4712 /* WordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194FFFE2A6B20FD008F4712 /* WordTests.swift */; };
-		A1CE84692A6D756C00AFDACB /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE84682A6D756C00AFDACB /* SectionHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +64,6 @@
 		A158295A2A6A937300BD97D4 /* WordSearchControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordSearchControllerTests.swift; sourceTree = "<group>"; };
 		A194FFFE2A6B20FD008F4712 /* WordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTests.swift; sourceTree = "<group>"; };
 		A1CE84632A6B2D1F00AFDACB /* OldNorseDictionary.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = OldNorseDictionary.xctestplan; sourceTree = "<group>"; };
-		A1CE84682A6D756C00AFDACB /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +124,6 @@
 				A158294C2A66DDCB00BD97D4 /* WordDetailView.swift */,
 				A158294E2A66DE0500BD97D4 /* WordSearchView.swift */,
 				A15829502A66DE4600BD97D4 /* WordSearchController.swift */,
-				A1CE84682A6D756C00AFDACB /* SectionHeaderView.swift */,
 			);
 			path = OldNorseDictionary;
 			sourceTree = "<group>";
@@ -307,7 +304,6 @@
 				A158294D2A66DDCB00BD97D4 /* WordDetailView.swift in Sources */,
 				A15829512A66DE4600BD97D4 /* WordSearchController.swift in Sources */,
 				A15829572A67DE7300BD97D4 /* Person.swift in Sources */,
-				A1CE84692A6D756C00AFDACB /* SectionHeaderView.swift in Sources */,
 				A15829532A67DBCB00BD97D4 /* Case.swift in Sources */,
 				A15829432A66BEF700BD97D4 /* Word.swift in Sources */,
 			);
