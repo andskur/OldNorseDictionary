@@ -309,6 +309,38 @@
           "type": "noun"
         },
         {
+          "oldNorseWord": "brunnr",
+          "englishTranslation": "well, spring",
+          "russianTranslation": "колодец, источник",
+          "type": "noun",
+          "definition": "A hole or excavation in the ground from which water springs.",
+          "examples": ["Ég fylli búnaðinn við vatn úr brunninum. (I fill the equipment with water from the well.)"]
+        },
+        {
+          "oldNorseWord": "oddr",
+          "englishTranslation": "point, tip",
+          "russianTranslation": "остриё, кончик",
+          "type": "noun",
+          "definition": "The sharp or pointed end of something.",
+          "examples": ["Ólafur vissi ekki hvort hann myndi lifa til annars oddar dagsins. (Ólafur did not know if he would live until the end of the day.)"]
+        },
+        {
+          "oldNorseWord": "sandr",
+          "englishTranslation": "sand",
+          "russianTranslation": "песок, морской берег",
+          "type": "noun",
+          "definition": "A loose granular substance, typically found on beaches and in deserts.",
+          "examples": ["Ströndin er með gylltan sand. (The beach has golden sand.)"]
+        },
+        {
+          "oldNorseWord": "vindr",
+          "englishTranslation": "wind",
+          "russianTranslation": "ветер, воздух",
+          "type": "noun",
+          "definition": "The perceptible natural movement of the air.",
+          "examples": ["Vindrinn blæs sterkt í dag. (The wind is blowing strongly today.)"]
+        },
+        {
             "oldNorseWord": "hann",
             "englishTranslation": "he",
             "russianTranslation": "он",
@@ -441,6 +473,33 @@
           "type": "pronoun"
         },
         {
+          "oldNorseWord": "báðir",
+          "englishTranslation": "both",
+          "russianTranslation": "оба",
+          "type": "pronoun",
+          "definition": "Referring to two entities together.",
+          "examples": ["Báðir menn ganga til veizlu. (Both men are going to the feast.)"]
+        },
+        {
+          "oldNorseWord": "hvat",
+          "englishTranslation": "what, how",
+          "russianTranslation": "что, как",
+          "type": "pronoun",
+          "definition": "Asking about something or expressing surprise.",
+          "examples": ["Hvat heitir þetta? (What is this called?)", "Hvat! (What! How! Surprising!)"],
+          "cases": {
+              "nominative": {
+                  "singular": "hvat"
+              },
+              "accusative": {
+                  "singular": "hvat"
+              },
+              "dative": {
+                  "singular": "hví"
+              }
+          }
+        },
+        {
             "oldNorseWord": "eigi",
             "englishTranslation": "not",
             "russianTranslation": "не",
@@ -528,6 +587,7 @@
           "examples": [],
           "type": "adverb"
         },
+        
         {
             "oldNorseWord": "en",
             "englishTranslation": "but, than",
@@ -575,6 +635,14 @@
           "definition": "Well, willingly",
           "examples": [],
           "type": "adverb"
+        },
+        {
+          "oldNorseWord": "þá",
+          "englishTranslation": "then",
+          "russianTranslation": "тогда, потом",
+          "type": "adverb",
+          "definition": "At that time; at the time in question.",
+          "examples": ["Þá var hann ungur og óreyndur. (He was young and inexperienced then.)"]
         },
         {
           "oldNorseWord": "ef",
@@ -655,6 +723,22 @@
           "definition": "With",
           "examples": [],
           "type": "preposition"
+        },
+        {
+          "oldNorseWord": "á",
+          "englishTranslation": "on, in",
+          "russianTranslation": "на, в",
+          "type": "preposition",
+          "definition": "Expressing location or time, often with the sense of being in contact with or attached to something.",
+          "examples": ["Hann sat á stólinum. (He sat on the chair.)"]
+        },
+        {
+          "oldNorseWord": "úr",
+          "englishTranslation": "out of, from",
+          "russianTranslation": "из, вне",
+          "type": "preposition",
+          "definition": "Indicating movement from a place or the point of origin of something.",
+          "examples": ["Hann kom úr húsinu. (He came out of the house.)"]
         },
         {
             "oldNorseWord": "er",
@@ -1137,6 +1221,58 @@
           "verbSecond": "sigli"
         },
         {
+          "oldNorseWord": "bjóða",
+          "englishTranslation": "to offer, to command",
+          "russianTranslation": "предлагать, приказывать",
+          "type": "verb",
+          "definition": "To present something for acceptance or rejection; to command or direct someone to do something.",
+          "examples": ["Hann bauð mér að mæta í kvöld. (He invited me to come tonight.)"],
+          "verbFirst": "bjóða",
+          "verbSecond": "býð"
+        },
+        {
+          "oldNorseWord": "blása",
+          "englishTranslation": "to blow, to breeze",
+          "russianTranslation": "дуть, веять",
+          "type": "verb",
+          "definition": "To expel air or any other substance from the mouth.",
+          "examples": ["Blása í eldinn til að kveikja í honum. (Blow into the fire to kindle it.)"],
+          "verbFirst": "blása",
+          "verbSecond": "blæs",
+          "conjugation": {
+              "singular": {
+                  "firstPerson": "blæs",
+                  "secondPerson": "blæss",
+                  "thirdPerson": "blæss",
+              },
+              "plural": {
+                  "firstPerson": "blásum",
+                  "secondPerson": "blásið",
+                  "thirdPerson": "blása"
+              }
+          },
+        },
+        {
+          "oldNorseWord": "standa",
+          "englishTranslation": "to stand, to remain",
+          "russianTranslation": "стоять, оставаться в силе",
+          "type": "verb",
+          "definition": "To be in or maintain an upright position; to continue to exist, endure, or remain valid.",
+          "examples": ["Hún stendur upp og gengur út. (She stands up and goes outside.)"],
+          "verbFirst": "standa",
+          "verbSecond": "stend"
+        },
+        {
+          "oldNorseWord": "sýna",
+          "englishTranslation": "to show, to display",
+          "russianTranslation": "показывать, проявлять",
+          "type": "verb",
+          "definition": "To make something visible or evident to the eyes or other senses.",
+          "examples": ["Hann sýnir mér gamla myntasafn sitt. (He shows me his old coin collection.)"],
+          "verbFirst": "sýna",
+          "verbSecond": "sýni"
+        },
+        {
           "oldNorseWord": "fagr",
           "englishTranslation": "beautiful",
           "russianTranslation": "красивый, прекрасный",
@@ -1347,6 +1483,22 @@
           "definition": "Wide, extensive",
           "examples": [],
           "type": "adjective"
+        },
+        {
+          "oldNorseWord": "bjartr",
+          "englishTranslation": "bright, shining, clear",
+          "russianTranslation": "блестящий, ясный, светлый",
+          "type": "adjective",
+          "definition": "Having a shining or radiant quality, full of light.",
+          "examples": ["Bjartr stjarna á himninum. (Bright star in the sky.)"]
+        },
+        {
+          "oldNorseWord": "ungr",
+          "englishTranslation": "young",
+          "russianTranslation": "молодой, юный",
+          "type": "adjective",
+          "definition": "In an early stage of life, not yet matured.",
+          "examples": ["Ungr maður með framtíðardrauma. (Young man with dreams of the future.)"]
         },
         {
           "oldNorseWord": "beðinn",
@@ -1659,5 +1811,45 @@
           "definition": "Sailing",
           "examples": [],
           "type": "participle"
+        },
+        {
+          "oldNorseWord": "boðinn",
+          "englishTranslation": "offered, commanded",
+          "russianTranslation": "предлагающий, приказывающий",
+          "type": "participle",
+          "definition": "Having been presented for acceptance or rejection; having been commanded or directed.",
+          "examples": ["Boðinn aðstoðar af öryggismönnum, lést hann aldrei. (Offered assistance by security personnel, he never died.)"]
+        },
+        {
+          "oldNorseWord": "blásinn",
+          "englishTranslation": "blowing, breezing",
+          "russianTranslation": "дующий, веющий",
+          "type": "participle",
+          "definition": "Currently expelling air or any other substance from the mouth.",
+          "examples": ["Blásinn af vindinum, lék hann með drifinu. (Blowing with the wind, he played with the kite.)"]
+        },
+        {
+          "oldNorseWord": "staðinn",
+          "englishTranslation": "standing",
+          "russianTranslation": "стоящий",
+          "type": "participle",
+          "definition": "Currently being in or maintaining an upright position.",
+          "examples": ["Staðinn á hávaðanum, horfði hann yfir landið. (Standing on the cliff, he looked over the land.)"]
+        },
+        {
+          "oldNorseWord": "sýndr",
+          "englishTranslation": "showing, displaying",
+          "russianTranslation": "показывающий, проявляющий",
+          "type": "participle",
+          "definition": "Currently making something visible or evident to the eyes or other senses.",
+          "examples": ["Sýndr af listum sínum, fékk hann áhrifin með tónlist sinni. (Showing his skills, he influenced the audience with his music.)"]
+        },
+        {
+          "oldNorseWord": "gefa grið",
+          "englishTranslation": "to spare, to pardon",
+          "russianTranslation": "пощадить, помиловать",
+          "type": "phrase",
+          "definition": "To grant mercy or forgiveness; to spare someone from harm or punishment.",
+          "examples": ["Hann ákvað að gefa grið þeim óvinum sínum. (He decided to spare his enemies.)"]
         }
 ]
