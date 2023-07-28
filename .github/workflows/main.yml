@@ -20,4 +20,4 @@ jobs:
          sudo gem install cocoapods
          pod setup
      - name: Build and Test
-       run: xcodebuild test -scheme OldNorseDictionary -project OldNorseDictionary.xcodeproj -destination 'platform=macOS,name=Any Mac'
+       run: xcodebuild test -scheme OldNorseDictionary -project OldNorseDictionary.xcodeproj
