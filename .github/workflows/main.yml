@@ -20,4 +20,4 @@ jobs:
          sudo gem install cocoapods
          pod setup
      - name: Build and Test
-       run: xcodebuild test -scheme OldNorseDictionary -project OldNorseDictionary.xcodeproj -destination 'platform=macOS,arch=x86_64'
+       run: xcodebuild test -scheme OldNorseDictionary -project OldNorseDictionary.xcodeproj -destination 'platform=iOS Simulator,name=iPhone,OS=$' | xcpretty && exit ${PIPESTATUS[0]}
