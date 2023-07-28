@@ -6,20 +6,13 @@ on:
       - main
 
 jobs:
-  test:
-    runs-on: macOS-latest
+  build:
+
+    runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@v2
-
-    - name: Set up Xcode
-      run: sudo xcode-select -switch /Applications/Xcode_14.0.app && /usr/bin/xcodebuild -version
-
-    - name: Install CocoaPods
-      run: |
-        sudo gem install cocoapods
-        pod setup
-
-    - name: Build and Test
-      run: xcodebuild test -scheme OldNorseDictionary -project OldNorseDictionary.xcodeproj -destination 'platform=macOS,arch=x86_64'
-
+      - uses: actions/checkout@v3
+      - name: Build
+        run: swift build
+      - name: Run tests
+        run: swift test
