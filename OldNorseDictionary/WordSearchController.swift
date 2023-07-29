@@ -46,20 +46,6 @@ class WordSearchController: ObservableObject {
                 return false
             })
         }
-        
-        
-//        if searchQuery.isEmpty {
-//            // Show all loaded words when the search query is empty
-//            return loadedWords.sorted(by: {
-//                if $1.oldNorseWord > $0.oldNorseWord {
-//                    return true
-//                }
-//
-//                return false
-//            })
-//        } else {
-//            return fetchWordDetails(for: searchQuery, searchDirection: searchDirection, wordType: selectedWordType)
-//        }
     }
     
     init() {
