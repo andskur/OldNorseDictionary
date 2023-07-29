@@ -12,7 +12,7 @@ struct ContentView: View {
     @State private var isSidebarActive = false
     
     
-    var setting: some View {
+    var settings: some View {
         Group {
             #if os(iOS)
             HStack(spacing: 4) {
@@ -53,7 +53,7 @@ struct ContentView: View {
                 
         })
         .sheet(isPresented: $isSidebarActive) {
-            setting
+            settings
         }
         .padding(.trailing)
         #endif

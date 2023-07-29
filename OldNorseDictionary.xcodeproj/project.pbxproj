@@ -23,6 +23,21 @@
 		A15829592A68249100BD97D4 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15829582A68249100BD97D4 /* Number.swift */; };
 		A158295B2A6A937300BD97D4 /* WordSearchControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A158295A2A6A937300BD97D4 /* WordSearchControllerTests.swift */; };
 		A194FFFF2A6B20FD008F4712 /* WordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194FFFE2A6B20FD008F4712 /* WordTests.swift */; };
+		A1F6CDAE2A75A743006F020E /* OldNorseDictionaryWatchOsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F6CDAD2A75A743006F020E /* OldNorseDictionaryWatchOsApp.swift */; };
+		A1F6CDB02A75A743006F020E /* WordListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F6CDAF2A75A743006F020E /* WordListView.swift */; };
+		A1F6CDB22A75A744006F020E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F6CDB12A75A744006F020E /* Assets.xcassets */; };
+		A1F6CDB52A75A744006F020E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F6CDB42A75A744006F020E /* Preview Assets.xcassets */; };
+		A1F6CDBF2A75A744006F020E /* OldNorseDictionaryWatchOs_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F6CDBE2A75A744006F020E /* OldNorseDictionaryWatchOs_Watch_AppTests.swift */; };
+		A1F6CDC92A75A744006F020E /* OldNorseDictionaryWatchOs_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F6CDC82A75A744006F020E /* OldNorseDictionaryWatchOs_Watch_AppUITests.swift */; };
+		A1F6CDCB2A75A744006F020E /* OldNorseDictionaryWatchOs_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F6CDCA2A75A744006F020E /* OldNorseDictionaryWatchOs_Watch_AppUITestsLaunchTests.swift */; };
+		A1F6CDCE2A75A744006F020E /* OldNorseDictionaryWatchOs Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A1F6CDAB2A75A743006F020E /* OldNorseDictionaryWatchOs Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A1F6CDDA2A75A970006F020E /* WordSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15829502A66DE4600BD97D4 /* WordSearchController.swift */; };
+		A1F6CDDB2A75AB16006F020E /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15829422A66BEF700BD97D4 /* Word.swift */; };
+		A1F6CDDC2A75AB18006F020E /* Conjugation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15829442A66BF9D00BD97D4 /* Conjugation.swift */; };
+		A1F6CDDD2A75AB1A006F020E /* Case.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15829522A67DBCB00BD97D4 /* Case.swift */; };
+		A1F6CDDE2A75AB1C006F020E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15829562A67DE7300BD97D4 /* Person.swift */; };
+		A1F6CDDF2A75AB1F006F020E /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15829582A68249100BD97D4 /* Number.swift */; };
+		A1F6CDE12A75AC3B006F020E /* WordsData.json in Resources */ = {isa = PBXBuildFile; fileRef = A14FC4572A619670009D91EC /* WordsData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +55,42 @@
 			remoteGlobalIDString = A14FC4282A6185A7009D91EC;
 			remoteInfo = OldNorseDictionary;
 		};
+		A1F6CDBB2A75A744006F020E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A14FC4212A6185A7009D91EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1F6CDAA2A75A743006F020E;
+			remoteInfo = "OldNorseDictionaryWatchOs Watch App";
+		};
+		A1F6CDC52A75A744006F020E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A14FC4212A6185A7009D91EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1F6CDAA2A75A743006F020E;
+			remoteInfo = "OldNorseDictionaryWatchOs Watch App";
+		};
+		A1F6CDCC2A75A744006F020E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A14FC4212A6185A7009D91EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1F6CDAA2A75A743006F020E;
+			remoteInfo = "OldNorseDictionaryWatchOs Watch App";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A1F6CDCF2A75A744006F020E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A1F6CDCE2A75A744006F020E /* OldNorseDictionaryWatchOs Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A14FC4292A6185A7009D91EC /* OldNorseDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OldNorseDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +114,16 @@
 		A158295A2A6A937300BD97D4 /* WordSearchControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordSearchControllerTests.swift; sourceTree = "<group>"; };
 		A194FFFE2A6B20FD008F4712 /* WordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTests.swift; sourceTree = "<group>"; };
 		A1CE84632A6B2D1F00AFDACB /* OldNorseDictionary.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = OldNorseDictionary.xctestplan; sourceTree = "<group>"; };
+		A1F6CDAB2A75A743006F020E /* OldNorseDictionaryWatchOs Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OldNorseDictionaryWatchOs Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1F6CDAD2A75A743006F020E /* OldNorseDictionaryWatchOsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldNorseDictionaryWatchOsApp.swift; sourceTree = "<group>"; };
+		A1F6CDAF2A75A743006F020E /* WordListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListView.swift; sourceTree = "<group>"; };
+		A1F6CDB12A75A744006F020E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1F6CDB42A75A744006F020E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A1F6CDBA2A75A744006F020E /* OldNorseDictionaryWatchOs Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OldNorseDictionaryWatchOs Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1F6CDBE2A75A744006F020E /* OldNorseDictionaryWatchOs_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldNorseDictionaryWatchOs_Watch_AppTests.swift; sourceTree = "<group>"; };
+		A1F6CDC42A75A744006F020E /* OldNorseDictionaryWatchOs Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OldNorseDictionaryWatchOs Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1F6CDC82A75A744006F020E /* OldNorseDictionaryWatchOs_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldNorseDictionaryWatchOs_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		A1F6CDCA2A75A744006F020E /* OldNorseDictionaryWatchOs_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldNorseDictionaryWatchOs_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,16 +148,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1F6CDA82A75A743006F020E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F6CDB72A75A744006F020E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F6CDC12A75A744006F020E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		A14FC4202A6185A7009D91EC = {
 			isa = PBXGroup;
 			children = (
+				A1F6CDE02A75AC1A006F020E /* Assets */,
+				A1F6CDD92A75A942006F020E /* Library */,
 				A1CE84632A6B2D1F00AFDACB /* OldNorseDictionary.xctestplan */,
 				A14FC42B2A6185A7009D91EC /* OldNorseDictionary */,
 				A14FC43D2A6185A8009D91EC /* OldNorseDictionaryTests */,
 				A14FC4472A6185A8009D91EC /* OldNorseDictionaryUITests */,
+				A1F6CDAC2A75A743006F020E /* OldNorseDictionaryWatchOs Watch App */,
+				A1F6CDBD2A75A744006F020E /* OldNorseDictionaryWatchOs Watch AppTests */,
+				A1F6CDC72A75A744006F020E /* OldNorseDictionaryWatchOs Watch AppUITests */,
 				A14FC42A2A6185A7009D91EC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +194,9 @@
 				A14FC4292A6185A7009D91EC /* OldNorseDictionary.app */,
 				A14FC43A2A6185A8009D91EC /* OldNorseDictionaryTests.xctest */,
 				A14FC4442A6185A8009D91EC /* OldNorseDictionaryUITests.xctest */,
+				A1F6CDAB2A75A743006F020E /* OldNorseDictionaryWatchOs Watch App.app */,
+				A1F6CDBA2A75A744006F020E /* OldNorseDictionaryWatchOs Watch AppTests.xctest */,
+				A1F6CDC42A75A744006F020E /* OldNorseDictionaryWatchOs Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,15 +204,12 @@
 		A14FC42B2A6185A7009D91EC /* OldNorseDictionary */ = {
 			isa = PBXGroup;
 			children = (
-				A15829412A66BEEA00BD97D4 /* models */,
 				A14FC42C2A6185A7009D91EC /* OldNorseDictionaryApp.swift */,
 				A14FC4302A6185A7009D91EC /* Assets.xcassets */,
 				A14FC4322A6185A7009D91EC /* OldNorseDictionary.entitlements */,
 				A14FC4332A6185A7009D91EC /* Preview Content */,
-				A14FC4572A619670009D91EC /* WordsData.json */,
 				A158294C2A66DDCB00BD97D4 /* WordDetailView.swift */,
 				A158294E2A66DE0500BD97D4 /* WordSearchView.swift */,
-				A15829502A66DE4600BD97D4 /* WordSearchController.swift */,
 			);
 			path = OldNorseDictionary;
 			sourceTree = "<group>";
@@ -166,6 +252,59 @@
 			path = models;
 			sourceTree = "<group>";
 		};
+		A1F6CDAC2A75A743006F020E /* OldNorseDictionaryWatchOs Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				A1F6CDAD2A75A743006F020E /* OldNorseDictionaryWatchOsApp.swift */,
+				A1F6CDAF2A75A743006F020E /* WordListView.swift */,
+				A1F6CDB12A75A744006F020E /* Assets.xcassets */,
+				A1F6CDB32A75A744006F020E /* Preview Content */,
+			);
+			path = "OldNorseDictionaryWatchOs Watch App";
+			sourceTree = "<group>";
+		};
+		A1F6CDB32A75A744006F020E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A1F6CDB42A75A744006F020E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A1F6CDBD2A75A744006F020E /* OldNorseDictionaryWatchOs Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1F6CDBE2A75A744006F020E /* OldNorseDictionaryWatchOs_Watch_AppTests.swift */,
+			);
+			path = "OldNorseDictionaryWatchOs Watch AppTests";
+			sourceTree = "<group>";
+		};
+		A1F6CDC72A75A744006F020E /* OldNorseDictionaryWatchOs Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A1F6CDC82A75A744006F020E /* OldNorseDictionaryWatchOs_Watch_AppUITests.swift */,
+				A1F6CDCA2A75A744006F020E /* OldNorseDictionaryWatchOs_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "OldNorseDictionaryWatchOs Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		A1F6CDD92A75A942006F020E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				A15829412A66BEEA00BD97D4 /* models */,
+				A15829502A66DE4600BD97D4 /* WordSearchController.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		A1F6CDE02A75AC1A006F020E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A14FC4572A619670009D91EC /* WordsData.json */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,10 +315,12 @@
 				A14FC4252A6185A7009D91EC /* Sources */,
 				A14FC4262A6185A7009D91EC /* Frameworks */,
 				A14FC4272A6185A7009D91EC /* Resources */,
+				A1F6CDCF2A75A744006F020E /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A1F6CDCD2A75A744006F020E /* PBXTargetDependency */,
 			);
 			name = OldNorseDictionary;
 			productName = OldNorseDictionary;
@@ -222,6 +363,59 @@
 			productReference = A14FC4442A6185A8009D91EC /* OldNorseDictionaryUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		A1F6CDAA2A75A743006F020E /* OldNorseDictionaryWatchOs Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1F6CDD62A75A744006F020E /* Build configuration list for PBXNativeTarget "OldNorseDictionaryWatchOs Watch App" */;
+			buildPhases = (
+				A1F6CDA72A75A743006F020E /* Sources */,
+				A1F6CDA82A75A743006F020E /* Frameworks */,
+				A1F6CDA92A75A743006F020E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OldNorseDictionaryWatchOs Watch App";
+			productName = "OldNorseDictionaryWatchOs Watch App";
+			productReference = A1F6CDAB2A75A743006F020E /* OldNorseDictionaryWatchOs Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1F6CDB92A75A744006F020E /* OldNorseDictionaryWatchOs Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1F6CDD72A75A744006F020E /* Build configuration list for PBXNativeTarget "OldNorseDictionaryWatchOs Watch AppTests" */;
+			buildPhases = (
+				A1F6CDB62A75A744006F020E /* Sources */,
+				A1F6CDB72A75A744006F020E /* Frameworks */,
+				A1F6CDB82A75A744006F020E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1F6CDBC2A75A744006F020E /* PBXTargetDependency */,
+			);
+			name = "OldNorseDictionaryWatchOs Watch AppTests";
+			productName = "OldNorseDictionaryWatchOs Watch AppTests";
+			productReference = A1F6CDBA2A75A744006F020E /* OldNorseDictionaryWatchOs Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A1F6CDC32A75A744006F020E /* OldNorseDictionaryWatchOs Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1F6CDD82A75A744006F020E /* Build configuration list for PBXNativeTarget "OldNorseDictionaryWatchOs Watch AppUITests" */;
+			buildPhases = (
+				A1F6CDC02A75A744006F020E /* Sources */,
+				A1F6CDC12A75A744006F020E /* Frameworks */,
+				A1F6CDC22A75A744006F020E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1F6CDC62A75A744006F020E /* PBXTargetDependency */,
+			);
+			name = "OldNorseDictionaryWatchOs Watch AppUITests";
+			productName = "OldNorseDictionaryWatchOs Watch AppUITests";
+			productReference = A1F6CDC42A75A744006F020E /* OldNorseDictionaryWatchOs Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -243,6 +437,17 @@
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = A14FC4282A6185A7009D91EC;
 					};
+					A1F6CDAA2A75A743006F020E = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					A1F6CDB92A75A744006F020E = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = A1F6CDAA2A75A743006F020E;
+					};
+					A1F6CDC32A75A744006F020E = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = A1F6CDAA2A75A743006F020E;
+					};
 				};
 			};
 			buildConfigurationList = A14FC4242A6185A7009D91EC /* Build configuration list for PBXProject "OldNorseDictionary" */;
@@ -261,6 +466,9 @@
 				A14FC4282A6185A7009D91EC /* OldNorseDictionary */,
 				A14FC4392A6185A8009D91EC /* OldNorseDictionaryTests */,
 				A14FC4432A6185A8009D91EC /* OldNorseDictionaryUITests */,
+				A1F6CDAA2A75A743006F020E /* OldNorseDictionaryWatchOs Watch App */,
+				A1F6CDB92A75A744006F020E /* OldNorseDictionaryWatchOs Watch AppTests */,
+				A1F6CDC32A75A744006F020E /* OldNorseDictionaryWatchOs Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -284,6 +492,30 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A14FC4422A6185A8009D91EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F6CDA92A75A743006F020E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F6CDE12A75AC3B006F020E /* WordsData.json in Resources */,
+				A1F6CDB52A75A744006F020E /* Preview Assets.xcassets in Resources */,
+				A1F6CDB22A75A744006F020E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F6CDB82A75A744006F020E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F6CDC22A75A744006F020E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -327,6 +559,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1F6CDA72A75A743006F020E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F6CDDF2A75AB1F006F020E /* Number.swift in Sources */,
+				A1F6CDDA2A75A970006F020E /* WordSearchController.swift in Sources */,
+				A1F6CDDD2A75AB1A006F020E /* Case.swift in Sources */,
+				A1F6CDDC2A75AB18006F020E /* Conjugation.swift in Sources */,
+				A1F6CDDB2A75AB16006F020E /* Word.swift in Sources */,
+				A1F6CDDE2A75AB1C006F020E /* Person.swift in Sources */,
+				A1F6CDB02A75A743006F020E /* WordListView.swift in Sources */,
+				A1F6CDAE2A75A743006F020E /* OldNorseDictionaryWatchOsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F6CDB62A75A744006F020E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F6CDBF2A75A744006F020E /* OldNorseDictionaryWatchOs_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F6CDC02A75A744006F020E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F6CDCB2A75A744006F020E /* OldNorseDictionaryWatchOs_Watch_AppUITestsLaunchTests.swift in Sources */,
+				A1F6CDC92A75A744006F020E /* OldNorseDictionaryWatchOs_Watch_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -339,6 +603,21 @@
 			isa = PBXTargetDependency;
 			target = A14FC4282A6185A7009D91EC /* OldNorseDictionary */;
 			targetProxy = A14FC4452A6185A8009D91EC /* PBXContainerItemProxy */;
+		};
+		A1F6CDBC2A75A744006F020E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1F6CDAA2A75A743006F020E /* OldNorseDictionaryWatchOs Watch App */;
+			targetProxy = A1F6CDBB2A75A744006F020E /* PBXContainerItemProxy */;
+		};
+		A1F6CDC62A75A744006F020E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1F6CDAA2A75A743006F020E /* OldNorseDictionaryWatchOs Watch App */;
+			targetProxy = A1F6CDC52A75A744006F020E /* PBXContainerItemProxy */;
+		};
+		A1F6CDCD2A75A744006F020E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1F6CDAA2A75A743006F020E /* OldNorseDictionaryWatchOs Watch App */;
+			targetProxy = A1F6CDCC2A75A744006F020E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -455,6 +734,7 @@
 		A14FC44F2A6185A8009D91EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
@@ -495,6 +775,7 @@
 		A14FC4502A6185A8009D91EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
@@ -622,6 +903,151 @@
 			};
 			name = Release;
 		};
+		A1F6CDD02A75A744006F020E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OldNorseDictionaryWatchOs Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 4V482C5WA8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = OldNorseDictionaryWatchOs;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Andskur.OldNorseDictionary;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Andskur.OldNorseDictionary.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		A1F6CDD12A75A744006F020E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OldNorseDictionaryWatchOs Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 4V482C5WA8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = OldNorseDictionaryWatchOs;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Andskur.OldNorseDictionary;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Andskur.OldNorseDictionary.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+		A1F6CDD22A75A744006F020E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4V482C5WA8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Andskur.OldNorseDictionaryWatchOs-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OldNorseDictionaryWatchOs Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OldNorseDictionaryWatchOs Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		A1F6CDD32A75A744006F020E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4V482C5WA8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Andskur.OldNorseDictionaryWatchOs-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OldNorseDictionaryWatchOs Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OldNorseDictionaryWatchOs Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+		A1F6CDD42A75A744006F020E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4V482C5WA8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Andskur.OldNorseDictionaryWatchOs-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "OldNorseDictionaryWatchOs Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		A1F6CDD52A75A744006F020E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4V482C5WA8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Andskur.OldNorseDictionaryWatchOs-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "OldNorseDictionaryWatchOs Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -657,6 +1083,33 @@
 			buildConfigurations = (
 				A14FC4552A6185A8009D91EC /* Debug */,
 				A14FC4562A6185A8009D91EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1F6CDD62A75A744006F020E /* Build configuration list for PBXNativeTarget "OldNorseDictionaryWatchOs Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1F6CDD02A75A744006F020E /* Debug */,
+				A1F6CDD12A75A744006F020E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1F6CDD72A75A744006F020E /* Build configuration list for PBXNativeTarget "OldNorseDictionaryWatchOs Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1F6CDD22A75A744006F020E /* Debug */,
+				A1F6CDD32A75A744006F020E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1F6CDD82A75A744006F020E /* Build configuration list for PBXNativeTarget "OldNorseDictionaryWatchOs Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1F6CDD42A75A744006F020E /* Debug */,
+				A1F6CDD52A75A744006F020E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

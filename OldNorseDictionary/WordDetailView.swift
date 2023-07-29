@@ -113,16 +113,12 @@ struct WordDetailView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
-                if searchDirection == .englishToOldNorse {
+                if searchDirection == .englishToOldNorse || searchDirection == .oldNorseToEnglish {
                     Text("\(word.oldNorseWord) (\(word.englishTranslation))")
-                } else if searchDirection == .oldNorseToEnglish {
-                    Text("\(word.englishTranslation) (\(word.oldNorseWord))")
-                } else if searchDirection == .russianToOldNorse {
+                } else if searchDirection == .russianToOldNorse || searchDirection == .oldNorseToRussian {
                     Text("\(word.oldNorseWord) (\(word.russianTranslation))")
-                } else if searchDirection == .oldNorseToRussian {
-                    Text("\(word.russianTranslation) (\(word.oldNorseWord))")
                 }
-                
+
                 if word.type == .verb {
                     verbDetailViewContent()
                 }
