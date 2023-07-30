@@ -17,4 +17,4 @@ jobs:
        run: sudo xcode-select -switch /Applications/Xcode.app && /usr/bin/xcodebuild -version
 
      - name: Build and Test
-       run: xcodebuild test -scheme OldNorseDictionary -project OldNorseDictionary.xcodeproj -allowProvisioningUpdates -allowProvisioningDeviceRegistration
+       run: xcodebuild test -scheme OldNorseDictionary -project OldNorseDictionary.xcodeproj CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO
