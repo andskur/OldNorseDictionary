@@ -35,7 +35,7 @@ class WordSearchController: ObservableObject {
 
     var filteredWords: [Word] {
         if !searchQuery.isEmpty || selectedWordType != nil {
-            return wordService.searchWords(query: searchQuery, direction: searchDirection, wordType: selectedWordType)
+            return wordService.searchWords(for: searchQuery, searchDirection: searchDirection, wordType: selectedWordType)
         } else {
             // Show all loaded words when the search query is empty
             return wordService.words.sorted(by: {
