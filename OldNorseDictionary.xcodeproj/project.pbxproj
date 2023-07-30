@@ -26,6 +26,8 @@
 		A1F2B8532A76696F003EBF17 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A1F2B8502A76696F003EBF17 /* README.md */; };
 		A1F2B8542A76696F003EBF17 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A1F2B8512A76696F003EBF17 /* LICENSE */; };
 		A1F2B8552A76696F003EBF17 /* PrivacyPolicy.md in Resources */ = {isa = PBXBuildFile; fileRef = A1F2B8522A76696F003EBF17 /* PrivacyPolicy.md */; };
+		A1F2B8582A767231003EBF17 /* WordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2B8572A767231003EBF17 /* WordService.swift */; };
+		A1F2B8592A7672B4003EBF17 /* WordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2B8572A767231003EBF17 /* WordService.swift */; };
 		A1F6CDAE2A75A743006F020E /* OldNorseDictionaryWatchOsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F6CDAD2A75A743006F020E /* OldNorseDictionaryWatchOsApp.swift */; };
 		A1F6CDB02A75A743006F020E /* WordListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F6CDAF2A75A743006F020E /* WordListView.swift */; };
 		A1F6CDB22A75A744006F020E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F6CDB12A75A744006F020E /* Assets.xcassets */; };
@@ -116,6 +118,7 @@
 		A1F2B8502A76696F003EBF17 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A1F2B8512A76696F003EBF17 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A1F2B8522A76696F003EBF17 /* PrivacyPolicy.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = PrivacyPolicy.md; sourceTree = "<group>"; };
+		A1F2B8572A767231003EBF17 /* WordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordService.swift; sourceTree = "<group>"; };
 		A1F6CDAB2A75A743006F020E /* OldNorseDictionaryWatchOs Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OldNorseDictionaryWatchOs Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F6CDAD2A75A743006F020E /* OldNorseDictionaryWatchOsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldNorseDictionaryWatchOsApp.swift; sourceTree = "<group>"; };
 		A1F6CDAF2A75A743006F020E /* WordListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListView.swift; sourceTree = "<group>"; };
@@ -178,11 +181,11 @@
 				A1F2B8512A76696F003EBF17 /* LICENSE */,
 				A1F2B8522A76696F003EBF17 /* PrivacyPolicy.md */,
 				A1F2B8502A76696F003EBF17 /* README.md */,
-				A1F2B84F2A76693B003EBF17 /* WatchOSApp */,
-				A1F2B84A2A7667ED003EBF17 /* Tests */,
-				A1F2B8462A7667C8003EBF17 /* Source */,
 				A1F6CDE02A75AC1A006F020E /* Assets */,
 				A14FC42A2A6185A7009D91EC /* Products */,
+				A1F2B8462A7667C8003EBF17 /* Source */,
+				A1F2B84A2A7667ED003EBF17 /* Tests */,
+				A1F2B84F2A76693B003EBF17 /* WatchOSApp */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,11 +206,12 @@
 			isa = PBXGroup;
 			children = (
 				A14FC4322A6185A7009D91EC /* OldNorseDictionary.entitlements */,
-				A14FC4302A6185A7009D91EC /* Assets.xcassets */,
 				A14FC42C2A6185A7009D91EC /* OldNorseDictionaryApp.swift */,
+				A14FC4302A6185A7009D91EC /* Assets.xcassets */,
 				A1F2B8492A7667DF003EBF17 /* Controllers */,
-				A1F2B8482A7667D9003EBF17 /* Views */,
 				A1F2B8472A7667D2003EBF17 /* Models */,
+				A1F2B8562A767225003EBF17 /* Services */,
+				A1F2B8482A7667D9003EBF17 /* Views */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -287,6 +291,14 @@
 				A1F6CDB12A75A744006F020E /* Assets.xcassets */,
 			);
 			path = WatchOSApp;
+			sourceTree = "<group>";
+		};
+		A1F2B8562A767225003EBF17 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A1F2B8572A767231003EBF17 /* WordService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		A1F6CDE02A75AC1A006F020E /* Assets */ = {
@@ -525,6 +537,7 @@
 				A15829452A66BF9D00BD97D4 /* Conjugation.swift in Sources */,
 				A14FC42D2A6185A7009D91EC /* OldNorseDictionaryApp.swift in Sources */,
 				A15829592A68249100BD97D4 /* Number.swift in Sources */,
+				A1F2B8582A767231003EBF17 /* WordService.swift in Sources */,
 				A158294F2A66DE0500BD97D4 /* WordSearchView.swift in Sources */,
 				A158294D2A66DDCB00BD97D4 /* WordDetailView.swift in Sources */,
 				A15829512A66DE4600BD97D4 /* WordSearchController.swift in Sources */,
@@ -561,6 +574,7 @@
 				A1F6CDDD2A75AB1A006F020E /* Case.swift in Sources */,
 				A1F6CDDC2A75AB18006F020E /* Conjugation.swift in Sources */,
 				A1F6CDDB2A75AB16006F020E /* Word.swift in Sources */,
+				A1F2B8592A7672B4003EBF17 /* WordService.swift in Sources */,
 				A1F6CDDE2A75AB1C006F020E /* Person.swift in Sources */,
 				A1F6CDB02A75A743006F020E /* WordListView.swift in Sources */,
 				A1F6CDAE2A75A743006F020E /* OldNorseDictionaryWatchOsApp.swift in Sources */,

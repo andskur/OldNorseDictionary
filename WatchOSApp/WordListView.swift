@@ -68,9 +68,6 @@ struct WordListView: View {
                         .font(.system(size: 60))
                     }
                     .navigationTitle("Words")
-                    .onAppear {
-                        controller.loadWordsData()
-                    }
                 }
             }
             .onAppear {

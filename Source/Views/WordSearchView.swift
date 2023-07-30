@@ -11,7 +11,6 @@ struct ContentView: View {
     @StateObject private var controller = WordSearchController()
     @State private var isSidebarActive = false
     
-    
     var settings: some View {
         Group {
             #if os(iOS)
@@ -73,9 +72,6 @@ struct ContentView: View {
             }
         }
         .padding()
-        .onAppear {
-            controller.loadWordsData()
-        }
         #if os(iOS)
         .onTapGesture {
             self.endTextEditing()
