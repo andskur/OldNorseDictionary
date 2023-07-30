@@ -30,7 +30,7 @@
 		A1F6CDB02A75A743006F020E /* WordListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F6CDAF2A75A743006F020E /* WordListView.swift */; };
 		A1F6CDB22A75A744006F020E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F6CDB12A75A744006F020E /* Assets.xcassets */; };
 		A1F6CDC92A75A744006F020E /* OldNorseDictionaryWatchOs_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F6CDC82A75A744006F020E /* OldNorseDictionaryWatchOs_Watch_AppUITests.swift */; };
-		A1F6CDCE2A75A744006F020E /* OldNorseDictionaryWatchOs Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A1F6CDAB2A75A743006F020E /* OldNorseDictionaryWatchOs Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A1F6CDCE2A75A744006F020E /* OldNorseDictionaryWatchOs Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A1F6CDAB2A75A743006F020E /* OldNorseDictionaryWatchOs Watch App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A1F6CDDA2A75A970006F020E /* WordSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15829502A66DE4600BD97D4 /* WordSearchController.swift */; };
 		A1F6CDDB2A75AB16006F020E /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15829422A66BEF700BD97D4 /* Word.swift */; };
 		A1F6CDDC2A75AB18006F020E /* Conjugation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15829442A66BF9D00BD97D4 /* Conjugation.swift */; };
@@ -608,6 +608,7 @@
 		};
 		A1F6CDCD2A75A744006F020E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = A1F6CDAA2A75A743006F020E /* OldNorseDictionaryWatchOs Watch App */;
 			targetProxy = A1F6CDCC2A75A744006F020E /* PBXContainerItemProxy */;
 		};
