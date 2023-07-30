@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "2D3FE8F3-5A09-45D5-951B-2D87B32EB581",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:OldNorseDictionary.xcodeproj",
+        "identifier" : "A1F2B8922A768F54003EBF17",
+        "name" : "OldNorseDictionaryTests"
+      }
+    }
+  ],
+  "version" : 1
+}

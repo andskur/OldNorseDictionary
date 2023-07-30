@@ -29,7 +29,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:OldNorseDictionary.xctestplan"
+            reference = "container:Tests/UnitTests/OldNorseDictionaryUnitTests.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
@@ -39,7 +39,7 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A14FC4392A6185A8009D91EC"
+               BlueprintIdentifier = "A1F2B8922A768F54003EBF17"
                BuildableName = "OldNorseDictionaryTests.xctest"
                BlueprintName = "OldNorseDictionaryTests"
                ReferencedContainer = "container:OldNorseDictionary.xcodeproj">
