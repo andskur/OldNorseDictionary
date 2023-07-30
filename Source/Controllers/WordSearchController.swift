@@ -35,8 +35,8 @@ class WordSearchController: ObservableObject {
     @Published var searchQuery: String = ""
     @Published var searchDirection: SearchDirection = .oldNorseToRussian
     @Published var selectedWordType: WordType?
-    // Private instance of WordService to handle word data operations
-    private var wordService: WordService
+    // Instance of WordService to handle word data operations
+    var wordService: WordService
 
     // Computed property to return the filtered words based on the search query and selected word type
     var filteredWords: [Word] {

@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:      
 
 jobs:
   test:
@@ -15,9 +16,5 @@ jobs:
      - name: Set up Xcode
        run: sudo xcode-select -switch /Applications/Xcode.app && /usr/bin/xcodebuild -version
 
-     - name: Install CocoaPods
-       run: |
-         sudo gem install cocoapods
-         pod setup
      - name: Build and Test
        run: xcodebuild test -scheme OldNorseDictionary -project OldNorseDictionary.xcodeproj
