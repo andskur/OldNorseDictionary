@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Enum to represent the different search directions
 enum SearchDirection: String, CaseIterable {
     case oldNorseToRussian
     case englishToOldNorse
@@ -14,6 +15,7 @@ enum SearchDirection: String, CaseIterable {
     case russianToOldNorse
 }
 
+// Function to return a string description of a search direction
 func searchDiractionDesc(direction: SearchDirection) -> String {
     switch direction {
     case .englishToOldNorse:
@@ -27,12 +29,16 @@ func searchDiractionDesc(direction: SearchDirection) -> String {
     }
 }
 
+// Class to control the word search functionality
 class WordSearchController: ObservableObject {
+    // Published properties that will trigger UI updates when they change
     @Published var searchQuery: String = ""
     @Published var searchDirection: SearchDirection = .oldNorseToRussian
     @Published var selectedWordType: WordType?
+    // Private instance of WordService to handle word data operations
     private var wordService: WordService
 
+    // Computed property to return the filtered words based on the search query and selected word type
     var filteredWords: [Word] {
         if !searchQuery.isEmpty || selectedWordType != nil {
             return wordService.searchWords(for: searchQuery, searchDirection: searchDirection, wordType: selectedWordType)
@@ -47,7 +53,9 @@ class WordSearchController: ObservableObject {
         }
     }
 
+    // Initializer
     init() {
+        // Initialize WordService
         wordService = WordService()
     }
 }

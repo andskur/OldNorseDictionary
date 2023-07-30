@@ -7,13 +7,16 @@
 
 import Foundation
 
+// WordService is responsible for loading and filtering the word data
 class WordService {
+    // The array of Word objects loaded from the WordsData.json file
     var words: [Word] = []
 
     init() {
         loadWords()
     }
 
+    // This function loads the word data from the WordsData.json file
     func loadWords() {
         guard let fileURL = Bundle.main.url(forResource: "WordsData", withExtension: "json") else {
             fatalError("Failed to locate WordsData.json file.")
@@ -29,6 +32,7 @@ class WordService {
         }
     }
 
+    // This function searches for words based on a search query, a search direction, and a word type
     func searchWords(for searchQuery: String, searchDirection: SearchDirection, wordType: WordType?) -> [Word] {
         let lowercaseQuery = searchQuery.lowercased()
         var filteredWords: [Word] = words
@@ -52,7 +56,7 @@ class WordService {
         return filteredWords
     }
 
-
+    // This function filters the words based on a query and a search direction
     func filterWords(_ words: [Word], with query: String, searchDirection: SearchDirection) -> [Word] {
         let lowercaseQuery = query.lowercased()
 
@@ -74,6 +78,7 @@ class WordService {
         })
     }
     
+    // This function checks if a word matches a query
     func wordMatchesQuery(_ word: Word, query: String) -> Bool {
         let wordMatchesQuery = word.oldNorseWord.lowercased().contains(query)
         let nominativeSingularMatchesQuery = word.generateNominative(number: Number.singular, article: false)?.lowercased().contains(query) == true
