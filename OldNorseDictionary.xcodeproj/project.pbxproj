@@ -130,7 +130,6 @@
 				A1F2B8502A76696F003EBF17 /* README.md */,
 				A1F6CDE02A75AC1A006F020E /* Assets */,
 				A1F2B8802A768C5F003EBF17 /* Tests */,
-				A1F2B8942A768F54003EBF17 /* OldNorseDictionaryTests */,
 				A14FC42A2A6185A7009D91EC /* Products */,
 				A1F2B8462A7667C8003EBF17 /* Source */,
 				A1F2B84F2A76693B003EBF17 /* WatchOSApp */,
@@ -224,13 +223,6 @@
 				A1F2B89F2A769057003EBF17 /* OldNorseDictionaryUnitTests.xctestplan */,
 			);
 			path = UnitTests;
-			sourceTree = "<group>";
-		};
-		A1F2B8942A768F54003EBF17 /* OldNorseDictionaryTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = OldNorseDictionaryTests;
 			sourceTree = "<group>";
 		};
 		A1F6CDE02A75AC1A006F020E /* Assets */ = {
