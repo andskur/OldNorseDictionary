@@ -95,7 +95,7 @@ struct ContentView: View {
                         })
                     }
                     
-                    setting
+                    settings
                 }
             }
         }
