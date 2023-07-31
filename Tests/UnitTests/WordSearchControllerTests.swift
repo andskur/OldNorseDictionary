@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import OldNorseDictionary // Replace with your module name
+@testable import OldNorseDictionary
 
 class WordSearchControllerTests: XCTestCase {
 
