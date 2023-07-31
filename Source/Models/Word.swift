@@ -22,6 +22,10 @@ enum WordType: String, Codable, CaseIterable {
 
 
 struct Word: Codable, Identifiable {
+    private enum CodingKeys : String, CodingKey {
+        case oldNorseWord, englishTranslation, russianTranslation, definition, examples, type, cases, conjugation, verbFirst, verbSecond
+    }
+    
     var oldNorseWord: String
     let englishTranslation: String
     let russianTranslation: String
@@ -33,10 +37,7 @@ struct Word: Codable, Identifiable {
     let verbFirst: String?
     let verbSecond: String?
 
-    var id: String {
-        return oldNorseWord
-    }
-
+    var id = UUID()
     
     func neutralNounForm() -> String? {
         var neutralNoun = oldNorseWord
