@@ -18,8 +18,6 @@ The Old Norse Dictionary app is available for download on the macOS App Store. Y
 
 [Download Old Norse Dictionary from the App Store](https://apps.apple.com/me/app/oldnorse-dictionary/id6455376968?mt=12)
 
-Please note that the iOS, iPadOS, and watchOS versions of the app are currently under review and will be available on the App Store soon.
-
 For developers who want to run the project locally:
 
 1. Clone the repository to your local machine.
