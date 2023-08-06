@@ -11,6 +11,7 @@ struct Cases: Codable {
     let nominative: CaseNumber?
     let accusative: CaseNumber?
     let dative: CaseNumber?
+    let genitive: CaseNumber?
 }
 
 struct CaseNumber: Codable {
@@ -23,4 +24,5 @@ enum Case: String, CaseIterable {
     case nominative
     case accusative
     case dative
+    case genitive
 }
