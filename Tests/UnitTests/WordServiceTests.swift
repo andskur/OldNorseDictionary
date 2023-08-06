@@ -56,7 +56,17 @@ class WordServiceTests: XCTestCase {
             XCTAssertTrue(word.oldNorseWord.contains("brandr"))
         }
         
+        filteredWords = wordService.filterWords(wordService.words, with: "brandi", searchDirection: .oldNorseToRussian)
+        for word in filteredWords {
+            XCTAssertTrue(word.oldNorseWord.contains("brandr"))
+        }
+        
         filteredWords = wordService.filterWords(wordService.words, with: "brandum", searchDirection: .oldNorseToRussian)
+        for word in filteredWords {
+            XCTAssertTrue(word.oldNorseWord.contains("brandr"))
+        }
+        
+        filteredWords = wordService.filterWords(wordService.words, with: "brands", searchDirection: .oldNorseToRussian)
         for word in filteredWords {
             XCTAssertTrue(word.oldNorseWord.contains("brandr"))
         }
