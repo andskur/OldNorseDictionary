@@ -46,6 +46,14 @@ struct Word: Codable, Identifiable {
             neutralNoun.removeLast()
         }
         
+        if neutralNoun.hasSuffix("ll") {
+            neutralNoun.removeLast()
+        }
+        
+        if neutralNoun.hasSuffix("nn") {
+            neutralNoun.removeLast()
+        }
+        
         return neutralNoun
     }
     
@@ -69,6 +77,8 @@ struct Word: Codable, Identifiable {
             return generateAccusative(number: number, article: article)
         case .dative:
             return generateDative(number: number, article: article)
+        case .genitive:
+            return generateGenitive(number: number, article: article)
         }
     }
     
@@ -102,11 +112,25 @@ struct Word: Codable, Identifiable {
                         nominativeCase = neutralParticipleForm()! + "ir"
                     }
                 } else {
-                    nominativeCase = neutralNounForm()! + "ar"
+                    nominativeCase = neutralNounForm()!
+                                        
+                    if nominativeCase.hasSuffix("inn") {
+                        nominativeCase.removeLast(3)
+                        nominativeCase += "n"
+                    } else if nominativeCase.hasSuffix("in") {
+                        nominativeCase.removeLast(2)
+                        nominativeCase += "n"
+                    }
+
+                    nominativeCase += "ar"
                 }
             }
             
             if article {
+                if nominativeCase.last == "n" {
+                    nominativeCase += "i"
+                }
+                
                 nominativeCase += "nir"
             }
         }
@@ -149,6 +173,11 @@ struct Word: Codable, Identifiable {
                         accusativeCase = neutralParticipleForm()! + "a"
                     }
                 } else {
+                    if accusativeCase!.hasSuffix("in") {
+                        accusativeCase!.removeLast(2)
+                        accusativeCase! += "n"
+                    }
+                    
                     accusativeCase! += "a"
                 }
             }
@@ -179,10 +208,19 @@ struct Word: Codable, Identifiable {
                     } else if oldNorseWord.hasSuffix("ðr") {
                         dativeCase = neutralParticipleForm()! + "um"
                     }
-                } else {
-                    if let neutral = neutralNounForm() {
-                        dativeCase = "\(neutral)i"
+                } else if type == WordType.adjective {
+                    if oldNorseWord.hasSuffix("ll") || oldNorseWord.hasSuffix("nn") {
+                        dativeCase! += "um"
+                    } else {
+                        dativeCase! += "m"
                     }
+                } else {
+                    if dativeCase!.hasSuffix("in") {
+                        dativeCase!.removeLast(2)
+                        dativeCase! += "n"
+                    }
+                    
+                    dativeCase! += "i"
                 }
             }
         
@@ -208,9 +246,19 @@ struct Word: Codable, Identifiable {
                     } else if oldNorseWord.hasSuffix("ðr") {
                         dativeCase = neutralParticipleForm()! + "um"
                     }
-                } else {
+                } else if type == WordType.adjective {
+                    if oldNorseWord.hasSuffix("ll") || oldNorseWord.hasSuffix("nn") {
+                        dativeCase! += "um"
+                    } else {
+                        dativeCase! += "m"
+                    }
+                }else {
+                    if dativeCase!.hasSuffix("in") {
+                        dativeCase!.removeLast(2)
+                        dativeCase! += "n"
+                    }
+                    
                     dativeCase! += "um"
-
                 }
             }
             
@@ -226,6 +274,65 @@ struct Word: Codable, Identifiable {
 
         return dativeCase
     }
+    
+    func generateGenitive(number: Number, article: Bool) -> String? {
+        var genitiveCase = neutralNounForm()
+        
+        switch number {
+        case .singular:
+            if let genitiveCaseSingular = cases?.genitive?.singular {
+                genitiveCase = genitiveCaseSingular
+            } else {
+                if type != WordType.adjective && !oldNorseWord.hasSuffix("inn") {
+                    if genitiveCase?.last == "n" {
+                        genitiveCase!.removeLast()
+                    }
+                }
+                
+                if genitiveCase?.last != "s" {
+                    genitiveCase! += "s"
+                }
+            }
+            
+            if article {
+                genitiveCase! += "ins"
+            }
+        case .dual:
+            if let genitiveCaseDual = cases?.genitive?.dual {
+                genitiveCase = genitiveCaseDual
+            }
+        case .plural:
+            if let genitiveCasePlural = cases?.genitive?.plural {
+                genitiveCase = genitiveCasePlural
+            } else {
+                if type == WordType.participle && oldNorseWord.hasSuffix("ðr") {
+                    genitiveCase! += "ra"
+                } else if type == WordType.adjective {
+                    if oldNorseWord.hasSuffix("ll") {
+                        genitiveCase! += "la"
+                    } else if oldNorseWord.hasSuffix("nn") {
+                        genitiveCase! += "na"
+                    } else {
+                        genitiveCase! += "a"
+                    }
+                } else {
+                    if genitiveCase!.hasSuffix("in") {
+                        genitiveCase!.removeLast(2)
+                        genitiveCase! += "n"
+                    }
+                    
+                    genitiveCase! += "a"
+                }
+            }
+            
+            if article {
+                genitiveCase! += "nna"
+            }
+        }
+        
+        return genitiveCase
+    }
+    
     
     func generateConjugation(person: Person, number: Number) -> String? {
         switch person {

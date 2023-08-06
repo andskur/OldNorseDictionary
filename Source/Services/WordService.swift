@@ -90,6 +90,9 @@ class WordService {
         let dativeSingularMatchesQuery = word.generateDative(number: Number.singular, article: false)?.lowercased().contains(query) == true
         let dativeDualMatchesQuery = word.generateDative(number: Number.dual, article: false)?.lowercased().contains(query) == true
         let dativePluralMatchesQuery = word.generateDative(number: Number.plural, article: false)?.lowercased().contains(query) == true
+        let genitiveSingularMatchesQuery = word.generateGenitive(number: Number.singular, article: false)?.lowercased().contains(query) == true
+        let genitiveDualMatchesQuery = word.generateGenitive(number: Number.dual, article: false)?.lowercased().contains(query) == true
+        let genitivePluralMatchesQuery = word.generateGenitive(number: Number.plural, article: false)?.lowercased().contains(query) == true
         let firstSingularMatchesQuery = word.generateConjugation(person: .first, number: .singular)?.lowercased().contains(query) == true
         let secondSingularMatchesQuery = word.generateConjugation(person: .second, number: .singular)?.lowercased().contains(query) == true
         let thirdSingularMatchesQuery = word.generateConjugation(person: .third, number: .singular)?.lowercased().contains(query) == true
@@ -97,6 +100,6 @@ class WordService {
         let secondPluralMatchesQuery = word.generateConjugation(person: .second, number: .plural)?.lowercased().contains(query) == true
         let thirdPluralMatchesQuery = word.generateConjugation(person: .third, number: .plural)?.lowercased().contains(query) == true
 
-        return wordMatchesQuery || nominativeSingularMatchesQuery || nominativeDualMatchesQuery || nominativePluralMatchesQuery || accusativeSingularMatchesQuery || accusativeDualMatchesQuery || accusativePluralMatchesQuery || dativeSingularMatchesQuery || dativeDualMatchesQuery || dativePluralMatchesQuery || firstSingularMatchesQuery || secondSingularMatchesQuery || thirdSingularMatchesQuery || firstPluralMatchesQuery || secondPluralMatchesQuery || thirdPluralMatchesQuery
+        return wordMatchesQuery || nominativeSingularMatchesQuery || nominativeDualMatchesQuery || nominativePluralMatchesQuery || accusativeSingularMatchesQuery || accusativeDualMatchesQuery || accusativePluralMatchesQuery || dativeSingularMatchesQuery || dativeDualMatchesQuery || dativePluralMatchesQuery || firstSingularMatchesQuery || secondSingularMatchesQuery || thirdSingularMatchesQuery || firstPluralMatchesQuery || secondPluralMatchesQuery || thirdPluralMatchesQuery || genitiveSingularMatchesQuery || genitiveDualMatchesQuery || genitivePluralMatchesQuery
     }
 }

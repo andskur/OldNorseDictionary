@@ -145,6 +145,11 @@
             },
             "dative": {
                 "singular": "manni",
+                "plural": "mönnum"
+            },
+            "genitive": {
+                "singular": "manns",
+                "plural": "manna"
             }
         }
     },
@@ -178,7 +183,23 @@
         "russianTranslation": "еда, пища",
         "definition": "Any nutritious substance that is eaten, drunk, or otherwise taken into the body to sustain life",
         "examples": [],
-        "type": "noun"
+        "type": "noun",
+        "cases": {
+            "nominative": {
+                "plural": "matir"
+            },
+            "accusative": {
+                "plural": "mati"
+            },
+            "dative": {
+                "singular": "mat",
+                "plural": "mötum"
+            },
+            "genitive": {
+                "singular": "matar",
+                "plural": "mata"
+            }
+        }
       },
       {
           "oldNorseWord": "munnr",
@@ -274,7 +295,12 @@
           "russianTranslation": "лес",
           "definition": "Forest",
           "examples": [],
-          "type": "noun"
+          "type": "noun",
+          "cases": {
+              "genitive": {
+                  "singular": "skógar",
+              }
+          }
         },
         {
           "oldNorseWord": "vangr",
@@ -341,6 +367,30 @@
           "examples": ["Vindrinn blæs sterkt í dag. (The wind is blowing strongly today.)"]
         },
         {
+          "oldNorseWord": "dróttinn",
+          "englishTranslation": "lord, master",
+          "russianTranslation": "господин, господь",
+          "type": "noun",
+          "definition": "Referring to a person who has authority, control, or power over others.",
+          "examples": ["Dróttinn ræðr öllu. (The Lord rules all.)"]
+        },
+        {
+          "oldNorseWord": "níðingr",
+          "englishTranslation": "scoundrel, villain",
+          "russianTranslation": "подлец, негодяй",
+          "type": "noun",
+          "definition": "Referring to a person who behaves dishonestly or unethically.",
+          "examples": ["Níðingr stal fénu. (The scoundrel stole the money.)"]
+        },
+        {
+          "oldNorseWord": "þræll",
+          "englishTranslation": "slave, serf",
+          "russianTranslation": "раб, невольник",
+          "type": "noun",
+          "definition": "Referring to a person who is the legal property of another and is forced to obey them.",
+          "examples": ["Þræll vinnur á akri. (The slave works in the field.)"]
+        },
+        {
             "oldNorseWord": "hann",
             "englishTranslation": "he",
             "russianTranslation": "он",
@@ -359,6 +409,10 @@
                 "dative": {
                     "singular": "honum",
                     "plural": "þeim"
+                },
+                "genitive": {
+                    "singular": "hans",
+                    "plural": "þeira"
                 }
             }
         },
@@ -384,6 +438,11 @@
                     "singular": "mér",
                     "dual": "okkr",
                     "plural": "oss"
+                },
+                "genitive": {
+                    "singular": "mín",
+                    "dual": "okkar",
+                    "plural": "vár"
                 }
             }
         },
@@ -409,6 +468,11 @@
                     "singular": "þér",
                     "dual": "ykkr",
                     "plural": "yðr"
+                },
+                "genitive": {
+                    "singular": "þín",
+                    "dual": "ykkar",
+                    "plural": "yðvar"
                 }
             }
         },
@@ -431,6 +495,10 @@
                 "dative": {
                     "singular": "því",
                     "plural": "þeim"
+                },
+                "genitive": {
+                    "singular": "þess",
+                    "plural": "þeira"
                 }
             }
         },
@@ -453,6 +521,10 @@
               "dative": {
                   "singular": "öllum",
                   "plural": "öllum"
+              },
+              "genitive": {
+                  "singular": "alls",
+                  "plural": "allra"
               }
           }
         },
@@ -478,7 +550,21 @@
           "russianTranslation": "оба",
           "type": "pronoun",
           "definition": "Referring to two entities together.",
-          "examples": ["Báðir menn ganga til veizlu. (Both men are going to the feast.)"]
+          "examples": ["Báðir menn ganga til veizlu. (Both men are going to the feast.)"],
+          "cases": {
+              "nominative": {
+                  "dual": "báðir"
+              },
+              "accusative": {
+                  "dual": "báða"
+              },
+              "dative": {
+                  "dual": "báðum"
+              },
+              "genitive": {
+                  "dual": "beggja"
+              }
+          }
         },
         {
           "oldNorseWord": "hvat",
@@ -496,8 +582,142 @@
               },
               "dative": {
                   "singular": "hví"
+              },
+              "genitive": {
+                  "singular": "hvess"
               }
           }
+        },
+        {
+          "oldNorseWord": "annarr",
+          "englishTranslation": "one of two, another",
+          "russianTranslation": "один из двух, другой",
+          "type": "pronoun",
+          "definition": "Referring to one of two entities.",
+          "examples": ["Annarr maðr gekk heim. (One of the two men went home.)"],
+          "cases": {
+              "nominative": {
+                  "singular": "annarr",
+                  "plural": "aðrir"
+              },
+              "accusative": {
+                  "singular": "annan",
+                  "plural": "aðra"
+              },
+              "dative": {
+                  "singular": "öðrum",
+                  "plural": "öðrum"
+              },
+              "genitive": {
+                  "singular": "annars",
+                  "plural": "annarra"
+              }
+          }
+        },
+        {
+          "oldNorseWord": "engi",
+          "englishTranslation": "none, nobody",
+          "russianTranslation": "никакой, никто",
+          "type": "pronoun",
+          "definition": "Referring to none or nobody.",
+          "examples": ["Engi maðr kom. (No man came.)"],
+          "cases": {
+              "nominative": {
+                  "singular": "engi",
+                  "plural": "engir"
+              },
+              "accusative": {
+                  "singular": "engi",
+                  "plural": "enga"
+              },
+              "dative": {
+                  "singular": "engum",
+                  "plural": "engum"
+              },
+              "genitive": {
+                  "singular": "enskis",
+                  "plural": "engra"
+              }
+          }
+        },
+        {
+          "oldNorseWord": "hinn",
+          "englishTranslation": "that, another",
+          "russianTranslation": "тот, другой",
+          "type": "pronoun",
+          "definition": "Referring to that specific entity or another.",
+          "examples": ["Hinn maðr er hér. (That man is here.)"],
+          "cases": {
+              "nominative": {
+                  "singular": "hinn",
+                  "plural": "hinir"
+              },
+              "accusative": {
+                  "singular": "hinn",
+                  "plural": "hina"
+              },
+              "dative": {
+                  "singular": "hinum",
+                  "plural": "hinum"
+              },
+              "genitive": {
+                  "singular": "hins",
+                  "plural": "hinna"
+              }
+          }
+        },
+        {
+          "oldNorseWord": "hverr",
+          "englishTranslation": "who, each",
+          "russianTranslation": "кто, каждый",
+          "type": "pronoun",
+          "definition": "Referring to who or each one.",
+          "examples": ["Hverr maðr skal fara? (Who shall go?)"],
+          "cases": {
+              "nominative": {
+                  "singular": "hverr",
+                  "plural": "hverir"
+              },
+              "accusative": {
+                  "singular": "hverjan",
+                  "plural": "hverja"
+              },
+              "dative": {
+                  "singular": "hverjum",
+                  "plural": "hverjum"
+              },
+              "genitive": {
+                  "singular": "hvers",
+                  "plural": "hverra"
+              }
+          }
+        },
+        {
+          "oldNorseWord": "sik",
+          "englishTranslation": "oneself",
+          "russianTranslation": "себя, собой",
+          "type": "pronoun",
+          "definition": "Referring to oneself.",
+          "examples": ["Hann sá sik í spegli. (He saw himself in the mirror.)"],
+          "cases": {
+              "accusative": {
+                  "singular": "sik"
+              },
+              "dative": {
+                  "singular": "sér"
+              },
+              "genitive": {
+                  "singular": "sín"
+              }
+          }
+        },
+        {
+          "oldNorseWord": "slíkr",
+          "englishTranslation": "such",
+          "russianTranslation": "такой",
+          "type": "pronoun",
+          "definition": "Referring to such or of that kind.",
+          "examples": ["Slíkr maðr er góðr. (Such a man is good.)"]
         },
         {
             "oldNorseWord": "eigi",
@@ -637,6 +857,30 @@
           "type": "adverb"
         },
         {
+          "oldNorseWord": "aftr",
+          "englishTranslation": "back, again",
+          "russianTranslation": "назад, снова",
+          "type": "adverb",
+          "definition": "In a direction or manner that returns to a previous position or condition; once more.",
+          "examples": ["Hann fer aftr heim. (He goes back home.)"]
+        },
+        {
+          "oldNorseWord": "brott",
+          "englishTranslation": "away, out",
+          "russianTranslation": "прочь, вон",
+          "type": "adverb",
+          "definition": "From a particular place; out of existence or notice.",
+          "examples": ["Hann fer brott. (He goes away.)"]
+        },
+        {
+          "oldNorseWord": "saman",
+          "englishTranslation": "together, jointly",
+          "russianTranslation": "вместе, сообща",
+          "type": "adverb",
+          "definition": "In a united or coordinated manner; in conjunction with others.",
+          "examples": ["Þau fara saman. (They go together.)"]
+        },
+        {
           "oldNorseWord": "þá",
           "englishTranslation": "then",
           "russianTranslation": "тогда, потом",
@@ -739,6 +983,22 @@
           "type": "preposition",
           "definition": "Indicating movement from a place or the point of origin of something.",
           "examples": ["Hann kom úr húsinu. (He came out of the house.)"]
+        },
+        {
+          "oldNorseWord": "gegn",
+          "englishTranslation": "against, in exchange for",
+          "russianTranslation": "против, взамен",
+          "type": "preposition",
+          "definition": "In opposition to; as a substitute or equivalent.",
+          "examples": ["Hann er gegn mér. (He is against me.)"]
+        },
+        {
+          "oldNorseWord": "til",
+          "englishTranslation": "to, for",
+          "russianTranslation": "к, для",
+          "type": "preposition",
+          "definition": "Expressing motion in the direction of; indicating the purpose or goal.",
+          "examples": ["Hann fer til bæjar. (He goes to the town.)"]
         },
         {
             "oldNorseWord": "er",
@@ -1273,6 +1533,66 @@
           "verbSecond": "sýni"
         },
         {
+          "oldNorseWord": "gøra",
+          "englishTranslation": "to do, to perform",
+          "russianTranslation": "делать, выполнять",
+          "type": "verb",
+          "definition": "To perform an action or activity; to execute or carry out.",
+          "examples": ["Hann gørir verkið. (He does the work.)"],
+          "verbFirst": "gøra",
+          "verbSecond": "gøri"
+        },
+        {
+          "oldNorseWord": "leiða",
+          "englishTranslation": "to lead, to escort",
+          "russianTranslation": "вести, провожать",
+          "type": "verb",
+          "definition": "To guide or direct in a particular direction; to accompany someone to ensure they reach a destination.",
+          "examples": ["Hann leiðir mig heim. (He leads me home.)"],
+          "verbFirst": "leiða",
+          "verbSecond": "leiði"
+        },
+        {
+          "oldNorseWord": "munu",
+          "englishTranslation": "to intend, to plan",
+          "russianTranslation": "намереваться, собираться",
+          "type": "verb",
+          "definition": "To have in mind as a purpose or goal.",
+          "examples": ["Hann mun fara á morgun. (He intends to go tomorrow.)"],
+          "verbFirst": "munu",
+          "verbSecond": "mun"
+        },
+        {
+          "oldNorseWord": "reka",
+          "englishTranslation": "to drive, to force",
+          "russianTranslation": "гнать, принуждать",
+          "type": "verb",
+          "definition": "To compel to move in a particular direction; to exert force upon.",
+          "examples": ["Hann rek kúna. (He drives the cows.)"],
+          "verbFirst": "reka",
+          "verbSecond": "rek"
+        },
+        {
+          "oldNorseWord": "skulu",
+          "englishTranslation": "to owe, to be obliged",
+          "russianTranslation": "долженствовать, быть должным",
+          "type": "verb",
+          "definition": "To be under a moral or legal obligation to do something.",
+          "examples": ["Hann skal borga mér. (He owes me.)"],
+          "verbFirst": "skulu",
+          "verbSecond": "skal"
+        },
+        {
+          "oldNorseWord": "verða",
+          "englishTranslation": "to become, to turn into",
+          "russianTranslation": "становиться, делаться",
+          "type": "verb",
+          "definition": "To undergo a change or development; to come to be in a particular state or condition.",
+          "examples": ["Hann verður gamall. (He becomes old.)"],
+          "verbFirst": "verða",
+          "verbSecond": "verð"
+        },
+        {
           "oldNorseWord": "fagr",
           "englishTranslation": "beautiful",
           "russianTranslation": "красивый, прекрасный",
@@ -1499,6 +1819,43 @@
           "type": "adjective",
           "definition": "In an early stage of life, not yet matured.",
           "examples": ["Ungr maður með framtíðardrauma. (Young man with dreams of the future.)"]
+        },
+        {
+          "oldNorseWord": "groenn",
+          "englishTranslation": "green",
+          "russianTranslation": "зелёный",
+          "type": "adjective",
+          "definition": "Of the color between blue and yellow in the spectrum.",
+          "examples": ["Groenn gras vaxa. (Green grass grows.)"]
+        },
+        {
+          "oldNorseWord": "írskr",
+          "englishTranslation": "Irish",
+          "russianTranslation": "ирландский",
+          "type": "adjective",
+          "definition": "Relating to Ireland, its people, or the Irish language.",
+          "examples": ["Írskr maðr talar. (An Irish man speaks.)"]
+        },
+        {
+          "oldNorseWord": "nýr",
+          "englishTranslation": "new, fresh",
+          "russianTranslation": "новый, свежий",
+          "type": "adjective",
+          "definition": "Not existing before; made, introduced, or discovered recently or now for the first time.",
+          "examples": ["Nýr dagr er kominn. (A new day has come.)"],
+          "cases": {
+              "accusative": {
+                  "singular": "nýjan",
+                  "plural": "nýja"
+              },
+              "dative": {
+                  "singular": "nýjum",
+                  "plural": "nýjum"
+              },
+              "genitive": {
+                  "plural": "nýrra"
+              }
+          }
         },
         {
           "oldNorseWord": "beðinn",
@@ -1845,11 +2202,91 @@
           "examples": ["Sýndr af listum sínum, fékk hann áhrifin með tónlist sinni. (Showing his skills, he influenced the audience with his music.)"]
         },
         {
+          "oldNorseWord": "gørðr",
+          "englishTranslation": "doing",
+          "russianTranslation": "делающий",
+          "type": "participle",
+          "definition": "Engaged in performing or executing a particular action.",
+          "examples": ["Gørðr maðr vinnur. (The doing man works.)"]
+        },
+        {
+          "oldNorseWord": "leiddr",
+          "englishTranslation": "leading, escorting",
+          "russianTranslation": "ведущий, провожающий",
+          "type": "participle",
+          "definition": "Guiding or directing in a particular direction; accompanying someone.",
+          "examples": ["Leiddr maðr fer. (The leading man goes.)"]
+        },
+        {
+          "oldNorseWord": "munaðr",
+          "englishTranslation": "intending",
+          "russianTranslation": "намеривающий",
+          "type": "participle",
+          "definition": "Having in mind as a purpose or goal; planning.",
+          "examples": ["Munaðr maðr bíður. (The intending man waits.)"]
+        },
+        {
+          "oldNorseWord": "rekinn",
+          "englishTranslation": "driving, forcing",
+          "russianTranslation": "гнущий, принуждающий",
+          "type": "participle",
+          "definition": "Compelling to move in a particular direction; exerting force upon.",
+          "examples": ["Rekinn maðr stýrir. (The driving man steers.)"]
+        },
+        {
+          "oldNorseWord": "skulaðr",
+          "englishTranslation": "owing",
+          "russianTranslation": "должный",
+          "type": "participle",
+          "definition": "Under a moral or legal obligation to do something; obliged.",
+          "examples": ["Skulaðr maðr greiðir. (The owing man pays.)"]
+        },
+        {
+          "oldNorseWord": "orðinn",
+          "englishTranslation": "becoming, turning into",
+          "russianTranslation": "становящий, делающий",
+          "type": "participle",
+          "definition": "Undergoing a change or development; coming to be in a particular state or condition.",
+          "examples": ["Orðinn maðr hlýðir. (The becoming man listens.)"]
+        },
+        {
           "oldNorseWord": "gefa grið",
           "englishTranslation": "to spare, to pardon",
           "russianTranslation": "пощадить, помиловать",
           "type": "phrase",
           "definition": "To grant mercy or forgiveness; to spare someone from harm or punishment.",
           "examples": ["Hann ákvað að gefa grið þeim óvinum sínum. (He decided to spare his enemies.)"]
+        },
+        {
+          "oldNorseWord": "gefa sik",
+          "englishTranslation": "to surrender, to yield",
+          "russianTranslation": "сдаваться, поддаваться",
+          "type": "phrase",
+          "definition": "To give oneself up, especially to an opposing force or authority; to concede or submit.",
+          "examples": ["Hann gefr sik ekki. (He does not surrender.)"]
+        },
+        {
+          "oldNorseWord": "standa með",
+          "englishTranslation": "to stand by, to support",
+          "russianTranslation": "быть на стороне, оказывать поддержку",
+          "type": "phrase",
+          "definition": "To support or aid someone; to remain loyal or steadfast.",
+          "examples": ["Hann stendr með vinum sínum. (He stands by his friends.)"]
+        },
+        {
+          "oldNorseWord": "svá at",
+          "englishTranslation": "so that, (so) as to",
+          "russianTranslation": "так что, (так) чтобы",
+          "type": "phrase",
+          "definition": "In a manner or way that; to the extent or degree that.",
+          "examples": ["Hann hlýðir svá at skilja. (He listens so as to understand.)"]
+        },
+        {
+          "oldNorseWord": "þar næst",
+          "englishTranslation": "then, next",
+          "russianTranslation": "затем, вслед за этим",
+          "type": "phrase",
+          "definition": "Immediately following in time, order, or sequence.",
+          "examples": ["Hann fer heim, þar næst sefur. (He goes home, then sleeps.)"]
         }
 ]
