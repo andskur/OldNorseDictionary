@@ -391,6 +391,106 @@
           "examples": ["Þræll vinnur á akri. (The slave works in the field.)"]
         },
         {
+          "oldNorseWord": "áss",
+          "englishTranslation": "Aesir, god",
+          "russianTranslation": "ас, бог",
+          "type": "noun",
+          "definition": "A member of the principal pantheon in Norse religion; a deity.",
+          "examples": ["Áss er dýrkaður. (The god is worshiped.)"],
+          "cases": {
+              "nominative": {
+                  "plural": "æsir"
+              },
+              "accusative": {
+                  "singular": "ás",
+                  "plural": "ásu"
+              },
+              "dative": {
+                  "singular": "æsi",
+                  "plural": "ásum"
+              },
+              "genitive": {
+                  "singular": "ásar",
+                  "plural": "ása"
+              }
+          }
+        },
+        {
+          "oldNorseWord": "hamarr",
+          "englishTranslation": "hammer, mallet",
+          "russianTranslation": "молот, молоток",
+          "type": "noun",
+          "definition": "A tool with a heavy metal head used for breaking things or driving in nails.",
+          "examples": ["Hamarr er í húsi. (The hammer is in the house.)"]
+        },
+        {
+          "oldNorseWord": "himinn",
+          "englishTranslation": "sky, heaven",
+          "russianTranslation": "небо, небеса",
+          "type": "noun",
+          "definition": "The expanse of air over the Earth; the celestial abode of divine beings.",
+          "examples": ["Himinn er blár. (The sky is blue.)"]
+        },
+        {
+          "oldNorseWord": "hóll",
+          "englishTranslation": "hill, mound",
+          "russianTranslation": "холм, пригорок",
+          "type": "noun",
+          "definition": "A naturally raised area of land, smaller than a mountain.",
+          "examples": ["Hóll er grænn. (The hill is green.)"]
+        },
+        {
+          "oldNorseWord": "íss",
+          "englishTranslation": "ice",
+          "russianTranslation": "лёд",
+          "type": "noun",
+          "definition": "Frozen water, a brittle, transparent crystalline solid.",
+          "examples": ["Íss er kaldur. (The ice is cold.)"]
+        },
+        {
+          "oldNorseWord": "jötunn",
+          "englishTranslation": "jotun, giant",
+          "russianTranslation": "ётун, великан",
+          "type": "noun",
+          "definition": "A mythological being in Norse mythology, often opposed to the gods.",
+          "examples": ["Jötunn er stór. (The giant is big.)"]
+        },
+        {
+          "oldNorseWord": "stormr",
+          "englishTranslation": "storm, tempest",
+          "russianTranslation": "шторм, буря",
+          "type": "noun",
+          "definition": "A violent disturbance of the atmosphere with strong winds and usually rain, thunder, or snow.",
+          "examples": ["Stormr er ógnandi. (The storm is threatening.)"]
+        },
+        {
+          "oldNorseWord": "vagn",
+          "englishTranslation": "wagon, cart",
+          "russianTranslation": "повозка, телега",
+          "type": "noun",
+          "definition": "A vehicle used for transporting goods or people, usually pulled by horses.",
+          "examples": ["Vagn er fullur af heyi. (The wagon is full of hay.)"]
+        },
+        {
+          "oldNorseWord": "viðr",
+          "englishTranslation": "wood, log",
+          "russianTranslation": "дерево, бревно",
+          "type": "noun",
+          "definition": "The hard fibrous material that forms the main substance of the trunk or branches of a tree; a large solid piece of wood.",
+          "examples": ["Viðr er í eldi. (The wood is in the fire.)"],
+          "cases": {
+              "nominative": {
+                  "plural": "viðir"
+              },
+              "accusative": {
+                  "plural": "viðu"
+              },
+              "genitive": {
+                  "singular": "viðar"
+              }
+          }
+        },
+        {
             "oldNorseWord": "hann",
             "englishTranslation": "he",
             "russianTranslation": "он",
@@ -720,6 +820,14 @@
           "examples": ["Slíkr maðr er góðr. (Such a man is good.)"]
         },
         {
+          "oldNorseWord": "sjálfr",
+          "englishTranslation": "self",
+          "russianTranslation": "сам",
+          "type": "pronoun",
+          "definition": "Referring to the person or thing in question as the same as the one previously mentioned.",
+          "examples": ["Hann sjálfr gerði það. (He himself did it.)"]
+        },
+        {
             "oldNorseWord": "eigi",
             "englishTranslation": "not",
             "russianTranslation": "не",
@@ -839,6 +947,22 @@
           "definition": "Because",
           "examples": [],
           "type": "conjunction"
+        },
+        {
+          "oldNorseWord": "bæði ... ok ...",
+          "englishTranslation": "both ... and ..., as ... so ...",
+          "russianTranslation": "и ..., и ..., как ..., так и ...",
+          "type": "conjunction",
+          "definition": "Used to connect words of the same part of speech, clauses, or sentences that are to be taken jointly.",
+          "examples": ["Hann er bæði góður ok hreinn. (He is both good and pure.)"]
+        },
+        {
+          "oldNorseWord": "eigi ... né ...",
+          "englishTranslation": "neither ... nor ...",
+          "russianTranslation": "ни ..., ни ...",
+          "type": "conjunction",
+          "definition": "Used to introduce a further negative statement; not either.",
+          "examples": ["Hann er eigi gamall né ungur. (He is neither old nor young.)"]
         },
         {
           "oldNorseWord": "svá",
@@ -999,6 +1123,46 @@
           "type": "preposition",
           "definition": "Expressing motion in the direction of; indicating the purpose or goal.",
           "examples": ["Hann fer til bæjar. (He goes to the town.)"]
+        },
+        {
+          "oldNorseWord": "af",
+          "englishTranslation": "from, off",
+          "russianTranslation": "с, от",
+          "type": "preposition",
+          "definition": "Expressing the point in space at which a journey, motion, or action starts; indicating separation or removal.",
+          "examples": ["Hann fer af bænum. (He goes from the town.)"]
+        },
+        {
+          "oldNorseWord": "hjá",
+          "englishTranslation": "by, near",
+          "russianTranslation": "у, возле",
+          "type": "preposition",
+          "definition": "In the vicinity of; close to.",
+          "examples": ["Hann stendur hjá húsi. (He stands by the house.)"]
+        },
+        {
+          "oldNorseWord": "um",
+          "englishTranslation": "about, around",
+          "russianTranslation": "по, вокруг",
+          "type": "preposition",
+          "definition": "Indicating movement in an area; concerning or regarding.",
+          "examples": ["Hann gengur um torgið. (He walks around the square.)"]
+        },
+        {
+          "oldNorseWord": "við",
+          "englishTranslation": "near, with, by",
+          "russianTranslation": "возле, вместе с, с",
+          "type": "preposition",
+          "definition": "At or to a short distance away from; in the company of; in relation to.",
+          "examples": ["Hann situr við eldinn. (He sits by the fire.)"]
+        },
+        {
+          "oldNorseWord": "yfir",
+          "englishTranslation": "over, across, on, above",
+          "russianTranslation": "над, через, на, над",
+          "type": "preposition",
+          "definition": "Extending or directly above; from one side to the other; in or to a position above or higher than.",
+          "examples": ["Hann fer yfir brúna. (He goes over the bridge.)"]
         },
         {
             "oldNorseWord": "er",
@@ -1593,6 +1757,76 @@
           "verbSecond": "verð"
         },
         {
+          "oldNorseWord": "aka",
+          "englishTranslation": "to drive, to ride",
+          "russianTranslation": "ехать, ездить",
+          "type": "verb",
+          "definition": "To operate and control the direction and speed of a motor vehicle; to travel on a horse or bicycle.",
+          "examples": ["Hann akar bíl. (He drives a car.)"],
+          "verbFirst": "aka",
+          "verbSecond": "ek"
+        },
+        {
+          "oldNorseWord": "brenna",
+          "englishTranslation": "to burn, to ignite",
+          "russianTranslation": "жечь, сжигать",
+          "type": "verb",
+          "definition": "To consume fuel and give off heat, light, and gases; to set on fire.",
+          "examples": ["Hann brennir eld. (He burns fire.)"],
+          "verbFirst": "brenna",
+          "verbSecond": "brenni"
+        },
+        {
+          "oldNorseWord": "fljúga",
+          "englishTranslation": "to fly, to soar",
+          "russianTranslation": "летать, лететь",
+          "type": "verb",
+          "definition": "To move through the air using wings; to travel in an aircraft.",
+          "examples": ["Hann flýgur með fuglum. (He flies with birds.)"],
+          "verbFirst": "fljúga",
+          "verbSecond": "flýg"
+        },
+        {
+          "oldNorseWord": "hjálpa",
+          "englishTranslation": "to help, to assist",
+          "russianTranslation": "помогать, оказывать помощь",
+          "type": "verb",
+          "definition": "To give or provide assistance; to make it easier for someone to do something.",
+          "examples": ["Hann hjálpar mér. (He helps me.)"],
+          "verbFirst": "hjálpa",
+          "verbSecond": "help"
+        },
+        {
+          "oldNorseWord": "hringa",
+          "englishTranslation": "to coil, to curl",
+          "russianTranslation": "сгибать в кольцо, сворачивать в кольца",
+          "type": "verb",
+          "definition": "To form into a circular shape; to wind into continuous rings.",
+          "examples": ["Hann hringar snúru. (He coils the rope.)"],
+          "verbFirst": "hringa",
+          "verbSecond": "hringa"
+        },
+        {
+          "oldNorseWord": "róa",
+          "englishTranslation": "to row, to paddle",
+          "russianTranslation": "грести, идти на вёслах",
+          "type": "verb",
+          "definition": "To propel a boat with oars; to move by means of oars.",
+          "examples": ["Hann roer á vatni. (He rows on the water.)"],
+          "verbFirst": "róa",
+          "verbSecond": "roe"
+        },
+        {
+          "oldNorseWord": "vernda",
+          "englishTranslation": "to protect, to guard",
+          "russianTranslation": "защищать, охранять",
+          "type": "verb",
+          "definition": "To keep safe from harm or injury; to watch over and defend.",
+          "examples": ["Hann verndar hús. (He protects the house.)"],
+          "verbFirst": "vernda",
+          "verbSecond": "vernda"
+        },
+        {
           "oldNorseWord": "fagr",
           "englishTranslation": "beautiful",
           "russianTranslation": "красивый, прекрасный",
@@ -1856,6 +2090,30 @@
                   "plural": "nýrra"
               }
           }
+        },
+        {
+          "oldNorseWord": "djarfr",
+          "englishTranslation": "brave, bold",
+          "russianTranslation": "смелый, храбрый",
+          "type": "adjective",
+          "definition": "Having or showing courage; ready to face and endure danger or pain.",
+          "examples": ["Djarfr maðr berst. (The brave man fights.)"]
+        },
+        {
+          "oldNorseWord": "gamall",
+          "englishTranslation": "old, elderly",
+          "russianTranslation": "старый, пожилой",
+          "type": "adjective",
+          "definition": "Having lived for a long time; no longer young.",
+          "examples": ["Gamall maðr les. (The old man reads.)"]
+        },
+        {
+          "oldNorseWord": "háll",
+          "englishTranslation": "smooth, slippery",
+          "russianTranslation": "гладкий, скользкий",
+          "type": "adjective",
+          "definition": "Having an even and regular surface; free from perceptible projections or indentations.",
+          "examples": ["Háll íss er hættulegur. (Smooth ice is dangerous.)"]
         },
         {
           "oldNorseWord": "beðinn",
@@ -2250,6 +2508,54 @@
           "examples": ["Orðinn maðr hlýðir. (The becoming man listens.)"]
         },
         {
+          "oldNorseWord": "ekinn",
+          "englishTranslation": "driving, riding",
+          "russianTranslation": "едущий",
+          "type": "participle",
+          "definition": "Engaged in operating and controlling the direction and speed of a motor vehicle; traveling on a horse or bicycle.",
+          "examples": ["Ekinn maðr fer. (The driving man goes.)"]
+        },
+        {
+          "oldNorseWord": "floginn",
+          "englishTranslation": "flying, soaring",
+          "russianTranslation": "летящий",
+          "type": "participle",
+          "definition": "Moving through the air using wings; traveling in an aircraft.",
+          "examples": ["Floginn fugl syngur. (The flying bird sings.)"]
+        },
+        {
+          "oldNorseWord": "hólpinn",
+          "englishTranslation": "helping, assisting",
+          "russianTranslation": "помогающий",
+          "type": "participle",
+          "definition": "Giving or providing assistance; making it easier for someone to do something.",
+          "examples": ["Hólpinn bróðir smíðar. (The helping brother builds.)"]
+        },
+        {
+          "oldNorseWord": "hringaðr",
+          "englishTranslation": "coiling, curling",
+          "russianTranslation": "сгибающий в кольцо",
+          "type": "participle",
+          "definition": "Forming into a circular shape; winding into continuous rings.",
+          "examples": ["Hringaðr maðr bindur. (The coiling man ties.)"]
+        },
+        {
+          "oldNorseWord": "róinn",
+          "englishTranslation": "rowing, paddling",
+          "russianTranslation": "гребущий",
+          "type": "participle",
+          "definition": "Propelling a boat with oars; moving by means of oars.",
+          "examples": ["Róinn maðr fer. (The rowing man goes.)"]
+        },
+        {
+          "oldNorseWord": "verndaðr",
+          "englishTranslation": "protecting, guarding",
+          "russianTranslation": "защищающий, охраняющий",
+          "type": "participle",
+          "definition": "Keeping safe from harm or injury; watching over and defending.",
+          "examples": ["Verndaðr maðr vakir. (The protecting man watches.)"]
+        },
+        {
           "oldNorseWord": "gefa grið",
           "englishTranslation": "to spare, to pardon",
           "russianTranslation": "пощадить, помиловать",
@@ -2288,5 +2594,13 @@
           "type": "phrase",
           "definition": "Immediately following in time, order, or sequence.",
           "examples": ["Hann fer heim, þar næst sefur. (He goes home, then sleeps.)"]
+        },
+        {
+          "oldNorseWord": "því næst",
+          "englishTranslation": "then, next",
+          "russianTranslation": "затем, потом",
+          "type": "phrase",
+          "definition": "Immediately following in time, order, or sequence.",
+          "examples": ["Hann borðar, því næst sefur. (He eats, then sleeps.)"]
         }
 ]
