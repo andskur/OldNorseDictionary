@@ -491,6 +491,46 @@
           }
         },
         {
+          "oldNorseWord": "dómr",
+          "englishTranslation": "state, fate",
+          "russianTranslation": "состояние, судьба",
+          "type": "noun",
+          "definition": "The particular condition that someone or something is in at a specific time; the development of events beyond a person's control.",
+          "examples": ["Dómr hans er óljós. (His fate is uncertain.)"]
+        },
+        {
+          "oldNorseWord": "kaupmaðr",
+          "englishTranslation": "merchant, trader",
+          "russianTranslation": "купец, торговец",
+          "type": "noun",
+          "definition": "A person who buys and sells goods, especially on a large scale.",
+          "examples": ["Kaupmaðr selur vörur. (The merchant sells goods.)"]
+        },
+        {
+          "oldNorseWord": "penningr",
+          "englishTranslation": "penny, coin",
+          "russianTranslation": "пеннинг, монета",
+          "type": "noun",
+          "definition": "A unit of currency; a piece of metal used as a medium of exchange.",
+          "examples": ["Hann hefur margar penningar. (He has many coins.)"]
+        },
+        {
+          "oldNorseWord": "sveinn",
+          "englishTranslation": "boy, youth",
+          "russianTranslation": "парень, юноша",
+          "type": "noun",
+          "definition": "A male child or young man.",
+          "examples": ["Sveinn er glaður. (The boy is happy.)"]
+        },
+        {
+          "oldNorseWord": "þrældómr",
+          "englishTranslation": "slavery, servitude",
+          "russianTranslation": "рабство, каторжный труд",
+          "type": "noun",
+          "definition": "The state of being a slave; a condition of hard work and subjection.",
+          "examples": ["Þrældómr er óréttlátur. (Slavery is unjust.)"]
+        },
+        {
             "oldNorseWord": "hann",
             "englishTranslation": "he",
             "russianTranslation": "он",
@@ -828,6 +868,160 @@
           "examples": ["Hann sjálfr gerði það. (He himself did it.)"]
         },
         {
+          "oldNorseWord": "sá",
+          "englishTranslation": "that, this",
+          "russianTranslation": "тот, этот",
+          "type": "pronoun",
+          "definition": "Used to identify a specific person or thing observed or heard by the speaker.",
+          "examples": ["Sá maðr er góður. (That man is good.)"],
+          "cases": {
+              "nominative": {
+                  "singular": "sá",
+                  "plural": "þeir"
+              },
+              "accusative": {
+                  "singular": "þann",
+                  "plural": "þá"
+              },
+              "dative": {
+                  "singular": "þeim",
+                  "plural": "þeim"
+              },
+              "genitive": {
+                  "singular": "þes",
+                  "plural": "þeira"
+              }
+          }
+        },
+        {
+          "oldNorseWord": "minn",
+          "englishTranslation": "my",
+          "russianTranslation": "мой",
+          "type": "pronoun",
+          "definition": "Belonging to or associated with the speaker.",
+          "examples": ["Þetta er minn bók. (This is my book.)"],
+          "cases": {
+              "nominative": {
+                  "singular": "minn",
+                  "plural": "mínir"
+              },
+              "accusative": {
+                  "singular": "minn",
+                  "plural": "mína"
+              },
+              "dative": {
+                  "singular": "mínum",
+                  "plural": "mínum"
+              },
+              "genitive": {
+                  "singular": "míns",
+                  "plural": "minna"
+              }
+          }
+        },
+        {
+          "oldNorseWord": "okkarr",
+          "englishTranslation": "our (belonging to us two)",
+          "russianTranslation": "наш (нам двоим принадлежащий)",
+          "type": "pronoun",
+          "definition": "Belonging to or associated with the speaker and one other person.",
+          "examples": ["Þetta er okkarr hús. (This is our house.)"],
+          "cases": {
+              "nominative": {
+                  "singular": "okkarr",
+                  "plural": "okkrir"
+              },
+              "accusative": {
+                  "singular": "okkarn",
+                  "plural": "okkra"
+              },
+              "dative": {
+                  "singular": "okkrum",
+                  "plural": "okkrum"
+              },
+              "genitive": {
+                  "singular": "okkars",
+                  "plural": "okkarra"
+              }
+          }
+        },
+        {
+          "oldNorseWord": "sinn",
+          "englishTranslation": "his, her, its, one's own",
+          "russianTranslation": "свой",
+          "type": "pronoun",
+          "definition": "Belonging to or associated with a previously mentioned person or thing.",
+          "examples": ["Hann fann sinn hatt. (He found his hat.)"]
+        },
+        {
+          "oldNorseWord": "várr",
+          "englishTranslation": "our",
+          "russianTranslation": "наш",
+          "type": "pronoun",
+          "definition": "Belonging to or associated with the speaker and one or more other people.",
+          "examples": ["Þetta er várr bíll. (This is our car.)"],
+          "cases": {
+              "nominative": {
+                  "singular": "várr",
+                  "plural": "várir"
+              },
+              "accusative": {
+                  "singular": "várn",
+                  "plural": "vára"
+              },
+              "dative": {
+                  "singular": "várum",
+                  "plural": "várum"
+              },
+              "genitive": {
+                  "singular": "várs",
+                  "plural": "várra"
+              }
+          }
+        },
+        {
+          "oldNorseWord": "yðvarr",
+          "englishTranslation": "your (plural)",
+          "russianTranslation": "ваш",
+          "type": "pronoun",
+          "definition": "Belonging to or associated with the people that the speaker is addressing.",
+          "examples": ["Þetta er yðvarr peningur. (This is your money.)"],
+          "cases": {
+              "nominative": {
+                  "singular": "yðvarr",
+                  "plural": "yðrir"
+              },
+              "accusative": {
+                  "singular": "yðvarn",
+                  "plural": "yðra"
+              },
+              "dative": {
+                  "singular": "yðrum",
+                  "plural": "yðrum"
+              },
+              "genitive": {
+                  "singular": "yðvars",
+                  "plural": "yðvarra"
+              }
+          }
+        },
+        {
+          "oldNorseWord": "ykkarr",
+          "englishTranslation": "your (belonging to you two)",
+          "russianTranslation": "ваш (вам двоим принадлежащий)",
+          "type": "pronoun",
+          "definition": "Belonging to or associated with the two people that the speaker is addressing.",
+          "examples": ["Þetta er ykkarr borð. (This is your table.)"]
+        },
+        {
+          "oldNorseWord": "þinn",
+          "englishTranslation": "your",
+          "russianTranslation": "твой",
+          "type": "pronoun",
+          "definition": "Belonging to or associated with the person or people that the speaker is addressing.",
+          "examples": ["Þetta er þinn hundur. (This is your dog.)"]
+        },
+        {
             "oldNorseWord": "eigi",
             "englishTranslation": "not",
             "russianTranslation": "не",
@@ -915,7 +1109,30 @@
           "examples": [],
           "type": "adverb"
         },
-        
+        {
+          "oldNorseWord": "heim",
+          "englishTranslation": "home",
+          "russianTranslation": "домой, к дому",
+          "type": "adverb",
+          "definition": "To or at the place where one lives.",
+          "examples": ["Hann fer heim. (He goes home.)"]
+        },
+        {
+          "oldNorseWord": "heldr",
+          "englishTranslation": "rather, better",
+          "russianTranslation": "скорее, лучше",
+          "type": "adverb",
+          "definition": "To a greater degree; more preferable or suitable.",
+          "examples": ["Hann vill heldr lesa. (He would rather read.)"]
+        },
+        {
+          "oldNorseWord": "til",
+          "englishTranslation": "also, still",
+          "russianTranslation": "также, ещё",
+          "type": "adverb",
+          "definition": "In addition; besides; up to a particular point, degree, or extent.",
+          "examples": ["Hann er til góður. (He is still good.)"]
+        },
         {
             "oldNorseWord": "en",
             "englishTranslation": "but, than",
@@ -1163,6 +1380,14 @@
           "type": "preposition",
           "definition": "Extending or directly above; from one side to the other; in or to a position above or higher than.",
           "examples": ["Hann fer yfir brúna. (He goes over the bridge.)"]
+        },
+        {
+          "oldNorseWord": "meðal",
+          "englishTranslation": "among, between",
+          "russianTranslation": "среди, между",
+          "type": "preposition",
+          "definition": "In the midst of; surrounded by; in the interval or space separating two points.",
+          "examples": ["Hann er meðal vina. (He is among friends.)"]
         },
         {
             "oldNorseWord": "er",
@@ -1827,6 +2052,76 @@
           "verbSecond": "vernda"
         },
         {
+          "oldNorseWord": "gjalda",
+          "englishTranslation": "to pay, to compensate",
+          "russianTranslation": "платить, уплачивать",
+          "type": "verb",
+          "definition": "To give money to in return for goods or services rendered; to make reparation or compensation for.",
+          "examples": ["Hann gjaldar fyrir matinn. (He pays for the food.)"],
+          "verbFirst": "gjalda",
+          "verbSecond": "geld"
+        },
+        {
+          "oldNorseWord": "halda",
+          "englishTranslation": "to hold, to retain",
+          "russianTranslation": "держать, удерживать",
+          "type": "verb",
+          "definition": "To grasp, carry, or support with one's arms or hands; to keep possession of.",
+          "examples": ["Hann heldur bókinni. (He holds the book.)"],
+          "verbFirst": "halda",
+          "verbSecond": "held"
+        },
+        {
+          "oldNorseWord": "kaupa",
+          "englishTranslation": "to buy, to make a deal",
+          "russianTranslation": "покупать, заключать сделку",
+          "type": "verb",
+          "definition": "To acquire in exchange for money or its equivalent; to enter into an agreement.",
+          "examples": ["Hann kaupir hest. (He buys a horse.)"],
+          "verbFirst": "kaupa",
+          "verbSecond": "kaupi"
+        },
+        {
+          "oldNorseWord": "leita",
+          "englishTranslation": "to search, to attempt",
+          "russianTranslation": "искать, пытаться",
+          "type": "verb",
+          "definition": "To try to find something by looking or otherwise seeking carefully and thoroughly; to make an effort to do something.",
+          "examples": ["Hann leitar svara. (He searches for answers.)"],
+          "verbFirst": "leita",
+          "verbSecond": "leita"
+        },
+        {
+          "oldNorseWord": "telja",
+          "englishTranslation": "to tell, to count",
+          "russianTranslation": "говорить, считать",
+          "type": "verb",
+          "definition": "To communicate information, facts, or news to someone; to determine the total number of.",
+          "examples": ["Hann telur sögu. (He tells a story.)"],
+          "verbFirst": "telja",
+          "verbSecond": "tel"
+        },
+        {
+          "oldNorseWord": "trúa",
+          "englishTranslation": "to believe, to trust",
+          "russianTranslation": "верить, доверять",
+          "type": "verb",
+          "definition": "To accept something as true; to have confidence in the truth, existence, or reliability of something.",
+          "examples": ["Hann trúir þér. (He believes you.)"],
+          "verbFirst": "trúa",
+          "verbSecond": "trúi"
+        },
+        {
+          "oldNorseWord": "velja",
+          "englishTranslation": "to choose, to select",
+          "russianTranslation": "выбирать, отбирать",
+          "type": "verb",
+          "definition": "To pick out or select as being the best or most appropriate of two or more alternatives.",
+          "examples": ["Hann velur vín. (He chooses wine.)"],
+          "verbFirst": "velja",
+          "verbSecond": "vel"
+        },
+        {
           "oldNorseWord": "fagr",
           "englishTranslation": "beautiful",
           "russianTranslation": "красивый, прекрасный",
@@ -2114,6 +2409,14 @@
           "type": "adjective",
           "definition": "Having an even and regular surface; free from perceptible projections or indentations.",
           "examples": ["Háll íss er hættulegur. (Smooth ice is dangerous.)"]
+        },
+        {
+          "oldNorseWord": "norroenn",
+          "englishTranslation": "northern, Scandinavian",
+          "russianTranslation": "северный, скандинавский",
+          "type": "adjective",
+          "definition": "Pertaining to or characteristic of the northern regions of Europe, especially the cultures and languages of Scandinavia.",
+          "examples": ["Norroenn tunga er flókin. (The northern language is complex.)"]
         },
         {
           "oldNorseWord": "beðinn",
@@ -2556,6 +2859,62 @@
           "examples": ["Verndaðr maðr vakir. (The protecting man watches.)"]
         },
         {
+          "oldNorseWord": "goldinn",
+          "englishTranslation": "paying",
+          "russianTranslation": "платящий",
+          "type": "participle",
+          "definition": "Giving money to in return for goods or services rendered.",
+          "examples": ["Goldinn maðr er áreiðanlegur. (The paying man is reliable.)"]
+        },
+        {
+          "oldNorseWord": "haldinn",
+          "englishTranslation": "holding",
+          "russianTranslation": "держащий",
+          "type": "participle",
+          "definition": "Grasping, carrying, or supporting with one's arms or hands.",
+          "examples": ["Haldinn sveinn les. (The holding boy reads.)"]
+        },
+        {
+          "oldNorseWord": "keyptr",
+          "englishTranslation": "buying",
+          "russianTranslation": "покупающий",
+          "type": "participle",
+          "definition": "Acquiring in exchange for money or its equivalent.",
+          "examples": ["Keyptr maðr fer til markaðar. (The buying man goes to the market.)"]
+        },
+        {
+          "oldNorseWord": "leitaðr",
+          "englishTranslation": "searching, attempting",
+          "russianTranslation": "ищущий, пытающийся",
+          "type": "participle",
+          "definition": "Trying to find something by looking or otherwise seeking carefully and thoroughly; making an effort to do something.",
+          "examples": ["Leitaðr maðr finnur. (The searching man finds.)"]
+        },
+        {
+          "oldNorseWord": "taliðr",
+          "englishTranslation": "telling, counting",
+          "russianTranslation": "говорящий, считающий",
+          "type": "participle",
+          "definition": "Communicating information, facts, or news; determining the total number of.",
+          "examples": ["Taliðr maðr hlýðir. (The telling man listens.)"]
+        },
+        {
+          "oldNorseWord": "trúaðr",
+          "englishTranslation": "believing, trusting",
+          "russianTranslation": "верующий, доверяющий",
+          "type": "participle",
+          "definition": "Accepting something as true; having confidence in the truth, existence, or reliability of something.",
+          "examples": ["Trúaðr maðr fylgir. (The believing man follows.)"]
+        },
+        {
+          "oldNorseWord": "valiðr",
+          "englishTranslation": "choosing, selecting",
+          "russianTranslation": "выбирающий, отбирающий",
+          "type": "participle",
+          "definition": "Picking out or selecting as being the best or most appropriate of two or more alternatives.",
+          "examples": ["Valiðr maðr smakkar. (The choosing man tastes.)"]
+        },
+        {
           "oldNorseWord": "gefa grið",
           "englishTranslation": "to spare, to pardon",
           "russianTranslation": "пощадить, помиловать",
@@ -2602,5 +2961,13 @@
           "type": "phrase",
           "definition": "Immediately following in time, order, or sequence.",
           "examples": ["Hann borðar, því næst sefur. (He eats, then sleeps.)"]
+        },
+        {
+          "oldNorseWord": "trúa á",
+          "englishTranslation": "believe in (someone/something)",
+          "russianTranslation": "верить в (кого-либо/что-либо)",
+          "type": "phrase",
+          "definition": "To accept that someone or something is true, genuine, or trustworthy.",
+          "examples": ["Hann trúar á guð. (He believes in God.)"]
         }
 ]
