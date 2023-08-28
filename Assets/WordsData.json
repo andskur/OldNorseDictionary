@@ -531,6 +531,59 @@
           "examples": ["Þrældómr er óréttlátur. (Slavery is unjust.)"]
         },
         {
+          "oldNorseWord": "askr",
+          "englishTranslation": "ash tree, ash wood spear",
+          "russianTranslation": "ясень, копьё из ясеня",
+          "type": "noun",
+          "definition": "A type of tree known for its hard wood, often used to make weapons; a spear made from the wood of an ash tree.",
+          "examples": ["Hann smíðar askr. (He crafts an ash wood spear.)"]
+        },
+        {
+          "oldNorseWord": "drasill",
+          "englishTranslation": "horse, steed",
+          "russianTranslation": "конь, скакун",
+          "type": "noun",
+          "definition": "A strong, fast, or high-spirited horse; a steed used in battle or for travel.",
+          "examples": ["Drasill er fljótr. (The steed is fast.)"],
+          "cases": {
+              "nominative": {
+                  "plural": "dröslar"
+              },
+              "accusative": {
+                  "plural": "drösla"
+              },
+              "dative": {
+                  "singular": "drasil",
+                  "plural": "dröslum"
+              },
+              "genitive": {
+                  "plural": "drösla"
+              }
+          }
+        },
+        {
+          "oldNorseWord": "máttr",
+          "englishTranslation": "power, might",
+          "russianTranslation": "сила, мощь",
+          "type": "noun",
+          "definition": "The ability to do something or act in a particular way; physical or mental strength.",
+          "examples": ["Hans máttr er ótrúlegur. (His power is incredible.)"],
+          "cases": {
+              "nominative": {
+                  "plural": "mættir"
+              },
+              "accusative": {
+                  "plural": "mætti"
+              },
+              "dative": {
+                  "singular": "mætti",
+              },
+              "genitive": {
+                  "singular": "máttar"
+              }
+          }
+        },
+        {
             "oldNorseWord": "hann",
             "englishTranslation": "he",
             "russianTranslation": "он",
@@ -1134,6 +1187,14 @@
           "examples": ["Hann er til góður. (He is still good.)"]
         },
         {
+          "oldNorseWord": "þaðan",
+          "englishTranslation": "from there",
+          "russianTranslation": "оттуда",
+          "type": "adverb",
+          "definition": "From that place; in the direction away from that location.",
+          "examples": ["Hann kom þaðan. (He came from there.)"]
+        },
+        {
             "oldNorseWord": "en",
             "englishTranslation": "but, than",
             "russianTranslation": "но, чем",
@@ -1388,6 +1449,14 @@
           "type": "preposition",
           "definition": "In the midst of; surrounded by; in the interval or space separating two points.",
           "examples": ["Hann er meðal vina. (He is among friends.)"]
+        },
+        {
+          "oldNorseWord": "undir",
+          "englishTranslation": "under",
+          "russianTranslation": "под",
+          "type": "preposition",
+          "definition": "In a position below or lower than something else, typically denoting a place or location.",
+          "examples": ["Hann situr undir trénu. (He sits under the tree.)"]
         },
         {
             "oldNorseWord": "er",
@@ -2122,6 +2191,66 @@
           "verbSecond": "vel"
         },
         {
+          "oldNorseWord": "lækna",
+          "englishTranslation": "to heal, to cure",
+          "russianTranslation": "лечить, исцелять",
+          "type": "verb",
+          "definition": "To restore to health or soundness; to remedy or alleviate a disease or ailment.",
+          "examples": ["Hann læknaði sárin. (He healed the wounds.)"],
+          "verbFirst": "lækna",
+          "verbSecond": "lækna"
+        },
+        {
+          "oldNorseWord": "nefna",
+          "englishTranslation": "to name, to mention",
+          "russianTranslation": "называть, упоминать",
+          "type": "verb",
+          "definition": "To give a name to; to specify or refer to by name; to bring up or communicate.",
+          "examples": ["Hann nefndi það í bókinni. (He mentioned it in the book.)"],
+          "verbFirst": "nefna",
+          "verbSecond": "nefni"
+        },
+        {
+          "oldNorseWord": "rísa",
+          "englishTranslation": "to rise, to stand up",
+          "russianTranslation": "подниматься, вставать",
+          "type": "verb",
+          "definition": "To move from a lower position to a higher one; to get up from a seated or lying position.",
+          "examples": ["Sól rís á morgun. (The sun rises in the morning.)"],
+          "verbFirst": "rísa",
+          "verbSecond": "rís"
+        },
+        {
+          "oldNorseWord": "smíða",
+          "englishTranslation": "to craft, to make",
+          "russianTranslation": "изготовлять, делать",
+          "type": "verb",
+          "definition": "To create or produce something by assembling or shaping parts or materials.",
+          "examples": ["Hann smíðaði skip. (He crafted a ship.)"],
+          "verbFirst": "smíða",
+          "verbSecond": "smíða"
+        },
+        {
+          "oldNorseWord": "vita/vitu",
+          "englishTranslation": "to know, to be oriented (towards something)",
+          "russianTranslation": "знать, быть обращённым (куда-либо)",
+          "type": "verb",
+          "definition": "To be aware of or familiar with; to have knowledge or information about; to be directed or facing in a particular direction.",
+          "examples": ["Hann veit ekki svarið. (He doesn't know the answer.)"],
+          "verbFirst": "vita",
+          "verbSecond": "veit",
+          "conjugation": {
+              "singular": {
+                  "secondPerson": "veizt",
+                  "thirdPerson": "veit",
+              },
+              "plural": {
+                  "secondPerson": "vituð",
+                  "thirdPerson": "vitu"
+              }
+          },
+        },
+        {
           "oldNorseWord": "fagr",
           "englishTranslation": "beautiful",
           "russianTranslation": "красивый, прекрасный",
@@ -2417,6 +2546,54 @@
           "type": "adjective",
           "definition": "Pertaining to or characteristic of the northern regions of Europe, especially the cultures and languages of Scandinavia.",
           "examples": ["Norroenn tunga er flókin. (The northern language is complex.)"]
+        },
+        {
+          "oldNorseWord": "alvitr",
+          "englishTranslation": "all-knowing, omniscient",
+          "russianTranslation": "всезнающий, всеведущий",
+          "type": "adjective",
+          "definition": "Having complete or unlimited knowledge, awareness, or understanding.",
+          "examples": ["Hann er alvitr guð. (He is an all-knowing god.)"]
+        },
+        {
+          "oldNorseWord": "blindr",
+          "englishTranslation": "blind",
+          "russianTranslation": "слепой, незрячий",
+          "type": "adjective",
+          "definition": "Unable to see; lacking the sense of sight.",
+          "examples": ["Blindr maðr fer með staf. (The blind man walks with a stick.)"]
+        },
+        {
+          "oldNorseWord": "dauðr",
+          "englishTranslation": "dead",
+          "russianTranslation": "мёртвый, неживой",
+          "type": "adjective",
+          "definition": "No longer alive; deprived of life.",
+          "examples": ["Dauðr fugl liggur á jörðinni. (A dead bird lies on the ground.)"]
+        },
+        {
+          "oldNorseWord": "heitr",
+          "englishTranslation": "hot, warm",
+          "russianTranslation": "горячий, жаркий",
+          "type": "adjective",
+          "definition": "Having a high degree of heat or a high temperature.",
+          "examples": ["Heitr eldur brennur. (The hot fire burns.)"]
+        },
+        {
+          "oldNorseWord": "sjúkr",
+          "englishTranslation": "sick, ill",
+          "russianTranslation": "больной, нездоровый",
+          "type": "adjective",
+          "definition": "Affected by physical or mental illness.",
+          "examples": ["Sjúkr maðr þarf lækningu. (The sick man needs treatment.)"]
+        },
+        {
+          "oldNorseWord": "vitr",
+          "englishTranslation": "wise, intelligent",
+          "russianTranslation": "мудрый, умный",
+          "type": "adjective",
+          "definition": "Having or showing experience, knowledge, and good judgment.",
+          "examples": ["Vitr maðr talar ekki ósanngjarnlega. (A wise man does not speak unjustly.)"]
         },
         {
           "oldNorseWord": "beðinn",
@@ -2915,6 +3092,46 @@
           "examples": ["Valiðr maðr smakkar. (The choosing man tastes.)"]
         },
         {
+          "oldNorseWord": "læknaðr",
+          "englishTranslation": "healing, curing",
+          "russianTranslation": "лечащий, исцеляющий",
+          "type": "participle",
+          "definition": "Restoring to health or soundness; remedying or alleviating a disease or ailment.",
+          "examples": ["Læknaðr maðr hjálpar öðrum. (The healing man helps others.)"]
+        },
+        {
+          "oldNorseWord": "nefndr",
+          "englishTranslation": "naming, mentioning",
+          "russianTranslation": "называющий, упоминающий",
+          "type": "participle",
+          "definition": "Giving a name to; specifying or referring to by name; bringing up or communicating.",
+          "examples": ["Nefndr nafn er frægt. (The mentioned name is famous.)"]
+        },
+        {
+          "oldNorseWord": "risinn",
+          "englishTranslation": "rising, standing up",
+          "russianTranslation": "поднимающийся, встающий",
+          "type": "participle",
+          "definition": "Moving from a lower position to a higher one; getting up from a seated or lying position.",
+          "examples": ["Risinn maðr sér betur. (The rising man sees better.)"]
+        },
+        {
+          "oldNorseWord": "smíðaðr",
+          "englishTranslation": "crafting, making",
+          "russianTranslation": "изготавляющий, делающий",
+          "type": "participle",
+          "definition": "Creating or producing something by assembling or shaping parts or materials.",
+          "examples": ["Smíðaðr hlutur er fallegur. (The crafted object is beautiful.)"]
+        },
+        {
+          "oldNorseWord": "vitaðr",
+          "englishTranslation": "knowing, being oriented",
+          "russianTranslation": "знающий, обращающийся",
+          "type": "participle",
+          "definition": "Being aware of or familiar with; having knowledge or information about; being directed or facing in a particular direction.",
+          "examples": ["Vitaðr maðr er vitr. (The knowing man is wise.)"]
+        },
+        {
           "oldNorseWord": "gefa grið",
           "englishTranslation": "to spare, to pardon",
           "russianTranslation": "пощадить, помиловать",
@@ -2969,5 +3186,13 @@
           "type": "phrase",
           "definition": "To accept that someone or something is true, genuine, or trustworthy.",
           "examples": ["Hann trúar á guð. (He believes in God.)"]
+        },
+        {
+          "oldNorseWord": "Askr Yggdrasils",
+          "englishTranslation": "Yggdrasil Ash",
+          "russianTranslation": "Ясень Иггдрасиль",
+          "type": "phrase",
+          "definition": "A mythical tree that plays a central role in Norse cosmology, where it connects the Nine Worlds.",
+          "examples": ["Askr Yggdrasils er miðpunktur heimsins. (The Yggdrasil Ash is the center of the world.)"]
         }
 ]
