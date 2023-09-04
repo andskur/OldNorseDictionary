@@ -584,6 +584,78 @@
           }
         },
         {
+          "oldNorseWord": "grið",
+          "englishTranslation": "mercy, pardon",
+          "russianTranslation": "пощада, помилование",
+          "type": "noun",
+          "gender": "neuter",
+          "definition": "Compassion or forgiveness shown toward someone whom it is within one's power to punish or harm.",
+          "examples": ["Hann bað um grið. (He asked for mercy.)"]
+        },
+        {
+          "oldNorseWord": "haf",
+          "englishTranslation": "sea, ocean",
+          "russianTranslation": "море, океан",
+          "type": "noun",
+          "gender": "neuter",
+          "definition": "A large expanse of salt water, typically one of the world's main divisions.",
+          "examples": ["Haf er dýpt og óendanlegt. (The sea is deep and endless.)"]
+        },
+        {
+          "oldNorseWord": "kaup",
+          "englishTranslation": "purchase, deal",
+          "russianTranslation": "покупка, сделка",
+          "type": "noun",
+          "gender": "neuter",
+          "definition": "The action of buying something; an agreement between parties.",
+          "examples": ["Hann gerði gott kaup. (He made a good deal.)"]
+        },
+        {
+          "oldNorseWord": "land",
+          "englishTranslation": "country, land",
+          "russianTranslation": "страна, земля",
+          "type": "noun",
+          "gender": "neuter",
+          "definition": "A nation or territory; the solid part of the earth's surface.",
+          "examples": ["Land mitt er fallegt. (My country is beautiful.)"]
+        },
+        {
+          "oldNorseWord": "norðr",
+          "englishTranslation": "north",
+          "russianTranslation": "север",
+          "type": "noun",
+          "gender": "neuter",
+          "definition": "The direction in which a compass needle normally points, toward the horizon on the left side when one is facing east.",
+          "examples": ["Vindurinn blæs frá norðri. (The wind blows from the north.)"]
+        },
+        {
+          "oldNorseWord": "ráð",
+          "englishTranslation": "advice, decision",
+          "russianTranslation": "совет, решение",
+          "type": "noun",
+          "gender": "neuter",
+          "definition": "Guidance or recommendations offered concerning prudent action; a conclusion or resolution.",
+          "examples": ["Hann gaf mér gott ráð. (He gave me good advice.)"]
+        },
+        {
+          "oldNorseWord": "staðr",
+          "englishTranslation": "place, dwelling",
+          "russianTranslation": "место, жилище",
+          "type": "noun",
+          "gender": "masculine",
+          "definition": "A particular position or point in space; a residence or home.",
+          "examples": ["Þetta er fallegur staðr. (This is a beautiful place.)"]
+        },
+        {
+          "oldNorseWord": "þrælakaup",
+          "englishTranslation": "slave purchase",
+          "russianTranslation": "покупка рабов",
+          "type": "noun",
+          "gender": "neuter",
+          "definition": "The act of buying slaves or people for servitude.",
+          "examples": ["Hann gerði þrælakaup í borginni. (He made a slave purchase in the city.)"]
+        },
+        {
             "oldNorseWord": "hann",
             "englishTranslation": "he",
             "russianTranslation": "он",
@@ -1075,6 +1147,59 @@
           "examples": ["Þetta er þinn hundur. (This is your dog.)"]
         },
         {
+          "oldNorseWord": "hvar",
+          "englishTranslation": "who",
+          "russianTranslation": "кто",
+          "type": "pronoun",
+          "definition": "Used to ask about the identity of an individual or individuals in a particular group or class.",
+          "examples": ["Hvar er konungurinn? (Who is the king?)"],
+          "cases": {
+              "nominative": {
+                  "singular": "hvar"
+              },
+              "accusative": {
+                  "singular": "hvern"
+              },
+              "dative": {
+                  "singular": "hveim"
+              },
+              "genitive": {
+                  "singular": "hves"
+              }
+          }
+        },
+        {
+          "oldNorseWord": "hvárr",
+          "englishTranslation": "which (of two), each (of two)",
+          "russianTranslation": "кто (из двух), который (из двух), каждый (из двух)",
+          "type": "pronoun",
+          "definition": "Used to refer to one or the other of two people or things.",
+          "examples": ["Hvárr þeirra er sterkari? (Which of the two is stronger?)"],
+          "cases": {
+              "nominative": {
+                  "singular": "hvárr",
+                  "plural": "hvárir"
+              },
+              "accusative": {
+                  "singular": "hvárn",
+              },
+              "dative": {
+                  "singular": "hvárum",
+              },
+              "genitive": {
+                  "plural": "hvárra"
+              }
+          }
+        },
+        {
+          "oldNorseWord": "þat",
+          "englishTranslation": "it, that",
+          "russianTranslation": "оно, то",
+          "type": "pronoun",
+          "definition": "Used to refer to a thing previously mentioned, known, or understood.",
+          "examples": ["Þat er fallegt. (It is beautiful.)"]
+        },
+        {
             "oldNorseWord": "eigi",
             "englishTranslation": "not",
             "russianTranslation": "не",
@@ -1187,6 +1312,94 @@
           "examples": ["Hann er til góður. (He is still good.)"]
         },
         {
+          "oldNorseWord": "svá",
+          "englishTranslation": "so, thus",
+          "russianTranslation": "так, затем",
+          "definition": "So, thus",
+          "examples": [],
+          "type": "adverb"
+        },
+        {
+          "oldNorseWord": "vel",
+          "englishTranslation": "well, willingly",
+          "russianTranslation": "хорошо, охотно",
+          "definition": "Well, willingly",
+          "examples": [],
+          "type": "adverb"
+        },
+        {
+          "oldNorseWord": "aftr",
+          "englishTranslation": "back, again",
+          "russianTranslation": "назад, снова",
+          "type": "adverb",
+          "definition": "In a direction or manner that returns to a previous position or condition; once more.",
+          "examples": ["Hann fer aftr heim. (He goes back home.)"]
+        },
+        {
+          "oldNorseWord": "brott",
+          "englishTranslation": "away, out",
+          "russianTranslation": "прочь, вон",
+          "type": "adverb",
+          "definition": "From a particular place; out of existence or notice.",
+          "examples": ["Hann fer brott. (He goes away.)"]
+        },
+        {
+          "oldNorseWord": "saman",
+          "englishTranslation": "together, jointly",
+          "russianTranslation": "вместе, сообща",
+          "type": "adverb",
+          "definition": "In a united or coordinated manner; in conjunction with others.",
+          "examples": ["Þau fara saman. (They go together.)"]
+        },
+        {
+          "oldNorseWord": "þá",
+          "englishTranslation": "then",
+          "russianTranslation": "тогда, потом",
+          "type": "adverb",
+          "definition": "At that time; at the time in question.",
+          "examples": ["Þá var hann ungur og óreyndur. (He was young and inexperienced then.)"]
+        },
+        {
+          "oldNorseWord": "hvert",
+          "englishTranslation": "where",
+          "russianTranslation": "куда",
+          "type": "adverb",
+          "definition": "To or in what place or direction.",
+          "examples": ["Hvert ferðu? (Where are you going?)"]
+        },
+        {
+          "oldNorseWord": "langt",
+          "englishTranslation": "far, from afar",
+          "russianTranslation": "далеко, издалека",
+          "type": "adverb",
+          "definition": "Over a great distance; from a distant place.",
+          "examples": ["Hann kom langt í burtu. (He came from far away.)"]
+        },
+        {
+          "oldNorseWord": "lengi",
+          "englishTranslation": "long, for a long time",
+          "russianTranslation": "долго, долгое время",
+          "type": "adverb",
+          "definition": "For a considerable duration; for an extended period.",
+          "examples": ["Hann bíðaði lengi. (He waited for a long time.)"]
+        },
+        {
+          "oldNorseWord": "norðr",
+          "englishTranslation": "northward, in the north",
+          "russianTranslation": "на север, на севере",
+          "type": "adverb",
+          "definition": "Toward or in the northern part or direction.",
+          "examples": ["Hann fer norðr. (He goes northward.)"]
+        },
+        {
+          "oldNorseWord": "vestr",
+          "englishTranslation": "westward, in the west",
+          "russianTranslation": "на запад, на западе",
+          "type": "adverb",
+          "definition": "Toward or in the western part or direction.",
+          "examples": ["Sólin setur vestr. (The sun sets in the west.)"]
+        },
+        {
           "oldNorseWord": "þaðan",
           "englishTranslation": "from there",
           "russianTranslation": "оттуда",
@@ -1241,54 +1454,6 @@
           "type": "conjunction",
           "definition": "Used to introduce a further negative statement; not either.",
           "examples": ["Hann er eigi gamall né ungur. (He is neither old nor young.)"]
-        },
-        {
-          "oldNorseWord": "svá",
-          "englishTranslation": "so, thus",
-          "russianTranslation": "так, затем",
-          "definition": "So, thus",
-          "examples": [],
-          "type": "adverb"
-        },
-        {
-          "oldNorseWord": "vel",
-          "englishTranslation": "well, willingly",
-          "russianTranslation": "хорошо, охотно",
-          "definition": "Well, willingly",
-          "examples": [],
-          "type": "adverb"
-        },
-        {
-          "oldNorseWord": "aftr",
-          "englishTranslation": "back, again",
-          "russianTranslation": "назад, снова",
-          "type": "adverb",
-          "definition": "In a direction or manner that returns to a previous position or condition; once more.",
-          "examples": ["Hann fer aftr heim. (He goes back home.)"]
-        },
-        {
-          "oldNorseWord": "brott",
-          "englishTranslation": "away, out",
-          "russianTranslation": "прочь, вон",
-          "type": "adverb",
-          "definition": "From a particular place; out of existence or notice.",
-          "examples": ["Hann fer brott. (He goes away.)"]
-        },
-        {
-          "oldNorseWord": "saman",
-          "englishTranslation": "together, jointly",
-          "russianTranslation": "вместе, сообща",
-          "type": "adverb",
-          "definition": "In a united or coordinated manner; in conjunction with others.",
-          "examples": ["Þau fara saman. (They go together.)"]
-        },
-        {
-          "oldNorseWord": "þá",
-          "englishTranslation": "then",
-          "russianTranslation": "тогда, потом",
-          "type": "adverb",
-          "definition": "At that time; at the time in question.",
-          "examples": ["Þá var hann ungur og óreyndur. (He was young and inexperienced then.)"]
         },
         {
           "oldNorseWord": "ef",
@@ -2251,6 +2416,26 @@
           },
         },
         {
+          "oldNorseWord": "leggja",
+          "englishTranslation": "to lay, to set, to thrust",
+          "russianTranslation": "класть, ставить, вонзать",
+          "type": "verb",
+          "definition": "To move to a horizontal position; to place in a particular position or location; to thrust or drive into a particular position.",
+          "examples": ["Hann leggur bókina á borðið. (He lays the book on the table.)"],
+          "verbFirst": "leggja",
+          "verbSecond": "legg"
+        },
+        {
+          "oldNorseWord": "þakka",
+          "englishTranslation": "to thank",
+          "russianTranslation": "благодарить",
+          "type": "verb",
+          "definition": "To express gratitude or appreciation to someone.",
+          "examples": ["Hann þakkar þér fyrir hjálpina. (He thanks you for the help.)"],
+          "verbFirst": "þakka",
+          "verbSecond": "þakka"
+        },
+        {
           "oldNorseWord": "fagr",
           "englishTranslation": "beautiful",
           "russianTranslation": "красивый, прекрасный",
@@ -3132,6 +3317,22 @@
           "examples": ["Vitaðr maðr er vitr. (The knowing man is wise.)"]
         },
         {
+          "oldNorseWord": "lagiðr",
+          "englishTranslation": "laying, thrusting",
+          "russianTranslation": "кладущий, вонзающий",
+          "type": "participle",
+          "definition": "Placing in a horizontal position or thrusting into a particular position.",
+          "examples": ["Lagiðr sverð í steininn. (Thrusting the sword into the stone.)"]
+        },
+        {
+          "oldNorseWord": "þakkaðr",
+          "englishTranslation": "thanking",
+          "russianTranslation": "благодарящий",
+          "type": "participle",
+          "definition": "Expressing gratitude or appreciation.",
+          "examples": ["Þakkaðr maðr fyrir góðverk. (A man thanking for a good deed.)"]
+        },
+        {
           "oldNorseWord": "gefa grið",
           "englishTranslation": "to spare, to pardon",
           "russianTranslation": "пощадить, помиловать",
@@ -3194,5 +3395,13 @@
           "type": "phrase",
           "definition": "A mythical tree that plays a central role in Norse cosmology, where it connects the Nine Worlds.",
           "examples": ["Askr Yggdrasils er miðpunktur heimsins. (The Yggdrasil Ash is the center of the world.)"]
+        },
+        {
+          "oldNorseWord": "leggja af staði",
+          "englishTranslation": "set out, embark on a journey",
+          "russianTranslation": "отправляться в путь, пускаться в путь",
+          "type": "phrase",
+          "definition": "To begin a journey or trip; to depart from a place with the intention of traveling.",
+          "examples": ["Hann ætlar að leggja af staði á morgun. (He intends to set out tomorrow.)"]
         }
 ]

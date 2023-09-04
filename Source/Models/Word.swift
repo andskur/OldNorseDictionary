@@ -151,6 +151,8 @@ struct Word: Codable, Identifiable {
                 } else if type == WordType.participle {
                     if oldNorseWord.hasSuffix("ðr") {
                         accusativeCase = neutralParticipleForm()! + "an"
+                    } else if oldNorseWord.hasSuffix("inn") {
+                        accusativeCase = neutralParticipleForm()! + "inn"
                     }
                 }
             }
@@ -305,15 +307,19 @@ struct Word: Codable, Identifiable {
             if let genitiveCasePlural = cases?.genitive?.plural {
                 genitiveCase = genitiveCasePlural
             } else {
-                if type == WordType.participle && oldNorseWord.hasSuffix("ðr") {
-                    genitiveCase! += "ra"
+                if type == WordType.participle {
+                    if oldNorseWord.hasSuffix("ðr") {
+                        genitiveCase! += "ra"
+                    } else if oldNorseWord.hasSuffix("inn") {
+                        genitiveCase! += "na"
+                    }
                 } else if type == WordType.adjective {
                     if oldNorseWord.hasSuffix("ll") {
                         genitiveCase! += "la"
                     } else if oldNorseWord.hasSuffix("nn") {
                         genitiveCase! += "na"
                     } else {
-                        genitiveCase! += "a"
+                        genitiveCase! += "ra"
                     }
                 } else {
                     if genitiveCase!.hasSuffix("in") {
@@ -349,7 +355,8 @@ struct Word: Codable, Identifiable {
                     return firstPerson
                 } else if let verbFirst = verbFirst{
                     return  (verbFirst.dropLast()) + "um"
-                }            }
+                }
+            }
         case .second:
             switch number {
             case .singular:
