@@ -26,7 +26,34 @@ class WordService {
             let data = try Data(contentsOf: fileURL)
             let decoder = JSONDecoder()
             let words = try decoder.decode([Word].self, from: data)
-            self.words = words // Update the words property
+            
+            var newWords = [Word]()
+            
+            for var word in words {
+                if word.numbers == nil {
+                    word.numbers = ActiveNumbers.init()
+                }else {
+                    
+                    
+                    if word.numbers?.singular == nil {
+                        word.numbers?.singular = ActiveGenders.init()
+                    }
+                    
+//                    if word.numbers?.dual == nil {
+//                        word.numbers?.dual = ActiveGenders.init()
+//                    }
+                    
+                    
+                    if word.numbers?.plural == nil {
+                        word.numbers?.plural = ActiveGenders.init()
+                    }
+                    
+                }
+                
+                newWords.append(word)
+            }
+            
+            self.words = newWords // Update the words property
         } catch {
             fatalError("Failed to load WordsData.json: \(error)")
         }
@@ -81,18 +108,18 @@ class WordService {
     // This function checks if a word matches a query
     func wordMatchesQuery(_ word: Word, query: String) -> Bool {
         let wordMatchesQuery = word.oldNorseWord.lowercased().contains(query)
-        let nominativeSingularMatchesQuery = word.generateNominative(number: Number.singular, article: false)?.lowercased().contains(query) == true
-        let nominativeDualMatchesQuery = word.generateNominative(number: Number.dual, article: false)?.lowercased().contains(query) == true
-        let nominativePluralMatchesQuery = word.generateNominative(number: Number.plural, article: false)?.lowercased().contains(query) == true
-        let accusativeSingularMatchesQuery = word.generateAccusative(number: Number.singular, article: false)?.lowercased().contains(query) == true
-        let accusativeDualMatchesQuery = word.generateAccusative(number: Number.dual, article: false)?.lowercased().contains(query) == true
-        let accusativePluralMatchesQuery = word.generateAccusative(number: Number.plural, article: false)?.lowercased().contains(query) == true
-        let dativeSingularMatchesQuery = word.generateDative(number: Number.singular, article: false)?.lowercased().contains(query) == true
-        let dativeDualMatchesQuery = word.generateDative(number: Number.dual, article: false)?.lowercased().contains(query) == true
-        let dativePluralMatchesQuery = word.generateDative(number: Number.plural, article: false)?.lowercased().contains(query) == true
-        let genitiveSingularMatchesQuery = word.generateGenitive(number: Number.singular, article: false)?.lowercased().contains(query) == true
-        let genitiveDualMatchesQuery = word.generateGenitive(number: Number.dual, article: false)?.lowercased().contains(query) == true
-        let genitivePluralMatchesQuery = word.generateGenitive(number: Number.plural, article: false)?.lowercased().contains(query) == true
+        let nominativeSingularMatchesQuery = word.generateNounNominative(number: Number.singular, article: false)?.lowercased().contains(query) == true
+        let nominativeDualMatchesQuery = word.generateNounNominative(number: Number.dual, article: false)?.lowercased().contains(query) == true
+        let nominativePluralMatchesQuery = word.generateNounNominative(number: Number.plural, article: false)?.lowercased().contains(query) == true
+        let accusativeSingularMatchesQuery = word.generateNounAccusative(number: Number.singular, article: false)?.lowercased().contains(query) == true
+        let accusativeDualMatchesQuery = word.generateNounAccusative(number: Number.dual, article: false)?.lowercased().contains(query) == true
+        let accusativePluralMatchesQuery = word.generateNounAccusative(number: Number.plural, article: false)?.lowercased().contains(query) == true
+        let dativeSingularMatchesQuery = word.generateNounDative(number: Number.singular, article: false)?.lowercased().contains(query) == true
+        let dativeDualMatchesQuery = word.generateNounDative(number: Number.dual, article: false)?.lowercased().contains(query) == true
+        let dativePluralMatchesQuery = word.generateNounDative(number: Number.plural, article: false)?.lowercased().contains(query) == true
+        let genitiveSingularMatchesQuery = word.generateNounGenitive(number: Number.singular, article: false)?.lowercased().contains(query) == true
+        let genitiveDualMatchesQuery = word.generateNounGenitive(number: Number.dual, article: false)?.lowercased().contains(query) == true
+        let genitivePluralMatchesQuery = word.generateNounGenitive(number: Number.plural, article: false)?.lowercased().contains(query) == true
         let firstSingularMatchesQuery = word.generateConjugation(person: .first, number: .singular)?.lowercased().contains(query) == true
         let secondSingularMatchesQuery = word.generateConjugation(person: .second, number: .singular)?.lowercased().contains(query) == true
         let thirdSingularMatchesQuery = word.generateConjugation(person: .third, number: .singular)?.lowercased().contains(query) == true

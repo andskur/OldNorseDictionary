@@ -13,7 +13,7 @@ struct WordDetailView: View {
     
     func verbDetailViewContent() -> some View {
         Grid() {
-            gridHeader()
+            verbHeader()
             
             Divider()
             
@@ -36,15 +36,50 @@ struct WordDetailView: View {
         }.border(.white)
     }
     
+    func verbHeader() -> some View {
+        GridRow {
+            Text("")
+            
+            ForEach(Number.allCases, id: \.rawValue) { num in
+                if word.shouldShowNumber(number: num) {
+                    Section {
+                        Text(num.rawValue.capitalized)
+                    }.frame(height: 10).padding(8)
+                }
+            }
+        }
+    }
+    
     func gridHeader() -> some View {
+        GridRow {
+//            Color.clear.frame(width: 100)
+            
+            Text("")
+            
+            ForEach(Number.allCases, id: \.rawValue) { num in
+                if word.shouldShowNumber(number: num) {
+                    Section {
+                        Text(num.rawValue.capitalized)
+                    }.frame(height: 10).padding(8)
+                        .gridCellColumns(3)
+                }
+            }
+        }
+    }
+    
+    func genderHeader() -> some View {
         GridRow {
             Color.clear.frame(width: 100)
             
             ForEach(Number.allCases, id: \.rawValue) { num in
-                if !(word.type != .pronoun && num == .dual) {
-                    Section {
-                        Text(num.rawValue.capitalized)
-                    }.frame(height: 10).padding(8)
+                if word.shouldShowNumber(number: num) {
+                    ForEach(Gender.allCases, id: \.rawValue) { gen in
+                        if word.shouldShowGender(number: num, gender: gen) {
+                            Section {
+                                Text(gen.rawValue.capitalized)
+                            }.frame(height: 10).padding(8)
+                        }
+                    }
                 }
             }
         }
@@ -64,7 +99,7 @@ struct WordDetailView: View {
     
     func nounceRow(c: Case, num: Number) -> some View {
         return Section {
-            if !(word.type != .pronoun && num == .dual) {
+            if word.shouldShowNumber(number: num) {
                 if let wordWithCase = word.generateNounCase(nounCase: c, number: num, article: false) {
                     Text("\(wordWithCase)" + withArticle(c: c, num: num)!)
                         .font(.subheadline)
@@ -73,12 +108,15 @@ struct WordDetailView: View {
             }
         }.frame(height: 10).padding(5)
     }
+    
 
     func nounDetailViewContent() -> some View {
         Grid() {
             gridHeader()
             
             Divider()
+            
+            genderHeader()
             
             ForEach(Case.allCases, id: \.rawValue) { c in
                 GridRow {
@@ -88,9 +126,11 @@ struct WordDetailView: View {
                             .fontWeight(.bold)
                     }.frame(height: 10).padding(5)
                     
-                    ForEach(Number.allCases, id: \.rawValue) { num in
-                        nounceRow(c: c,num: num)
-                    }
+//                    ForEach(Gender.allCases, id: \.rawValue) {g in
+//                        ForEach(Number.allCases, id: \.rawValue) { num in
+//                            nounceRow(c: c,num: num)
+//                        }
+//                    }
                 }.padding(5)
                 
                 Divider()
@@ -124,7 +164,9 @@ struct WordDetailView: View {
                 }
                 
                 if word.type == .noun || word.type == .pronoun || word.type == .adjective || word.type == .participle {
-                    nounDetailViewContent()
+//                    nounDetailViewContent()
+                    
+                    DynamicTable(word: word)
                 }
 
                 
@@ -141,7 +183,7 @@ struct WordDetailView: View {
 
 struct WordDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        let sampleWord = Word(oldNorseWord: "Hús", englishTranslation: "House", russianTranslation: "Дом", definition: "A building for human habitation.", examples: ["Hús er stafrænt orð sem merkir byggingu fyrir mannlega búsetu."], type: .noun, cases: nil, conjugation: nil, verbFirst: nil, verbSecond: nil)
+        let sampleWord = Word(oldNorseWord: "Hús", englishTranslation: "House", russianTranslation: "Дом", definition: "A building for human habitation.", examples: ["Hús er stafrænt orðn sem merkir byggingu fyrir mannlega búsetu."], type: .noun, cases: nil, gendersCases: nil, numbers: nil, conjugation: nil, verbFirst: nil, verbSecond: nil)
         
         let sampleDirection: SearchDirection = .oldNorseToEnglish
         

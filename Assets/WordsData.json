@@ -658,26 +658,55 @@
         {
             "oldNorseWord": "hann",
             "englishTranslation": "he",
-            "russianTranslation": "он",
+            "russianTranslation": "он / она",
             "definition": "Third-person singular masculine pronoun",
             "examples": [],
             "type": "pronoun",
-            "cases": {
+            "numbers": {
+                "singular": {
+                    "masculine": true,
+                    "feminine": true
+                },
+                "plural": {
+                    "any": true
+                }
+            },
+            "gendersCases": {
                 "nominative": {
-                    "singular": "hann",
-                    "plural": "þeir"
+                    "singular": {
+                        "masculine": "hann",
+                        "feminine": "hon"
+                    },
+                    "plural": {
+                        "any": "þeir"
+                    }
                 },
                 "accusative": {
-                    "singular": "hann",
-                    "plural": "þá"
+                    "singular": {
+                        "masculine": "hann",
+                        "feminine": "hana"
+                    },
+                    "plural": {
+                        "any": "þá"
+                    }
                 },
                 "dative": {
-                    "singular": "honum",
-                    "plural": "þeim"
+                    "singular": {
+                        "masculine": "honum",
+                        "feminine": "henni"
+                    },
+                    "plural": {
+                        "any": "þeim"
+                    }
                 },
                 "genitive": {
-                    "singular": "hans",
-                    "plural": "þeira"
+                    "singular": {
+                        "masculine": "hans",
+                        "feminine": "hennar"
+                    },
+                    "plural": {
+                        "any": "þeira"
+                    }
                 }
             }
         },
@@ -688,26 +717,61 @@
             "definition": "First-person singular pronoun",
             "examples": ["Ek heiti John.", "Ég elska þig."],
             "type": "pronoun",
-            "cases": {
+            "numbers": {
+                "singular": {
+                    "any": true
+                },
+                "dual": {
+                    "any": true
+                },
+                "plural": {
+                    "any": true
+                }
+            },
+            "gendersCases": {
                 "nominative": {
-                    "singular": "ek",
-                    "dual": "vit",
-                    "plural": "vér"
+                    "singular": {
+                        "any": "ek"
+                    },
+                    "dual": {
+                        "any": "vit"
+                    },
+                    "plural": {
+                        "any": "vér"
+                    }
                 },
                 "accusative": {
-                    "singular": "mik",
-                    "dual": "okkr",
-                    "plural": "oss"
+                    "singular": {
+                        "any": "mik"
+                    },
+                    "dual": {
+                        "any": "okkr"
+                    },
+                    "plural": {
+                        "any": "oss"
+                    }
                 },
                 "dative": {
-                    "singular": "mér",
-                    "dual": "okkr",
-                    "plural": "oss"
+                    "singular": {
+                        "any": "mér"
+                    },
+                    "dual": {
+                        "any": "okkr"
+                    },
+                    "plural": {
+                        "any": "oss"
+                    }
                 },
                 "genitive": {
-                    "singular": "mín",
-                    "dual": "okkar",
-                    "plural": "vár"
+                    "singular": {
+                        "any": "mín"
+                    },
+                    "dual": {
+                        "any": "okkar"
+                    },
+                    "plural": {
+                        "any": "vár"
+                    }
                 }
             }
         },
@@ -718,52 +782,131 @@
             "definition": "Second-person singular pronoun",
             "examples": ["þú ert vinur minn.", "Þú kemur seinna."],
             "type": "pronoun",
-            "cases": {
+            "numbers": {
+                "singular": {
+                    "any": true
+                },
+                "dual": {
+                    "any": true
+                },
+                "plural": {
+                    "any": true
+                }
+            },
+            "gendersCases": {
                 "nominative": {
-                    "singular": "þú",
-                    "dual": "þik",
-                    "plural": "þér"
+                    "singular": {
+                        "any": "þú"
+                    },
+                    "dual": {
+                        "any": "þik"
+                    },
+                    "plural": {
+                        "any": "þér"
+                    }
                 },
                 "accusative": {
-                    "singular": "þik",
-                    "dual": "ykkr",
-                    "plural": "yðr"
+                    "singular": {
+                        "any": "þik"
+                    },
+                    "dual": {
+                        "any": "ykkr"
+                    },
+                    "plural": {
+                        "any": "yðr"
+                    }
                 },
                 "dative": {
-                    "singular": "þér",
-                    "dual": "ykkr",
-                    "plural": "yðr"
+                    "singular": {
+                        "any": "þér"
+                    },
+                    "dual": {
+                        "any": "ykkr"
+                    },
+                    "plural": {
+                        "any": "yðr"
+                    }
                 },
                 "genitive": {
-                    "singular": "þín",
-                    "dual": "ykkar",
-                    "plural": "yðvar"
+                    "singular": {
+                        "any": "þín"
+                    },
+                    "dual": {
+                        "any": "ykkar"
+                    },
+                    "plural": {
+                        "any": "yðvar"
+                    }
                 }
             }
         },
         {
             "oldNorseWord": "þat",
             "englishTranslation": "that",
-            "russianTranslation": "то, это",
+            "russianTranslation": "тот, этот / та, эта / то, это",
             "definition": "That, it",
             "examples": [],
             "type": "pronoun",
-            "cases": {
+            "numbers": {
+                "singular": {
+                    "masculine": true,
+                    "feminine": true,
+                    "neuter": true
+                },
+                "plural": {
+                    "masculine": true,
+                    "feminine": true,
+                    "neuter": true
+                }
+            },
+            "gendersCases": {
                 "nominative": {
-                    "singular": "þat",
-                    "plural": "þau"
+                    "singular": {
+                        "masculine": "sá",
+                        "neuter": "þat",
+                        "feminine": "sú"
+                    },
+                    "plural": {
+                        "masculine": "þeir",
+                        "neuter": "þau",
+                        "feminine": "þær"
+                    }
                 },
                 "accusative": {
-                    "singular": "þat",
-                    "plural": "þau"
+                    "singular": {
+                        "masculine": "þann",
+                        "neuter": "þat",
+                        "feminine": "þá"
+                    },
+                    "plural": {
+                        "masculine": "þá",
+                        "neuter": "þau",
+                        "feminine": "þær"
+                    }
                 },
                 "dative": {
-                    "singular": "því",
-                    "plural": "þeim"
+                    "singular": {
+                        "masculine": "þeim",
+                        "neuter": "því",
+                        "feminine": "þeiri"
+                    },
+                    "plural": {
+                        "masculine": "þeim",
+                        "neuter": "þeim",
+                        "feminine": "þeim"
+                    }
                 },
                 "genitive": {
-                    "singular": "þess",
-                    "plural": "þeira"
+                    "singular": {
+                        "masculine": "þes",
+                        "neuter": "þess",
+                        "feminine": "þeirar"
+                    },
+                    "plural": {
+                        "masculine": "þeira",
+                        "neuter": "þeira",
+                        "feminine": "þeira"
+                    }
                 }
             }
         },
@@ -774,22 +917,66 @@
           "definition": "All, whole",
           "examples": [],
           "type": "pronoun",
-          "cases": {
+          "numbers": {
+              "singular": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              },
+              "plural": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              }
+          },
+          "gendersCases": {
               "nominative": {
-                  "singular": "allr",
-                  "plural": "allir"
+                  "singular": {
+                      "masculine": "allr",
+                      "neuter": "allt",
+                      "feminine": "öll"
+                  },
+                  "plural": {
+                      "masculine": "allir",
+                      "neuter": "öll",
+                      "feminine": "allar"
+                  }
               },
               "accusative": {
-                  "singular": "allan",
-                  "plural": "alla"
+                  "singular": {
+                      "masculine": "allan",
+                      "neuter": "allt",
+                      "feminine": "alla"
+                  },
+                  "plural": {
+                      "masculine": "alla",
+                      "neuter": "öll",
+                      "feminine": "allar"
+                  }
               },
               "dative": {
-                  "singular": "öllum",
-                  "plural": "öllum"
+                  "singular": {
+                      "masculine": "öllum",
+                      "neuter": "öllu",
+                      "feminine": "allri"
+                  },
+                  "plural": {
+                      "masculine": "öllum",
+                      "neuter": "öllum",
+                      "feminine": "öllum"
+                  }
               },
               "genitive": {
-                  "singular": "alls",
-                  "plural": "allra"
+                  "singular": {
+                      "masculine": "alls",
+                      "neuter": "alls",
+                      "feminine": "allrar"
+                  },
+                  "plural": {
+                      "masculine": "allra",
+                      "neuter": "allra",
+                      "feminine": "allra"
+                  }
               }
           }
         },
@@ -816,40 +1003,102 @@
           "type": "pronoun",
           "definition": "Referring to two entities together.",
           "examples": ["Báðir menn ganga til veizlu. (Both men are going to the feast.)"],
-          "cases": {
+          "numbers": {
+              "singular": {
+                  "masculine": false,
+                  "neuter": false,
+                  "feminine": false
+              },
+              "dual": {
+                  "masculine": true,
+                  "neuter": true,
+                  "feminine": true
+              },
+              "plural": {
+                  "masculine": false,
+                  "neuter": false,
+                  "feminine": false
+              }
+          },
+          "gendersCases": {
               "nominative": {
-                  "dual": "báðir"
+                  "dual": {
+                      "masculine": "báðir",
+                      "neuter": "bæði",
+                      "feminine": "báðar"
+                  }
               },
               "accusative": {
-                  "dual": "báða"
+                  "dual": {
+                      "masculine": "báða",
+                      "neuter": "bæði",
+                      "feminine": "báðar"
+                  }
               },
               "dative": {
-                  "dual": "báðum"
+                  "dual": {
+                      "masculine": "báðum",
+                      "neuter": "báðum",
+                      "feminine": "báðum"
+                  }
               },
               "genitive": {
-                  "dual": "beggja"
+                  "dual": {
+                      "masculine": "beggja",
+                      "neuter": "beggja",
+                      "feminine": "beggja"
+                  }
               }
           }
         },
         {
           "oldNorseWord": "hvat",
           "englishTranslation": "what, how",
-          "russianTranslation": "что, как",
+          "russianTranslation": "кто / что, как",
           "type": "pronoun",
           "definition": "Asking about something or expressing surprise.",
           "examples": ["Hvat heitir þetta? (What is this called?)", "Hvat! (What! How! Surprising!)"],
-          "cases": {
+          "numbers": {
+              "singular": {
+                  "masculine": true,
+                  "neuter": true,
+                  "feminine": true,
+                  "any": false
+              },
+              "plural": {
+                  "masculine": false,
+                  "neuter": false,
+                  "feminine": false
+              }
+          },
+          "gendersCases": {
               "nominative": {
-                  "singular": "hvat"
+                  "singular": {
+                      "masculine": "hvar",
+                      "neuter": "hvat",
+                      "feminine": "hvar"
+                  }
               },
               "accusative": {
-                  "singular": "hvat"
+                  "singular": {
+                      "masculine": "hvern",
+                      "neuter": "hvat",
+                      "feminine": "hvern"
+                  }
               },
               "dative": {
-                  "singular": "hví"
+                  "singular": {
+                      "masculine": "hveim",
+                      "neuter": "hví",
+                      "feminine": "hveim"
+                  }
               },
               "genitive": {
-                  "singular": "hvess"
+                  "singular": {
+                      "masculine": "hves",
+                      "neuter": "hvess",
+                      "feminine": "hves"
+                  }
               }
           }
         },
@@ -860,22 +1109,46 @@
           "type": "pronoun",
           "definition": "Referring to one of two entities.",
           "examples": ["Annarr maðr gekk heim. (One of the two men went home.)"],
-          "cases": {
+          "numbers": {
+              "singular": {
+                  "any": true
+              },
+              "plural": {
+                  "any": true
+              }
+          },
+          "gendersCases": {
               "nominative": {
-                  "singular": "annarr",
-                  "plural": "aðrir"
+                  "singular": {
+                      "any": "annarr"
+                  },
+                  "plural": {
+                      "any": "aðrir"
+                  }
               },
               "accusative": {
-                  "singular": "annan",
-                  "plural": "aðra"
+                  "singular": {
+                      "any": "annan"
+                  },
+                  "plural": {
+                      "any": "aðra"
+                  }
               },
               "dative": {
-                  "singular": "öðrum",
-                  "plural": "öðrum"
+                  "singular": {
+                      "any": "öðrum"
+                  },
+                  "plural": {
+                      "any": "öðrum"
+                  }
               },
               "genitive": {
-                  "singular": "annars",
-                  "plural": "annarra"
+                  "singular": {
+                      "any": "annars"
+                  },
+                  "plural": {
+                      "any": "annarra"
+                  }
               }
           }
         },
@@ -886,22 +1159,66 @@
           "type": "pronoun",
           "definition": "Referring to none or nobody.",
           "examples": ["Engi maðr kom. (No man came.)"],
-          "cases": {
+          "numbers": {
+              "singular": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              },
+              "plural": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              }
+          },
+          "gendersCases": {
               "nominative": {
-                  "singular": "engi",
-                  "plural": "engir"
+                  "singular": {
+                      "masculine": "engi",
+                      "neuter": "ekki",
+                      "feminine": "engi"
+                  },
+                  "plural": {
+                      "masculine": "engir",
+                      "neuter": "engi",
+                      "feminine": "engar"
+                  }
               },
               "accusative": {
-                  "singular": "engi",
-                  "plural": "enga"
+                  "singular": {
+                      "masculine": "engi",
+                      "neuter": "ekki",
+                      "feminine": "enga"
+                  },
+                  "plural": {
+                      "masculine": "enga",
+                      "neuter": "engi",
+                      "feminine": "engar"
+                  }
               },
               "dative": {
-                  "singular": "engum",
-                  "plural": "engum"
+                  "singular": {
+                      "masculine": "engum",
+                      "neuter": "engu",
+                      "feminine": "engri"
+                  },
+                  "plural": {
+                      "masculine": "engum",
+                      "neuter": "engum",
+                      "feminine": "engum"
+                  }
               },
               "genitive": {
-                  "singular": "enskis",
-                  "plural": "engra"
+                  "singular": {
+                      "masculine": "enskis",
+                      "neuter": "enskis",
+                      "feminine": "engrar"
+                  },
+                  "plural": {
+                      "masculine": "engra",
+                      "neuter": "engra",
+                      "feminine": "engra"
+                  }
               }
           }
         },
@@ -912,48 +1229,116 @@
           "type": "pronoun",
           "definition": "Referring to that specific entity or another.",
           "examples": ["Hinn maðr er hér. (That man is here.)"],
-          "cases": {
+          "numbers": {
+              "singular": {
+                  "any": true
+              },
+              "plural": {
+                  "any": true
+              }
+          },
+          "gendersCases": {
               "nominative": {
-                  "singular": "hinn",
-                  "plural": "hinir"
+                  "singular": {
+                      "any": "hinn"
+                  },
+                  "plural": {
+                      "any": "hinir"
+                  }
               },
               "accusative": {
-                  "singular": "hinn",
-                  "plural": "hina"
+                  "singular": {
+                      "any": "hinn"
+                  },
+                  "plural": {
+                      "any": "hina"
+                  }
               },
               "dative": {
-                  "singular": "hinum",
-                  "plural": "hinum"
+                  "singular": {
+                      "any": "hinum"
+                  },
+                  "plural": {
+                      "any": "hinum"
+                  }
               },
               "genitive": {
-                  "singular": "hins",
-                  "plural": "hinna"
+                  "singular": {
+                      "any": "hins"
+                  },
+                  "plural": {
+                      "any": "hinna"
+                  }
               }
           }
         },
         {
           "oldNorseWord": "hverr",
           "englishTranslation": "who, each",
-          "russianTranslation": "кто, каждый",
+          "russianTranslation": "кто / то / та, каждый / каждое / каждая",
           "type": "pronoun",
           "definition": "Referring to who or each one.",
           "examples": ["Hverr maðr skal fara? (Who shall go?)"],
-          "cases": {
+          "numbers": {
+              "singular": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              },
+              "plural": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              }
+          },
+          "gendersCases": {
               "nominative": {
-                  "singular": "hverr",
-                  "plural": "hverir"
+                  "singular": {
+                      "masculine": "hverr",
+                      "neuter": "hvert",
+                      "feminine": "hver"
+                  },
+                  "plural": {
+                      "masculine": "hverir",
+                      "neuter": "hver",
+                      "feminine": "hverjar"
+                  }
               },
               "accusative": {
-                  "singular": "hverjan",
-                  "plural": "hverja"
+                  "singular": {
+                      "masculine": "hverjan",
+                      "neuter": "hvert",
+                      "feminine": "hverja"
+                  },
+                  "plural": {
+                      "masculine": "hverja",
+                      "neuter": "hver",
+                      "feminine": "hverjar"
+                  }
               },
               "dative": {
-                  "singular": "hverjum",
-                  "plural": "hverjum"
+                  "singular": {
+                      "masculine": "hverjum",
+                      "neuter": "hverju",
+                      "feminine": "hverri"
+                  },
+                  "plural": {
+                      "masculine": "hverjum",
+                      "neuter": "hverjum",
+                      "feminine": "hverjum"
+                  }
               },
               "genitive": {
-                  "singular": "hvers",
-                  "plural": "hverra"
+                  "singular": {
+                      "masculine": "hvers",
+                      "neuter": "hvers",
+                      "feminine": "hverrar"
+                  },
+                  "plural": {
+                      "masculine": "hverra",
+                      "neuter": "hverra",
+                      "feminine": "hverra"
+                  }
               }
           }
         },
@@ -964,15 +1349,36 @@
           "type": "pronoun",
           "definition": "Referring to oneself.",
           "examples": ["Hann sá sik í spegli. (He saw himself in the mirror.)"],
-          "cases": {
+          "numbers": {
+              "singular": {
+                  "any": true
+              },
+              "plural": {
+                  "masculine": false,
+                  "feminine": false,
+                  "neuter": false
+              }
+          },
+          "gendersCases": {
+              "nominative": {
+                  "singular": {
+                      "any": "sik"
+                  }
+              },
               "accusative": {
-                  "singular": "sik"
+                  "singular": {
+                      "any": "sik"
+                  }
               },
               "dative": {
-                  "singular": "sér"
+                  "singular": {
+                      "any": "sér"
+                  }
               },
               "genitive": {
-                  "singular": "sín"
+                  "singular": {
+                      "any": "sín"
+                  }
               }
           }
         },
@@ -995,78 +1401,210 @@
         {
           "oldNorseWord": "sá",
           "englishTranslation": "that, this",
-          "russianTranslation": "тот, этот",
+          "russianTranslation": "тот / то / та, этот / это / эта, оно",
           "type": "pronoun",
           "definition": "Used to identify a specific person or thing observed or heard by the speaker.",
           "examples": ["Sá maðr er góður. (That man is good.)"],
-          "cases": {
+          "numbers": {
+              "singular": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              },
+              "plural": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              }
+          },
+          "gendersCases": {
               "nominative": {
-                  "singular": "sá",
-                  "plural": "þeir"
+                  "singular": {
+                      "masculine": "sá",
+                      "neuter": "þat",
+                      "feminine": "sú"
+                  },
+                  "plural": {
+                      "masculine": "þeir",
+                      "neuter": "þau",
+                      "feminine": "þær"
+                  }
               },
               "accusative": {
-                  "singular": "þann",
-                  "plural": "þá"
+                  "singular": {
+                      "masculine": "þann",
+                      "neuter": "þat",
+                      "feminine": "þá"
+                  },
+                  "plural": {
+                      "masculine": "þá",
+                      "neuter": "þau",
+                      "feminine": "þær"
+                  }
               },
               "dative": {
-                  "singular": "þeim",
-                  "plural": "þeim"
+                  "singular": {
+                      "masculine": "þeim",
+                      "neuter": "því",
+                      "feminine": "þeiri"
+                  },
+                  "plural": {
+                      "masculine": "þeim",
+                      "neuter": "þeim",
+                      "feminine": "þeim"
+                  }
               },
               "genitive": {
-                  "singular": "þes",
-                  "plural": "þeira"
+                  "singular": {
+                      "masculine": "þes",
+                      "neuter": "þess",
+                      "feminine": "þeirar"
+                  },
+                  "plural": {
+                      "masculine": "þeira",
+                      "neuter": "þeira",
+                      "feminine": "þeira"
+                  }
               }
           }
         },
         {
           "oldNorseWord": "minn",
           "englishTranslation": "my",
-          "russianTranslation": "мой",
+          "russianTranslation": "мой / моё / моя",
           "type": "pronoun",
           "definition": "Belonging to or associated with the speaker.",
           "examples": ["Þetta er minn bók. (This is my book.)"],
-          "cases": {
+          "numbers": {
+              "singular": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              },
+              "plural": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              }
+          },
+          "gendersCases": {
               "nominative": {
-                  "singular": "minn",
-                  "plural": "mínir"
+                  "singular": {
+                      "masculine": "minn",
+                      "neuter": "mitt",
+                      "feminine": "mín"
+                  },
+                  "plural": {
+                      "masculine": "mínir",
+                      "neuter": "mín",
+                      "feminine": "mínar"
+                  }
               },
               "accusative": {
-                  "singular": "minn",
-                  "plural": "mína"
+                  "singular": {
+                      "masculine": "minn",
+                      "neuter": "mitt",
+                      "feminine": "mína"
+                  },
+                  "plural": {
+                      "masculine": "mína",
+                      "neuter": "mín",
+                      "feminine": "mínar"
+                  }
               },
               "dative": {
-                  "singular": "mínum",
-                  "plural": "mínum"
+                  "singular": {
+                      "masculine": "mínum",
+                      "neuter": "mínu",
+                      "feminine": "minni"
+                  },
+                  "plural": {
+                      "masculine": "mínum",
+                      "neuter": "mínum",
+                      "feminine": "mínum"
+                  }
               },
               "genitive": {
-                  "singular": "míns",
-                  "plural": "minna"
+                  "singular": {
+                      "masculine": "míns",
+                      "neuter": "míns",
+                      "feminine": "minnar"
+                  },
+                  "plural": {
+                      "masculine": "minna",
+                      "neuter": "minna",
+                      "feminine": "minna"
+                  }
               }
           }
         },
         {
           "oldNorseWord": "okkarr",
           "englishTranslation": "our (belonging to us two)",
-          "russianTranslation": "наш (нам двоим принадлежащий)",
+          "russianTranslation": "наш / наше / наша (нам двоим принадлежащий)",
           "type": "pronoun",
           "definition": "Belonging to or associated with the speaker and one other person.",
           "examples": ["Þetta er okkarr hús. (This is our house.)"],
-          "cases": {
+          "numbers": {
+              "singular": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              },
+              "plural": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              }
+          },
+          "gendersCases": {
               "nominative": {
-                  "singular": "okkarr",
-                  "plural": "okkrir"
+                  "singular": {
+                      "masculine": "okkarr",
+                      "neuter": "okkart",
+                      "feminine": "okkur"
+                  },
+                  "plural": {
+                      "masculine": "okkrir",
+                      "neuter": "okkur",
+                      "feminine": "okkrar"
+                  }
               },
               "accusative": {
-                  "singular": "okkarn",
-                  "plural": "okkra"
+                  "singular": {
+                      "masculine": "okkarn",
+                      "neuter": "okkart",
+                      "feminine": "okkra"
+                  },
+                  "plural": {
+                      "masculine": "okkra",
+                      "neuter": "okkur",
+                      "feminine": "okkrar"
+                  }
               },
               "dative": {
-                  "singular": "okkrum",
-                  "plural": "okkrum"
+                  "singular": {
+                      "masculine": "okkrum",
+                      "neuter": "okkru",
+                      "feminine": "okkarri"
+                  },
+                  "plural": {
+                      "masculine": "okkrum",
+                      "neuter": "okkrum",
+                      "feminine": "okkrum"
+                  }
               },
               "genitive": {
-                  "singular": "okkars",
-                  "plural": "okkarra"
+                  "singular": {
+                      "masculine": "okkars",
+                      "neuter": "okkars",
+                      "feminine": "okkarrar"
+                  },
+                  "plural": {
+                      "masculine": "okkarra",
+                      "neuter": "okkarra",
+                      "feminine": "okkarra"
+                  }
               }
           }
         },
@@ -1081,52 +1619,140 @@
         {
           "oldNorseWord": "várr",
           "englishTranslation": "our",
-          "russianTranslation": "наш",
+          "russianTranslation": "наш / наше / наша",
           "type": "pronoun",
           "definition": "Belonging to or associated with the speaker and one or more other people.",
           "examples": ["Þetta er várr bíll. (This is our car.)"],
-          "cases": {
+          "numbers": {
+              "singular": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              },
+              "plural": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              }
+          },
+          "gendersCases": {
               "nominative": {
-                  "singular": "várr",
-                  "plural": "várir"
+                  "singular": {
+                      "masculine": "várr",
+                      "neuter": "várt",
+                      "feminine": "vár"
+                  },
+                  "plural": {
+                      "masculine": "várir",
+                      "neuter": "vár",
+                      "feminine": "várar"
+                  }
               },
               "accusative": {
-                  "singular": "várn",
-                  "plural": "vára"
+                  "singular": {
+                      "masculine": "várn",
+                      "neuter": "várt",
+                      "feminine": "vára"
+                  },
+                  "plural": {
+                      "masculine": "vára",
+                      "neuter": "vár",
+                      "feminine": "várar"
+                  }
               },
               "dative": {
-                  "singular": "várum",
-                  "plural": "várum"
+                  "singular": {
+                      "masculine": "várum",
+                      "neuter": "váru",
+                      "feminine": "várri"
+                  },
+                  "plural": {
+                      "masculine": "várum",
+                      "neuter": "várum",
+                      "feminine": "várum"
+                  }
               },
               "genitive": {
-                  "singular": "várs",
-                  "plural": "várra"
+                  "singular": {
+                      "masculine": "várs",
+                      "neuter": "várs",
+                      "feminine": "várrar"
+                  },
+                  "plural": {
+                      "masculine": "várra",
+                      "neuter": "várra",
+                      "feminine": "várra"
+                  }
               }
           }
         },
         {
           "oldNorseWord": "yðvarr",
           "englishTranslation": "your (plural)",
-          "russianTranslation": "ваш",
+          "russianTranslation": "ваш / ваше / ваша",
           "type": "pronoun",
           "definition": "Belonging to or associated with the people that the speaker is addressing.",
           "examples": ["Þetta er yðvarr peningur. (This is your money.)"],
-          "cases": {
+          "numbers": {
+              "singular": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              },
+              "plural": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              }
+          },
+          "gendersCases": {
               "nominative": {
-                  "singular": "yðvarr",
-                  "plural": "yðrir"
+                  "singular": {
+                      "masculine": "yðvarr",
+                      "neuter": "yðvart",
+                      "feminine": "yður"
+                  },
+                  "plural": {
+                      "masculine": "yðrir",
+                      "neuter": "yður",
+                      "feminine": "yðrar"
+                  }
               },
               "accusative": {
-                  "singular": "yðvarn",
-                  "plural": "yðra"
+                  "singular": {
+                      "masculine": "yðvarn",
+                      "neuter": "yðvart",
+                      "feminine": "yðra"
+                  },
+                  "plural": {
+                      "masculine": "yðra",
+                      "neuter": "yður",
+                      "feminine": "yðrar"
+                  }
               },
               "dative": {
-                  "singular": "yðrum",
-                  "plural": "yðrum"
+                  "singular": {
+                      "masculine": "yðrum",
+                      "neuter": "yðru",
+                      "feminine": "yðvarri"
+                  },
+                  "plural": {
+                      "masculine": "yðrum",
+                      "neuter": "yðrum",
+                      "feminine": "yðrum"
+                  }
               },
               "genitive": {
-                  "singular": "yðvars",
-                  "plural": "yðvarra"
+                  "singular": {
+                      "masculine": "yðvars",
+                      "neuter": "yðvars",
+                      "feminine": "yðvarrar"
+                  },
+                  "plural": {
+                      "masculine": "yðvarra",
+                      "neuter": "yðvarra",
+                      "feminine": "yðvarra"
+                  }
               }
           }
         },
@@ -1147,57 +1773,54 @@
           "examples": ["Þetta er þinn hundur. (This is your dog.)"]
         },
         {
-          "oldNorseWord": "hvar",
-          "englishTranslation": "who",
-          "russianTranslation": "кто",
-          "type": "pronoun",
-          "definition": "Used to ask about the identity of an individual or individuals in a particular group or class.",
-          "examples": ["Hvar er konungurinn? (Who is the king?)"],
-          "cases": {
-              "nominative": {
-                  "singular": "hvar"
-              },
-              "accusative": {
-                  "singular": "hvern"
-              },
-              "dative": {
-                  "singular": "hveim"
-              },
-              "genitive": {
-                  "singular": "hves"
-              }
-          }
-        },
-        {
           "oldNorseWord": "hvárr",
           "englishTranslation": "which (of two), each (of two)",
           "russianTranslation": "кто (из двух), который (из двух), каждый (из двух)",
           "type": "pronoun",
           "definition": "Used to refer to one or the other of two people or things.",
           "examples": ["Hvárr þeirra er sterkari? (Which of the two is stronger?)"],
-          "cases": {
+          "numbers": {
+              "singular": {
+                  "any": true
+              },
+              "plural": {
+                  "any": true
+              }
+          },
+          "gendersCases": {
               "nominative": {
-                  "singular": "hvárr",
-                  "plural": "hvárir"
+                  "singular": {
+                      "any": "hvárr"
+                  },
+                  "plural": {
+                      "any": "hvárir"
+                  }
               },
               "accusative": {
-                  "singular": "hvárn",
+                  "singular": {
+                      "any": "hvárn"
+                  },
+                  "plural": {
+                      "any": "hvárr"
+                  }
               },
               "dative": {
-                  "singular": "hvárum",
+                  "singular": {
+                      "any": "hvárum"
+                  },
+                  "plural": {
+                      "any": "hvárr"
+                  }
               },
               "genitive": {
-                  "plural": "hvárra"
+                  "singular": {
+                      "any": "hvárr"
+                  },
+                  "plural": {
+                      "any": "hvárra"
+                  }
               }
           }
-        },
-        {
-          "oldNorseWord": "þat",
-          "englishTranslation": "it, that",
-          "russianTranslation": "оно, то",
-          "type": "pronoun",
-          "definition": "Used to refer to a thing previously mentioned, known, or understood.",
-          "examples": ["Þat er fallegt. (It is beautiful.)"]
         },
         {
             "oldNorseWord": "eigi",
@@ -2627,7 +3250,7 @@
           "oldNorseWord": "spakr",
           "englishTranslation": "wise, intelligent",
           "russianTranslation": "мудрый, умный",
-          "definition": "Wise, intelligent",
+          "definition": "Wise, intligent",
           "examples": [],
           "type": "adjective"
         },
@@ -2839,7 +3462,7 @@
         {
           "oldNorseWord": "hataðr",
           "englishTranslation": "hating",
-          "russianTranslation": "ненавидящий",
+          "russianTranslation": "ненавидимый",
           "definition": "Hating",
           "examples": [],
           "type": "participle"
@@ -2855,7 +3478,7 @@
         {
           "oldNorseWord": "hlaupinn",
           "englishTranslation": "running",
-          "russianTranslation": "бежащий",
+          "russianTranslation": "бегу́щий",
           "definition": "Running",
           "examples": [],
           "type": "participle"
@@ -2863,7 +3486,7 @@
         {
           "oldNorseWord": "hræddr",
           "englishTranslation": "frightening",
-          "russianTranslation": "пугающий",
+          "russianTranslation": "напуганный",
           "definition": "Frightening",
           "examples": [],
           "type": "participle"
@@ -2871,7 +3494,7 @@
         {
           "oldNorseWord": "kallaðr",
           "englishTranslation": "calling",
-          "russianTranslation": "зовущий, кричащий",
+          "russianTranslation": "называющийся",
           "definition": "Calling, shouting",
           "examples": [],
           "type": "participle"

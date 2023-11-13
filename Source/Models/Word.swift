@@ -23,7 +23,7 @@ enum WordType: String, Codable, CaseIterable {
 
 struct Word: Codable, Identifiable {
     private enum CodingKeys : String, CodingKey {
-        case oldNorseWord, englishTranslation, russianTranslation, definition, examples, type, cases, conjugation, verbFirst, verbSecond
+        case oldNorseWord, englishTranslation, russianTranslation, definition, examples, type, cases, gendersCases, numbers, conjugation, verbFirst, verbSecond
     }
     
     var oldNorseWord: String
@@ -33,10 +33,12 @@ struct Word: Codable, Identifiable {
     let examples: [String]
     let type: WordType // Type of the word (noun, verb, pronoun, etc.)
     let cases: Cases?
+    let gendersCases: GendersCases?
+    var numbers: ActiveNumbers?
     let conjugation: Conjugation?
     let verbFirst: String?
     let verbSecond: String?
-
+    
     var id = UUID()
     
     func neutralNounForm() -> String? {
@@ -69,21 +71,419 @@ struct Word: Codable, Identifiable {
         return neutralForm
     }
     
+    func countGenders(for number: Number) -> Int {
+        var count = 0
+        
+        switch number {
+        case .singular:
+            if let sing = numbers?.singular {
+                for gen in Gender.allCases {
+                    if sing.haveGender(gender: gen) {
+                        count += 1
+                    }
+                }
+                return count
+            }
+        case .dual:
+            if let du = numbers?.dual {
+                for gen in Gender.allCases {
+                    if du.haveGender(gender: gen) {
+                        count += 1
+                    }
+                }
+                return count
+            }
+        case .plural:
+            if let plu = numbers?.plural {
+                for gen in Gender.allCases {
+                    if plu.haveGender(gender: gen) {
+                        count += 1
+                    }
+                }
+                return count
+            }
+        }
+        
+        return count
+    }
+    
+    
+    func hasGenders(number: Number) -> Int {
+        if numbers == nil {
+            return 0
+        }
+        
+        var count = 0
+        
+        if (numbers?.singular) != nil {
+            count += 1
+        }
+        
+        if (numbers?.dual) != nil {
+            count += 1
+        }
+        
+        if (numbers?.plural) != nil {
+            count += 1
+        }
+        
+        
+        return count
+    }
+    
+    func shouldShowNumber(number: Number) -> Bool {
+        if numbers == nil {
+            return false
+        }
+        
+        switch number {
+        case .singular:
+            if let nu = numbers?.singular {
+                if nu.feminine == false && nu.masculine == false && nu.neuter == false {
+                    return false
+                }
+                return true
+            }
+        case .dual:
+            if let nu = numbers?.dual {
+                if nu.feminine == false && nu.masculine == false && nu.neuter == false {
+                    return false
+                }
+                return true
+            }
+        case .plural:
+            if let nu = numbers?.plural {
+                if nu.feminine == false && nu.masculine == false && nu.neuter == false {
+                    return false
+                }
+                return true
+            }
+        }
+        return false
+    }
+    
+    func shouldShowGender(number: Number, gender: Gender) -> Bool {
+        if let numb = numbers {
+            switch number {
+            case .singular:
+                if let sing = numb.singular {
+                    return sing.haveGender(gender: gender)
+                } else {
+                    return false
+                }
+            case .dual:
+                if let du = numb.dual {
+                    return du.haveGender(gender: gender)
+                } else {
+                    return false
+                }
+            case .plural:
+                if let plu = numb.plural {
+                    return plu.haveGender(gender: gender)
+                } else {
+                    return false
+                }
+            }
+        } else {
+            return false
+        }
+    }
+    
+    func generateCase(wordCase: Case, number: Number, gender: Gender) -> String? {
+        switch wordCase {
+        case .nominative:
+            return generateNominative(number: number, gender: gender)
+        case .accusative:
+            return generateAccusative(number: number, gender: gender)
+        case .dative:
+            return generateDative(number: number, gender: gender)
+        case .genitive:
+            return generateGenitive(number: number, gender: gender)
+        }
+    }
+    
+    func generateNominative(number: Number, gender: Gender) -> String? {
+        var nominativeCase = oldNorseWord
+
+        switch number {
+        case .singular:
+            switch gender {
+            case .masculine:
+                if let nominativeCaseSingular = gendersCases?.nominative?.singular?.masculine {
+                    nominativeCase = nominativeCaseSingular
+                }
+            case .feminine:
+                if let nominativeCaseSingular = gendersCases?.nominative?.singular?.feminine {
+                    nominativeCase = nominativeCaseSingular
+                }
+            case .neuter:
+                if let nominativeCaseSingular = gendersCases?.nominative?.singular?.neuter {
+                    nominativeCase = nominativeCaseSingular
+                }
+            case .any:
+                if let nominativeCaseSingular = gendersCases?.nominative?.singular?.any {
+                    nominativeCase = nominativeCaseSingular
+                }
+            }
+        case .dual:
+            switch gender {
+            case .masculine:
+                if let nominativeCaseDual = gendersCases?.nominative?.dual?.masculine {
+                    nominativeCase = nominativeCaseDual
+                }
+            case .feminine:
+                if let nominativeCaseDual = gendersCases?.nominative?.dual?.feminine {
+                    nominativeCase = nominativeCaseDual
+                }
+            case .neuter:
+                if let nominativeCaseDual = gendersCases?.nominative?.dual?.neuter {
+                    nominativeCase = nominativeCaseDual
+                }
+            case .any:
+                if let nominativeCaseDual = gendersCases?.nominative?.dual?.any {
+                    nominativeCase = nominativeCaseDual
+                }
+            }
+        case .plural:
+            switch gender {
+            case .masculine:
+                if let nominativeCasePlural = gendersCases?.nominative?.plural?.masculine {
+                    nominativeCase = nominativeCasePlural
+                }
+            case .feminine:
+                if let nominativeCasePlural = gendersCases?.nominative?.plural?.feminine {
+                    nominativeCase = nominativeCasePlural
+                }
+            case .neuter:
+                if let nominativeCasePlural = gendersCases?.nominative?.plural?.neuter {
+                    nominativeCase = nominativeCasePlural
+                }
+            case .any:
+                if let nominativeCasePlural = gendersCases?.nominative?.plural?.any {
+                    nominativeCase = nominativeCasePlural
+                }
+            }
+        }
+        
+        return nominativeCase
+    }
+    
+    func generateAccusative(number: Number, gender: Gender) -> String? {
+        var accusativeCase = oldNorseWord
+        
+
+        switch number {
+        case .singular:
+            switch gender {
+            case .masculine:
+                if let accusativeCasePlural = gendersCases?.accusative?.singular?.masculine {
+                    accusativeCase = accusativeCasePlural
+                }
+            case .feminine:
+                if let accusativeCasePlural = gendersCases?.accusative?.singular?.feminine {
+                    accusativeCase = accusativeCasePlural
+                }
+            case .neuter:
+                if let accusativeCasePlural = gendersCases?.accusative?.singular?.neuter {
+                    accusativeCase = accusativeCasePlural
+                }
+            case .any:
+                if let accusativeCasePlural = gendersCases?.accusative?.singular?.any {
+                    accusativeCase = accusativeCasePlural
+                }
+            }
+        case .dual:
+            switch gender {
+            case .masculine:
+                if let accusativeCasePlural = gendersCases?.accusative?.dual?.masculine {
+                    accusativeCase = accusativeCasePlural
+                }
+            case .feminine:
+                if let accusativeCasePlural = gendersCases?.accusative?.dual?.feminine {
+                    accusativeCase = accusativeCasePlural
+                }
+            case .neuter:
+                if let accusativeCasePlural = gendersCases?.accusative?.dual?.neuter {
+                    accusativeCase = accusativeCasePlural
+                }
+            case .any:
+                if let accusativeCasePlural = gendersCases?.accusative?.dual?.any {
+                    accusativeCase = accusativeCasePlural
+                }
+            }
+        case .plural:
+            switch gender {
+            case .masculine:
+                if let accusativeCasePlural = gendersCases?.accusative?.plural?.masculine {
+                    accusativeCase = accusativeCasePlural
+                }
+            case .feminine:
+                if let accusativeCasePlural = gendersCases?.accusative?.plural?.feminine {
+                    accusativeCase = accusativeCasePlural
+                }
+            case .neuter:
+                if let accusativeCasePlural = gendersCases?.accusative?.plural?.neuter {
+                    accusativeCase = accusativeCasePlural
+                }
+            case .any:
+                if let accusativeCasePlural = gendersCases?.accusative?.plural?.any {
+                    accusativeCase = accusativeCasePlural
+                }
+            }
+        }
+        
+        return accusativeCase
+    }
+    
+    func generateDative(number: Number, gender: Gender) -> String? {
+        var dativeCase = oldNorseWord
+        
+
+        switch number {
+        case .singular:
+            switch gender {
+            case .masculine:
+                if let dativeCaseSingular = gendersCases?.dative?.singular?.masculine {
+                    dativeCase = dativeCaseSingular
+                }
+            case .feminine:
+                if let dativeCaseSingular = gendersCases?.dative?.singular?.feminine {
+                    dativeCase = dativeCaseSingular
+                }
+            case .neuter:
+                if let dativeCaseSingular = gendersCases?.dative?.singular?.neuter {
+                    dativeCase = dativeCaseSingular
+                }
+            case .any:
+                if let dativeCaseSingular = gendersCases?.dative?.singular?.any {
+                    dativeCase = dativeCaseSingular
+                }
+            }
+        case .dual:
+            switch gender {
+            case .masculine:
+                if let dativeCaseDual = gendersCases?.dative?.dual?.masculine {
+                    dativeCase = dativeCaseDual
+                }
+            case .feminine:
+                if let dativeCaseDual = gendersCases?.dative?.dual?.feminine {
+                    dativeCase = dativeCaseDual
+                }
+            case .neuter:
+                if let dativeCaseDual = gendersCases?.dative?.dual?.neuter {
+                    dativeCase = dativeCaseDual
+                }
+            case .any:
+                if let dativeCaseDual = gendersCases?.dative?.dual?.any {
+                    dativeCase = dativeCaseDual
+                }
+            }
+        case .plural:
+            switch gender {
+            case .masculine:
+                if let dativeCasePlural = gendersCases?.dative?.plural?.masculine {
+                    dativeCase = dativeCasePlural
+                }
+            case .feminine:
+                if let dativeCasePlural = gendersCases?.dative?.plural?.feminine {
+                    dativeCase = dativeCasePlural
+                }
+            case .neuter:
+                if let dativeCasePlural = gendersCases?.dative?.plural?.neuter {
+                    dativeCase = dativeCasePlural
+                }
+            case .any:
+                if let dativeCasePlural = gendersCases?.dative?.plural?.any {
+                    dativeCase = dativeCasePlural
+                }
+            }
+        }
+        
+        return dativeCase
+    }
+    
+    func generateGenitive(number: Number, gender: Gender) -> String? {
+        var genitiveCase = oldNorseWord
+        
+
+        switch number {
+        case .singular:
+            switch gender {
+            case .masculine:
+                if let genitiveCaseSingular = gendersCases?.genitive?.singular?.masculine {
+                    genitiveCase = genitiveCaseSingular
+                }
+            case .feminine:
+                if let genitiveCaseSingular = gendersCases?.genitive?.singular?.feminine {
+                    genitiveCase = genitiveCaseSingular
+                }
+            case .neuter:
+                if let genitiveCaseSingular = gendersCases?.genitive?.singular?.neuter {
+                    genitiveCase = genitiveCaseSingular
+                }
+            case .any:
+                if let genitiveCaseSingular = gendersCases?.genitive?.singular?.any {
+                    genitiveCase = genitiveCaseSingular
+                }
+            }
+        case .dual:
+            switch gender {
+            case .masculine:
+                if let genitiveCaseDual = gendersCases?.genitive?.dual?.masculine {
+                    genitiveCase = genitiveCaseDual
+                }
+            case .feminine:
+                if let genitiveCaseDual = gendersCases?.genitive?.dual?.feminine {
+                    genitiveCase = genitiveCaseDual
+                }
+            case .neuter:
+                if let genitiveCaseDual = gendersCases?.genitive?.dual?.neuter {
+                    genitiveCase = genitiveCaseDual
+                }
+            case .any:
+                if let genitiveCaseDual = gendersCases?.genitive?.dual?.any {
+                    genitiveCase = genitiveCaseDual
+                }
+            }
+        case .plural:
+            switch gender {
+            case .masculine:
+                if let genitiveCasePlural = gendersCases?.genitive?.plural?.masculine {
+                    genitiveCase = genitiveCasePlural
+                }
+            case .feminine:
+                if let genitiveCasePlural = gendersCases?.genitive?.plural?.feminine {
+                    genitiveCase = genitiveCasePlural
+                }
+            case .neuter:
+                if let genitiveCasePlural = gendersCases?.genitive?.plural?.neuter {
+                    genitiveCase = genitiveCasePlural
+                }
+            case .any:
+                if let genitiveCasePlural = gendersCases?.genitive?.plural?.any {
+                    genitiveCase = genitiveCasePlural
+                }
+            }
+        }
+        
+        return genitiveCase
+    }
+    
     func generateNounCase(nounCase: Case, number: Number, article: Bool) -> String? {
         switch nounCase {
         case .nominative:
-            return generateNominative(number: number, article: article)
+            return generateNounNominative(number: number, article: article)
         case .accusative:
-            return generateAccusative(number: number, article: article)
+            return generateNounAccusative(number: number, article: article)
         case .dative:
-            return generateDative(number: number, article: article)
+            return generateNounDative(number: number, article: article)
         case .genitive:
-            return generateGenitive(number: number, article: article)
+            return generateNounGenitive(number: number, article: article)
         }
     }
     
     
-    func generateNominative(number: Number, article: Bool) -> String? {
+    func generateNounNominative(number: Number, article: Bool) -> String? {
         var nominativeCase = oldNorseWord
 
         switch number {
@@ -138,7 +538,7 @@ struct Word: Codable, Identifiable {
         return nominativeCase
     }
     
-    func generateAccusative(number: Number, article: Bool) -> String? {
+    func generateNounAccusative(number: Number, article: Bool) -> String? {
         var accusativeCase = neutralNounForm()
         
         switch number {
@@ -196,7 +596,7 @@ struct Word: Codable, Identifiable {
         return accusativeCase
     }
     
-    func generateDative(number: Number, article: Bool) -> String? {
+    func generateNounDative(number: Number, article: Bool) -> String? {
         var dativeCase = neutralNounForm()
         
         switch number {
@@ -277,7 +677,7 @@ struct Word: Codable, Identifiable {
         return dativeCase
     }
     
-    func generateGenitive(number: Number, article: Bool) -> String? {
+    func generateNounGenitive(number: Number, article: Bool) -> String? {
         var genitiveCase = neutralNounForm()
         
         switch number {

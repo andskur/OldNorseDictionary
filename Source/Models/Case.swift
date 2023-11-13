@@ -26,3 +26,16 @@ enum Case: String, CaseIterable {
     case dative
     case genitive
 }
+
+struct GendersCases: Codable {
+    let nominative: CaseNumbers?
+    let accusative: CaseNumbers?
+    let dative: CaseNumbers?
+    let genitive: CaseNumbers?
+}
+
+struct CaseNumbers: Codable {
+    let singular: NumberGender?
+    let dual: NumberGender?
+    let plural: NumberGender?
+}
