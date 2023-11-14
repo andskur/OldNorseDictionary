@@ -986,7 +986,69 @@
           "russianTranslation": "многий, многочисленный",
           "definition": "Many",
           "examples": [],
-          "type": "pronoun"
+          "type": "pronoun",
+          "numbers": {
+              "singular": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              },
+              "plural": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              }
+          },
+          "gendersCases": {
+              "nominative": {
+                  "singular": {
+                      "masculine": "margr",
+                      "neuter": "margt",
+                      "feminine": "marg"
+                  },
+                  "plural": {
+                      "masculine": "margir",
+                      "neuter": "marg",
+                      "feminine": "margar"
+                  }
+              },
+              "accusative": {
+                  "singular": {
+                      "masculine": "margan",
+                      "neuter": "margt",
+                      "feminine": "marga"
+                  },
+                  "plural": {
+                      "masculine": "marga",
+                      "neuter": "marg",
+                      "feminine": "margar"
+                  }
+              },
+              "dative": {
+                  "singular": {
+                      "masculine": "margum",
+                      "neuter": "margu",
+                      "feminine": "margri"
+                  },
+                  "plural": {
+                      "masculine": "margum",
+                      "neuter": "margum",
+                      "feminine": "margum"
+                  }
+              },
+              "genitive": {
+                  "singular": {
+                      "masculine": "margs",
+                      "neuter": "margs",
+                      "feminine": "margs"
+                  },
+                  "plural": {
+                      "masculine": "marga",
+                      "neuter": "marga",
+                      "feminine": "marga"
+                  }
+              }
+          }
         },
         {
           "oldNorseWord": "sumr",
@@ -994,7 +1056,69 @@
           "russianTranslation": "некоторый",
           "definition": "Some, certain",
           "examples": [],
-          "type": "pronoun"
+          "type": "pronoun",
+          "numbers": {
+              "singular": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              },
+              "plural": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              }
+          },
+          "gendersCases": {
+              "nominative": {
+                  "singular": {
+                      "masculine": "sumr",
+                      "neuter": "sumt",
+                      "feminine": "sum"
+                  },
+                  "plural": {
+                      "masculine": "sumir",
+                      "neuter": "sum",
+                      "feminine": "sumar"
+                  }
+              },
+              "accusative": {
+                  "singular": {
+                      "masculine": "suman",
+                      "neuter": "sumt",
+                      "feminine": "suma"
+                  },
+                  "plural": {
+                      "masculine": "suma",
+                      "neuter": "sum",
+                      "feminine": "sumar"
+                  }
+              },
+              "dative": {
+                  "singular": {
+                      "masculine": "sumum",
+                      "neuter": "sumu",
+                      "feminine": "sumri"
+                  },
+                  "plural": {
+                      "masculine": "sumum",
+                      "neuter": "sumum",
+                      "feminine": "sumum"
+                  }
+              },
+              "genitive": {
+                  "singular": {
+                      "masculine": "sums",
+                      "neuter": "sums",
+                      "feminine": "sumar"
+                  },
+                  "plural": {
+                      "masculine": "sumra",
+                      "neuter": "sumra",
+                      "feminine": "sumra"
+                  }
+              }
+          }
         },
         {
           "oldNorseWord": "báðir",
@@ -1388,7 +1512,69 @@
           "russianTranslation": "такой",
           "type": "pronoun",
           "definition": "Referring to such or of that kind.",
-          "examples": ["Slíkr maðr er góðr. (Such a man is good.)"]
+          "examples": ["Slíkr maðr er góðr. (Such a man is good.)"],
+          "numbers": {
+              "singular": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              },
+              "plural": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              }
+          },
+          "gendersCases": {
+              "nominative": {
+                  "singular": {
+                      "masculine": "slíkr",
+                      "neuter": "slíkt",
+                      "feminine": "slík"
+                  },
+                  "plural": {
+                      "masculine": "slíkir",
+                      "neuter": "slík",
+                      "feminine": "slíkar"
+                  }
+              },
+              "accusative": {
+                  "singular": {
+                      "masculine": "slíkan",
+                      "neuter": "slíkt",
+                      "feminine": "slíka"
+                  },
+                  "plural": {
+                      "masculine": "slíka",
+                      "neuter": "slík",
+                      "feminine": "slíkar"
+                  }
+              },
+              "dative": {
+                  "singular": {
+                      "masculine": "slíkum",
+                      "neuter": "slíku",
+                      "feminine": "slíkri"
+                  },
+                  "plural": {
+                      "masculine": "slíkum",
+                      "neuter": "slíkum",
+                      "feminine": "slíkum"
+                  }
+              },
+              "genitive": {
+                  "singular": {
+                      "masculine": "slíks",
+                      "neuter": "slíks",
+                      "feminine": "slíkar"
+                  },
+                  "plural": {
+                      "masculine": "slíkra",
+                      "neuter": "slíkra",
+                      "feminine": "slíkra"
+                  }
+              }
+          }
         },
         {
           "oldNorseWord": "sjálfr",
@@ -1396,7 +1582,69 @@
           "russianTranslation": "сам",
           "type": "pronoun",
           "definition": "Referring to the person or thing in question as the same as the one previously mentioned.",
-          "examples": ["Hann sjálfr gerði það. (He himself did it.)"]
+          "examples": ["Hann sjálfr gerði það. (He himself did it.)"],
+          "numbers": {
+              "singular": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              },
+              "plural": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              }
+          },
+          "gendersCases": {
+              "nominative": {
+                  "singular": {
+                      "masculine": "sjálfr",
+                      "neuter": "sjálft",
+                      "feminine": "sjálf"
+                  },
+                  "plural": {
+                      "masculine": "sjálfir",
+                      "neuter": "sjálf",
+                      "feminine": "sjálfar"
+                  }
+              },
+              "accusative": {
+                  "singular": {
+                      "masculine": "sjálfan",
+                      "neuter": "sjálft",
+                      "feminine": "sjálfa"
+                  },
+                  "plural": {
+                      "masculine": "sjálfa",
+                      "neuter": "sjálf",
+                      "feminine": "sjálfar"
+                  }
+              },
+              "dative": {
+                  "singular": {
+                      "masculine": "sjálfum",
+                      "neuter": "sjálfu",
+                      "feminine": "sjálfri"
+                  },
+                  "plural": {
+                      "masculine": "sjálfum",
+                      "neuter": "sjálfum",
+                      "feminine": "sjálfum"
+                  }
+              },
+              "genitive": {
+                  "singular": {
+                      "masculine": "sjálfs",
+                      "neuter": "sjálfs",
+                      "feminine": "sjálfar"
+                  },
+                  "plural": {
+                      "masculine": "sjálfra",
+                      "neuter": "sjálfra",
+                      "feminine": "sjálfra"
+                  }
+              }
+          }
         },
         {
           "oldNorseWord": "sá",
@@ -1614,7 +1862,69 @@
           "russianTranslation": "свой",
           "type": "pronoun",
           "definition": "Belonging to or associated with a previously mentioned person or thing.",
-          "examples": ["Hann fann sinn hatt. (He found his hat.)"]
+          "examples": ["Hann fann sinn hatt. (He found his hat.)"],
+          "numbers": {
+              "singular": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              },
+              "plural": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              }
+          },
+          "gendersCases": {
+              "nominative": {
+                  "singular": {
+                      "masculine": "sinn",
+                      "neuter": "sitt",
+                      "feminine": "sín"
+                  },
+                  "plural": {
+                      "masculine": "sínir",
+                      "neuter": "sín",
+                      "feminine": "sínar"
+                  }
+              },
+              "accusative": {
+                  "singular": {
+                      "masculine": "sinn",
+                      "neuter": "sitt",
+                      "feminine": "sína"
+                  },
+                  "plural": {
+                      "masculine": "sína",
+                      "neuter": "sín",
+                      "feminine": "sínar"
+                  }
+              },
+              "dative": {
+                  "singular": {
+                      "masculine": "sínum",
+                      "neuter": "sínu",
+                      "feminine": "sinni"
+                  },
+                  "plural": {
+                      "masculine": "sínum",
+                      "neuter": "sínum",
+                      "feminine": "sínum"
+                  }
+              },
+              "genitive": {
+                  "singular": {
+                      "masculine": "síns",
+                      "neuter": "síns",
+                      "feminine": "sinnar"
+                  },
+                  "plural": {
+                      "masculine": "sinna",
+                      "neuter": "sinna",
+                      "feminine": "sinna"
+                  }
+              }
+          }
         },
         {
           "oldNorseWord": "várr",
@@ -1762,7 +2072,69 @@
           "russianTranslation": "ваш (вам двоим принадлежащий)",
           "type": "pronoun",
           "definition": "Belonging to or associated with the two people that the speaker is addressing.",
-          "examples": ["Þetta er ykkarr borð. (This is your table.)"]
+          "examples": ["Þetta er ykkarr borð. (This is your table.)"],
+          "numbers": {
+              "singular": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              },
+              "plural": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              }
+          },
+          "gendersCases": {
+              "nominative": {
+                  "singular": {
+                      "masculine": "ykkarr",
+                      "neuter": "ykkart",
+                      "feminine": "ykkur"
+                  },
+                  "plural": {
+                      "masculine": "ykkrir",
+                      "neuter": "ykkur",
+                      "feminine": "ykkrar"
+                  }
+              },
+              "accusative": {
+                  "singular": {
+                      "masculine": "ykkvarn",
+                      "neuter": "ykkvart",
+                      "feminine": "ykkra"
+                  },
+                  "plural": {
+                      "masculine": "ykkra",
+                      "neuter": "ykkur",
+                      "feminine": "ykkrar"
+                  }
+              },
+              "dative": {
+                  "singular": {
+                      "masculine": "ykkrum",
+                      "neuter": "ykkru",
+                      "feminine": "ykkvarri"
+                  },
+                  "plural": {
+                      "masculine": "ykkrum",
+                      "neuter": "ykkrum",
+                      "feminine": "ykkrum"
+                  }
+              },
+              "genitive": {
+                  "singular": {
+                      "masculine": "ykkvars",
+                      "neuter": "ykkvars",
+                      "feminine": "ykkvarrar"
+                  },
+                  "plural": {
+                      "masculine": "ykkvarra",
+                      "neuter": "ykkvarra",
+                      "feminine": "ykkvarra"
+                  }
+              }
+          }
         },
         {
           "oldNorseWord": "þinn",
@@ -1770,7 +2142,69 @@
           "russianTranslation": "твой",
           "type": "pronoun",
           "definition": "Belonging to or associated with the person or people that the speaker is addressing.",
-          "examples": ["Þetta er þinn hundur. (This is your dog.)"]
+          "examples": ["Þetta er þinn hundur. (This is your dog.)"],
+          "numbers": {
+              "singular": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              },
+              "plural": {
+                  "masculine": true,
+                  "feminine": true,
+                  "neuter": true
+              }
+          },
+          "gendersCases": {
+              "nominative": {
+                  "singular": {
+                      "masculine": "þinn",
+                      "neuter": "þitt",
+                      "feminine": "þín"
+                  },
+                  "plural": {
+                      "masculine": "þínir",
+                      "neuter": "þín",
+                      "feminine": "þínar"
+                  }
+              },
+              "accusative": {
+                  "singular": {
+                      "masculine": "þinn",
+                      "neuter": "þitt",
+                      "feminine": "þína"
+                  },
+                  "plural": {
+                      "masculine": "þína",
+                      "neuter": "þín",
+                      "feminine": "þínar"
+                  }
+              },
+              "dative": {
+                  "singular": {
+                      "masculine": "þínum",
+                      "neuter": "þínu",
+                      "feminine": "þinni"
+                  },
+                  "plural": {
+                      "masculine": "þínum",
+                      "neuter": "þínum",
+                      "feminine": "þínum"
+                  }
+              },
+              "genitive": {
+                  "singular": {
+                      "masculine": "þíns",
+                      "neuter": "þíns",
+                      "feminine": "þinnar"
+                  },
+                  "plural": {
+                      "masculine": "þinna",
+                      "neuter": "þinna",
+                      "feminine": "þinna"
+                  }
+              }
+          }
         },
         {
           "oldNorseWord": "hvárr",
