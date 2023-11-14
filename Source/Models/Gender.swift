@@ -11,7 +11,7 @@ struct ActiveGenders: Codable {
     var masculine: Bool? = true
     var feminine: Bool? = true
     var neuter: Bool? = true
-    var any: Bool? = true
+    var any: Bool? = false
     
     func haveGender(gender: Gender) -> Bool {
         switch gender {

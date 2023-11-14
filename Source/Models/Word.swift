@@ -215,10 +215,44 @@ struct Word: Codable, Identifiable {
             case .feminine:
                 if let nominativeCaseSingular = gendersCases?.nominative?.singular?.feminine {
                     nominativeCase = nominativeCaseSingular
+                } else {
+                    nominativeCase = neutralNounForm()!
                 }
             case .neuter:
                 if let nominativeCaseSingular = gendersCases?.nominative?.singular?.neuter {
                     nominativeCase = nominativeCaseSingular
+                } else {
+                    switch type {
+                    case .adjective,.pronoun,.participle:
+                        if oldNorseWord.hasSuffix("ddr") {
+                            nominativeCase = neutralNounForm()!
+                            nominativeCase.removeLast(2)
+                            nominativeCase += "tt"
+                        } else if oldNorseWord.hasSuffix("dr")
+                            || oldNorseWord.hasSuffix("ðr")
+                            || oldNorseWord.hasSuffix("inn")
+                            || oldNorseWord.hasSuffix("tr")
+                            || oldNorseWord.hasSuffix("ttr") {
+                            
+                            let last = nominativeCase.last
+                            
+                            nominativeCase.removeLast()
+                            
+                            if nominativeCase.last == last {
+                                nominativeCase.removeLast()
+                            }
+                            
+                            if nominativeCase.last != "t" {
+                                if nominativeCase.last == "ð" {
+                                    nominativeCase.removeLast()
+                                    nominativeCase += "t"
+                                }
+                                nominativeCase += "t"
+                            }
+                        }
+                    default:
+                        return neutralNounForm()
+                    }
                 }
             case .any:
                 if let nominativeCaseSingular = gendersCases?.nominative?.singular?.any {
@@ -249,14 +283,20 @@ struct Word: Codable, Identifiable {
             case .masculine:
                 if let nominativeCasePlural = gendersCases?.nominative?.plural?.masculine {
                     nominativeCase = nominativeCasePlural
+                } else {
+                    nominativeCase = neutralNounForm()! + "ir"
                 }
             case .feminine:
                 if let nominativeCasePlural = gendersCases?.nominative?.plural?.feminine {
                     nominativeCase = nominativeCasePlural
+                } else {
+                    nominativeCase = neutralNounForm()! + "ar"
                 }
             case .neuter:
                 if let nominativeCasePlural = gendersCases?.nominative?.plural?.neuter {
                     nominativeCase = nominativeCasePlural
+                } else {
+                    nominativeCase = neutralNounForm()!
                 }
             case .any:
                 if let nominativeCasePlural = gendersCases?.nominative?.plural?.any {
@@ -278,14 +318,51 @@ struct Word: Codable, Identifiable {
             case .masculine:
                 if let accusativeCasePlural = gendersCases?.accusative?.singular?.masculine {
                     accusativeCase = accusativeCasePlural
+                } else {
+                    accusativeCase = neutralNounForm()! + "an"
                 }
             case .feminine:
                 if let accusativeCasePlural = gendersCases?.accusative?.singular?.feminine {
                     accusativeCase = accusativeCasePlural
+                } else {
+                    accusativeCase = neutralNounForm()! + "a"
                 }
             case .neuter:
                 if let accusativeCasePlural = gendersCases?.accusative?.singular?.neuter {
                     accusativeCase = accusativeCasePlural
+                } else {
+                    switch type {
+                    case .adjective,.pronoun,.participle:
+                        if oldNorseWord.hasSuffix("ddr") {
+                            accusativeCase = neutralNounForm()!
+                            accusativeCase.removeLast(2)
+                            accusativeCase += "tt"
+                        } else if oldNorseWord.hasSuffix("dr")
+                            || oldNorseWord.hasSuffix("ðr")
+                            || oldNorseWord.hasSuffix("inn")
+                            || oldNorseWord.hasSuffix("tr")
+                            || oldNorseWord.hasSuffix("ttr") {
+                            
+                            let last = accusativeCase.last
+                            
+                            accusativeCase.removeLast()
+                            
+                            if accusativeCase.last == last {
+                                accusativeCase.removeLast()
+                            }
+                            
+                            if accusativeCase.last != "t" {
+                                if accusativeCase.last == "ð" {
+                                    accusativeCase.removeLast()
+                                    accusativeCase += "t"
+                                }
+                                accusativeCase += "t"
+                            }
+                        }
+                        
+                    default:
+                        return neutralNounForm()
+                    }
                 }
             case .any:
                 if let accusativeCasePlural = gendersCases?.accusative?.singular?.any {
@@ -316,14 +393,20 @@ struct Word: Codable, Identifiable {
             case .masculine:
                 if let accusativeCasePlural = gendersCases?.accusative?.plural?.masculine {
                     accusativeCase = accusativeCasePlural
+                } else {
+                    accusativeCase = neutralNounForm()! + "a"
                 }
             case .feminine:
                 if let accusativeCasePlural = gendersCases?.accusative?.plural?.feminine {
                     accusativeCase = accusativeCasePlural
+                } else {
+                    accusativeCase = neutralNounForm()! + "ar"
                 }
             case .neuter:
                 if let accusativeCasePlural = gendersCases?.accusative?.plural?.neuter {
                     accusativeCase = accusativeCasePlural
+                } else {
+                    accusativeCase = neutralNounForm()!
                 }
             case .any:
                 if let accusativeCasePlural = gendersCases?.accusative?.plural?.any {
@@ -345,14 +428,20 @@ struct Word: Codable, Identifiable {
             case .masculine:
                 if let dativeCaseSingular = gendersCases?.dative?.singular?.masculine {
                     dativeCase = dativeCaseSingular
+                } else {
+                    dativeCase = neutralNounForm()! + "um"
                 }
             case .feminine:
                 if let dativeCaseSingular = gendersCases?.dative?.singular?.feminine {
                     dativeCase = dativeCaseSingular
+                } else {
+                    dativeCase = neutralNounForm()! + "ri"
                 }
             case .neuter:
                 if let dativeCaseSingular = gendersCases?.dative?.singular?.neuter {
                     dativeCase = dativeCaseSingular
+                } else {
+                    dativeCase = neutralNounForm()! + "u"
                 }
             case .any:
                 if let dativeCaseSingular = gendersCases?.dative?.singular?.any {
@@ -383,14 +472,20 @@ struct Word: Codable, Identifiable {
             case .masculine:
                 if let dativeCasePlural = gendersCases?.dative?.plural?.masculine {
                     dativeCase = dativeCasePlural
+                } else {
+                    dativeCase = neutralNounForm()! + "um"
                 }
             case .feminine:
                 if let dativeCasePlural = gendersCases?.dative?.plural?.feminine {
                     dativeCase = dativeCasePlural
+                } else {
+                    dativeCase = neutralNounForm()! + "um"
                 }
             case .neuter:
                 if let dativeCasePlural = gendersCases?.dative?.plural?.neuter {
                     dativeCase = dativeCasePlural
+                } else {
+                    dativeCase = neutralNounForm()! + "um"
                 }
             case .any:
                 if let dativeCasePlural = gendersCases?.dative?.plural?.any {
@@ -412,14 +507,20 @@ struct Word: Codable, Identifiable {
             case .masculine:
                 if let genitiveCaseSingular = gendersCases?.genitive?.singular?.masculine {
                     genitiveCase = genitiveCaseSingular
+                } else {
+                    genitiveCase = neutralNounForm()! + "s"
                 }
             case .feminine:
                 if let genitiveCaseSingular = gendersCases?.genitive?.singular?.feminine {
                     genitiveCase = genitiveCaseSingular
+                } else {
+                    genitiveCase = neutralNounForm()! + "ar"
                 }
             case .neuter:
                 if let genitiveCaseSingular = gendersCases?.genitive?.singular?.neuter {
                     genitiveCase = genitiveCaseSingular
+                } else {
+                    genitiveCase = neutralNounForm()! + "s"
                 }
             case .any:
                 if let genitiveCaseSingular = gendersCases?.genitive?.singular?.any {
@@ -450,14 +551,20 @@ struct Word: Codable, Identifiable {
             case .masculine:
                 if let genitiveCasePlural = gendersCases?.genitive?.plural?.masculine {
                     genitiveCase = genitiveCasePlural
+                } else {
+                    genitiveCase = neutralNounForm()! + "ra"
                 }
             case .feminine:
                 if let genitiveCasePlural = gendersCases?.genitive?.plural?.feminine {
                     genitiveCase = genitiveCasePlural
+                } else {
+                    genitiveCase = neutralNounForm()! + "ra"
                 }
             case .neuter:
                 if let genitiveCasePlural = gendersCases?.genitive?.plural?.neuter {
                     genitiveCase = genitiveCasePlural
+                } else {
+                    genitiveCase = neutralNounForm()! + "ra"
                 }
             case .any:
                 if let genitiveCasePlural = gendersCases?.genitive?.plural?.any {
