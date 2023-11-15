@@ -183,7 +183,7 @@ struct WordDetailView: View {
 
 struct WordDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        let sampleWord = Word(oldNorseWord: "Hús", englishTranslation: "House", russianTranslation: "Дом", definition: "A building for human habitation.", examples: ["Hús er stafrænt orðn sem merkir byggingu fyrir mannlega búsetu."], type: .noun, cases: nil, gendersCases: nil, numbers: nil, conjugation: nil, verbFirst: nil, verbSecond: nil)
+        let sampleWord = Word(oldNorseWord: "Hús", base: "huse", englishTranslation: "House", russianTranslation: "Дом", definition: "A building for human habitation.", examples: ["Hús er stafrænt orðn sem merkir byggingu fyrir mannlega búsetu."], type: .noun, cases: nil, gendersCases: nil, numbers: nil, conjugation: nil, verbFirst: nil, verbSecond: nil)
         
         let sampleDirection: SearchDirection = .oldNorseToEnglish
         
