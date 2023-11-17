@@ -5773,5 +5773,75 @@
     "examples": [
       "Hann ætlar að leggja af staði á morgun. (He intends to set out tomorrow.)"
     ]
+  },
+  {
+      "oldNorseWord": "svá mánuðum skiptir",
+      "englishTranslation": "by months",
+      "russianTranslation": "месяцами",
+      "type": "phrase",
+      "definition": "Referring to a duration or passage of time measured in months; indicating a time period that spans across several months.",
+      "examples": [
+        "Þeir bjuggu sig undir ferðina svá mánuðum skiptir. (They prepared for the journey over a period of months.)"
+      ]
+  },
+  {
+      "oldNorseWord": "eftir at",
+      "englishTranslation": "after",
+      "russianTranslation": "после того как",
+      "type": "phrase",
+      "definition": "Used to indicate the time following an event or action; signifies the subsequent period or occurrence.",
+      "examples": [
+        "Eftir at sólin setur, ríkir myrkur. (After the sun sets, darkness prevails.)"
+      ]
+  },
+  {
+      "oldNorseWord": "fyrir innan",
+      "englishTranslation": "inside",
+      "russianTranslation": "внутри",
+      "type": "phrase",
+      "definition": "Located within the interior or inner part of something.",
+      "examples": [
+          "Hann fann gripi fyrir innan kistu. (He found treasures inside the chest.)"
+      ]
+  },
+  {
+      "oldNorseWord": "telja upp",
+      "englishTranslation": "list, enumerate",
+      "russianTranslation": "перечислять",
+      "type": "phrase",
+      "definition": "To recite items or names in a sequence; to count off one by one.",
+      "examples": [
+          "Skáldið taldi upp nöfn konunga. (The poet listed the names of the kings.)"
+      ]
+  },
+  {
+      "oldNorseWord": "verða fyrstr til",
+      "englishTranslation": "be the first, outstrip",
+      "russianTranslation": "опередить, прийти первым",
+      "type": "phrase",
+      "definition": "To be the first in a race or competition; to arrive or achieve something before others.",
+      "examples": [
+          "Hann varð fyrstr til að finna landið. (He was the first to discover the land.)"
+      ]
+  },
+  {
+      "oldNorseWord": "fyrir sakir",
+      "englishTranslation": "because of, due to",
+      "russianTranslation": "из-за",
+      "type": "phrase",
+      "definition": "Used to indicate the reason or cause for something; as a result of.",
+      "examples": [
+          "Fyrir sakir snjófalls, voru vegir lokaðir. (Because of the snowfall, the roads were closed.)"
+      ]
+  },
+  {
+      "oldNorseWord": "svá sem áðr segir",
+      "englishTranslation": "as previously mentioned, as said before",
+      "russianTranslation": "как сказано ранее",
+      "type": "phrase",
+      "definition": "Referring back to something that has already been stated or described earlier in the text.",
+      "examples": [
+          "Svá sem áðr segir, hann var mikill höfðingi. (As previously mentioned, he was a great chieftain.)"
+      ]
   }
 ]
