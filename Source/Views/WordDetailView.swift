@@ -158,6 +158,8 @@ struct WordDetailView: View {
                 } else if searchDirection == .russianToOldNorse || searchDirection == .oldNorseToRussian {
                     Text("\(word.oldNorseWord) (\(word.russianTranslation))")
                 }
+                
+                Text(word.type.rawValue.capitalized).italic()
 
                 if word.type == .verb {
                     verbDetailViewContent()

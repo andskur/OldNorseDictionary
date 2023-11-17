@@ -126,7 +126,62 @@ class WordService {
         let firstPluralMatchesQuery = word.generateConjugation(person: .first, number: .plural)?.lowercased().contains(query) == true
         let secondPluralMatchesQuery = word.generateConjugation(person: .second, number: .plural)?.lowercased().contains(query) == true
         let thirdPluralMatchesQuery = word.generateConjugation(person: .third, number: .plural)?.lowercased().contains(query) == true
+        
+        // nominative
+        let accNominativeSingularMasculine = word.generateCase(wordCase: .nominative, number: .singular, gender: .masculine)?.lowercased().contains(query) == true
+        let accNominativeSingularFemenine = word.generateCase(wordCase: .nominative, number: .singular, gender: .feminine)?.lowercased().contains(query) == true
+        let accNominativeSingularNeuter = word.generateCase(wordCase: .nominative, number: .singular, gender: .neuter)?.lowercased().contains(query) == true
+        
+        let accNominativeDualMasculine = word.generateCase(wordCase: .nominative, number: .dual, gender: .masculine)?.lowercased().contains(query) == true
+        let accNominativeDualFemenine = word.generateCase(wordCase: .nominative, number: .dual, gender: .feminine)?.lowercased().contains(query) == true
+        let accNominativeDualNeuter = word.generateCase(wordCase: .nominative, number: .dual, gender: .neuter)?.lowercased().contains(query) == true
+        
+        let accNominativePluralMasculine = word.generateCase(wordCase: .nominative, number: .plural, gender: .masculine)?.lowercased().contains(query) == true
+        let accNominativePluralFemenine = word.generateCase(wordCase: .nominative, number: .plural, gender: .feminine)?.lowercased().contains(query) == true
+        let accNominativePluralNeuter = word.generateCase(wordCase: .nominative, number: .plural, gender: .neuter)?.lowercased().contains(query) == true
+        
+        
+        // accusative
+        let accAccusativeSingularMasculine = word.generateCase(wordCase: .accusative, number: .singular, gender: .masculine)?.lowercased().contains(query) == true
+        let accAccusativeSingularFemenine = word.generateCase(wordCase: .accusative, number: .singular, gender: .feminine)?.lowercased().contains(query) == true
+        let accAccusativeSingularNeuter = word.generateCase(wordCase: .accusative, number: .singular, gender: .neuter)?.lowercased().contains(query) == true
+        
+        let accAccusativeDualMasculine = word.generateCase(wordCase: .accusative, number: .dual, gender: .masculine)?.lowercased().contains(query) == true
+        let accAccusativeDualFemenine = word.generateCase(wordCase: .accusative, number: .dual, gender: .feminine)?.lowercased().contains(query) == true
+        let accAccusativeDualNeuter = word.generateCase(wordCase: .accusative, number: .dual, gender: .neuter)?.lowercased().contains(query) == true
+        
+        let accAccusativePluralMasculine = word.generateCase(wordCase: .accusative, number: .plural, gender: .masculine)?.lowercased().contains(query) == true
+        let accAccusativePluralFemenine = word.generateCase(wordCase: .accusative, number: .plural, gender: .feminine)?.lowercased().contains(query) == true
+        let accAccusativePluralNeuter = word.generateCase(wordCase: .accusative, number: .plural, gender: .neuter)?.lowercased().contains(query) == true
+        
+        
+        // dative
+        let accDativeSingularMasculine = word.generateCase(wordCase: .dative, number: .singular, gender: .masculine)?.lowercased().contains(query) == true
+        let accDativeSingularFemenine = word.generateCase(wordCase: .dative, number: .singular, gender: .feminine)?.lowercased().contains(query) == true
+        let accDativeSingularNeuter = word.generateCase(wordCase: .dative, number: .singular, gender: .neuter)?.lowercased().contains(query) == true
+        
+        let accDativeDualMasculine = word.generateCase(wordCase: .dative, number: .dual, gender: .masculine)?.lowercased().contains(query) == true
+        let accDativeDualFemenine = word.generateCase(wordCase: .dative, number: .dual, gender: .feminine)?.lowercased().contains(query) == true
+        let accDativeDualNeuter = word.generateCase(wordCase: .dative, number: .dual, gender: .neuter)?.lowercased().contains(query) == true
+        
+        let accDativePluralMasculine = word.generateCase(wordCase: .dative, number: .plural, gender: .masculine)?.lowercased().contains(query) == true
+        let accDativePluralFemenine = word.generateCase(wordCase: .dative, number: .plural, gender: .feminine)?.lowercased().contains(query) == true
+        let accDativePluralNeuter = word.generateCase(wordCase: .dative, number: .plural, gender: .neuter)?.lowercased().contains(query) == true
+        
+        // genitive
+        let accGenitiveSingularMasculine = word.generateCase(wordCase: .genitive, number: .singular, gender: .masculine)?.lowercased().contains(query) == true
+        let accGenitiveSingularFemenine = word.generateCase(wordCase: .genitive, number: .singular, gender: .feminine)?.lowercased().contains(query) == true
+        let accGenitiveSingularNeuter = word.generateCase(wordCase: .genitive, number: .singular, gender: .neuter)?.lowercased().contains(query) == true
+        
+        let accGenitiveDualMasculine = word.generateCase(wordCase: .genitive, number: .dual, gender: .masculine)?.lowercased().contains(query) == true
+        let accGenitiveDualFemenine = word.generateCase(wordCase: .genitive, number: .dual, gender: .feminine)?.lowercased().contains(query) == true
+        let accGenitiveDualNeuter = word.generateCase(wordCase: .genitive, number: .dual, gender: .neuter)?.lowercased().contains(query) == true
+        
+        let accGenitivePluralMasculine = word.generateCase(wordCase: .genitive, number: .plural, gender: .masculine)?.lowercased().contains(query) == true
+        let accGenitivePluralFemenine = word.generateCase(wordCase: .genitive, number: .plural, gender: .feminine)?.lowercased().contains(query) == true
+        let accGenitivePluralNeuter = word.generateCase(wordCase: .genitive, number: .plural, gender: .neuter)?.lowercased().contains(query) == true
 
-        return wordMatchesQuery || nominativeSingularMatchesQuery || nominativeDualMatchesQuery || nominativePluralMatchesQuery || accusativeSingularMatchesQuery || accusativeDualMatchesQuery || accusativePluralMatchesQuery || dativeSingularMatchesQuery || dativeDualMatchesQuery || dativePluralMatchesQuery || firstSingularMatchesQuery || secondSingularMatchesQuery || thirdSingularMatchesQuery || firstPluralMatchesQuery || secondPluralMatchesQuery || thirdPluralMatchesQuery || genitiveSingularMatchesQuery || genitiveDualMatchesQuery || genitivePluralMatchesQuery
+
+        return wordMatchesQuery || nominativeSingularMatchesQuery || nominativeDualMatchesQuery || nominativePluralMatchesQuery || accusativeSingularMatchesQuery || accusativeDualMatchesQuery || accusativePluralMatchesQuery || dativeSingularMatchesQuery || dativeDualMatchesQuery || dativePluralMatchesQuery || firstSingularMatchesQuery || secondSingularMatchesQuery || thirdSingularMatchesQuery || firstPluralMatchesQuery || secondPluralMatchesQuery || thirdPluralMatchesQuery || genitiveSingularMatchesQuery || genitiveDualMatchesQuery || genitivePluralMatchesQuery || accNominativeSingularMasculine || accNominativeSingularFemenine || accNominativeSingularNeuter || accNominativeDualMasculine || accNominativeDualFemenine || accNominativeDualNeuter || accNominativePluralMasculine || accNominativePluralFemenine || accAccusativePluralNeuter || accAccusativeSingularMasculine || accAccusativeSingularFemenine || accAccusativeSingularNeuter || accAccusativeDualMasculine || accAccusativeDualFemenine || accAccusativeDualNeuter || accAccusativePluralMasculine || accDativePluralFemenine || accDativePluralNeuter || accGenitiveSingularMasculine || accGenitiveSingularFemenine || accGenitiveSingularNeuter || accGenitiveDualMasculine || accGenitiveDualFemenine || accGenitiveDualNeuter || accGenitivePluralMasculine || accGenitivePluralFemenine || accGenitivePluralNeuter || accNominativePluralNeuter || accDativeSingularMasculine || accDativePluralMasculine || accDativeDualNeuter || accDativeDualFemenine || accDativeDualMasculine || accDativeSingularFemenine || accDativeSingularNeuter || accAccusativePluralFemenine
     }
 }

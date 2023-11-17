@@ -47,22 +47,34 @@ struct Word: Codable, Identifiable {
             return base
         }
         
-        
-        var neutralNoun = oldNorseWord
-        
-        if neutralNoun.last == "r" {
-            neutralNoun.removeLast()
+        switch type {
+        case .adjective:
+            return base
+        case .participle:
+            var neutralNoun = oldNorseWord
+            
+            if neutralNoun.hasSuffix("inn") || neutralNoun.hasSuffix("aðr") {
+                neutralNoun.removeLast(3)
+            }
+            
+            return neutralNoun
+        default:
+            var neutralNoun = oldNorseWord
+            
+            if neutralNoun.last == "r" {
+                neutralNoun.removeLast()
+            }
+            
+            if neutralNoun.hasSuffix("ll") {
+                neutralNoun.removeLast()
+            }
+            
+            if neutralNoun.hasSuffix("nn") {
+                neutralNoun.removeLast()
+            }
+            
+            return neutralNoun
         }
-        
-        if neutralNoun.hasSuffix("ll") {
-            neutralNoun.removeLast()
-        }
-        
-        if neutralNoun.hasSuffix("nn") {
-            neutralNoun.removeLast()
-        }
-        
-        return neutralNoun
     }
     
     func neutralParticipleForm() -> String? {
@@ -222,7 +234,13 @@ struct Word: Codable, Identifiable {
                 if let nominativeCaseSingular = gendersCases?.nominative?.singular?.feminine {
                     nominativeCase = nominativeCaseSingular
                 } else {
-                    nominativeCase = neutralNounForm()!
+                    if type == .participle && nominativeCase.hasSuffix("inn") {
+                        nominativeCase = neutralNounForm()! + "in"
+                    } else if type == .participle && nominativeCase.hasSuffix("aðr") {
+                        nominativeCase = neutralNounForm()! + "uð"
+                    } else {
+                        nominativeCase = neutralNounForm()!
+                    }
                 }
             case .neuter:
                 if let nominativeCaseSingular = gendersCases?.nominative?.singular?.neuter {
@@ -234,6 +252,9 @@ struct Word: Codable, Identifiable {
                             nominativeCase = neutralNounForm()!
                             nominativeCase.removeLast(2)
                             nominativeCase += "tt"
+                        } else if oldNorseWord.hasSuffix("aðr") {
+                            nominativeCase = neutralNounForm()!
+                            nominativeCase += "at"
                         } else if oldNorseWord.hasSuffix("dr")
                             || oldNorseWord.hasSuffix("ðr")
                             || oldNorseWord.hasSuffix("inn")
@@ -292,19 +313,37 @@ struct Word: Codable, Identifiable {
                 if let nominativeCasePlural = gendersCases?.nominative?.plural?.masculine {
                     nominativeCase = nominativeCasePlural
                 } else {
-                    nominativeCase = neutralNounForm()! + "ir"
+                    if type == .participle && nominativeCase.hasSuffix("inn") {
+                        nominativeCase = neutralNounForm()! + "nir"
+                    } else if type == .participle && nominativeCase.hasSuffix("aðr") {
+                        nominativeCase = neutralNounForm()! + "aðir"
+                    } else {
+                        nominativeCase = neutralNounForm()! + "ir"
+                    }
                 }
             case .feminine:
                 if let nominativeCasePlural = gendersCases?.nominative?.plural?.feminine {
                     nominativeCase = nominativeCasePlural
                 } else {
-                    nominativeCase = neutralNounForm()! + "ar"
+                    if type == .participle && nominativeCase.hasSuffix("inn") {
+                        nominativeCase = neutralNounForm()! + "nar"
+                    } else if type == .participle && nominativeCase.hasSuffix("aðr") {
+                        nominativeCase = neutralNounForm()! + "aðar"
+                    } else {
+                        nominativeCase = neutralNounForm()! + "ar"
+                    }
                 }
             case .neuter:
                 if let nominativeCasePlural = gendersCases?.nominative?.plural?.neuter {
                     nominativeCase = nominativeCasePlural
                 } else {
-                    nominativeCase = neutralNounForm()!
+                    if type == .participle && nominativeCase.hasSuffix("inn") {
+                        nominativeCase = neutralNounForm()! + "in"
+                    } else if type == .participle && nominativeCase.hasSuffix("aðr") {
+                        nominativeCase = neutralNounForm()! + "uð"
+                    } else {
+                        nominativeCase = neutralNounForm()!
+                    }
                 }
             case .any:
                 if let nominativeCasePlural = gendersCases?.nominative?.plural?.any {
@@ -327,13 +366,26 @@ struct Word: Codable, Identifiable {
                 if let accusativeCasePlural = gendersCases?.accusative?.singular?.masculine {
                     accusativeCase = accusativeCasePlural
                 } else {
-                    accusativeCase = neutralNounForm()! + "an"
+                    if type == .participle && accusativeCase.hasSuffix("inn") {
+                        accusativeCase = oldNorseWord
+                    } else if type == .participle && accusativeCase.hasSuffix("aðr") {
+                        accusativeCase = neutralNounForm()! + "aðan"
+                    } else {
+                        accusativeCase = neutralNounForm()! + "an"
+                    }
                 }
             case .feminine:
                 if let accusativeCasePlural = gendersCases?.accusative?.singular?.feminine {
                     accusativeCase = accusativeCasePlural
                 } else {
-                    accusativeCase = neutralNounForm()! + "a"
+                    if type == .participle && accusativeCase.hasSuffix("inn") {
+                        accusativeCase = neutralNounForm()! + "na"
+
+                    } else if type == .participle && accusativeCase.hasSuffix("aðr") {
+                        accusativeCase = neutralNounForm()! + "aða"
+                    } else {
+                        accusativeCase = neutralNounForm()! + "a"
+                    }
                 }
             case .neuter:
                 if let accusativeCasePlural = gendersCases?.accusative?.singular?.neuter {
@@ -345,6 +397,9 @@ struct Word: Codable, Identifiable {
                             accusativeCase = neutralNounForm()!
                             accusativeCase.removeLast(2)
                             accusativeCase += "tt"
+                        } else if oldNorseWord.hasSuffix("aðr") {
+                            accusativeCase = neutralNounForm()!
+                            accusativeCase += "at"
                         } else if oldNorseWord.hasSuffix("dr")
                             || oldNorseWord.hasSuffix("ðr")
                             || oldNorseWord.hasSuffix("inn")
@@ -404,19 +459,38 @@ struct Word: Codable, Identifiable {
                 if let accusativeCasePlural = gendersCases?.accusative?.plural?.masculine {
                     accusativeCase = accusativeCasePlural
                 } else {
-                    accusativeCase = neutralNounForm()! + "a"
+                    if type == .participle && accusativeCase.hasSuffix("inn") {
+                        accusativeCase = neutralNounForm()! + "na"
+                    } else if type == .participle && accusativeCase.hasSuffix("aðr") {
+                        accusativeCase = neutralNounForm()! + "aða"
+                    } else {
+                        accusativeCase = neutralNounForm()! + "a"
+                    }
                 }
             case .feminine:
                 if let accusativeCasePlural = gendersCases?.accusative?.plural?.feminine {
                     accusativeCase = accusativeCasePlural
                 } else {
-                    accusativeCase = neutralNounForm()! + "ar"
+                    
+                    if type == .participle && accusativeCase.hasSuffix("inn") {
+                        accusativeCase = neutralNounForm()! + "nar"
+                    } else if type == .participle && accusativeCase.hasSuffix("aðr") {
+                        accusativeCase = neutralNounForm()! + "aðar"
+                    } else {
+                        accusativeCase = neutralNounForm()! + "ar"
+                    }
                 }
             case .neuter:
                 if let accusativeCasePlural = gendersCases?.accusative?.plural?.neuter {
                     accusativeCase = accusativeCasePlural
                 } else {
-                    accusativeCase = neutralNounForm()!
+                    if type == .participle && accusativeCase.hasSuffix("inn") {
+                        accusativeCase = neutralNounForm()! + "in"
+                    } else if type == .participle && accusativeCase.hasSuffix("aðr") {
+                        accusativeCase = neutralNounForm()! + "uð"
+                    } else {
+                        accusativeCase = neutralNounForm()!
+                    }
                 }
             case .any:
                 if let accusativeCasePlural = gendersCases?.accusative?.plural?.any {
@@ -439,25 +513,43 @@ struct Word: Codable, Identifiable {
                 if let dativeCaseSingular = gendersCases?.dative?.singular?.masculine {
                     dativeCase = dativeCaseSingular
                 } else {
-                    dativeCase = neutralNounForm()! + "um"
+                    if type == .participle && dativeCase.hasSuffix("inn") {
+                        dativeCase = neutralNounForm()! + "num"
+                    } else if type == .participle && dativeCase.hasSuffix("aðr") {
+                        dativeCase = neutralNounForm()! + "uðum"
+                    } else {
+                        dativeCase = neutralNounForm()! + "um"
+                    }
                 }
             case .feminine:
                 if let dativeCaseSingular = gendersCases?.dative?.singular?.feminine {
                     dativeCase = dativeCaseSingular
                 } else {
-                    if oldNorseWord.hasSuffix("ll") {
-                        dativeCase = neutralNounForm()! + "li"
-                    } else if oldNorseWord.hasSuffix("nn") {
-                        dativeCase = neutralNounForm()! + "ni"
+                    if type == .participle && dativeCase.hasSuffix("inn") {
+                        dativeCase = neutralNounForm()! + "inni"
+                    } else if type == .participle && dativeCase.hasSuffix("aðr") {
+                        dativeCase = neutralNounForm()! + "aðri"
                     } else {
-                        dativeCase = neutralNounForm()! + "ri"
+                        if oldNorseWord.hasSuffix("ll") {
+                            dativeCase = neutralNounForm()! + "li"
+                        } else if oldNorseWord.hasSuffix("nn") {
+                            dativeCase = neutralNounForm()! + "ni"
+                        } else {
+                            dativeCase = neutralNounForm()! + "ri"
+                        }
                     }
                 }
             case .neuter:
                 if let dativeCaseSingular = gendersCases?.dative?.singular?.neuter {
                     dativeCase = dativeCaseSingular
                 } else {
-                    dativeCase = neutralNounForm()! + "u"
+                    if type == .participle && dativeCase.hasSuffix("inn") {
+                        dativeCase = neutralNounForm()! + "nu"
+                    } else if type == .participle && dativeCase.hasSuffix("aðr") {
+                        dativeCase = neutralNounForm()! + "uðu"
+                    } else {
+                        dativeCase = neutralNounForm()! + "u"
+                    }
                 }
             case .any:
                 if let dativeCaseSingular = gendersCases?.dative?.singular?.any {
@@ -503,7 +595,13 @@ struct Word: Codable, Identifiable {
                 }
             }
             
-            dativeCase = neutralNounForm()! + "um"
+            if type == .participle && dativeCase.hasSuffix("inn") {
+                dativeCase = neutralNounForm()! + "num"
+            } else if type == .participle && dativeCase.hasSuffix("aðr") {
+                dativeCase = neutralNounForm()! + "uðum"
+            } else {
+                dativeCase = neutralNounForm()! + "um"
+            }
         }
         
         return dativeCase
@@ -520,19 +618,37 @@ struct Word: Codable, Identifiable {
                 if let genitiveCaseSingular = gendersCases?.genitive?.singular?.masculine {
                     genitiveCase = genitiveCaseSingular
                 } else {
-                    genitiveCase = neutralNounForm()! + "s"
+                    if type == .participle && genitiveCase.hasSuffix("inn") {
+                        genitiveCase = neutralNounForm()! + "ins"
+                    } else if type == .participle && genitiveCase.hasSuffix("aðr") {
+                        genitiveCase = neutralNounForm()! + "aðs"
+                    } else {
+                        genitiveCase = neutralNounForm()! + "s"
+                    }
                 }
             case .feminine:
                 if let genitiveCaseSingular = gendersCases?.genitive?.singular?.feminine {
                     genitiveCase = genitiveCaseSingular
                 } else {
-                    genitiveCase = neutralNounForm()! + "ar"
+                    if type == .participle && genitiveCase.hasSuffix("inn") {
+                        genitiveCase = neutralNounForm()! + "innar"
+                    } else if type == .participle && genitiveCase.hasSuffix("aðr") {
+                        genitiveCase = neutralNounForm()! + "aðrar"
+                    } else {
+                        genitiveCase = neutralNounForm()! + "ar"
+                    }
                 }
             case .neuter:
                 if let genitiveCaseSingular = gendersCases?.genitive?.singular?.neuter {
                     genitiveCase = genitiveCaseSingular
                 } else {
-                    genitiveCase = neutralNounForm()! + "s"
+                    if type == .participle && genitiveCase.hasSuffix("inn") {
+                        genitiveCase = neutralNounForm()! + "ins"
+                    } else if type == .participle && genitiveCase.hasSuffix("aðr") {
+                        genitiveCase = neutralNounForm()! + "aðs"
+                    } else {
+                        genitiveCase = neutralNounForm()! + "s"
+                    }
                 }
             case .any:
                 if let genitiveCaseSingular = gendersCases?.genitive?.singular?.any {
@@ -578,12 +694,18 @@ struct Word: Codable, Identifiable {
                 }
             }
             
-            if oldNorseWord.hasSuffix("ll") {
-                genitiveCase = neutralNounForm()! + "la"
-            } else if oldNorseWord.hasSuffix("nn") {
-                genitiveCase = neutralNounForm()! + "na"
+            if type == .participle && genitiveCase.hasSuffix("inn") {
+                genitiveCase = neutralNounForm()! + "inna"
+            } else if type == .participle && genitiveCase.hasSuffix("aðr") {
+                genitiveCase = neutralNounForm()! + "aðra"
             } else {
-                genitiveCase = neutralNounForm()! + "ra"
+                if oldNorseWord.hasSuffix("ll") {
+                    genitiveCase = neutralNounForm()! + "la"
+                } else if oldNorseWord.hasSuffix("nn") {
+                    genitiveCase = neutralNounForm()! + "na"
+                } else {
+                    genitiveCase = neutralNounForm()! + "ra"
+                }
             }
         }
         
