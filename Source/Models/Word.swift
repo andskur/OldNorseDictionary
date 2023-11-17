@@ -47,6 +47,10 @@ struct Word: Codable, Identifiable {
             return base
         }
         
+        if base != nil {
+            return base
+        }
+        
         switch type {
         case .adjective:
             return base

@@ -3919,7 +3919,7 @@
   },
   {
     "oldNorseWord": "glaðr",
-    "base": "glað",
+    "base": "glatt",
     "englishTranslation": "happy, joyful",
     "russianTranslation": "радостный, весёлый",
     "definition": "Happy, joyful",
@@ -4342,7 +4342,7 @@
   },
   {
     "oldNorseWord": "blindr",
-    "base": "blind",
+    "base": "blint",
     "englishTranslation": "blind",
     "russianTranslation": "слепой, незрячий",
     "type": "adjective",
@@ -4912,6 +4912,7 @@
     "oldNorseWord": "hræddr",
     "englishTranslation": "frightening",
     "russianTranslation": "напуганный",
+    "base": "hrætt",
     "type": "participle",
     "definition": "Causing fear or anxiety by threatening harm or danger.",
     "examples": [
@@ -5658,6 +5659,30 @@
     "examples": [
       "Getinn heiður fyrir afrek. (The honor obtained for the achievement.)"
     ]
+  },
+  {
+      "oldNorseWord": "drepinn",
+      "englishTranslation": "killed, slain",
+      "russianTranslation": "убитый, умервщлённый",
+      "type": "participle",
+      "definition": "Having been caused to die; having been put to death or executed.",
+      "examples": ["Drepinn höfðingi í stríði. (The chief killed in war.)"]
+  },
+  {
+      "oldNorseWord": "fenginn",
+      "englishTranslation": "received, taken",
+      "russianTranslation": "полученный, забранный",
+      "type": "participle",
+      "definition": "Having been given or granted something; having taken or seized possession of something.",
+      "examples": ["Fenginn arfur frá forfeðrum. (The inheritance received from ancestors.)"]
+  },
+  {
+      "oldNorseWord": "hefnðr",
+      "englishTranslation": "avenged, revenged",
+      "russianTranslation": "отомщённый, мстящий",
+      "type": "participle",
+      "definition": "Having had revenge taken; having been retaliated against for a wrong or harm done.",
+      "examples": ["Hefnðr föður dauði. (The father's death avenged.)"]
   },
   {
     "oldNorseWord": "gefa grið",
