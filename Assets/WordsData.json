@@ -2745,20 +2745,26 @@
     "type": "interjection"
   },
   {
-    "oldNorseWord": "í",
-    "englishTranslation": "in, on",
-    "russianTranslation": "в, на",
-    "definition": "In, on",
-    "examples": [],
-    "type": "preposition"
+      "oldNorseWord": "í",
+      "englishTranslation": "in, on",
+      "russianTranslation": "в, на",
+      "type": "preposition",
+      "definition": "Indicating location or position within something; also used to specify a surface.",
+      "examples": [
+          "Bók liggur í hillunni. (The book lies in the shelf.)",
+          "Hann situr í stólnum. (He sits on the chair.)"
+      ]
   },
   {
-    "oldNorseWord": "með",
-    "englishTranslation": "with",
-    "russianTranslation": "с, вместе с",
-    "definition": "With",
-    "examples": [],
-    "type": "preposition"
+      "oldNorseWord": "með",
+      "englishTranslation": "with",
+      "russianTranslation": "с, вместе с",
+      "type": "preposition",
+      "definition": "Accompanied by; in the company of.",
+      "examples": [
+          "Hann ferðast með vinum sínum. (He travels with his friends.)",
+          "Með sverði í hendi. (With a sword in hand.)"
+      ]
   },
   {
     "oldNorseWord": "á",
@@ -2869,6 +2875,61 @@
     "examples": [
       "Hann situr undir trénu. (He sits under the tree.)"
     ]
+  },
+  {
+      "oldNorseWord": "frá",
+      "englishTranslation": "from, about",
+      "russianTranslation": "от, о",
+      "type": "preposition",
+      "definition": "Used to indicate a point of origin, separation, or distance from something; also used to indicate the subject of something spoken or written.",
+      "examples": [
+          "Hann kom frá fjöllunum. (He came from the mountains.)",
+          "Sögur frá fornum tíma. (Stories about ancient times.)"
+      ]
+  },
+  {
+      "oldNorseWord": "at",
+      "englishTranslation": "at, during",
+      "russianTranslation": "в, во время",
+      "type": "preposition",
+      "definition": "Indicating a location or a particular point in time.",
+      "examples": [
+          "Hann stendur at dyr. (He stands at the door.)",
+          "At sumrinu leika börn úti. (During the summer, children play outside.)"
+      ]
+  },
+  {
+      "oldNorseWord": "eftir",
+      "englishTranslation": "after, following",
+      "russianTranslation": "за, после, по",
+      "type": "preposition",
+      "definition": "Indicating a sequence in time or space; following in time, place, or order.",
+      "examples": [
+          "Eftir borð, þeir fóru að leika. (After the meal, they went to play.)",
+          "Ganga eftir vegnum. (Walk along the road.)"
+      ]
+  },
+  {
+      "oldNorseWord": "fyrir",
+      "englishTranslation": "for, before, in front of",
+      "russianTranslation": "за, для, перед",
+      "type": "preposition",
+      "definition": "Used to indicate the purpose of an action, the time before an event, or the front part of something.",
+      "examples": [
+          "Fyrir kærleika sinn, hann gerði það. (For his love, he did it.)",
+          "Standandi fyrir konungi. (Standing before the king.)"
+      ]
+  },
+  {
+      "oldNorseWord": "milli",
+      "englishTranslation": "between",
+      "russianTranslation": "между",
+      "type": "preposition",
+      "definition": "Indicating a position or interval separating two points, objects, or entities.",
+      "examples": [
+          "Sáttmáli gerður milli tveggja þjóða. (A treaty made between two nations.)",
+          "Milli steins og sleggju. (Between a rock and a hard place.)"
+      ]
   },
   {
     "oldNorseWord": "er",
