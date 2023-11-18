@@ -23,7 +23,7 @@ enum WordType: String, Codable, CaseIterable {
 
 struct Word: Codable, Identifiable {
     private enum CodingKeys : String, CodingKey {
-        case oldNorseWord, base, englishTranslation, russianTranslation, definition, examples, type, cases, gendersCases, numbers, conjugation, verbFirst, verbSecond
+        case oldNorseWord, base, englishTranslation, comparative, russianTranslation, definition, examples, type, cases, gendersCases, numbers, conjugation, verbFirst, verbSecond
     }
     
     var oldNorseWord: String
@@ -39,6 +39,8 @@ struct Word: Codable, Identifiable {
     let conjugation: Conjugation?
     let verbFirst: String?
     let verbSecond: String?
+    
+    let comparative: String?
     
     var id = UUID()
     
@@ -209,6 +211,13 @@ struct Word: Codable, Identifiable {
         } else {
             return false
         }
+    }
+    
+    func generateComparative() -> String? {
+        if comparative != nil {
+            return comparative
+        }
+        return nil
     }
     
     func generateCase(wordCase: Case, number: Number, gender: Gender) -> String? {

@@ -86,7 +86,7 @@ struct DynamicTable: View {
 
 struct DynamicTable_Previews: PreviewProvider {
     static var previews: some View {
-        let sampleWord = Word(oldNorseWord: "Hús", base: "hus", englishTranslation: "House", russianTranslation: "Дом", definition: "A building for human habitation.", examples: ["Hús er stafrænt orð sem merkir byggingu fyrir mannlega búsetu."], type: .noun, cases: nil, gendersCases: nil, numbers: nil, conjugation: nil, verbFirst: nil, verbSecond: nil)
+        let sampleWord = Word(oldNorseWord: "Hús", base: "hus", englishTranslation: "House", russianTranslation: "Дом", definition: "A building for human habitation.", examples: ["Hús er stafrænt orð sem merkir byggingu fyrir mannlega búsetu."], type: .noun, cases: nil, gendersCases: nil, numbers: nil, conjugation: nil, verbFirst: nil, verbSecond: nil, comparative: nil)
 
         DynamicTable(word: sampleWord)
     }

@@ -2396,79 +2396,89 @@
     "type": "adverb"
   },
   {
-    "oldNorseWord": "ok",
-    "englishTranslation": "also, too",
-    "russianTranslation": "также, тоже",
-    "definition": "Adverb indicating addition or inclusion, used to connect and emphasize similar ideas",
-    "examples": [
-      "Hún er góð ok.",
-      "Þau vilja fara ok."
-    ],
-    "type": "adverb"
+      "oldNorseWord": "nú",
+      "englishTranslation": "now",
+      "russianTranslation": "теперь, сейчас",
+      "type": "adverb",
+      "definition": "At the present time; at this moment.",
+      "examples": [
+          "Nú er hann hér. (Now he is here.)",
+          "Nú skulum við fara. (Now we shall go.)"
+      ]
   },
   {
-    "oldNorseWord": "nú",
-    "englishTranslation": "now",
-    "russianTranslation": "теперь, сейчас",
-    "definition": "At the present time; at this moment",
-    "examples": [],
-    "type": "adverb"
+      "oldNorseWord": "hvárt",
+      "englishTranslation": "whether",
+      "russianTranslation": "ли",
+      "type": "adverb",
+      "definition": "Expressing a doubt or choice between alternatives.",
+      "examples": [
+          "Hvárt skal ég fara eða vera? (Should I go or stay?)"
+      ]
   },
   {
-    "oldNorseWord": "hvárt",
-    "englishTranslation": "whether",
-    "russianTranslation": "ли",
-    "definition": "",
-    "examples": [],
-    "type": "adverb"
+      "oldNorseWord": "hví",
+      "englishTranslation": "why",
+      "russianTranslation": "почему, отчего",
+      "type": "adverb",
+      "definition": "For what reason or purpose.",
+      "examples": [
+          "Hví grætur þú? (Why are you crying?)"
+      ]
   },
   {
-    "oldNorseWord": "hví",
-    "englishTranslation": "why",
-    "russianTranslation": "почему, отчего",
-    "definition": "",
-    "examples": [],
-    "type": "adverb"
+      "oldNorseWord": "þar",
+      "englishTranslation": "there",
+      "russianTranslation": "там, туда",
+      "type": "adverb",
+      "definition": "In, at, or to that place or position.",
+      "examples": [
+          "Við skulum fara þar. (We shall go there.)"
+      ]
   },
   {
-    "oldNorseWord": "þar",
-    "englishTranslation": "there",
-    "russianTranslation": "там, туда",
-    "definition": "",
-    "examples": [],
-    "type": "adverb"
+      "oldNorseWord": "mjök",
+      "englishTranslation": "very",
+      "russianTranslation": "очень, весьма",
+      "type": "adverb",
+      "comparative": "meirr",
+      "definition": "To a great extent; much.",
+      "examples": [
+          "Hann er mjök fróðr. (He is very learned.)"
+      ]
   },
   {
-    "oldNorseWord": "mjök",
-    "englishTranslation": "very",
-    "russianTranslation": "очень, весьма",
-    "definition": "Very",
-    "examples": [],
-    "type": "adverb"
+      "oldNorseWord": "því",
+      "englishTranslation": "therefore",
+      "russianTranslation": "потому, поэтому",
+      "type": "adverb",
+      "definition": "For that reason; consequently.",
+      "examples": [
+          "Hann var seinn, því hann hljóp. (He was late, therefore he ran.)"
+      ]
   },
   {
-    "oldNorseWord": "því",
-    "englishTranslation": "therefore",
-    "russianTranslation": "потому, поэтому",
-    "definition": "Therefore",
-    "examples": [],
-    "type": "adverb"
+      "oldNorseWord": "brátt",
+      "englishTranslation": "soon",
+      "russianTranslation": "скоро, вскоре",
+      "type": "adverb",
+      "comparative": "bráðarr",
+      "definition": "In or within a short time; quickly; shortly.",
+      "examples": [
+          "Vetur kemur brátt. (Winter is coming soon.)"
+      ],
   },
   {
-    "oldNorseWord": "brátt",
-    "englishTranslation": "soon",
-    "russianTranslation": "скоро, вскоре",
-    "definition": "Soon",
-    "examples": [],
-    "type": "adverb"
-  },
-  {
-    "oldNorseWord": "oft",
-    "englishTranslation": "often",
-    "russianTranslation": "часто, неоднократно",
-    "definition": "Often",
-    "examples": [],
-    "type": "adverb"
+      "oldNorseWord": "oft",
+      "englishTranslation": "often",
+      "russianTranslation": "часто, неоднократно",
+      "type": "adverb",
+      "comparative": "oftarr",
+      "definition": "Frequently; many times; on many occasions.",
+      "examples": [
+          "Oft hann fer til borgarinnar. (He often goes to the city.)",
+          "Oft hafa þeir fundið gull. (They have often found gold.)"
+      ]
   },
   {
     "oldNorseWord": "heim",
@@ -2481,14 +2491,17 @@
     ]
   },
   {
-    "oldNorseWord": "heldr",
-    "englishTranslation": "rather, better",
-    "russianTranslation": "скорее, лучше",
-    "type": "adverb",
-    "definition": "To a greater degree; more preferable or suitable.",
-    "examples": [
-      "Hann vill heldr lesa. (He would rather read.)"
-    ]
+      "oldNorseWord": "gjarna",
+      "englishTranslation": "rather, better",
+      "russianTranslation": "скорее, лучше",
+      "type": "adverb",
+      "comparative": "heldr",
+      "definition": "To a greater degree; more preferable or suitable.",
+      "examples": [
+          "Hann hjálpar þér gjarna. (He will help you gladly.)",
+          "Ég fer gjarna með þér. (I will go with you willingly.)",
+          "Hann vill heldr lesa. (He would rather read.)"
+      ],
   },
   {
     "oldNorseWord": "til",
@@ -2501,26 +2514,34 @@
     ]
   },
   {
-    "oldNorseWord": "svá",
-    "englishTranslation": "so, thus",
-    "russianTranslation": "так, затем",
-    "definition": "So, thus",
-    "examples": [],
-    "type": "adverb"
+      "oldNorseWord": "svá",
+      "englishTranslation": "so, thus",
+      "russianTranslation": "так, затем",
+      "type": "adverb",
+      "definition": "In this manner; in such a way; therefore.",
+      "examples": [
+          "Svá skal það vera. (So it shall be.)",
+          "Hann gerði svá sem sagt var. (He did thus as was said.)"
+      ]
   },
   {
-    "oldNorseWord": "vel",
-    "englishTranslation": "well, willingly",
-    "russianTranslation": "хорошо, охотно",
-    "definition": "Well, willingly",
-    "examples": [],
-    "type": "adverb"
+      "oldNorseWord": "vel",
+      "englishTranslation": "well, willingly",
+      "russianTranslation": "хорошо, охотно",
+      "type": "adverb",
+      "definition": "In a good or satisfactory manner; with skill or aptitude.",
+      "examples": [
+          "Hann syngur vel. (He sings well.)",
+          "Hún samþykkti vel. (She agreed willingly.)"
+      ],
+      "comparative": "betr"
   },
   {
     "oldNorseWord": "aftr",
     "englishTranslation": "back, again",
     "russianTranslation": "назад, снова",
     "type": "adverb",
+    "comparative": "aftarr",
     "definition": "In a direction or manner that returns to a previous position or condition; once more.",
     "examples": [
       "Hann fer aftr heim. (He goes back home.)"
@@ -2571,6 +2592,7 @@
     "englishTranslation": "far, from afar",
     "russianTranslation": "далеко, издалека",
     "type": "adverb",
+    "comparative": "lengra",
     "definition": "Over a great distance; from a distant place.",
     "examples": [
       "Hann kom langt í burtu. (He came from far away.)"
@@ -2581,6 +2603,7 @@
     "englishTranslation": "long, for a long time",
     "russianTranslation": "долго, долгое время",
     "type": "adverb",
+    "comparative": "lengr",
     "definition": "For a considerable duration; for an extended period.",
     "examples": [
       "Hann bíðaði lengi. (He waited for a long time.)"
@@ -2591,6 +2614,7 @@
     "englishTranslation": "northward, in the north",
     "russianTranslation": "на север, на севере",
     "type": "adverb",
+    "comparative": "norðarr",
     "definition": "Toward or in the northern part or direction.",
     "examples": [
       "Hann fer norðr. (He goes northward.)"
@@ -2601,6 +2625,7 @@
     "englishTranslation": "westward, in the west",
     "russianTranslation": "на запад, на западе",
     "type": "adverb",
+    "comparative": "vestarr",
     "definition": "Toward or in the western part or direction.",
     "examples": [
       "Sólin setur vestr. (The sun sets in the west.)"
@@ -2615,6 +2640,108 @@
     "examples": [
       "Hann kom þaðan. (He came from there.)"
     ]
+  },
+  {
+      "oldNorseWord": "síðan",
+      "englishTranslation": "then, afterwards",
+      "russianTranslation": "затем, потом",
+      "type": "adverb",
+      "definition": "Referring to a time subsequent to a previous event; at a later time.",
+      "examples": [
+          "Hann kom fyrst, og síðan komu aðrir. (He came first, and then others came.)",
+          "Síðan þetta gerðist, hefur margt breyst. (Since then, much has changed.)"
+      ]
+  },
+  {
+      "oldNorseWord": "víða",
+      "englishTranslation": "widely, everywhere",
+      "russianTranslation": "широко, повсюду",
+      "type": "adverb",
+      "comparative": "víðarr",
+      "definition": "Over or in a wide area; in or to many places.",
+      "examples": [
+          "Fréttirnar dreifðust víða. (The news spread widely.)",
+          "Hann hefur ferðast víða. (He has traveled everywhere.)"
+      ]
+  },
+  {
+      "oldNorseWord": "hátt",
+      "englishTranslation": "loudly",
+      "russianTranslation": "громко",
+      "type": "adverb",
+      "comparative": "hærra",
+      "definition": "With a high volume or intensity of sound; at a high decibel level.",
+      "examples": [
+          "Hann talar hátt. (He speaks loudly.)",
+          "Þau sungu hátt. (They sang loudly.)"
+      ]
+  },
+  {
+      "oldNorseWord": "eftir",
+      "englishTranslation": "after, afterwards",
+      "russianTranslation": "потом, затем",
+      "type": "adverb",
+      "definition": "Subsequent to a time or event; later in time or sequence.",
+      "examples": [
+          "Hann kom heim, og eftir það fór hann út aftur. (He came home, and afterwards he went out again.)"
+      ]
+  },
+  {
+      "oldNorseWord": "áðr",
+      "englishTranslation": "before, earlier",
+      "russianTranslation": "раньше, ранее",
+      "type": "adverb",
+      "definition": "Prior to a certain time; earlier or previously.",
+      "examples": [
+          "Áðr sólarupprás, hann var vaknaður. (Before sunrise, he was awake.)",
+          "Hann kom áðr en veislan hófst. (He arrived earlier than the feast began.)"
+      ]
+  },
+  {
+      "oldNorseWord": "innan",
+      "englishTranslation": "inside, within",
+      "russianTranslation": "изнутри, внутри",
+      "type": "adverb",
+      "definition": "In the interior; on the inside.",
+      "examples": [
+          "Þau voru innan hússins. (They were inside the house.)",
+          "Innan borgarmúranna, var öruggt. (Within the city walls, it was safe.)"
+      ]
+  },
+  {
+      "oldNorseWord": "upp",
+      "englishTranslation": "up, upwards",
+      "russianTranslation": "вверх, наверх",
+      "type": "adverb",
+      "comparative": "ofarr",
+      "definition": "Towards a higher place or position; upwards.",
+      "examples": [
+          "Hann gengur upp fjallið. (He walks up the mountain.)",
+          "Ljós loga upp í nóttinni. (Lights flare up in the night.)"
+      ]
+  },
+  {
+      "oldNorseWord": "suðr",
+      "englishTranslation": "southward, in the south",
+      "russianTranslation": "на юг, на юге",
+      "type": "adverb",
+      "definition": "Toward or in the southern part or direction.",
+      "examples": [
+          "Þeir sigldu suðr. (They sailed southward.)",
+          "Suðr er landið hlýrra. (In the south, the land is warmer.)"
+      ],
+      "comparative": "sunnarr"
+  },
+  {
+      "oldNorseWord": "ok",
+      "englishTranslation": "and, also",
+      "russianTranslation": "и, также",
+      "definition": "Conjunction used to connect words, phrases, clauses, or sentences.",
+      "examples": [
+        "Hann er sterkur ok hugrakkur. (He is strong and brave.)",
+        "Þau komu ok sáu. (They came and saw.)"
+      ],
+      "type": "conjunction"
   },
   {
     "oldNorseWord": "en",
@@ -2639,20 +2766,26 @@
     "type": "conjunction"
   },
   {
-    "oldNorseWord": "at",
-    "englishTranslation": "that",
-    "russianTranslation": "что, чтобы",
-    "definition": "That",
-    "examples": [],
-    "type": "conjunction"
+      "oldNorseWord": "at",
+      "englishTranslation": "that",
+      "russianTranslation": "что, чтобы",
+      "type": "conjunction",
+      "definition": "Introduces a clause of purpose or a subordinate clause.",
+      "examples": [
+          "Hann sagði at hann væri þreyttur. (He said that he was tired.)",
+          "Þeir báðu at hann kæmi. (They asked that he would come.)"
+      ]
   },
   {
-    "oldNorseWord": "því at",
-    "englishTranslation": "because",
-    "russianTranslation": "потому что, так как",
-    "definition": "Because",
-    "examples": [],
-    "type": "conjunction"
+      "oldNorseWord": "því at",
+      "englishTranslation": "because",
+      "russianTranslation": "потому что, так как",
+      "type": "conjunction",
+      "definition": "Used to introduce a clause expressing the reason or cause.",
+      "examples": [
+          "Því at hann var veikur, fór hann ekki út. (Because he was sick, he did not go out.)",
+          "Því at veginn er háll, skal fara varlega. (Because the road is slippery, one should go carefully.)"
+      ]
   },
   {
     "oldNorseWord": "bæði ... ok ...",
@@ -2675,74 +2808,90 @@
     ]
   },
   {
-    "oldNorseWord": "ef",
-    "englishTranslation": "if, in case",
-    "russianTranslation": "если, в случае если",
-    "definition": "If, in case",
-    "examples": [],
-    "type": "conjunction"
+      "oldNorseWord": "ef",
+      "englishTranslation": "if, in case",
+      "russianTranslation": "если, в случае если",
+      "type": "conjunction",
+      "definition": "Used to introduce a conditional clause.",
+      "examples": [
+          "Ef þú ferð, verð ég einn. (If you go, I will be alone.)",
+          "Ef þú hefur hungur, eta. (If you are hungry, eat.)"
+      ]
   },
   {
-    "oldNorseWord": "meðan",
-    "englishTranslation": "while, as long as",
-    "russianTranslation": "пока, в то время как",
-    "definition": "While, as long as",
-    "examples": [],
-    "type": "conjunction"
+      "oldNorseWord": "meðan",
+      "englishTranslation": "while, as long as",
+      "russianTranslation": "пока, в то время как",
+      "type": "conjunction",
+      "definition": "During the time that; for the period or duration that.",
+      "examples": [
+          "Syng meðan þú vinnur. (Sing while you work.)",
+          "Meðan sólin skín, er gott veður. (As long as the sun shines, the weather is good.)"
+      ]
   },
   {
-    "oldNorseWord": "sem",
-    "englishTranslation": "as, like",
-    "russianTranslation": "как, что",
-    "definition": "As, like",
-    "examples": [],
-    "type": "conjunction"
+      "oldNorseWord": "sem",
+      "englishTranslation": "as, like",
+      "russianTranslation": "как, что",
+      "type": "conjunction",
+      "definition": "Introducing a comparison or an example; used to compare or equate two things.",
+      "examples": [
+          "Hann gerir sem hann vill. (He does as he wishes.)",
+          "Sem maður sáir, svo sker hann. (As a man sows, so shall he reap.)"
+      ]
   },
   {
-    "oldNorseWord": "svá sem",
-    "englishTranslation": "as, just as",
-    "russianTranslation": "так ... как",
-    "definition": "As, just as",
-    "examples": [],
-    "type": "conjunction"
+      "oldNorseWord": "svá sem",
+      "englishTranslation": "as, just as",
+      "russianTranslation": "так ... как",
+      "type": "conjunction",
+      "definition": "Used to introduce a comparison or equivalence.",
+      "examples": [
+          "Svá sem dagur fylgir nóttu. (Just as day follows night.)",
+          "Hann talar svá sem hann veit allt. (He talks as if he knows everything.)"
+      ]
   },
   {
-    "oldNorseWord": "já",
-    "englishTranslation": "yes",
-    "russianTranslation": "да",
-    "definition": "",
-    "examples": [
-      "Já, ég vil fara í bókasafnið.",
-      "Hún spurði hvort ég hef lesið þessa bók, og ég sagði já."
-    ],
-    "type": "interjection"
+      "oldNorseWord": "eða",
+      "englishTranslation": "or",
+      "russianTranslation": "или, либо",
+      "type": "conjunction",
+      "definition": "Used to link alternatives or indicate a choice.",
+      "examples": [
+          "Viltu kaffi eða te? (Do you want coffee or tea?)"
+      ]
   },
   {
-    "oldNorseWord": "nei",
-    "englishTranslation": "no",
-    "russianTranslation": "нет",
-    "definition": "",
-    "examples": [
-      "Nei, ég er ekki viss um það.",
-      "Hann spurði hvort ég gæti hjálpað honum, en ég sagði nei."
-    ],
-    "type": "interjection"
+      "oldNorseWord": "já",
+      "englishTranslation": "yes",
+      "russianTranslation": "да",
+      "type": "interjection",
+      "definition": "Used to express affirmation or agreement.",
+      "examples": [
+          "Já, ég vil fara í bókasafnið. (Yes, I want to go to the library.)",
+          "Hún spurði hvort ég hef lesið þessa bók, og ég sagði já. (She asked if I have read this book, and I said yes.)"
+      ]
   },
   {
-    "oldNorseWord": "heill!",
-    "englishTranslation": "hello!",
-    "russianTranslation": "Здравствуй!",
-    "definition": "Greetings, hello",
-    "examples": [],
-    "type": "interjection"
+      "oldNorseWord": "nei",
+      "englishTranslation": "no",
+      "russianTranslation": "нет",
+      "type": "interjection",
+      "definition": "Used to express disagreement or refusal.",
+      "examples": [
+          "Nei, ég er ekki viss um það. (No, I am not sure about that.)",
+          "Hann spurði hvort ég gæti hjálpað honum, en ég sagði nei. (He asked if I could help him, but I said no.)"
+      ]
   },
   {
-    "oldNorseWord": "eða",
-    "englishTranslation": "or",
-    "russianTranslation": "или, либо",
-    "definition": "Or",
-    "examples": [],
-    "type": "interjection"
+      "oldNorseWord": "heill!",
+      "englishTranslation": "hello!",
+      "russianTranslation": "Здравствуй!",
+      "type": "interjection",
+      "definition": "An expression of greeting.",
+      "examples": [
+          "Heill! Hvernig hefurðu það? (Hello! How are you?)"
+      ]
   },
   {
       "oldNorseWord": "í",
@@ -5902,7 +6051,8 @@
       "type": "phrase",
       "definition": "Referring back to something that has already been stated or described earlier in the text.",
       "examples": [
-          "Svá sem áðr segir, hann var mikill höfðingi. (As previously mentioned, he was a great chieftain.)"
+          "Svá sem áðr segir, hann var mikill höfðingi. (As previously mentioned, he was a great chieftain.)",
+          "Eins og svá sem áðr segir, bardaginn var harður. (Just as said before, the battle was fierce.)"
       ]
   }
 ]
