@@ -74,7 +74,7 @@ struct WordDetailView: View {
             ForEach(Number.allCases, id: \.rawValue) { num in
                 if word.shouldShowNumber(number: num) {
                     ForEach(Gender.allCases, id: \.rawValue) { gen in
-                        if word.shouldShowGender(number: num, gender: gen) {
+                        if word.shouldShowGender(number: num, gen: gen) {
                             Section {
                                 Text(gen.rawValue.capitalized)
                             }.frame(height: 10).padding(8)
@@ -189,7 +189,7 @@ struct WordDetailView: View {
 
 struct WordDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        let sampleWord = Word(oldNorseWord: "Hús", base: "huse", englishTranslation: "House", russianTranslation: "Дом", definition: "A building for human habitation.", examples: ["Hús er stafrænt orðn sem merkir byggingu fyrir mannlega búsetu."], type: .noun, cases: nil, gendersCases: nil, numbers: nil, conjugation: nil, verbFirst: nil, verbSecond: nil, comparative: nil)
+        let sampleWord = Word(oldNorseWord: "Hús", base: "huse", declension: nil, englishTranslation: "House", russianTranslation: "Дом", definition: "A building for human habitation.", examples: ["Hús er stafrænt orðn sem merkir byggingu fyrir mannlega búsetu."], type: .noun, cases: nil, gendersCases: nil, numbers: nil, conjugation: nil, verbFirst: nil, verbSecond: nil, gender: nil, nounForms: nil, comparative: nil)
         
         let sampleDirection: SearchDirection = .oldNorseToEnglish
         

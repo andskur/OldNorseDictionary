@@ -21,13 +21,19 @@ enum WordType: String, Codable, CaseIterable {
 }
 
 
+struct NounForms: Codable {
+    let second: String?
+    let third: String?
+}
+
 struct Word: Codable, Identifiable {
     private enum CodingKeys : String, CodingKey {
-        case oldNorseWord, base, englishTranslation, comparative, russianTranslation, definition, examples, type, cases, gendersCases, numbers, conjugation, verbFirst, verbSecond
+        case oldNorseWord, base, declension, englishTranslation, comparative, russianTranslation, definition, examples, type, cases, gendersCases, numbers, conjugation, verbFirst, gender, verbSecond, nounForms
     }
     
     var oldNorseWord: String
     let base: String?
+    let declension: String?
     let englishTranslation: String
     let russianTranslation: String
     let definition: String
@@ -39,6 +45,9 @@ struct Word: Codable, Identifiable {
     let conjugation: Conjugation?
     let verbFirst: String?
     let verbSecond: String?
+    let gender: Gender?
+    
+    let nounForms: NounForms?
     
     let comparative: String?
     
@@ -96,6 +105,10 @@ struct Word: Codable, Identifiable {
     }
     
     func countGenders(for number: Number) -> Int {
+        if type == .noun {
+            return 1
+        }
+        
         var count = 0
         
         switch number {
@@ -133,6 +146,10 @@ struct Word: Codable, Identifiable {
     
     
     func hasGenders(number: Number) -> Int {
+        if type == .noun {
+            return 1
+        }
+        
         if numbers == nil {
             return 0
         }
@@ -186,24 +203,40 @@ struct Word: Codable, Identifiable {
         return false
     }
     
-    func shouldShowGender(number: Number, gender: Gender) -> Bool {
+    func shouldShowGender(number: Number, gen: Gender) -> Bool {
+        if type == .noun {
+            if gender != nil {
+                if gender == gen {
+                    return true
+                } else {
+                    return false
+                }
+            } else {
+                if gen == .masculine {
+                    return true
+                } else {
+                    return false
+                }
+            }
+        }
+        
         if let numb = numbers {
             switch number {
             case .singular:
                 if let sing = numb.singular {
-                    return sing.haveGender(gender: gender)
+                    return sing.haveGender(gender: gen)
                 } else {
                     return false
                 }
             case .dual:
                 if let du = numb.dual {
-                    return du.haveGender(gender: gender)
+                    return du.haveGender(gender: gen)
                 } else {
                     return false
                 }
             case .plural:
                 if let plu = numb.plural {
-                    return plu.haveGender(gender: gender)
+                    return plu.haveGender(gender: gen)
                 } else {
                     return false
                 }
@@ -749,7 +782,19 @@ struct Word: Codable, Identifiable {
             }
             
             if article {
-                nominativeCase += "inn"
+                switch gender {
+                case .neuter:
+                    if nominativeCase.last == "i" {
+                        nominativeCase.removeLast()
+                    }
+                    
+                    nominativeCase += "it"
+                case .feminine:
+                    nominativeCase += "in"
+                default:
+                    nominativeCase += "inn"
+                }
+                
             }
         case .dual:
             if let nominativeCaseDual = cases?.nominative?.dual {
@@ -758,36 +803,39 @@ struct Word: Codable, Identifiable {
         case .plural:
             if let nominativeCasePlural = cases?.nominative?.plural {
                 nominativeCase = nominativeCasePlural
+            } else if let nominativeCasePlural = nounForms?.third {
+                nominativeCase = nominativeCasePlural
             } else {
-                if type == WordType.adjective {
-                    nominativeCase = neutralNounForm()! + "ir"
-                } else if type == WordType.participle {
-                    if oldNorseWord.hasSuffix("inn") {
-                        nominativeCase = neutralParticipleForm()! + "nir"
-                    } else if oldNorseWord.hasSuffix("ðr") {
-                        nominativeCase = neutralParticipleForm()! + "ir"
-                    }
-                } else {
-                    nominativeCase = neutralNounForm()!
-                                        
-                    if nominativeCase.hasSuffix("inn") {
-                        nominativeCase.removeLast(3)
-                        nominativeCase += "n"
-                    } else if nominativeCase.hasSuffix("in") {
-                        nominativeCase.removeLast(2)
-                        nominativeCase += "n"
-                    }
-
-                    nominativeCase += "ar"
+                nominativeCase = neutralNounForm()!
+                                    
+                if nominativeCase.hasSuffix("inn") {
+                    nominativeCase.removeLast(3)
+                    nominativeCase += "n"
+                } else if nominativeCase.hasSuffix("in") {
+                    nominativeCase.removeLast(2)
+                    nominativeCase += "n"
                 }
+
+                nominativeCase += "ar"
             }
             
             if article {
-                if nominativeCase.last == "n" {
-                    nominativeCase += "i"
+                switch gender {
+                case .neuter:
+                    if nominativeCase.last == "i" {
+                        nominativeCase.removeLast()
+                    }
+                    
+                    nominativeCase += "in"
+                case .feminine:
+                    nominativeCase += "nar"
+                default:
+                    if nominativeCase.last == "n" {
+                        nominativeCase += "i"
+                    }
+                    
+                    nominativeCase += "nir"
                 }
-                
-                nominativeCase += "nir"
             }
         }
         
@@ -801,20 +849,55 @@ struct Word: Codable, Identifiable {
         case .singular:
             if let accusativeCaseSingular = cases?.accusative?.singular {
                 accusativeCase = accusativeCaseSingular
-            } else {
-                if type == WordType.adjective {
-                    accusativeCase = neutralNounForm()! + "an"
-                } else if type == WordType.participle {
-                    if oldNorseWord.hasSuffix("ðr") {
-                        accusativeCase = neutralParticipleForm()! + "an"
-                    } else if oldNorseWord.hasSuffix("inn") {
-                        accusativeCase = neutralParticipleForm()! + "inn"
+            }
+            
+            
+            switch gender {
+            case .feminine:
+                if let decl = declension {
+                    if decl == "r" {
+                        accusativeCase? += "ur"
+                    } else if decl == "a" {
+                        if accusativeCase!.last == "j" {
+                            accusativeCase?.removeLast()
+                            accusativeCase! += "i"
+                        }
+                    }
+                }
+            case .neuter:
+                if accusativeCase?.last == "j" {
+                    accusativeCase?.removeLast()
+                    accusativeCase! += "i"
+                }
+            default:
+                if let decl = declension {
+                    if decl == "i" && accusativeCase?.last == "j" {
+                        accusativeCase?.removeLast()
+                    } else if decl == "a" && accusativeCase?.last == "j" {
+                        accusativeCase?.removeLast()
+                        accusativeCase! += "i"
                     }
                 }
             }
+            
                         
             if article {
-                accusativeCase! += "inn"
+                switch gender {
+                case .neuter:
+                    if accusativeCase?.last == "i" {
+                        accusativeCase?.removeLast()
+                    }
+                    
+                    accusativeCase! += "it"
+                case .feminine:
+                    accusativeCase! += "ina"
+                default:
+                    if accusativeCase?.last == "i" {
+                        accusativeCase?.removeLast()
+                    }
+                    
+                    accusativeCase! += "inn"
+                }
             }
         case .dual:
             if let accusativeCaseDual = cases?.accusative?.dual {
@@ -824,27 +907,55 @@ struct Word: Codable, Identifiable {
             if let accusativeCasePlural = cases?.accusative?.plural {
                 accusativeCase = accusativeCasePlural
             } else {
-                if type == WordType.participle {
-                    if oldNorseWord.hasSuffix("inn") {
-                        accusativeCase = neutralParticipleForm()! + "na"
-                    } else if oldNorseWord.hasSuffix("ðr") {
-                        accusativeCase = neutralParticipleForm()! + "a"
+                switch gender {
+                case .neuter, .feminine:
+                    if let accusativeCasePlural = nounForms?.third {
+                        accusativeCase = accusativeCasePlural
                     }
-                } else {
-                    if accusativeCase!.hasSuffix("in") {
-                        accusativeCase!.removeLast(2)
-                        accusativeCase! += "n"
+                default:
+                    if let decl = declension {
+                        if decl == "i" {
+                            if accusativeCase?.last == "j" {
+                                accusativeCase?.removeLast()
+                            }
+                            
+                            accusativeCase! += "i"
+                        } else if decl == "u" {
+                            accusativeCase! += "u"
+                        } else if decl == "a" {
+                            if  accusativeCase?.last == "j" {
+                                accusativeCase?.removeLast()
+                            }
+
+                            accusativeCase! += "a"
+                        }
+                    } else {
+                        if accusativeCase!.hasSuffix("in") {
+                            accusativeCase!.removeLast(2)
+                            accusativeCase! += "n"
+                        }
+                        
+                        accusativeCase! += "a"
                     }
-                    
-                    accusativeCase! += "a"
                 }
             }
             
             if article {
-                if accusativeCase?.last == "n" {
-                    accusativeCase! += "ina"
-                } else {
-                    accusativeCase! += "na"
+                switch gender {
+                case .neuter:
+                    if accusativeCase?.last == "i" {
+                        accusativeCase?.removeLast()
+                    }
+                    
+                    accusativeCase! += "in"
+                case .feminine:
+                    accusativeCase! += "nar"
+                default:
+                    if accusativeCase?.last == "n" {
+                        accusativeCase! += "ina"
+                    } else {
+                        accusativeCase! += "na"
+                    }
                 }
             }
         }
@@ -860,34 +971,77 @@ struct Word: Codable, Identifiable {
             if let dativeCaseSingular = cases?.dative?.singular {
                 dativeCase = dativeCaseSingular
             } else {
-                if type == WordType.participle {
-                    if oldNorseWord.hasSuffix("inn") {
-                        dativeCase = neutralParticipleForm()! + "num"
-                    } else if oldNorseWord.hasSuffix("ðr") {
-                        dativeCase = neutralParticipleForm()! + "um"
+                switch gender {
+                case .feminine:
+                    if let decl = declension {
+                        if decl == "r" {
+                            dativeCase? += "ur"
+                        } else if decl == "a" {
+                            if dativeCase!.last == "j" {
+                                dativeCase?.removeLast()
+                                dativeCase! += "i"
+                            }
+                        }
                     }
-                } else if type == WordType.adjective {
-                    if oldNorseWord.hasSuffix("ll") || oldNorseWord.hasSuffix("nn") {
-                        dativeCase! += "um"
-                    } else {
-                        dativeCase! += "m"
-                    }
-                } else {
+                case .neuter:
                     if dativeCase!.hasSuffix("in") {
                         dativeCase!.removeLast(2)
                         dativeCase! += "n"
+                    } else if dativeCase!.last == "j" {
+                        dativeCase?.removeLast()
                     }
                     
                     dativeCase! += "i"
+                default:
+                    if let decl = declension {
+                        if decl == "i" {
+                            if dativeCase?.last == "j" {
+                                dativeCase?.removeLast()
+                            } else if dativeCase?.hasSuffix("kk") == false {
+                                dativeCase! += "i"
+                            }
+                        } else if decl == "u" {
+                            dativeCase! += "i"
+                        } else if decl == "a" && dativeCase?.last == "j" {
+                            dativeCase?.removeLast()
+                            dativeCase! += "i"
+                        } else {
+                            dativeCase! += "i"
+                        }
+                    } else {
+                        if dativeCase!.hasSuffix("in") {
+                            dativeCase!.removeLast(2)
+                            dativeCase! += "n"
+                        }
+                        
+                        dativeCase! += "i"
+                    }
                 }
             }
         
             if article {
-                if dativeCase?.last == "i" {
-                    dativeCase?.removeLast()
+                switch gender {
+                case .neuter:
+                    if dativeCase?.last == "i" {
+                       dativeCase?.removeLast()
+                   }
+                    
+                    dativeCase! += "inu"
+                case .feminine:
+                    dativeCase! += "inni"
+                default:
+                    if let decl = declension {
+                        if decl == "i" || decl == "u" || decl == "a" {
+                            dativeCase! += "num"
+                        }
+                    } else {
+                        if dativeCase?.last == "i" {
+                            dativeCase?.removeLast()
+                        }
+                        
+                        dativeCase! += "inum"
+                    }
                 }
-                
-                dativeCase! += "inum"
             }
             
         case .dual:
@@ -898,26 +1052,59 @@ struct Word: Codable, Identifiable {
             if let dativeCasePlural = cases?.dative?.plural {
                 dativeCase = dativeCasePlural
             } else {
-                if type == WordType.participle {
-                    if oldNorseWord.hasSuffix("inn") {
-                        dativeCase = neutralParticipleForm()! + "num"
-                    } else if oldNorseWord.hasSuffix("ðr") {
-                        dativeCase = neutralParticipleForm()! + "um"
-                    }
-                } else if type == WordType.adjective {
-                    if oldNorseWord.hasSuffix("ll") || oldNorseWord.hasSuffix("nn") {
-                        dativeCase! += "um"
+                
+                switch gender {
+                case .feminine:
+                    if let decl = declension {
+                        if decl == "r" {
+                            dativeCase = nounForms?.third
+                            
+                            dativeCase! += "um"
+                        } else if decl == "a" {
+                            if dativeCase?.last == "j" {
+                                dativeCase?.removeLast()
+                            }
+                            dativeCase! += "um"
+                        } else {
+                            if dativeCase!.hasSuffix("in") {
+                                dativeCase!.removeLast(2)
+                                dativeCase! += "n"
+                            }
+                            
+                            dativeCase! += "um"
+                        }
                     } else {
-                        dativeCase! += "m"
+                        if dativeCase!.hasSuffix("in") {
+                            dativeCase!.removeLast(2)
+                            dativeCase! += "n"
+                        }
+                        
+                        dativeCase! += "um"
                     }
-                }else {
+                case .neuter:
+                    if dativeCase?.last == "j" {
+                        dativeCase?.removeLast()
+                    }
+                    
+                    dativeCase! += "um"
+                default:
                     if dativeCase!.hasSuffix("in") {
                         dativeCase!.removeLast(2)
                         dativeCase! += "n"
                     }
                     
+                    if let decl = declension {
+                        if decl == "i" && dativeCase?.hasSuffix("kk") == true {
+                            dativeCase! += "j"
+                        } else if decl == "a" && dativeCase?.last == "j" {
+                            dativeCase?.removeLast()
+                        }
+                    }
+                    
                     dativeCase! += "um"
                 }
+                
+
             }
             
             if article {
@@ -940,11 +1127,11 @@ struct Word: Codable, Identifiable {
         case .singular:
             if let genitiveCaseSingular = cases?.genitive?.singular {
                 genitiveCase = genitiveCaseSingular
+            } else if let genitiveCaseSingular = nounForms?.second {
+                genitiveCase = genitiveCaseSingular
             } else {
-                if type != WordType.adjective && !oldNorseWord.hasSuffix("inn") {
-                    if genitiveCase?.last == "n" {
-                        genitiveCase!.removeLast()
-                    }
+                if genitiveCase?.last == "n" {
+                    genitiveCase!.removeLast()
                 }
                 
                 if genitiveCase?.last != "s" {
@@ -953,7 +1140,12 @@ struct Word: Codable, Identifiable {
             }
             
             if article {
-                genitiveCase! += "ins"
+                switch gender {
+                case .feminine:
+                    genitiveCase! += "innar"
+                default:
+                    genitiveCase! += "ins"
+                }
             }
         case .dual:
             if let genitiveCaseDual = cases?.genitive?.dual {
@@ -963,28 +1155,56 @@ struct Word: Codable, Identifiable {
             if let genitiveCasePlural = cases?.genitive?.plural {
                 genitiveCase = genitiveCasePlural
             } else {
-                if type == WordType.participle {
-                    if oldNorseWord.hasSuffix("ðr") {
-                        genitiveCase! += "ra"
-                    } else if oldNorseWord.hasSuffix("inn") {
-                        genitiveCase! += "na"
-                    }
-                } else if type == WordType.adjective {
-                    if oldNorseWord.hasSuffix("ll") {
-                        genitiveCase! += "la"
-                    } else if oldNorseWord.hasSuffix("nn") {
-                        genitiveCase! += "na"
+
+                switch gender {
+                case .feminine:
+                    if let decl = declension {
+                        if decl == "r" {
+                            genitiveCase = nounForms?.third
+                            
+                            genitiveCase! += "a"
+                        } else if decl == "a" && genitiveCase!.last == "j" {
+                            genitiveCase?.removeLast()
+                            genitiveCase! += "a"
+                        } else {
+                            if genitiveCase!.hasSuffix("in") {
+                                genitiveCase!.removeLast(2)
+                                genitiveCase! += "n"
+                            }
+                            
+                            genitiveCase! += "a"
+                        }
                     } else {
-                        genitiveCase! += "ra"
+                        if genitiveCase!.hasSuffix("in") {
+                            genitiveCase!.removeLast(2)
+                            genitiveCase! += "n"
+                        }
+                        
+                        genitiveCase! += "a"
                     }
-                } else {
+                    
+                case .neuter:
+                    if genitiveCase?.last == "j" {
+                        genitiveCase?.removeLast()
+                    }
+                    genitiveCase! += "a"
+                default:
                     if genitiveCase!.hasSuffix("in") {
                         genitiveCase!.removeLast(2)
                         genitiveCase! += "n"
                     }
                     
+                    if let decl = declension {
+                        if decl == "i" && genitiveCase?.hasSuffix("kk") == true {
+                            genitiveCase! += "j"
+                        } else if decl == "a" && genitiveCase?.last == "j" {
+                            genitiveCase?.removeLast()
+                        }
+                    }
+                    
                     genitiveCase! += "a"
                 }
+                
             }
             
             if article {

@@ -1,600 +1,1007 @@
 [
+    {
+        "oldNorseWord": "álfr",
+        "englishTranslation": "elf",
+        "russianTranslation": "эльф",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A supernatural being of Germanic mythology, typically depicted as a small, elusive figure.",
+        "examples": [
+            "Álfr býr í skóginum. (The elf lives in the forest.)",
+            "Sögur um álfar eru algengar í norrænum þjóðsögum. (Stories about elves are common in Norse folklore.)"
+        ],
+        "nounForms": {
+            "second": "álfs",
+            "third": "álfar"
+        }
+    },
+    {
+        "oldNorseWord": "baugr",
+        "englishTranslation": "ring",
+        "russianTranslation": "кольцо",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A circular band worn as an ornament or a symbol of authority or membership.",
+        "examples": [
+            "Hann bar gullinn baug á fingri. (He wore a golden ring on his finger.)",
+            "Baugr var notaður sem gjaldmiðill. (The ring was used as a currency.)"
+        ],
+        "nounForms": {
+            "second": "baugs",
+            "third": "baugar"
+        }
+    },
+    {
+        "oldNorseWord": "brandr",
+        "englishTranslation": "sword",
+        "russianTranslation": "меч",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A weapon with a long metal blade and a hilt, used for thrusting or striking.",
+        "examples": [
+            "Brandr var hengdur við vegginn. (The sword was hung on the wall.)",
+            "Hann brá brandi í bardaga. (He drew his sword in battle.)"
+        ],
+        "nounForms": {
+            "second": "brands",
+            "third": "brandar"
+        }
+    },
+    {
+        "oldNorseWord": "draugr",
+        "englishTranslation": "ghost",
+        "russianTranslation": "драуг",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "An undead creature in Norse mythology, often associated with burial mounds.",
+        "examples": [
+            "Draugr vaknar í haugnum. (The ghost awakens in the mound.)",
+            "Fólk trúði á drauga í fornöld. (People believed in ghosts in ancient times.)"
+        ],
+        "nounForms": {
+            "second": "draugs",
+            "third": "draugar"
+        }
+    },
+    {
+        "oldNorseWord": "dvergr",
+        "englishTranslation": "dwarf",
+        "russianTranslation": "дверг",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A member of a mythical race of short, stout beings who are skilled in mining and metalworking.",
+        "examples": [
+            "Dvergr bjó undir fjalli. (The dwarf lived under the mountain.)",
+            "Dvergar voru kunnir smiðir. (Dwarves were known as skilled craftsmen.)"
+        ],
+        "nounForms": {
+            "second": "dvergs",
+            "third": "dvergar"
+        }
+    },
+    {
+        "oldNorseWord": "haukr",
+        "englishTranslation": "hawk",
+        "russianTranslation": "ястреб",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A bird of prey with keen eyesight, a hooked beak, and powerful talons.",
+        "examples": [
+            "Haukr situr á greininni. (The hawk sits on the branch.)",
+            "Haukar eru þekktir fyrir veiðiskap sinn. (Hawks are known for their hunting skills.)"
+        ],
+        "nounForms": {
+            "second": "hauks",
+            "third": "haukar"
+        }
+    },
+    {
+        "oldNorseWord": "hestr",
+        "englishTranslation": "horse",
+        "russianTranslation": "конь",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A large, hoofed mammal of the family Equidae, domesticated since ancient times.",
+        "examples": [
+            "Hestrinn hleypur um haga. (The horse runs around the pasture.)",
+            "Hestar voru mikilvægir í norrænum samfélögum. (Horses were important in Norse societies.)"
+        ],
+        "nounForms": {
+            "second": "hests",
+            "third": "hestar"
+        }
+    },
+    {
+        "oldNorseWord": "hjálmr",
+        "englishTranslation": "helmet",
+        "russianTranslation": "шлем",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A protective head covering, typically made of metal or leather.",
+        "examples": [
+            "Hann setti hjálm á höfuð sitt. (He put a helmet on his head.)",
+            "Hjálmr var oft prýddur með málverkum. (The helmet was often adorned with paintings.)"
+        ],
+        "nounForms": {
+            "second": "hjálms",
+            "third": "hjálmar"
+        }
+    },
+    {
+        "oldNorseWord": "hrafn",
+        "englishTranslation": "raven",
+        "russianTranslation": "ворон",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A large, black bird known for its intelligence and distinctive call.",
+        "examples": [
+            "Hrafn flýgur yfir vígvöllinn. (The raven flies over the battlefield.)",
+            "Hrafnar eru tákn Óðins. (Ravens are a symbol of Odin.)"
+        ],
+        "nounForms": {
+            "second": "hrafns",
+            "third": "hrafnar"
+        }
+    },
+    {
+        "oldNorseWord": "konungr",
+        "englishTranslation": "king",
+        "russianTranslation": "конунг",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A male ruler of a kingdom; a monarch.",
+        "examples": [
+            "Konungr ríkir yfir landinu. (The king rules over the land.)",
+            "Konungr Haraldur var frægur. (King Harald was famous.)"
+        ],
+        "nounForms": {
+            "second": "konungs",
+            "third": "konungar"
+        }
+    },
+    {
+        "oldNorseWord": "jarl",
+        "englishTranslation": "earl",
+        "russianTranslation": "ярл",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A nobleman ranking below a king but above a thane or a chieftain.",
+        "examples": [
+            "Jarl stjórnaði stóru héraði. (The earl ruled a large district.)",
+            "Jarl var ráðgjafi konungsins. (The earl was the king's advisor.)"
+        ],
+        "nounForms": {
+            "second": "jarls",
+            "third": "jarlar"
+        }
+    },
+    {
+        "oldNorseWord": "ormr",
+        "englishTranslation": "serpent",
+        "russianTranslation": "змей",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A large snake, especially a mythical one.",
+        "examples": [
+            "Ormr kræktist í holtinu. (The serpent coiled in the mound.)",
+            "Ormrinn Jörmungandr er frægur í goðafræðinni. (The serpent Jörmungandr is famous in mythology.)"
+        ],
+        "nounForms": {
+            "second": "orms",
+            "third": "ormar"
+        }
+    },
+    {
+        "oldNorseWord": "úlfr",
+        "englishTranslation": "wolf",
+        "russianTranslation": "волк",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A carnivorous mammal of the dog family, known for its pack behavior and howling.",
+        "examples": [
+            "Úlfr hylur í skóginum. (The wolf howls in the forest.)",
+            "Úlfar eru oft í norrænum sögum. (Wolves are often in Norse stories.)"
+        ],
+        "nounForms": {
+            "second": "úlfs",
+            "third": "úlfar"
+        }
+    },
+    {
+        "oldNorseWord": "víkingr",
+        "englishTranslation": "viking",
+        "russianTranslation": "викинг",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A seafaring warrior and explorer from the late 8th to early 11th centuries.",
+        "examples": [
+            "Víkingr fór á langferðir. (The Viking went on long voyages.)",
+            "Víkingar voru þekktir sem miklir sjómenn. (Vikings were known as great seamen.)"
+        ],
+        "nounForms": {
+            "second": "víkings",
+            "third": "víkingar"
+        }
+    },
+    {
+        "oldNorseWord": "bátr",
+        "englishTranslation": "boat",
+        "russianTranslation": "лодка",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A small watercraft used for transportation or leisure.",
+        "examples": [
+            "Bátr lá við bryggjuna. (The boat lay at the pier.)",
+            "Þeir sigldu á báti yfir vatnið. (They sailed in a boat across the water.)"
+        ],
+        "nounForms": {
+            "second": "báts",
+            "third": "bátar"
+        }
+    },
+    {
+        "oldNorseWord": "geirr",
+        "englishTranslation": "spear",
+        "russianTranslation": "копьё",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A long pole weapon with a sharp pointed head, used for thrusting or throwing.",
+        "examples": [
+            "Geirr flaug yfir völlinn. (The spear flew over the field.)",
+            "Hann bar geir í höndum sér. (He carried a spear in his hands.)"
+        ],
+        "nounForms": {
+            "second": "geirs",
+            "third": "geirar"
+        }
+    },
+    {
+        "oldNorseWord": "maðr",
+        "englishTranslation": "man",
+        "russianTranslation": "человек",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "An adult human male.",
+        "examples": [
+            "Maðr gekk eftir vegnum. (A man walked down the road.)",
+            "Þar var gamall maðr sem sagði sögur. (There was an old man who told stories.)"
+        ],
+        "cases": {
+            "nominative": {
+                "singular": "maðr",
+                "plural": "menn"
+            },
+            "accusative": {
+                "singular": "mann",
+                "plural": "menn"
+            },
+            "dative": {
+                "singular": "manni",
+                "plural": "mönnum"
+            },
+            "genitive": {
+                "singular": "manns",
+                "plural": "manna"
+            }
+        }
+    },
+    {
+        "oldNorseWord": "þjófr",
+        "englishTranslation": "thief",
+        "russianTranslation": "вор",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A person who steals or commits theft.",
+        "examples": [
+            "Þjófr var gripinn með eigur annars manns. (The thief was caught with another man's possessions.)"
+        ],
+        "nounForms": {
+            "second": "þjófs",
+            "third": "þjófar"
+        }
+    },
+    {
+        "oldNorseWord": "draumr",
+        "englishTranslation": "dream",
+        "russianTranslation": "сон, мечта",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A series of thoughts, images, or emotions that occur during sleep.",
+        "examples": [
+            "Hann hafði undarlegan draum. (He had a strange dream.)"
+        ],
+        "nounForms": {
+            "second": "draums",
+            "third": "draumar"
+        }
+    },
+    {
+        "oldNorseWord": "fiskr",
+        "englishTranslation": "fish",
+        "russianTranslation": "рыба",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A limbless cold-blooded vertebrate animal with gills and fins.",
+        "examples": [
+            "Fiskr syndir í ánni. (The fish swims in the river.)"
+        ],
+        "nounForms": {
+            "second": "fisks",
+            "third": "fiskar"
+        }
+    },
+    {
+        "oldNorseWord": "matr",
+        "englishTranslation": "food",
+        "russianTranslation": "еда, пища",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "Any nutritious substance that is eaten, drunk, or otherwise taken into the body to sustain life.",
+        "examples": [
+            "Matr var borinn fram á borðið. (Food was served on the table.)",
+            "Þeir safna mat fyrir veturinn. (They gather food for the winter.)"
+        ],
+        "cases": {
+            "nominative": {
+                "plural": "matir"
+            },
+            "accusative": {
+                "plural": "mati"
+            },
+            "dative": {
+                "singular": "mat",
+                "plural": "mötum"
+            },
+            "genitive": {
+                "singular": "matar",
+                "plural": "mata"
+            }
+        }
+    },
+    {
+        "oldNorseWord": "munnr",
+        "englishTranslation": "mouth",
+        "russianTranslation": "рот",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "The opening through which food passes into the body and vocal sounds are emitted.",
+        "examples": [
+            "Orð flugu úr munni hans. (Words flew out of his mouth.)",
+            "Hann lokaði munni sínum þegar hann borðaði. (He closed his mouth when he ate.)"
+        ],
+        "nounForms": {
+            "second": "munns",
+            "third": "munir"
+        }
+    },
+    {
+        "oldNorseWord": "ostr",
+        "englishTranslation": "cheese",
+        "russianTranslation": "сыр",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A food made from the pressed curds of milk, often seasoned and aged.",
+        "examples": [
+            "Ostr var skorinn í bita. (The cheese was cut into pieces.)",
+            "Þeir borðuðu ostr með brauði. (They ate cheese with bread.)"
+        ],
+        "nounForms": {
+            "second": "ostrar",
+            "third": "ostrir"
+        }
+    },
+    {
+        "oldNorseWord": "grautr",
+        "englishTranslation": "porridge",
+        "russianTranslation": "каша",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A dish consisting of oatmeal or another cereal boiled in water or milk.",
+        "examples": [
+            "Grautr var hafður til morgunverðar. (Porridge was had for breakfast.)",
+            "Hann eldaði graut til kvöldverðar. (He cooked porridge for dinner.)"
+        ],
+        "nounForms": {
+            "second": "grautar",
+            "third": "grautir"
+        }
+    },
+    {
+        "oldNorseWord": "hattr",
+        "englishTranslation": "hat",
+        "russianTranslation": "шляпа, шапка",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A covering for the head, especially one with a shaped crown and brim.",
+        "examples": [
+            "Hann setti hatt á höfuðið. (He put a hat on his head.)",
+            "Hattr var notaður til að verja sig frá sólinni. (The hat was used for protection from the sun.)"
+        ],
+        "nounForms": {
+            "second": "hatts",
+            "third": "hattar"
+        }
+    },
+    {
+        "oldNorseWord": "knífr",
+        "englishTranslation": "knife",
+        "russianTranslation": "нож",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A tool or weapon with a metal blade and a handle, used for cutting or stabbing.",
+        "examples": [
+            "Knífr var notaður til að skera matinn. (The knife was used to cut the food.)",
+            "Hann hvessir kníf sinn. (He sharpens his knife.)"
+        ],
+        "nounForms": {
+            "second": "knífs",
+            "third": "knífar"
+        }
+    },
+    {
+        "oldNorseWord": "eldr",
+        "englishTranslation": "fire",
+        "russianTranslation": "огонь, пожар",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A process of combustion characterized by heat and light, especially a flame.",
+        "examples": [
+            "Eldr brann í arninum. (Fire burned in the hearth.)",
+            "Þeir kyntu eld til að halda sér hlýjum. (They lit a fire to keep themselves warm.)"
+        ],
+        "nounForms": {
+            "second": "elds",
+            "third": "eldar"
+        }
+    },
+    {
+        "oldNorseWord": "fors",
+        "englishTranslation": "waterfall",
+        "russianTranslation": "водопад",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A cascade of water falling from a height, formed when a river or stream flows over a precipice or steep incline.",
+        "examples": [
+            "Forsinn fellur af háum kletti. (The waterfall falls from a high cliff.)",
+            "Þeir fundu stóran fors í skóginum. (They found a large waterfall in the forest.)"
+        ],
+        "nounForms": {
+            "second": "forss",
+            "third": "forsar"
+        }
+    },
+    {
+        "oldNorseWord": "garðr",
+        "englishTranslation": "city, fence",
+        "russianTranslation": "город, ограда",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A large fenced or walled area; a city or a structure serving as an enclosure.",
+        "examples": [
+            "Garðr var byggður til að verja borgina. (A fence was built to protect the city.)",
+            "Hann býr í gamla garðinum. (He lives in the old city.)"
+        ],
+        "nounForms": {
+            "second": "garðs",
+            "third": "garðar"
+        }
+    },
+    {
+        "oldNorseWord": "haugr",
+        "englishTranslation": "mound, burial mound",
+        "russianTranslation": "курган, могильная насыпь",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "An artificial hill or elevation of earth, especially over a grave.",
+        "examples": [
+            "Haugr var reistur til minningar um konunginn. (A mound was raised in memory of the king.)",
+            "Gömul goðsagnir segja frá haugum með fjársjóðum. (Old legends tell of mounds with treasures.)"
+        ],
+        "nounForms": {
+            "second": "haugs",
+            "third": "haugar"
+        }
+    },
+    {
+        "oldNorseWord": "heimr",
+        "englishTranslation": "world, country",
+        "russianTranslation": "мир, страна",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "The earth or universe as a physical realm, or a region or realm within it.",
+        "examples": [
+            "Níu heimar eru í norrænni goðafræði. (Nine worlds are in Norse mythology.)",
+            "Heimrinn er fullur af undrum. (The world is full of wonders.)"
+        ],
+        "nounForms": {
+            "second": "heims",
+            "third": "heimar"
+        }
+    },
+    {
+        "oldNorseWord": "hólmr",
+        "englishTranslation": "islet, small island",
+        "russianTranslation": "островок, небольшой остров",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A small island or a piece of land surrounded by water.",
+        "examples": [
+            "Hólmr var í miðju vatninu. (An islet was in the middle of the lake.)",
+            "Þeir settust á hólm nærri ströndinni. (They settled on an islet near the coast.)"
+        ],
+        "nounForms": {
+            "second": "hólms",
+            "third": "hólmar"
+        }
+    },
+    {
+        "oldNorseWord": "skógr",
+        "englishTranslation": "forest",
+        "russianTranslation": "лес",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A large area covered chiefly with trees and undergrowth.",
+        "examples": [
+            "Skógrinn var þéttur og gróinn. (The forest was dense and overgrown.)",
+            "Þeir fóru í veiðiferð í skóginum. (They went on a hunting trip in the forest.)"
+        ],
+        "nounForms": {
+            "second": "skógar",
+            "third": "skógar"
+        }
+    },
+    {
+        "oldNorseWord": "vangr",
+        "englishTranslation": "meadow",
+        "russianTranslation": "луг",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "An open field or a grassy land, especially one used for hay or pasture.",
+        "examples": [
+            "Vangrinn var blómstrandi um sumarið. (The meadow was blooming in the summer.)",
+            "Þeir hvíldu í vanginum. (They rested in the meadow.)"
+        ],
+        "nounForms": {
+            "second": "vangs",
+            "third": "vangar"
+        }
+    },
+    {
+        "oldNorseWord": "vargr",
+        "englishTranslation": "wolf",
+        "russianTranslation": "волк",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A carnivorous mammal of the dog family, often used in mythology and symbolism.",
+        "examples": [
+            "Vargrinn veiddi í skóginum. (The wolf hunted in the forest.)",
+            "Sögur af vargum eru algengar í gömlum þjóðsögum. (Stories of wolves are common in old folk tales.)"
+        ],
+        "nounForms": {
+            "second": "vargs",
+            "third": "vargar"
+        }
+    },
+    {
+        "oldNorseWord": "vágr",
+        "englishTranslation": "bay",
+        "russianTranslation": "залив, бухта",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A broad inlet of the sea where the land curves inward.",
+        "examples": [
+            "Þeir sigldu inn í váginn. (They sailed into the bay.)",
+            "Vágrinn var friðsæll og fallegur. (The bay was peaceful and beautiful.)"
+        ],
+        "nounForms": {
+            "second": "vágs",
+            "third": "vágar"
+        }
+    },
+    {
+        "oldNorseWord": "vegr",
+        "englishTranslation": "path, road",
+        "russianTranslation": "путь, дорога",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A route or way for traveling from one place to another.",
+        "examples": [
+            "Vegrinn leiðir til borgarinnar. (The road leads to the city.)",
+            "Þeir gengu á vegnum um skóginn. (They walked on the path through the forest.)"
+        ],
+        "nounForms": {
+            "second": "vegs",
+            "third": "vegir"
+        }
+    },
+    {
+        "oldNorseWord": "brunnr",
+        "englishTranslation": "well, spring",
+        "russianTranslation": "колодец, источник",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A hole or excavation in the ground from which water springs.",
+        "examples": [
+            "Ég fylli búnaðinn við vatn úr brunninum. (I fill the equipment with water from the well.)",
+            "Vatn úr brunninum var tært og ferskt. (The water from the well was clear and fresh.)"
+        ],
+        "nounForms": {
+            "second": "brunns",
+            "third": "brunnar"
+        }
+    },
+    {
+        "oldNorseWord": "oddr",
+        "englishTranslation": "point, tip",
+        "russianTranslation": "остриё, кончик",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "The sharp or pointed end of something.",
+        "examples": [
+            "Ólafur vissi ekki hvort hann myndi lifa til annars oddar dagsins. (Ólafur did not know if he would live until the end of the day.)",
+            "Oddr spjótsins var bitur. (The tip of the spear was sharp.)"
+        ],
+        "nounForms": {
+            "second": "odds",
+            "third": "oddar"
+        }
+    },
+    {
+        "oldNorseWord": "sandr",
+        "englishTranslation": "sand",
+        "russianTranslation": "песок, морской берег",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A loose granular substance, typically found on beaches and in deserts.",
+        "examples": [
+            "Ströndin er með gylltan sand. (The beach has golden sand.)",
+            "Börnin leika sér í sandinum. (The children play in the sand.)"
+        ],
+        "nounForms": {
+            "second": "sands",
+            "third": "sandar"
+        }
+    },
+    {
+        "oldNorseWord": "vindr",
+        "englishTranslation": "wind",
+        "russianTranslation": "ветер, воздух",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "The perceptible natural movement of the air.",
+        "examples": [
+            "Vindrinn blæs sterkt í dag. (The wind is blowing strongly today.)",
+            "Vindurinn leikur í trjánum. (The wind plays in the trees.)"
+        ],
+        "nounForms": {
+            "second": "vinds",
+            "third": "vindar"
+        }
+    },
+    {
+        "oldNorseWord": "dróttinn",
+        "englishTranslation": "lord, master",
+        "russianTranslation": "господин, господь",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "Referring to a person who has authority, control, or power over others.",
+        "examples": [
+            "Dróttinn ræðr öllu. (The Lord rules all.)",
+            "Dróttinn borgarinnar var réttlátur maður. (The lord of the city was a just man.)"
+        ],
+        "nounForms": {
+            "second": "dróttins",
+            "third": "dróttnar"
+        }
+    },
+    {
+        "oldNorseWord": "níðingr",
+        "englishTranslation": "scoundrel, villain",
+        "russianTranslation": "подлец, негодяй",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "Referring to a person who behaves dishonestly or unethically.",
+        "examples": [
+            "Níðingr stal fénu. (The scoundrel stole the money.)",
+            "Hann var kallaður níðingr fyrir svik sín. (He was called a villain for his treachery.)"
+        ],
+        "nounForms": {
+            "second": "níðings",
+            "third": "níðingar"
+        }
+    },
+    {
+        "oldNorseWord": "þræll",
+        "englishTranslation": "slave, serf",
+        "russianTranslation": "раб, невольник",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "Referring to a person who is the legal property of another and is forced to obey them.",
+        "examples": [
+            "Þræll vinnur á akri. (The slave works in the field.)",
+            "Þrælar voru algengir í norrænum samfélögum. (Slaves were common in Norse societies.)"
+        ],
+        "nounForms": {
+            "second": "þræls",
+            "third": "þrælar"
+        }
+    },
   {
-    "oldNorseWord": "álfr",
-    "englishTranslation": "elf",
-    "russianTranslation": "эльф",
-    "definition": "A supernatural being of Germanic mythology, typically depicted as a small, elusive figure",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "baugr",
-    "englishTranslation": "ring",
-    "russianTranslation": "кольцо",
-    "definition": "A circular band worn as an ornament or a symbol of authority or membership",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "brandr",
-    "englishTranslation": "sword",
-    "russianTranslation": "меч",
-    "definition": "A weapon with a long metal blade and a hilt, used for thrusting or striking",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "draugr",
-    "englishTranslation": "ghost",
-    "russianTranslation": "драуг",
-    "definition": "An undead creature in Norse mythology, often associated with burial mounds",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "dvergr",
-    "englishTranslation": "dwarf",
-    "russianTranslation": "дверг",
-    "definition": "A member of a mythical race of short, stout beings who are skilled in mining and metalworking",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "haukr",
-    "englishTranslation": "hawk",
-    "russianTranslation": "ястреб",
-    "definition": "A bird of prey with keen eyesight, a hooked beak, and powerful talons",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "hestr",
-    "englishTranslation": "horse",
-    "russianTranslation": "конь",
-    "definition": "A large, hoofed mammal of the family Equidae, domesticated since ancient times",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "hjálmr",
-    "englishTranslation": "helmet",
-    "russianTranslation": "шлем",
-    "definition": "A protective head covering, typically made of metal or leather",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "hrafn",
-    "englishTranslation": "raven",
-    "russianTranslation": "ворон",
-    "definition": "A large, black bird known for its intelligence and distinctive call",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "konungr",
-    "englishTranslation": "king",
-    "russianTranslation": "конунг",
-    "definition": "A male ruler of a kingdom; a monarch",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "jarl",
-    "englishTranslation": "earl",
-    "russianTranslation": "ярл",
-    "definition": "A nobleman ranking below a king but above a thane or a chieftain",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "ormr",
-    "englishTranslation": "serpent",
-    "russianTranslation": "змей",
-    "definition": "A large snake, especially a mythical one",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "úlfr",
-    "englishTranslation": "wolf",
-    "russianTranslation": "волк",
-    "definition": "A carnivorous mammal of the dog family, known for its pack behavior and howling",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "víkingr",
-    "englishTranslation": "viking",
-    "russianTranslation": "викинг",
-    "definition": "A seafaring warrior and explorer from the late 8th to early 11th centuries",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "bátr",
-    "englishTranslation": "boat",
-    "russianTranslation": "лодка",
-    "definition": "A small watercraft used for transportation or leisure",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "geirr",
-    "englishTranslation": "spear",
-    "russianTranslation": "копьё",
-    "definition": "A long pole weapon with a sharp pointed head, used for thrusting or throwing",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "maðr",
-    "englishTranslation": "man",
-    "russianTranslation": "человек",
-    "definition": "An adult human male",
-    "examples": [],
-    "type": "noun",
-    "cases": {
-      "nominative": {
-        "singular": "maðr",
-        "plural": "menn"
+      "oldNorseWord": "áss",
+      "englishTranslation": "Aesir, god",
+      "russianTranslation": "ас, бог",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "A member of the principal pantheon in Norse religion; a deity.",
+      "examples": [
+          "Áss er dýrkaður. (The god is worshiped.)"
+      ],
+      "nounForms": {
+          "second": "ásar",
+          "third": "æsir"
       },
-      "accusative": {
-        "singular": "mann",
-        "plural": "menn"
-      },
-      "dative": {
-        "singular": "manni",
-        "plural": "mönnum"
-      },
-      "genitive": {
-        "singular": "manns",
-        "plural": "manna"
+      "cases": {
+        "nominative": {
+          "plural": "æsir"
+        },
+        "accusative": {
+          "singular": "ás",
+          "plural": "ásu"
+        },
+        "dative": {
+          "singular": "æsi",
+          "plural": "ásum"
+        },
+        "genitive": {
+          "singular": "ásar",
+          "plural": "ása"
+        }
       }
-    }
   },
   {
-    "oldNorseWord": "þjófr",
-    "englishTranslation": "thief",
-    "russianTranslation": "вор",
-    "definition": "A person who steals or commits theft",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "draumr",
-    "englishTranslation": "dream",
-    "russianTranslation": "сон, мечта",
-    "definition": "A series of thoughts, images, or emotions that occur during sleep",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "fiskr",
-    "englishTranslation": "fish",
-    "russianTranslation": "рыба",
-    "definition": "A limbless cold-blooded vertebrate animal with gills and fins",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "matr",
-    "englishTranslation": "food",
-    "russianTranslation": "еда, пища",
-    "definition": "Any nutritious substance that is eaten, drunk, or otherwise taken into the body to sustain life",
-    "examples": [],
-    "type": "noun",
-    "cases": {
-      "nominative": {
-        "plural": "matir"
-      },
-      "accusative": {
-        "plural": "mati"
-      },
-      "dative": {
-        "singular": "mat",
-        "plural": "mötum"
-      },
-      "genitive": {
-        "singular": "matar",
-        "plural": "mata"
+      "oldNorseWord": "hamarr",
+      "englishTranslation": "hammer, mallet",
+      "russianTranslation": "молот, молоток",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "A tool with a heavy metal head used for breaking things or driving in nails.",
+      "examples": [
+          "Hamarr er í húsi. (The hammer is in the house.)"
+      ],
+      "nounForms": {
+          "second": "hamars",
+          "third": "hamrar"
       }
-    }
   },
   {
-    "oldNorseWord": "munnr",
-    "englishTranslation": "mouth",
-    "russianTranslation": "рот",
-    "definition": "The opening through which food passes into the body and vocal sounds are emitted",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "ostr",
-    "englishTranslation": "cheese",
-    "russianTranslation": "сыр",
-    "definition": "A food made from the pressed curds of milk, often seasoned and aged",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "grautr",
-    "englishTranslation": "porridge",
-    "russianTranslation": "каша",
-    "definition": "Porridge",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "hattr",
-    "englishTranslation": "hat",
-    "russianTranslation": "шляпа, шапка",
-    "definition": "Hat",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "knífr",
-    "englishTranslation": "knife",
-    "russianTranslation": "нож",
-    "definition": "Knife",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "eldr",
-    "englishTranslation": "fire",
-    "russianTranslation": "огонь, пожар",
-    "definition": "Fire",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "fors",
-    "englishTranslation": "waterfall",
-    "russianTranslation": "водопад",
-    "definition": "Waterfall",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "garðr",
-    "englishTranslation": "city, fence",
-    "russianTranslation": "город, ограда",
-    "definition": "City, fence",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "haugr",
-    "englishTranslation": "mound, burial mound",
-    "russianTranslation": "курган, могильная насыпь",
-    "definition": "Mound, burial mound",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "heimr",
-    "englishTranslation": "world, country",
-    "russianTranslation": "мир, страна",
-    "definition": "World, country",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "hólmr",
-    "englishTranslation": "islet, small island",
-    "russianTranslation": "островок, небольшой остров",
-    "definition": "Islet, small island",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "skógr",
-    "englishTranslation": "forest",
-    "russianTranslation": "лес",
-    "definition": "Forest",
-    "examples": [],
-    "type": "noun",
-    "cases": {
-      "genitive": {
-        "singular": "skógar"
+      "oldNorseWord": "himinn",
+      "englishTranslation": "sky, heaven",
+      "russianTranslation": "небо, небеса",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "The expanse of air over the Earth; the celestial abode of divine beings.",
+      "examples": [
+          "Himinn er blár. (The sky is blue.)"
+      ],
+      "nounForms": {
+          "second": "himins",
+          "third": "himnar"
       }
-    }
   },
   {
-    "oldNorseWord": "vangr",
-    "englishTranslation": "meadow",
-    "russianTranslation": "луг",
-    "definition": "Meadow",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "vargr",
-    "englishTranslation": "wolf",
-    "russianTranslation": "волк",
-    "definition": "Wolf",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "vágr",
-    "englishTranslation": "bay",
-    "russianTranslation": "залив, бухта",
-    "definition": "Bay",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "vegr",
-    "englishTranslation": "path, road",
-    "russianTranslation": "путь, дорога",
-    "definition": "Path, road",
-    "examples": [],
-    "type": "noun"
-  },
-  {
-    "oldNorseWord": "brunnr",
-    "englishTranslation": "well, spring",
-    "russianTranslation": "колодец, источник",
-    "type": "noun",
-    "definition": "A hole or excavation in the ground from which water springs.",
-    "examples": [
-      "Ég fylli búnaðinn við vatn úr brunninum. (I fill the equipment with water from the well.)"
-    ]
-  },
-  {
-    "oldNorseWord": "oddr",
-    "englishTranslation": "point, tip",
-    "russianTranslation": "остриё, кончик",
-    "type": "noun",
-    "definition": "The sharp or pointed end of something.",
-    "examples": [
-      "Ólafur vissi ekki hvort hann myndi lifa til annars oddar dagsins. (Ólafur did not know if he would live until the end of the day.)"
-    ]
-  },
-  {
-    "oldNorseWord": "sandr",
-    "englishTranslation": "sand",
-    "russianTranslation": "песок, морской берег",
-    "type": "noun",
-    "definition": "A loose granular substance, typically found on beaches and in deserts.",
-    "examples": [
-      "Ströndin er með gylltan sand. (The beach has golden sand.)"
-    ]
-  },
-  {
-    "oldNorseWord": "vindr",
-    "englishTranslation": "wind",
-    "russianTranslation": "ветер, воздух",
-    "type": "noun",
-    "definition": "The perceptible natural movement of the air.",
-    "examples": [
-      "Vindrinn blæs sterkt í dag. (The wind is blowing strongly today.)"
-    ]
-  },
-  {
-    "oldNorseWord": "dróttinn",
-    "englishTranslation": "lord, master",
-    "russianTranslation": "господин, господь",
-    "type": "noun",
-    "definition": "Referring to a person who has authority, control, or power over others.",
-    "examples": [
-      "Dróttinn ræðr öllu. (The Lord rules all.)"
-    ]
-  },
-  {
-    "oldNorseWord": "níðingr",
-    "englishTranslation": "scoundrel, villain",
-    "russianTranslation": "подлец, негодяй",
-    "type": "noun",
-    "definition": "Referring to a person who behaves dishonestly or unethically.",
-    "examples": [
-      "Níðingr stal fénu. (The scoundrel stole the money.)"
-    ]
-  },
-  {
-    "oldNorseWord": "þræll",
-    "englishTranslation": "slave, serf",
-    "russianTranslation": "раб, невольник",
-    "type": "noun",
-    "definition": "Referring to a person who is the legal property of another and is forced to obey them.",
-    "examples": [
-      "Þræll vinnur á akri. (The slave works in the field.)"
-    ]
-  },
-  {
-    "oldNorseWord": "áss",
-    "englishTranslation": "Aesir, god",
-    "russianTranslation": "ас, бог",
-    "type": "noun",
-    "definition": "A member of the principal pantheon in Norse religion; a deity.",
-    "examples": [
-      "Áss er dýrkaður. (The god is worshiped.)"
-    ],
-    "cases": {
-      "nominative": {
-        "plural": "æsir"
-      },
-      "accusative": {
-        "singular": "ás",
-        "plural": "ásu"
-      },
-      "dative": {
-        "singular": "æsi",
-        "plural": "ásum"
-      },
-      "genitive": {
-        "singular": "ásar",
-        "plural": "ása"
+      "oldNorseWord": "hóll",
+      "englishTranslation": "hill, mound",
+      "russianTranslation": "холм, пригорок",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "A naturally raised area of land, smaller than a mountain.",
+      "examples": [
+          "Hóll er grænn. (The hill is green.)"
+      ],
+      "nounForms": {
+          "second": "hóls",
+          "third": "hólar"
       }
-    }
   },
   {
-    "oldNorseWord": "hamarr",
-    "englishTranslation": "hammer, mallet",
-    "russianTranslation": "молот, молоток",
-    "type": "noun",
-    "definition": "A tool with a heavy metal head used for breaking things or driving in nails.",
-    "examples": [
-      "Hamarr er í húsi. (The hammer is in the house.)"
-    ]
-  },
-  {
-    "oldNorseWord": "himinn",
-    "englishTranslation": "sky, heaven",
-    "russianTranslation": "небо, небеса",
-    "type": "noun",
-    "definition": "The expanse of air over the Earth; the celestial abode of divine beings.",
-    "examples": [
-      "Himinn er blár. (The sky is blue.)"
-    ]
-  },
-  {
-    "oldNorseWord": "hóll",
-    "englishTranslation": "hill, mound",
-    "russianTranslation": "холм, пригорок",
-    "type": "noun",
-    "definition": "A naturally raised area of land, smaller than a mountain.",
-    "examples": [
-      "Hóll er grænn. (The hill is green.)"
-    ]
-  },
-  {
-    "oldNorseWord": "íss",
-    "englishTranslation": "ice",
-    "russianTranslation": "лёд",
-    "type": "noun",
-    "definition": "Frozen water, a brittle, transparent crystalline solid.",
-    "examples": [
-      "Íss er kaldur. (The ice is cold.)"
-    ]
-  },
-  {
-    "oldNorseWord": "jötunn",
-    "englishTranslation": "jotun, giant",
-    "russianTranslation": "ётун, великан",
-    "type": "noun",
-    "definition": "A mythological being in Norse mythology, often opposed to the gods.",
-    "examples": [
-      "Jötunn er stór. (The giant is big.)"
-    ]
-  },
-  {
-    "oldNorseWord": "stormr",
-    "englishTranslation": "storm, tempest",
-    "russianTranslation": "шторм, буря",
-    "type": "noun",
-    "definition": "A violent disturbance of the atmosphere with strong winds and usually rain, thunder, or snow.",
-    "examples": [
-      "Stormr er ógnandi. (The storm is threatening.)"
-    ]
-  },
-  {
-    "oldNorseWord": "vagn",
-    "englishTranslation": "wagon, cart",
-    "russianTranslation": "повозка, телега",
-    "type": "noun",
-    "definition": "A vehicle used for transporting goods or people, usually pulled by horses.",
-    "examples": [
-      "Vagn er fullur af heyi. (The wagon is full of hay.)"
-    ]
-  },
-  {
-    "oldNorseWord": "viðr",
-    "englishTranslation": "wood, log",
-    "russianTranslation": "дерево, бревно",
-    "type": "noun",
-    "definition": "The hard fibrous material that forms the main substance of the trunk or branches of a tree; a large solid piece of wood.",
-    "examples": [
-      "Viðr er í eldi. (The wood is in the fire.)"
-    ],
-    "cases": {
-      "nominative": {
-        "plural": "viðir"
-      },
-      "accusative": {
-        "plural": "viðu"
-      },
-      "genitive": {
-        "singular": "viðar"
+      "oldNorseWord": "íss",
+      "englishTranslation": "ice",
+      "russianTranslation": "лёд",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "Frozen water, a brittle, transparent crystalline solid.",
+      "examples": [
+          "Íss er kaldur. (The ice is cold.)"
+      ],
+      "nounForms": {
+          "second": "íss",
+          "third": "ísar"
       }
-    }
   },
   {
-    "oldNorseWord": "dómr",
-    "englishTranslation": "state, fate",
-    "russianTranslation": "состояние, судьба",
-    "type": "noun",
-    "definition": "The particular condition that someone or something is in at a specific time; the development of events beyond a person's control.",
-    "examples": [
-      "Dómr hans er óljós. (His fate is uncertain.)"
-    ]
+      "oldNorseWord": "jötunn",
+      "englishTranslation": "jotun, giant",
+      "russianTranslation": "ётун, великан",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "A mythological being in Norse mythology, often opposed to the gods.",
+      "examples": [
+          "Jötunn er stór. (The giant is big.)"
+      ],
+      "nounForms": {
+          "second": "jötuns",
+          "third": "jötnar"
+      }
   },
   {
-    "oldNorseWord": "kaupmaðr",
-    "englishTranslation": "merchant, trader",
-    "russianTranslation": "купец, торговец",
-    "type": "noun",
-    "definition": "A person who buys and sells goods, especially on a large scale.",
-    "examples": [
-      "Kaupmaðr selur vörur. (The merchant sells goods.)"
-    ]
+      "oldNorseWord": "stormr",
+      "englishTranslation": "storm, tempest",
+      "russianTranslation": "шторм, буря",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "A violent disturbance of the atmosphere with strong winds and usually rain, thunder, or snow.",
+      "examples": [
+          "Stormr er ógnandi. (The storm is threatening.)"
+      ],
+      "nounForms": {
+          "second": "storms",
+          "third": "stormar"
+      }
   },
   {
-    "oldNorseWord": "penningr",
-    "englishTranslation": "penny, coin",
-    "russianTranslation": "пеннинг, монета",
-    "type": "noun",
-    "definition": "A unit of currency; a piece of metal used as a medium of exchange.",
-    "examples": [
-      "Hann hefur margar penningar. (He has many coins.)"
-    ]
+      "oldNorseWord": "vagn",
+      "englishTranslation": "wagon, cart",
+      "russianTranslation": "повозка, телега",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "A vehicle used for transporting goods or people, usually pulled by horses.",
+      "examples": [
+          "Vagn er fullur af heyi. (The wagon is full of hay.)",
+          "Þeir drógu vagninn yfir sléttuna. (They pulled the wagon over the plain.)"
+      ],
+      "nounForms": {
+          "second": "vagns",
+          "third": "vagnar"
+      }
   },
   {
-    "oldNorseWord": "sveinn",
-    "englishTranslation": "boy, youth",
-    "russianTranslation": "парень, юноша",
-    "type": "noun",
-    "definition": "A male child or young man.",
-    "examples": [
-      "Sveinn er glaður. (The boy is happy.)"
-    ]
+      "oldNorseWord": "viðr",
+      "englishTranslation": "wood, log",
+      "russianTranslation": "дерево, бревно",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "The hard fibrous material that forms the main substance of the trunk or branches of a tree; a large solid piece of wood.",
+      "examples": [
+          "Viðr er í eldi. (The wood is in the fire.)",
+          "Þeir sögðu viði til að smíða hús. (They sawed wood to build a house.)"
+      ],
+      "nounForms": {
+          "second": "viðar",
+          "third": "viðir"
+      },
+      "cases": {
+          "nominative": {
+              "plural": "viðir"
+          },
+          "accusative": {
+              "plural": "viðu"
+          },
+          "genitive": {
+              "singular": "viðar"
+          }
+      }
   },
   {
-    "oldNorseWord": "þrældómr",
-    "englishTranslation": "slavery, servitude",
-    "russianTranslation": "рабство, каторжный труд",
-    "type": "noun",
-    "definition": "The state of being a slave; a condition of hard work and subjection.",
-    "examples": [
-      "Þrældómr er óréttlátur. (Slavery is unjust.)"
-    ]
+      "oldNorseWord": "dómr",
+      "englishTranslation": "state, fate",
+      "russianTranslation": "состояние, судьба",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "The particular condition that someone or something is in at a specific time; the development of events beyond a person's control.",
+      "examples": [
+          "Dómr hans er óljós. (His fate is uncertain.)",
+          "Dómr bæjarins var ákveðinn í bardaga. (The state of the town was decided in battle.)"
+      ],
+      "nounForms": {
+          "second": "dóms",
+          "third": "dómar"
+      }
   },
   {
-    "oldNorseWord": "askr",
-    "englishTranslation": "ash tree, ash wood spear",
-    "russianTranslation": "ясень, копьё из ясеня",
-    "type": "noun",
-    "definition": "A type of tree known for its hard wood, often used to make weapons; a spear made from the wood of an ash tree.",
-    "examples": [
-      "Hann smíðar askr. (He crafts an ash wood spear.)"
-    ]
+      "oldNorseWord": "kaupmaðr",
+      "englishTranslation": "merchant, trader",
+      "russianTranslation": "купец, торговец",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "A person who buys and sells goods, especially on a large scale.",
+      "examples": [
+          "Kaupmaðr selur vörur. (The merchant sells goods.)",
+          "Kaupmaðrinn kom með skipi sínu. (The merchant came with his ship.)"
+      ],
+      "nounForms": {
+          "second": "kaupmanns",
+          "third": "kaupmenn"
+      }
+    },
+  {
+      "oldNorseWord": "penningr",
+      "englishTranslation": "penny, coin",
+      "russianTranslation": "пеннинг, монета",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "A unit of currency; a piece of metal used as a medium of exchange.",
+      "examples": [
+          "Hann hefur margar penningar. (He has many coins.)",
+          "Penningr var fundinn á götunni. (A coin was found on the street.)"
+      ],
+      "nounForms": {
+          "second": "pennings",
+          "third": "penningar"
+      }
+  },
+  {
+      "oldNorseWord": "sveinn",
+      "englishTranslation": "boy, youth",
+      "russianTranslation": "парень, юноша",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "A male child or young man.",
+      "examples": [
+          "Sveinn er glaður. (The boy is happy.)",
+          "Sveinn leikur sér úti. (The boy plays outside.)"
+      ],
+      "nounForms": {
+          "second": "sveins",
+          "third": "sveinar"
+      }
+  },
+  {
+      "oldNorseWord": "þrældómr",
+      "englishTranslation": "slavery, servitude",
+      "russianTranslation": "рабство, каторжный труд",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "The state of being a slave; a condition of hard work and subjection.",
+      "examples": [
+          "Þrældómr er óréttlátur. (Slavery is unjust.)",
+          "Hann bjó undir þrældómi allt sitt líf. (He lived under servitude all his life.)"
+      ],
+      "nounForms": {
+          "second": "þrældóms",
+          "third": "þrældómar"
+      }
+  },
+  {
+      "oldNorseWord": "askr",
+      "englishTranslation": "ash tree, ash wood spear",
+      "russianTranslation": "ясень, копьё из ясеня",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "A type of tree known for its hard wood, often used to make weapons; a spear made from the wood of an ash tree.",
+      "examples": [
+          "Askr vex í garðinum. (The ash tree grows in the garden.)",
+          "Þeir smíðuðu spjót úr aski. (They crafted spears from ash wood.)"
+      ],
+      "nounForms": {
+          "second": "asks",
+          "third": "askar"
+      }
   },
   {
     "oldNorseWord": "drasill",
     "englishTranslation": "horse, steed",
     "russianTranslation": "конь, скакун",
     "type": "noun",
+    "gender": "masculine",
     "definition": "A strong, fast, or high-spirited horse; a steed used in battle or for travel.",
     "examples": [
       "Drasill er fljótr. (The steed is fast.)"
     ],
+    "nounForms": {
+        "second": "drasils",
+        "third": "dröslar"
+    },
     "cases": {
-      "nominative": {
-        "plural": "dröslar"
-      },
       "accusative": {
         "plural": "drösla"
       },
@@ -612,22 +1019,21 @@
     "englishTranslation": "power, might",
     "russianTranslation": "сила, мощь",
     "type": "noun",
+    "gender": "masculine",
     "definition": "The ability to do something or act in a particular way; physical or mental strength.",
     "examples": [
       "Hans máttr er ótrúlegur. (His power is incredible.)"
     ],
+    "nounForms": {
+        "second": "máttar",
+        "third": "mættir"
+    },
     "cases": {
-      "nominative": {
-        "plural": "mættir"
-      },
       "accusative": {
         "plural": "mætti"
       },
       "dative": {
         "singular": "mætti"
-      },
-      "genitive": {
-        "singular": "máttar"
       }
     }
   },
@@ -651,7 +1057,11 @@
     "definition": "A large expanse of salt water, typically one of the world's main divisions.",
     "examples": [
       "Haf er dýpt og óendanlegt. (The sea is deep and endless.)"
-    ]
+    ],
+    "nounForms": {
+        "second": "hafs",
+        "third": "höf"
+    }
   },
   {
     "oldNorseWord": "kaup",
@@ -662,7 +1072,11 @@
     "definition": "The action of buying something; an agreement between parties.",
     "examples": [
       "Hann gerði gott kaup. (He made a good deal.)"
-    ]
+    ],
+    "nounForms": {
+        "second": "kaups",
+        "third": "kaup"
+    }
   },
   {
     "oldNorseWord": "land",
@@ -673,7 +1087,11 @@
     "definition": "A nation or territory; the solid part of the earth's surface.",
     "examples": [
       "Land mitt er fallegt. (My country is beautiful.)"
-    ]
+    ],
+    "nounForms": {
+        "second": "lands",
+        "third": "lönd"
+    }
   },
   {
     "oldNorseWord": "norðr",
@@ -684,7 +1102,10 @@
     "definition": "The direction in which a compass needle normally points, toward the horizon on the left side when one is facing east.",
     "examples": [
       "Vindurinn blæs frá norðri. (The wind blows from the north.)"
-    ]
+    ],
+    "nounForms": {
+        "second": "norðrs"
+    }
   },
   {
     "oldNorseWord": "ráð",
@@ -695,7 +1116,11 @@
     "definition": "Guidance or recommendations offered concerning prudent action; a conclusion or resolution.",
     "examples": [
       "Hann gaf mér gott ráð. (He gave me good advice.)"
-    ]
+    ],
+    "nounForms": {
+        "second": "ráðs",
+        "third": "ráð"
+    }
   },
   {
     "oldNorseWord": "staðr",
@@ -706,7 +1131,11 @@
     "definition": "A particular position or point in space; a residence or home.",
     "examples": [
       "Þetta er fallegur staðr. (This is a beautiful place.)"
-    ]
+    ],
+    "nounForms": {
+        "second": "staðar",
+        "third": "staðir"
+    }
   },
   {
     "oldNorseWord": "þrælakaup",
@@ -717,9 +1146,2115 @@
     "definition": "The act of buying slaves or people for servitude.",
     "examples": [
       "Hann gerði þrælakaup í borginni. (He made a slave purchase in the city.)"
-    ]
+    ],
+    "nounForms": {
+        "second": "þrælakaup",
+        "third": "þrælakaups"
+    }
   },
   {
+      "oldNorseWord": "boer",
+      "base": "boej",
+      "declension": "i",
+      "englishTranslation": "farmstead, courtyard",
+      "russianTranslation": "хутор, двор",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "A small farm or rural property; a courtyard associated with a dwelling.",
+      "examples": [
+          "Þeir bjuggu á litlum boe. (They lived on a small farmstead.)"
+      ],
+      "nounForms": {
+          "second": "boejar",
+          "third": "boeir"
+      }
+  },
+  {
+      "oldNorseWord": "fugl",
+      "englishTranslation": "bird",
+      "russianTranslation": "птица",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "A warm-blooded egg-laying vertebrate distinguished by feathers and flight.",
+      "examples": [
+          "Fugl flýgur yfir vatnið. (A bird flies over the water.)"
+      ],
+      "nounForms": {
+          "second": "fugls",
+          "third": "fuglar"
+      }
+  },
+  {
+      "oldNorseWord": "höfuðstaðr",
+      "englishTranslation": "capital, chief town",
+      "russianTranslation": "столица, главный город",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "The primary city or town of a country or region, typically its seat of government and administrative center.",
+      "examples": [
+          "Höfuðstaðrinn var miðpunktur ríkisins. (The capital was the center of the kingdom.)"
+      ],
+      "nounForms": {
+          "second": "höfuðstaðar",
+          "third": "höfuðstaðir"
+      }
+  },
+  {
+      "oldNorseWord": "sonr",
+      "englishTranslation": "son",
+      "russianTranslation": "сын",
+      "base": "son",
+      "declension": "u",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "A male offspring of parents.",
+      "examples": [
+          "Sonr hans var duglegur maður. (His son was a diligent man.)"
+      ],
+      "nounForms": {
+          "second": "sonar",
+          "third": "synir"
+      }
+  },
+  {
+      "oldNorseWord": "fólk",
+      "englishTranslation": "people, army",
+      "russianTranslation": "народ, войско",
+      "type": "noun",
+      "gender": "neuter",
+      "definition": "People considered as a group, or a body of troops.",
+      "examples": [
+          "Fólk safnaðist saman á torginu. (People gathered together in the square.)"
+      ],
+      "nounForms": {
+          "second": "fólks"
+      }
+  },
+  {
+      "oldNorseWord": "gras",
+      "englishTranslation": "grass, vegetation",
+      "russianTranslation": "трава, растительность",
+      "type": "noun",
+      "gender": "neuter",
+      "definition": "Vegetation consisting of typically short plants with long, narrow leaves.",
+      "examples": [
+          "Gras vex á vellinum. (Grass grows in the field.)"
+      ],
+      "nounForms": {
+          "second": "grass",
+          "third": "grös"
+      }
+  },
+  {
+      "oldNorseWord": "hús",
+      "englishTranslation": "house, building",
+      "russianTranslation": "дом, здание",
+      "type": "noun",
+      "gender": "neuter",
+      "definition": "A structure serving as a dwelling for one or more persons.",
+      "examples": [
+          "Hús þeirra var við sjávarsíðuna. (Their house was by the seaside.)"
+      ],
+      "nounForms": {
+          "second": "húss",
+          "third": "hús"
+      }
+  },
+  {
+      "oldNorseWord": "skip",
+      "englishTranslation": "ship, vessel",
+      "russianTranslation": "корабль, судно",
+      "type": "noun",
+      "gender": "neuter",
+      "definition": "A large boat used for navigating in deep water, especially at sea.",
+      "examples": [
+          "Skip sigldi til fjarlægra landa. (The ship sailed to distant lands.)"
+      ],
+      "nounForms": {
+          "second": "skips",
+          "third": "skip"
+      }
+  },
+  {
+      "oldNorseWord": "sumar",
+      "englishTranslation": "summer",
+      "russianTranslation": "лето",
+      "base": "sumar",
+      "type": "noun",
+      "gender": "neuter",
+      "definition": "The warmest season of the year, typically marked by long days and short nights.",
+      "examples": [
+          "Sumar er tími sólar og hlýju. (Summer is the time of sun and warmth.)"
+      ],
+      "nounForms": {
+          "second": "sumars",
+          "third": "sumur"
+      }
+  },
+  {
+      "oldNorseWord": "vatn",
+      "englishTranslation": "water, lake",
+      "russianTranslation": "вода, озеро",
+      "type": "noun",
+      "gender": "neuter",
+      "definition": "A colorless, transparent, odorless liquid; a large body of water surrounded by land.",
+      "examples": [
+          "Þeir drekka vatn úr lindinni. (They drink water from the spring.)"
+      ],
+      "nounForms": {
+          "second": "vatns",
+          "third": "vötn"
+      }
+  },
+  {
+      "oldNorseWord": "vestr",
+      "englishTranslation": "west",
+      "russianTranslation": "запад",
+      "type": "noun",
+      "gender": "neuter",
+      "definition": "The direction or point on the horizon where the sun sets at the equinoxes, opposite to the east.",
+      "examples": [
+          "Þeir fóru til vestrs. (They went to the west.)"
+      ],
+      "nounForms": {
+          "second": "vestrs"
+      }
+  },
+  {
+      "oldNorseWord": "dóttir",
+      "englishTranslation": "daughter",
+      "russianTranslation": "дочь",
+      "type": "noun",
+      "base": "dótt",
+      "declension": "r",
+      "gender": "feminine",
+      "definition": "A female offspring of parents.",
+      "examples": [
+          "Dóttir hans er mjög klár. (His daughter is very clever.)",
+          "Hún er dóttir konungsins. (She is the king's daughter.)"
+      ],
+      "nounForms": {
+          "second": "dóttur",
+          "third": "doetr"
+      }
+  },
+  {
+      "oldNorseWord": "kona",
+      "englishTranslation": "woman, wife",
+      "russianTranslation": "женщина, жена",
+      "type": "noun",
+      "base": "kona",
+      "gender": "feminine",
+      "definition": "An adult female person; a spouse.",
+      "examples": [
+          "Kona hans er læknir. (His wife is a doctor.)",
+          "Konur söfnuðust í kirkjunni. (Women gathered in the church.)"
+      ],
+      "nounForms": {
+          "second": "konu",
+          "third": "konur"
+      }
+  },
+  {
+      "oldNorseWord": "veig",
+      "englishTranslation": "wine, strong drink",
+      "russianTranslation": "вино, крепкий напиток",
+      "type": "noun",
+      "base": "veig",
+      "declension": "a",
+      "gender": "feminine",
+      "definition": "An alcoholic beverage made from fermented grapes or other fruits.",
+      "examples": [
+          "Þeir drukku veig á veislu. (They drank wine at the feast.)",
+          "Veigar voru dýrar á þeim tímum. (Strong drinks were expensive in those times.)"
+      ],
+      "nounForms": {
+          "second": "veigar",
+          "third": "veigar"
+      }
+  },
+  {
+      "oldNorseWord": "vík",
+      "englishTranslation": "cove, bay",
+      "russianTranslation": "залив, бухта",
+      "type": "noun",
+      "base": "vík",
+      "gender": "feminine",
+      "definition": "A small bay or inlet along the coast; a recess in the shore.",
+      "examples": [
+          "Skip lenti í víkinni. (The ship landed in the cove.)",
+          "Vík var full af fiskibátum. (The bay was full of fishing boats.)"
+      ],
+      "nounForms": {
+          "second": "víkr",
+          "third": "víkr"
+      }
+  },
+  {
+      "oldNorseWord": "bekkr",
+      "englishTranslation": "bench",
+      "russianTranslation": "скамья",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "A long seat for several people, typically made of wood or stone.",
+      "examples": [
+          "Þeir sátu á bekki í húsinu. (They sat on a bench in the house.)"
+      ],
+      "base": "bekk",
+      "declension": "i",
+      "nounForms": {
+          "second": "bekkjar",
+          "third": "bekkir"
+      }
+  },
+  {
+      "oldNorseWord": "búnaðr",
+      "englishTranslation": "equipment, gear",
+      "russianTranslation": "снаряжение, оборудование",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "The necessary items for a particular purpose, especially for activities or tasks.",
+      "examples": [
+          "Búnaðr þeirra var tilbúinn fyrir ferðina. (Their equipment was ready for the journey.)"
+      ],
+      "base": "búnað",
+      "declension": "i",
+      "nounForms": {
+          "second": "búnaðar",
+          "third": "búnaðir"
+      }
+  },
+  {
+      "oldNorseWord": "drykkr",
+      "englishTranslation": "drink, beverage",
+      "russianTranslation": "питье, напиток",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "A liquid that can be swallowed as refreshment or nourishment.",
+      "examples": [
+          "Drykkr var borinn fram á veislunni. (Drinks were served at the feast.)"
+      ],
+      "base": "drykk",
+      "declension": "i",
+      "nounForms": {
+          "second": "drykkjar",
+          "third": "drykkir"
+      }
+  },
+  {
+      "oldNorseWord": "gestr",
+      "englishTranslation": "guest, visitor",
+      "russianTranslation": "гость, посетитель",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "A person who is invited to visit someone's home or attend an event.",
+      "examples": [
+          "Gestr kom til húss þeirra. (A guest came to their house.)"
+      ],
+      "base": "gest",
+      "declension": "i",
+      "nounForms": {
+          "second": "gests",
+          "third": "gestir"
+      }
+  },
+  {
+      "oldNorseWord": "hersir",
+      "englishTranslation": "chieftain, leader",
+      "russianTranslation": "херсир, вождь",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "A military leader or a nobleman in Viking society.",
+      "examples": [
+          "Hersir stjórnaði liðinu. (The chieftain commanded the troop.)"
+      ],
+      "base": "hersj",
+      "declension": "a",
+      "nounForms": {
+          "second": "hersis",
+          "third": "hersar"
+      }
+  },
+  {
+      "oldNorseWord": "húsbúnaðr",
+      "englishTranslation": "furniture, furnishings",
+      "russianTranslation": "мебель, утварь",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "The movable articles in a room or an establishment that make it fit for living or working.",
+      "examples": [
+          "Húsbúnaðr var úr tré og vel smíðaður. (The furniture was made of wood and well crafted.)"
+      ],
+      "base": "húsbúnað",
+      "declension": "i"
+  },
+  {
+      "oldNorseWord": "langeldr",
+      "englishTranslation": "hearth, long fire",
+      "russianTranslation": "очаг",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "A long fireplace or fire pit used for heating and cooking in traditional Norse buildings.",
+      "examples": [
+          "Langeldr var miðpunktur hússins. (The hearth was the centerpiece of the house.)"
+      ],
+      "base": "langeld",
+      "declension": "i"
+  },
+  {
+      "oldNorseWord": "mjöðr",
+      "englishTranslation": "mead",
+      "russianTranslation": "мёд (напиток)",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "An alcoholic beverage created by fermenting honey with water.",
+      "examples": [
+          "Mjöðr var vinsæll drykkur meðal víkinga. (Mead was a popular drink among the Vikings.)"
+      ],
+      "base": "mjað",
+      "declension": "u",
+      "nounForms": {
+          "second": "mjaðar",
+          "third": "miðir"
+      }
+  },
+  {
+      "oldNorseWord": "salr",
+      "englishTranslation": "hall, room",
+      "russianTranslation": "палата, зал",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "A large room, especially in a palace or castle, for receiving and entertaining guests.",
+      "examples": [
+          "Konungurinn tók gesti í stórum sal. (The king received guests in a large hall.)"
+      ],
+      "base": "sal",
+      "declension": "i",
+      "nounForms": {
+          "second": "salar",
+          "third": "salir"
+      }
+  },
+  {
+      "oldNorseWord": "skjöldr",
+      "englishTranslation": "shield, protection",
+      "russianTranslation": "щит, защита",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "A broad piece of defensive armor carried on the arm; something that provides protection.",
+      "examples": [
+          "Skjöldr hans var sterkur og traustur. (His shield was strong and reliable.)"
+      ],
+      "base": "skjald",
+      "declension": "u",
+      "nounForms": {
+          "second": "skjaldar",
+          "third": "skildir"
+      }
+  },
+  {
+      "oldNorseWord": "borð",
+      "englishTranslation": "table, board",
+      "russianTranslation": "стол, борт",
+      "type": "noun",
+      "gender": "neuter",
+      "definition": "A piece of furniture with a flat top and one or more legs; a flat surface on a ship's side.",
+      "examples": [
+          "Þau borðuðu saman við borðið. (They ate together at the table.)"
+      ],
+      "base": "borð",
+      "nounForms": {
+          "second": "borðs",
+          "third": "borð"
+      }
+  },
+  {
+      "oldNorseWord": "brauð",
+      "englishTranslation": "bread, sustenance",
+      "russianTranslation": "хлеб, пропитание",
+      "type": "noun",
+      "gender": "neuter",
+      "definition": "A staple food made from flour and water and usually baked.",
+      "examples": [
+          "Brauð var bakað í hverju húsi. (Bread was baked in every house.)"
+      ],
+      "base": "brauð",
+      "nounForms": {
+          "second": "brauðs",
+          "third": "brauð"
+      }
+  },
+  {
+      "oldNorseWord": "gólf",
+      "englishTranslation": "floor",
+      "russianTranslation": "пол",
+      "type": "noun",
+      "gender": "neuter",
+      "definition": "The lower surface of a room, on which one may walk.",
+      "examples": [
+          "Gólf var þakið með skinni. (The floor was covered with skins.)"
+      ],
+      "base": "gólf",
+      "nounForms": {
+          "second": "gólfs",
+          "third": "gólf"
+      }
+  },
+  {
+      "oldNorseWord": "kvæði",
+      "englishTranslation": "song, poem",
+      "russianTranslation": "песнь, поэма",
+      "type": "noun",
+      "gender": "neuter",
+      "definition": "A set of words set to music or meant to be sung; a piece of poetry.",
+      "examples": [
+          "Skáld kvað kvæði við hirðina. (The poet recited a poem at the court.)"
+      ],
+      "base": "kvæðj",
+      "nounForms": {
+          "second": "kvæðis",
+          "third": "kvæði"
+      }
+  },
+  {
+      "oldNorseWord": "skáld",
+      "englishTranslation": "skald, poet",
+      "russianTranslation": "скальд, поэт",
+      "type": "noun",
+      "gender": "neuter",
+      "definition": "A poet in ancient Scandinavia, especially one writing in the Old Norse language.",
+      "examples": [
+          "Skáld orti lof um konunginn. (The skald composed praise for the king.)"
+      ],
+      "base": "skáld",
+      "nounForms": {
+          "second": "skálds",
+          "third": "skáld"
+      }
+  },
+  {
+      "oldNorseWord": "spjót",
+      "englishTranslation": "spear, pike",
+      "russianTranslation": "копьё, пика",
+      "type": "noun",
+      "gender": "neuter",
+      "definition": "A weapon with a pointed head, typically of iron or steel, and a long shaft, used for thrusting or throwing.",
+      "examples": [
+          "Spjót var notað í orrustu. (The spear was used in battle.)"
+      ],
+      "base": "spjót",
+      "nounForms": {
+          "second": "spjóts",
+          "third": "spjót"
+      }
+  },
+  {
+      "oldNorseWord": "sverð",
+      "englishTranslation": "sword",
+      "russianTranslation": "меч",
+      "type": "noun",
+      "gender": "neuter",
+      "definition": "A weapon with a long metal blade and a hilt with a handguard, used for thrusting or striking.",
+      "examples": [
+          "Sverð var veglegt vopn víkinga. (The sword was a distinguished weapon of the Vikings.)",
+          "Hann bar sverð við hlið sér. (He carried a sword at his side.)"
+      ],
+      "base": "sverð",
+      "nounForms": {
+          "second": "sverðs",
+          "third": "sverð"
+      }
+  },
+  {
+      "oldNorseWord": "vápn",
+      "englishTranslation": "weapon",
+      "russianTranslation": "оружие",
+      "type": "noun",
+      "gender": "neuter",
+      "definition": "An instrument of combat used to attack or defend in fighting or war.",
+      "examples": [
+          "Vápn voru mikilvæg í víkingatímabilinu. (Weapons were important in the Viking era.)",
+          "Þeir báru ýmis konar vápn. (They carried various kinds of weapons.)"
+      ],
+      "base": "vápn",
+      "nounForms": {
+          "second": "vápns",
+          "third": "vápn"
+      }
+  },
+  {
+      "oldNorseWord": "gjöf",
+      "englishTranslation": "gift, present",
+      "russianTranslation": "дар, подарок",
+      "type": "noun",
+      "gender": "feminine",
+      "definition": "Something given voluntarily to another person without expecting anything in return; a present.",
+      "examples": [
+          "Gjöf var gefin í tilefni afmælisins. (A gift was given for the birthday occasion.)",
+          "Konungurinn veitti honum dýrmæta gjöf. (The king granted him a precious gift.)"
+      ],
+      "base": "gjaf",
+      "declension": "a",
+      "nounForms": {
+          "second": "gjafar",
+          "third": "gjafar"
+      }
+  },
+  {
+      "oldNorseWord": "höll",
+      "englishTranslation": "hall, palace",
+      "russianTranslation": "чертог, палата",
+      "type": "noun",
+      "gender": "feminine",
+      "definition": "A stately residence or a large and imposing building used for public or ceremonial occasions.",
+      "examples": [
+          "Höll konungsins var ríkulega skreytt. (The king's palace was richly decorated.)",
+          "Mikil veisla var í höllinni. (A great feast was in the hall.)"
+      ],
+      "base": "hall",
+      "declension": "i",
+      "nounForms": {
+          "second": "hallar",
+          "third": "hallir"
+      }
+  },
+  {
+      "oldNorseWord": "friðr",
+      "englishTranslation": "peace",
+      "russianTranslation": "мир",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "A state of tranquility or quiet; freedom from civil disturbance or hostilities.",
+      "examples": [
+          "Friðr var á landinu undir stjórn konungsins. (There was peace in the land under the king's rule.)"
+      ],
+      "base": "frið",
+      "declension": "u",
+      "nounForms": {
+          "second": "friðar"
+      }
+  },
+  {
+      "oldNorseWord": "hermaðr",
+      "englishTranslation": "warrior, soldier",
+      "russianTranslation": "воин, солдат",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "A person engaged or experienced in warfare; a member of an army.",
+      "examples": [
+          "Hermaðr barst hetjulega. (The warrior fought valiantly.)"
+      ],
+      "cases": {
+          "nominative": {
+              "singular": "hermaðr",
+              "plural": "hermenn"
+          },
+          "accusative": {
+              "singular": "hermann",
+              "plural": "hermenn"
+          },
+          "dative": {
+              "singular": "hermanni",
+              "plural": "hermönnum"
+          },
+          "genitive": {
+              "singular": "hermanns",
+              "plural": "hermanna"
+          }
+      }
+  },
+  {
+      "oldNorseWord": "ófriðr",
+      "englishTranslation": "war, hostility",
+      "russianTranslation": "война, вражда",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "A state of armed conflict between different nations or states or different groups within a nation or state.",
+      "examples": [
+          "Ófriðr stóð lengi milli tveggja ætta. (The war lasted long between two families.)"
+      ],
+      "base": "ófrið",
+      "declension": "u",
+      "nounForms": {
+          "second": "ófriðar"
+      }
+  },
+  {
+      "oldNorseWord": "óvinr",
+      "englishTranslation": "enemy, foe",
+      "russianTranslation": "враг, недруг",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "A person who is actively opposed or hostile to someone or something.",
+      "examples": [
+          "Óvinr var sigraður í orrustunni. (The enemy was defeated in the battle.)"
+      ],
+      "base": "óvin",
+      "declension": "i",
+      "nounForms": {
+          "second": "óvinar",
+          "third": "óvinir"
+      }
+  },
+  {
+      "oldNorseWord": "vinr",
+      "englishTranslation": "friend, companion",
+      "russianTranslation": "друг, товарищ",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "A person with whom one has a bond of mutual affection, typically one exclusive of sexual or family relations.",
+      "examples": [
+          "Vinr hans stóð með honum í öllu. (His friend stood by him in everything.)"
+      ],
+      "base": "vin",
+      "declension": "i",
+      "nounForms": {
+          "second": "vinar",
+          "third": "vinir"
+      }
+  },
+  {
+      "oldNorseWord": "gull",
+      "englishTranslation": "gold",
+      "russianTranslation": "золото",
+      "type": "noun",
+      "gender": "neuter",
+      "definition": "A precious yellow metallic element, highly valued for its beauty and used as a standard of monetary exchange.",
+      "examples": [
+          "Gull glitrar í kistunni. (The gold glitters in the chest.)"
+      ],
+      "base": "gull",
+      "nounForms": {
+          "second": "gulls",
+          "third": "gull"
+      }
+  },
+  {
+      "oldNorseWord": "haust",
+      "englishTranslation": "autumn",
+      "russianTranslation": "осень",
+      "type": "noun",
+      "gender": "neuter",
+      "definition": "The season of the year between summer and winter, during which vegetation matures and fruits ripen.",
+      "examples": [
+          "Haust er tími uppskeru. (Autumn is the time of harvest.)"
+      ],
+      "base": "haust",
+      "nounForms": {
+          "second": "hausts",
+          "third": "haust"
+      }
+  },
+  {
+      "oldNorseWord": "klaustr",
+      "englishTranslation": "monastery, abbey",
+      "russianTranslation": "монастырь, аббатство",
+      "type": "noun",
+      "gender": "neuter",
+      "definition": "A building or complex of buildings comprising the domestic quarters and workplaces of monks or nuns.",
+      "examples": [
+          "Klaustr var byggt í dalnum. (A monastery was built in the valley.)"
+      ],
+      "base": "klaustr",
+      "nounForms": {
+          "second": "klaustrs",
+          "third": "klaustr"
+      }
+  },
+  {
+      "oldNorseWord": "ríki",
+      "englishTranslation": "kingdom, realm",
+      "russianTranslation": "власть, королевство",
+      "type": "noun",
+      "gender": "neuter",
+      "definition": "A country, state, or territory ruled by a king or queen.",
+      "examples": [
+          "Ríki hans var mikið og öflugt. (His kingdom was great and powerful.)"
+      ],
+      "base": "ríkj",
+      "nounForms": {
+          "second": "ríkis",
+          "third": "ríki"
+      }
+  },
+  {
+      "oldNorseWord": "silfr",
+      "englishTranslation": "silver",
+      "russianTranslation": "серебро",
+      "type": "noun",
+      "gender": "neuter",
+      "definition": "A precious grayish-white metal, used for ornaments, coins, and utensils.",
+      "examples": [
+          "Silfr var notað til að prýða gripi. (Silver was used to decorate objects.)"
+      ],
+      "base": "silfr",
+      "nounForms": {
+          "second": "silfrs",
+          "third": "silfr"
+      }
+  },
+  {
+      "oldNorseWord": "suðr",
+      "englishTranslation": "south",
+      "russianTranslation": "юг",
+      "type": "noun",
+      "gender": "masculine",
+      "definition": "The direction toward the point of the horizon 90° clockwise from east, or the point on the horizon itself.",
+      "examples": [
+          "Þeir héldu í átt til suðrs. (They headed towards the south.)"
+      ],
+      "base": "suðr",
+      "nounForms": {
+          "second": "suðrs"
+      }
+  },
+  {
+      "oldNorseWord": "vár",
+      "englishTranslation": "spring",
+      "russianTranslation": "весна",
+      "type": "noun",
+      "gender": "neuter",
+      "definition": "The season of the year between winter and summer, during which vegetation begins to appear.",
+      "examples": [
+          "Í vár blómstra blóm. (In the spring, flowers bloom.)"
+      ],
+      "base": "vár",
+      "nounForms": {
+          "second": "várs",
+          "third": "vár"
+      }
+  },
+  {
+          "oldNorseWord": "borg",
+          "englishTranslation": "city, fortress",
+          "russianTranslation": "город, крепость",
+          "type": "noun",
+          "gender": "feminine",
+          "definition": "A large and significant town or a fortified place.",
+          "examples": [
+              "Borgin stóð á háum klifri. (The city stood on a high cliff.)",
+              "Þeir sóttu borgina til að verjast óvinum. (They sought the fortress to defend against enemies.)"
+          ],
+          "base": "borg",
+          "declension": "i",
+          "nounForms": {
+              "second": "borgar",
+              "third": "borgir"
+          }
+      },
+      {
+          "oldNorseWord": "ferð",
+          "englishTranslation": "journey, trip",
+          "russianTranslation": "поездка, путь",
+          "type": "noun",
+          "gender": "feminine",
+          "definition": "The act of traveling from one place to another.",
+          "examples": [
+              "Þeir héldu af stað í langa ferð. (They set off on a long journey.)",
+              "Ferðin var full af ævintýrum. (The trip was full of adventures.)"
+          ],
+          "base": "ferð",
+          "declension": "i",
+          "nounForms": {
+              "second": "ferðar",
+              "third": "ferðir"
+          }
+      },
+      {
+          "oldNorseWord": "gørsemi",
+          "englishTranslation": "treasure, precious thing",
+          "russianTranslation": "сокровище, драгоценность",
+          "type": "noun",
+          "gender": "feminine",
+          "definition": "Valuable items, especially of gold, silver, or jewels, that are collected or stored; a precious or valuable object.",
+          "examples": [
+              "Gørsemi var falin í gamalli kistu. (The treasure was hidden in an old chest.)"
+          ],
+          "base": "gørsemi",
+          "nounForms": {
+              "second": "gørsemi",
+              "third": "gørsemar"
+          }
+      },
+      {
+          "oldNorseWord": "mörk",
+          "englishTranslation": "forest, wilderness",
+          "russianTranslation": "лес, пустыня",
+          "type": "noun",
+          "gender": "feminine",
+          "definition": "An area covered with dense trees and underbrush; a wild and uninhabited area.",
+          "examples": [
+              "Þau gengu um mörkina í leit að fæðu. (They walked through the forest in search of food.)"
+          ],
+          "base": "mark",
+          "declension": "i",
+          "nounForms": {
+              "second": "markar",
+              "third": "markir"
+          }
+      },
+      {
+          "oldNorseWord": "þjóð",
+          "englishTranslation": "people, nation",
+          "russianTranslation": "народ, нация",
+          "type": "noun",
+          "gender": "feminine",
+          "definition": "A large group of people united by common descent, history, culture, or language, inhabiting a particular country or territory.",
+          "examples": [
+              "Þjóðin samþykkti nýja lög. (The nation approved new laws.)"
+          ],
+          "base": "þjóð",
+          "declension": "i",
+          "nounForms": {
+              "second": "þjóðar",
+              "third": "þjóðir"
+          }
+      },
+      {
+          "oldNorseWord": "akr",
+          "englishTranslation": "field, farmland",
+          "russianTranslation": "поле, пашня",
+          "type": "noun",
+          "gender": "masculine",
+          "definition": "An area of open land, especially one planted with crops or pasture.",
+          "examples": [
+              "Þeir yrkja korn á akrinum. (They cultivate grain in the field.)"
+          ],
+          "base": "akr",
+          "declension": "a",
+          "nounForms": {
+              "second": "akrs",
+              "third": "akrar"
+          }
+      },
+      {
+          "oldNorseWord": "dagr",
+          "englishTranslation": "day",
+          "russianTranslation": "день",
+          "type": "noun",
+          "gender": "masculine",
+          "definition": "A period of 24 hours as a unit of time, reckoned from one midnight to the next.",
+          "examples": [
+              "Dagr var bjartur og sólríkur. (The day was bright and sunny.)"
+          ],
+          "base": "dag",
+          "declension": "a",
+          "nounForms": {
+              "second": "dags",
+              "third": "dagar"
+          }
+      },
+      {
+          "oldNorseWord": "gangr",
+          "englishTranslation": "visit, course",
+          "russianTranslation": "посещение, ход",
+          "type": "noun",
+          "gender": "masculine",
+          "definition": "An instance of visiting a place or person; the action of moving along or proceeding in a particular direction.",
+          "examples": [
+              "Gangr þeirra til borgarinnar var án atviks. (Their visit to the city was uneventful.)"
+          ],
+          "base": "gang",
+          "declension": "a",
+          "nounForms": {
+              "second": "gangs",
+              "third": "gangar"
+          }
+      },
+      {
+          "oldNorseWord": "jökull",
+          "englishTranslation": "glacier",
+          "russianTranslation": "ледник",
+          "type": "noun",
+          "gender": "masculine",
+          "definition": "A slow-moving mass or river of ice formed by the accumulation and compaction of snow on mountains or near the poles.",
+          "examples": [
+              "Jökullinn var stórbrotinn og fallegur. (The glacier was majestic and beautiful.)"
+          ],
+          "base": "jökul",
+          "declension": "a",
+          "nounForms": {
+              "second": "jökuls",
+              "third": "jöklar"
+          }
+      },
+      {
+          "oldNorseWord": "mánaðr",
+          "englishTranslation": "month",
+          "russianTranslation": "месяц",
+          "type": "noun",
+          "gender": "masculine",
+          "definition": "Each of the twelve named periods into which a year is divided.",
+          "examples": [
+              "Mánaðrinn var kaldur og rigningarfullur. (The month was cold and rainy.)"
+          ],
+          "base": "mánað",
+          "nounForms": {
+              "second": "mánaðar",
+              "third": "mánaðir"
+          },
+          "cases": {
+              "accusative": {
+                  "plural": "mánaði"
+              }
+          }
+      },
+      {
+          "oldNorseWord": "snær",
+          "englishTranslation": "snow",
+          "russianTranslation": "снег",
+          "type": "noun",
+          "gender": "masculine",
+          "definition": "Atmospheric water vapor frozen into ice crystals and falling in light white flakes.",
+          "examples": [
+              "Snær fellur þétt á veturna. (Snow falls thickly in the winter.)"
+          ],
+          "base": "snæv",
+          "declension": "a",
+          "nounForms": {
+              "second": "snævar",
+              "third": "snævar"
+          },
+          "cases": {
+              "accusative": {
+                  "singular": "snæ"
+              },
+              "dative": {
+                  "plural": "snæm"
+              }
+          }
+      },
+      {
+          "oldNorseWord": "steinn",
+          "englishTranslation": "stone, rock",
+          "russianTranslation": "камень",
+          "type": "noun",
+          "gender": "masculine",
+          "definition": "A small piece of rock of a size that can be conveniently picked up in one hand.",
+          "examples": [
+              "Steinn var notaður í smíði og byggingar. (Stone was used in construction and buildings.)"
+          ],
+          "base": "stein",
+          "declension": "a",
+          "nounForms": {
+              "second": "steins",
+              "third": "steinar"
+          }
+      },
+      {
+          "oldNorseWord": "sumardagr",
+          "englishTranslation": "summer day",
+          "russianTranslation": "летний день",
+          "type": "noun",
+          "gender": "masculine",
+          "definition": "A day during the summer season, characterized by long daylight hours and typically warmer weather.",
+          "examples": [
+              "Sumardagr var heitur og sólríkur. (The summer day was hot and sunny.)"
+          ],
+          "base": "sumardag",
+          "declension": "a",
+          "nounForms": {
+              "second": "sumardags",
+              "third": "sumardagar"
+          }
+      },
+      {
+          "oldNorseWord": "vetr",
+          "englishTranslation": "winter, year",
+          "russianTranslation": "зима, год",
+          "type": "noun",
+          "gender": "masculine",
+          "definition": "The coldest season of the year, in the northern hemisphere from December to February and in the southern hemisphere from June to August.",
+          "examples": [
+              "Vetr var harður með mikilli snjókomu. (The winter was harsh with heavy snowfall.)"
+          ],
+          "base": "vetr",
+          "nounForms": {
+              "second": "vetrar",
+              "third": "vetr"
+          },
+          "cases": {
+              "accusative": {
+                  "plural": "vetr"
+              }
+          }
+      },
+      {
+          "oldNorseWord": "á",
+          "englishTranslation": "river",
+          "russianTranslation": "река",
+          "type": "noun",
+          "gender": "feminine",
+          "base": "á",
+          "declension": "a",
+          "definition": "A large natural stream of water flowing in a channel to the sea, a lake, or another river.",
+          "examples": [
+              "Áin rennur í gegnum dalinn. (The river runs through the valley.)"
+          ],
+          "nounForms": {
+              "second": "ár",
+              "third": "ár"
+          }
+      },
+      {
+          "oldNorseWord": "byggð",
+          "englishTranslation": "settlement, region",
+          "russianTranslation": "населённая местность, область",
+          "type": "noun",
+          "gender": "feminine",
+          "base": "byggð",
+          "declension": "i",
+          "definition": "A community of people living in a particular area; a district or region.",
+          "examples": [
+              "Byggðin lá við sjávarsíðuna. (The settlement lay by the seaside.)"
+          ],
+          "nounForms": {
+              "second": "byggðar",
+              "third": "byggðir"
+          }
+      },
+      {
+          "oldNorseWord": "heiðr",
+          "englishTranslation": "heath, moor",
+          "russianTranslation": "пустошь, степь",
+          "type": "noun",
+          "gender": "feminine",
+          "base": "heiðj",
+          "declension": "a",
+          "definition": "A tract of open uncultivated land, especially one covered with heather.",
+          "examples": [
+              "Heiðr var þakin lyngi og mosa. (The moor was covered with heather and moss.)"
+          ],
+          "nounForms": {
+              "second": "heiðar",
+              "third": "heiðar"
+          }
+      },
+      {
+          "oldNorseWord": "óbyggð",
+          "englishTranslation": "wilderness, uninhabited area",
+          "russianTranslation": "ненаселённая местность, пустыня",
+          "type": "noun",
+          "gender": "feminine",
+          "base": "óbyggð",
+          "declension": "i",
+          "definition": "A wild or uninhabited area, often characterized by ruggedness and lack of human habitation.",
+          "examples": [
+              "Óbyggðin var viðamikil og ógastleg. (The wilderness was vast and formidable.)"
+          ],
+          "nounForms": {
+              "second": "óbyggðar",
+              "third": "óbyggðir"
+          }
+      },
+      {
+          "oldNorseWord": "sól",
+          "englishTranslation": "sun",
+          "russianTranslation": "солнце",
+          "type": "noun",
+          "gender": "feminine",
+          "base": "sól",
+          "declension": "i",
+          "definition": "The star at the center of the solar system, around which the Earth and other planets revolve.",
+          "examples": [
+              "Sólin skín björt á himninum. (The sun shines bright in the sky.)"
+          ],
+          "nounForms": {
+              "second": "sólar",
+              "third": "sólir"
+          }
+      },
+      {
+          "oldNorseWord": "sögn",
+          "englishTranslation": "tale, saga",
+          "russianTranslation": "рассказ, сказание",
+          "type": "noun",
+          "gender": "feminine",
+          "base": "sagn",
+          "declension": "i",
+          "definition": "A narrative or story, especially one recounting historical or mythological events.",
+          "examples": [
+              "Sögnin segir af hetjum og goðum. (The tale tells of heroes and gods.)"
+          ],
+          "nounForms": {
+              "second": "sagnar",
+              "third": "sagnir"
+          }
+      },
+      {
+          "oldNorseWord": "vættr",
+          "englishTranslation": "creature, spirit",
+          "russianTranslation": "существо, дух",
+          "type": "noun",
+          "gender": "feminine",
+          "base": "vættj",
+          "declension": "a",
+          "definition": "A being or entity, often supernatural in nature, such as a spirit or demon.",
+          "examples": [
+              "Vættir bjuggu í skóginum. (Creatures lived in the forest.)"
+          ],
+          "nounForms": {
+              "second": "vættar",
+              "third": "vættir"
+          }
+      },
+      {
+          "oldNorseWord": "fjall",
+          "englishTranslation": "mountain",
+          "russianTranslation": "гора",
+          "type": "noun",
+          "gender": "neuter",
+          "definition": "A large natural elevation of the earth's surface rising abruptly from the surrounding level.",
+          "examples": [
+              "Fjall rís hár yfir dalinn. (The mountain rises high above the valley.)"
+          ],
+          "nounForms": {
+              "second": "fjalls",
+              "third": "fjöll"
+          }
+      },
+      {
+          "oldNorseWord": "goð",
+          "englishTranslation": "god, deity",
+          "russianTranslation": "бог, Бог",
+          "type": "noun",
+          "gender": "neuter",
+          "definition": "A superhuman being or spirit worshiped as having power over nature or human fortunes.",
+          "examples": [
+              "Goðin voru dýrkuð af víkingum. (The gods were worshiped by the Vikings.)"
+          ],
+          "nounForms": {
+              "second": "goðs",
+              "third": "goð"
+          }
+      },
+      {
+          "oldNorseWord": "norðrland",
+          "englishTranslation": "northern country",
+          "russianTranslation": "северная (скандинавская) страна",
+          "type": "noun",
+          "gender": "neuter",
+          "definition": "A land or region situated in the north, often referring to Scandinavian countries.",
+          "examples": [
+              "Norðrland var þekkt fyrir harða vetr. (The northern country was known for its harsh winters.)"
+          ],
+          "nounForms": {
+              "second": "lands",
+              "third": "lönd"
+          }
+      },
+      {
+          "oldNorseWord": "skipti",
+          "englishTranslation": "exchange, dealings",
+          "russianTranslation": "общение, дела",
+          "type": "noun",
+          "gender": "neuter",
+          "definition": "The act of giving one thing and receiving another in return; interaction or activities involving other people.",
+          "examples": [
+              "Skipti þeirra voru góð. (Their dealings were good.)"
+          ],
+          "nounForms": {
+              "second": "skiptis",
+              "third": "skipti"
+          }
+      },
+      {
+          "oldNorseWord": "tún",
+          "englishTranslation": "enclosed field, farmyard",
+          "russianTranslation": "тун, двор",
+          "type": "noun",
+          "gender": "neuter",
+          "definition": "An enclosed piece of ground, typically around a farmhouse or manor.",
+          "examples": [
+              "Tún var gróðursælt og fallegt. (The enclosed field was fertile and beautiful.)"
+          ],
+          "nounForms": {
+              "second": "túns",
+              "third": "tún"
+          }
+      },
+      {
+          "oldNorseWord": "veðr",
+          "englishTranslation": "weather, wind",
+          "russianTranslation": "погода, ветер",
+          "type": "noun",
+          "gender": "neuter",
+          "definition": "The state of the atmosphere at a place and time, including wind, temperature, cloudiness, moisture, and pressure.",
+          "examples": [
+              "Veðr var skiftandi þennan dag. (The weather was changing that day.)"
+          ],
+          "nounForms": {
+              "second": "veðrs",
+              "third": "veðr"
+          }
+      },
+      {
+          "oldNorseWord": "öræfi",
+          "englishTranslation": "wilderness, desert",
+          "russianTranslation": "пустыня, дикая местность",
+          "type": "noun",
+          "gender": "neuter",
+          "definition": "An uninhabited and desolate region, often characterized by harsh conditions and sparse vegetation.",
+          "examples": [
+              "Öræfin voru víðfeðm og óbyggð. (The wilderness was vast and uninhabited.)"
+          ]
+      },
+      {
+          "oldNorseWord": "bólstaðr",
+          "englishTranslation": "residence",
+          "russianTranslation": "местожительство",
+          "type": "noun",
+          "gender": "masculine",
+          "definition": "A place where someone lives; a dwelling or home.",
+          "examples": [
+              "Bólstaðurinn hans var í litlu þorpi. (His residence was in a small village.)"
+          ],
+          "nounForms": {
+              "second": "bólstaðar",
+              "third": "bólstaðir"
+          }
+      },
+      {
+          "oldNorseWord": "drengr",
+          "englishTranslation": "boy, warrior",
+          "russianTranslation": "парень, воин",
+          "type": "noun",
+          "gender": "masculine",
+          "base": "dreng",
+          "declension": "i",
+          "definition": "A young man or a warrior, often connoting bravery and honor.",
+          "examples": [
+              "Drengrinn var hetja í orrustunni. (The boy was a hero in the battle.)"
+          ],
+          "nounForms": {
+              "second": "drengjar",
+              "third": "drengir"
+          }
+      },
+      {
+          "oldNorseWord": "fjörðr",
+          "englishTranslation": "fjord; district by a fjord",
+          "russianTranslation": "фьорд; район, прилегающий к фьорду",
+          "type": "noun",
+          "gender": "masculine",
+          "base": "fjarð",
+          "declension": "u",
+          "definition": "A long, narrow, deep inlet of the sea between high cliffs, typically formed by submergence of a glaciated valley.",
+          "examples": [
+              "Fjörðurinn var umkringdur háum fjöllum. (The fjord was surrounded by high mountains.)"
+          ],
+          "nounForms": {
+              "second": "fjarðar",
+              "third": "firðir"
+          }
+      },
+      {
+          "oldNorseWord": "leifr",
+          "englishTranslation": "heir",
+          "russianTranslation": "наследник",
+          "type": "noun",
+          "gender": "masculine",
+          "base": "leif",
+          "declension": "a",
+          "definition": "A person legally entitled to the property or rank of another on that person's death.",
+          "examples": [
+              "Leifr tók við búi eftir föður sinn. (The heir took over the estate after his father.)"
+          ],
+          "nounForms": {
+              "second": "leifs",
+              "third": "leifar"
+          }
+      },
+      {
+          "oldNorseWord": "saurr",
+          "englishTranslation": "dirt, filth",
+          "russianTranslation": "дерьмо, грязь",
+          "type": "noun",
+          "gender": "masculine",
+          "base": "saur",
+          "declension": "a",
+          "definition": "Substance that soils or defiles; mud or fecal matter.",
+          "examples": [
+              "Saurr var á fötum hans eftir vinnuna. (There was dirt on his clothes after work.)"
+          ],
+          "nounForms": {
+              "second": "saurs"
+          }
+      },
+      {
+          "oldNorseWord": "skörungr",
+          "englishTranslation": "notable, distinguished person",
+          "russianTranslation": "выдающийся (знаменитый, достойный и т.д.) человек",
+          "type": "noun",
+          "gender": "masculine",
+          "base": "skörung",
+          "declension": "a",
+          "definition": "A person who is eminent or outstanding in a particular sphere or profession.",
+          "examples": [
+              "Skörungrinn var virtur meðal manna. (The distinguished person was respected among people.)"
+          ],
+          "nounForms": {
+              "second": "skörungs",
+              "third": "skörungar"
+          }
+      },
+      {
+          "oldNorseWord": "horn",
+          "englishTranslation": "horn, corner",
+          "russianTranslation": "рог, угол",
+          "type": "noun",
+          "gender": "neuter",
+          "base": "horn",
+          "definition": "A hard, pointed, often curved part that grows from the top of the head of some animals, or an angular or pointed projection.",
+          "examples": [
+              "Búrinu var útbúið með hornum. (The bull was equipped with horns.)",
+              "Hann stóð í horni herbergisins. (He stood in the corner of the room.)"
+          ],
+          "nounForms": {
+              "second": "horns",
+              "third": "horn"
+          }
+      },
+      {
+          "oldNorseWord": "nafn",
+          "englishTranslation": "name, title",
+          "russianTranslation": "имя, название",
+          "type": "noun",
+          "gender": "neuter",
+          "base": "nafn",
+          "definition": "A word or set of words by which a person, animal, place, or thing is known, addressed, or referred to.",
+          "examples": [
+              "Nafn hans var mikið þekkt. (His name was well known.)"
+          ],
+          "nounForms": {
+              "second": "nafns",
+              "third": "nöfn"
+          }
+      },
+      {
+          "oldNorseWord": "þing",
+          "englishTranslation": "assembly, council",
+          "russianTranslation": "тинг, вече",
+          "type": "noun",
+          "gender": "neuter",
+          "base": "þing",
+          "definition": "An assembly or council, especially in the context of a governance or decision-making body.",
+          "examples": [
+              "Menn komu saman á þingi til að ræða málin. (People came together at the assembly to discuss matters.)"
+          ],
+          "nounForms": {
+              "second": "þings",
+              "third": "þing"
+          }
+      },
+      {
+          "oldNorseWord": "dís",
+          "englishTranslation": "woman, goddess",
+          "russianTranslation": "женщина, богиня",
+          "type": "noun",
+          "gender": "feminine",
+          "base": "dísj",
+          "declension": "a",
+          "definition": "A female being, often referring to a goddess or a supernatural woman in Norse mythology.",
+          "examples": [
+              "Dísir voru álitnar verndarar. (The goddesses were considered protectors.)"
+          ],
+          "nounForms": {
+              "second": "dísar",
+              "third": "dísir"
+          }
+      },
+      {
+          "oldNorseWord": "hildr",
+          "englishTranslation": "battle, fight",
+          "russianTranslation": "битва, бой",
+          "type": "noun",
+          "gender": "feminine",
+          "base": "hildj",
+          "declension": "a",
+          "definition": "A conflict or struggle between armies, groups, or individuals.",
+          "examples": [
+              "Hildr var hörð og blóðug. (The battle was fierce and bloody.)"
+          ],
+          "nounForms": {
+              "second": "hildar",
+              "third": "hildir"
+          }
+      },
+      {
+          "oldNorseWord": "hlíð",
+          "englishTranslation": "slope, hillside",
+          "russianTranslation": "склон, скат",
+          "type": "noun",
+          "gender": "feminine",
+          "base": "hlíð",
+          "declension": "i",
+          "definition": "The side of a hill or mountain; a piece of ground lying at a particular angle.",
+          "examples": [
+              "Hús þeirra var á hlíðinni. (Their house was on the hillside.)"
+          ],
+          "nounForms": {
+              "second": "hlíðar",
+              "third": "hlíðir"
+          }
+      },
+      {
+          "oldNorseWord": "leið",
+          "englishTranslation": "way, path",
+          "russianTranslation": "путь, дорога",
+          "type": "noun",
+          "gender": "feminine",
+          "base": "leið",
+          "declension": "i",
+          "definition": "A route or direction followed to reach a destination; a track or course.",
+          "examples": [
+              "Leiðin var löng og torfær. (The way was long and difficult.)"
+          ],
+          "nounForms": {
+              "second": "leiðar",
+              "third": "leiðir"
+          }
+      },
+      {
+          "oldNorseWord": "dalr",
+          "englishTranslation": "valley, dale",
+          "russianTranslation": "долина, дол",
+          "type": "noun",
+          "gender": "masculine",
+          "base": "dal",
+          "declension": "i",
+          "definition": "A low area of land between hills or mountains, typically with a river or stream flowing through it.",
+          "examples": [
+              "Dalurinn var gróinn með blómum. (The valley was filled with flowers.)"
+          ],
+          "nounForms": {
+              "second": "dals",
+              "third": "dalir"
+          }
+      },
+      {
+          "oldNorseWord": "grímr",
+          "englishTranslation": "hood, mask",
+          "russianTranslation": "капюшон, маска",
+          "type": "noun",
+          "gender": "masculine",
+          "base": "grím",
+          "declension": "a",
+          "definition": "A covering for the head and neck, typically part of a coat or cloak; a covering worn on the face to conceal one's identity.",
+          "examples": [
+              "Grímrinn var hluti af búningi hans. (The hood was part of his outfit.)"
+          ],
+          "nounForms": {
+              "second": "gríms",
+              "third": "grímar"
+          }
+      },
+      {
+          "oldNorseWord": "helgi",
+          "englishTranslation": "holiness, sanctity",
+          "russianTranslation": "святость, священность",
+          "type": "noun",
+          "gender": "masculine",
+          "base": "helgi",
+          "definition": "The state of being holy or sacred; divine quality.",
+          "examples": [
+              "Helgi staðarins var viðurkennd af öllum. (The sanctity of the place was recognized by all.)"
+          ],
+          "nounForms": {
+              "second": "helga",
+              "third": "helgar"
+          },
+          "cases": {
+              "accusative": {
+                  "singular": "helga",
+                  "plural": "helga"
+              },
+              "dative": {
+                  "singular": "helga",
+                  "plural": "helgana"
+              },
+              "genitive": {
+                  "plural": "helga"
+              }
+          }
+      },
+      {
+          "oldNorseWord": "hvammr",
+          "englishTranslation": "small valley, hollow",
+          "russianTranslation": "небольшая долина, лощина",
+          "type": "noun",
+          "gender": "masculine",
+          "base": "hvamm",
+          "declension": "a",
+          "definition": "A small, sheltered valley or recess in a hillside.",
+          "examples": [
+              "Hvammurinn var fagur og friðsæll. (The hollow was beautiful and peaceful.)"
+          ],
+          "nounForms": {
+              "second": "hvamms",
+              "third": "hvammar"
+          }
+      },
+      {
+          "oldNorseWord": "hoengr",
+          "englishTranslation": "salmon, male salmon",
+          "russianTranslation": "лосось, самец лосося",
+          "type": "noun",
+          "gender": "masculine",
+          "base": "hoeng",
+          "declension": "i",
+          "definition": "A type of large fish known for its pink flesh, or specifically a male of the species.",
+          "examples": [
+              "Hoengurinn var veiddur í ánni. (The salmon was caught in the river.)"
+          ],
+          "nounForms": {
+              "second": "hoengs",
+              "third": "hoengar"
+          }
+      },
+      {
+          "oldNorseWord": "ketill",
+          "englishTranslation": "kettle, cauldron",
+          "russianTranslation": "котёл, котелок",
+          "type": "noun",
+          "gender": "masculine",
+          "base": "katil",
+          "declension": "a",
+          "definition": "A vessel for boiling liquids or cooking food, typically made of metal and with a lid.",
+          "examples": [
+              "Ketillinn brann á eldinum. (The kettle boiled on the fire.)"
+          ],
+          "nounForms": {
+              "second": "ketils",
+              "third": "katlar"
+          },
+          "cases": {
+              "accusative": {
+                  "singular": "ketil",
+                  "plural": "katla"
+              },
+              "dative": {
+                  "singular": "katli",
+                  "plural": "kötlum"
+              },
+              "genitive": {
+                  "plural": "katla"
+              }
+          }
+      },
+      {
+          "oldNorseWord": "landnámsmaðr",
+          "englishTranslation": "settler, colonist",
+          "russianTranslation": "первопоселенец, колонист",
+          "type": "noun",
+          "gender": "masculine",
+          "definition": "A person who settles in a new colony or moves into new country.",
+          "examples": [
+              "Landnámsmenn komu frá Noregi. (The settlers came from Norway.)"
+          ],
+          "cases": {
+              "nominative": {
+                  "singular": "landnámsmaðr",
+                  "plural": "landnámsmenn"
+              },
+              "accusative": {
+                  "singular": "landnámsmann",
+                  "plural": "landnámsmenn"
+              },
+              "dative": {
+                  "singular": "landnámsmanni",
+                  "plural": "landnámsmönnum"
+              },
+              "genitive": {
+                  "singular": "landnámsmanns",
+                  "plural": "landnámsmanna"
+              }
+          }
+      },
+      {
+          "oldNorseWord": "laugr",
+          "englishTranslation": "hot spring, bath",
+          "russianTranslation": "горячий источник, баня",
+          "type": "noun",
+          "gender": "masculine",
+          "base": "laug",
+          "declension": "a",
+          "definition": "A natural spring of water that is heated geothermally; a place for bathing.",
+          "examples": [
+              "Laugar voru vinsælar meðal víkinga. (The hot springs were popular among the Vikings.)"
+          ],
+          "nounForms": {
+              "second": "laugs",
+              "third": "laugar"
+          }
+      },
+      {
+          "oldNorseWord": "mundr",
+          "englishTranslation": "hand",
+          "russianTranslation": "рука",
+          "type": "noun",
+          "gender": "masculine",
+          "base": "mund",
+          "declension": "a",
+          "definition": "The end part of a person's arm beyond the wrist, including the palm, fingers, and thumb.",
+          "examples": [
+              "Mundr hans var sterk og þétt. (His hand was strong and firm.)"
+          ],
+          "nounForms": {
+              "second": "mundar",
+              "third": "mundar"
+          }
+      },
+      {
+          "oldNorseWord": "óss",
+          "englishTranslation": "estuary, river mouth",
+          "russianTranslation": "устье (реки или озера)",
+          "type": "noun",
+          "gender": "masculine",
+          "base": "ós",
+          "declension": "a",
+          "definition": "The part of a river where it meets the sea; the mouth of a river.",
+          "examples": [
+              "Óssinn var fullur af fiski. (The estuary was full of fish.)"
+          ],
+          "nounForms": {
+              "second": "óss",
+              "third": "ósar"
+          }
+      },
+      {
+          "oldNorseWord": "valdr",
+          "englishTranslation": "ruler, sovereign",
+          "russianTranslation": "правитель, властелин",
+          "type": "noun",
+          "gender": "masculine",
+          "base": "vald",
+          "declension": "a",
+          "definition": "A person exercising government or dominion.",
+          "examples": [
+              "Valdrinn réði ríkinu með réttlæti. (The ruler governed the kingdom with justice.)"
+          ],
+          "nounForms": {
+              "second": "valds",
+              "third": "valdar"
+          }
+      },
+      {
+          "oldNorseWord": "völlr",
+          "englishTranslation": "field, plain",
+          "russianTranslation": "поле, равнина",
+          "type": "noun",
+          "gender": "masculine",
+          "base": "vall",
+          "declension": "u",
+          "definition": "An open area of land, especially one planted with crops or pasture, typically bounded by hedges or fences.",
+          "examples": [
+              "Völlurinn var þakinn með grasi. (The field was covered with grass.)"
+          ],
+          "nounForms": {
+              "second": "vallar",
+              "third": "vellir"
+          },
+          "cases": {
+              "accusative": {
+                  "singular": "völl",
+                  "plural": "völlu"
+              },
+              "dative": {
+                  "singular": "velli",
+                  "plural": "völlum"
+              }
+          }
+      },
+      {
+          "oldNorseWord": "bú",
+          "englishTranslation": "farm, dwelling",
+          "russianTranslation": "хозяйство, жилище",
+          "type": "noun",
+          "gender": "neuter",
+          "base": "bú",
+          "definition": "A place where someone lives and works, especially a farm or homestead.",
+          "examples": [
+              "Búið var stórt með mörgum dýrum. (The farm was large with many animals.)"
+          ],
+          "nounForms": {
+              "second": "bús",
+              "third": "bú"
+          }
+      },
+      {
+          "oldNorseWord": "fljót",
+          "englishTranslation": "river, stream",
+          "russianTranslation": "река",
+          "type": "noun",
+          "gender": "neuter",
+          "base": "fljót",
+          "definition": "A large natural flow of water moving along a definite path, usually into a sea, lake, or another river.",
+          "examples": [
+              "Fljótið rennur gegnum dalinn. (The river flows through the valley.)"
+          ],
+          "nounForms": {
+              "second": "fljóts",
+              "third": "fljót"
+          }
+      },
+      {
+          "oldNorseWord": "hof",
+          "englishTranslation": "temple, shrine",
+          "russianTranslation": "храм, капище",
+          "type": "noun",
+          "gender": "neuter",
+          "base": "hof",
+          "definition": "A building dedicated to the worship of deities in Norse paganism.",
+          "examples": [
+              "Hofið var helgað goðunum. (The temple was dedicated to the gods.)"
+          ],
+          "nounForms": {
+              "second": "hofs",
+              "third": "hof"
+          }
+      },
+      {
+          "oldNorseWord": "nes",
+          "englishTranslation": "cape, peninsula",
+          "russianTranslation": "мыс, полуостров",
+          "type": "noun",
+          "gender": "neuter",
+          "base": "nesj",
+          "definition": "A piece of land projecting into a body of water, typically a sea or lake, forming a headland or peninsula.",
+          "examples": [
+              "Nesið var þekkt fyrir sínar fallegar ströndur. (The peninsula was known for its beautiful beaches.)"
+          ],
+          "nounForms": {
+              "second": "ness",
+              "third": "nes"
+          },
+          "cases": {
+              "accusative": {
+                  "singular": "nes"
+              },
+              "dative": {
+                  "plural": "nesjum"
+              },
+              "genitive": {
+                  "plural": "nesja"
+              }
+          }
+      },
+      {
+          "oldNorseWord": "skinn",
+          "englishTranslation": "skin, hide",
+          "russianTranslation": "кожа, шкура",
+          "type": "noun",
+          "gender": "neuter",
+          "base": "skinn",
+          "definition": "The material forming the outer surface of an animal's body, or a piece of this material.",
+          "examples": [
+              "Skinnið var notað til að búa til föt. (The hide was used to make clothes.)"
+          ],
+          "nounForms": {
+              "second": "skinns",
+              "third": "skinn"
+          }
+      },
+      {
+          "oldNorseWord": "almenning",
+          "englishTranslation": "common land",
+          "russianTranslation": "общинное угодье",
+          "type": "noun",
+          "gender": "feminine",
+          "base": "almenning",
+          "declension": "a",
+          "definition": "Land owned collectively or in common by members of a community or society.",
+          "examples": [
+              "Almenningur var notaður fyrir beit. (The common land was used for grazing.)"
+          ],
+          "nounForms": {
+              "second": "almenningar"
+          },
+          "cases": {
+              "accusative": {
+                  "singular": "almenningu",
+                  "plural": "almenningu"
+              },
+              "dative": {
+                  "singular": "almenningu"
+              },
+              "genitive": {
+                  "plural": "nesja"
+              }
+          }
+      },
+      {
+          "oldNorseWord": "auðr",
+          "englishTranslation": "fate, destiny",
+          "russianTranslation": "судьба",
+          "type": "noun",
+          "gender": "feminine",
+          "base": "auðj",
+          "declension": "a",
+          "definition": "A predetermined course of events considered as something beyond human power or control.",
+          "examples": [
+              "Auður hans var óræður. (His fate was uncertain.)"
+          ],
+          "nounForms": {
+              "second": "auðar",
+              "third": "auðar"
+          }
+      },
+      {
+          "oldNorseWord": "bók",
+          "englishTranslation": "book, woven tapestry",
+          "russianTranslation": "книга, полотно с вытканным рисунком",
+          "type": "noun",
+          "gender": "feminine",
+          "base": "bók",
+          "definition": "A written or printed work consisting of pages glued or sewn together along one side; a piece of fabric with woven designs.",
+          "examples": [
+              "Bókin fjallaði um sögu víkinga. (The book was about the history of the Vikings.)"
+          ],
+          "nounForms": {
+              "second": "bókar",
+              "third": "boekr"
+          }
+      },
+      {
+          "oldNorseWord": "ey",
+          "englishTranslation": "island",
+          "russianTranslation": "остров",
+          "type": "noun",
+          "gender": "feminine",
+          "base": "eyj",
+          "declension": "a",
+          "definition": "A piece of land surrounded by water.",
+          "examples": [
+              "Eyin var lítil en falleg. (The island was small but beautiful.)"
+          ],
+          "nounForms": {
+              "second": "eyjar",
+              "third": "eyjar"
+          },
+          "cases": {
+              "accusative": {
+                  "singular": "ey"
+              },
+              "dative": {
+                  "singular": "eyju",
+                  "plural": "eyjum"
+              },
+              "genitive": {
+                  "plural": "eyja"
+              }
+          }
+      },
+      {
+          "oldNorseWord": "mýrr",
+          "englishTranslation": "bog, marsh",
+          "russianTranslation": "болото",
+          "type": "noun",
+          "gender": "feminine",
+          "base": "mýrj",
+          "declension": "a",
+          "definition": "Wet, muddy ground too soft to support a heavy body; a swamp.",
+          "examples": [
+              "Mýrin var þekkt fyrir sínar villtjur. (The marsh was known for its wild animals.)"
+          ],
+          "nounForms": {
+              "second": "mýrar",
+              "third": "mýrar"
+          }
+      },
+      {
+          "oldNorseWord": "strönd",
+          "englishTranslation": "shore, coast",
+          "russianTranslation": "берег, побережье",
+          "type": "noun",
+          "gender": "feminine",
+          "base": "strand",
+          "definition": "The land along the edge of a sea, lake, or other large body of water.",
+          "examples": [
+              "Ströndin var þakið með hvítum sandi. (The shore was covered with white sand.)"
+          ],
+          "nounForms": {
+              "second": "strandar",
+              "third": "strendr/strandir"
+          },
+          "cases": {
+              "accusative": {
+                  "singular": "strönd"
+              },
+              "dative": {
+                  "singular": "strönd",
+                  "plural": "ströndum"
+              }
+          }
+      },
+      {
+          "oldNorseWord": "sveit",
+          "englishTranslation": "district, village",
+          "russianTranslation": "община, деревня",
+          "type": "noun",
+          "gender": "feminine",
+          "base": "sveit",
+          "declension": "i",
+          "definition": "A rural community or region; a small settlement or village.",
+          "examples": [
+              "Sveitin var friðsæl og falleg. (The village was peaceful and beautiful.)"
+          ],
+          "nounForms": {
+              "second": "sveitar",
+              "third": "sveitir"
+          }
+      },
+      {
+             "oldNorseWord": "barn",
+             "englishTranslation": "child, offspring",
+             "russianTranslation": "ребёнок, дитя",
+             "type": "noun",
+             "gender": "neuter",
+             "base": "barn",
+             "definition": "A young human being below the age of puberty or below the legal age of majority.",
+             "examples": [
+                 "Barnið lék sér fyrir utan húsið. (The child played outside the house.)"
+             ],
+             "nounForms": {
+                 "second": "barns",
+                 "third": "börn"
+             }
+         },
+         {
+             "oldNorseWord": "dráp",
+             "englishTranslation": "killing, murder",
+             "russianTranslation": "убийство",
+             "type": "noun",
+             "gender": "neuter",
+             "base": "dráp",
+             "definition": "The act of causing the death of a person, especially unlawfully.",
+             "examples": [
+                 "Drápið var rannsakað af lögreglunni. (The murder was investigated by the police.)"
+             ],
+             "nounForms": {
+                 "second": "dráps",
+                 "third": "dráp"
+             }
+         },
+         {
+             "oldNorseWord": "fall",
+             "englishTranslation": "fall, downfall",
+             "russianTranslation": "падение, гибель",
+             "type": "noun",
+             "gender": "neuter",
+             "base": "fall",
+             "definition": "The act of falling or collapsing; a decline or failure.",
+             "examples": [
+                 "Fall trésins var heyrt í skóginum. (The fall of the tree was heard in the forest.)"
+             ],
+             "nounForms": {
+                 "second": "falls",
+                 "third": "föll"
+             }
+         },
+         {
+             "oldNorseWord": "hraun",
+             "englishTranslation": "lava, lava field",
+             "russianTranslation": "лава, лавовое поле",
+             "type": "noun",
+             "gender": "neuter",
+             "base": "hraun",
+             "definition": "Molten rock expelled by a volcano during an eruption; a field covered by lava.",
+             "examples": [
+                 "Hraunið var enn heitt og ósnertanlegt. (The lava was still hot and untouchable.)"
+             ],
+             "nounForms": {
+                 "second": "hrauns",
+                 "third": "hraun"
+             }
+         },
+         {
+             "oldNorseWord": "lón",
+             "englishTranslation": "lagoon, coastal lake",
+             "russianTranslation": "лагуна, прибрежное озеро",
+             "type": "noun",
+             "gender": "neuter",
+             "base": "lón",
+             "definition": "A shallow body of water separated from a larger body of water by barrier islands or reefs.",
+             "examples": [
+                 "Lónið var vinsælt ferðamannastaður. (The lagoon was a popular tourist destination.)"
+             ],
+             "nounForms": {
+                 "second": "lóns",
+                 "third": "lón"
+             }
+         },
+         {
+             "oldNorseWord": "bera",
+             "englishTranslation": "she-bear",
+             "russianTranslation": "медведица",
+             "type": "noun",
+             "gender": "feminine",
+             "base": "bera",
+             "declension": "a",
+             "definition": "A female bear.",
+             "examples": [
+                 "Bera var að leita matar fyrir unga sína. (The she-bear was searching for food for her cubs.)"
+             ],
+             "nounForms": {
+                 "second": "beru",
+                 "third": "berur"
+             }
+         },
+         {
+             "oldNorseWord": "björg",
+             "englishTranslation": "help, support",
+             "russianTranslation": "помощь, поддержка",
+             "type": "noun",
+             "gender": "feminine",
+             "base": "bjarg",
+             "declension": "i",
+             "definition": "The act of giving assistance or aid; support given to someone in a difficult situation.",
+             "examples": [
+                 "Björgin kom rétt tímanlega. (The help arrived just in time.)"
+             ],
+             "nounForms": {
+                 "second": "bjargar",
+                 "third": "bjargir"
+             }
+         },
+         {
+             "oldNorseWord": "saga",
+             "englishTranslation": "saga, story",
+             "russianTranslation": "сага, рассказ",
+             "type": "noun",
+             "gender": "feminine",
+             "base": "saga",
+             "declension": "i",
+             "definition": "A long, involved story, account, or series of incidents, often historical or legendary in nature.",
+             "examples": [
+                 "Saga var sögð við eldstæðið. (A saga was told by the hearth.)"
+             ],
+             "nounForms": {
+                 "second": "sögu",
+                 "third": "sögur"
+             }
+         },
+         {
+             "oldNorseWord": "unn",
+             "englishTranslation": "wave, billow",
+             "russianTranslation": "волна, вал",
+             "type": "noun",
+             "gender": "feminine",
+             "base": "unnj",
+             "declension": "a",
+             "definition": "A long body of water curling into an arched form and breaking on the shore.",
+             "examples": [
+                 "Unnirnar voru háar á sjónum. (The waves were high on the sea.)"
+             ],
+             "nounForms": {
+                 "second": "unnar",
+                 "third": "unnir"
+             }
+         },
+    {
     "oldNorseWord": "hann",
     "englishTranslation": "he",
     "russianTranslation": "он / она",

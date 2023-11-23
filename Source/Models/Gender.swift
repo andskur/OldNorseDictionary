@@ -43,7 +43,7 @@ struct ActiveGenders: Codable {
     }
 }
 
-enum Gender: String, CaseIterable{
+enum Gender: String, CaseIterable, Codable {
     case masculine
     case neuter
     case feminine
