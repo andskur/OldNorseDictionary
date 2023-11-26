@@ -790,7 +790,14 @@ struct Word: Codable, Identifiable {
                     
                     nominativeCase += "it"
                 case .feminine:
-                    nominativeCase += "in"
+                    if nominativeCase.last == "a" {
+                        nominativeCase += "n"
+                    } else {
+                        if  nominativeCase.last == "i" {
+                            nominativeCase.removeLast()
+                        }
+                        nominativeCase += "in"
+                    }
                 default:
                     nominativeCase += "inn"
                 }
@@ -863,6 +870,11 @@ struct Word: Codable, Identifiable {
                             accusativeCase! += "i"
                         }
                     }
+                } else {
+                    if accusativeCase?.last == "a" {
+                        accusativeCase?.removeLast()
+                        accusativeCase! += "u"
+                    }
                 }
             case .neuter:
                 if accusativeCase?.last == "j" {
@@ -890,7 +902,14 @@ struct Word: Codable, Identifiable {
                     
                     accusativeCase! += "it"
                 case .feminine:
-                    accusativeCase! += "ina"
+                    if accusativeCase!.last == "u" {
+                        accusativeCase! += "na"
+                    } else {
+                        if  accusativeCase!.last == "i" {
+                            accusativeCase!.removeLast()
+                        }
+                        accusativeCase! += "ina"
+                    }
                 default:
                     if accusativeCase?.last == "i" {
                         accusativeCase?.removeLast()
@@ -982,6 +1001,11 @@ struct Word: Codable, Identifiable {
                                 dativeCase! += "i"
                             }
                         }
+                    } else {
+                        if dativeCase?.last == "a" {
+                            dativeCase?.removeLast()
+                            dativeCase! += "u"
+                        }
                     }
                 case .neuter:
                     if dativeCase!.hasSuffix("in") {
@@ -1028,7 +1052,14 @@ struct Word: Codable, Identifiable {
                     
                     dativeCase! += "inu"
                 case .feminine:
-                    dativeCase! += "inni"
+                    if dativeCase!.last == "u" {
+                        dativeCase! += "nni"
+                    } else {
+                        if  dativeCase!.last == "i" {
+                            dativeCase!.removeLast()
+                        }
+                        dativeCase! += "inni"
+                    }
                 default:
                     if let decl = declension {
                         if decl == "i" || decl == "u" || decl == "a" {
@@ -1077,7 +1108,12 @@ struct Word: Codable, Identifiable {
                         if dativeCase!.hasSuffix("in") {
                             dativeCase!.removeLast(2)
                             dativeCase! += "n"
+                        } else if dativeCase!.last == "a" {
+                            dativeCase?.removeLast()
+                        } else if dativeCase!.last == "i" {
+                            dativeCase?.removeLast()
                         }
+                        
                         
                         dativeCase! += "um"
                     }
@@ -1142,7 +1178,14 @@ struct Word: Codable, Identifiable {
             if article {
                 switch gender {
                 case .feminine:
-                    genitiveCase! += "innar"
+                    if genitiveCase!.last == "u" {
+                        genitiveCase! += "nnar"
+                    } else {
+                        if  genitiveCase!.last == "i" {
+                            genitiveCase!.removeLast()
+                        }
+                        genitiveCase! += "innar"
+                    }
                 default:
                     genitiveCase! += "ins"
                 }
@@ -1178,6 +1221,8 @@ struct Word: Codable, Identifiable {
                         if genitiveCase!.hasSuffix("in") {
                             genitiveCase!.removeLast(2)
                             genitiveCase! += "n"
+                        } else if genitiveCase!.last == "i" {
+                            genitiveCase?.removeLast()
                         }
                         
                         genitiveCase! += "a"

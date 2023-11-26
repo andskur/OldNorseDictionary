@@ -1353,6 +1353,11 @@
       "nounForms": {
           "second": "konu",
           "third": "konur"
+      },
+      "cases": {
+          "genitive": {
+              "plural": "kvenna"
+          }
       }
   },
   {
@@ -1516,6 +1521,16 @@
       "nounForms": {
           "second": "mjaðar",
           "third": "miðir"
+      },
+      "cases": {
+          "accusative": {
+              "singular": "mjöð",
+              "plural": "mjöðu"
+          },
+          "dative": {
+              "singular": "miði",
+              "plural": "mjöðum"
+          }
       }
   },
   {
@@ -1716,6 +1731,15 @@
       "nounForms": {
           "second": "hallar",
           "third": "hallir"
+      },
+      "cases": {
+          "accusative": {
+              "singular": "höll",
+          },
+          "dative": {
+              "singular": "höll",
+              "plural": "höllum"
+          }
       }
   },
   {
@@ -1875,6 +1899,14 @@
       "nounForms": {
           "second": "ríkis",
           "third": "ríki"
+      },
+      "cases": {
+          "dative": {
+              "plural": "ríkjum"
+          },
+          "genitive": {
+              "plural": "ríkja"
+          }
       }
   },
   {
@@ -2979,9 +3011,6 @@
               },
               "dative": {
                   "singular": "almenningu"
-              },
-              "genitive": {
-                  "plural": "nesja"
               }
           }
       },
@@ -3254,7 +3283,55 @@
                  "third": "unnir"
              }
          },
-    {
+         {
+             "oldNorseWord": "Væringi",
+             "englishTranslation": "Varangian, viking",
+             "russianTranslation": "вэринг, варяг",
+             "type": "noun",
+             "gender": "masculine",
+             "base": "Væringi",
+             "definition": "A member of the Varangians, Norsemen who served as mercenaries in Byzantium and other parts of Eastern Europe.",
+             "examples": [
+                 "Væringinn fór til Miklagarðs til að þjóna keisaranum. (The Varangian went to Constantinople to serve the emperor.)"
+             ],
+             "nounForms": {
+                 "second": "Væringja",
+                 "third": "Væringjar"
+             }
+         },
+         {
+             "oldNorseWord": "lið",
+             "englishTranslation": "troop, group",
+             "russianTranslation": "войско, группа",
+             "type": "noun",
+             "gender": "neuter",
+             "base": "lið",
+             "definition": "A body of soldiers, warriors, or any organized group of people.",
+             "examples": [
+                 "Liðið var tilbúið til orrustu. (The troop was ready for battle.)"
+             ],
+             "nounForms": {
+                 "second": "liðs",
+                 "third": "lið"
+             }
+         },
+         {
+             "oldNorseWord": "rit",
+             "englishTranslation": "writing, work",
+             "russianTranslation": "произведение, сочинение",
+             "type": "noun",
+             "gender": "neuter",
+             "base": "rit",
+             "definition": "A piece of writing, especially a book or other formal written work.",
+             "examples": [
+                 "Ritið var mikilvæg heimild um sögu tímabilsins. (The writing was an important source on the history of the period.)"
+             ],
+             "nounForms": {
+                 "second": "rits",
+                 "third": "rit"
+             }
+         },
+{
     "oldNorseWord": "hann",
     "englishTranslation": "he",
     "russianTranslation": "он / она",
@@ -5268,6 +5345,28 @@
       "comparative": "sunnarr"
   },
   {
+      "oldNorseWord": "út",
+      "englishTranslation": "out, to sea",
+      "russianTranslation": "наружу, в море",
+      "type": "adverb",
+      "definition": "Towards or in a place outside, especially away from a building or from the shore into the sea.",
+      "examples": [
+          "Þeir fóru út til að veiða fisk. (They went out to catch fish.)",
+          "Hann gekk út úr húsinu. (He walked out of the house.)"
+      ]
+  },
+  {
+      "oldNorseWord": "þangat",
+      "englishTranslation": "there, to that place",
+      "russianTranslation": "туда, до того места",
+      "type": "adverb",
+      "definition": "To or towards that place or point; there.",
+      "examples": [
+          "Þeir ætluðu að ferðast þangat á sumrin. (They planned to travel there in the summer.)",
+          "Hún sendi bréf þangat. (She sent a letter there.)"
+      ]
+  },
+  {
       "oldNorseWord": "ok",
       "englishTranslation": "and, also",
       "russianTranslation": "и, также",
@@ -5613,6 +5712,39 @@
       "examples": [
           "Sáttmáli gerður milli tveggja þjóða. (A treaty made between two nations.)",
           "Milli steins og sleggju. (Between a rock and a hard place.)"
+      ]
+  },
+  {
+      "oldNorseWord": "austan",
+      "englishTranslation": "from the east, to the east of",
+      "russianTranslation": "с востока, к востоку от",
+      "type": "preposition",
+      "definition": "Indicating a direction from the east or a location to the east of something.",
+      "examples": [
+          "Vindurinn kemur austan. (The wind comes from the east.)",
+          "Hann býr austan fjallsins. (He lives to the east of the mountain.)"
+      ]
+  },
+  {
+      "oldNorseWord": "sunnan",
+      "englishTranslation": "from the south, to the south of",
+      "russianTranslation": "с юга, к югу от",
+      "type": "preposition",
+      "definition": "Indicating a direction from the south or a location to the south of something.",
+      "examples": [
+          "Skipið sigldi sunnan. (The ship sailed from the south.)",
+          "Þeir komu sunnan bæjarins. (They came from the south of the town.)"
+      ]
+  },
+  {
+      "oldNorseWord": "vestan",
+      "englishTranslation": "from the west, to the west of",
+      "russianTranslation": "с запада, к западу от",
+      "type": "preposition",
+      "definition": "Indicating a direction from the west or a location to the west of something.",
+      "examples": [
+          "Sólin setur vestan. (The sun sets in the west.)",
+          "Borgin liggur vestan árinnar. (The city lies to the west of the river.)"
       ]
   },
   {
@@ -6517,6 +6649,19 @@
     "verbSecond": "þakka"
   },
   {
+      "oldNorseWord": "liggja",
+      "englishTranslation": "to lie, to be situated",
+      "russianTranslation": "лежать, находиться",
+      "type": "verb",
+      "definition": "To be in or assume a horizontal or resting position on a supporting surface; to be located or placed.",
+      "examples": [
+          "Bókin liggur á borðinu. (The book lies on the table.)",
+          "Þorpið liggur við fjörðinn. (The village is situated by the fjord.)"
+      ],
+      "verbFirst": "liggja",
+      "verbSecond": "ligg"
+  },
+  {
     "oldNorseWord": "fagr",
     "base": "fagr",
     "englishTranslation": "beautiful",
@@ -6546,7 +6691,8 @@
       "dative": {
         "singular": {
           "masculine": "fögrum",
-          "neuter": "fögru"
+          "neuter": "fögru",
+          "feminine": "fögri"
         },
         "plural": {
           "masculine": "fögrum",
@@ -7554,6 +7700,39 @@
     ]
   },
   {
+      "oldNorseWord": "fjarlægr",
+      "englishTranslation": "distant, remote",
+      "russianTranslation": "далёкий, удалённый",
+      "type": "adjective",
+      "base": "fjarlæg",
+      "definition": "Far away in space or time; not near.",
+      "examples": [
+          "Fjarlægur staður var erfitt að ná. (A distant place was hard to reach.)"
+      ]
+  },
+  {
+      "oldNorseWord": "hraustr",
+      "englishTranslation": "valiant, strong",
+      "russianTranslation": "доблестный, сильный",
+      "type": "adjective",
+      "base": "hraust",
+      "definition": "Possessing or showing courage and strength.",
+      "examples": [
+          "Hraustur maðurinn barðist hetjulega. (The valiant man fought heroically.)"
+      ]
+  },
+  {
+      "oldNorseWord": "nálægr",
+      "englishTranslation": "near, close",
+      "russianTranslation": "близкий, близлежащий",
+      "type": "adjective",
+      "base": "nálæg",
+      "definition": "At or to a short distance away; nearby.",
+      "examples": [
+          "Nálægur bærinn var vinalegur. (The nearby town was friendly.)"
+      ]
+  },
+  {
     "oldNorseWord": "beðinn",
     "englishTranslation": "waiting",
     "russianTranslation": "ждущий",
@@ -8430,6 +8609,17 @@
       "examples": ["Hefnðr föður dauði. (The father's death avenged.)"]
   },
   {
+      "oldNorseWord": "leginn",
+      "englishTranslation": "laid, placed",
+      "russianTranslation": "положенный, размещённый",
+      "type": "participle",
+      "definition": "Having been put down or positioned in a specified place or way.",
+      "examples": [
+          "Steinarnir voru legnir í hring. (The stones were laid in a circle.)",
+          "Bókin var legin á hilluna. (The book was placed on the shelf.)"
+      ]
+  },
+  {
     "oldNorseWord": "gefa grið",
     "englishTranslation": "to spare, to pardon",
     "russianTranslation": "пощадить, помиловать",
@@ -8589,5 +8779,17 @@
           "Svá sem áðr segir, hann var mikill höfðingi. (As previously mentioned, he was a great chieftain.)",
           "Eins og svá sem áðr segir, bardaginn var harður. (Just as said before, the battle was fierce.)"
       ]
+  },
+  {
+      "oldNorseWord": "leggja leið sína",
+      "englishTranslation": "to take a direction, to set off",
+      "russianTranslation": "взять направление, отправиться в путь",
+      "type": "phrase",
+      "definition": "To begin a journey or to set off in a particular direction.",
+      "examples": [
+          "Þeir ákváðu að leggja leið sína til norðurs. (They decided to set off to the north.)",
+          "Hún lagði leið sína heim eftir langan dag. (She took the direction home after a long day.)"
+      ]
   }
+
 ]
