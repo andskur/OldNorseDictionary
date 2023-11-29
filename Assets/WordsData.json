@@ -3336,7 +3336,10 @@
     "englishTranslation": "he",
     "russianTranslation": "он / она",
     "definition": "Third-person singular masculine pronoun",
-    "examples": [],
+    "examples": [
+        "Hann gekk til búðarinnar. (He went to the store.)",
+        "Hann sá skipið á fjörðunum. (He saw the ship in the fjords.)"
+    ],
     "type": "pronoun",
     "numbers": {
       "singular": {
@@ -3392,8 +3395,8 @@
     "russianTranslation": "я",
     "definition": "First-person singular pronoun",
     "examples": [
-      "Ek heiti John.",
-      "Ég elska þig."
+        "Ek heiti Ólafur. (I am called Ólafur.)",
+        "Ek fara til borgarinnar. (I am going to the city.)"
     ],
     "type": "pronoun",
     "numbers": {
@@ -3460,8 +3463,8 @@
     "russianTranslation": "ты",
     "definition": "Second-person singular pronoun",
     "examples": [
-      "þú ert vinur minn.",
-      "Þú kemur seinna."
+        "Þú ert vinur minn. (You are my friend.)",
+        "Þú kemur seinna. (You are coming later.)"
     ],
     "type": "pronoun",
     "numbers": {
@@ -3489,7 +3492,7 @@
       },
       "accusative": {
         "singular": {
-          "any": "þik"
+          "any": "þit"
         },
         "dual": {
           "any": "ykkr"
@@ -3526,8 +3529,11 @@
     "oldNorseWord": "þat",
     "englishTranslation": "that",
     "russianTranslation": "тот, этот / та, эта / то, это",
-    "definition": "That, it",
-    "examples": [],
+    "definition": "Third-person singular neuter pronoun used to refer to a previously mentioned or easily identifiable object or concept.",
+    "examples": [
+        "Þat er gott skip. (That is a good ship.)",
+        "Sá ek þat. (I saw it.)"
+    ],
     "type": "pronoun",
     "numbers": {
       "singular": {
@@ -3596,8 +3602,11 @@
     "oldNorseWord": "allr",
     "englishTranslation": "all, whole",
     "russianTranslation": "весь, целый",
-    "definition": "All, whole",
-    "examples": [],
+    "definition": "Used to refer to the entirety of a person, object, group, or concept; complete, not divided.",
+    "examples": [
+        "Allr heimurinn fagnar. (The whole world celebrates.)",
+        "Allir menn voru samþykkir. (All men were in agreement.)"
+    ],
     "type": "pronoun",
     "numbers": {
       "singular": {
@@ -3666,8 +3675,11 @@
     "oldNorseWord": "margr",
     "englishTranslation": "many",
     "russianTranslation": "многий, многочисленный",
-    "definition": "Many",
-    "examples": [],
+    "definition": "Used to describe a large number of people or things.",
+    "examples": [
+        "Margir menn komu til þingsins. (Many men came to the assembly.)",
+        "Margr maðr veit ekki hvað hann á. (Many a man does not know what he owns.)"
+    ],
     "type": "pronoun",
     "numbers": {
       "singular": {
@@ -3736,8 +3748,11 @@
     "oldNorseWord": "sumr",
     "englishTranslation": "some, certain",
     "russianTranslation": "некоторый",
-    "definition": "Some, certain",
-    "examples": [],
+    "definition": "Used to refer to an unspecified amount or number of people or things, or to a particular but unspecified one.",
+    "examples": [
+        "Sumir segja þat satt vera. (Some say that it is true.)",
+        "Sumr maðr kom til bæjarins. (A certain man came to the town.)"
+    ],
     "type": "pronoun",
     "numbers": {
       "singular": {
@@ -4944,46 +4959,402 @@
     ],
     "numbers": {
       "singular": {
-        "any": true
+        "masculine": true,
+        "neuter": true
       },
       "plural": {
-        "any": true
+        "masculine": true,
+        "neuter": true
       }
     },
     "gendersCases": {
       "nominative": {
         "singular": {
-          "any": "hvárr"
+          "masculine": "hvárr",
+          "neuter": "hvárt"
         },
         "plural": {
-          "any": "hvárir"
+          "masculine": "hvárir",
+          "neuter": "hvár"
         }
       },
       "accusative": {
         "singular": {
-          "any": "hvárn"
+          "masculine": "hvárn",
+          "neuter": "hvárt"
         },
         "plural": {
-          "any": "hvárr"
+          "masculine": "hvára",
+          "neuter": "hvár"
         }
       },
       "dative": {
         "singular": {
-          "any": "hvárum"
+          "masculine": "hvárum",
+          "neuter": "hváru"
         },
         "plural": {
-          "any": "hvárr"
+          "masculine": "hvárum",
+          "neuter": "hvárum"
         }
       },
       "genitive": {
         "singular": {
-          "any": "hvárr"
+          "masculine": "hvárs",
+          "neuter": "hvárs"
         },
         "plural": {
-          "any": "hvárra"
+          "masculine": "hvárra",
+          "neuter": "hvárra"
         }
       }
     }
+  },
+  {
+      "oldNorseWord": "einn",
+      "englishTranslation": "one",
+      "russianTranslation": "один",
+      "type": "pronoun",
+      "definition": "Referring to a single person or thing.",
+      "examples": [
+          "Einn maðr gekk á veginum. (One man walked on the road.)"
+      ],
+      "numbers": {
+        "singular": {
+          "masculine": true,
+          "neuter": true
+        },
+        "plural": {
+          "masculine": true,
+          "neuter": true
+        }
+      },
+      "gendersCases": {
+        "nominative": {
+          "singular": {
+            "neuter": "eitt"
+          }
+        },
+        "accusative": {
+          "singular": {
+            "masculine": "einn",
+            "neuter": "eitt"
+          }
+        }
+      }
+  },
+  {
+      "oldNorseWord": "tveir",
+      "englishTranslation": "two",
+      "russianTranslation": "два",
+      "type": "pronoun",
+      "definition": "Referring to two people or things.",
+      "examples": [
+          "Tveir bræður bjuggu þar. (Two brothers lived there.)"
+      ],
+      "numbers": {
+        "singular": {
+          "masculine": false,
+          "neuter": false,
+          "feminine": false
+        },
+        "plural": {
+          "masculine": true,
+          "neuter": true,
+          "feminine": true
+        }
+      },
+      "gendersCases": {
+        "nominative": {
+          "plural": {
+            "masculine": "tveir",
+            "neuter": "tvau",
+            "feminine": "tvær"
+          }
+        },
+        "accusative": {
+          "plural": {
+            "masculine": "tvá",
+            "neuter": "tvau",
+            "feminine": "tvær"
+          }
+        },
+        "dative": {
+          "plural": {
+            "masculine": "tveim",
+            "neuter": "tveim",
+            "feminine": "tveim"
+          }
+        },
+        "genitive": {
+          "plural": {
+            "masculine": "tveggja",
+            "neuter": "tveggja",
+            "feminine": "tveggja"
+          }
+        }
+      }
+  },
+  {
+      "oldNorseWord": "þrír",
+      "englishTranslation": "three",
+      "russianTranslation": "три",
+      "type": "pronoun",
+      "definition": "Referring to three people or things.",
+      "examples": [
+          "Þrír fuglar sátu á trénu. (Three birds sat on the tree.)"
+      ],
+      "numbers": {
+        "singular": {
+            "masculine": false,
+            "neuter": false,
+            "feminine": false
+        },
+        "plural": {
+          "masculine": true,
+          "neuter": true,
+          "feminine": true
+        }
+      },
+      "gendersCases": {
+        "nominative": {
+          "plural": {
+            "masculine": "þrír",
+            "neuter": "þrjú",
+            "feminine": "þrjár"
+          }
+        },
+        "accusative": {
+          "plural": {
+            "masculine": "þrjá",
+            "neuter": "þrjú",
+            "feminine": "þrjár"
+          }
+        },
+        "dative": {
+          "plural": {
+            "masculine": "þrim",
+            "neuter": "þrim",
+            "feminine": "þrim"
+          }
+        },
+        "genitive": {
+          "plural": {
+            "masculine": "þriggja",
+            "neuter": "þriggja",
+            "feminine": "þriggja"
+          }
+        }
+      }
+  },
+  {
+      "oldNorseWord": "fjórir",
+      "englishTranslation": "four",
+      "russianTranslation": "четыре",
+      "type": "pronoun",
+      "definition": "Referring to four people or things.",
+      "examples": [
+          "Fjórir menn komu til búðarinnar. (Four men came to the shop.)"
+      ],
+      "numbers": {
+        "singular": {
+            "masculine": false,
+            "neuter": false,
+            "feminine": false
+        },
+        "plural": {
+          "masculine": true,
+          "neuter": true,
+          "feminine": true
+        }
+      },
+      "gendersCases": {
+        "nominative": {
+          "plural": {
+            "masculine": "fjórir",
+            "neuter": "fjögur",
+            "feminine": "fjórar"
+          }
+        },
+        "accusative": {
+          "plural": {
+            "masculine": "fjóra",
+            "neuter": "fjögur",
+            "feminine": "fjórar"
+          }
+        },
+        "dative": {
+          "plural": {
+            "masculine": "fjórum",
+            "neuter": "fjórum",
+            "feminine": "fjórum"
+          }
+        },
+        "genitive": {
+          "plural": {
+            "masculine": "fjögurra",
+            "neuter": "fjögurra",
+            "feminine": "fjögurra"
+          }
+        }
+      }
+  },
+  {
+      "oldNorseWord": "nógr",
+      "englishTranslation": "sufficient, abundant",
+      "russianTranslation": "достаточный, обильный",
+      "type": "pronoun",
+      "base": "nóg",
+      "definition": "Enough in quantity or degree; plentiful, ample.",
+      "examples": [
+          "Matr var nógr á borðinu. (There was sufficient food on the table.)",
+          "Auður hans var nógr. (His wealth was abundant.)"
+      ]
+  },
+  {
+      "oldNorseWord": "miðr",
+      "englishTranslation": "middle, central",
+      "russianTranslation": "средний, серединный",
+      "type": "pronoun",
+      "base": "miðj",
+      "definition": "Located at an equal distance from the extremities; centrally positioned.",
+      "examples": [
+          "Miðr vegurinn er breiður. (The middle of the road is wide.)",
+          "Hann stóð í miðri stofunni. (He stood in the middle of the room.)"
+      ]
+  },
+  {
+      "oldNorseWord": "sjá",
+      "englishTranslation": "this, that",
+      "russianTranslation": "этот, тот",
+      "type": "pronoun",
+      "definition": "Used to identify a specific person or thing observed or heard by the speaker; the nearer or more immediate of two or more.",
+      "examples": [
+          "Sjá maðr talar satt. (This man speaks the truth.)",
+          "Sjá bók er gamall. (That book is old.)"
+      ],
+      "numbers": {
+        "singular": {
+          "masculine": true,
+          "feminine": true,
+          "neuter": true
+        },
+        "plural": {
+          "masculine": true,
+          "feminine": true,
+          "neuter": true
+        }
+      },
+      "gendersCases": {
+        "nominative": {
+          "singular": {
+            "masculine": "sjá",
+            "neuter": "þetta",
+            "feminine": "sjá"
+          },
+          "plural": {
+            "masculine": "þessir",
+            "neuter": "þessi",
+            "feminine": "þessar"
+          }
+        },
+        "accusative": {
+          "singular": {
+            "masculine": "þenna",
+            "neuter": "þetta",
+            "feminine": "þessa"
+          },
+          "plural": {
+            "masculine": "þessa",
+            "neuter": "þessi",
+            "feminine": "þessar"
+          }
+        },
+        "dative": {
+          "singular": {
+            "masculine": "þeima",
+            "neuter": "þessu",
+            "feminine": "þessari"
+          },
+          "plural": {
+            "masculine": "þessum",
+            "neuter": "þessum",
+            "feminine": "þessum"
+          }
+        },
+        "genitive": {
+          "singular": {
+            "masculine": "þessa",
+            "neuter": "þessa",
+            "feminine": "þessarar"
+          },
+          "plural": {
+            "masculine": "þessara",
+            "neuter": "þessara",
+            "feminine": "þessara"
+          }
+        }
+    }
+  },
+  {
+      "oldNorseWord": "fimm",
+      "englishTranslation": "five",
+      "russianTranslation": "пять",
+      "type": "number",
+      "definition": "The number equivalent to the sum of two and three; one more than four.",
+      "examples": [
+          "Fimm skip komu til hafnar. (Five ships came to the harbor.)"
+      ]
+  },
+  {
+      "oldNorseWord": "sex",
+      "englishTranslation": "six",
+      "russianTranslation": "шесть",
+      "type": "number",
+      "definition": "The number equivalent to the sum of three and three; one more than five.",
+      "examples": [
+          "Sex menn unnu í garðinum. (Six men worked in the garden.)"
+      ]
+  },
+  {
+      "oldNorseWord": "sjau",
+      "englishTranslation": "seven",
+      "russianTranslation": "семь",
+      "type": "number",
+      "definition": "The number equivalent to the sum of three and four; one more than six.",
+      "examples": [
+          "Sjau nætur í röð. (Seven nights in a row.)"
+      ]
+  },
+  {
+      "oldNorseWord": "átta",
+      "englishTranslation": "eight",
+      "russianTranslation": "восемь",
+      "type": "number",
+      "definition": "The number equivalent to the sum of four and four; one more than seven.",
+      "examples": [
+          "Átta börn leika sér í túninu. (Eight children are playing in the yard.)"
+      ]
+  },
+  {
+      "oldNorseWord": "níu",
+      "englishTranslation": "nine",
+      "russianTranslation": "девять",
+      "type": "number",
+      "definition": "The number equivalent to the sum of four and five; one more than eight.",
+      "examples": [
+          "Níu hestar voru í hlaðinu. (Nine horses were in the barn.)"
+      ]
+  },
+  {
+      "oldNorseWord": "tíu",
+      "englishTranslation": "ten",
+      "russianTranslation": "десять",
+      "type": "number",
+      "definition": "The number equivalent to the sum of five and five; one more than nine.",
+      "examples": [
+          "Tíu dagar til jólanna. (Ten days until Christmas.)"
+      ]
   },
   {
     "oldNorseWord": "eigi",
@@ -7339,7 +7710,50 @@
     "definition": "Large in size or extent; considerable.",
     "examples": [
       "Mikill skipr er sterkari. (A big ship is stronger.)"
-    ]
+    ],
+    "gendersCases": {
+      "nominative": {
+        "singular": {
+          "neuter": "mikit"
+        },
+        "plural": {
+          "masculine": "miklir",
+          "feminine": "miklar"
+        }
+      },
+      "accusative": {
+        "singular": {
+          "masculine": "mikinn",
+          "neuter": "mikit",
+          "feminine": "mikla"
+        },
+        "plural": {
+          "masculine": "mikla",
+          "feminine": "miklar"
+        }
+      },
+      "dative": {
+        "singular": {
+          "masculine": "miklum",
+          "neuter": "miklu"
+        },
+        "plural": {
+          "masculine": "miklum",
+          "neuter": "miklum",
+          "feminine": "miklum"
+        }
+      },
+      "genitive": {
+          "singular": {
+            "feminine": "mikillar"
+          },
+          "plural": {
+            "masculine": "mikilla",
+            "neuter": "mikilla",
+            "feminine": "mikilla"
+          }
+      }
+    }
   },
   {
     "oldNorseWord": "vænn",

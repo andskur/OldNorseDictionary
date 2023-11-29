@@ -18,6 +18,7 @@ enum WordType: String, Codable, CaseIterable {
     case participle
     case preposition
     case phrase
+    case number
 }
 
 
