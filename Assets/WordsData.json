@@ -5022,11 +5022,13 @@
       "numbers": {
         "singular": {
           "masculine": true,
-          "neuter": true
+          "neuter": true,
+          "feminine": true
         },
         "plural": {
           "masculine": true,
-          "neuter": true
+          "neuter": true,
+          "feminine": true
         }
       },
       "gendersCases": {
@@ -8908,14 +8910,15 @@
     ]
   },
   {
-    "oldNorseWord": "banaðr",
-    "englishTranslation": "killed, slain",
-    "russianTranslation": "убитый, умерщвленный",
-    "type": "participle",
-    "definition": "Having been caused to die; having been put to death.",
-    "examples": [
-      "Banaðr dreki af hetju. (The dragon slain by the hero.)"
-    ]
+      "oldNorseWord": "banaðr",
+      "englishTranslation": "killer, slayer",
+      "russianTranslation": "убивший",
+      "type": "participle",
+      "definition": "Referring to someone who has caused death; a person or thing that has killed.",
+      "examples": [
+          "Banaðr konungsins var dularfullur. (The king's killer was mysterious.)",
+          "Hetjan varð banaðr margra óvina. (The hero became the slayer of many enemies.)"
+      ]
   },
   {
     "oldNorseWord": "stýrðr",
