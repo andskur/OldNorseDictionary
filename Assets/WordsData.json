@@ -3331,6 +3331,376 @@
                  "third": "rit"
              }
          },
+         {
+             "oldNorseWord": "bani",
+             "englishTranslation": "death, demise",
+             "russianTranslation": "смерть, гибель",
+             "type": "noun",
+             "gender": "masculine",
+             "definition": "The end of life; the cessation of all biological functions that sustain a living organism.",
+             "examples": [
+                 "Bani kom bráðlega eftir veikindin. (Death came swiftly after the illness.)",
+                 "Bani Óðins var stór atburður í goðsögunum. (The demise of Odin was a significant event in the myths.)"
+             ],
+             "base": "bani",
+             "nounForms": {
+                 "second": "bana",
+                 "third": "banar"
+             }
+         },
+         {
+             "oldNorseWord": "bardagi",
+             "englishTranslation": "battle, fight",
+             "russianTranslation": "битва, бой",
+             "type": "noun",
+             "gender": "masculine",
+             "definition": "A sustained fight between large organized armed forces.",
+             "examples": [
+                 "Bardagi stóð lengi og var harður. (The battle lasted long and was fierce.)",
+                 "Í bardaga falla margir menn. (Many men fall in a fight.)"
+             ],
+             "base": "bardagi",
+             "nounForms": {
+                 "second": "bardaga",
+                 "third": "bardagar"
+             }
+         },
+         {
+             "oldNorseWord": "dauði",
+             "englishTranslation": "death",
+             "russianTranslation": "смерть",
+             "type": "noun",
+             "gender": "masculine",
+             "definition": "The action or fact of dying or being killed; the end of the life of a person or organism.",
+             "examples": [
+                 "Dauði er óhjákvæmilegur hluti lífsins. (Death is an inevitable part of life.)",
+                 "Dauði konungsins markaði tímamót. (The death of the king marked an era.)"
+             ],
+             "base": "dauði",
+             "nounForms": {
+                 "second": "dauða",
+                 "third": "dauðar"
+             }
+         },
+         {
+             "oldNorseWord": "flosi",
+             "englishTranslation": "dandy, fop",
+             "russianTranslation": "щёголь",
+             "type": "noun",
+             "gender": "masculine",
+             "definition": "A man unduly concerned with looking stylish and fashionable.",
+             "examples": [
+                 "Flosi var þekktur fyrir skart sitt. (The dandy was known for his adornment.)",
+                 "Flosi gengur í nýjustu tísku. (The fop walks in the latest fashion.)"
+             ],
+             "base": "flosi",
+             "nounForms": {
+                 "second": "flosa",
+                 "third": "flosar"
+             }
+         },
+         {
+             "oldNorseWord": "flótti",
+             "englishTranslation": "flight, escape",
+             "russianTranslation": "бегство, бегущие",
+             "type": "noun",
+             "gender": "masculine",
+             "definition": "The action of fleeing or running away.",
+             "examples": [
+                 "Flótti var eina kosturinn þeirra. (Flight was their only option.)",
+                 "Í flótti leita menn skjóls. (In escape, people seek shelter.)"
+             ],
+             "base": "flótti",
+             "nounForms": {
+                 "second": "flótta",
+                 "third": "flóttar"
+             }
+         },
+         {
+             "oldNorseWord": "heðinn",
+             "englishTranslation": "fur garment, fur clothing",
+             "russianTranslation": "меховая одежда",
+             "type": "noun",
+             "gender": "masculine",
+             "definition": "Clothing made from the fur of animals.",
+             "examples": [
+                 "Heðinn var mikilvægur í köldum vetrum. (Fur garment was important in cold winters.)",
+                 "Heðinn var gerður úr úlfskinnum. (The fur clothing was made from wolf skins.)"
+             ],
+             "base": "heðin",
+             "nounForms": {
+                 "second": "heðins",
+                 "third": "heðnar"
+             },
+             "declension": "a"
+         },
+         {
+             "oldNorseWord": "heimamaðr",
+             "englishTranslation": "householder, worker",
+             "russianTranslation": "домочадец, работник",
+             "type": "noun",
+             "gender": "masculine",
+             "definition": "A person who resides in a house; typically a worker or a member of a household.",
+             "examples": [
+                 "Heimamaðr sá um dagleg verk á býlinu. (The householder took care of daily chores on the farm.)",
+                 "Heimamaðrinn vann lengi úti í garði. (The worker toiled long in the garden.)"
+             ],
+             "base": "heimamaðr",
+             "cases": {
+                 "nominative": {
+                     "singular": "heimaðr",
+                     "plural": "heimenn"
+                 },
+                 "accusative": {
+                     "singular": "heimann",
+                     "plural": "heimenn"
+                 },
+                 "dative": {
+                     "singular": "heimanni",
+                     "plural": "heimönnum"
+                 },
+                 "genitive": {
+                     "singular": "heimanns",
+                     "plural": "heimanna"
+                 }
+             }
+         },
+         {
+             "oldNorseWord": "hváll",
+             "englishTranslation": "hillock, knoll",
+             "russianTranslation": "холм, пригорок",
+             "type": "noun",
+             "gender": "masculine",
+             "definition": "A small hill or mound.",
+             "examples": [
+                 "Hváll var lítið en gróinn þúfum. (The hillock was small but covered with tufts.)",
+                 "Þeir settust niður á hválinum til að hvíla. (They sat down on the knoll to rest.)"
+             ],
+             "base": "hvál",
+             "nounForms": {
+                 "second": "hváls",
+                 "third": "hválar"
+             },
+             "declension": "a"
+         },
+         {
+             "oldNorseWord": "skaði",
+             "englishTranslation": "damage, harm",
+             "russianTranslation": "ущерб, вред",
+             "type": "noun",
+             "gender": "masculine",
+             "definition": "The negative impact or injury caused to something.",
+             "examples": [
+                 "Skaði var mikill eftir storminn. (The damage was great after the storm.)",
+                 "Þeir bættu fyrir skaðann sem þeir ollu. (They compensated for the harm they caused.)"
+             ],
+             "base": "skaði",
+             "nounForms": {
+                 "second": "skaða",
+                 "third": "skaðar"
+             }
+         },
+         {
+             "oldNorseWord": "skáli",
+             "englishTranslation": "hall, dwelling",
+             "russianTranslation": "жилое помещение",
+             "type": "noun",
+             "gender": "masculine",
+             "definition": "A building or room providing living quarters.",
+             "examples": [
+                 "Skáli var miðpunktur heimilisins. (The hall was the focal point of the home.)",
+                 "Í skálanum héldu þeir veislur. (In the dwelling, they held feasts.)"
+             ],
+             "base": "skáli",
+             "nounForms": {
+                 "second": "skála",
+                 "third": "skálar"
+             }
+         },
+         {
+             "oldNorseWord": "bál",
+             "englishTranslation": "bonfire, pyre",
+             "russianTranslation": "костёр",
+             "type": "noun",
+             "gender": "neuter",
+             "definition": "A large open-air fire used for burning waste or as part of a celebration.",
+             "examples": [
+                 "Bál var kveikt til að fagna sumarsólstöðum. (A bonfire was lit to celebrate the summer solstice.)",
+                 "Á bálinu brunnu þeir gömlu trén. (On the pyre, they burned the old woods.)"
+             ],
+             "base": "bál",
+             "nounForms": {
+                 "second": "báls",
+                 "third": "bál"
+             }
+         },
+         {
+             "oldNorseWord": "loft",
+             "englishTranslation": "loft, attic",
+             "russianTranslation": "чердак, горница",
+             "type": "noun",
+             "gender": "neuter",
+             "definition": "A space just below the roof of a house, often used for storing things.",
+             "examples": [
+                 "Loftið var notað til að geyma gömul húsgögn. (The loft was used to store old furniture.)",
+                 "Í loftinu heyrist stundum furðuleg hljóð. (Strange noises are sometimes heard in the attic.)"
+             ],
+             "base": "loft",
+             "nounForms": {
+                 "second": "lofts",
+                 "third": "loft"
+             }
+         },
+         {
+             "oldNorseWord": "arfasáta",
+             "englishTranslation": "haystack",
+             "russianTranslation": "стог сена",
+             "type": "noun",
+             "gender": "feminine",
+             "definition": "A stack of hay, typically arranged in a field.",
+             "examples": [
+                 "Arfasátan var há og vel byggð. (The haystack was tall and well-built.)",
+                 "Þau leituðu skjóls við arfasátuna. (They sought shelter by the haystack.)"
+             ],
+             "base": "arfasáta",
+             "nounForms": {
+                 "second": "arfasátu",
+                 "third": "arfasátur"
+             }
+         },
+         {
+             "oldNorseWord": "dyrr",
+             "englishTranslation": "doors, doorways",
+             "russianTranslation": "двери, дверной проём",
+             "type": "noun",
+             "gender": "feminine",
+             "definition": "A hinged, sliding, or revolving barrier at the entrance to a building, room, or vehicle, or in the framework of a cupboard.",
+             "examples": [
+                 "Dyrrnar opnuðust hægt. (The doors opened slowly.)",
+                 "Við dyrrnar stóðu tveir varðmenn. (Two guards stood at the doorways.)"
+             ],
+             "base": "dur",
+             "nounForms": {
+                 "second": "dyrr",
+                 "third": "dyrr"
+             }
+         },
+         {
+             "oldNorseWord": "för",
+             "englishTranslation": "journey, trip",
+             "russianTranslation": "поездка, путешествие",
+             "type": "noun",
+             "gender": "feminine",
+             "definition": "An act of traveling from one place to another.",
+             "examples": [
+                 "För þeirra var löng og ströng. (Their journey was long and arduous.)",
+                 "Í ferðalaginu upplifðu þau ýmis ævintýri. (On the trip, they experienced various adventures.)"
+             ],
+             "base": "far",
+             "nounForms": {
+                 "second": "farar",
+                 "third": "farar"
+             },
+             "declension": "a"
+         },
+         {
+             "oldNorseWord": "ganga",
+             "englishTranslation": "walking, stroll",
+             "russianTranslation": "ходьба, прогулка",
+             "type": "noun",
+             "gender": "feminine",
+             "definition": "The act of traveling or moving on foot.",
+             "examples": [
+                 "Ganga um skóginn var róandi. (Walking through the forest was calming.)",
+                 "Þau fóru í göngu um fjöllin. (They went for a stroll in the mountains.)"
+             ],
+             "base": "ganga",
+             "nounForms": {
+                 "second": "göngu",
+                 "third": "göngur"
+             }
+         },
+         {
+             "oldNorseWord": "helga",
+             "englishTranslation": "consecration, sanctification",
+             "russianTranslation": "освящение",
+             "type": "noun",
+             "gender": "feminine",
+             "definition": "The act of making something holy or sacred.",
+             "examples": [
+                 "Helga hússins fór fram með athöfn. (The consecration of the house was performed with a ceremony.)",
+                 "Helga þessarar stundar var mikilvæg fyrir þá. (The sanctification of this moment was important for them.)"
+             ],
+             "base": "helga",
+             "nounForms": {
+                 "second": "helgu",
+                 "third": "helgur"
+             }
+         },
+         {
+             "oldNorseWord": "hreysti",
+             "englishTranslation": "bravery, strength",
+             "russianTranslation": "смелость, сила",
+             "type": "noun",
+             "gender": "feminine",
+             "definition": "The quality of having a courageous spirit and physical power.",
+             "examples": [
+                 "Hreysti hennar var þekkt víða. (Her bravery was known far and wide.)",
+                 "Hreysti í orrustu var lofað. (Strength in battle was praised.)"
+             ],
+             "base": "hreysti"
+         },
+         {
+             "oldNorseWord": "hvíla",
+             "englishTranslation": "bed, resting place",
+             "russianTranslation": "постель, кровать",
+             "type": "noun",
+             "gender": "feminine",
+             "definition": "A piece of furniture for sleep or rest, typically a framework with a mattress.",
+             "examples": [
+                 "Hvílan var gerð úr tré og mjúkum fjöðrum. (The bed was made of wood and soft feathers.)",
+                 "Á hvílunni lá gamall maður. (On the resting place lay an old man.)"
+             ],
+             "base": "hvíla",
+             "nounForms": {
+                 "second": "hvílu",
+                 "third": "hvílur"
+             }
+         },
+         {
+             "oldNorseWord": "sáta",
+             "englishTranslation": "haystack, rick",
+             "russianTranslation": "стог, стожок",
+             "type": "noun",
+             "gender": "feminine",
+             "definition": "A stack or pile of hay stored in a field.",
+             "examples": [
+                 "Sátan var full af þurrkuðu heyi. (The haystack was full of dried hay.)",
+                 "Bændur bjuggu til sátur á sumrin. (Farmers made ricks in the summer.)"
+             ],
+             "base": "sáta",
+             "nounForms": {
+                 "second": "sátu",
+                 "third": "sátur"
+             }
+         },
+         {
+             "oldNorseWord": "útganga",
+             "englishTranslation": "exit, end",
+             "russianTranslation": "выход, конец",
+             "type": "noun",
+             "gender": "feminine",
+             "definition": "A way out of a building, room, or passenger vehicle; the end or conclusion of an event or process.",
+             "examples": [
+                 "Útganga var við enda gangarins. (The exit was at the end of the hallway.)",
+                 "Útganga sögunnar var óvænt. (The end of the story was unexpected.)"
+             ],
+             "base": "útganga",
+             "nounForms": {
+                 "second": "útgöngu",
+                 "third": "útgöngur"
+             }
+         },
 {
     "oldNorseWord": "hann",
     "englishTranslation": "he",
@@ -5740,6 +6110,63 @@
       ]
   },
   {
+      "oldNorseWord": "fyrr",
+      "englishTranslation": "earlier, firstly",
+      "russianTranslation": "раньше, сперва",
+      "type": "adverb",
+      "comparative": "fyrst",
+      "definition": "At an earlier time; in the first place.",
+      "examples": [
+          "Fyrr var alt öðruvísi. (Earlier, everything was different.)",
+          "Fyrst þarf að athuga þetta. (Firstly, this needs to be checked.)"
+      ]
+  },
+  {
+      "oldNorseWord": "inn",
+      "englishTranslation": "inside, inward",
+      "russianTranslation": "внутри, внутрь",
+      "type": "adverb",
+      "definition": "To or into the interior or inner part.",
+      "examples": [
+          "Hann gekk inn í húsið. (He went inside the house.)",
+          "Ljósið skín inn um gluggann. (The light shines inward through the window.)"
+      ]
+  },
+  {
+      "oldNorseWord": "inni",
+      "englishTranslation": "inside, in the depths",
+      "russianTranslation": "внутри, в глубине",
+      "type": "adverb",
+      "comparative": "innarr",
+      "definition": "Within an enclosed space; in the innermost part.",
+      "examples": [
+          "Þau bjuggu inni í skóginum. (They lived inside the forest.)",
+          "Innst í hellinum var myrkur. (In the depths of the cave, it was dark.)"
+      ]
+  },
+  {
+      "oldNorseWord": "ofan",
+      "englishTranslation": "above, downwards",
+      "russianTranslation": "сверху, вниз",
+      "type": "adverb",
+      "definition": "From a higher to a lower position; overhead.",
+      "examples": [
+          "Snefillinn féll ofan frá fjallinu. (The snow fell downwards from the mountain.)",
+          "Hann leit ofan á kortið. (He looked above at the map.)"
+      ]
+  },
+  {
+      "oldNorseWord": "undan",
+      "englishTranslation": "away, aside",
+      "russianTranslation": "прочь, в сторону",
+      "type": "adverb",
+      "definition": "To or at a distance from a particular place or person.",
+      "examples": [
+          "Hann hörfaði undan í skugganum. (He moved away into the shadows.)",
+          "Skjóttu undan borðinu. (Push it aside from the table.)"
+      ]
+  },
+  {
       "oldNorseWord": "ok",
       "englishTranslation": "and, also",
       "russianTranslation": "и, также",
@@ -6118,6 +6545,28 @@
       "examples": [
           "Sólin setur vestan. (The sun sets in the west.)",
           "Borgin liggur vestan árinnar. (The city lies to the west of the river.)"
+      ]
+  },
+  {
+      "oldNorseWord": "ásamt",
+      "englishTranslation": "together with, jointly with",
+      "russianTranslation": "вместе с, совместно с",
+      "type": "preposition",
+      "definition": "In the company of; accompanied by.",
+      "examples": [
+          "Hann fór á markaðinn ásamt bróður sínum. (He went to the market together with his brother.)",
+          "Ásamt vinum sínum byggði hann húsið. (Jointly with his friends, he built the house.)"
+      ]
+  },
+  {
+      "oldNorseWord": "innan",
+      "englishTranslation": "within, during",
+      "russianTranslation": "в течение, до",
+      "type": "preposition",
+      "definition": "Inside the limits of; in the duration of.",
+      "examples": [
+          "Innan viku lauk verkefninu. (The task was completed within a week.)",
+          "Innan þessara veggja eru leyndarmál. (Within these walls are secrets.)"
       ]
   },
   {
@@ -8149,6 +8598,30 @@
       ]
   },
   {
+      "oldNorseWord": "granr",
+      "englishTranslation": "whiskered, bearded",
+      "russianTranslation": "усатый",
+      "type": "adjective",
+      "definition": "Having a growth of whiskers or beard.",
+      "examples": [
+          "Granr maður stóð við dyrnar. (A whiskered man stood by the door.)",
+          "Granr geitinn leit við í túninu. (The bearded goat appeared in the yard.)"
+      ],
+      "base": "gran"
+  },
+  {
+      "oldNorseWord": "kárr",
+      "englishTranslation": "curly, wavy",
+      "russianTranslation": "кудрявый",
+      "type": "adjective",
+      "definition": "Having curls or a curved shape.",
+      "examples": [
+          "Kárr hár hennar var fallegt. (Her curly hair was beautiful.)",
+          "Kárr hestur hljóp um haga. (The wavy-haired horse ran through the pasture.)"
+      ],
+      "base": "kár"
+  },
+  {
     "oldNorseWord": "beðinn",
     "englishTranslation": "waiting",
     "russianTranslation": "ждущий",
@@ -9207,6 +9680,60 @@
           "Þeir ákváðu að leggja leið sína til norðurs. (They decided to set off to the north.)",
           "Hún lagði leið sína heim eftir langan dag. (She took the direction home after a long day.)"
       ]
+  },
+  {
+      "oldNorseWord": "á flótta",
+      "englishTranslation": "fleeing, in flight",
+      "russianTranslation": "бегством, в бегство",
+      "type": "phrase",
+      "definition": "The act of running away or escaping from something.",
+      "examples": [
+          "Þeir voru á flótta frá óvinunum. (They were fleeing from the enemies.)",
+          "Á flótta fann hún frelsi. (In flight, she found freedom.)"
+      ]
+  },
+  {
+      "oldNorseWord": "fyrir ofan",
+      "englishTranslation": "above, over",
+      "russianTranslation": "выше, сверху",
+      "type": "phrase",
+      "definition": "In a higher position than something else; over.",
+      "examples": [
+          "Fyrir ofan bæinn stóð hátt fjall. (Above the farm stood a tall mountain.)",
+          "Sólin skín fyrir ofan skýin. (The sun shines over the clouds.)"
+      ]
+  },
+  {
+      "oldNorseWord": "inn í",
+      "englishTranslation": "into",
+      "russianTranslation": "в",
+      "type": "phrase",
+      "definition": "To the inside or interior of.",
+      "examples": [
+          "Hann gekk inn í skóginn. (He walked into the forest.)",
+          "Þau fóru inn í húsið til að hlýja sér. (They went into the house to warm themselves.)"
+      ]
+  },
+  {
+      "oldNorseWord": "innan skamms",
+      "englishTranslation": "soon, shortly",
+      "russianTranslation": "вскоре",
+      "type": "phrase",
+      "definition": "Within a short period of time; soon.",
+      "examples": [
+          "Innan skamms mun vorið koma. (Soon, spring will come.)",
+          "Þau lofuðu að snúa aftur innan skamms. (They promised to return shortly.)"
+      ]
+  },
+  {
+      "oldNorseWord": "komask undan",
+      "englishTranslation": "escape, slip away",
+      "russianTranslation": "избежать, ускользнуть",
+      "type": "phrase",
+      "definition": "To manage to avoid or evade something.",
+      "examples": [
+          "Hann komst undan refsingu. (He escaped punishment.)",
+          "Með snilld tókst henni að komast undan. (With skill, she managed to slip away.)"
+      ]
   }
-
 ]
