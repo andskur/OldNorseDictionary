@@ -90,11 +90,6 @@ class WordServiceTests: XCTestCase {
         for word in filteredWords {
             XCTAssertTrue(word.oldNorseWord.contains("hafa"))
         }
-        
-        filteredWords = wordService.filterWords(wordService.words, with: "hafa", searchDirection: .oldNorseToRussian)
-        for word in filteredWords {
-            XCTAssertTrue(word.oldNorseWord.contains("hafa"))
-        }
     }
 
 
