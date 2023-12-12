@@ -3701,6 +3701,450 @@
                  "third": "útgöngur"
              }
          },
+         {
+             "oldNorseWord": "bardagamaðr",
+             "englishTranslation": "fighter, warrior",
+             "russianTranslation": "боец, воин",
+             "type": "noun",
+             "gender": "masculine",
+             "definition": "A person engaged in combat or warfare.",
+             "examples": [
+                 "Bardagamaðrinn var reyndur í orrustu. (The fighter was experienced in battle.)",
+                 "Hver bardagamaðr hafði sitt sverð. (Every warrior had his sword.)"
+             ],
+             "base": "bardagamaðr",
+             "cases": {
+                 "nominative": {
+                     "singular": "bardagamaðr",
+                     "plural": "bardagamenn"
+                 },
+                 "accusative": {
+                     "singular": "bardagamann",
+                     "plural": "bardagamenn"
+                 },
+                 "dative": {
+                     "singular": "bardagamanni",
+                     "plural": "bardagamönnum"
+                 },
+                 "genitive": {
+                     "singular": "bardagamanns",
+                     "plural": "bardagamanna"
+                 }
+             }
+         },
+         {
+             "oldNorseWord": "gæfumaðr",
+             "englishTranslation": "lucky person, fortunate one",
+             "russianTranslation": "удачливый человек, счастливец",
+             "type": "noun",
+             "gender": "masculine",
+             "definition": "A person who is notably successful or fortunate.",
+             "examples": [
+                 "Gæfumaðrinn fann fjársjóðinn. (The lucky person found the treasure.)",
+                 "Hann var þekktur sem gæfumaðr í viðskiptum. (He was known as a fortunate one in business.)"
+             ],
+             "base": "gæfumaðr",
+             "cases": {
+                 "nominative": {
+                     "singular": "gæfumaðr",
+                     "plural": "gæfumenn"
+                 },
+                 "accusative": {
+                     "singular": "gæfumann",
+                     "plural": "gæfumenn"
+                 },
+                 "dative": {
+                     "singular": "gæfumanni",
+                     "plural": "gæfumönnum"
+                 },
+                 "genitive": {
+                     "singular": "gæfumanns",
+                     "plural": "gæfumanna"
+                 }
+             }
+         },
+         {
+             "oldNorseWord": "doell",
+             "englishTranslation": "valley dweller, person from the valley",
+             "russianTranslation": "житель долины, человек из долины",
+             "type": "noun",
+             "gender": "masculine",
+             "definition": "A person living in or originating from a valley.",
+             "examples": [
+                 "Doellinn bjó í langri og grónri dal. (The valley dweller lived in a long and verdant valley.)",
+                 "Doelirnir voru þekktir fyrir landbúnað sinn. (The people from the valley were known for their agriculture.)"
+             ],
+             "base": "doel",
+             "nounForms": {
+                 "second": "doelar",
+                 "third": "doelir"
+             },
+             "declension": "i"
+         },
+         {
+             "oldNorseWord": "endi",
+             "englishTranslation": "end, piece",
+             "russianTranslation": "конец, кусок",
+             "type": "noun",
+             "gender": "masculine",
+             "definition": "The final part of something; a part or fragment of something larger.",
+             "examples": [
+                 "Endi sögunnar var óvæntur. (The end of the story was unexpected.)",
+                 "Hann skar enda af brauðinu. (He cut a piece off the bread.)"
+             ],
+             "base": "endi",
+             "nounForms": {
+                 "second": "enda",
+                 "third": "endar"
+             }
+         },
+         {
+             "oldNorseWord": "kappi",
+             "englishTranslation": "warrior, hero",
+             "russianTranslation": "воин, герой",
+             "type": "noun",
+             "gender": "masculine",
+             "definition": "A person noted for courageous acts or nobility of character.",
+             "examples": [
+                 "Kappi sýndi hugrekki í orrustu. (The warrior showed bravery in battle.)",
+                 "Saga fjallar um kappann og ævintýri hans. (The saga tells of the hero and his adventures.)"
+             ],
+             "base": "kappi",
+             "nounForms": {
+                 "second": "kappa",
+                 "third": "kappar"
+             }
+         },
+         {
+             "oldNorseWord": "ofstopamaðr",
+             "englishTranslation": "arrogant person",
+             "russianTranslation": "заносчивый человек",
+             "type": "noun",
+             "gender": "masculine",
+             "definition": "A person exhibiting excessive pride or self-importance.",
+             "examples": [
+                 "Ofstopamaðrinn neitaði að hlusta á aðra. (The arrogant person refused to listen to others.)",
+                 "Ofstopamaður í hópnum skapaði spennu. (An arrogant man in the group created tension.)"
+             ],
+             "base": "ofstopamaðr",
+             "cases": {
+                 "nominative": {
+                     "singular": "ofstopamaðr",
+                     "plural": "ofstopamenn"
+                 },
+                 "accusative": {
+                     "singular": "ofstopamann",
+                     "plural": "ofstopamenn"
+                 },
+                 "dative": {
+                     "singular": "ofstopamanni",
+                     "plural": "ofstopamönnum"
+                 },
+                 "genitive": {
+                     "singular": "ofstopamanns",
+                     "plural": "ofstopamanna"
+                 }
+             }
+         },
+         {
+             "oldNorseWord": "Skrælingi",
+             "englishTranslation": "skraeling (Inuit, Native American)",
+             "russianTranslation": "скрэлинг (эскимос, индеец)",
+             "type": "noun",
+             "gender": "masculine",
+             "definition": "A term used by Norse explorers to refer to the indigenous peoples of Greenland and North America.",
+             "examples": [
+                 "Skrælingjar bjuggu á landinu þegar víkingarnir komu. (The skraelings lived on the land when the Vikings arrived.)",
+                 "Skrælingi sýndi þeim hvernig á að veiða. (The skraeling showed them how to hunt.)"
+             ],
+             "base": "Skrælingi",
+             "nounForms": {
+                 "second": "Skrælingja",
+                 "third": "Skrælingjar"
+             }
+         },
+         {
+             "oldNorseWord": "svarri",
+             "englishTranslation": "quarrelsome and authoritative woman",
+             "russianTranslation": "сварливая и властная женщина",
+             "type": "noun",
+             "gender": "masculine",
+             "definition": "A woman who is often involved in arguments and who asserts her authority over others.",
+             "examples": [
+                 "Svarri var þekkt fyrir sitt skap. (The quarrelsome woman was known for her temper.)",
+                 "Hann kvæntist svarra sem stjórnaði heimilinu. (He married a quarrelsome and authoritative woman who ruled the household.)"
+             ],
+             "base": "svarri",
+             "nounForms": {
+                 "second": "svarra",
+                 "third": "svarrar"
+             }
+         },
+         {
+             "oldNorseWord": "deila",
+             "englishTranslation": "dispute, quarrel",
+             "russianTranslation": "спор, ссора",
+             "type": "noun",
+             "gender": "feminine",
+             "definition": "A heated or angry disagreement; an argument.",
+             "examples": [
+                 "Deila þeirra varð hávær. (Their dispute became loud.)",
+                 "Deilur risu um arfleifðina. (Quarrels arose over the inheritance.)"
+             ],
+             "base": "deila",
+             "nounForms": {
+                 "second": "deilu",
+                 "third": "deilur"
+             }
+         },
+         {
+             "oldNorseWord": "drápa",
+             "englishTranslation": "drápa, panegyric poem",
+             "russianTranslation": "драпа, хвалебное стихотворение",
+             "type": "noun",
+             "gender": "feminine",
+             "definition": "A type of Norse skaldic poetry consisting of a series of stanzas, typically in praise of a notable person.",
+             "examples": [
+                 "Drápa var saminn til heiðurs konungi. (The drápa was composed in honor of the king.)",
+                 "Í drápunni eru lýst hetjudáðir hans. (In the drápa, his heroic deeds are described.)"
+             ],
+             "base": "drápa",
+             "nounForms": {
+                 "second": "drápu",
+                 "third": "drápur"
+             }
+         },
+         {
+             "oldNorseWord": "fegrð",
+             "englishTranslation": "beauty",
+             "russianTranslation": "красота",
+             "type": "noun",
+             "gender": "feminine",
+             "definition": "The quality of being pleasing to the senses or to the mind.",
+             "examples": [
+                 "Fegrð hennar var þekkt um allt land. (Her beauty was known throughout the land.)",
+                 "Fegrð náttúrunnar var óviðjafnanleg. (The beauty of nature was incomparable.)"
+             ],
+             "base": "fegrð",
+             "declension": "i",
+             "nounForms": {
+                 "second": "fegrðar"
+             }
+         },
+         {
+             "oldNorseWord": "gerðr",
+             "englishTranslation": "woman",
+             "russianTranslation": "женщина",
+             "type": "noun",
+             "gender": "feminine",
+             "definition": "An adult female human being.",
+             "examples": [
+                 "Gerðr í þorpinu voru þekktar fyrir handverk sitt. (The women in the village were known for their handicraft.)",
+                 "Gerðr hennar var af mikilli ætt. (Her womanhood was of great lineage.)"
+             ],
+             "base": "gerð",
+             "nounForms": {
+                 "second": "gerðar",
+                 "third": "gerðar"
+             },
+             "declension": "a"
+         },
+         {
+             "oldNorseWord": "hetja",
+             "englishTranslation": "hero, heroine",
+             "russianTranslation": "герой, героиня",
+             "type": "noun",
+             "gender": "feminine",
+             "definition": "A person who is admired for their courage, outstanding achievements, or noble qualities.",
+             "examples": [
+                 "Hetja sögunnar bjargaði bænum. (The heroine of the story saved the town.)",
+                 "Hetjur þessarar sögu eru dáðlausar. (The heroes of this tale are fearless.)"
+             ],
+             "base": "hetja",
+             "nounForms": {
+                 "second": "hetju",
+                 "third": "hetjur"
+             }
+         },
+         {
+             "oldNorseWord": "kviða",
+             "englishTranslation": "epic poem",
+             "russianTranslation": "эпическое стихотворение",
+             "type": "noun",
+             "gender": "feminine",
+             "definition": "A long, narrative poem, typically detailing heroic deeds and events that are significant to a culture or nation.",
+             "examples": [
+                 "Kviða um Þorstein var full af ævintýrum. (The epic poem about Thorstein was full of adventures.)",
+                 "Í kviðunni eru lýst fornar hetjur. (In the epic, ancient heroes are described.)"
+             ],
+             "base": "kviða",
+             "nounForms": {
+                 "second": "kviðu",
+                 "third": "kviður"
+             }
+         },
+         {
+             "oldNorseWord": "lausn",
+             "englishTranslation": "redemption, release",
+             "russianTranslation": "выкуп, освобождение",
+             "type": "noun",
+             "gender": "feminine",
+             "definition": "The action of saving or being saved from sin, error, or evil; the action of setting someone free from imprisonment, slavery, or oppression.",
+             "examples": [
+                 "Lausn fangans var keypt fyrir gull. (The prisoner's redemption was bought with gold.)",
+                 "Lausn þrælsins markaði nýtt upphaf. (The slave's release marked a new beginning.)"
+             ],
+             "base": "lausn",
+             "nounForms": {
+                 "second": "lausnar",
+                 "third": "lausnir"
+             },
+             "declension": "i"
+         },
+         {
+             "oldNorseWord": "móðir",
+             "englishTranslation": "mother",
+             "russianTranslation": "мать",
+             "type": "noun",
+             "gender": "feminine",
+             "definition": "A woman in relation to her child or children.",
+             "examples": [
+                 "Móðir hans var kona af miklum dyggðum. (His mother was a woman of great virtues.)",
+                 "Móðir umhyggju sinnar veitti börnunum hlýju. (The mother provided warmth to her children with her care.)"
+             ],
+             "base": "móð",
+             "nounForms": {
+                 "second": "móður",
+                 "third": "moeðr"
+             },
+             "declension": "r"
+         },
+         {
+             "oldNorseWord": "orrusta",
+             "englishTranslation": "battle, fight",
+             "russianTranslation": "бой, битва",
+             "type": "noun",
+             "gender": "feminine",
+             "definition": "A sustained fight between large, organized armed forces.",
+             "examples": [
+                 "Orrusta stóð við Hafrsfjörð. (A battle took place at Hafrsfjord.)",
+                 "Í orrustunni sýndu þeir mikla hugrekki. (In the fight, they showed great bravery.)"
+             ],
+             "base": "orrusta",
+             "nounForms": {
+                 "second": "orrustu",
+                 "third": "orrustur"
+             }
+         },
+         {
+             "oldNorseWord": "rún",
+             "englishTranslation": "rune, mystery",
+             "russianTranslation": "руна, тайна",
+             "type": "noun",
+             "gender": "feminine",
+             "definition": "A letter of an ancient Germanic alphabet or something secret or mysterious.",
+             "examples": [
+                 "Rún var rist á steininn. (A rune was carved on the stone.)",
+                 "Rúnar geyma fornar sögur og visku. (Runes hold ancient tales and wisdom.)"
+             ],
+             "base": "rún",
+             "nounForms": {
+                 "second": "rúnar",
+                 "third": "rúnar"
+             },
+             "declension": "a"
+         },
+         {
+             "oldNorseWord": "tunga",
+             "englishTranslation": "tongue, language",
+             "russianTranslation": "язык, речь",
+             "type": "noun",
+             "gender": "feminine",
+             "definition": "The muscular organ in the mouth or the system of spoken or written communication used by a particular country or people.",
+             "examples": [
+                 "Tunga hennar var fljót að mæla. (Her tongue was quick to speak.)",
+                 "Forn tunga var notuð í ritum. (An ancient language was used in writings.)"
+             ],
+             "base": "tunga",
+             "nounForms": {
+                 "second": "tungu",
+                 "third": "tungur"
+             }
+         },
+         {
+             "oldNorseWord": "vísa",
+             "englishTranslation": "verse, stanza",
+             "russianTranslation": "виса, стих",
+             "type": "noun",
+             "gender": "feminine",
+             "definition": "A group of lines forming a unit in a poem or song; a stanza.",
+             "examples": [
+                 "Vísa þessi var sungin við hátíðir. (This verse was sung at festivals.)",
+                 "Í hverri vísu felst sérstök saga. (Each stanza contains a unique story.)"
+             ],
+             "base": "vísa",
+             "nounForms": {
+                 "second": "vísu",
+                 "third": "vísur"
+             },
+             "declension": "a"
+         },
+         {
+             "oldNorseWord": "lausavísa",
+             "englishTranslation": "free verse, epigram",
+             "russianTranslation": "строфа, эпиграмма",
+             "type": "noun",
+             "gender": "feminine",
+             "definition": "A verse or stanza of a poem that stands alone or independently.",
+             "examples": [
+                 "Lausavísa þessi var vinsæl meðal skálda. (This free verse was popular among poets.)",
+                 "Lausavísa getur verið hvöss og hnyttin. (An epigram can be sharp and witty.)"
+             ],
+             "base": "lausavísa",
+             "nounForms": {
+                 "second": "lausavísu",
+                 "third": "lausavísur"
+             },
+             "declension": "a"
+         },
+         {
+             "oldNorseWord": "øx",
+             "englishTranslation": "axe, hatchet",
+             "russianTranslation": "топор, секира",
+             "type": "noun",
+             "gender": "feminine",
+             "definition": "A tool used for chopping wood, typically consisting of a steel blade and a handle.",
+             "examples": [
+                 "Øx var notuð til að höggva við. (The axe was used for chopping wood.)",
+                 "Hann bar øx í belti sínu. (He carried a hatchet in his belt.)"
+             ],
+             "base": "øxj",
+             "nounForms": {
+                 "second": "øxar",
+                 "third": "øxar"
+             },
+             "declension": "a"
+         },
+         {
+             "oldNorseWord": "blóðøx",
+             "englishTranslation": "Bloodaxe",
+             "russianTranslation": "Блодёкс («Кровавая Секира»)",
+             "type": "noun",
+             "gender": "feminine",
+             "definition": "A nickname or epithet, often used to denote a fierce or violent individual.",
+             "examples": [
+                 "Blóðøx var nafn gefið ógnarstjórnanda. (Bloodaxe was a name given to a formidable ruler.)",
+                 "Saga Blóðøxar er þekkt í norrænum goðsögum. (The saga of Bloodaxe is known in Norse mythology.)"
+             ],
+             "base": "blóðøxj",
+             "nounForms": {
+                 "second": "blóðøxar",
+                 "third": "blóðøxar"
+             },
+             "declension": "a"
+         },
+         
+         
 {
     "oldNorseWord": "hann",
     "englishTranslation": "he",
@@ -6164,6 +6608,17 @@
       "examples": [
           "Hann hörfaði undan í skugganum. (He moved away into the shadows.)",
           "Skjóttu undan borðinu. (Push it aside from the table.)"
+      ]
+  },
+  {
+      "oldNorseWord": "þó",
+      "englishTranslation": "however, but, yet",
+      "russianTranslation": "однако, но, всё же",
+      "type": "adverb",
+      "definition": "Used to introduce a statement that contrasts with or seems to contradict something that has been said previously.",
+      "examples": [
+          "Þó var veðrið slæmt, fóru þeir út. (However bad the weather was, they went out.)",
+          "Hann var ungur, þó var hann vitur. (He was young, yet he was wise.)"
       ]
   },
   {
@@ -9734,6 +10189,39 @@
       "examples": [
           "Hann komst undan refsingu. (He escaped punishment.)",
           "Með snilld tókst henni að komast undan. (With skill, she managed to slip away.)"
+      ]
+  },
+  {
+      "oldNorseWord": "annars staðar",
+      "englishTranslation": "elsewhere, in another place",
+      "russianTranslation": "в другом месте",
+      "type": "phrase",
+      "definition": "In or to another place.",
+      "examples": [
+          "Þeir leituðu að betra landi annars staðar. (They sought better land elsewhere.)",
+          "Hann fann frið annars staðar. (He found peace in another place.)"
+      ]
+  },
+  {
+      "oldNorseWord": "eiga í",
+      "englishTranslation": "to be involved in, to participate in",
+      "russianTranslation": "быть занятым (чем-либо), принимать участие (в чём-либо)",
+      "type": "phrase",
+      "definition": "To be engaged or involved in an activity or affair.",
+      "examples": [
+          "Þeir áttu í orrustu við óvininn. (They were involved in a battle with the enemy.)",
+          "Hann átti í viðræðum við kaupmenn. (He participated in negotiations with the merchants.)"
+      ]
+  },
+  {
+      "oldNorseWord": "koma við",
+      "englishTranslation": "to appear, to pertain to",
+      "russianTranslation": "появляться, касаться",
+      "type": "phrase",
+      "definition": "To be relevant to; to affect or involve someone or something.",
+      "examples": [
+          "Sagan kom við alla þá sem hlustuðu. (The story touched all those who listened.)",
+          "Þessi málefni koma við marga. (These issues pertain to many.)"
       ]
   }
 ]

@@ -1226,7 +1226,9 @@ struct Word: Codable, Identifiable {
                             genitiveCase?.removeLast()
                         }
                         
-                        genitiveCase! += "a"
+                        if genitiveCase?.last != "a" {
+                            genitiveCase! += "a"
+                        }
                     }
                     
                 case .neuter:
