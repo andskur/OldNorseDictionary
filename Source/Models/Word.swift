@@ -27,9 +27,14 @@ struct NounForms: Codable {
     let third: String?
 }
 
+struct VerbForms: Codable {
+    let first: String?
+    let second: String?
+}
+
 struct Word: Codable, Identifiable {
     private enum CodingKeys : String, CodingKey {
-        case oldNorseWord, base, declension, englishTranslation, comparative, russianTranslation, definition, examples, type, cases, gendersCases, numbers, conjugation, verbFirst, gender, verbSecond, nounForms
+        case oldNorseWord, base, declension, englishTranslation, comparative, russianTranslation, definition, examples, type, cases, gendersCases, numbers, conjugation, verbFirst, gender, verbSecond, nounForms, verbForms
     }
     
     var oldNorseWord: String
@@ -44,8 +49,15 @@ struct Word: Codable, Identifiable {
     let gendersCases: GendersCases?
     var numbers: ActiveNumbers?
     let conjugation: Conjugation?
+    
+    
+    
+    let verbForms: VerbForms?
+    
     let verbFirst: String?
     let verbSecond: String?
+    
+    
     let gender: Gender?
     
     let nounForms: NounForms?
