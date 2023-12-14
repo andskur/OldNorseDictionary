@@ -7364,270 +7364,376 @@
         "oldNorseWord": "elta",
         "englishTranslation": "to chase",
         "russianTranslation": "гнаться",
-        "definition": "To chase, to pursue",
-        "examples": [],
+        "definition": "This verb refers to the action of pursuing or following someone or something swiftly in order to catch them.",
+        "examples": [
+            "Hann eltir hundinn. (He chases the dog.)",
+            "Þau elta fuglinn. (They chase the bird.)"
+        ],
         "type": "verb",
-        "verbFirst": "elta",
-        "verbSecond": "elti"
+        "verbForms": {
+            "first": "elta",
+            "second": "elti"
+        }
     },
     {
         "oldNorseWord": "eta",
         "englishTranslation": "to eat",
         "russianTranslation": "есть",
-        "definition": "To eat, to consume",
-        "examples": [],
+        "definition": "It means to consume food; to take food into the body through the mouth.",
+        "examples": [
+            "Hann etur epli. (He eats an apple.)",
+            "Þau eta saman. (They eat together.)"
+        ],
         "type": "verb",
-        "verbFirst": "eta",
-        "verbSecond": "et"
+        "verbForms": {
+            "first": "eta",
+            "second": "et"
+        }
     },
     {
         "oldNorseWord": "hræða",
         "englishTranslation": "to frighten",
         "russianTranslation": "пугать",
-        "definition": "To frighten, to scare",
-        "examples": [],
+        "definition": "This term implies causing fear or alarm; to make someone afraid.",
+        "examples": [
+            "Sagan hræðir börnin. (The story frightens the children.)",
+            "Hún hræðir fuglana. (She frightens the birds.)"
+        ],
         "type": "verb",
-        "verbFirst": "hræða",
-        "verbSecond": "hræði"
+        "verbForms": {
+            "first": "hræða",
+            "second": "hræði"
+        }
     },
     {
         "oldNorseWord": "opna",
         "englishTranslation": "to open",
         "russianTranslation": "открывать",
-        "definition": "To open, to reveal",
-        "examples": [],
+        "definition": "Refers to the action of making something accessible or visible by uncovering it or removing any barrier.",
+        "examples": [
+            "Hann opnar bókina. (He opens the book.)",
+            "Þau opna gluggann. (They open the window.)"
+        ],
         "type": "verb",
-        "verbFirst": "opna",
-        "verbSecond": "opna"
+        "verbForms": {
+            "first": "opna",
+            "second": "opna"
+        }
     },
     {
         "oldNorseWord": "fara",
         "englishTranslation": "to go",
         "russianTranslation": "идти, ехать",
-        "definition": "To go",
-        "examples": [],
+        "definition": "Refers to the act of moving or traveling from one place to another.",
+        "examples": [
+            "Hann fer til borgarinnar. (He goes to the city.)",
+            "Þau fara heim. (They go home.)"
+        ],
         "type": "verb",
-        "verbFirst": "fara",
-        "verbSecond": "fer"
+        "verbForms": {
+            "first": "fara",
+            "second": "fer"
+        }
     },
     {
         "oldNorseWord": "heyra",
         "englishTranslation": "to listen, to hear",
         "russianTranslation": "слушать, слышать",
-        "definition": "To listen, to hear",
-        "examples": [],
+        "definition": "Involves perceiving sound by the ear or paying attention to sounds.",
+        "examples": [
+            "Hún heyrir tónlistina. (She hears the music.)",
+            "Þau heyra fuglasöng. (They hear the bird song.)"
+        ],
         "type": "verb",
-        "verbFirst": "heyra",
-        "verbSecond": "heyri"
+        "verbForms": {
+            "first": "heyra",
+            "second": "heyri"
+        }
     },
     {
         "oldNorseWord": "spyrja",
         "englishTranslation": "to ask",
         "russianTranslation": "спрашивать, справляться",
-        "definition": "To ask",
-        "examples": [],
+        "definition": "Means to inquire or seek information by questioning.",
+        "examples": [
+            "Hann spyr um leiðina. (He asks for the way.)",
+            "Þau spyrja um verðið. (They ask about the price.)"
+        ],
         "type": "verb",
-        "verbFirst": "spyrja",
-        "verbSecond": "spyr"
+        "verbForms": {
+            "first": "spyrja",
+            "second": "spyr"
+        }
     },
     {
         "oldNorseWord": "svara",
         "englishTranslation": "to answer",
         "russianTranslation": "отвечать, давать ответ",
-        "definition": "To answer",
-        "examples": [],
+        "definition": "To respond or reply to a question or statement.",
+        "examples": [
+            "Hún svarar bréfinu. (She answers the letter.)",
+            "Þau svara spurningunni. (They answer the question.)"
+        ],
         "type": "verb",
-        "verbFirst": "svara",
-        "verbSecond": "svara"
+        "verbForms": {
+            "first": "svara",
+            "second": "svara"
+        }
     },
     {
         "oldNorseWord": "veiða",
         "englishTranslation": "to catch, to hunt",
         "russianTranslation": "ловить, охотиться",
-        "definition": "To catch, to hunt",
-        "examples": [],
+        "definition": "This term refers to the action of pursuing and capturing or killing wild animals.",
+        "examples": [
+            "Hann veiðir fisk. (He catches fish.)",
+            "Þau veiða í skóginum. (They hunt in the forest.)"
+        ],
         "type": "verb",
-        "verbFirst": "veiða",
-        "verbSecond": "veiði"
-    },
-    {
-        "oldNorseWord": "eiga",
-        "englishTranslation": "to be married",
-        "russianTranslation": "быть женатым",
-        "definition": "To be married",
-        "examples": [],
-        "type": "verb",
-        "verbFirst": "eiga",
-        "verbSecond": "eigi"
+        "verbForms": {
+            "first": "veiða",
+            "second": "veiði"
+        }
     },
     {
         "oldNorseWord": "finna",
         "englishTranslation": "to find",
         "russianTranslation": "находить, отыскивать",
-        "definition": "To find",
-        "examples": [],
+        "definition": "Means to discover or come upon something by searching or by chance.",
+        "examples": [
+            "Hún finnur lykilinn. (She finds the key.)",
+            "Þeir finna leiðina. (They find the way.)"
+        ],
         "type": "verb",
-        "verbFirst": "finna",
-        "verbSecond": "finni"
+        "verbForms": {
+            "first": "finna",
+            "second": "finn"
+        }
     },
     {
         "oldNorseWord": "foera",
         "englishTranslation": "to bring",
         "russianTranslation": "приносить, привозить",
-        "definition": "To bring",
-        "examples": [],
+        "definition": "To carry or transport someone or something to a place.",
+        "examples": [
+            "Hann færir matinn. (He brings the food.)",
+            "Þau færa gjafir. (They bring gifts.)"
+        ],
         "type": "verb",
-        "verbFirst": "foera",
-        "verbSecond": "foeri"
+        "verbForms": {
+            "first": "foera",
+            "second": "foeri"
+        }
     },
     {
         "oldNorseWord": "gefa",
         "englishTranslation": "to give",
         "russianTranslation": "давать, дарить",
-        "definition": "To give",
-        "examples": [],
+        "definition": "Involves transferring something to someone, typically voluntarily.",
+        "examples": [
+            "Hún gefur honum bók. (She gives him a book.)",
+            "Þeir gefa gjafir. (They give gifts.)"
+        ],
         "type": "verb",
-        "verbFirst": "gefa",
-        "verbSecond": "gefi",
-        "conjugation": {
-            "singular": {
-                "firstPerson": "gef"
-            }
+        "verbForms": {
+            "first": "gefa",
+            "second": "gef"
         }
     },
     {
         "oldNorseWord": "heita",
         "englishTranslation": "to promise",
         "russianTranslation": "обещать",
-        "definition": "To promise",
-        "examples": [],
+        "definition": "To commit oneself by a promise to do or give; to pledge.",
+        "examples": [
+            "Hann heitir að hjálpa. (He promises to help.)",
+            "Þau heita að mæta. (They promise to come.)"
+        ],
         "type": "verb",
-        "verbFirst": "heita",
-        "verbSecond": "heitir"
+        "verbForms": {
+            "first": "heita",
+            "second": "heiti"
+        }
     },
     {
         "oldNorseWord": "hlæja",
         "englishTranslation": "to laugh",
         "russianTranslation": "смеяться, высмеивать",
-        "definition": "To laugh",
-        "examples": [],
+        "definition": "To express mirth, joy, or amusement with audible, vocal expulsions of sound.",
+        "examples": [
+            "Hún hlær hátt. (She laughs loudly.)",
+            "Þau hlæja saman. (They laugh together.)"
+        ],
         "type": "verb",
-        "verbFirst": "hlæja",
-        "verbSecond": "hlær"
+        "verbForms": {
+            "first": "hlæja",
+            "second": "hlæ"
+        }
     },
     {
         "oldNorseWord": "kenna",
         "englishTranslation": "to teach",
         "russianTranslation": "учить",
-        "definition": "To teach",
-        "examples": [],
+        "definition": "To impart knowledge or skill to someone through instruction or example.",
+        "examples": [
+            "Hann kennir þeim stærðfræði. (He teaches them mathematics.)",
+            "Hún kennir börnunum að lesa. (She teaches the children to read.)"
+        ],
         "type": "verb",
-        "verbFirst": "kenna",
-        "verbSecond": "kenni"
+        "verbForms": {
+            "first": "kenna",
+            "second": "kenni"
+        }
     },
     {
         "oldNorseWord": "brenna",
         "englishTranslation": "to burn, to blaze",
         "russianTranslation": "гореть, пылать",
-        "definition": "To burn, to blaze",
-        "examples": [],
+        "definition": "Refers to the process of combustion, where substances combine chemically with oxygen from the air and typically give out bright light, heat, and smoke.",
+        "examples": [
+            "Skógurinn brennur. (The forest is burning.)",
+            "Eldurinn brennur bjart. (The fire burns brightly.)"
+        ],
         "type": "verb",
-        "verbFirst": "brenna",
-        "verbSecond": "brenn"
+        "verbForms": {
+            "first": "brenna",
+            "second": "brenn"
+        }
     },
     {
         "oldNorseWord": "búa",
         "englishTranslation": "to live, to dwell",
         "russianTranslation": "жить, проживать",
-        "definition": "To live, to dwell",
-        "examples": [],
+        "definition": "Means to reside or inhabit a particular place.",
+        "examples": [
+            "Hún býr í húsi. (She lives in a house.)",
+            "Þeir búa saman. (They dwell together.)"
+        ],
         "type": "verb",
-        "verbFirst": "búa",
-        "verbSecond": "bý"
+        "verbForms": {
+            "first": "búa",
+            "second": "bý"
+        }
     },
     {
         "oldNorseWord": "búa",
         "englishTranslation": "to equip, to dress",
         "russianTranslation": "снаряжать, одевать",
-        "definition": "To equip, to dress",
-        "examples": [],
+        "definition": "This meaning of 'búa' refers to preparing or adorning someone or something with necessary apparel or equipment.",
+        "examples": [
+            "Hann býr sig til ferðar. (He equips himself for the journey.)",
+            "Hún býr barnið í föt. (She dresses the child.)"
+        ],
         "type": "verb",
-        "verbFirst": "búa",
-        "verbSecond": "búa"
+        "verbForms": {
+            "first": "búa",
+            "second": "búa"
+        }
     },
     {
         "oldNorseWord": "elda",
         "englishTranslation": "to cook, to fuel",
         "russianTranslation": "готовить, топить",
-        "definition": "To cook, to fuel",
-        "examples": [],
+        "definition": "Involves the preparation of food by heating or the act of maintaining a fire.",
+        "examples": [
+            "Hann eldar matinn. (He cooks the food.)",
+            "Þau elda arininn. (They fuel the hearth.)"
+        ],
         "type": "verb",
-        "verbFirst": "elda",
-        "verbSecond": "elda"
+        "verbForms": {
+            "first": "elda",
+            "second": "elda"
+        }
     },
     {
         "oldNorseWord": "falla",
         "englishTranslation": "to fall",
         "russianTranslation": "падать, пасть",
-        "definition": "To fall",
-        "examples": [],
+        "definition": "Refers to moving downwards, typically rapidly and freely without control, from a higher to a lower level.",
+        "examples": [
+            "Laufið fellur af trénu. (The leaf falls from the tree.)",
+            "Hann fellur til jarðar. (He falls to the ground.)"
+        ],
         "type": "verb",
-        "verbFirst": "falla",
-        "verbSecond": "fell"
+        "verbForms": {
+            "first": "falla",
+            "second": "fell"
+        }
     },
     {
         "oldNorseWord": "ganga",
         "englishTranslation": "to go, to walk",
         "russianTranslation": "идти, ходить",
-        "definition": "To go, to walk",
-        "examples": [],
+        "definition": "Means to move at a regular pace by lifting and setting down each foot in turn, never having both feet off the ground at once.",
+        "examples": [
+            "Hún gengur um götuna. (She walks down the street.)",
+            "Þeir ganga upp fjallið. (They go up the mountain.)"
+        ],
         "type": "verb",
-        "verbFirst": "ganga",
-        "verbSecond": "geng"
+        "verbForms": {
+            "first": "ganga",
+            "second": "geng"
+        }
     },
     {
         "oldNorseWord": "lifa",
         "englishTranslation": "to live, to be alive",
         "russianTranslation": "жить, быть живым",
-        "definition": "To live, to be alive",
-        "examples": [],
+        "definition": "To continue to be alive or to exist; to lead a life of a particular kind.",
+        "examples": [
+            "Hann lifir góðu lífi. (He lives a good life.)",
+            "Þau lifa enn. (They are still alive.)"
+        ],
         "type": "verb",
-        "verbFirst": "lifa",
-        "verbSecond": "lifi"
+        "verbForms": {
+            "first": "lifa",
+            "second": "lifi"
+        }
     },
     {
         "oldNorseWord": "sigla",
         "englishTranslation": "to sail",
         "russianTranslation": "идти под парусами, плыть на судне",
-        "definition": "To sail",
-        "examples": [],
+        "definition": "Refers to the act of traveling in a boat with sails, especially as a sport or recreation.",
+        "examples": [
+            "Þeir sigla um hafið. (They sail over the sea.)",
+            "Skipið siglir til eyjarinnar. (The ship sails to the island.)"
+        ],
         "type": "verb",
-        "verbFirst": "sigla",
-        "verbSecond": "sigli"
+        "verbForms": {
+            "first": "sigla",
+            "second": "sigli"
+        }
     },
     {
         "oldNorseWord": "bjóða",
         "englishTranslation": "to offer, to command",
         "russianTranslation": "предлагать, приказывать",
         "type": "verb",
-        "definition": "To present something for acceptance or rejection; to command or direct someone to do something.",
+        "definition": "This term is used for extending an offer to someone or giving a command or instruction.",
         "examples": [
-            "Hann bauð mér að mæta í kvöld. (He invited me to come tonight.)"
+            "Hann bjóðar henni til dans. (He offers her a dance.)",
+            "Hann býður þeim að fara. (He commands them to leave.)"
         ],
-        "verbFirst": "bjóða",
-        "verbSecond": "býð"
+        "verbForms": {
+            "first": "bjóða",
+            "second": "býð"
+        }
     },
     {
         "oldNorseWord": "blása",
         "englishTranslation": "to blow, to breeze",
         "russianTranslation": "дуть, веять",
         "type": "verb",
-        "definition": "To expel air or any other substance from the mouth.",
+        "definition": "Means to expel air from the lungs through the mouth or to cause air to move around, typically generating a current.",
         "examples": [
-            "Blása í eldinn til að kveikja í honum. (Blow into the fire to kindle it.)"
+            "Vindurinn blæs frá norðri. (The wind blows from the north.)",
+            "Blása í lúður. (Blow the horn.)"
         ],
-        "verbFirst": "blása",
-        "verbSecond": "blæs",
+        "verbForms": {
+            "first": "blása",
+            "second": "blæs"
+        },
         "conjugation": {
             "singular": {
                 "firstPerson": "blæs",
@@ -7646,324 +7752,398 @@
         "englishTranslation": "to stand, to remain",
         "russianTranslation": "стоять, оставаться в силе",
         "type": "verb",
-        "definition": "To be in or maintain an upright position; to continue to exist, endure, or remain valid.",
+        "definition": "Refers to maintaining an upright position on the feet or continuing to be in a certain state or situation.",
         "examples": [
-            "Hún stendur upp og gengur út. (She stands up and goes outside.)"
+            "Hann stendur við gluggann. (He stands by the window.)",
+            "Lögin standa óbreytt. (The laws remain unchanged.)"
         ],
-        "verbFirst": "standa",
-        "verbSecond": "stend"
+        "verbForms": {
+            "first": "standa",
+            "second": "stend"
+        }
     },
     {
         "oldNorseWord": "sýna",
         "englishTranslation": "to show, to display",
         "russianTranslation": "показывать, проявлять",
         "type": "verb",
-        "definition": "To make something visible or evident to the eyes or other senses.",
+        "definition": "This term is used when making something visible or clear to someone, typically by presenting it or demonstrating it.",
         "examples": [
-            "Hann sýnir mér gamla myntasafn sitt. (He shows me his old coin collection.)"
+            "Hún sýnir mér bréfið. (She shows me the letter.)",
+            "Sýna listaverk á sýningu. (Display artwork at an exhibition.)"
         ],
-        "verbFirst": "sýna",
-        "verbSecond": "sýni"
+        "verbForms": {
+            "first": "sýna",
+            "second": "sýni"
+        }
     },
     {
         "oldNorseWord": "gøra",
         "englishTranslation": "to do, to perform",
         "russianTranslation": "делать, выполнять",
         "type": "verb",
-        "definition": "To perform an action or activity; to execute or carry out.",
+        "definition": "Involves carrying out an action, task, or function.",
         "examples": [
-            "Hann gørir verkið. (He does the work.)"
+            "Hann gørir verkið vel. (He does the work well.)"
         ],
-        "verbFirst": "gøra",
-        "verbSecond": "gøri"
+        "verbForms": {
+            "first": "gøra",
+            "second": "gøri"
+        }
     },
     {
         "oldNorseWord": "leiða",
         "englishTranslation": "to lead, to escort",
         "russianTranslation": "вести, провожать",
         "type": "verb",
-        "definition": "To guide or direct in a particular direction; to accompany someone to ensure they reach a destination.",
+        "definition": "To show the way to a destination by going in front or beside; to guide.",
         "examples": [
-            "Hann leiðir mig heim. (He leads me home.)"
+            "Hún leiðir barnið í skólann. (She leads the child to school.)"
         ],
-        "verbFirst": "leiða",
-        "verbSecond": "leiði"
+        "verbForms": {
+            "first": "leiða",
+            "second": "leiði"
+        }
     },
     {
         "oldNorseWord": "munu",
         "englishTranslation": "to intend, to plan",
         "russianTranslation": "намереваться, собираться",
         "type": "verb",
-        "definition": "To have in mind as a purpose or goal.",
+        "definition": "Refers to having a future intention or plan to do something.",
         "examples": [
-            "Hann mun fara á morgun. (He intends to go tomorrow.)"
+            "Þau munu heimsækja okkur. (They intend to visit us.)"
         ],
-        "verbFirst": "munu",
-        "verbSecond": "mun"
+        "verbForms": {
+            "first": "munu",
+            "second": "mun"
+        },
+        "conjugation": {
+            "singular": {
+                "secondPerson": "munt",
+                "thirdPerson": "mun"
+            },
+            "plural": {
+                "secondPerson": "munuð",
+            }
+        }
     },
     {
         "oldNorseWord": "reka",
         "englishTranslation": "to drive, to force",
         "russianTranslation": "гнать, принуждать",
         "type": "verb",
-        "definition": "To compel to move in a particular direction; to exert force upon.",
+        "definition": "Means to cause to move in a specific direction, especially forcibly.",
         "examples": [
-            "Hann rek kúna. (He drives the cows.)"
+            "Hann rek skipið fram. (He drives the ship forward.)"
         ],
-        "verbFirst": "reka",
-        "verbSecond": "rek"
+        "verbForms": {
+            "first": "reka",
+            "second": "rek"
+        }
     },
     {
         "oldNorseWord": "skulu",
         "englishTranslation": "to owe, to be obliged",
         "russianTranslation": "долженствовать, быть должным",
         "type": "verb",
-        "definition": "To be under a moral or legal obligation to do something.",
+        "definition": "To be under an obligation to do, provide, or pay something; to owe.",
         "examples": [
-            "Hann skal borga mér. (He owes me.)"
+            "Við skulum virða lögin. (We ought to respect the laws.)"
         ],
-        "verbFirst": "skulu",
-        "verbSecond": "skal"
+        "verbForms": {
+            "first": "skulu",
+            "second": "skal"
+        },
+        "conjugation": {
+            "singular": {
+                "secondPerson": "skalt",
+                "thirdPerson": "skal"
+            },
+            "plural": {
+                "secondPerson": "skuluð",
+            }
+        }
     },
     {
         "oldNorseWord": "verða",
         "englishTranslation": "to become, to turn into",
         "russianTranslation": "становиться, делаться",
         "type": "verb",
-        "definition": "To undergo a change or development; to come to be in a particular state or condition.",
+        "definition": "Describes the process of change from one state, condition, or phase to another.",
         "examples": [
-            "Hann verður gamall. (He becomes old.)"
+            "Hún verður læknir. (She becomes a doctor.)"
         ],
-        "verbFirst": "verða",
-        "verbSecond": "verð"
+        "verbForms": {
+            "first": "verða",
+            "second": "verð"
+        }
     },
     {
         "oldNorseWord": "aka",
         "englishTranslation": "to drive, to ride",
         "russianTranslation": "ехать, ездить",
         "type": "verb",
-        "definition": "To operate and control the direction and speed of a motor vehicle; to travel on a horse or bicycle.",
+        "definition": "To control and steer a vehicle or to travel on a horse or bicycle.",
         "examples": [
-            "Hann akar bíl. (He drives a car.)"
+            "Hann akar vagn. (He drives a wagon.)"
         ],
-        "verbFirst": "aka",
-        "verbSecond": "ek"
+        "verbForms": {
+            "first": "aka",
+            "second": "ek"
+        }
     },
     {
         "oldNorseWord": "brenna",
         "englishTranslation": "to burn, to ignite",
         "russianTranslation": "жечь, сжигать",
         "type": "verb",
-        "definition": "To consume fuel and give off heat, light, and gases; to set on fire.",
+        "definition": "To set something on fire or to be consumed by fire.",
         "examples": [
-            "Hann brennir eld. (He burns fire.)"
+            "Við brennum við. (We burn wood.)"
         ],
-        "verbFirst": "brenna",
-        "verbSecond": "brenni"
+        "verbForms": {
+            "first": "brenna",
+            "second": "brenni"
+        }
     },
     {
         "oldNorseWord": "fljúga",
         "englishTranslation": "to fly, to soar",
         "russianTranslation": "летать, лететь",
         "type": "verb",
-        "definition": "To move through the air using wings; to travel in an aircraft.",
+        "definition": "To move through the air on wings or to travel in an aircraft.",
         "examples": [
-            "Hann flýgur með fuglum. (He flies with birds.)"
+            "Fuglinn flýgur. (The bird flies.)"
         ],
-        "verbFirst": "fljúga",
-        "verbSecond": "flýg"
+        "verbForms": {
+            "first": "fljúga",
+            "second": "flýg"
+        }
     },
     {
         "oldNorseWord": "hjálpa",
         "englishTranslation": "to help, to assist",
         "russianTranslation": "помогать, оказывать помощь",
         "type": "verb",
-        "definition": "To give or provide assistance; to make it easier for someone to do something.",
+        "definition": "To provide support or assistance to someone.",
         "examples": [
-            "Hann hjálpar mér. (He helps me.)"
+            "Hún hjálpar barninu. (She helps the child.)"
         ],
-        "verbFirst": "hjálpa",
-        "verbSecond": "help"
+        "verbForms": {
+            "first": "hjálpa",
+            "second": "help"
+        }
     },
     {
         "oldNorseWord": "hringa",
         "englishTranslation": "to coil, to curl",
         "russianTranslation": "сгибать в кольцо, сворачивать в кольца",
         "type": "verb",
-        "definition": "To form into a circular shape; to wind into continuous rings.",
+        "definition": "To wind or twist something into a circular or spiral form.",
         "examples": [
-            "Hann hringar snúru. (He coils the rope.)"
+            "Hann hringar tauðið. (He coils the rope.)"
         ],
-        "verbFirst": "hringa",
-        "verbSecond": "hringa"
+        "verbForms": {
+            "first": "hringa",
+            "second": "hringa"
+        }
     },
     {
         "oldNorseWord": "róa",
         "englishTranslation": "to row, to paddle",
         "russianTranslation": "грести, идти на вёслах",
         "type": "verb",
-        "definition": "To propel a boat with oars; to move by means of oars.",
+        "definition": "To move a boat by means of oars or to paddle.",
         "examples": [
-            "Hann roer á vatni. (He rows on the water.)"
+            "Þau róa bátinn. (They row the boat.)"
         ],
-        "verbFirst": "róa",
-        "verbSecond": "roe"
+        "verbForms": {
+            "first": "róa",
+            "second": "roe"
+        }
     },
     {
         "oldNorseWord": "vernda",
         "englishTranslation": "to protect, to guard",
         "russianTranslation": "защищать, охранять",
         "type": "verb",
-        "definition": "To keep safe from harm or injury; to watch over and defend.",
+        "definition": "To keep someone or something safe from harm, danger, or injury.",
         "examples": [
-            "Hann verndar hús. (He protects the house.)"
+            "Hann verndar börnin. (He protects the children.)"
         ],
-        "verbFirst": "vernda",
-        "verbSecond": "vernda"
+        "verbForms": {
+            "first": "vernda",
+            "second": "vernda"
+        }
     },
     {
         "oldNorseWord": "gjalda",
         "englishTranslation": "to pay, to compensate",
         "russianTranslation": "платить, уплачивать",
         "type": "verb",
-        "definition": "To give money to in return for goods or services rendered; to make reparation or compensation for.",
+        "definition": "Involves the exchange of money for goods, services, or to offset a debt or liability; also implies providing something as compensation.",
         "examples": [
-            "Hann gjaldar fyrir matinn. (He pays for the food.)"
+            "Hann gjaldar skuld sína. (He pays his debt.)"
         ],
-        "verbFirst": "gjalda",
-        "verbSecond": "geld"
+        "verbForms": {
+            "first": "gjalda",
+            "second": "geld"
+        }
     },
     {
         "oldNorseWord": "halda",
         "englishTranslation": "to hold, to retain",
         "russianTranslation": "держать, удерживать",
         "type": "verb",
-        "definition": "To grasp, carry, or support with one's arms or hands; to keep possession of.",
+        "definition": "To keep or maintain something in one's grasp; to continue to possess or contain something.",
         "examples": [
-            "Hann heldur bókinni. (He holds the book.)"
+            "Hún heldur á blóminu. (She holds the flower.)"
         ],
-        "verbFirst": "halda",
-        "verbSecond": "held"
+        "verbForms": {
+            "first": "halda",
+            "second": "held"
+        }
     },
     {
         "oldNorseWord": "kaupa",
         "englishTranslation": "to buy, to make a deal",
         "russianTranslation": "покупать, заключать сделку",
         "type": "verb",
-        "definition": "To acquire in exchange for money or its equivalent; to enter into an agreement.",
+        "definition": "To acquire something in exchange for money; to agree upon terms in a transaction or agreement.",
         "examples": [
-            "Hann kaupir hest. (He buys a horse.)"
+            "Þau kaupa hús. (They buy a house.)"
         ],
-        "verbFirst": "kaupa",
-        "verbSecond": "kaupi"
+        "verbForms": {
+            "first": "kaupa",
+            "second": "kaupi"
+        }
     },
     {
         "oldNorseWord": "leita",
         "englishTranslation": "to search, to attempt",
         "russianTranslation": "искать, пытаться",
         "type": "verb",
-        "definition": "To try to find something by looking or otherwise seeking carefully and thoroughly; to make an effort to do something.",
+        "definition": "To actively look for something; to make an effort or endeavor to do something.",
         "examples": [
-            "Hann leitar svara. (He searches for answers.)"
+            "Hann leitar að fölum hesti. (He searches for a lost horse.)"
         ],
-        "verbFirst": "leita",
-        "verbSecond": "leita"
+        "verbForms": {
+            "first": "leita",
+            "second": "leita"
+        }
     },
     {
         "oldNorseWord": "telja",
         "englishTranslation": "to tell, to count",
         "russianTranslation": "говорить, считать",
         "type": "verb",
-        "definition": "To communicate information, facts, or news to someone; to determine the total number of.",
+        "definition": "To narrate or relay information; to enumerate or calculate a total.",
         "examples": [
-            "Hann telur sögu. (He tells a story.)"
+            "Hún telur stjörnurnar. (She counts the stars.)"
         ],
-        "verbFirst": "telja",
-        "verbSecond": "tel"
+        "verbForms": {
+            "first": "telja",
+            "second": "tel"
+        }
     },
     {
         "oldNorseWord": "trúa",
         "englishTranslation": "to believe, to trust",
         "russianTranslation": "верить, доверять",
         "type": "verb",
-        "definition": "To accept something as true; to have confidence in the truth, existence, or reliability of something.",
+        "definition": "To accept as true or reliable; to place confidence or reliance in someone or something.",
         "examples": [
-            "Hann trúir þér. (He believes you.)"
+            "Við trúum á guði. (We believe in gods.)"
         ],
-        "verbFirst": "trúa",
-        "verbSecond": "trúi"
+        "verbForms": {
+            "first": "trúa",
+            "second": "trúi"
+        }
     },
     {
         "oldNorseWord": "velja",
         "englishTranslation": "to choose, to select",
         "russianTranslation": "выбирать, отбирать",
         "type": "verb",
-        "definition": "To pick out or select as being the best or most appropriate of two or more alternatives.",
+        "definition": "To make a choice from a range of possibilities; to pick out according to preference or judgment.",
         "examples": [
-            "Hann velur vín. (He chooses wine.)"
+            "Þau velja bestu ávextina. (They choose the best fruits.)"
         ],
-        "verbFirst": "velja",
-        "verbSecond": "vel"
+        "verbForms": {
+            "first": "velja",
+            "second": "vel"
+        }
     },
     {
         "oldNorseWord": "lækna",
         "englishTranslation": "to heal, to cure",
         "russianTranslation": "лечить, исцелять",
         "type": "verb",
-        "definition": "To restore to health or soundness; to remedy or alleviate a disease or ailment.",
+        "definition": "To bring about a return to health or normal condition; to remedy a health issue or disease.",
         "examples": [
-            "Hann læknaði sárin. (He healed the wounds.)"
+            "Læknirinn læknaði sjúklinginn. (The doctor cured the patient.)"
         ],
-        "verbFirst": "lækna",
-        "verbSecond": "lækna"
+        "verbForms": {
+            "first": "lækna",
+            "second": "lækna"
+        }
     },
     {
         "oldNorseWord": "nefna",
         "englishTranslation": "to name, to mention",
         "russianTranslation": "называть, упоминать",
         "type": "verb",
-        "definition": "To give a name to; to specify or refer to by name; to bring up or communicate.",
+        "definition": "To assign a name to someone or something; to bring up or refer to in speech or writing.",
         "examples": [
-            "Hann nefndi það í bókinni. (He mentioned it in the book.)"
+            "Hún nefnir barnið. (She names the child.)"
         ],
-        "verbFirst": "nefna",
-        "verbSecond": "nefni"
+        "verbForms": {
+            "first": "nefna",
+            "second": "nefni"
+        }
     },
     {
         "oldNorseWord": "rísa",
         "englishTranslation": "to rise, to stand up",
         "russianTranslation": "подниматься, вставать",
         "type": "verb",
-        "definition": "To move from a lower position to a higher one; to get up from a seated or lying position.",
+        "definition": "To get up from a lying, sitting, or kneeling posture; to ascend or increase in height.",
         "examples": [
-            "Sól rís á morgun. (The sun rises in the morning.)"
+            "Þeir rísa við sólarupprás. (They rise at sunrise.)"
         ],
-        "verbFirst": "rísa",
-        "verbSecond": "rís"
+        "verbForms": {
+            "first": "rísa",
+            "second": "rís"
+        }
     },
     {
         "oldNorseWord": "smíða",
         "englishTranslation": "to craft, to make",
         "russianTranslation": "изготовлять, делать",
         "type": "verb",
-        "definition": "To create or produce something by assembling or shaping parts or materials.",
+        "definition": "To construct or create something by hand or with tools; to fabricate.",
         "examples": [
-            "Hann smíðaði skip. (He crafted a ship.)"
+            "Hann smíðar bát. (He crafts a boat.)"
         ],
-        "verbFirst": "smíða",
-        "verbSecond": "smíða"
+        "verbForms": {
+            "first": "smíða",
+            "second": "smíða"
+        }
     },
     {
-        "oldNorseWord": "vita/vitu",
+        "oldNorseWord": "vita",
         "englishTranslation": "to know, to be oriented (towards something)",
         "russianTranslation": "знать, быть обращённым (куда-либо)",
         "type": "verb",
-        "definition": "To be aware of or familiar with; to have knowledge or information about; to be directed or facing in a particular direction.",
+        "definition": "To have information or be informed about something; to have knowledge or awareness.",
         "examples": [
-            "Hann veit ekki svarið. (He doesn't know the answer.)"
+            "Þau vita sannleikann. (They know the truth.)"
         ],
-        "verbFirst": "vita",
-        "verbSecond": "veit",
+        "verbForms": {
+            "first": "vita",
+            "second": "veit"
+        },
         "conjugation": {
             "singular": {
                 "secondPerson": "veizt",
@@ -7980,37 +8160,45 @@
         "englishTranslation": "to lay, to set, to thrust",
         "russianTranslation": "класть, ставить, вонзать",
         "type": "verb",
-        "definition": "To move to a horizontal position; to place in a particular position or location; to thrust or drive into a particular position.",
+        "definition": "To put or place something down gently in a flat position; to establish or position something; to thrust or push forcefully.",
         "examples": [
-            "Hann leggur bókina á borðið. (He lays the book on the table.)"
+            "Hún leggur barnið í vögguna. (She lays the baby in the cradle.)",
+            "Þeir leggja steininn á veginn. (They set the stone on the road.)"
         ],
-        "verbFirst": "leggja",
-        "verbSecond": "legg"
+        "verbForms": {
+            "first": "leggja",
+            "second": "legg"
+        }
     },
     {
         "oldNorseWord": "þakka",
         "englishTranslation": "to thank",
         "russianTranslation": "благодарить",
         "type": "verb",
-        "definition": "To express gratitude or appreciation to someone.",
+        "definition": "To express gratitude or show appreciation to someone for their actions, help, or presence.",
         "examples": [
-            "Hann þakkar þér fyrir hjálpina. (He thanks you for the help.)"
+            "Við þökkum fyrir veisluna. (We thank for the feast.)",
+            "Hún þakkar honum fyrir gjöfina. (She thanks him for the gift.)"
         ],
-        "verbFirst": "þakka",
-        "verbSecond": "þakka"
+        "verbForms": {
+            "first": "þakka",
+            "second": "þakka"
+        }
     },
     {
         "oldNorseWord": "liggja",
         "englishTranslation": "to lie, to be situated",
         "russianTranslation": "лежать, находиться",
         "type": "verb",
-        "definition": "To be in or assume a horizontal or resting position on a supporting surface; to be located or placed.",
+        "definition": "To rest or remain in a horizontal position; to be located or placed in a particular setting or context.",
         "examples": [
-            "Bókin liggur á borðinu. (The book lies on the table.)",
-            "Þorpið liggur við fjörðinn. (The village is situated by the fjord.)"
+            "Sverðið liggur í kistunni. (The sword lies in the chest.)",
+            "Bærinn liggur í dalnum. (The town is situated in the valley.)"
         ],
-        "verbFirst": "liggja",
-        "verbSecond": "ligg"
+        "verbForms": {
+            "first": "liggja",
+            "second": "ligg"
+        }
     },
     {
         "oldNorseWord": "fagr",

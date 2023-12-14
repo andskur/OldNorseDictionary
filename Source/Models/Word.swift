@@ -67,6 +67,33 @@ struct Word: Codable, Identifiable {
     
     var id = UUID()
     
+    func generateImperative(number: Number) -> String? {
+        switch number {
+        case .singular:
+            if var inf = generateInfinitive() {
+                if inf.hasSuffix("ja") {
+                    inf.removeLast(2)
+                } else {
+                    inf.removeLast()
+                }
+                            
+                return inf
+            }
+        case .dual, .plural:
+            if var inf = generateInfinitive() {
+                if inf.hasSuffix("ja") {
+                    inf.removeLast(2)
+                } else {
+                    inf.removeLast()
+                }
+                            
+                return inf + "ið"
+            }
+        }
+        
+        return oldNorseWord
+    }
+    
     func generateInfinitive() -> String? {
         if let inf = verbForms?.infinitive {
             return inf

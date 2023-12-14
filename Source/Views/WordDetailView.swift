@@ -163,7 +163,7 @@ struct WordDetailView: View {
 
                 if word.type == .verb {
                     if let inf = word.generateInfinitive() {
-                        Text("Infinitive: \(inf)")
+                        Text("Infinitive: at \(inf)")
                     }
                     
                     DynamicTableVerbs(word: word)

@@ -26,6 +26,25 @@ struct DynamicTableVerbs: View {
                     }
                 }
                 
+                HStack(spacing: 0) {
+                    Text("Imperative")
+                        .frame(minWidth: 87, maxWidth: 87)
+                        .padding(.vertical, 10)
+                        .border(Color.black, width: 1)
+                        .background(Color.gray.opacity(0.2))
+                    
+                    ForEach(Number.allCases, id: \.rawValue) { num in
+                        if word.shouldShowNumber(number: num) {
+                            if let wordWithConjunction = word.generateImperative(number: num) {
+                                Text("\(wordWithConjunction) (þú/þit/þér)!")
+                                    .frame(minWidth: headerWidth(for: num), maxWidth: .infinity)
+                                    .padding(.vertical, 10)
+                                    .border(Color.black, width: 1)
+                            }
+                        }
+                    }
+                }
+                
                 // Rows
                 ForEach(Person.allCases, id: \.rawValue) { p in
                     HStack(spacing: 0) {
