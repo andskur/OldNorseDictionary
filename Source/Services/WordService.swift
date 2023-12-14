@@ -120,12 +120,14 @@ class WordService {
         let genitiveSingularMatchesQuery = word.generateNounGenitive(number: Number.singular, article: false)?.lowercased().contains(query) == true
         let genitiveDualMatchesQuery = word.generateNounGenitive(number: Number.dual, article: false)?.lowercased().contains(query) == true
         let genitivePluralMatchesQuery = word.generateNounGenitive(number: Number.plural, article: false)?.lowercased().contains(query) == true
-        let firstSingularMatchesQuery = word.generateConjugation(person: .first, number: .singular)?.lowercased().contains(query) == true
-        let secondSingularMatchesQuery = word.generateConjugation(person: .second, number: .singular)?.lowercased().contains(query) == true
-        let thirdSingularMatchesQuery = word.generateConjugation(person: .third, number: .singular)?.lowercased().contains(query) == true
-        let firstPluralMatchesQuery = word.generateConjugation(person: .first, number: .plural)?.lowercased().contains(query) == true
-        let secondPluralMatchesQuery = word.generateConjugation(person: .second, number: .plural)?.lowercased().contains(query) == true
-        let thirdPluralMatchesQuery = word.generateConjugation(person: .third, number: .plural)?.lowercased().contains(query) == true
+        
+        
+        let firstSingularMatchesQuery = word.generateConjugationNew(person: .first, number: .singular)?.lowercased().contains(query) == true
+        let secondSingularMatchesQuery = word.generateConjugationNew(person: .second, number: .singular)?.lowercased().contains(query) == true
+        let thirdSingularMatchesQuery = word.generateConjugationNew(person: .third, number: .singular)?.lowercased().contains(query) == true
+        let firstPluralMatchesQuery = word.generateConjugationNew(person: .first, number: .plural)?.lowercased().contains(query) == true
+        let secondPluralMatchesQuery = word.generateConjugationNew(person: .second, number: .plural)?.lowercased().contains(query) == true
+        let thirdPluralMatchesQuery = word.generateConjugationNew(person: .third, number: .plural)?.lowercased().contains(query) == true
         
         // nominative
         let accNominativeSingularMasculine = word.generateCase(wordCase: .nominative, number: .singular, gender: .masculine)?.lowercased().contains(query) == true
@@ -182,8 +184,10 @@ class WordService {
         let accGenitivePluralNeuter = word.generateCase(wordCase: .genitive, number: .plural, gender: .neuter)?.lowercased().contains(query) == true
         
         let accComparative = word.generateComparative()?.lowercased().contains(query) == true
+        
+        let accInfinitive = word.generateInfinitive()?.lowercased().contains(query) == true
 
 
-        return wordMatchesQuery || nominativeSingularMatchesQuery || nominativeDualMatchesQuery || nominativePluralMatchesQuery || accusativeSingularMatchesQuery || accusativeDualMatchesQuery || accusativePluralMatchesQuery || dativeSingularMatchesQuery || dativeDualMatchesQuery || dativePluralMatchesQuery || firstSingularMatchesQuery || secondSingularMatchesQuery || thirdSingularMatchesQuery || firstPluralMatchesQuery || secondPluralMatchesQuery || thirdPluralMatchesQuery || genitiveSingularMatchesQuery || genitiveDualMatchesQuery || genitivePluralMatchesQuery || accNominativeSingularMasculine || accNominativeSingularFemenine || accNominativeSingularNeuter || accNominativeDualMasculine || accNominativeDualFemenine || accNominativeDualNeuter || accNominativePluralMasculine || accNominativePluralFemenine || accAccusativePluralNeuter || accAccusativeSingularMasculine || accAccusativeSingularFemenine || accAccusativeSingularNeuter || accAccusativeDualMasculine || accAccusativeDualFemenine || accAccusativeDualNeuter || accAccusativePluralMasculine || accDativePluralFemenine || accDativePluralNeuter || accGenitiveSingularMasculine || accGenitiveSingularFemenine || accGenitiveSingularNeuter || accGenitiveDualMasculine || accGenitiveDualFemenine || accGenitiveDualNeuter || accGenitivePluralMasculine || accGenitivePluralFemenine || accGenitivePluralNeuter || accNominativePluralNeuter || accDativeSingularMasculine || accDativePluralMasculine || accDativeDualNeuter || accDativeDualFemenine || accDativeDualMasculine || accDativeSingularFemenine || accDativeSingularNeuter || accAccusativePluralFemenine || accComparative
+        return wordMatchesQuery || nominativeSingularMatchesQuery || nominativeDualMatchesQuery || nominativePluralMatchesQuery || accusativeSingularMatchesQuery || accusativeDualMatchesQuery || accusativePluralMatchesQuery || dativeSingularMatchesQuery || dativeDualMatchesQuery || dativePluralMatchesQuery || firstSingularMatchesQuery || secondSingularMatchesQuery || thirdSingularMatchesQuery || firstPluralMatchesQuery || secondPluralMatchesQuery || thirdPluralMatchesQuery || genitiveSingularMatchesQuery || genitiveDualMatchesQuery || genitivePluralMatchesQuery || accNominativeSingularMasculine || accNominativeSingularFemenine || accNominativeSingularNeuter || accNominativeDualMasculine || accNominativeDualFemenine || accNominativeDualNeuter || accNominativePluralMasculine || accNominativePluralFemenine || accAccusativePluralNeuter || accAccusativeSingularMasculine || accAccusativeSingularFemenine || accAccusativeSingularNeuter || accAccusativeDualMasculine || accAccusativeDualFemenine || accAccusativeDualNeuter || accAccusativePluralMasculine || accDativePluralFemenine || accDativePluralNeuter || accGenitiveSingularMasculine || accGenitiveSingularFemenine || accGenitiveSingularNeuter || accGenitiveDualMasculine || accGenitiveDualFemenine || accGenitiveDualNeuter || accGenitivePluralMasculine || accGenitivePluralFemenine || accGenitivePluralNeuter || accNominativePluralNeuter || accDativeSingularMasculine || accDativePluralMasculine || accDativeDualNeuter || accDativeDualFemenine || accDativeDualMasculine || accDativeSingularFemenine || accDativeSingularNeuter || accAccusativePluralFemenine || accComparative || accInfinitive
     }
 }

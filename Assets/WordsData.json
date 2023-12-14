@@ -7023,13 +7023,13 @@
         ]
     },
     {
-        "oldNorseWord": "er",
+        "oldNorseWord": "eru",
         "englishTranslation": "is, are",
         "russianTranslation": "есть, является",
-        "definition": "Third-person singular present indicative of the verb 'vera' (to be)",
+        "definition": "Used as the third-person singular present indicative form of the verb 'vera' meaning 'to be'.",
         "examples": [
-            "Hann er góður vinur.",
-            "Þau eru góð börn."
+            "Hann er góður vinur. (He is a good friend.)",
+            "Þau eru góð börn. (They are good children.)"
         ],
         "type": "verb",
         "conjugation": {
@@ -7044,17 +7044,20 @@
                 "thirdPerson": "eru"
             }
         },
-        "verbFirst": "er",
-        "verbSecond": "eru"
+        "verbForms": {
+            "infinitive": "vera",
+            "first": "er",
+            "second": "eru"
+        }
     },
     {
         "oldNorseWord": "eigu",
         "englishTranslation": "owns, possesses",
         "russianTranslation": "владеет, обладает",
-        "definition": "Third-person singular present indicative of the verb 'eiga' (to own, to possess)",
+        "definition": "Used as the third-person plural present indicative form of the verb 'eiga' meaning 'to own, to possess'.",
         "examples": [
-            "Hann á hest.",
-            "Hún á hús."
+            "Þeir eigu hest. (They own a horse.)",
+            "Hún á hús. (She owns a house.)"
         ],
         "type": "verb",
         "conjugation": {
@@ -7068,80 +7071,97 @@
                 "thirdPerson": "eigu"
             }
         },
-        "verbFirst": "eigu",
-        "verbSecond": "á"
+        "verbForms": {
+            "infinitive": "eiga",
+            "first": "eigu",
+            "second": "á"
+        }
     },
     {
         "oldNorseWord": "hafa",
         "englishTranslation": "has",
         "russianTranslation": "имеет",
-        "definition": "Third-person singular present indicative of the verb 'hafa' (to have)",
+        "definition": "Used as the third-person singular present indicative form of the verb 'hafa' meaning 'to have'.",
         "examples": [
-            "Hún hefir bók.",
-            "Þau hefir hund."
+            "Hún hefur bók. (She has a book.)",
+            "Þau hafa hund. (They have a dog.)"
         ],
         "type": "verb",
         "conjugation": {
             "plural": {
-                "firstPerson": "höfum"
+                "firstPerson": "höfum",
             }
         },
-        "verbFirst": "hafa",
-        "verbSecond": "hefi"
+        "verbForms": {
+            "first": "hafa",
+            "second": "hefi"
+        }
     },
     {
         "oldNorseWord": "heita",
-        "englishTranslation": "is called, is named",
-        "russianTranslation": "зовётся, называется",
-        "definition": "Third-person singular present indicative of the verb 'heita' (to be called)",
+        "englishTranslation": "to be called, to be named",
+        "russianTranslation": "называться, именоваться",
+        "definition": "To have as a name; to be referred to by a specific title or term.",
         "examples": [
-            "Hann heitir Ólafur.",
-            "Þau heita Guðrún og Jón."
+            "Konungrinn heitir Haraldur. (The king is called Harald.)",
+            "Hvað heitir þú? (What are you called?)"
         ],
         "type": "verb",
-        "verbFirst": "heita",
-        "verbSecond": "heiti"
+        "verbForms": {
+            "first": "heita",
+            "second": "heiti"
+        }
     },
     {
         "oldNorseWord": "segja",
-        "englishTranslation": "says",
-        "russianTranslation": "говорит",
-        "definition": "Third-person singular present indicative of the verb 'segja' (to say)",
+        "englishTranslation": "to say, to tell",
+        "russianTranslation": "говорить, рассказывать",
+        "definition": "To express in words; to convey or communicate verbally.",
         "examples": [
-            "Hann segir bless.",
-            "Hún segir já."
+            "Hann segir söguna. (He tells the story.)",
+            "Segðu mér frá ferðinni þinni. (Tell me about your journey.)"
         ],
         "type": "verb",
-        "verbFirst": "segja",
-        "verbSecond": "segi"
+        "verbForms": {
+            "first": "segja",
+            "second": "segi"
+        }
     },
     {
         "oldNorseWord": "sjá",
         "englishTranslation": "sees, looks",
         "russianTranslation": "видит, смотрит",
-        "definition": "Third-person singular present indicative of the verb 'sjá' (to see)",
+        "definition": "Used as the third-person singular present indicative form of the verb 'sjá' meaning 'to see'.",
         "examples": [
-            "Hún sér blómin.",
-            "Þau sér fugl."
+            "Hún sér blómin. (She sees the flowers.)",
+            "Þau sjá fugl. (They see a bird.)"
         ],
         "type": "verb",
         "conjugation": {
+            "singular": {
+                "firstPerson": "sé",
+                "secondPerson": "sér",
+                "thirdPerson": "sér"
+            },
             "plural": {
                 "firstPerson": "sjám",
-                "secondPerson": "séð"
+                "secondPerson": "séð",
+                "thirdPerson": "sjá"
             }
         },
-        "verbFirst": "sjá",
-        "verbSecond": "sé"
+        "verbForms": {
+            "first": "sjá",
+            "second": "sé"
+        }
     },
     {
         "oldNorseWord": "taka",
         "englishTranslation": "takes",
         "russianTranslation": "берет, забирает",
-        "definition": "Third-person singular present indicative of the verb 'taka' (to take)",
+        "definition": "Used as the third-person singular present indicative form of the verb 'taka' meaning 'to take'.",
         "examples": [
-            "Hann tekr bók.",
-            "Hún tekr blómin."
+            "Hann tekur bók. (He takes a book.)",
+            "Hún tekur blómin. (She takes the flowers.)"
         ],
         "type": "verb",
         "conjugation": {
@@ -7149,30 +7169,34 @@
                 "firstPerson": "tökum"
             }
         },
-        "verbFirst": "taka",
-        "verbSecond": "tek"
+        "verbForms": {
+            "first": "taka",
+            "second": "tek"
+        }
     },
     {
         "oldNorseWord": "vega",
         "englishTranslation": "kills, attacks",
         "russianTranslation": "убивает, нападает",
-        "definition": "Third-person singular present indicative of the verb 'vegja' (to kill, to attack)",
-        "examples": [
-            "Hann vegr dreka.",
-            "Hún vegr hund."
-        ],
         "type": "verb",
-        "verbFirst": "vega",
-        "verbSecond": "veg"
+        "definition": "To strike, to kill, or to attack; typically used in the context of combat or physical confrontation.",
+        "examples": [
+            "Þeir vega óvinina í orrustu. (They attack the enemies in battle.)",
+            "Hann vegur dreka með sverði. (He kills the dragon with a sword.)"
+        ],
+        "verbForms": {
+            "first": "vega",
+            "second": "veg"
+        }
     },
     {
         "oldNorseWord": "vilja",
         "englishTranslation": "wants",
         "russianTranslation": "хочет",
-        "definition": "Third-person singular present tense form of the verb 'vilia' (to want)",
+        "definition": "Used as the third-person singular present tense form of the verb 'vilja' meaning 'to want'.",
         "examples": [
-            "Hann vill fara í bókasafn.",
-            "Hún vill borða köku."
+            "Hann vill fara í bókasafn. (He wants to go to the library.)",
+            "Hún vill borða köku. (She wants to eat cake.)"
         ],
         "type": "verb",
         "conjugation": {
@@ -7181,108 +7205,160 @@
                 "thirdPerson": "vill"
             }
         },
-        "verbFirst": "vilja",
-        "verbSecond": "vil"
+        "verbForms": {
+            "first": "vilja",
+            "second": "vil"
+        }
     },
     {
         "oldNorseWord": "bíða",
         "englishTranslation": "to wait, to wait for",
         "russianTranslation": "ждать, пережидать",
-        "definition": "Infinitive form of the verb 'bíða' (to wait, to wait for)",
-        "examples": [],
+        "definition": "Infinitive form of the verb 'bíða', meaning 'to wait or to wait for'.",
+        "examples": [
+            "Hann bíður eftir mér. (He is waiting for me.)",
+            "Þeir bíða í húsinu. (They wait in the house.)"
+        ],
         "type": "verb",
-        "verbFirst": "bíða",
-        "verbSecond": "bíð"
+        "verbForms": {
+            "first": "bíða",
+            "second": "bíð"
+        }
     },
     {
         "oldNorseWord": "deyja",
         "englishTranslation": "to die",
         "russianTranslation": "умирать, умереть",
-        "definition": "Infinitive form of the verb 'deyja' (to die)",
-        "examples": [],
+        "definition": "Infinitive form of the verb 'deyja', meaning 'to die'.",
+        "examples": [
+            "Enginn vill deyja ungur. (No one wants to die young.)",
+            "Hann deyr sem hetja. (He dies as a hero.)"
+        ],
         "type": "verb",
-        "verbFirst": "deyja",
-        "verbSecond": "dey"
+        "verbForms": {
+            "first": "deyja",
+            "second": "dey"
+        }
     },
     {
         "oldNorseWord": "flýja",
         "englishTranslation": "to flee, to run away",
         "russianTranslation": "бежать, убегать",
-        "definition": "Infinitive form of the verb 'flýja' (to flee, to run away)",
-        "examples": [],
+        "definition": "Infinitive form of the verb 'flýja', meaning 'to flee or to run away'.",
+        "examples": [
+            "Þau flýja frá eldinum. (They flee from the fire.)",
+            "Hann flýr í skóginn. (He flees into the forest.)"
+        ],
         "type": "verb",
-        "verbFirst": "flýja",
-        "verbSecond": "flý"
+        "verbForms": {
+            "first": "flýja",
+            "second": "flý"
+        }
     },
     {
         "oldNorseWord": "hata",
         "englishTranslation": "to hate",
         "russianTranslation": "ненавидеть",
-        "definition": "Infinitive form of the verb 'hata' (to hate)",
-        "examples": [],
+        "definition": "Infinitive form of the verb 'hata', meaning 'to hate'.",
+        "examples": [
+            "Hún hatar kalda veðrið. (She hates the cold weather.)",
+            "Þeir hata óréttlæti. (They hate injustice.)"
+        ],
         "type": "verb",
-        "verbFirst": "hata",
-        "verbSecond": "hata"
+        "verbForms": {
+            "first": "hata",
+            "second": "hata"
+        }
     },
     {
         "oldNorseWord": "hlaupa",
         "englishTranslation": "to run",
         "russianTranslation": "бежать, бегать",
-        "definition": "Infinitive form of the verb 'hlaupa' (to run)",
-        "examples": [],
+        "definition": "Infinitive form of the verb 'hlaupa', meaning 'to run'.",
+        "examples": [
+            "Börnin hlaupa um garðinn. (The children run around the garden.)",
+            "Hann hlýpur til hjálpar. (He runs to help.)"
+        ],
         "type": "verb",
-        "verbFirst": "hlaupa",
-        "verbSecond": "hleyp"
+        "verbForms": {
+            "first": "hlaupa",
+            "second": "hleyp"
+        }
     },
     {
         "oldNorseWord": "koma",
         "englishTranslation": "to come",
         "russianTranslation": "приходить, приезжать",
-        "definition": "Infinitive form of the verb 'koma' (to come)",
-        "examples": [],
+        "definition": "This is the infinitive form of 'koma', which means 'to arrive or to appear in a place'.",
+        "examples": [
+            "Hann kemur heim. (He comes home.)",
+            "Þeir koma til bæjarins. (They come to the town.)"
+        ],
         "type": "verb",
-        "verbFirst": "koma",
-        "verbSecond": "køm"
+        "verbForms": {
+            "first": "koma",
+            "second": "køm"
+        }
     },
     {
         "oldNorseWord": "mæla",
         "englishTranslation": "to speak, to say",
         "russianTranslation": "говорить, сказать",
-        "definition": "Infinitive form of the verb 'mæla' (to speak, to say)",
-        "examples": [],
+        "definition": "The infinitive form of 'mæla', which translates to 'to utter words or articulate thoughts'.",
+        "examples": [
+            "Hún mælir mjúklega. (She speaks softly.)",
+            "Þau mæla fyrir þingi. (They speak before the assembly.)"
+        ],
         "type": "verb",
-        "verbFirst": "mæla",
-        "verbSecond": "mæli"
+        "verbForms": {
+            "first": "mæla",
+            "second": "mæli"
+        }
     },
     {
         "oldNorseWord": "vakna",
         "englishTranslation": "to wake up",
         "russianTranslation": "просыпаться, пробуждаться",
-        "definition": "Infinitive form of the verb 'vakna' (to wake up)",
-        "examples": [],
+        "definition": "Refers to the infinitive form of 'vakna', meaning 'to cease sleeping or to become conscious after sleeping'.",
+        "examples": [
+            "Hann vaknar við sólarupprás. (He wakes up at sunrise.)",
+            "Barnið vaknar oft um nóttina. (The child often wakes up during the night.)"
+        ],
         "type": "verb",
-        "verbFirst": "vakna",
-        "verbSecond": "vakna"
+        "verbForms": {
+            "first": "vakna",
+            "second": "vakna"
+        }
     },
     {
         "oldNorseWord": "kalla",
         "englishTranslation": "to call, to shout",
         "russianTranslation": "звать, кричать",
-        "definition": "To call, to shout",
-        "examples": [],
+        "definition": "This verb means to summon someone or something by calling out loudly or to shout.",
+        "examples": [
+            "Hann kallar á hjálp. (He calls for help.)",
+            "Hún kallar nafn hans. (She calls his name.)"
+        ],
         "type": "verb",
-        "verbFirst": "kalla",
-        "verbSecond": "kalla"
+        "verbForms": {
+            "first": "kalla",
+            "second": "kalla"
+        }
     },
     {
         "oldNorseWord": "kenna",
         "englishTranslation": "to know, to recognize",
         "russianTranslation": "знать, узнавать",
-        "definition": "To know, to recognize",
-        "examples": [],
+        "definition": "Refers to the act of recognizing, identifying, or being familiar with a person or thing.",
+        "examples": [
+            "Þau kenna veginn vel. (They know the way well.)",
+            "Hann kennir mér stafina. (He teaches me the letters.)"
+        ],
         "type": "verb",
-        "verbFirst": "kenna",
-        "verbSecond": "kenni"
+        "verbForms": {
+            "first": "kenna",
+            "second": "kenni"
+        }
     },
     {
         "oldNorseWord": "elta",

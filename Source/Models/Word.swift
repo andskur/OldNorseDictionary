@@ -28,13 +28,14 @@ struct NounForms: Codable {
 }
 
 struct VerbForms: Codable {
+    let infinitive: String?
     let first: String?
     let second: String?
 }
 
 struct Word: Codable, Identifiable {
     private enum CodingKeys : String, CodingKey {
-        case oldNorseWord, base, declension, englishTranslation, comparative, russianTranslation, definition, examples, type, cases, gendersCases, numbers, conjugation, verbFirst, gender, verbSecond, nounForms, verbForms
+        case oldNorseWord, base, declension, englishTranslation, comparative, russianTranslation, definition, examples, type, cases, gendersCases, numbers, conjugation, gender, nounForms, verbForms
     }
     
     var oldNorseWord: String
@@ -54,8 +55,8 @@ struct Word: Codable, Identifiable {
     
     let verbForms: VerbForms?
     
-    let verbFirst: String?
-    let verbSecond: String?
+//    let verbFirst: String?
+//    let verbSecond: String?
     
     
     let gender: Gender?
@@ -65,6 +66,14 @@ struct Word: Codable, Identifiable {
     let comparative: String?
     
     var id = UUID()
+    
+    func generateInfinitive() -> String? {
+        if let inf = verbForms?.infinitive {
+            return inf
+        }
+        
+        return oldNorseWord
+    }
     
     func neutralNounForm() -> String? {
         if type == .adjective {
@@ -1276,21 +1285,25 @@ struct Word: Codable, Identifiable {
     }
     
     
-    func generateConjugation(person: Person, number: Number) -> String? {
+    func generateConjugationNew(person: Person, number: Number) -> String? {
         switch person {
         case .first:
             switch number {
             case .singular:
                 if let firstPerson = conjugation?.singular?.firstPerson {
                     return firstPerson
-                } else if let verbSecond = verbSecond{
+                } else if let verbSecond = verbForms?.second {
                     return verbSecond
+                } else {
+                    return oldNorseWord
                 }
             case .dual, .plural:
                 if let firstPerson = conjugation?.plural?.firstPerson {
                     return firstPerson
-                } else if let verbFirst = verbFirst{
+                } else if let verbFirst = verbForms?.first {
                     return  (verbFirst.dropLast()) + "um"
+                } else {
+                    return oldNorseWord
                 }
             }
         case .second:
@@ -1298,14 +1311,16 @@ struct Word: Codable, Identifiable {
             case .singular:
                 if let secondPerson = conjugation?.singular?.secondPerson {
                     return secondPerson
-                }  else if let verbSecond = verbSecond{
+                } else if let verbSecond = verbForms?.second {
                     return verbSecond + "r"
+                } else {
+                    return oldNorseWord
                 }
             case .dual, .plural:
                 if let secondPerson = conjugation?.plural?.secondPerson {
                     return secondPerson
-                } else if var verbFirst = verbFirst{
-                    
+                } else if var verbFirst = verbForms?.first {
+
                     if verbFirst.last == "a" {
                         verbFirst.removeLast()
                     }
@@ -1319,6 +1334,8 @@ struct Word: Codable, Identifiable {
                     }
                     
                     return verbFirst + "ð"
+                } else {
+                    return oldNorseWord
                 }
             }
         case .third:
@@ -1326,18 +1343,85 @@ struct Word: Codable, Identifiable {
             case .singular:
                 if let thirdPerson = conjugation?.singular?.thirdPerson {
                     return thirdPerson
-                }  else if let verbSecond = verbSecond{
+                } else if let verbSecond = verbForms?.second {
                     return verbSecond + "r"
+                } else {
+                    return oldNorseWord
                 }
             case .dual, .plural:
                 if let thirdPerson = conjugation?.plural?.thirdPerson {
                     return thirdPerson
-                } else if let verbFirst = verbFirst{
+                } else if let verbFirst = verbForms?.first {
                     return verbFirst
+                } else {
+                    return oldNorseWord
                 }
             }
         }
-        
-        return ""
     }
+    
+//    func generateConjugation(person: Person, number: Number) -> String? {
+//        switch person {
+//        case .first:
+//            switch number {
+//            case .singular:
+//                if let firstPerson = conjugation?.singular?.firstPerson {
+//                    return firstPerson
+//                } else if let verbSecond = verbSecond{
+//                    return verbSecond
+//                }
+//            case .dual, .plural:
+//                if let firstPerson = conjugation?.plural?.firstPerson {
+//                    return firstPerson
+//                } else if let verbFirst = verbFirst{
+//                    return  (verbFirst.dropLast()) + "um"
+//                }
+//            }
+//        case .second:
+//            switch number {
+//            case .singular:
+//                if let secondPerson = conjugation?.singular?.secondPerson {
+//                    return secondPerson
+//                }  else if let verbSecond = verbSecond{
+//                    return verbSecond + "r"
+//                }
+//            case .dual, .plural:
+//                if let secondPerson = conjugation?.plural?.secondPerson {
+//                    return secondPerson
+//                } else if var verbFirst = verbFirst{
+//                    
+//                    if verbFirst.last == "a" {
+//                        verbFirst.removeLast()
+//                    }
+//                    
+//                    if verbFirst.last == "j" || verbFirst.last == "a" {
+//                        verbFirst.removeLast()
+//                    }
+//                    
+//                    if verbFirst.last != "i" {
+//                        verbFirst += "i"
+//                    }
+//                    
+//                    return verbFirst + "ð"
+//                }
+//            }
+//        case .third:
+//            switch number {
+//            case .singular:
+//                if let thirdPerson = conjugation?.singular?.thirdPerson {
+//                    return thirdPerson
+//                }  else if let verbSecond = verbSecond{
+//                    return verbSecond + "r"
+//                }
+//            case .dual, .plural:
+//                if let thirdPerson = conjugation?.plural?.thirdPerson {
+//                    return thirdPerson
+//                } else if let verbFirst = verbFirst{
+//                    return verbFirst
+//                }
+//            }
+//        }
+//        
+//        return ""
+//    }
 }

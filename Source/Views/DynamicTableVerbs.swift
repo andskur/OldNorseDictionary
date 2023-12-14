@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct DynamicTable: View {
+struct DynamicTableVerbs: View {
     let word: Word
     
     var body: some View {
@@ -26,33 +26,10 @@ struct DynamicTable: View {
                     }
                 }
                 
-                // Sub-Headers
-                HStack(spacing: 0) {
-                    Text("")
-                        .frame(minWidth: 87, maxWidth: 87)
-                        .padding(.vertical, 10)
-                        .background(Color.gray.opacity(0.2))
-                        .border(Color.black, width: 1)
-                    
-                    ForEach(Number.allCases, id: \.rawValue) { num in
-                        if word.shouldShowNumber(number: num) {
-                            ForEach(Gender.allCases, id: \.rawValue) { gen in
-                                if word.shouldShowGender(number: num, gen: gen) {
-                                    Text(gen.rawValue.capitalized)
-                                        .frame(minWidth: calcWidth(), maxWidth: calcWidth())
-                                        .padding(.vertical, 10)
-                                        .background(Color.gray.opacity(0.2))
-                                        .border(Color.black, width: 1)
-                                }
-                            }
-                        }
-                    }
-                }
-                
                 // Rows
-                ForEach(Case.allCases, id: \.rawValue) { c in
+                ForEach(Person.allCases, id: \.rawValue) { p in
                     HStack(spacing: 0) {
-                        Text(c.rawValue.capitalized)
+                        Text(p.rawValue.capitalized)
                             .frame(minWidth: 87, maxWidth: 87)
                             .padding(.vertical, 10)
                             .border(Color.black, width: 1)
@@ -60,24 +37,11 @@ struct DynamicTable: View {
                         
                         ForEach(Number.allCases, id: \.rawValue) { num in
                             if word.shouldShowNumber(number: num) {
-                                ForEach(Gender.allCases, id: \.rawValue) { gen in
-                                    if word.shouldShowGender(number: num, gen: gen) {
-                                        if word.type == .noun {
-                                            if let wordWithCase = word.generateNounCase(nounCase: c, number: num, article: false) {
-                                                Text("\(wordWithCase)" + withArticle(c: c, num: num)!)
-                                                    .frame(minWidth: calcWidth(), maxWidth: calcWidth())
-                                                    .padding(.vertical, 10)
-                                                    .border(Color.black, width: 1)
-                                            }
-                                        } else {
-                                            if let wordWithCase = word.generateCase(wordCase: c, number: num, gender: gen) {
-                                                Text(wordWithCase)
-                                                    .frame(minWidth: calcWidth(), maxWidth: calcWidth())
-                                                    .padding(.vertical, 10)
-                                                    .border(Color.black, width: 1)
-                                            }
-                                        }
-                                    }
+                                if let wordWithConjunction = word.generateConjugationNew(person: p, number: num) {
+                                    Text(wordWithConjunction)
+                                        .frame(minWidth: headerWidth(for: num), maxWidth: .infinity)
+                                        .padding(.vertical, 10)
+                                        .border(Color.black, width: 1)
                                 }
                             }
                         }
@@ -116,7 +80,7 @@ struct DynamicTable: View {
     }
 }
 
-struct DynamicTable_Previews: PreviewProvider {
+struct DynamicTableVerbs_Previews: PreviewProvider {
     static var previews: some View {
         let sampleWord = Word(oldNorseWord: "Hús", base: "huse", declension: nil, englishTranslation: "House", russianTranslation: "Дом", definition: "A building for human habitation.", examples: ["Hús er stafrænt orðn sem merkir byggingu fyrir mannlega búsetu."], type: .noun, cases: nil, gendersCases: nil, numbers: nil, conjugation: nil, verbForms: nil, gender: nil, nounForms: nil, comparative: nil)
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A11F08832B2A5E0900752BD2 /* DynamicTableVerbs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11F08822B2A5E0900752BD2 /* DynamicTableVerbs.swift */; };
 		A14FC42D2A6185A7009D91EC /* OldNorseDictionaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14FC42C2A6185A7009D91EC /* OldNorseDictionaryApp.swift */; };
 		A14FC4312A6185A7009D91EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14FC4302A6185A7009D91EC /* Assets.xcassets */; };
 		A14FC4582A619670009D91EC /* WordsData.json in Resources */ = {isa = PBXBuildFile; fileRef = A14FC4572A619670009D91EC /* WordsData.json */; };
@@ -80,6 +81,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A11F08822B2A5E0900752BD2 /* DynamicTableVerbs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTableVerbs.swift; sourceTree = "<group>"; };
 		A14FC4292A6185A7009D91EC /* OldNorseDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OldNorseDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14FC42C2A6185A7009D91EC /* OldNorseDictionaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldNorseDictionaryApp.swift; sourceTree = "<group>"; };
 		A14FC4302A6185A7009D91EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				A158294C2A66DDCB00BD97D4 /* WordDetailView.swift */,
 				A158294E2A66DE0500BD97D4 /* WordSearchView.swift */,
 				A1C92F8C2ABCBEEB0015F5C0 /* DynamicTable.swift */,
+				A11F08822B2A5E0900752BD2 /* DynamicTableVerbs.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				A15829572A67DE7300BD97D4 /* Person.swift in Sources */,
 				A15829532A67DBCB00BD97D4 /* Case.swift in Sources */,
 				A15829432A66BEF700BD97D4 /* Word.swift in Sources */,
+				A11F08832B2A5E0900752BD2 /* DynamicTableVerbs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

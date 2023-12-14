@@ -11,44 +11,44 @@ struct WordDetailView: View {
     let word: Word
     let searchDirection: SearchDirection
     
-    func verbDetailViewContent() -> some View {
-        Grid() {
-            verbHeader()
-            
-            Divider()
-            
-            ForEach(Person.allCases, id: \.rawValue) { person in
-                GridRow {
-                    Section {
-                        Text("\(person.rawValue.capitalized):")
-                            .font(.subheadline)
-                            .fontWeight(.bold)
-                    }.frame(height: 10).padding(5)
-                    
-                    ForEach(Number.allCases, id: \.rawValue) { num in
-                        verbRow(person: person, num: num)
-                    }
-                }.padding(5)
-                
-                Divider()
-            }
-            
-        }.border(.white)
-    }
-    
-    func verbHeader() -> some View {
-        GridRow {
-            Text("")
-            
-            ForEach(Number.allCases, id: \.rawValue) { num in
-                if word.shouldShowNumber(number: num) {
-                    Section {
-                        Text(num.rawValue.capitalized)
-                    }.frame(height: 10).padding(8)
-                }
-            }
-        }
-    }
+//    func verbDetailViewContent() -> some View {
+//        Grid() {
+//            verbHeader()
+//            
+//            Divider()
+//            
+//            ForEach(Person.allCases, id: \.rawValue) { person in
+//                GridRow {
+//                    Section {
+//                        Text("\(person.rawValue.capitalized):")
+//                            .font(.subheadline)
+//                            .fontWeight(.bold)
+//                    }.frame(height: 10).padding(5)
+//                    
+//                    ForEach(Number.allCases, id: \.rawValue) { num in
+//                        verbRow(person: person, num: num)
+//                    }
+//                }.padding(5)
+//                
+//                Divider()
+//            }
+//            
+//        }.border(.white)
+//    }
+//    
+//    func verbHeader() -> some View {
+//        GridRow {
+//            Text("")
+//            
+//            ForEach(Number.allCases, id: \.rawValue) { num in
+//                if word.shouldShowNumber(number: num) {
+//                    Section {
+//                        Text(num.rawValue.capitalized)
+//                    }.frame(height: 10).padding(8)
+//                }
+//            }
+//        }
+//    }
     
     func gridHeader() -> some View {
         GridRow {
@@ -84,18 +84,18 @@ struct WordDetailView: View {
             }
         }
     }
-    
-    func verbRow(person: Person, num: Number) -> some View {
-        return Section {
-            if num != Number.dual {
-                if let singularFirstPerson = word.generateConjugation(person: person, number: num) {
-                    Text("\(singularFirstPerson)")
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
-                }
-            }
-        }.frame(height: 10).padding(5)
-    }
+  
+//    func verbRow(person: Person, num: Number) -> some View {
+//        return Section {
+//            if num != Number.dual {
+//                if let singularFirstPerson = word.generateConjugation(person: person, number: num) {
+//                    Text("\(singularFirstPerson)")
+//                        .font(.subheadline)
+//                        .foregroundColor(.secondary)
+//                }
+//            }
+//        }.frame(height: 10).padding(5)
+//    }
     
     func nounceRow(c: Case, num: Number) -> some View {
         return Section {
@@ -162,7 +162,11 @@ struct WordDetailView: View {
                 Text(word.type.rawValue.capitalized).italic()
 
                 if word.type == .verb {
-                    verbDetailViewContent()
+                    if let inf = word.generateInfinitive() {
+                        Text("Infinitive: \(inf)")
+                    }
+                    
+                    DynamicTableVerbs(word: word)
                 }
                 
                 if word.generateComparative() != nil {
@@ -170,8 +174,6 @@ struct WordDetailView: View {
                 }
                 
                 if word.type == .noun || word.type == .pronoun || word.type == .adjective || word.type == .participle {
-//                    nounDetailViewContent()
-                    
                     DynamicTable(word: word)
                 }
 
@@ -189,7 +191,7 @@ struct WordDetailView: View {
 
 struct WordDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        let sampleWord = Word(oldNorseWord: "Hús", base: "huse", declension: nil, englishTranslation: "House", russianTranslation: "Дом", definition: "A building for human habitation.", examples: ["Hús er stafrænt orðn sem merkir byggingu fyrir mannlega búsetu."], type: .noun, cases: nil, gendersCases: nil, numbers: nil, conjugation: nil, verbFirst: nil, verbSecond: nil, gender: nil, nounForms: nil, comparative: nil)
+        let sampleWord = Word(oldNorseWord: "Hús", base: "huse", declension: nil, englishTranslation: "House", russianTranslation: "Дом", definition: "A building for human habitation.", examples: ["Hús er stafrænt orðn sem merkir byggingu fyrir mannlega búsetu."], type: .noun, cases: nil, gendersCases: nil, numbers: nil, conjugation: nil, verbForms: nil, gender: nil, nounForms: nil, comparative: nil)
         
         let sampleDirection: SearchDirection = .oldNorseToEnglish
         
