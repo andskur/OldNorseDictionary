@@ -8201,6 +8201,225 @@
         }
     },
     {
+        "oldNorseWord": "byggja",
+        "englishTranslation": "to build, to settle",
+        "russianTranslation": "строить, поселяться",
+        "type": "verb",
+        "definition": "To construct or erect a structure; to establish a home or settlement.",
+        "examples": [
+            "Þeir byggja hús. (They build a house.)",
+            "Hann byggir í nýju landi. (He settles in a new land.)"
+        ],
+        "verbForms": {
+            "first": "byggja",
+            "second": "byggi"
+        }
+    },
+    {
+        "oldNorseWord": "fylgja",
+        "englishTranslation": "to follow, to accompany",
+        "russianTranslation": "следовать, сопровождать",
+        "type": "verb",
+        "definition": "To go or come after a person or thing proceeding ahead; to go along with as a companion.",
+        "examples": [
+            "Hundurinn fylgir henni. (The dog follows her.)",
+            "Þau fylgja leiðsögumanni. (They accompany the guide.)"
+        ],
+        "verbForms": {
+            "first": "fylgja",
+            "second": "fylgi"
+        }
+    },
+    {
+        "oldNorseWord": "lenda",
+        "englishTranslation": "to land, to dock",
+        "russianTranslation": "высаживаться, причаливать",
+        "type": "verb",
+        "definition": "To come to shore or reach land; to arrive at a dock or port.",
+        "examples": [
+            "Skipið lendir við bryggjuna. (The ship docks at the pier.)",
+            "Þeir lenda á eyjunni. (They land on the island.)"
+        ],
+        "verbForms": {
+            "first": "lenda",
+            "second": "lendi"
+        }
+    },
+    {
+        "oldNorseWord": "drekka",
+        "englishTranslation": "to drink, to celebrate",
+        "russianTranslation": "пить, праздновать",
+        "type": "verb",
+        "definition": "To take liquid into the mouth and swallow; to engage in celebration or festivity.",
+        "examples": [
+            "Þeir drekka mjöð. (They drink mead.)",
+            "Hann drekkur til sigurs. (He celebrates the victory.)"
+        ],
+        "verbForms": {
+            "first": "drekka",
+            "second": "drekk"
+        }
+    },
+    {
+        "oldNorseWord": "hátimbra",
+        "englishTranslation": "to build high",
+        "russianTranslation": "строить высоко",
+        "type": "verb",
+        "definition": "To construct or erect a structure with significant height; to build upwards.",
+        "examples": [
+            "Þeir hátimbra turninn. (They build the tower high.)"
+        ],
+        "verbForms": {
+            "first": "hátimbra",
+            "second": "hátimbra"
+        }
+    },
+    {
+        "oldNorseWord": "kveða",
+        "englishTranslation": "to say, to sing",
+        "russianTranslation": "говорить, петь",
+        "type": "verb",
+        "definition": "To utter words or sounds in speech; to vocalize melodically; to recite poems or sing songs.",
+        "examples": [
+            "Hann kveður kvæði. (He recites a poem.)",
+            "Hún kveður söng. (She sings a song.)"
+        ],
+        "verbForms": {
+            "first": "kveða",
+            "second": "kveð"
+        }
+    },
+    {
+        "oldNorseWord": "timbra",
+        "englishTranslation": "to build, to construct",
+        "russianTranslation": "строить, возводить (в основном из дерева)",
+        "type": "verb",
+        "definition": "To fabricate or erect a structure, especially using wood; to assemble building materials to form a structure.",
+        "examples": [
+            "Þeir timbra hús. (They construct a house.)"
+        ],
+        "verbForms": {
+            "first": "timbra",
+            "second": "timbra"
+        }
+    },
+    {
+        "oldNorseWord": "bana",
+        "englishTranslation": "to kill, to slay",
+        "russianTranslation": "убивать, умерщвлять",
+        "type": "verb",
+        "definition": "To cause the death of a living being; to deliberately end the life of someone or something.",
+        "examples": [
+            "Hann banaði óvin sinn. (He killed his enemy.)"
+        ],
+        "verbForms": {
+            "first": "bana",
+            "second": "bana"
+        }
+    },
+    {
+        "oldNorseWord": "eyða",
+        "englishTranslation": "to devastate, to destroy",
+        "russianTranslation": "опустошать, уничтожать",
+        "type": "verb",
+        "definition": "To destroy completely; to lay waste or leave in ruins.",
+        "examples": [
+            "Eldurinn eyðir skóginum. (The fire devastates the forest.)"
+        ],
+        "verbForms": {
+            "first": "eyða",
+            "second": "eyði"
+        }
+    },
+    {
+        "oldNorseWord": "hlaða",
+        "englishTranslation": "to load, to stack",
+        "russianTranslation": "грузить, складывать",
+        "type": "verb",
+        "definition": "To fill or place a load on something; to arrange objects in a pile or stack.",
+        "examples": [
+            "Þeir hlaða heyið í hlöðu. (They stack the hay in the barn.)"
+        ],
+        "verbForms": {
+            "first": "hlaða",
+            "second": "hleð"
+        }
+    },
+    {
+        "oldNorseWord": "stýra",
+        "englishTranslation": "to steer, to control",
+        "russianTranslation": "править, управлять",
+        "type": "verb",
+        "definition": "To guide the course of a vehicle or other moving object; to exercise direction over; to control.",
+        "examples": [
+            "Hann stýrir skipinu. (He steers the ship.)"
+        ],
+        "verbForms": {
+            "first": "stýra",
+            "second": "stýri"
+        }
+    },
+    {
+        "oldNorseWord": "skipta",
+        "englishTranslation": "to change, to divide",
+        "russianTranslation": "менять, делить",
+        "type": "verb",
+        "definition": "To alter or modify; to separate into parts or distribute among a number of recipients.",
+        "examples": [
+            "Þeir skipta arfinum. (They divide the inheritance.)",
+            "Hann skiptir um klæði. (He changes his clothes.)"
+        ],
+        "verbForms": {
+            "first": "skipta",
+            "second": "skipti"
+        }
+    },
+    {
+        "oldNorseWord": "þekja",
+        "englishTranslation": "to cover, to conceal",
+        "russianTranslation": "крыть, покрывать",
+        "type": "verb",
+        "definition": "To place something over or upon, as for protection, concealment, or warmth; to hide from view.",
+        "examples": [
+            "Þau þekja borðið með dúk. (They cover the table with a cloth.)",
+            "Hann þekur augun. (He covers his eyes.)"
+        ],
+        "verbForms": {
+            "first": "þekja",
+            "second": "þek"
+        }
+    },
+    {
+        "oldNorseWord": "nema",
+        "englishTranslation": "to take, to seize",
+        "russianTranslation": "брать, забирать",
+        "type": "verb",
+        "definition": "To grasp, acquire, or remove something from a place; to take possession of something.",
+        "examples": [
+            "Hann nemur sverðið. (He takes the sword.)",
+            "Þeir nema land. (They seize the land.)"
+        ],
+        "verbForms": {
+            "first": "nema",
+            "second": "nem"
+        }
+    },
+    {
+        "oldNorseWord": "reisa",
+        "englishTranslation": "to raise, to erect",
+        "russianTranslation": "поднять, построить",
+        "type": "verb",
+        "definition": "To lift or move to a vertical position; to build or construct, especially a structure.",
+        "examples": [
+            "Þau reisa flaggið. (They raise the flag.)",
+            "Hann reisir hús. (He erects a house.)"
+        ],
+        "verbForms": {
+            "first": "reisa",
+            "second": "reisi"
+        }
+    },
+    {
         "oldNorseWord": "fagr",
         "base": "fagr",
         "englishTranslation": "beautiful",
