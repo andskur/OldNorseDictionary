@@ -7046,10 +7046,10 @@
         },
         "verbForms": {
             "infinitive": "vera",
-            "first": "er",
-            "second": "eru",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "first": "eru",
+            "second": "em",
+            "third": "váru",
+            "fourth": "var"
         }
     },
     {
@@ -7077,8 +7077,8 @@
             "infinitive": "eiga",
             "first": "eigu",
             "second": "á",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "áttu",
+            "fourth": "átta"
         }
     },
     {
@@ -7099,8 +7099,8 @@
         "verbForms": {
             "first": "hafa",
             "second": "hefi",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "höfðu",
+            "fourth": "hafða"
         }
     },
     {
@@ -7116,8 +7116,8 @@
         "verbForms": {
             "first": "heita",
             "second": "heiti",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "hétu",
+            "fourth": "hét"
         }
     },
     {
@@ -7133,8 +7133,8 @@
         "verbForms": {
             "first": "segja",
             "second": "segi",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "sögðu",
+            "fourth": "sagða"
         }
     },
     {
@@ -7162,8 +7162,8 @@
         "verbForms": {
             "first": "sjá",
             "second": "sé",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "sáu",
+            "fourth": "sá"
         }
     },
     {
@@ -7184,8 +7184,8 @@
         "verbForms": {
             "first": "taka",
             "second": "tek",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "tóku",
+            "fourth": "tók"
         }
     },
     {
@@ -7201,8 +7201,8 @@
         "verbForms": {
             "first": "vega",
             "second": "veg",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "vágu",
+            "fourth": "vá"
         }
     },
     {
@@ -7224,8 +7224,8 @@
         "verbForms": {
             "first": "vilja",
             "second": "vil",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "vildu",
+            "fourth": "vilda"
         }
     },
     {
@@ -7258,8 +7258,8 @@
         "verbForms": {
             "first": "deyja",
             "second": "dey",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "dóu",
+            "fourth": "dó"
         }
     },
     {
@@ -7275,8 +7275,8 @@
         "verbForms": {
             "first": "flýja",
             "second": "flý",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "flýðu",
+            "fourth": "flýða"
         }
     },
     {
@@ -7292,8 +7292,8 @@
         "verbForms": {
             "first": "hata",
             "second": "hata",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "hötuðu",
+            "fourth": "hataða"
         }
     },
     {
@@ -7309,8 +7309,8 @@
         "verbForms": {
             "first": "hlaupa",
             "second": "hleyp",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "hljópu",
+            "fourth": "hljóp"
         }
     },
     {
@@ -7326,8 +7326,8 @@
         "verbForms": {
             "first": "koma",
             "second": "køm",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "kvámu",
+            "fourth": "kvam"
         }
     },
     {
@@ -7343,8 +7343,8 @@
         "verbForms": {
             "first": "mæla",
             "second": "mæli",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "mæltu",
+            "fourth": "mælta"
         }
     },
     {
@@ -7360,8 +7360,8 @@
         "verbForms": {
             "first": "vakna",
             "second": "vakna",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "vöknuðu",
+            "fourth": "vaknaða"
         }
     },
     {
@@ -7377,8 +7377,8 @@
         "verbForms": {
             "first": "kalla",
             "second": "kalla",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "kölluðu",
+            "fourth": "kallaða"
         }
     },
     {
@@ -7394,8 +7394,8 @@
         "verbForms": {
             "first": "kenna",
             "second": "kenni",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "kenndu",
+            "fourth": "kennda"
         }
     },
     {
@@ -7411,8 +7411,8 @@
         "verbForms": {
             "first": "elta",
             "second": "elti",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "eltu",
+            "fourth": "elta"
         }
     },
     {
@@ -7428,8 +7428,8 @@
         "verbForms": {
             "first": "eta",
             "second": "et",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "átu",
+            "fourth": "át"
         }
     },
     {
@@ -7445,8 +7445,8 @@
         "verbForms": {
             "first": "hræða",
             "second": "hræði",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "hræddu",
+            "fourth": "hrædda"
         }
     },
     {
@@ -7462,8 +7462,8 @@
         "verbForms": {
             "first": "opna",
             "second": "opna",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "opnuðu",
+            "fourth": "opnaða"
         }
     },
     {
@@ -7479,8 +7479,8 @@
         "verbForms": {
             "first": "fara",
             "second": "fer",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "fóru",
+            "fourth": "fór"
         }
     },
     {
@@ -7496,8 +7496,8 @@
         "verbForms": {
             "first": "heyra",
             "second": "heyri",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "heyrðu",
+            "fourth": "heyrða"
         }
     },
     {
@@ -7513,8 +7513,8 @@
         "verbForms": {
             "first": "spyrja",
             "second": "spyr",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "spurðu",
+            "fourth": "spurða"
         }
     },
     {
@@ -7530,8 +7530,8 @@
         "verbForms": {
             "first": "svara",
             "second": "svara",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "svöruðu",
+            "fourth": "svaraða"
         }
     },
     {
@@ -7547,8 +7547,8 @@
         "verbForms": {
             "first": "veiða",
             "second": "veiði",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "veiddu",
+            "fourth": "veidda"
         }
     },
     {
@@ -7564,8 +7564,8 @@
         "verbForms": {
             "first": "finna",
             "second": "finn",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "fundu",
+            "fourth": "fann"
         }
     },
     {
@@ -7581,8 +7581,8 @@
         "verbForms": {
             "first": "foera",
             "second": "foeri",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "foerðu",
+            "fourth": "foerða"
         }
     },
     {
@@ -7598,8 +7598,8 @@
         "verbForms": {
             "first": "gefa",
             "second": "gef",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "gáfu",
+            "fourth": "gaf"
         }
     },
     {
@@ -7615,8 +7615,8 @@
         "verbForms": {
             "first": "heita",
             "second": "heiti",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "hétu",
+            "fourth": "hét"
         }
     },
     {
@@ -7632,8 +7632,8 @@
         "verbForms": {
             "first": "hlæja",
             "second": "hlæ",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "hlógu",
+            "fourth": "hló"
         }
     },
     {
@@ -7649,8 +7649,8 @@
         "verbForms": {
             "first": "kenna",
             "second": "kenni",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "kenndu",
+            "fourth": "kennda"
         }
     },
     {
@@ -7666,8 +7666,8 @@
         "verbForms": {
             "first": "brenna",
             "second": "brenn",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "brunnu",
+            "fourth": "brann"
         }
     },
     {
@@ -7699,9 +7699,9 @@
         "type": "verb",
         "verbForms": {
             "first": "búa",
-            "second": "búa",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "second": "bý",
+            "third": "bjoggu",
+            "fourth": "bjó"
         }
     },
     {
@@ -7717,8 +7717,8 @@
         "verbForms": {
             "first": "elda",
             "second": "elda",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "elduðu",
+            "fourth": "eldaða"
         }
     },
     {
@@ -7734,8 +7734,8 @@
         "verbForms": {
             "first": "falla",
             "second": "fell",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "féllu",
+            "fourth": "féll"
         }
     },
     {
@@ -7751,8 +7751,8 @@
         "verbForms": {
             "first": "ganga",
             "second": "geng",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "gengu",
+            "fourth": "gekk"
         }
     },
     {
@@ -7768,8 +7768,8 @@
         "verbForms": {
             "first": "lifa",
             "second": "lifi",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "lifðu",
+            "fourth": "lifða"
         }
     },
     {
@@ -7785,8 +7785,8 @@
         "verbForms": {
             "first": "sigla",
             "second": "sigli",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "siglðu",
+            "fourth": "siglða"
         }
     },
     {
@@ -7802,8 +7802,8 @@
         "verbForms": {
             "first": "bjóða",
             "second": "býð",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "buðu",
+            "fourth": "bauð"
         }
     },
     {
@@ -7819,8 +7819,8 @@
         "verbForms": {
             "first": "blása",
             "second": "blæs",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "blésu",
+            "fourth": "blés"
         },
         "conjugation": {
             "singular": {
@@ -7848,8 +7848,8 @@
         "verbForms": {
             "first": "standa",
             "second": "stend",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "stóðu",
+            "fourth": "stóð"
         }
     },
     {
@@ -7865,8 +7865,8 @@
         "verbForms": {
             "first": "sýna",
             "second": "sýni",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "sýndu",
+            "fourth": "sýnda"
         }
     },
     {
@@ -7881,8 +7881,8 @@
         "verbForms": {
             "first": "gøra",
             "second": "gøri",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "gørðu",
+            "fourth": "gørða"
         }
     },
     {
@@ -7897,8 +7897,8 @@
         "verbForms": {
             "first": "leiða",
             "second": "leiði",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "leiddu",
+            "fourth": "leidda"
         }
     },
     {
@@ -7913,8 +7913,8 @@
         "verbForms": {
             "first": "munu",
             "second": "mun",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "mundu",
+            "fourth": "munda"
         },
         "conjugation": {
             "singular": {
@@ -7938,8 +7938,8 @@
         "verbForms": {
             "first": "reka",
             "second": "rek",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "ráku",
+            "fourth": "rak"
         }
     },
     {
@@ -7954,8 +7954,8 @@
         "verbForms": {
             "first": "skulu",
             "second": "skal",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "skuldu",
+            "fourth": "skulda"
         },
         "conjugation": {
             "singular": {
@@ -7979,8 +7979,8 @@
         "verbForms": {
             "first": "verða",
             "second": "verð",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "urðu",
+            "fourth": "varð"
         }
     },
     {
@@ -8011,8 +8011,8 @@
         "verbForms": {
             "first": "brenna",
             "second": "brenni",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "brenndu",
+            "fourth": "brennda"
         }
     },
     {
@@ -8027,8 +8027,8 @@
         "verbForms": {
             "first": "fljúga",
             "second": "flýg",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "flugu",
+            "fourth": "flaug"
         }
     },
     {
@@ -8043,8 +8043,8 @@
         "verbForms": {
             "first": "hjálpa",
             "second": "help",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "hulpu",
+            "fourth": "hjalp"
         }
     },
     {
@@ -8059,8 +8059,8 @@
         "verbForms": {
             "first": "hringa",
             "second": "hringa",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "hringuðu",
+            "fourth": "hringaða"
         }
     },
     {
@@ -8075,8 +8075,8 @@
         "verbForms": {
             "first": "róa",
             "second": "roe",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "røru",
+            "fourth": "røra"
         }
     },
     {
@@ -8091,8 +8091,8 @@
         "verbForms": {
             "first": "vernda",
             "second": "vernda",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "vernduðu",
+            "fourth": "verndaða"
         }
     },
     {
@@ -8107,8 +8107,8 @@
         "verbForms": {
             "first": "gjalda",
             "second": "geld",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "guldu",
+            "fourth": "galt"
         }
     },
     {
@@ -8123,8 +8123,8 @@
         "verbForms": {
             "first": "halda",
             "second": "held",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "héldu",
+            "fourth": "hélt"
         }
     },
     {
@@ -8139,8 +8139,8 @@
         "verbForms": {
             "first": "kaupa",
             "second": "kaupi",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "keyptu",
+            "fourth": "keypta"
         }
     },
     {
@@ -8155,8 +8155,8 @@
         "verbForms": {
             "first": "leita",
             "second": "leita",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "leituðu",
+            "fourth": "leitaða"
         }
     },
     {
@@ -8171,8 +8171,8 @@
         "verbForms": {
             "first": "telja",
             "second": "tel",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "tölðu",
+            "fourth": "talða"
         }
     },
     {
@@ -8187,8 +8187,8 @@
         "verbForms": {
             "first": "trúa",
             "second": "trúi",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "trúðu",
+            "fourth": "trúða"
         }
     },
     {
@@ -8203,8 +8203,8 @@
         "verbForms": {
             "first": "velja",
             "second": "vel",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "völðu",
+            "fourth": "valða"
         }
     },
     {
@@ -8219,8 +8219,8 @@
         "verbForms": {
             "first": "lækna",
             "second": "lækna",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "læknuðu",
+            "fourth": "læknaða"
         }
     },
     {
@@ -8235,8 +8235,8 @@
         "verbForms": {
             "first": "nefna",
             "second": "nefni",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "nefndu",
+            "fourth": "nefnda"
         }
     },
     {
@@ -8251,8 +8251,8 @@
         "verbForms": {
             "first": "rísa",
             "second": "rís",
-            "third": "bönuðu",
-            "fourth": "banaða"
+            "third": "risu",
+            "fourth": "reis"
         }
     },
     {
@@ -8267,8 +8267,8 @@
         "verbForms": {
             "first": "smíða",
             "second": "smíða",
-            "third": "óku",
-            "fourth": "ók"
+            "third": "smíðuðu",
+            "fourth": "smíðaða"
         }
     },
     {
@@ -8283,8 +8283,8 @@
         "verbForms": {
             "first": "vita",
             "second": "veit",
-            "third": "óku",
-            "fourth": "ók"
+            "third": "vissu",
+            "fourth": "vissa"
         },
         "conjugation": {
             "singular": {
@@ -8310,8 +8310,8 @@
         "verbForms": {
             "first": "leggja",
             "second": "legg",
-            "third": "óku",
-            "fourth": "ók"
+            "third": "lögðu",
+            "fourth": "lagða"
         }
     },
     {
@@ -8327,8 +8327,8 @@
         "verbForms": {
             "first": "þakka",
             "second": "þakka",
-            "third": "óku",
-            "fourth": "ók"
+            "third": "þökkuðu",
+            "fourth": "þakkaða"
         }
     },
     {
@@ -8344,8 +8344,8 @@
         "verbForms": {
             "first": "liggja",
             "second": "ligg",
-            "third": "óku",
-            "fourth": "ók"
+            "third": "liggðu",
+            "fourth": "liggða"
         }
     },
     {
@@ -8361,8 +8361,8 @@
         "verbForms": {
             "first": "byggja",
             "second": "byggi",
-            "third": "óku",
-            "fourth": "ók"
+            "third": "byggðu",
+            "fourth": "byggða"
         }
     },
     {
@@ -8378,8 +8378,8 @@
         "verbForms": {
             "first": "fylgja",
             "second": "fylgi",
-            "third": "óku",
-            "fourth": "ók"
+            "third": "fylgðu",
+            "fourth": "fylgða"
         }
     },
     {
@@ -8395,8 +8395,8 @@
         "verbForms": {
             "first": "lenda",
             "second": "lendi",
-            "third": "óku",
-            "fourth": "ók"
+            "third": "lendu",
+            "fourth": "lenda"
         }
     },
     {
@@ -8412,8 +8412,8 @@
         "verbForms": {
             "first": "drekka",
             "second": "drekk",
-            "third": "óku",
-            "fourth": "ók"
+            "third": "drukku",
+            "fourth": "drakk"
         }
     },
     {
@@ -8428,8 +8428,8 @@
         "verbForms": {
             "first": "hátimbra",
             "second": "hátimbra",
-            "third": "óku",
-            "fourth": "ók"
+            "third": "hátimbruðu",
+            "fourth": "hátimbraða"
         }
     },
     {
@@ -8445,8 +8445,8 @@
         "verbForms": {
             "first": "kveða",
             "second": "kveð",
-            "third": "óku",
-            "fourth": "ók"
+            "third": "kváðu",
+            "fourth": "kvað"
         }
     },
     {
@@ -8461,8 +8461,8 @@
         "verbForms": {
             "first": "timbra",
             "second": "timbra",
-            "third": "óku",
-            "fourth": "ók"
+            "third": "timbruðu",
+            "fourth": "timbraða"
         }
     },
     {
@@ -8493,8 +8493,8 @@
         "verbForms": {
             "first": "eyða",
             "second": "eyði",
-            "third": "óku",
-            "fourth": "ók"
+            "third": "eyddu",
+            "fourth": "eydda"
         }
     },
     {
@@ -8509,8 +8509,8 @@
         "verbForms": {
             "first": "hlaða",
             "second": "hleð",
-            "third": "óku",
-            "fourth": "ók"
+            "third": "hlóðu",
+            "fourth": "hlóð"
         }
     },
     {
@@ -8525,8 +8525,8 @@
         "verbForms": {
             "first": "stýra",
             "second": "stýri",
-            "third": "óku",
-            "fourth": "ók"
+            "third": "stýrðu",
+            "fourth": "stýrða"
         }
     },
     {
@@ -8542,8 +8542,8 @@
         "verbForms": {
             "first": "skipta",
             "second": "skipti",
-            "third": "óku",
-            "fourth": "ók"
+            "third": "skiptu",
+            "fourth": "skipta"
         }
     },
     {
@@ -8559,8 +8559,8 @@
         "verbForms": {
             "first": "þekja",
             "second": "þek",
-            "third": "óku",
-            "fourth": "ók"
+            "third": "þökðu",
+            "fourth": "þakða"
         }
     },
     {
@@ -8576,8 +8576,8 @@
         "verbForms": {
             "first": "nema",
             "second": "nem",
-            "third": "óku",
-            "fourth": "ók"
+            "third": "námu",
+            "fourth": "nam"
         }
     },
     {
@@ -8593,8 +8593,8 @@
         "verbForms": {
             "first": "reisa",
             "second": "reisi",
-            "third": "óku",
-            "fourth": "ók"
+            "third": "reistu",
+            "fourth": "reista"
         }
     },
     {
