@@ -7093,7 +7093,7 @@
         "type": "verb",
         "conjugation": {
             "plural": {
-                "firstPerson": "höfum",
+                "firstPerson": "höfum"
             }
         },
         "verbForms": {
@@ -7922,7 +7922,7 @@
                 "thirdPerson": "mun"
             },
             "plural": {
-                "secondPerson": "munuð",
+                "secondPerson": "munuð"
             }
         }
     },
@@ -7963,7 +7963,7 @@
                 "thirdPerson": "skal"
             },
             "plural": {
-                "secondPerson": "skuluð",
+                "secondPerson": "skuluð"
             }
         }
     },
@@ -8595,6 +8595,193 @@
             "second": "reisi",
             "third": "reistu",
             "fourth": "reista"
+        }
+    },
+    {
+        "oldNorseWord": "geta",
+        "englishTranslation": "to get, obtain",
+        "russianTranslation": "получить",
+        "type": "verb",
+        "definition": "To acquire, obtain, or come into possession of something.",
+        "examples": [
+            "Example sentence in Old Norse using 'geta'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "geta",
+            "second": "get",
+            "third": "gátu",
+            "fourth": "gat"
+        }
+    },
+    {
+        "oldNorseWord": "drepa",
+        "englishTranslation": "to kill, slay",
+        "russianTranslation": "убивать, умерщвлять",
+        "type": "verb",
+        "definition": "To cause the death of a person or animal.",
+        "examples": [
+            "Example sentence in Old Norse using 'drepa'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "drepa",
+            "second": "drep",
+            "third": "drápu",
+            "fourth": "drap"
+        }
+    },
+    {
+        "oldNorseWord": "fá",
+        "englishTranslation": "to get, receive",
+        "russianTranslation": "брать, получать",
+        "type": "verb",
+        "definition": "To come into possession of; to receive.",
+        "examples": [
+            "Example sentence in Old Norse using 'fá'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "fá",
+            "second": "fæ",
+            "third": "fengu",
+            "fourth": "fekk"
+        }
+    },
+    {
+        "oldNorseWord": "hefna",
+        "englishTranslation": "to avenge, revenge",
+        "russianTranslation": "мстить, отомстить",
+        "type": "verb",
+        "definition": "To inflict punishment in return for (injury or insult).",
+        "examples": [
+            "Example sentence in Old Norse using 'hefna'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "hefna",
+            "second": "hefni",
+            "third": "hefnðu",
+            "fourth": "hefnða"
+        }
+    },
+    {
+        "oldNorseWord": "liggja",
+        "englishTranslation": "to lie, to be situated",
+        "russianTranslation": "лежать, находиться",
+        "type": "verb",
+        "definition": "To be in a horizontal position or to be located in a specific place.",
+        "examples": [
+            "Example sentence in Old Norse using 'liggja'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "liggja",
+            "second": "ligg",
+            "third": "lágu",
+            "fourth": "lá"
+        }
+    },
+    {
+        "oldNorseWord": "bera",
+        "englishTranslation": "to carry, bear",
+        "russianTranslation": "носить, нести",
+        "type": "verb",
+        "definition": "To transport or move something by holding it.",
+        "examples": [
+            "Example sentence in Old Norse using 'bera'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "bera",
+            "second": "ber",
+            "third": "báru",
+            "fourth": "bar"
+        }
+    },
+    {
+        "oldNorseWord": "kjósa",
+        "englishTranslation": "to choose, select",
+        "russianTranslation": "выбирать, отбирать",
+        "type": "verb",
+        "definition": "To decide on a course of action, typically after consideration.",
+        "examples": [
+            "Example sentence in Old Norse using 'kjósa'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "kjósa",
+            "second": "kýs",
+            "third": "kusu",
+            "fourth": "kaus"
+        }
+    },
+    {
+        "oldNorseWord": "kvæna",
+        "englishTranslation": "to marry someone off",
+        "russianTranslation": "женить (на ком-либо)",
+        "type": "verb",
+        "definition": "To give someone in marriage or to get someone married.",
+        "examples": [
+            "Example sentence in Old Norse using 'kvæna'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "kvæna",
+            "second": "kvæni",
+            "third": "kvændu",
+            "fourth": "kvænda"
+        }
+    },
+    {
+        "oldNorseWord": "loga",
+        "englishTranslation": "to burn, blaze",
+        "russianTranslation": "гореть, пылать",
+        "type": "verb",
+        "definition": "To be consumed by fire or to emit flames.",
+        "examples": [
+            "Example sentence in Old Norse using 'loga'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "loga",
+            "second": "loga",
+            "third": "loguðu",
+            "fourth": "logaða"
+        }
+    },
+    {
+        "oldNorseWord": "verja",
+        "englishTranslation": "to defend, protect",
+        "russianTranslation": "защищать, оборонять",
+        "type": "verb",
+        "definition": "To guard or shield from danger or harm.",
+        "examples": [
+            "Example sentence in Old Norse using 'verja'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "verja",
+            "second": "ver",
+            "third": "vörðu",
+            "fourth": "varða"
+        }
+    },
+    {
+        "oldNorseWord": "yrkja",
+        "englishTranslation": "to compose, make",
+        "russianTranslation": "делать, сочинять",
+        "type": "verb",
+        "definition": "To create or construct, especially literary or artistic works.",
+        "examples": [
+            "Example sentence in Old Norse using 'yrkja'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "yrkja",
+            "second": "yrki",
+            "third": "ortu",
+            "fourth": "orta"
         }
     },
     {
