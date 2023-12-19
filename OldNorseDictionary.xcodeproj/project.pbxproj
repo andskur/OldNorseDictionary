@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A11F08832B2A5E0900752BD2 /* DynamicTableVerbs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11F08822B2A5E0900752BD2 /* DynamicTableVerbs.swift */; };
+		A13F2D562B323072003B1692 /* Tense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13F2D552B323072003B1692 /* Tense.swift */; };
+		A13F2D572B323072003B1692 /* Tense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13F2D552B323072003B1692 /* Tense.swift */; };
 		A14FC42D2A6185A7009D91EC /* OldNorseDictionaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14FC42C2A6185A7009D91EC /* OldNorseDictionaryApp.swift */; };
 		A14FC4312A6185A7009D91EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14FC4302A6185A7009D91EC /* Assets.xcassets */; };
 		A14FC4582A619670009D91EC /* WordsData.json in Resources */ = {isa = PBXBuildFile; fileRef = A14FC4572A619670009D91EC /* WordsData.json */; };
@@ -82,6 +84,7 @@
 
 /* Begin PBXFileReference section */
 		A11F08822B2A5E0900752BD2 /* DynamicTableVerbs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTableVerbs.swift; sourceTree = "<group>"; };
+		A13F2D552B323072003B1692 /* Tense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tense.swift; sourceTree = "<group>"; };
 		A14FC4292A6185A7009D91EC /* OldNorseDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OldNorseDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14FC42C2A6185A7009D91EC /* OldNorseDictionaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldNorseDictionaryApp.swift; sourceTree = "<group>"; };
 		A14FC4302A6185A7009D91EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -183,6 +186,7 @@
 				A15829562A67DE7300BD97D4 /* Person.swift */,
 				A15829582A68249100BD97D4 /* Number.swift */,
 				A1EED5F42AB4B04D00FDD617 /* Gender.swift */,
+				A13F2D552B323072003B1692 /* Tense.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -391,6 +395,7 @@
 				A14FC42D2A6185A7009D91EC /* OldNorseDictionaryApp.swift in Sources */,
 				A15829592A68249100BD97D4 /* Number.swift in Sources */,
 				A1F2B8582A767231003EBF17 /* WordService.swift in Sources */,
+				A13F2D562B323072003B1692 /* Tense.swift in Sources */,
 				A158294F2A66DE0500BD97D4 /* WordSearchView.swift in Sources */,
 				A1C92F8D2ABCBEEB0015F5C0 /* DynamicTable.swift in Sources */,
 				A158294D2A66DDCB00BD97D4 /* WordDetailView.swift in Sources */,
@@ -417,6 +422,7 @@
 			files = (
 				A1F6CDDF2A75AB1F006F020E /* Number.swift in Sources */,
 				A1F6CDDA2A75A970006F020E /* WordSearchController.swift in Sources */,
+				A13F2D572B323072003B1692 /* Tense.swift in Sources */,
 				A1F6CDDD2A75AB1A006F020E /* Case.swift in Sources */,
 				A1F6CDDC2A75AB18006F020E /* Conjugation.swift in Sources */,
 				A1F6CDDB2A75AB16006F020E /* Word.swift in Sources */,
