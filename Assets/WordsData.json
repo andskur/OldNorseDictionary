@@ -4144,6 +4144,340 @@
         "declension": "a"
     },
     {
+        "oldNorseWord": "faðir",
+        "englishTranslation": "father",
+        "russianTranslation": "отец",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A male parent.",
+        "examples": [
+            "Faðir minn er sterkur. (My father is strong.)",
+            "Hann er góður faðir. (He is a good father.)"
+        ],
+        "nounForms": {
+            "second": "föður",
+            "third": "feðr"
+        },
+        "base": "fað",
+        "declension": "r",
+        "cases": {
+            "nominative": {
+                "singular": "faðir",
+                "plural": "feðr"
+            },
+            "accusative": {
+                "singular": "föður",
+                "plural": "feðr"
+            },
+            "dative": {
+                "singular": "föður",
+                "plural": "feðrum"
+            },
+            "genitive": {
+                "singular": "föður",
+                "plural": "feðra"
+            }
+        }
+    },
+    {
+        "oldNorseWord": "freyr",
+        "englishTranslation": "lord, master",
+        "russianTranslation": "господин",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A man who has authority over others, a ruler.",
+        "examples": [
+            "Freyr þess lands var réttlátur. (The lord of the land was just.)",
+            "Hann varð freyr á unga aldri. (He became a lord at a young age.)"
+        ],
+        "nounForms": {
+            "second": "freys",
+            "third": "freyjar"
+        },
+        "base": "freyj",
+        "declension": "a"
+    },
+    {
+        "oldNorseWord": "hundr",
+        "englishTranslation": "dog",
+        "russianTranslation": "собака, пёс",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A domesticated carnivorous mammal, typically kept as a pet or for work.",
+        "examples": [
+            "Hundrinn hans er mjög tryggur. (His dog is very loyal.)",
+            "Þeir eiga gamlan hund. (They have an old dog.)"
+        ],
+        "nounForms": {
+            "second": "hunds",
+            "third": "hundar"
+        },
+        "base": "hund",
+        "declension": "a"
+    },
+    {
+        "oldNorseWord": "kostr",
+        "englishTranslation": "choice, option",
+        "russianTranslation": "выбор, возможность",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "An act of selecting or making a decision when faced with two or more possibilities.",
+        "examples": [
+            "Kostr er milli tveggja illa. (It's a choice between two evils.)",
+            "Þú hefur margan kostr. (You have many options.)"
+        ],
+        "nounForms": {
+            "second": "kostar",
+            "third": "kostir"
+        },
+        "base": "kost",
+        "declension": "i"
+    },
+    {
+        "oldNorseWord": "sporðr",
+        "englishTranslation": "tail, end",
+        "russianTranslation": "хвост, конец",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "The rear or hind part of something, especially the elongated rear part of an animal's body.",
+        "examples": [
+            "Sporðrinn á hestinum var langur. (The horse's tail was long.)",
+            "Hann greip sporðinn á fisksins. (He grabbed the end of the fish.)"
+        ],
+        "nounForms": {
+            "second": "sporðs",
+            "third": "sporðar"
+        },
+        "base": "sporð",
+        "declension": "a"
+    },
+    {
+        "oldNorseWord": "þegn",
+        "englishTranslation": "subject, freeman",
+        "russianTranslation": "подданный, свободный человек",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A person who is under the authority of another, especially a king or lord; a free citizen.",
+        "examples": [
+            "Þegnar konungsins voru tryggir. (The king's subjects were loyal.)",
+            "Hann var ættstór þegn. (He was a prominent freeman.)"
+        ],
+        "nounForms": {
+            "second": "þegns",
+            "third": "þegnar"
+        },
+        "base": "þegn",
+        "declension": "a"
+    },
+    {
+        "oldNorseWord": "áburðarmaðr",
+        "englishTranslation": "dandy, showy person",
+        "russianTranslation": "щёголь, эффектный человек",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A man excessively concerned with his clothes and appearance; a showy person.",
+        "examples": [
+            "Áburðarmaðrinn gekk um göturnar. (The dandy walked through the streets.)",
+            "Hann var þekktur sem áburðarmaðr í bænum. (He was known as a showy person in the town.)"
+        ],
+        "cases": {
+            "nominative": {
+                "singular": "áburðarmaðr",
+                "plural": "áburðarmenn"
+            },
+            "accusative": {
+                "singular": "áburðarmann",
+                "plural": "áburðarmenn"
+            },
+            "dative": {
+                "singular": "áburðarmanni",
+                "plural": "áburðarmönnum"
+            },
+            "genitive": {
+                "singular": "áburðarmanns",
+                "plural": "áburðarmanna"
+            }
+        }
+    },
+    {
+        "oldNorseWord": "ambáttarsonr",
+        "englishTranslation": "son of a female slave or concubine",
+        "russianTranslation": "сын рабыни или наложницы",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A male offspring born to a female slave or concubine.",
+        "examples": [
+            "Ambáttarsonrinn ólst upp á bænum. (The son of the female slave grew up on the farm.)",
+            "Saga um ambáttarson sem varð hetja. (The story of a concubine's son who became a hero.)"
+        ],
+        "base": "ambáttarson",
+        "declension": "u",
+        "nounForms": {
+            "second": "ambáttarsonar",
+            "third": "ambáttarsynir"
+        }
+    },
+    {
+        "oldNorseWord": "fyrirmaðr",
+        "englishTranslation": "notable, important person",
+        "russianTranslation": "знатный, важный человек",
+        "type": "noun",
+        "gender": "masculine",
+        "definition": "A person of high status or importance.",
+        "examples": [
+            "Fyrirmaðrinn tók á móti gestum. (The notable welcomed the guests.)",
+            "Hann var fyrirmaðr í sínu samfélagi. (He was an important person in his community.)"
+        ],
+        "base": "fyrirmaðr",
+        "cases": {
+            "nominative": {
+                "singular": "fyrirmaðr",
+                "plural": "fyrirmenn"
+            },
+            "accusative": {
+                "singular": "fyrirmann",
+                "plural": "fyrirmenn"
+            },
+            "dative": {
+                "singular": "fyrirmanni",
+                "plural": "fyrirmönnum"
+            },
+            "genitive": {
+                "singular": "fyrirmanns",
+                "plural": "fyrirmanna"
+            }
+        }
+    },
+    {
+        "oldNorseWord": "bónorð",
+        "englishTranslation": "proposal, betrothal",
+        "russianTranslation": "сватовство",
+        "type": "noun",
+        "gender": "neuter",
+        "definition": "The act of proposing marriage; betrothal.",
+        "examples": [
+            "Hann bar fram bónorð til hennar. (He offered a proposal to her.)",
+            "Bónorðið var vel tekið. (The betrothal was well received.)"
+        ],
+        "nounForms": {
+            "second": "bónorðs",
+            "third": "bónorð"
+        },
+        "base": "bónorð"
+    },
+    {
+        "oldNorseWord": "fang",
+        "englishTranslation": "grasp, capture",
+        "russianTranslation": "охват, захват",
+        "type": "noun",
+        "gender": "neuter",
+        "definition": "The act of seizing or capturing; a grip.",
+        "examples": [
+            "Hann tók fang á vápninu. (He took a grip on the weapon.)",
+            "Fang var lagt á þjófinn. (The thief was captured.)"
+        ],
+        "nounForms": {
+            "second": "fangs",
+            "third": "föng"
+        },
+        "base": "fang"
+    },
+    {
+        "oldNorseWord": "gjaforð",
+        "englishTranslation": "marriage, match",
+        "russianTranslation": "партия, брак",
+        "type": "noun",
+        "gender": "neuter",
+        "definition": "A marriage arrangement or match.",
+        "examples": [
+            "Gjaforðið var ákveðið af fjölskyldunum. (The marriage was arranged by the families.)",
+            "Þau gerðu góð gjaforð. (They made a good match.)"
+        ],
+        "nounForms": {
+            "second": "gjaforðs",
+            "third": "gjaforð"
+        },
+        "base": "gjaforð"
+    },
+    {
+        "oldNorseWord": "kvánfang",
+        "englishTranslation": "marriage, wedlock",
+        "russianTranslation": "женитьба",
+        "type": "noun",
+        "gender": "neuter",
+        "definition": "The state or condition of being married; wedlock.",
+        "examples": [
+            "Kvánfangið varð til mikillar hamingju. (The marriage led to great happiness.)",
+            "Hann bjó í kvánfangi í mörg ár. (He lived in wedlock for many years.)"
+        ],
+        "nounForms": {
+            "second": "kvánfangs",
+            "third": "kvánföng"
+        },
+        "base": "kvánfang"
+    },
+    {
+        "oldNorseWord": "orð",
+        "englishTranslation": "word, rumor",
+        "russianTranslation": "слово, слух",
+        "type": "noun",
+        "gender": "neuter",
+        "definition": "A unit of language; a rumor or report.",
+        "examples": [
+            "Hann sagði mér orðin. (He told me the words.)",
+            "Orð flugu um bæinn. (Rumors flew around the town.)"
+        ],
+        "nounForms": {
+            "second": "orðs",
+            "third": "orð"
+        },
+        "base": "orð"
+    },
+    {
+        "oldNorseWord": "höfn",
+        "englishTranslation": "harbor, port",
+        "russianTranslation": "гавань, порт",
+        "type": "noun",
+        "gender": "feminine",
+        "definition": "A place on the coast where ships may moor in shelter.",
+        "examples": [
+            "Skipin komu inn í höfn. (The ships came into the harbor.)",
+            "Höfnin var full af kaupskipum. (The port was full of merchant ships.)"
+        ],
+        "nounForms": {
+            "second": "hafnar",
+            "third": "hafnir"
+        },
+        "base": "hafn",
+        "declension": "i"
+    },
+    {
+        "oldNorseWord": "hönd",
+        "englishTranslation": "hand",
+        "russianTranslation": "рука, кисть руки",
+        "type": "noun",
+        "gender": "feminine",
+        "definition": "The end part of a person's arm beyond the wrist, including the palm, fingers, and thumb.",
+        "examples": [
+            "Hún hafði sverð í hendi. (She had a sword in her hand.)",
+            "Hann tók bókina með báðum höndum. (He took the book with both hands.)"
+        ],
+        "nounForms": {
+            "second": "handar",
+            "third": "hendr"
+        },
+        "base": "hand",
+        "cases": {
+            "accusative": {
+                "singular": "hönd"
+            },
+            "dative": {
+                "singular": "hendi",
+                "plural": "höndum"
+            }
+        }
+    },
+    {
         "oldNorseWord": "hann",
         "englishTranslation": "he",
         "russianTranslation": "он / она",
@@ -6620,6 +6954,84 @@
         ]
     },
     {
+        "oldNorseWord": "aldregi",
+        "englishTranslation": "never",
+        "russianTranslation": "никогда",
+        "type": "adverb",
+        "definition": "At no time in the past or future; on no occasion; not ever.",
+        "examples": [
+            "Example sentence in Old Norse using 'aldregi'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ]
+    },
+    {
+        "oldNorseWord": "framarla",
+        "englishTranslation": "far ahead, prominently",
+        "russianTranslation": "довольно далеко впереди, на видном месте",
+        "type": "adverb",
+        "definition": "In a position that is noticeable or ahead in comparison with others.",
+        "examples": [
+            "Example sentence in Old Norse using 'framarla'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ]
+    },
+    {
+        "oldNorseWord": "hvaðan",
+        "englishTranslation": "from where",
+        "russianTranslation": "откуда",
+        "type": "adverb",
+        "definition": "From what place or source.",
+        "examples": [
+            "Example sentence in Old Norse using 'hvaðan'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ]
+    },
+    {
+        "oldNorseWord": "hvar",
+        "englishTranslation": "where",
+        "russianTranslation": "где, куда",
+        "type": "adverb",
+        "definition": "In or to what place or position.",
+        "examples": [
+            "Example sentence in Old Norse using 'hvar'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ]
+    },
+    {
+        "oldNorseWord": "hversu",
+        "englishTranslation": "how",
+        "russianTranslation": "как",
+        "type": "adverb",
+        "definition": "In what way or manner; by what means.",
+        "examples": [
+            "Example sentence in Old Norse using 'hversu'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ]
+    },
+    {
+        "oldNorseWord": "lítt",
+        "englishTranslation": "little, slightly",
+        "russianTranslation": "мало, немного",
+        "type": "adverb",
+        "comparative": "minnr",
+        "definition": "Not much; scarcely; only a small amount or degree.",
+        "examples": [
+            "Example sentence in Old Norse using 'lítt'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ]
+    },
+    {
+        "oldNorseWord": "margt",
+        "englishTranslation": "much, many",
+        "russianTranslation": "много",
+        "type": "adverb",
+        "definition": "In large amounts or numbers; frequently.",
+        "examples": [
+            "Example sentence in Old Norse using 'margt'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ]
+    },
+    {
         "oldNorseWord": "ok",
         "englishTranslation": "and, also",
         "russianTranslation": "и, также",
@@ -6746,6 +7158,17 @@
         "definition": "Used to link alternatives or indicate a choice.",
         "examples": [
             "Viltu kaffi eða te? (Do you want coffee or tea?)"
+        ]
+    },
+    {
+        "oldNorseWord": "þótt",
+        "englishTranslation": "although, even if",
+        "russianTranslation": "хотя, даже если",
+        "type": "conjunction",
+        "definition": "Used to introduce a clause in which a statement is contrasted with or set against another.",
+        "examples": [
+            "Example sentence in Old Norse using 'þótt'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
         ]
     },
     {
@@ -8785,6 +9208,366 @@
         }
     },
     {
+        "oldNorseWord": "biðja",
+        "englishTranslation": "to ask, request",
+        "russianTranslation": "просить",
+        "type": "verb",
+        "definition": "To make a request or to plead for something.",
+        "examples": [
+            "Example sentence in Old Norse using 'biðja'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "biðja",
+            "second": "bið",
+            "third": "báðu",
+            "fourth": "bað"
+        }
+    },
+    {
+        "oldNorseWord": "festa",
+        "englishTranslation": "to fasten, attach",
+        "russianTranslation": "прикреплять, приставать",
+        "type": "verb",
+        "definition": "To secure or attach something firmly.",
+        "examples": [
+            "Example sentence in Old Norse using 'festa'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "festa",
+            "second": "festi",
+            "third": "festu",
+            "fourth": "festa"
+        }
+    },
+    {
+        "oldNorseWord": "gifta",
+        "englishTranslation": "to marry off",
+        "russianTranslation": "выдавать замуж, женить",
+        "type": "verb",
+        "definition": "To give someone in marriage.",
+        "examples": [
+            "Example sentence in Old Norse using 'gifta'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "gifta",
+            "second": "gifti",
+            "third": "giftu",
+            "fourth": "gifta"
+        }
+    },
+    {
+        "oldNorseWord": "horfa",
+        "englishTranslation": "to face, turn towards",
+        "russianTranslation": "быть повёрнутым, обращённым",
+        "type": "verb",
+        "definition": "To direct one's gaze or position towards something.",
+        "examples": [
+            "Example sentence in Old Norse using 'horfa'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "horfa",
+            "second": "horfi",
+            "third": "horfðu",
+            "fourth": "horfða"
+        }
+    },
+    {
+        "oldNorseWord": "hugsa",
+        "englishTranslation": "to think, ponder",
+        "russianTranslation": "думать, придумывать",
+        "type": "verb",
+        "definition": "To consider or reflect on something.",
+        "examples": [
+            "Example sentence in Old Norse using 'hugsa'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "hugsa",
+            "second": "hugsa",
+            "third": "hugsuðu",
+            "fourth": "hugsaða"
+        }
+    },
+    {
+        "oldNorseWord": "kasta",
+        "englishTranslation": "to throw, cast",
+        "russianTranslation": "бросать, кидать",
+        "type": "verb",
+        "definition": "To send something through the air with force.",
+        "examples": [
+            "Example sentence in Old Norse using 'kasta'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "kasta",
+            "second": "kasta",
+            "third": "köstuðu",
+            "fourth": "kastaða"
+        }
+    },
+    {
+        "oldNorseWord": "kunnu",
+        "englishTranslation": "to be able, know",
+        "russianTranslation": "мочь, знать",
+        "type": "verb",
+        "definition": "To have the capability or knowledge.",
+        "examples": [
+            "Example sentence in Old Norse using 'kunnu'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "infinitive": "kunna",
+            "first": "kunnu",
+            "second": "kann",
+            "third": "kunnu",
+            "fourth": "kunna"
+        }
+    },
+    {
+        "oldNorseWord": "láta",
+        "englishTranslation": "to let, make",
+        "russianTranslation": "позволять, велеть",
+        "type": "verb",
+        "definition": "To allow or cause something to happen.",
+        "examples": [
+            "Example sentence in Old Norse using 'láta'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "láta",
+            "second": "læt",
+            "third": "létu",
+            "fourth": "lét"
+        }
+    },
+    {
+        "oldNorseWord": "lægja",
+        "englishTranslation": "to lessen, calm",
+        "russianTranslation": "уменьшать, успокаивать",
+        "type": "verb",
+        "definition": "To reduce in intensity or to soothe.",
+        "examples": [
+            "Example sentence in Old Norse using 'lægja'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "lægja",
+            "second": "lægi",
+            "third": "lægðu",
+            "fourth": "lægða"
+        }
+    },
+    {
+        "oldNorseWord": "megu",
+        "englishTranslation": "to be able, can",
+        "russianTranslation": "мочь, быть в состоянии или силах",
+        "type": "verb",
+        "definition": "To have the ability or capacity to do something.",
+        "examples": [
+            "Example sentence in Old Norse using 'megu'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "infinitive": "mega",
+            "first": "megu",
+            "second": "má",
+            "third": "máttu",
+            "fourth": "mátta"
+        }
+    },
+    {
+        "oldNorseWord": "moeta",
+        "englishTranslation": "to meet",
+        "russianTranslation": "встречать",
+        "type": "verb",
+        "definition": "To come into the presence of by chance or arrangement.",
+        "examples": [
+            "Example sentence in Old Norse using 'moeta'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "moeta",
+            "second": "moeti",
+            "third": "moettu",
+            "fourth": "moetta"
+        }
+    },
+    {
+        "oldNorseWord": "ríða",
+        "englishTranslation": "to ride",
+        "russianTranslation": "ехать верхом, скакать",
+        "type": "verb",
+        "definition": "To travel by sitting on an animal, especially a horse.",
+        "examples": [
+            "Example sentence in Old Norse using 'ríða'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "ríða",
+            "second": "ríð",
+            "third": "riðu",
+            "fourth": "reið"
+        }
+    },
+    {
+        "oldNorseWord": "roeða",
+        "englishTranslation": "to speak, talk",
+        "russianTranslation": "говорить, разговаривать",
+        "type": "verb",
+        "definition": "To communicate or express thoughts in spoken words.",
+        "examples": [
+            "Example sentence in Old Norse using 'roeða'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "roeða",
+            "second": "roeði",
+            "third": "roeddu",
+            "fourth": "roedda"
+        }
+    },
+    {
+        "oldNorseWord": "sakna",
+        "englishTranslation": "to miss, lament",
+        "russianTranslation": "тосковать, оплакивать",
+        "type": "verb",
+        "definition": "To feel sadness or regret for the absence or loss of something or someone.",
+        "examples": [
+            "Example sentence in Old Norse using 'sakna'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "sakna",
+            "second": "sakna",
+            "third": "söknuðu",
+            "fourth": "saknaða"
+        }
+    },
+    {
+        "oldNorseWord": "sanna",
+        "englishTranslation": "to prove, ascertain",
+        "russianTranslation": "доказывать, узнавать правильность чего-либо",
+        "type": "verb",
+        "definition": "To establish the truth or correctness of something.",
+        "examples": [
+            "Example sentence in Old Norse using 'sanna'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "sanna",
+            "second": "sanna",
+            "third": "sönnuðu",
+            "fourth": "sannaða"
+        }
+    },
+    {
+        "oldNorseWord": "unnu",
+        "englishTranslation": "to love",
+        "russianTranslation": "любить",
+        "type": "verb",
+        "definition": "To feel deep affection or a strong emotional attachment.",
+        "examples": [
+            "Example sentence in Old Norse using 'unnu'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "infinitive": "unna",
+            "first": "unnu",
+            "second": "ann",
+            "third": "unnu",
+            "fourth": "unna"
+        }
+    },
+    {
+        "oldNorseWord": "vekja",
+        "englishTranslation": "to wake, arouse",
+        "russianTranslation": "вызывать, возбуждать",
+        "type": "verb",
+        "definition": "To rouse from sleep or to stir up interest or activity.",
+        "examples": [
+            "Example sentence in Old Norse using 'vekja'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "vekja",
+            "second": "vek",
+            "third": "vökðu",
+            "fourth": "vakða"
+        }
+    },
+    {
+        "oldNorseWord": "þykkja",
+        "englishTranslation": "to seem, appear",
+        "russianTranslation": "казаться, думаться (кому-либо)",
+        "type": "verb",
+        "definition": "To give the impression of being or feeling a certain way.",
+        "examples": [
+            "Example sentence in Old Norse using 'þykkja'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "þykkja",
+            "second": "þykki",
+            "third": "þóttu",
+            "fourth": "þótta"
+        }
+    },
+    {
+        "oldNorseWord": "ætla",
+        "englishTranslation": "to intend, plan",
+        "russianTranslation": "намереваться, рассчитывать",
+        "type": "verb",
+        "definition": "To have a plan or purpose in mind.",
+        "examples": [
+            "Example sentence in Old Norse using 'ætla'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "ætla",
+            "second": "ætla",
+            "third": "ætluðu",
+            "fourth": "ætlaða"
+        }
+    },
+    {
+        "oldNorseWord": "hugfesta",
+        "englishTranslation": "to contemplate, ponder",
+        "russianTranslation": "подумывать, размышлять",
+        "type": "verb",
+        "definition": "To consider or think deeply about something.",
+        "examples": [
+            "Example sentence in Old Norse using 'hugfesta'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "hugfesta",
+            "second": "hugfesti",
+            "third": "hugfestu",
+            "fourth": "hugfesta"
+        }
+    },
+    {
+        "oldNorseWord": "ósanna",
+        "englishTranslation": "to deny, dispute",
+        "russianTranslation": "отрицать, оспаривать",
+        "type": "verb",
+        "definition": "To refuse to admit the truth or reality of something.",
+        "examples": [
+            "Example sentence in Old Norse using 'ósanna'. (Translation of the sentence.)",
+            "Another example sentence in Old Norse. (Translation of the sentence.)"
+        ],
+        "verbForms": {
+            "first": "ósanna",
+            "second": "ósanna",
+            "third": "ósönnuðu",
+            "fourth": "ósannaða"
+        }
+    },
+    {
         "oldNorseWord": "fagr",
         "base": "fagr",
         "englishTranslation": "beautiful",
@@ -9923,6 +10706,114 @@
         "base": "kár"
     },
     {
+        "oldNorseWord": "ágætr",
+        "englishTranslation": "famous, splendid",
+        "russianTranslation": "знаменитый, славный",
+        "type": "adjective",
+        "definition": "Well-known for positive reasons; admirable or magnificent.",
+        "examples": [
+            "Hann var ágætr maður í héraðinu. (He was a famous man in the district.)",
+            "Saga hans er ágæt. (His story is splendid.)"
+        ],
+        "base": "ágæt"
+    },
+    {
+        "oldNorseWord": "algóðr",
+        "englishTranslation": "very good, excellent",
+        "russianTranslation": "очень хороший, прекрасный",
+        "type": "adjective",
+        "definition": "Extremely good or excellent.",
+        "examples": [
+            "Þetta er algóðr dagur. (This is a very good day.)",
+            "Hún gerði algóða verk. (She did excellent work.)"
+        ],
+        "base": "algóð"
+    },
+    {
+        "oldNorseWord": "dýrr",
+        "englishTranslation": "expensive, costly",
+        "russianTranslation": "дорогой, дорогостоящий",
+        "type": "adjective",
+        "definition": "Having a high price or great value.",
+        "examples": [
+            "Þetta er dýrr gripur. (This is an expensive object.)",
+            "Hann keypti dýra klæði. (He bought costly clothes.)"
+        ],
+        "base": "dýr"
+    },
+    {
+        "oldNorseWord": "fastr",
+        "englishTranslation": "firm, solid",
+        "russianTranslation": "крепкий, твёрдый",
+        "type": "adjective",
+        "definition": "Physically secure or unyielding; solid.",
+        "examples": [
+            "Borgin var byggð á fastri grund. (The castle was built on firm ground.)",
+            "Fastr skjöldr verndar hann. (A solid shield protects him.)"
+        ],
+        "base": "fast"
+    },
+    {
+        "oldNorseWord": "frjáls",
+        "englishTranslation": "free, unbound",
+        "russianTranslation": "свободный, вольный",
+        "type": "adjective",
+        "definition": "Not under the control or in the power of another; able to act or be done as one wishes.",
+        "examples": [
+            "Hann lifir frjálst líf. (He lives a free life.)",
+            "Frjáls vilji er mikilvægur. (Free will is important.)"
+        ],
+        "base": "frjáls"
+    },
+    {
+        "oldNorseWord": "gætr",
+        "englishTranslation": "good",
+        "russianTranslation": "хороший",
+        "type": "adjective",
+        "definition": "Desirable, satisfactory, or of high quality.",
+        "examples": [
+            "Þetta er gætr dagur. (This is a good day.)",
+            "Hann er gætr maður. (He is a good man.)"
+        ],
+        "base": "gæt"
+    },
+    {
+        "oldNorseWord": "göfugr",
+        "englishTranslation": "noble, distinguished",
+        "russianTranslation": "знатный, благородный",
+        "type": "adjective",
+        "definition": "Belonging to a hereditary class with high social or political status; aristocratic.",
+        "examples": [
+            "Hann er göfugr maður af ætt. (He is a noble man by birth.)",
+            "Göfug verk sýna manninn. (Noble deeds show the man.)"
+        ],
+        "base": "göfug"
+    },
+    {
+        "oldNorseWord": "íslenzkr",
+        "englishTranslation": "Icelandic",
+        "russianTranslation": "исландский",
+        "type": "adjective",
+        "definition": "Pertaining to Iceland or its language, culture, or people.",
+        "examples": [
+            "Íslenzkr mál er fallegt. (The Icelandic language is beautiful.)",
+            "Hann lærir íslenzka sögu. (He studies Icelandic history.)"
+        ],
+        "base": "íslenzk"
+    },
+    {
+        "oldNorseWord": "víss",
+        "englishTranslation": "wise, knowledgeable",
+        "russianTranslation": "мудрый, знающий",
+        "type": "adjective",
+        "definition": "Having or showing experience, knowledge, and good judgment.",
+        "examples": [
+            "Víss maður talar sjaldan um tómt. (A wise man seldom speaks of nothing.)",
+            "Það er víst ráð að hlusta. (It is wise advice to listen.)"
+        ],
+        "base": "vís"
+    },
+    {
         "oldNorseWord": "beðinn",
         "englishTranslation": "waiting",
         "russianTranslation": "ждущий",
@@ -10816,6 +11707,7 @@
             "Bókin var legin á hilluna. (The book was placed on the shelf.)"
         ]
     },
+    
     {
         "oldNorseWord": "gefa grið",
         "englishTranslation": "to spare, to pardon",
@@ -11074,6 +11966,83 @@
         "examples": [
             "Sagan kom við alla þá sem hlustuðu. (The story touched all those who listened.)",
             "Þessi málefni koma við marga. (These issues pertain to many.)"
+        ]
+    },
+    {
+        "oldNorseWord": "eiga sér",
+        "englishTranslation": "to have, possess",
+        "russianTranslation": "иметь",
+        "type": "phrase",
+        "definition": "To have something, in a sense similar to 'eiga' in its usual meaning.",
+        "examples": [
+            "Hann á sér stórt skip. (He has a large ship.)",
+            "Eiga sér góðan vin er mikilvægt. (To have a good friend is important.)"
+        ]
+    },
+    {
+        "oldNorseWord": "ganga yfir",
+        "englishTranslation": "to occur, happen",
+        "russianTranslation": "происходить, случаться",
+        "type": "phrase",
+        "definition": "To take place or come to pass.",
+        "examples": [
+            "Mikilvægir atburðir gengu yfir í ríkinu. (Important events occurred in the kingdom.)",
+            "Þegar vetrarstíð ganga yfir. (When winter storms happen.)"
+        ]
+    },
+    {
+        "oldNorseWord": "horfa á",
+        "englishTranslation": "to look at, watch",
+        "russianTranslation": "смотреть, направлять взгляд",
+        "type": "phrase",
+        "definition": "To direct one's gaze towards someone or something.",
+        "examples": [
+            "Horfa á stjörnurnar um nóttina. (To watch the stars at night.)",
+            "Hann horfir á hafið. (He looks at the sea.)"
+        ]
+    },
+    {
+        "oldNorseWord": "kveða upp",
+        "englishTranslation": "to declare, pronounce",
+        "russianTranslation": "заявлять, выносить",
+        "type": "phrase",
+        "definition": "To make a formal or official statement, decision, or verdict.",
+        "examples": [
+            "Dómari kvað upp úrskurðinn. (The judge pronounced the verdict.)",
+            "Kveða upp lög í þingi. (To declare laws in the assembly.)"
+        ]
+    },
+    {
+        "oldNorseWord": "standa fastr",
+        "englishTranslation": "to be stuck, immobilized",
+        "russianTranslation": "застревать",
+        "type": "phrase",
+        "definition": "To be fixed in place; unable to move.",
+        "examples": [
+            "Skipið stóð fastr í ísnum. (The ship was stuck in the ice.)",
+            "Hann stóð fastr í drullunni. (He was stuck in the mud.)"
+        ]
+    },
+    {
+        "oldNorseWord": "til handa",
+        "englishTranslation": "for someone",
+        "russianTranslation": "для кого-либо",
+        "type": "phrase",
+        "definition": "Intended or available for a particular person.",
+        "examples": [
+            "Þetta var gert til handa konungi. (This was done for the king.)",
+            "Gjafir voru útbúnar til handa börnunum. (Gifts were prepared for the children.)"
+        ]
+    },
+    {
+        "oldNorseWord": "ætla til",
+        "englishTranslation": "to intend for, expect",
+        "russianTranslation": "рассчитывать, ожидать",
+        "type": "phrase",
+        "definition": "To plan or expect something to happen or be the case.",
+        "examples": [
+            "Ætlað til að fara á ferðalag. (Intended to go on a journey.)",
+            "Hann ætlaði til að mæta snemma. (He expected to arrive early.)"
         ]
     }
 ]
