@@ -11707,7 +11707,196 @@
             "Bókin var legin á hilluna. (The book was placed on the shelf.)"
         ]
     },
-    
+    {
+        "oldNorseWord": "beðinn",
+        "englishTranslation": "asked, invited",
+        "russianTranslation": "приглашенный, запрошенный",
+        "type": "participle",
+        "definition": "Having been asked or invited.",
+        "examples": [
+            "Hann var beðinn til veislu. (He was invited to the feast.)"
+        ]
+    },
+    {
+        "oldNorseWord": "festr",
+        "englishTranslation": "fastened, secured",
+        "russianTranslation": "закрепленный, обеспеченный",
+        "type": "participle",
+        "definition": "Having been fastened or secured.",
+        "examples": [
+            "Festr með sterkum böndum. (Fastened with strong bonds.)"
+        ]
+    },
+    {
+        "oldNorseWord": "giftr",
+        "englishTranslation": "married",
+        "russianTranslation": "женатый, замужем",
+        "type": "participle",
+        "definition": "Having entered into marriage.",
+        "examples": [
+            "Hún var giftr ung. (She was married young.)"
+        ]
+    },
+    {
+        "oldNorseWord": "horfðr",
+        "englishTranslation": "watched, observed",
+        "russianTranslation": "наблюдаемый, смотревший",
+        "type": "participle",
+        "definition": "Having been watched or observed.",
+        "examples": [
+            "Þeir voru horfðr af gömlum manni. (They were watched by an old man.)"
+        ]
+    },
+    {
+        "oldNorseWord": "hugsaðr",
+        "englishTranslation": "thought, considered",
+        "russianTranslation": "обдуманный, рассмотренный",
+        "type": "participle",
+        "definition": "Having been thought about or considered.",
+        "examples": [
+            "Hugsaðr áður en gert. (Thought before done.)"
+        ]
+    },
+    {
+        "oldNorseWord": "kastaðr",
+        "englishTranslation": "thrown, cast",
+        "russianTranslation": "брошенный, кинутый",
+        "type": "participle",
+        "definition": "Having been thrown or cast.",
+        "examples": [
+            "Steinn var kastaðr í vatnið. (A stone was thrown into the water.)"
+        ]
+    },
+    {
+        "oldNorseWord": "kunnaðr",
+        "englishTranslation": "known, learned",
+        "russianTranslation": "известный, изученный",
+        "type": "participle",
+        "definition": "Having been known or learned.",
+        "examples": [
+            "Söguþættir voru kunnaðr af mörgum. (The story was known by many.)"
+        ]
+    },
+    {
+        "oldNorseWord": "látinn",
+        "englishTranslation": "deceased, passed away",
+        "russianTranslation": "покойный, скончавшийся",
+        "type": "participle",
+        "definition": "Having died or passed away.",
+        "examples": [
+            "Konungurinn er nú látinn. (The king is now deceased.)"
+        ]
+    },
+    {
+        "oldNorseWord": "lægðr",
+        "englishTranslation": "calmed, subdued",
+        "russianTranslation": "успокоенный, смягченный",
+        "type": "participle",
+        "definition": "Having been calmed or subdued.",
+        "examples": [
+            "Stormurinn var lægðr um morguninn. (The storm was calmed by morning.)"
+        ]
+    },
+    {
+        "oldNorseWord": "máttr",
+        "englishTranslation": "able, powerful",
+        "russianTranslation": "способный, могущественный",
+        "type": "participle",
+        "definition": "Having the ability or power.",
+        "examples": [
+            "Hann er máttr maður í samfélaginu. (He is a powerful man in society.)"
+        ]
+    },
+    {
+        "oldNorseWord": "moettr",
+        "englishTranslation": "met, encountered",
+        "russianTranslation": "встреченный, столкнувшийся",
+        "type": "participle",
+        "definition": "Having come into the presence of, especially by chance.",
+        "examples": [
+            "Vegfarandi var moettr á leiðinni. (A traveler was met on the way.)"
+        ]
+    },
+    {
+        "oldNorseWord": "riðinn",
+        "englishTranslation": "ridden, traveled",
+        "russianTranslation": "проеханный, путешествовавший",
+        "type": "participle",
+        "definition": "Having been ridden on or traveled.",
+        "examples": [
+            "Langar leiðir voru riðnar. (Long roads were ridden.)"
+        ]
+    },
+    {
+        "oldNorseWord": "roeddr",
+        "englishTranslation": "spoken, discussed",
+        "russianTranslation": "обсуждаемый, обговариваемый",
+        "type": "participle",
+        "definition": "Having been spoken about or discussed.",
+        "examples": [
+            "Málefnið var roeddr á þinginu. (The matter was discussed at the assembly.)"
+        ]
+    },
+    {
+        "oldNorseWord": "saknaðr",
+        "englishTranslation": "missed, mourned",
+        "russianTranslation": "скучаемый, оплакиваемый",
+        "type": "participle",
+        "definition": "Having been missed or mourned.",
+        "examples": [
+            "Hann var saknaðr af fjölskyldu sinni. (He was missed by his family.)"
+        ]
+    },
+    {
+        "oldNorseWord": "sannaðr",
+        "englishTranslation": "proven, confirmed",
+        "russianTranslation": "доказанный, подтвержденный",
+        "type": "participle",
+        "definition": "Having been proven or confirmed.",
+        "examples": [
+            "Sannleikurinn var sannaðr. (The truth was proven.)"
+        ]
+    },
+    {
+        "oldNorseWord": "unnaðr",
+        "englishTranslation": "loved, cherished",
+        "russianTranslation": "любимый, дорогой",
+        "type": "participle",
+        "definition": "Having been loved or cherished.",
+        "examples": [
+            "Hún var unnaðr af öllum. (She was loved by everyone.)"
+        ]
+    },
+    {
+        "oldNorseWord": "vakiðr",
+        "englishTranslation": "awakened, stirred",
+        "russianTranslation": "пробужденный, возбужденный",
+        "type": "participle",
+        "definition": "Having been awakened or stirred.",
+        "examples": [
+            "Hann var vakiðr snemma. (He was awakened early.)"
+        ]
+    },
+    {
+        "oldNorseWord": "þóttr",
+        "englishTranslation": "thought, considered",
+        "russianTranslation": "считаемый, рассматриваемый",
+        "type": "participle",
+        "definition": "Having been thought of or considered.",
+        "examples": [
+            "Það var þóttr góð hugmynd. (It was thought a good idea.)"
+        ]
+    },
+    {
+        "oldNorseWord": "ætlaðr",
+        "englishTranslation": "intended, planned",
+        "russianTranslation": "намеренный, запланированный",
+        "type": "participle",
+        "definition": "Having been intended or planned.",
+        "examples": [
+            "Ferðin var ætlaðr í sumar. (The trip was intended for summer.)"
+        ]
+    },
     {
         "oldNorseWord": "gefa grið",
         "englishTranslation": "to spare, to pardon",
