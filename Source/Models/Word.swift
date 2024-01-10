@@ -63,6 +63,154 @@ struct Word: Codable, Identifiable {
     
     var id = UUID()
     
+    func generateWeakAdjective(number: Number, gender: Gender, caseWeak: Case) -> String? {
+        if type != .adjective {
+            return nil
+        }
+        
+        var weak = base
+        
+        switch caseWeak {
+        case .nominative:
+            switch number {
+            case .singular:
+                switch gender {
+                case .masculine:
+                    return base! + "i"
+                default:
+                    if let acc = generateAccusative(number: .plural, gender: .masculine) {
+                        if acc.hasSuffix("ja") {
+                            weak! += "j"
+                        }
+                    }
+                    return weak! + "a"
+                }
+            case .dual, .plural:
+                if let acc = generateAccusative(number: .plural, gender: .masculine) {
+                    if acc.hasSuffix("ja") {
+                        weak! += "j"
+                    }
+                }
+                
+                if base?.last == "v" {
+                    weak?.removeLast()
+                }
+                
+                return weak! + "u"
+            }
+        case .accusative:
+            switch number {
+            case .singular:
+                switch gender {
+                case .feminine:
+                    if let acc = generateAccusative(number: .plural, gender: .masculine) {
+                        if acc.hasSuffix("ja") {
+                            weak! += "j"
+                        }
+                    }
+                    
+                    if base?.last == "v" {
+                        weak?.removeLast()
+                    }
+                    
+                    return weak! + "u"
+                default:
+                    if let acc = generateAccusative(number: .plural, gender: .masculine) {
+                        if acc.hasSuffix("ja") {
+                            weak! += "j"
+                        }
+                    }
+                    return weak! + "a"
+                }
+            case .dual, .plural:
+                if let acc = generateAccusative(number: .plural, gender: .masculine) {
+                    if acc.hasSuffix("ja") {
+                        weak! += "j"
+                    }
+                    
+                    if base?.last == "v" {
+                        weak?.removeLast()
+                    }
+                }
+                return weak! + "u"
+            }
+        case .dative:
+            switch number {
+            case .singular:
+                switch gender {
+                case .feminine:
+                    if let acc = generateAccusative(number: .plural, gender: .masculine) {
+                        if acc.hasSuffix("ja") {
+                            weak! += "j"
+                        }
+                    }
+                    
+                    if base?.last == "v" {
+                        weak?.removeLast()
+                    }
+                    
+                    return weak! + "u"
+                default:
+                    if let acc = generateAccusative(number: .plural, gender: .masculine) {
+                        if acc.hasSuffix("ja") {
+                            weak! += "j"
+                        }
+                    }
+                    return weak! + "a"
+                }
+            case .dual, .plural:
+                if let acc = generateAccusative(number: .plural, gender: .masculine) {
+                    if acc.hasSuffix("ja") {
+                        weak! += "j"
+                    }
+                }
+                
+                if base?.last == "v" {
+                    weak?.removeLast()
+                }
+                
+                return weak! + "um"
+            }
+        case .genitive:
+            switch number {
+            case .singular:
+                switch gender {
+                case .feminine:
+                    if let acc = generateAccusative(number: .plural, gender: .masculine) {
+                        if acc.hasSuffix("ja") {
+                            weak! += "j"
+                        }
+                    }
+                    
+                    if base?.last == "v" {
+                        weak?.removeLast()
+                    }
+                    
+                    return weak! + "u"
+                default:
+                    if let acc = generateAccusative(number: .plural, gender: .masculine) {
+                        if acc.hasSuffix("ja") {
+                            weak! += "j"
+                        }
+                    }
+                    return weak! + "a"
+                }
+            case .dual, .plural:
+                if let acc = generateAccusative(number: .plural, gender: .masculine) {
+                    if acc.hasSuffix("ja") {
+                        weak! += "j"
+                    }
+                }
+                
+                if base?.last == "v" {
+                    weak?.removeLast()
+                }
+                
+                return weak! + "u"
+            }
+        }
+    }
+    
     func generateImperative(number: Number) -> String? {
         switch number {
         case .singular:
