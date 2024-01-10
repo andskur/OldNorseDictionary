@@ -63,6 +63,69 @@ struct Word: Codable, Identifiable {
     
     var id = UUID()
     
+    func generateComparativeAdjective(number: Number, gender: Gender, caseWeak: Case) -> String? {
+        if type != .adjective {
+            return nil
+        }
+        
+        var weak = base
+        
+        switch caseWeak {
+        case .nominative:
+            switch number {
+            case .singular:
+                switch gender {
+                case .masculine, .feminine:
+                    return base! + "ari"
+                default:
+                    return weak! + "ara"
+                }
+            case .dual, .plural:
+                return weak! + "ari"
+            }
+        case .accusative:
+            switch number {
+            case .singular:
+                switch gender {
+                case .feminine:
+                    return weak! + "ari"
+                default:
+                    return weak! + "ara"
+                }
+            case .dual, .plural:
+                return weak! + "ari"
+            }
+        case .dative:
+            switch number {
+            case .singular:
+                switch gender {
+                case .feminine:
+                    return weak! + "ari"
+                default:
+                    return weak! + "ara"
+                }
+            case .dual, .plural:
+                if base?.last == "v" {
+                    weak?.removeLast()
+                }
+                
+                return weak! + "urum"
+            }
+        case .genitive:
+            switch number {
+            case .singular:
+                switch gender {
+                case .feminine:
+                    return weak! + "ari"
+                default:
+                    return weak! + "ara"
+                }
+            case .dual, .plural:
+                return weak! + "ari"
+            }
+        }
+    }
+    
     func generateWeakAdjective(number: Number, gender: Gender, caseWeak: Case) -> String? {
         if type != .adjective {
             return nil
@@ -127,11 +190,12 @@ struct Word: Codable, Identifiable {
                     if acc.hasSuffix("ja") {
                         weak! += "j"
                     }
-                    
-                    if base?.last == "v" {
-                        weak?.removeLast()
-                    }
                 }
+                
+                if base?.last == "v" {
+                    weak?.removeLast()
+                }
+                
                 return weak! + "u"
             }
         case .dative:
