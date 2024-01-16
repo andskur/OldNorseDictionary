@@ -6573,6 +6573,7 @@
         "russianTranslation": "очень, весьма",
         "type": "adverb",
         "comparative": "meirr",
+        "comparison": "mest",
         "definition": "To a great extent; much.",
         "examples": [
             "Hann er mjök fróðr. (He is very learned.)"
@@ -6594,6 +6595,7 @@
         "russianTranslation": "скоро, вскоре",
         "type": "adverb",
         "comparative": "bráðarr",
+        "comparison": "bráðast",
         "definition": "In or within a short time; quickly; shortly.",
         "examples": [
             "Vetur kemur brátt. (Winter is coming soon.)"
@@ -6605,6 +6607,7 @@
         "russianTranslation": "часто, неоднократно",
         "type": "adverb",
         "comparative": "oftarr",
+        "comparison": "oftast",
         "definition": "Frequently; many times; on many occasions.",
         "examples": [
             "Oft hann fer til borgarinnar. (He often goes to the city.)",
@@ -6627,6 +6630,7 @@
         "russianTranslation": "скорее, лучше",
         "type": "adverb",
         "comparative": "heldr",
+        "comparison": "helzt",
         "definition": "To a greater degree; more preferable or suitable.",
         "examples": [
             "Hann hjálpar þér gjarna. (He will help you gladly.)",
@@ -6665,7 +6669,8 @@
             "Hann syngur vel. (He sings well.)",
             "Hún samþykkti vel. (She agreed willingly.)"
         ],
-        "comparative": "betr"
+        "comparative": "betr",
+        "comparison": "bezt"
     },
     {
         "oldNorseWord": "aftr",
@@ -6673,6 +6678,7 @@
         "russianTranslation": "назад, снова",
         "type": "adverb",
         "comparative": "aftarr",
+        "comparison": "aftast",
         "definition": "In a direction or manner that returns to a previous position or condition; once more.",
         "examples": [
             "Hann fer aftr heim. (He goes back home.)"
@@ -6724,6 +6730,7 @@
         "russianTranslation": "далеко, издалека",
         "type": "adverb",
         "comparative": "lengra",
+        "comparison": "lengst",
         "definition": "Over a great distance; from a distant place.",
         "examples": [
             "Hann kom langt í burtu. (He came from far away.)"
@@ -6735,6 +6742,7 @@
         "russianTranslation": "долго, долгое время",
         "type": "adverb",
         "comparative": "lengr",
+        "comparison": "lengst",
         "definition": "For a considerable duration; for an extended period.",
         "examples": [
             "Hann bíðaði lengi. (He waited for a long time.)"
@@ -6746,6 +6754,7 @@
         "russianTranslation": "на север, на севере",
         "type": "adverb",
         "comparative": "norðarr",
+        "comparison": "norðarst",
         "definition": "Toward or in the northern part or direction.",
         "examples": [
             "Hann fer norðr. (He goes northward.)"
@@ -6757,6 +6766,7 @@
         "russianTranslation": "на запад, на западе",
         "type": "adverb",
         "comparative": "vestarr",
+        "comparison": "vestarst",
         "definition": "Toward or in the western part or direction.",
         "examples": [
             "Sólin setur vestr. (The sun sets in the west.)"
@@ -6789,6 +6799,7 @@
         "russianTranslation": "широко, повсюду",
         "type": "adverb",
         "comparative": "víðarr",
+        "comparison": "víðast",
         "definition": "Over or in a wide area; in or to many places.",
         "examples": [
             "Fréttirnar dreifðust víða. (The news spread widely.)",
@@ -6801,6 +6812,7 @@
         "russianTranslation": "громко",
         "type": "adverb",
         "comparative": "hærra",
+        "comparison": "hæst",
         "definition": "With a high volume or intensity of sound; at a high decibel level.",
         "examples": [
             "Hann talar hátt. (He speaks loudly.)",
@@ -6845,6 +6857,7 @@
         "russianTranslation": "вверх, наверх",
         "type": "adverb",
         "comparative": "ofarr",
+        "comparison": "ofarst",
         "definition": "Towards a higher place or position; upwards.",
         "examples": [
             "Hann gengur upp fjallið. (He walks up the mountain.)",
@@ -6861,7 +6874,8 @@
             "Þeir sigldu suðr. (They sailed southward.)",
             "Suðr er landið hlýrra. (In the south, the land is warmer.)"
         ],
-        "comparative": "sunnarr"
+        "comparative": "sunnarr",
+        "comparison": "sunnarst"
     },
     {
         "oldNorseWord": "út",
@@ -6914,6 +6928,7 @@
         "russianTranslation": "внутри, в глубине",
         "type": "adverb",
         "comparative": "innarr",
+        "comparison": "innst",
         "definition": "Within an enclosed space; in the innermost part.",
         "examples": [
             "Þau bjuggu inni í skóginum. (They lived inside the forest.)",
@@ -7014,6 +7029,7 @@
         "russianTranslation": "мало, немного",
         "type": "adverb",
         "comparative": "minnr",
+        "comparison": "minzt",
         "definition": "Not much; scarcely; only a small amount or degree.",
         "examples": [
             "Example sentence in Old Norse using 'lítt'. (Translation of the sentence.)",

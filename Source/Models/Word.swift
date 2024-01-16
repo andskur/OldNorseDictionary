@@ -37,7 +37,7 @@ struct VerbForms: Codable {
 
 struct Word: Codable, Identifiable {
     private enum CodingKeys : String, CodingKey {
-        case oldNorseWord, base, declension, englishTranslation, comparative, russianTranslation, definition, examples, type, cases, gendersCases, numbers, conjugation, gender, nounForms, verbForms
+        case oldNorseWord, base, declension, englishTranslation, comparative, comparison, russianTranslation, definition, examples, type, cases, gendersCases, numbers, conjugation, gender, nounForms, verbForms
     }
     
     var oldNorseWord: String
@@ -60,8 +60,160 @@ struct Word: Codable, Identifiable {
     let nounForms: NounForms?
     
     let comparative: String?
+    let comparison: String?
     
     var id = UUID()
+    
+    func generateComparisonStrongAdjective(number: Number, gender: Gender, caseStrong: Case) -> String? {
+        if type != .adjective {
+            return nil
+        }
+        
+        
+        switch caseStrong {
+        case .nominative:
+            switch number {
+            case .singular:
+                switch gender {
+                case .masculine:
+                    return base! + "astr"
+                case .neuter:
+                    return base! + "ast"
+                case .feminine:
+                    return base! + "ust"
+                default:
+                    return base
+                }
+            case .dual, .plural:
+                switch gender {
+                case .masculine:
+                    return base! + "astir"
+                case .neuter:
+                    return base! + "ust"
+                case .feminine:
+                    return base! + "astar"
+                default:
+                    return base
+                }
+            }
+        case .accusative:
+            switch number {
+            case .singular:
+                switch gender {
+                case .masculine:
+                    return base! + "astan"
+                case .neuter:
+                    return base! + "ast"
+                case .feminine:
+                    return base! + "asta"
+                default:
+                    return base
+                }
+            case .dual, .plural:
+                switch gender {
+                case .masculine:
+                    return base! + "asta"
+                case .neuter:
+                    return base! + "ust"
+                case .feminine:
+                    return base! + "astar"
+                default:
+                    return base
+                }
+            }
+        case .dative:
+            switch number {
+            case .singular:
+                switch gender {
+                case .masculine:
+                    return base! + "ustum"
+                case .neuter:
+                    return base! + "ustu"
+                case .feminine:
+                    return base! + "astri"
+                default:
+                    return base
+                }
+            case .dual, .plural:
+                return base! + "ustum"
+            }
+        case .genitive:
+            switch number {
+            case .singular:
+                switch gender {
+                case .feminine:
+                    return base! + "astrar"
+                default:
+                    return base! + "asts"
+                }
+            case .dual, .plural:
+                return base! + "astra"
+            }
+        }
+    }
+    
+    func generateComparisonWeakAdjective(number: Number, gender: Gender, caseWeak: Case) -> String? {
+        if type != .adjective {
+            return nil
+        }
+        
+        var weak = base
+        
+        switch caseWeak {
+        case .nominative:
+            switch number {
+            case .singular:
+                switch gender {
+                case .masculine:
+                    return base! + "asti"
+                default:
+                    return weak! + "asta"
+                }
+            case .dual, .plural:
+                return weak! + "ustu"
+            }
+        case .accusative:
+            switch number {
+            case .singular:
+                switch gender {
+                case .feminine:
+                    return weak! + "ustu"
+                default:
+                    return weak! + "asta"
+                }
+            case .dual, .plural:
+                return weak! + "ustu"
+            }
+        case .dative:
+            switch number {
+            case .singular:
+                switch gender {
+                case .feminine:
+                    return weak! + "ustu"
+                default:
+                    return weak! + "asta"
+                }
+            case .dual, .plural:
+                if base?.last == "v" {
+                    weak?.removeLast()
+                }
+                
+                return weak! + "ustum"
+            }
+        case .genitive:
+            switch number {
+            case .singular:
+                switch gender {
+                case .feminine:
+                    return weak! + "ustu"
+                default:
+                    return weak! + "asta"
+                }
+            case .dual, .plural:
+                return weak! + "ustu"
+            }
+        }
+    }
     
     func generateComparativeAdjective(number: Number, gender: Gender, caseWeak: Case) -> String? {
         if type != .adjective {
@@ -506,6 +658,13 @@ struct Word: Codable, Identifiable {
     func generateComparative() -> String? {
         if comparative != nil {
             return comparative
+        }
+        return nil
+    }
+    
+    func generateComparison() -> String? {
+        if comparison != nil {
+            return comparison
         }
         return nil
     }
