@@ -427,12 +427,30 @@ struct Word: Codable, Identifiable {
         }
     }
     
+    func generateImperativeReflexive(number: Number) -> String? {
+        switch number {
+        case .singular:
+            if let imp = generateImperative(number: number) {
+                return imp + "sk"
+            }
+        case .dual, .plural:
+            if var imp = generateImperative(number: number) {
+                imp.removeLast()
+                return imp + "zk"
+            }
+        }
+        
+        return oldNorseWord
+    }
+    
     func generateImperative(number: Number) -> String? {
         switch number {
         case .singular:
             if var inf = generateInfinitive() {
                 if inf.hasSuffix("ja") {
                     inf.removeLast(2)
+                } else if inf == "bana" {
+                    return inf
                 } else {
                     inf.removeLast()
                 }
@@ -1676,6 +1694,82 @@ struct Word: Codable, Identifiable {
         }
         
         return genitiveCase
+    }
+    
+    func generateConjugationReflexive(person: Person, number: Number, tense: Tense) -> String? {
+        switch tense {
+        case .past:
+            return generateConjugationPastReflexive(person: person, number: number)
+        case .present:
+            return generateConjugationPresentReflexive(person: person, number: number)
+        }
+    }
+    
+    func generateConjugationPresentReflexive(person: Person, number: Number) -> String? {
+        var verb = generateConjugationPresent(person: person, number: number)
+        
+        switch person {
+        case .first:
+            switch number {
+            case .singular:
+                if verb?.last == "a" {
+                    verb?.removeLast()
+                }
+                return verb! + "umk"
+            case .dual, .plural:
+                return verb! + "sk"
+            }
+        case .second:
+            switch number {
+            case .singular:
+                verb?.removeLast()
+                return verb! + "sk"
+            case .dual, .plural:
+                verb?.removeLast()
+                return verb! + "zk"
+            }
+        case .third:
+            switch number {
+            case .singular:
+                verb?.removeLast()
+                return verb! + "sk"
+            case .dual, .plural:
+                return verb! + "sk"
+            }
+        }
+    }
+    
+    func generateConjugationPastReflexive(person: Person, number: Number) -> String? {
+        var verb = generateConjugationPast(person: person, number: number)
+        
+        switch person {
+        case .first:
+            switch number {
+            case .singular:        
+                if verb?.last == "a" {
+                    verb?.removeLast()
+                }
+                return verb! + "umk"
+            case .dual, .plural:
+                return verb! + "sk"
+            }
+        case .second:
+            switch number {
+            case .singular:
+                verb?.removeLast()
+                return verb! + "zk"
+            case .dual, .plural:
+                verb?.removeLast()
+                return verb! + "zk"
+            }
+        case .third:
+            switch number {
+            case .singular:
+                return verb! + "sk"
+            case .dual, .plural:
+                return verb! + "sk"
+            }
+        }
     }
     
     
