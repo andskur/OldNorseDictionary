@@ -3,6 +3,29 @@ import SwiftUI
 struct DynamicTable: View {
     let word: Word
     
+    
+    func Headers() -> some View {
+        HStack(spacing: 0) {
+            Text("")
+                .frame(minWidth: 87, minHeight: 0, maxHeight: .infinity, alignment: .center)
+                .padding(.vertical, 10)
+                .background(Color.gray.opacity(0.2))
+                .border(Color.black, width: 1)
+            
+            ForEach(Number.allCases, id: \.rawValue) { num in
+                if word.shouldShowNumber(number: num) {
+                    let headerWidthValue = headerWidth(for: num)
+                    Text(num.rawValue.capitalized)
+                        .frame(minWidth: headerWidthValue, minHeight: 0, maxHeight: .infinity, alignment: .center)
+                        .padding(.vertical, 10)
+                        .background(Color.gray.opacity(0.2))
+                        .border(Color.black, width: 1)
+                }
+            }
+        }
+    }
+    
+    
     var body: some View {
         ScrollView(.horizontal, showsIndicators: true) {
             VStack(alignment: .leading) {
@@ -22,25 +45,7 @@ struct DynamicTable: View {
                     }
                 }
                 
-                // Main Headers
-                HStack(spacing: 0) {
-                    Text("")
-                        .frame(minWidth: 87, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                        .padding(.vertical, 10)
-                        .background(Color.gray.opacity(0.2))
-                        .border(Color.black, width: 1)
-                    
-                    ForEach(Number.allCases, id: \.rawValue) { num in
-                        if word.shouldShowNumber(number: num) {
-                            let headerWidthValue = headerWidth(for: num)
-                            Text(num.rawValue.capitalized)
-                                .frame(minWidth: headerWidthValue, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                                .padding(.vertical, 10)
-                                .background(Color.gray.opacity(0.2))
-                                .border(Color.black, width: 1)
-                        }
-                    }
-                }
+                Headers()
                 
                 // Sub-Headers
                 HStack(spacing: 0) {
@@ -116,24 +121,7 @@ struct DynamicTable: View {
                     }
                     
                     // Main Headers
-                    HStack(spacing: 0) {
-                        Text("")
-                            .frame(minWidth: 87, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                            .padding(.vertical, 10)
-                            .background(Color.gray.opacity(0.2))
-                            .border(Color.black, width: 1)
-                        
-                        ForEach(Number.allCases, id: \.rawValue) { num in
-                            if word.shouldShowNumber(number: num) {
-                                let headerWidthValue = headerWidth(for: num)
-                                Text(num.rawValue.capitalized)
-                                    .frame(minWidth: headerWidthValue, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                                    .padding(.vertical, 10)
-                                    .background(Color.gray.opacity(0.2))
-                                    .border(Color.black, width: 1)
-                            }
-                        }
-                    }
+                    Headers()
                     
                     // Sub-Headers
                     HStack(spacing: 0) {
@@ -216,24 +204,7 @@ struct DynamicTable: View {
                     }
                     
                     // Main Headers
-                    HStack(spacing: 0) {
-                        Text("")
-                            .frame(minWidth: 87, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                            .padding(.vertical, 10)
-                            .background(Color.gray.opacity(0.2))
-                            .border(Color.black, width: 1)
-                        
-                        ForEach(Number.allCases, id: \.rawValue) { num in
-                            if word.shouldShowNumber(number: num) {
-                                let headerWidthValue = headerWidth(for: num)
-                                Text(num.rawValue.capitalized)
-                                    .frame(minWidth: headerWidthValue, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                                    .padding(.vertical, 10)
-                                    .background(Color.gray.opacity(0.2))
-                                    .border(Color.black, width: 1)
-                            }
-                        }
-                    }
+                    Headers()
                     
                     // Sub-Headers
                     HStack(spacing: 0) {
@@ -316,24 +287,7 @@ struct DynamicTable: View {
                     }
                     
                     // Main Headers
-                    HStack(spacing: 0) {
-                        Text("")
-                            .frame(minWidth: 87, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                            .padding(.vertical, 10)
-                            .background(Color.gray.opacity(0.2))
-                            .border(Color.black, width: 1)
-                        
-                        ForEach(Number.allCases, id: \.rawValue) { num in
-                            if word.shouldShowNumber(number: num) {
-                                let headerWidthValue = headerWidth(for: num)
-                                Text(num.rawValue.capitalized)
-                                    .frame(minWidth: headerWidthValue, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                                    .padding(.vertical, 10)
-                                    .background(Color.gray.opacity(0.2))
-                                    .border(Color.black, width: 1)
-                            }
-                        }
-                    }
+                    Headers()
                     
                     // Sub-Headers
                     HStack(spacing: 0) {
@@ -407,24 +361,7 @@ struct DynamicTable: View {
                     }
                     
                     // Main Headers
-                    HStack(spacing: 0) {
-                        Text("")
-                            .frame(minWidth: 87, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                            .padding(.vertical, 10)
-                            .background(Color.gray.opacity(0.2))
-                            .border(Color.black, width: 1)
-                        
-                        ForEach(Number.allCases, id: \.rawValue) { num in
-                            if word.shouldShowNumber(number: num) {
-                                let headerWidthValue = headerWidth(for: num)
-                                Text(num.rawValue.capitalized)
-                                    .frame(minWidth: headerWidthValue, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                                    .padding(.vertical, 10)
-                                    .background(Color.gray.opacity(0.2))
-                                    .border(Color.black, width: 1)
-                            }
-                        }
-                    }
+                    Headers()
                     
                     // Sub-Headers
                     HStack(spacing: 0) {
