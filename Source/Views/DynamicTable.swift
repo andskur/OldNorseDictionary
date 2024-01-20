@@ -112,26 +112,16 @@ struct DynamicTable: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: true) {
             VStack(alignment: .leading) {
-            
                 Headers(formation: .strong)
                 Rows(formation: .strong)
                 
                 if word.type == .adjective {
-                    // Weak
-                    Headers(formation: .weak)
-                    Rows(formation: .weak)
-                    
-                    // Comparative
-                    Headers(formation: .comparative)
-                    Rows(formation: .comparative)
-                    
-                    // Comparison Strong
-                    Headers(formation: .comparisonStrong)
-                    Rows(formation: .comparisonStrong)
-                    
-                    // Comparison Weak
-                    Headers(formation: .comparisonWeak)
-                    Rows(formation: .comparisonWeak)
+                    ForEach(Formation.allCases, id: \.rawValue) { form in
+                        if form != .strong {
+                            Headers(formation: form)
+                            Rows(formation: form)
+                        }
+                    }
                 }
             }
         }
