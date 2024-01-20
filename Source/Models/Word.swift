@@ -64,6 +64,22 @@ struct Word: Codable, Identifiable {
     
     var id = UUID()
     
+    
+    func generateAdjective(number: Number, gender: Gender, caseAdjective: Case, formation: Formation) -> String? {
+        switch formation {
+        case .strong:
+           return generateCase(wordCase: caseAdjective, number: number, gender: gender)
+        case .weak:
+            return generateWeakAdjective(number: number, gender: gender, caseWeak: caseAdjective)
+        case .comparative:
+            return generateComparativeAdjective(number: number, gender: gender, caseWeak: caseAdjective)
+        case .comparisonStrong:
+            return generateComparisonStrongAdjective(number: number, gender: gender, caseStrong: caseAdjective)
+        case .comparisonWeak:
+            return generateComparisonWeakAdjective(number: number, gender: gender, caseWeak: caseAdjective)
+        }
+    }
+    
     func generateComparisonStrongAdjective(number: Number, gender: Gender, caseStrong: Case) -> String? {
         if type != .adjective {
             return nil

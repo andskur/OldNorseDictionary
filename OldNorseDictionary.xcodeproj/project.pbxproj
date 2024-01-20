@@ -23,6 +23,8 @@
 		A15829592A68249100BD97D4 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15829582A68249100BD97D4 /* Number.swift */; };
 		A15ECE882B5C58DE003BFDFF /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15ECE872B5C58DE003BFDFF /* Mood.swift */; };
 		A15ECE892B5C58DE003BFDFF /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15ECE872B5C58DE003BFDFF /* Mood.swift */; };
+		A15ECE8B2B5C6657003BFDFF /* Formation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15ECE8A2B5C6657003BFDFF /* Formation.swift */; };
+		A15ECE8C2B5C6657003BFDFF /* Formation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15ECE8A2B5C6657003BFDFF /* Formation.swift */; };
 		A1C92F8D2ABCBEEB0015F5C0 /* DynamicTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C92F8C2ABCBEEB0015F5C0 /* DynamicTable.swift */; };
 		A1EED5F52AB4B04D00FDD617 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EED5F42AB4B04D00FDD617 /* Gender.swift */; };
 		A1EED5F62AB4B04D00FDD617 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EED5F42AB4B04D00FDD617 /* Gender.swift */; };
@@ -101,6 +103,7 @@
 		A15829562A67DE7300BD97D4 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		A15829582A68249100BD97D4 /* Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
 		A15ECE872B5C58DE003BFDFF /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
+		A15ECE8A2B5C6657003BFDFF /* Formation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formation.swift; sourceTree = "<group>"; };
 		A1C92F8C2ABCBEEB0015F5C0 /* DynamicTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTable.swift; sourceTree = "<group>"; };
 		A1EED5F42AB4B04D00FDD617 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 		A1F2B8502A76696F003EBF17 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -191,6 +194,7 @@
 				A1EED5F42AB4B04D00FDD617 /* Gender.swift */,
 				A13F2D552B323072003B1692 /* Tense.swift */,
 				A15ECE872B5C58DE003BFDFF /* Mood.swift */,
+				A15ECE8A2B5C6657003BFDFF /* Formation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -403,6 +407,7 @@
 				A158294F2A66DE0500BD97D4 /* WordSearchView.swift in Sources */,
 				A1C92F8D2ABCBEEB0015F5C0 /* DynamicTable.swift in Sources */,
 				A158294D2A66DDCB00BD97D4 /* WordDetailView.swift in Sources */,
+				A15ECE8B2B5C6657003BFDFF /* Formation.swift in Sources */,
 				A15829512A66DE4600BD97D4 /* WordSearchController.swift in Sources */,
 				A15ECE882B5C58DE003BFDFF /* Mood.swift in Sources */,
 				A15829572A67DE7300BD97D4 /* Person.swift in Sources */,
@@ -433,6 +438,7 @@
 				A1F6CDDC2A75AB18006F020E /* Conjugation.swift in Sources */,
 				A1F6CDDB2A75AB16006F020E /* Word.swift in Sources */,
 				A1F2B8592A7672B4003EBF17 /* WordService.swift in Sources */,
+				A15ECE8C2B5C6657003BFDFF /* Formation.swift in Sources */,
 				A1EED5F62AB4B04D00FDD617 /* Gender.swift in Sources */,
 				A1F6CDDE2A75AB1C006F020E /* Person.swift in Sources */,
 				A1F6CDB02A75A743006F020E /* WordListView.swift in Sources */,
