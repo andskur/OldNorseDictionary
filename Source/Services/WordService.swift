@@ -124,19 +124,19 @@ class WordService {
         
         
         // verbs
-        let firstSingularMatchesQuery = word.generateConjugation(person: .first, number: .singular, tense: .present)?.lowercased().contains(query) == true
-        let secondSingularMatchesQuery = word.generateConjugation(person: .second, number: .singular, tense: .present)?.lowercased().contains(query) == true
-        let thirdSingularMatchesQuery = word.generateConjugation(person: .third, number: .singular, tense: .present)?.lowercased().contains(query) == true
-        let firstPluralMatchesQuery = word.generateConjugation(person: .first, number: .plural, tense: .present)?.lowercased().contains(query) == true
-        let secondPluralMatchesQuery = word.generateConjugation(person: .second, number: .plural, tense: .present)?.lowercased().contains(query) == true
-        let thirdPluralMatchesQuery = word.generateConjugation(person: .third, number: .plural, tense: .present)?.lowercased().contains(query) == true
+        let firstSingularMatchesQuery = word.generateConjugationNonReflexive(person: .first, number: .singular, tense: .present)?.lowercased().contains(query) == true
+        let secondSingularMatchesQuery = word.generateConjugationNonReflexive(person: .second, number: .singular, tense: .present)?.lowercased().contains(query) == true
+        let thirdSingularMatchesQuery = word.generateConjugationNonReflexive(person: .third, number: .singular, tense: .present)?.lowercased().contains(query) == true
+        let firstPluralMatchesQuery = word.generateConjugationNonReflexive(person: .first, number: .plural, tense: .present)?.lowercased().contains(query) == true
+        let secondPluralMatchesQuery = word.generateConjugationNonReflexive(person: .second, number: .plural, tense: .present)?.lowercased().contains(query) == true
+        let thirdPluralMatchesQuery = word.generateConjugationNonReflexive(person: .third, number: .plural, tense: .present)?.lowercased().contains(query) == true
         
-        let firstSingularMatchesQueryPast = word.generateConjugation(person: .first, number: .singular, tense: .past)?.lowercased().contains(query) == true
-        let secondSingularMatchesQueryPast = word.generateConjugation(person: .second, number: .singular, tense: .past)?.lowercased().contains(query) == true
-        let thirdSingularMatchesQueryPast = word.generateConjugation(person: .third, number: .singular, tense: .past)?.lowercased().contains(query) == true
-        let firstPluralMatchesQueryPast = word.generateConjugation(person: .first, number: .plural, tense: .past)?.lowercased().contains(query) == true
-        let secondPluralMatchesQueryPast = word.generateConjugation(person: .second, number: .plural, tense: .past)?.lowercased().contains(query) == true
-        let thirdPluralMatchesQueryPast = word.generateConjugation(person: .third, number: .plural, tense: .past)?.lowercased().contains(query) == true
+        let firstSingularMatchesQueryPast = word.generateConjugationNonReflexive(person: .first, number: .singular, tense: .past)?.lowercased().contains(query) == true
+        let secondSingularMatchesQueryPast = word.generateConjugationNonReflexive(person: .second, number: .singular, tense: .past)?.lowercased().contains(query) == true
+        let thirdSingularMatchesQueryPast = word.generateConjugationNonReflexive(person: .third, number: .singular, tense: .past)?.lowercased().contains(query) == true
+        let firstPluralMatchesQueryPast = word.generateConjugationNonReflexive(person: .first, number: .plural, tense: .past)?.lowercased().contains(query) == true
+        let secondPluralMatchesQueryPast = word.generateConjugationNonReflexive(person: .second, number: .plural, tense: .past)?.lowercased().contains(query) == true
+        let thirdPluralMatchesQueryPast = word.generateConjugationNonReflexive(person: .third, number: .plural, tense: .past)?.lowercased().contains(query) == true
         
         // reflexive verbs
         let firstSingularMatchesQueryR = word.generateConjugationReflexive(person: .first, number: .singular, tense: .present)?.lowercased().contains(query) == true

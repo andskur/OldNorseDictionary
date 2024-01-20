@@ -3,43 +3,72 @@ import SwiftUI
 struct DynamicTableVerbs: View {
     let word: Word
     
-    var body: some View {
-        ScrollView(.horizontal, showsIndicators: true) {
-            VStack(alignment: .leading) {
-                // Main Headers
+    func Headers(tense: Tense, reflexive: Bool) -> some View {
+        Group {
+            HStack(spacing: 0) {
+                Text("")
+                    .frame(minWidth: 87, minHeight: 0, maxHeight: .infinity, alignment: .center)
+                    .padding(.vertical, 10)
+                    .background(Color.gray.opacity(0.2))
+                    .border(Color.black, width: 1)
                 
-                HStack(spacing: 0) {
-                    Text("")
-                        .frame(minWidth: 87, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                        .padding(.vertical, 10)
-                        .background(Color.gray.opacity(0.2))
-                        .border(Color.black, width: 1)
-                    
-                    Text("Present Tense")
-                        .frame(minWidth: 522, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                        .padding(.vertical, 10)
-                        .background(Color.gray.opacity(0.2))
-                        .border(Color.black, width: 1)
+                Text(tense.Title(reflexive: reflexive))
+                    .frame(minWidth: 522, minHeight: 0, maxHeight: .infinity, alignment: .center)
+                    .padding(.vertical, 10)
+                    .background(Color.gray.opacity(0.2))
+                    .border(Color.black, width: 1)
+            }
+            
+            HStack(spacing: 0) {
+                Text("")
+                    .frame(minWidth: 87, minHeight: 0, maxHeight: .infinity, alignment: .center)
+                    .padding(.vertical, 10)
+                    .background(Color.gray.opacity(0.2))
+                    .border(Color.black, width: 1)
+                
+                ForEach(Number.allCases, id: \.rawValue) { num in
+                    if word.shouldShowNumber(number: num) {
+                        let headerWidthValue = headerWidth(for: num)
+                        Text(num.rawValue.capitalized)
+                            .frame(minWidth: headerWidthValue, minHeight: 0, maxHeight: .infinity, alignment: .center)
+                            .padding(.vertical, 10)
+                            .background(Color.gray.opacity(0.2))
+                            .border(Color.black, width: 1)
+                    }
                 }
+            }
+        }
+    }
+    
+    
+    func Rows(tense: Tense, reflexive: Bool) -> some View {
+        ForEach(Person.allCases, id: \.rawValue) { p in
+            HStack(spacing: 0) {
+                Text(p.rawValue.capitalized)
+                    .frame(minWidth: 87, maxWidth: 87)
+                    .padding(.vertical, 10)
+                    .border(Color.black, width: 1)
+                    .background(Color.gray.opacity(0.2))
                 
-                HStack(spacing: 0) {
-                    Text("")
-                        .frame(minWidth: 87, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                        .padding(.vertical, 10)
-                        .background(Color.gray.opacity(0.2))
-                        .border(Color.black, width: 1)
-                    
-                    ForEach(Number.allCases, id: \.rawValue) { num in
-                        if word.shouldShowNumber(number: num) {
-                            let headerWidthValue = headerWidth(for: num)
-                            Text(num.rawValue.capitalized)
-                                .frame(minWidth: headerWidthValue, minHeight: 0, maxHeight: .infinity, alignment: .center)
+                ForEach(Number.allCases, id: \.rawValue) { num in
+                    if word.shouldShowNumber(number: num) {
+                        if let wordWithConjunction = word.generateConjugation(person: p, number: num, tense: tense, reflexive: reflexive) {
+                            Text(wordWithConjunction)
+                                .frame(minWidth: headerWidth(for: num), maxWidth: .infinity)
                                 .padding(.vertical, 10)
-                                .background(Color.gray.opacity(0.2))
                                 .border(Color.black, width: 1)
                         }
                     }
                 }
+            }
+        }
+    }
+    
+    var body: some View {
+        ScrollView(.horizontal, showsIndicators: true) {
+            VStack(alignment: .leading) {
+                // present tense
+                Headers(tense: .present, reflexive: false)
                 
                 HStack(spacing: 0) {
                     Text("Imperative")
@@ -60,117 +89,17 @@ struct DynamicTableVerbs: View {
                     }
                 }
                 
-                // Rows
-                ForEach(Person.allCases, id: \.rawValue) { p in
-                    HStack(spacing: 0) {
-                        Text(p.rawValue.capitalized)
-                            .frame(minWidth: 87, maxWidth: 87)
-                            .padding(.vertical, 10)
-                            .border(Color.black, width: 1)
-                            .background(Color.gray.opacity(0.2))
-                        
-                        ForEach(Number.allCases, id: \.rawValue) { num in
-                            if word.shouldShowNumber(number: num) {
-                                if let wordWithConjunction = word.generateConjugation(person: p, number: num, tense: .present) {
-                                    Text(wordWithConjunction)
-                                        .frame(minWidth: headerWidth(for: num), maxWidth: .infinity)
-                                        .padding(.vertical, 10)
-                                        .border(Color.black, width: 1)
-                                }
-                            }
-                        }
-                    }
-                }
+                Rows(tense: .present, reflexive: false)
+        
+
+                // past tense
+                Headers(tense: .past, reflexive: false)
                 
-                HStack(spacing: 0) {
-                    Text("")
-                        .frame(minWidth: 87, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                        .padding(.vertical, 10)
-                        .background(Color.gray.opacity(0.2))
-                        .border(Color.black, width: 1)
-                    
-                    Text("Past Tense")
-                        .frame(minWidth: 522, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                        .padding(.vertical, 10)
-                        .background(Color.gray.opacity(0.2))
-                        .border(Color.black, width: 1)
-                }
-                
-                HStack(spacing: 0) {
-                    Text("")
-                        .frame(minWidth: 87, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                        .padding(.vertical, 10)
-                        .background(Color.gray.opacity(0.2))
-                        .border(Color.black, width: 1)
-                    
-                    ForEach(Number.allCases, id: \.rawValue) { num in
-                        if word.shouldShowNumber(number: num) {
-                            let headerWidthValue = headerWidth(for: num)
-                            Text(num.rawValue.capitalized)
-                                .frame(minWidth: headerWidthValue, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                                .padding(.vertical, 10)
-                                .background(Color.gray.opacity(0.2))
-                                .border(Color.black, width: 1)
-                        }
-                    }
-                }
-                
-                // Rows
-                ForEach(Person.allCases, id: \.rawValue) { p in
-                    HStack(spacing: 0) {
-                        Text(p.rawValue.capitalized)
-                            .frame(minWidth: 87, maxWidth: 87)
-                            .padding(.vertical, 10)
-                            .border(Color.black, width: 1)
-                            .background(Color.gray.opacity(0.2))
-                        
-                        ForEach(Number.allCases, id: \.rawValue) { num in
-                            if word.shouldShowNumber(number: num) {
-                                if let wordWithConjunction = word.generateConjugation(person: p, number: num, tense: .past) {
-                                    Text(wordWithConjunction)
-                                        .frame(minWidth: headerWidth(for: num), maxWidth: .infinity)
-                                        .padding(.vertical, 10)
-                                        .border(Color.black, width: 1)
-                                }
-                            }
-                        }
-                    }
-                }
-                // Main Headers
-                
-                HStack(spacing: 0) {
-                    Text("")
-                        .frame(minWidth: 87, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                        .padding(.vertical, 10)
-                        .background(Color.gray.opacity(0.2))
-                        .border(Color.black, width: 1)
-                    
-                    Text("Reflexive Present Tense")
-                        .frame(minWidth: 522, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                        .padding(.vertical, 10)
-                        .background(Color.gray.opacity(0.2))
-                        .border(Color.black, width: 1)
-                }
-                
-                HStack(spacing: 0) {
-                    Text("")
-                        .frame(minWidth: 87, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                        .padding(.vertical, 10)
-                        .background(Color.gray.opacity(0.2))
-                        .border(Color.black, width: 1)
-                    
-                    ForEach(Number.allCases, id: \.rawValue) { num in
-                        if word.shouldShowNumber(number: num) {
-                            let headerWidthValue = headerWidth(for: num)
-                            Text(num.rawValue.capitalized)
-                                .frame(minWidth: headerWidthValue, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                                .padding(.vertical, 10)
-                                .background(Color.gray.opacity(0.2))
-                                .border(Color.black, width: 1)
-                        }
-                    }
-                }
-                
+                Rows(tense: .past, reflexive: false)
+
+                // present tense reflexive
+                Headers(tense: .present, reflexive: true)
+
                 HStack(spacing: 0) {
                     Text("Imperative")
                         .frame(minWidth: 87, maxWidth: 87)
@@ -190,82 +119,11 @@ struct DynamicTableVerbs: View {
                     }
                 }
                 
-                // Rows
-                ForEach(Person.allCases, id: \.rawValue) { p in
-                    HStack(spacing: 0) {
-                        Text(p.rawValue.capitalized)
-                            .frame(minWidth: 87, maxWidth: 87)
-                            .padding(.vertical, 10)
-                            .border(Color.black, width: 1)
-                            .background(Color.gray.opacity(0.2))
-                        
-                        ForEach(Number.allCases, id: \.rawValue) { num in
-                            if word.shouldShowNumber(number: num) {
-                                if let wordWithConjunction = word.generateConjugationReflexive(person: p, number: num, tense: .present) {
-                                    Text(wordWithConjunction)
-                                        .frame(minWidth: headerWidth(for: num), maxWidth: .infinity)
-                                        .padding(.vertical, 10)
-                                        .border(Color.black, width: 1)
-                                }
-                            }
-                        }
-                    }
-                }
+                Rows(tense: .present, reflexive: true)
                 
-                HStack(spacing: 0) {
-                    Text("")
-                        .frame(minWidth: 87, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                        .padding(.vertical, 10)
-                        .background(Color.gray.opacity(0.2))
-                        .border(Color.black, width: 1)
-                    
-                    Text("Reflexive Past Tense")
-                        .frame(minWidth: 522, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                        .padding(.vertical, 10)
-                        .background(Color.gray.opacity(0.2))
-                        .border(Color.black, width: 1)
-                }
-                
-                HStack(spacing: 0) {
-                    Text("")
-                        .frame(minWidth: 87, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                        .padding(.vertical, 10)
-                        .background(Color.gray.opacity(0.2))
-                        .border(Color.black, width: 1)
-                    
-                    ForEach(Number.allCases, id: \.rawValue) { num in
-                        if word.shouldShowNumber(number: num) {
-                            let headerWidthValue = headerWidth(for: num)
-                            Text(num.rawValue.capitalized)
-                                .frame(minWidth: headerWidthValue, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                                .padding(.vertical, 10)
-                                .background(Color.gray.opacity(0.2))
-                                .border(Color.black, width: 1)
-                        }
-                    }
-                }
-                
-                // Rows
-                ForEach(Person.allCases, id: \.rawValue) { p in
-                    HStack(spacing: 0) {
-                        Text(p.rawValue.capitalized)
-                            .frame(minWidth: 87, maxWidth: 87)
-                            .padding(.vertical, 10)
-                            .border(Color.black, width: 1)
-                            .background(Color.gray.opacity(0.2))
-                        
-                        ForEach(Number.allCases, id: \.rawValue) { num in
-                            if word.shouldShowNumber(number: num) {
-                                if let wordWithConjunction = word.generateConjugationReflexive(person: p, number: num, tense: .past) {
-                                    Text(wordWithConjunction)
-                                        .frame(minWidth: headerWidth(for: num), maxWidth: .infinity)
-                                        .padding(.vertical, 10)
-                                        .border(Color.black, width: 1)
-                                }
-                            }
-                        }
-                    }
-                }
+                // past tense reflexive
+                Headers(tense: .past, reflexive: true)
+                Rows(tense: .past, reflexive: true)
             }
         }
     }

@@ -1696,6 +1696,15 @@ struct Word: Codable, Identifiable {
         return genitiveCase
     }
     
+    func generateConjugation(person: Person, number: Number, tense: Tense, reflexive: Bool) -> String? {
+        if reflexive {
+            return generateConjugationReflexive(person: person, number: number, tense: tense)
+        } else {
+            return generateConjugationNonReflexive(person: person, number: number, tense: tense)
+        }
+        
+    }
+    
     func generateConjugationReflexive(person: Person, number: Number, tense: Tense) -> String? {
         switch tense {
         case .past:
@@ -1773,7 +1782,7 @@ struct Word: Codable, Identifiable {
     }
     
     
-    func generateConjugation(person: Person, number: Number, tense: Tense) -> String? {
+    func generateConjugationNonReflexive(person: Person, number: Number, tense: Tense) -> String? {
         switch tense {
         case .past:
             return generateConjugationPast(person: person, number: number)
