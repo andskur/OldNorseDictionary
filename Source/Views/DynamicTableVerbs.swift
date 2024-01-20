@@ -67,63 +67,61 @@ struct DynamicTableVerbs: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: true) {
             VStack(alignment: .leading) {
-                // present tense
-                Headers(tense: .present, reflexive: false)
-                
-                HStack(spacing: 0) {
-                    Text("Imperative")
-                        .frame(minWidth: 87, maxWidth: 87)
-                        .padding(.vertical, 10)
-                        .border(Color.black, width: 1)
-                        .background(Color.gray.opacity(0.2))
+                // Non Reflexive
+                ForEach(Tense.allCases, id: \.rawValue) { tense in
+                    Headers(tense: tense, reflexive: false)
                     
-                    ForEach(Number.allCases, id: \.rawValue) { num in
-                        if word.shouldShowNumber(number: num) {
-                            if let wordWithConjunction = word.generateImperative(number: num) {
-                                Text(wordWithConjunction)
-                                    .frame(minWidth: headerWidth(for: num), maxWidth: .infinity)
-                                    .padding(.vertical, 10)
-                                    .border(Color.black, width: 1)
+                    if tense == .present {
+                        HStack(spacing: 0) {
+                            Text("Imperative")
+                                .frame(minWidth: 87, maxWidth: 87)
+                                .padding(.vertical, 10)
+                                .border(Color.black, width: 1)
+                                .background(Color.gray.opacity(0.2))
+                            
+                            ForEach(Number.allCases, id: \.rawValue) { num in
+                                if word.shouldShowNumber(number: num) {
+                                    if let wordWithConjunction = word.generateImperative(number: num) {
+                                        Text(wordWithConjunction)
+                                            .frame(minWidth: headerWidth(for: num), maxWidth: .infinity)
+                                            .padding(.vertical, 10)
+                                            .border(Color.black, width: 1)
+                                    }
+                                }
                             }
                         }
                     }
+                    
+                    Rows(tense: tense, reflexive: false)
                 }
                 
-                Rows(tense: .present, reflexive: false)
-        
-
-                // past tense
-                Headers(tense: .past, reflexive: false)
-                
-                Rows(tense: .past, reflexive: false)
-
-                // present tense reflexive
-                Headers(tense: .present, reflexive: true)
-
-                HStack(spacing: 0) {
-                    Text("Imperative")
-                        .frame(minWidth: 87, maxWidth: 87)
-                        .padding(.vertical, 10)
-                        .border(Color.black, width: 1)
-                        .background(Color.gray.opacity(0.2))
+                // Reflexive
+                ForEach(Tense.allCases, id: \.rawValue) { tense in
+                    Headers(tense: tense, reflexive: true)
                     
-                    ForEach(Number.allCases, id: \.rawValue) { num in
-                        if word.shouldShowNumber(number: num) {
-                            if let wordWithConjunction = word.generateImperativeReflexive(number: num) {
-                                Text(wordWithConjunction)
-                                    .frame(minWidth: headerWidth(for: num), maxWidth: .infinity)
-                                    .padding(.vertical, 10)
-                                    .border(Color.black, width: 1)
+                    if tense == .present {
+                        HStack(spacing: 0) {
+                            Text("Imperative")
+                                .frame(minWidth: 87, maxWidth: 87)
+                                .padding(.vertical, 10)
+                                .border(Color.black, width: 1)
+                                .background(Color.gray.opacity(0.2))
+                            
+                            ForEach(Number.allCases, id: \.rawValue) { num in
+                                if word.shouldShowNumber(number: num) {
+                                    if let wordWithConjunction = word.generateImperativeReflexive(number: num) {
+                                        Text(wordWithConjunction)
+                                            .frame(minWidth: headerWidth(for: num), maxWidth: .infinity)
+                                            .padding(.vertical, 10)
+                                            .border(Color.black, width: 1)
+                                    }
+                                }
                             }
                         }
                     }
+                    
+                    Rows(tense: tense, reflexive: true)
                 }
-                
-                Rows(tense: .present, reflexive: true)
-                
-                // past tense reflexive
-                Headers(tense: .past, reflexive: true)
-                Rows(tense: .past, reflexive: true)
             }
         }
     }

@@ -8,8 +8,8 @@
 import Foundation
 
 enum Tense: String, CaseIterable, Codable {
-    case past
     case present
+    case past
     
     func Title(reflexive: Bool) -> String {
         var title = self.rawValue.capitalized
