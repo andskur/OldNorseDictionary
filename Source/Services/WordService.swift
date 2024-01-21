@@ -124,34 +124,34 @@ class WordService {
         
         
         // verbs
-        let firstSingularMatchesQuery = word.generateConjugationNonReflexive(person: .first, number: .singular, tense: .present)?.lowercased().contains(query) == true
-        let secondSingularMatchesQuery = word.generateConjugationNonReflexive(person: .second, number: .singular, tense: .present)?.lowercased().contains(query) == true
-        let thirdSingularMatchesQuery = word.generateConjugationNonReflexive(person: .third, number: .singular, tense: .present)?.lowercased().contains(query) == true
-        let firstPluralMatchesQuery = word.generateConjugationNonReflexive(person: .first, number: .plural, tense: .present)?.lowercased().contains(query) == true
-        let secondPluralMatchesQuery = word.generateConjugationNonReflexive(person: .second, number: .plural, tense: .present)?.lowercased().contains(query) == true
-        let thirdPluralMatchesQuery = word.generateConjugationNonReflexive(person: .third, number: .plural, tense: .present)?.lowercased().contains(query) == true
+        let firstSingularMatchesQuery = word.generateConjugationNonReflexive(person: .first, number: .singular, tense: .present, mood: .indicative)?.lowercased().contains(query) == true
+        let secondSingularMatchesQuery = word.generateConjugationNonReflexive(person: .second, number: .singular, tense: .present, mood: .indicative)?.lowercased().contains(query) == true
+        let thirdSingularMatchesQuery = word.generateConjugationNonReflexive(person: .third, number: .singular, tense: .present, mood: .indicative)?.lowercased().contains(query) == true
+        let firstPluralMatchesQuery = word.generateConjugationNonReflexive(person: .first, number: .plural, tense: .present, mood: .indicative)?.lowercased().contains(query) == true
+        let secondPluralMatchesQuery = word.generateConjugationNonReflexive(person: .second, number: .plural, tense: .present, mood: .indicative)?.lowercased().contains(query) == true
+        let thirdPluralMatchesQuery = word.generateConjugationNonReflexive(person: .third, number: .plural, tense: .present, mood: .indicative)?.lowercased().contains(query) == true
         
-        let firstSingularMatchesQueryPast = word.generateConjugationNonReflexive(person: .first, number: .singular, tense: .past)?.lowercased().contains(query) == true
-        let secondSingularMatchesQueryPast = word.generateConjugationNonReflexive(person: .second, number: .singular, tense: .past)?.lowercased().contains(query) == true
-        let thirdSingularMatchesQueryPast = word.generateConjugationNonReflexive(person: .third, number: .singular, tense: .past)?.lowercased().contains(query) == true
-        let firstPluralMatchesQueryPast = word.generateConjugationNonReflexive(person: .first, number: .plural, tense: .past)?.lowercased().contains(query) == true
-        let secondPluralMatchesQueryPast = word.generateConjugationNonReflexive(person: .second, number: .plural, tense: .past)?.lowercased().contains(query) == true
-        let thirdPluralMatchesQueryPast = word.generateConjugationNonReflexive(person: .third, number: .plural, tense: .past)?.lowercased().contains(query) == true
+        let firstSingularMatchesQueryPast = word.generateConjugationNonReflexive(person: .first, number: .singular, tense: .past, mood: .indicative)?.lowercased().contains(query) == true
+        let secondSingularMatchesQueryPast = word.generateConjugationNonReflexive(person: .second, number: .singular, tense: .past, mood: .indicative)?.lowercased().contains(query) == true
+        let thirdSingularMatchesQueryPast = word.generateConjugationNonReflexive(person: .third, number: .singular, tense: .past, mood: .indicative)?.lowercased().contains(query) == true
+        let firstPluralMatchesQueryPast = word.generateConjugationNonReflexive(person: .first, number: .plural, tense: .past, mood: .indicative)?.lowercased().contains(query) == true
+        let secondPluralMatchesQueryPast = word.generateConjugationNonReflexive(person: .second, number: .plural, tense: .past, mood: .indicative)?.lowercased().contains(query) == true
+        let thirdPluralMatchesQueryPast = word.generateConjugationNonReflexive(person: .third, number: .plural, tense: .past, mood: .indicative)?.lowercased().contains(query) == true
         
         // reflexive verbs
-        let firstSingularMatchesQueryR = word.generateConjugationReflexive(person: .first, number: .singular, tense: .present)?.lowercased().contains(query) == true
-        let secondSingularMatchesQueryR = word.generateConjugationReflexive(person: .second, number: .singular, tense: .present)?.lowercased().contains(query) == true
-        let thirdSingularMatchesQueryR = word.generateConjugationReflexive(person: .third, number: .singular, tense: .present)?.lowercased().contains(query) == true
-        let firstPluralMatchesQueryR = word.generateConjugationReflexive(person: .first, number: .plural, tense: .present)?.lowercased().contains(query) == true
-        let secondPluralMatchesQueryR = word.generateConjugationReflexive(person: .second, number: .plural, tense: .present)?.lowercased().contains(query) == true
-        let thirdPluralMatchesQueryR = word.generateConjugationReflexive(person: .third, number: .plural, tense: .present)?.lowercased().contains(query) == true
+        let firstSingularMatchesQueryR = word.generateConjugationReflexive(person: .first, number: .singular, tense: .present, mood: .indicative)?.lowercased().contains(query) == true
+        let secondSingularMatchesQueryR = word.generateConjugationReflexive(person: .second, number: .singular, tense: .present, mood: .indicative)?.lowercased().contains(query) == true
+        let thirdSingularMatchesQueryR = word.generateConjugationReflexive(person: .third, number: .singular, tense: .present, mood: .indicative)?.lowercased().contains(query) == true
+        let firstPluralMatchesQueryR = word.generateConjugationReflexive(person: .first, number: .plural, tense: .present, mood: .indicative)?.lowercased().contains(query) == true
+        let secondPluralMatchesQueryR = word.generateConjugationReflexive(person: .second, number: .plural, tense: .present, mood: .indicative)?.lowercased().contains(query) == true
+        let thirdPluralMatchesQueryR = word.generateConjugationReflexive(person: .third, number: .plural, tense: .present, mood: .indicative)?.lowercased().contains(query) == true
         
-        let firstSingularMatchesQueryPastR = word.generateConjugationReflexive(person: .first, number: .singular, tense: .past)?.lowercased().contains(query) == true
-        let secondSingularMatchesQueryPastR = word.generateConjugationReflexive(person: .second, number: .singular, tense: .past)?.lowercased().contains(query) == true
-        let thirdSingularMatchesQueryPastR = word.generateConjugationReflexive(person: .third, number: .singular, tense: .past)?.lowercased().contains(query) == true
-        let firstPluralMatchesQueryPastR = word.generateConjugationReflexive(person: .first, number: .plural, tense: .past)?.lowercased().contains(query) == true
-        let secondPluralMatchesQueryPastR = word.generateConjugationReflexive(person: .second, number: .plural, tense: .past)?.lowercased().contains(query) == true
-        let thirdPluralMatchesQueryPastR = word.generateConjugationReflexive(person: .third, number: .plural, tense: .past)?.lowercased().contains(query) == true
+        let firstSingularMatchesQueryPastR = word.generateConjugationReflexive(person: .first, number: .singular, tense: .past, mood: .indicative)?.lowercased().contains(query) == true
+        let secondSingularMatchesQueryPastR = word.generateConjugationReflexive(person: .second, number: .singular, tense: .past, mood: .indicative)?.lowercased().contains(query) == true
+        let thirdSingularMatchesQueryPastR = word.generateConjugationReflexive(person: .third, number: .singular, tense: .past, mood: .indicative)?.lowercased().contains(query) == true
+        let firstPluralMatchesQueryPastR = word.generateConjugationReflexive(person: .first, number: .plural, tense: .past, mood: .indicative)?.lowercased().contains(query) == true
+        let secondPluralMatchesQueryPastR = word.generateConjugationReflexive(person: .second, number: .plural, tense: .past, mood: .indicative)?.lowercased().contains(query) == true
+        let thirdPluralMatchesQueryPastR = word.generateConjugationReflexive(person: .third, number: .plural, tense: .past, mood: .indicative)?.lowercased().contains(query) == true
         
         // nominative
         let accNominativeSingularMasculine = word.generateCase(wordCase: .nominative, number: .singular, gender: .masculine)?.lowercased().contains(query) == true

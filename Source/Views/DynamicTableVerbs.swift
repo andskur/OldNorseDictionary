@@ -26,14 +26,33 @@ struct DynamicTableVerbs: View {
                     .background(Color.gray.opacity(0.2))
                     .border(Color.black, width: 1)
                 
-                ForEach(Number.allCases, id: \.rawValue) { num in
-                    if word.shouldShowNumber(number: num) {
-                        let headerWidthValue = headerWidth(for: num)
-                        Text(num.rawValue.capitalized)
-                            .frame(minWidth: headerWidthValue, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                            .padding(.vertical, 10)
-                            .background(Color.gray.opacity(0.2))
-                            .border(Color.black, width: 1)
+                ForEach(Mood.allCases, id: \.rawValue) { mood in
+                    
+                    Text(mood.rawValue.capitalized)
+                        .frame(minWidth: 261, minHeight: 0, maxHeight: .infinity, alignment: .center)
+                        .padding(.vertical, 10)
+                        .background(Color.gray.opacity(0.2))
+                        .border(Color.black, width: 1)
+                    
+                }
+            }
+            
+            HStack(spacing: 0) {
+                Text("")
+                    .frame(minWidth: 87, minHeight: 0, maxHeight: .infinity, alignment: .center)
+                    .padding(.vertical, 10)
+                    .background(Color.gray.opacity(0.2))
+                    .border(Color.black, width: 1)
+                
+                ForEach(Mood.allCases, id: \.rawValue) { mood in
+                    ForEach(Number.allCases, id: \.rawValue) { num in
+                        if word.shouldShowNumber(number: num) {
+                            Text(num.rawValue.capitalized)
+                                .frame(minWidth: 130.5, minHeight: 0, maxHeight: .infinity, alignment: .center)
+                                .padding(.vertical, 10)
+                                .background(Color.gray.opacity(0.2))
+                                .border(Color.black, width: 1)
+                        }
                     }
                 }
             }
@@ -50,13 +69,15 @@ struct DynamicTableVerbs: View {
                     .border(Color.black, width: 1)
                     .background(Color.gray.opacity(0.2))
                 
-                ForEach(Number.allCases, id: \.rawValue) { num in
-                    if word.shouldShowNumber(number: num) {
-                        if let wordWithConjunction = word.generateConjugation(person: p, number: num, tense: tense, reflexive: reflexive) {
-                            Text(wordWithConjunction)
-                                .frame(minWidth: headerWidth(for: num), maxWidth: .infinity)
-                                .padding(.vertical, 10)
-                                .border(Color.black, width: 1)
+                ForEach(Mood.allCases, id: \.rawValue) { m in
+                    ForEach(Number.allCases, id: \.rawValue) { num in
+                        if word.shouldShowNumber(number: num) {
+                            if let wordWithConjunction = word.generateConjugation(person: p, number: num, tense: tense, reflexive: reflexive, mood: m) {
+                                Text(wordWithConjunction)
+                                    .frame(minWidth: 130.5, maxWidth: .infinity)
+                                    .padding(.vertical, 10)
+                                    .border(Color.black, width: 1)
+                            }
                         }
                     }
                 }
@@ -157,7 +178,7 @@ struct DynamicTableVerbs: View {
 
 struct DynamicTableVerbs_Previews: PreviewProvider {
     static var previews: some View {
-        let sampleWord = Word(oldNorseWord: "Hús", base: "huse", declension: nil, englishTranslation: "House", russianTranslation: "Дом", definition: "A building for human habitation.", examples: ["Hús er stafrænt orðn sem merkir byggingu fyrir mannlega búsetu."], type: .noun, cases: nil, gendersCases: nil, numbers: nil, conjugation: nil, verbForms: nil, gender: nil, nounForms: nil, comparative: nil, comparison: nil)
+        let sampleWord = Word(oldNorseWord: "Hús", base: "huse", declension: nil, englishTranslation: "House", russianTranslation: "Дом", definition: "A building for human habitation.", examples: ["Hús er stafrænt orðn sem merkir byggingu fyrir mannlega búsetu."], type: .noun, cases: nil, gendersCases: nil, numbers: nil, conjugation: nil, subjenctive: nil, verbForms: nil, gender: nil, nounForms: nil, comparative: nil, comparison: nil)
 
         DynamicTable(word: sampleWord)
     }

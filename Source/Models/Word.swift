@@ -33,11 +33,12 @@ struct VerbForms: Codable {
     let second: String?
     let third: String?
     let fourth: String?
+    let fifth: String?
 }
 
 struct Word: Codable, Identifiable {
     private enum CodingKeys : String, CodingKey {
-        case oldNorseWord, base, declension, englishTranslation, comparative, comparison, russianTranslation, definition, examples, type, cases, gendersCases, numbers, conjugation, gender, nounForms, verbForms
+        case oldNorseWord, base, declension, englishTranslation, comparative, comparison, russianTranslation, definition, examples, type, cases, gendersCases, numbers, conjugation, gender, nounForms, verbForms, subjenctive
     }
     
     var oldNorseWord: String
@@ -52,6 +53,7 @@ struct Word: Codable, Identifiable {
     let gendersCases: GendersCases?
     var numbers: ActiveNumbers?
     let conjugation: Conjugation?
+    let subjenctive: Conjugation?
     
     let verbForms: VerbForms?
     
@@ -1712,21 +1714,31 @@ struct Word: Codable, Identifiable {
         return genitiveCase
     }
     
-    func generateConjugation(person: Person, number: Number, tense: Tense, reflexive: Bool) -> String? {
+    func generateConjugation(person: Person, number: Number, tense: Tense, reflexive: Bool, mood: Mood) -> String? {
         if reflexive {
-            return generateConjugationReflexive(person: person, number: number, tense: tense)
+            return generateConjugationReflexive(person: person, number: number, tense: tense, mood: mood)
         } else {
-            return generateConjugationNonReflexive(person: person, number: number, tense: tense)
+            return generateConjugationNonReflexive(person: person, number: number, tense: tense, mood: mood)
         }
         
     }
     
-    func generateConjugationReflexive(person: Person, number: Number, tense: Tense) -> String? {
+    func generateConjugationReflexive(person: Person, number: Number, tense: Tense, mood: Mood) -> String? {
         switch tense {
         case .past:
-            return generateConjugationPastReflexive(person: person, number: number)
+            switch mood {
+            case .indicative:
+                return generateConjugationPastReflexive(person: person, number: number)
+            case .subjunctive:
+                return generateConjugationPastReflexiveSubjunctive(person: person, number: number)
+            }
         case .present:
-            return generateConjugationPresentReflexive(person: person, number: number)
+            switch mood {
+            case .indicative:
+                return generateConjugationPresentReflexive(person: person, number: number)
+            case .subjunctive:
+                return generateConjugationPresentReflexiveSubjunctive(person: person, number: number)
+            }
         }
     }
     
@@ -1757,6 +1769,40 @@ struct Word: Codable, Identifiable {
             switch number {
             case .singular:
                 verb?.removeLast()
+                return verb! + "sk"
+            case .dual, .plural:
+                return verb! + "sk"
+            }
+        }
+    }
+    
+    func generateConjugationPresentReflexiveSubjunctive(person: Person, number: Number) -> String? {
+        var verb = generateConjugationPresentSubjunctive(person: person, number: number)
+        
+        
+        switch person {
+        case .first:
+            switch number {
+            case .singular:
+                if verb?.last == "a" {
+                    verb?.removeLast()
+                }
+                return verb! + "umk"
+            case .dual, .plural:
+                return verb! + "sk"
+            }
+        case .second:
+            switch number {
+            case .singular:
+                verb?.removeLast()
+                return verb! + "sk"
+            case .dual, .plural:
+                verb?.removeLast()
+                return verb! + "zk"
+            }
+        case .third:
+            switch number {
+            case .singular:
                 return verb! + "sk"
             case .dual, .plural:
                 return verb! + "sk"
@@ -1797,14 +1843,152 @@ struct Word: Codable, Identifiable {
         }
     }
     
+    func generateConjugationPastReflexiveSubjunctive(person: Person, number: Number) -> String? {
+        var verb = generateConjugationPastSubjunctive(person: person, number: number)
+        
+        switch person {
+        case .first:
+            switch number {
+            case .singular:        
+                if verb?.last == "a" {
+                    verb?.removeLast()
+                }
+                return verb! + "umk"
+            case .dual, .plural:
+                return verb! + "sk"
+            }
+        case .second:
+            switch number {
+            case .singular:
+                verb?.removeLast()
+                return verb! + "sk"
+            case .dual, .plural:
+                verb?.removeLast()
+                return verb! + "zk"
+            }
+        case .third:
+            switch number {
+            case .singular:
+                return verb! + "sk"
+            case .dual, .plural:
+                return verb! + "sk"
+            }
+        }
+    }
     
-    func generateConjugationNonReflexive(person: Person, number: Number, tense: Tense) -> String? {
+    
+    func generateConjugationNonReflexive(person: Person, number: Number, tense: Tense, mood: Mood) -> String? {
         switch tense {
         case .past:
-            return generateConjugationPast(person: person, number: number)
+            switch mood {
+            case .indicative:
+                return generateConjugationPast(person: person, number: number)
+            case .subjunctive:
+                return generateConjugationPastSubjunctive(person: person, number: number)
+            }
         case .present:
-            return generateConjugationPresent(person: person, number: number)
+            switch mood {
+            case .indicative:
+                return generateConjugationPresent(person: person, number: number)
+            case .subjunctive:
+                return generateConjugationPresentSubjunctive(person: person, number: number)
+            }
         }
+    }
+    
+    func generateConjugationPresentSubjunctive(person: Person, number: Number) -> String? {
+        var verb = oldNorseWord
+        
+        if let verbFirst = verbForms?.first {
+            verb = verbFirst
+        }
+        
+        if oldNorseWord == "munu" || oldNorseWord == "skulu" {
+            verb = verb.replacingOccurrences(of: "mu", with: "my")
+        }
+        
+        switch person {
+        case .first:
+            switch number {
+            case .singular:
+                if let form = subjenctive?.singular?.firstPerson {
+                    return form
+                }
+            case .dual, .plural:
+                if let form = subjenctive?.plural?.firstPerson {
+                    return form
+                } else {
+                    verb.removeLast()
+                    verb += "im"
+                }
+            }
+        case .second:
+            switch number {
+            case .singular:
+                if let form = subjenctive?.singular?.secondPerson {
+                    return form
+                } else {
+                    verb.removeLast()
+                    verb += "ir"
+                }
+            case .dual, .plural:
+                if let form = subjenctive?.plural?.secondPerson {
+                    return form
+                } else {
+                    verb.removeLast()
+                    verb += "ið"
+                }
+            }
+        case .third:
+            switch number {
+            case .singular:
+                if let form = subjenctive?.singular?.thirdPerson {
+                    return form
+                } else {
+                    verb.removeLast()
+                    verb += "i"
+                }
+            case .dual, .plural:
+                if let form = subjenctive?.plural?.thirdPerson {
+                    return form
+                } else {
+                    verb.removeLast()
+                    verb += "i"
+                }
+            }
+        }
+        
+        return verb
+    }
+    
+    func generateConjugationPastSubjunctive(person: Person, number: Number) -> String? {
+        var verb = oldNorseWord
+        
+        if let verbFirst = verbForms?.fifth {
+            verb = verbFirst
+        }
+        
+        switch person {
+        case .first:
+            if number != .singular {
+                verb.removeLast()
+                verb += "im"
+            }
+        case .second:
+            switch number {
+            case .singular:
+                verb.removeLast()
+                verb += "ir"
+            case .dual, .plural:
+                verb.removeLast()
+                verb += "ið"
+            }
+        case .third:
+            verb.removeLast()
+            verb += "i"
+        }
+        
+        return verb
     }
     
     func generateConjugationPresent(person: Person, number: Number) -> String? {

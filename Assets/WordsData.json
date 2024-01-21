@@ -7483,12 +7483,25 @@
                 "thirdPerson": "eru"
             }
         },
+        "subjenctive": {
+            "singular": {
+                "firstPerson": "sjá",
+                "secondPerson": "sér",
+                "thirdPerson": "sé"
+            },
+            "plural": {
+                "firstPerson": "sém",
+                "secondPerson": "séð",
+                "thirdPerson": "sé"
+            }
+        },
         "verbForms": {
             "infinitive": "vera",
             "first": "eru",
             "second": "em",
             "third": "váru",
-            "fourth": "var"
+            "fourth": "var",
+            "fifth": "væra"
         }
     },
     {
@@ -7517,7 +7530,8 @@
             "first": "eigu",
             "second": "á",
             "third": "áttu",
-            "fourth": "átta"
+            "fourth": "átta",
+            "fifth": "ætta"
         }
     },
     {
@@ -7539,7 +7553,8 @@
             "first": "hafa",
             "second": "hefi",
             "third": "höfðu",
-            "fourth": "hafða"
+            "fourth": "hafða",
+            "fifth": "hefða"
         }
     },
     {
@@ -7556,7 +7571,8 @@
             "first": "heita",
             "second": "heiti",
             "third": "hétu",
-            "fourth": "hét"
+            "fourth": "hét",
+            "fifth": "héta"
         }
     },
     {
@@ -7573,7 +7589,8 @@
             "first": "segja",
             "second": "segi",
             "third": "sögðu",
-            "fourth": "sagða"
+            "fourth": "sagða",
+            "fifth": "segða"
         }
     },
     {
@@ -7602,7 +7619,8 @@
             "first": "sjá",
             "second": "sé",
             "third": "sáu",
-            "fourth": "sá"
+            "fourth": "sá",
+            "fifth": "sæa"
         }
     },
     {
@@ -7624,7 +7642,8 @@
             "first": "taka",
             "second": "tek",
             "third": "tóku",
-            "fourth": "tók"
+            "fourth": "tók",
+            "fifth": "toeka"
         }
     },
     {
@@ -7641,7 +7660,8 @@
             "first": "vega",
             "second": "veg",
             "third": "vágu",
-            "fourth": "vá"
+            "fourth": "vá",
+            "fifth": "væga"
         }
     },
     {
@@ -7664,7 +7684,8 @@
             "first": "vilja",
             "second": "vil",
             "third": "vildu",
-            "fourth": "vilda"
+            "fourth": "vilda",
+            "fifth": "vilda"
         }
     },
     {
@@ -7681,7 +7702,8 @@
             "first": "bíða",
             "second": "bíð",
             "third": "biðu",
-            "fourth": "beið"
+            "fourth": "beið",
+            "fifth": "biða"
         }
     },
     {
@@ -7698,7 +7720,8 @@
             "first": "deyja",
             "second": "dey",
             "third": "dóu",
-            "fourth": "dó"
+            "fourth": "dó",
+            "fifth": "doea"
         }
     },
     {
@@ -7714,8 +7737,9 @@
         "verbForms": {
             "first": "flýja",
             "second": "flý",
-            "third": "flýðu",
-            "fourth": "flýða"
+            "third": "flúðu",
+            "fourth": "flúðu",
+            "fifth": "flýðu"
         }
     },
     {
@@ -7732,7 +7756,8 @@
             "first": "hata",
             "second": "hata",
             "third": "hötuðu",
-            "fourth": "hataða"
+            "fourth": "hataða",
+            "fifth": "hataða"
         }
     },
     {
@@ -7749,7 +7774,8 @@
             "first": "hlaupa",
             "second": "hleyp",
             "third": "hljópu",
-            "fourth": "hljóp"
+            "fourth": "hljóp",
+            "fifth": "hlýpa"
         }
     },
     {
@@ -7766,7 +7792,8 @@
             "first": "koma",
             "second": "køm",
             "third": "kvámu",
-            "fourth": "kvam"
+            "fourth": "kvam",
+            "fifth": "kvæma"
         }
     },
     {
@@ -7783,7 +7810,8 @@
             "first": "mæla",
             "second": "mæli",
             "third": "mæltu",
-            "fourth": "mælta"
+            "fourth": "mælta",
+            "fifth": "mælta"
         }
     },
     {
@@ -7800,7 +7828,8 @@
             "first": "vakna",
             "second": "vakna",
             "third": "vöknuðu",
-            "fourth": "vaknaða"
+            "fourth": "vaknaða",
+            "fifth": "vaknaða"
         }
     },
     {
@@ -7817,7 +7846,8 @@
             "first": "kalla",
             "second": "kalla",
             "third": "kölluðu",
-            "fourth": "kallaða"
+            "fourth": "kallaða",
+            "fifth": "kallaða"
         }
     },
     {
@@ -7834,7 +7864,8 @@
             "first": "kenna",
             "second": "kenni",
             "third": "kenndu",
-            "fourth": "kennda"
+            "fourth": "kennda",
+            "fifth": "kennda"
         }
     },
     {
@@ -7851,7 +7882,8 @@
             "first": "elta",
             "second": "elti",
             "third": "eltu",
-            "fourth": "elta"
+            "fourth": "elta",
+            "fifth": "elta"
         }
     },
     {
@@ -7868,7 +7900,8 @@
             "first": "eta",
             "second": "et",
             "third": "átu",
-            "fourth": "át"
+            "fourth": "át",
+            "fifth": "æta"
         }
     },
     {
@@ -7885,7 +7918,8 @@
             "first": "hræða",
             "second": "hræði",
             "third": "hræddu",
-            "fourth": "hrædda"
+            "fourth": "hrædda",
+            "fifth": "hrædda"
         }
     },
     {
@@ -7902,7 +7936,8 @@
             "first": "opna",
             "second": "opna",
             "third": "opnuðu",
-            "fourth": "opnaða"
+            "fourth": "opnaða",
+            "fifth": "opnaða"
         }
     },
     {
@@ -7919,7 +7954,8 @@
             "first": "fara",
             "second": "fer",
             "third": "fóru",
-            "fourth": "fór"
+            "fourth": "fór",
+            "fifth": "foera"
         }
     },
     {
@@ -7936,7 +7972,8 @@
             "first": "heyra",
             "second": "heyri",
             "third": "heyrðu",
-            "fourth": "heyrða"
+            "fourth": "heyrða",
+            "fifth": "heyrða"
         }
     },
     {
@@ -7953,7 +7990,8 @@
             "first": "spyrja",
             "second": "spyr",
             "third": "spurðu",
-            "fourth": "spurða"
+            "fourth": "spurða",
+            "fifth": "spyrða"
         }
     },
     {
@@ -7970,7 +8008,8 @@
             "first": "svara",
             "second": "svara",
             "third": "svöruðu",
-            "fourth": "svaraða"
+            "fourth": "svaraða",
+            "fifth": "svaraða"
         }
     },
     {
@@ -7987,7 +8026,8 @@
             "first": "veiða",
             "second": "veiði",
             "third": "veiddu",
-            "fourth": "veidda"
+            "fourth": "veidda",
+            "fifth": "veidda"
         }
     },
     {
@@ -8004,7 +8044,8 @@
             "first": "finna",
             "second": "finn",
             "third": "fundu",
-            "fourth": "fann"
+            "fourth": "fann",
+            "fifth": "fynda"
         }
     },
     {
@@ -8021,7 +8062,8 @@
             "first": "foera",
             "second": "foeri",
             "third": "foerðu",
-            "fourth": "foerða"
+            "fourth": "foerða",
+            "fifth": "foerða"
         }
     },
     {
@@ -8038,7 +8080,8 @@
             "first": "gefa",
             "second": "gef",
             "third": "gáfu",
-            "fourth": "gaf"
+            "fourth": "gaf",
+            "fifth": "gæfa"
         }
     },
     {
@@ -8055,7 +8098,8 @@
             "first": "heita",
             "second": "heiti",
             "third": "hétu",
-            "fourth": "hét"
+            "fourth": "hét",
+            "fifth": "tók"
         }
     },
     {
@@ -8072,7 +8116,8 @@
             "first": "hlæja",
             "second": "hlæ",
             "third": "hlógu",
-            "fourth": "hló"
+            "fourth": "hló",
+            "fifth": "hloega"
         }
     },
     {
@@ -8089,7 +8134,8 @@
             "first": "kenna",
             "second": "kenni",
             "third": "kenndu",
-            "fourth": "kennda"
+            "fourth": "kennda",
+            "fifth": "tók"
         }
     },
     {
@@ -8106,7 +8152,8 @@
             "first": "brenna",
             "second": "brenn",
             "third": "brunnu",
-            "fourth": "brann"
+            "fourth": "brann",
+            "fifth": "brynna"
         }
     },
     {
@@ -8123,7 +8170,8 @@
             "first": "búa",
             "second": "bý",
             "third": "bjoggu",
-            "fourth": "bjó"
+            "fourth": "bjó",
+            "fifth": "bjøgga"
         }
     },
     {
@@ -8140,7 +8188,8 @@
             "first": "búa",
             "second": "bý",
             "third": "bjoggu",
-            "fourth": "bjó"
+            "fourth": "bjó",
+            "fifth": "bjøgga"
         }
     },
     {
@@ -8157,7 +8206,8 @@
             "first": "elda",
             "second": "elda",
             "third": "elduðu",
-            "fourth": "eldaða"
+            "fourth": "eldaða",
+            "fifth": "eldaða"
         }
     },
     {
@@ -8174,7 +8224,8 @@
             "first": "falla",
             "second": "fell",
             "third": "féllu",
-            "fourth": "féll"
+            "fourth": "féll",
+            "fifth": "félla"
         }
     },
     {
@@ -8191,7 +8242,8 @@
             "first": "ganga",
             "second": "geng",
             "third": "gengu",
-            "fourth": "gekk"
+            "fourth": "gekk",
+            "fifth": "genga"
         }
     },
     {
@@ -8208,7 +8260,8 @@
             "first": "lifa",
             "second": "lifi",
             "third": "lifðu",
-            "fourth": "lifða"
+            "fourth": "lifða",
+            "fifth": "lifða"
         }
     },
     {
@@ -8225,7 +8278,8 @@
             "first": "sigla",
             "second": "sigli",
             "third": "siglðu",
-            "fourth": "siglða"
+            "fourth": "siglða",
+            "fifth": "siglða"
         }
     },
     {
@@ -8242,7 +8296,8 @@
             "first": "bjóða",
             "second": "býð",
             "third": "buðu",
-            "fourth": "bauð"
+            "fourth": "bauð",
+            "fifth": "byða"
         }
     },
     {
@@ -8259,7 +8314,8 @@
             "first": "blása",
             "second": "blæs",
             "third": "blésu",
-            "fourth": "blés"
+            "fourth": "blés",
+            "fifth": "blésa"
         },
         "conjugation": {
             "singular": {
@@ -8288,7 +8344,8 @@
             "first": "standa",
             "second": "stend",
             "third": "stóðu",
-            "fourth": "stóð"
+            "fourth": "stóð",
+            "fifth": "stoeða"
         }
     },
     {
@@ -8305,7 +8362,8 @@
             "first": "sýna",
             "second": "sýni",
             "third": "sýndu",
-            "fourth": "sýnda"
+            "fourth": "sýnda",
+            "fifth": "sýnda"
         }
     },
     {
@@ -8321,7 +8379,8 @@
             "first": "gøra",
             "second": "gøri",
             "third": "gørðu",
-            "fourth": "gørða"
+            "fourth": "gørða",
+            "fifth": "gørða"
         }
     },
     {
@@ -8337,7 +8396,8 @@
             "first": "leiða",
             "second": "leiði",
             "third": "leiddu",
-            "fourth": "leidda"
+            "fourth": "leidda",
+            "fifth": "leidda"
         }
     },
     {
@@ -8353,7 +8413,8 @@
             "first": "munu",
             "second": "mun",
             "third": "mundu",
-            "fourth": "munda"
+            "fourth": "munda",
+            "fifth": "mynda"
         },
         "conjugation": {
             "singular": {
@@ -8378,7 +8439,8 @@
             "first": "reka",
             "second": "rek",
             "third": "ráku",
-            "fourth": "rak"
+            "fourth": "rak",
+            "fifth": "ræka"
         }
     },
     {
@@ -8394,7 +8456,8 @@
             "first": "skulu",
             "second": "skal",
             "third": "skuldu",
-            "fourth": "skulda"
+            "fourth": "skulda",
+            "fifth": "skylda"
         },
         "conjugation": {
             "singular": {
@@ -8419,7 +8482,8 @@
             "first": "verða",
             "second": "verð",
             "third": "urðu",
-            "fourth": "varð"
+            "fourth": "varð",
+            "fifth": "yrða"
         }
     },
     {
@@ -8435,7 +8499,8 @@
             "first": "aka",
             "second": "ek",
             "third": "óku",
-            "fourth": "ók"
+            "fourth": "ók",
+            "fifth": "oeka"
         }
     },
     {
@@ -8451,7 +8516,8 @@
             "first": "brenna",
             "second": "brenni",
             "third": "brenndu",
-            "fourth": "brennda"
+            "fourth": "brennda",
+            "fifth": "brennda"
         }
     },
     {
@@ -8467,7 +8533,8 @@
             "first": "fljúga",
             "second": "flýg",
             "third": "flugu",
-            "fourth": "flaug"
+            "fourth": "flaug",
+            "fifth": "flyga"
         }
     },
     {
@@ -8483,7 +8550,8 @@
             "first": "hjálpa",
             "second": "help",
             "third": "hulpu",
-            "fourth": "hjalp"
+            "fourth": "hjalp",
+            "fifth": "hylpa"
         }
     },
     {
@@ -8499,7 +8567,8 @@
             "first": "hringa",
             "second": "hringa",
             "third": "hringuðu",
-            "fourth": "hringaða"
+            "fourth": "hringaða",
+            "fifth": "hringaða"
         }
     },
     {
@@ -8515,7 +8584,8 @@
             "first": "róa",
             "second": "roe",
             "third": "røru",
-            "fourth": "røra"
+            "fourth": "røra",
+            "fifth": "røra"
         }
     },
     {
@@ -8531,7 +8601,8 @@
             "first": "vernda",
             "second": "vernda",
             "third": "vernduðu",
-            "fourth": "verndaða"
+            "fourth": "verndaða",
+            "fifth": "verndaða"
         }
     },
     {
@@ -8547,7 +8618,8 @@
             "first": "gjalda",
             "second": "geld",
             "third": "guldu",
-            "fourth": "galt"
+            "fourth": "galt",
+            "fifth": "gylda"
         }
     },
     {
@@ -8563,7 +8635,8 @@
             "first": "halda",
             "second": "held",
             "third": "héldu",
-            "fourth": "hélt"
+            "fourth": "hélt",
+            "fifth": "hélda"
         }
     },
     {
@@ -8579,7 +8652,8 @@
             "first": "kaupa",
             "second": "kaupi",
             "third": "keyptu",
-            "fourth": "keypta"
+            "fourth": "keypta",
+            "fifth": "keypta"
         }
     },
     {
@@ -8595,7 +8669,8 @@
             "first": "leita",
             "second": "leita",
             "third": "leituðu",
-            "fourth": "leitaða"
+            "fourth": "leitaða",
+            "fifth": "leitaða"
         }
     },
     {
@@ -8611,7 +8686,8 @@
             "first": "telja",
             "second": "tel",
             "third": "tölðu",
-            "fourth": "talða"
+            "fourth": "talða",
+            "fifth": "telða"
         }
     },
     {
@@ -8627,7 +8703,8 @@
             "first": "trúa",
             "second": "trúi",
             "third": "trúðu",
-            "fourth": "trúða"
+            "fourth": "trúða",
+            "fifth": "trýða"
         }
     },
     {
@@ -8643,7 +8720,8 @@
             "first": "velja",
             "second": "vel",
             "third": "völðu",
-            "fourth": "valða"
+            "fourth": "valða",
+            "fifth": "velða"
         }
     },
     {
@@ -8659,7 +8737,8 @@
             "first": "lækna",
             "second": "lækna",
             "third": "læknuðu",
-            "fourth": "læknaða"
+            "fourth": "læknaða",
+            "fifth": "læknaða"
         }
     },
     {
@@ -8675,7 +8754,8 @@
             "first": "nefna",
             "second": "nefni",
             "third": "nefndu",
-            "fourth": "nefnda"
+            "fourth": "nefnda",
+            "fifth": "nefnda"
         }
     },
     {
@@ -8691,7 +8771,8 @@
             "first": "rísa",
             "second": "rís",
             "third": "risu",
-            "fourth": "reis"
+            "fourth": "reis",
+            "fifth": "risa"
         }
     },
     {
@@ -8707,7 +8788,8 @@
             "first": "smíða",
             "second": "smíða",
             "third": "smíðuðu",
-            "fourth": "smíðaða"
+            "fourth": "smíðaða",
+            "fifth": "smíðaða"
         }
     },
     {
@@ -8723,7 +8805,8 @@
             "first": "vita",
             "second": "veit",
             "third": "vissu",
-            "fourth": "vissa"
+            "fourth": "vissa",
+            "fifth": "vissa"
         },
         "conjugation": {
             "singular": {
@@ -8750,7 +8833,8 @@
             "first": "leggja",
             "second": "legg",
             "third": "lögðu",
-            "fourth": "lagða"
+            "fourth": "lagða",
+            "fifth": "legða"
         }
     },
     {
@@ -8767,7 +8851,8 @@
             "first": "þakka",
             "second": "þakka",
             "third": "þökkuðu",
-            "fourth": "þakkaða"
+            "fourth": "þakkaða",
+            "fifth": "þakkaða"
         }
     },
     {
@@ -8783,8 +8868,9 @@
         "verbForms": {
             "first": "liggja",
             "second": "ligg",
-            "third": "liggðu",
-            "fourth": "liggða"
+            "third": "lágu",
+            "fourth": "lá",
+            "fifth": "læga"
         }
     },
     {
@@ -8801,7 +8887,8 @@
             "first": "byggja",
             "second": "byggi",
             "third": "byggðu",
-            "fourth": "byggða"
+            "fourth": "byggða",
+            "fifth": "byggða"
         }
     },
     {
@@ -8818,7 +8905,8 @@
             "first": "fylgja",
             "second": "fylgi",
             "third": "fylgðu",
-            "fourth": "fylgða"
+            "fourth": "fylgða",
+            "fifth": "fylgða"
         }
     },
     {
@@ -8835,7 +8923,8 @@
             "first": "lenda",
             "second": "lendi",
             "third": "lendu",
-            "fourth": "lenda"
+            "fourth": "lenda",
+            "fifth": "lenda"
         }
     },
     {
@@ -8852,7 +8941,8 @@
             "first": "drekka",
             "second": "drekk",
             "third": "drukku",
-            "fourth": "drakk"
+            "fourth": "drakk",
+            "fifth": "drykka"
         }
     },
     {
@@ -8868,7 +8958,8 @@
             "first": "hátimbra",
             "second": "hátimbra",
             "third": "hátimbruðu",
-            "fourth": "hátimbraða"
+            "fourth": "hátimbraða",
+            "fifth": "hátimbra"
         }
     },
     {
@@ -8885,7 +8976,8 @@
             "first": "kveða",
             "second": "kveð",
             "third": "kváðu",
-            "fourth": "kvað"
+            "fourth": "kvað",
+            "fifth": "kvæða"
         }
     },
     {
@@ -8901,7 +8993,8 @@
             "first": "timbra",
             "second": "timbra",
             "third": "timbruðu",
-            "fourth": "timbraða"
+            "fourth": "timbraða",
+            "fifth": "timbraða"
         }
     },
     {
@@ -8917,7 +9010,8 @@
             "first": "bana",
             "second": "bana",
             "third": "bönuðu",
-            "fourth": "banaða"
+            "fourth": "banaða",
+            "fifth": "banaða"
         }
     },
     {
@@ -8933,7 +9027,8 @@
             "first": "eyða",
             "second": "eyði",
             "third": "eyddu",
-            "fourth": "eydda"
+            "fourth": "eydda",
+            "fifth": "eydda"
         }
     },
     {
@@ -8949,7 +9044,8 @@
             "first": "hlaða",
             "second": "hleð",
             "third": "hlóðu",
-            "fourth": "hlóð"
+            "fourth": "hlóð",
+            "fifth": "hloeða"
         }
     },
     {
@@ -8965,7 +9061,8 @@
             "first": "stýra",
             "second": "stýri",
             "third": "stýrðu",
-            "fourth": "stýrða"
+            "fourth": "stýrða",
+            "fifth": "stýrða"
         }
     },
     {
@@ -8982,7 +9079,8 @@
             "first": "skipta",
             "second": "skipti",
             "third": "skiptu",
-            "fourth": "skipta"
+            "fourth": "skipta",
+            "fifth": "skipta"
         }
     },
     {
@@ -8999,7 +9097,8 @@
             "first": "þekja",
             "second": "þek",
             "third": "þökðu",
-            "fourth": "þakða"
+            "fourth": "þakða",
+            "fifth": "þekða"
         }
     },
     {
@@ -9016,7 +9115,8 @@
             "first": "nema",
             "second": "nem",
             "third": "námu",
-            "fourth": "nam"
+            "fourth": "nam",
+            "fifth": "næma"
         }
     },
     {
@@ -9033,7 +9133,8 @@
             "first": "reisa",
             "second": "reisi",
             "third": "reistu",
-            "fourth": "reista"
+            "fourth": "reista",
+            "fifth": "reista"
         }
     },
     {
@@ -9050,7 +9151,8 @@
             "first": "geta",
             "second": "get",
             "third": "gátu",
-            "fourth": "gat"
+            "fourth": "gat",
+            "fifth": "gæta"
         }
     },
     {
@@ -9067,7 +9169,8 @@
             "first": "drepa",
             "second": "drep",
             "third": "drápu",
-            "fourth": "drap"
+            "fourth": "drap",
+            "fifth": "dræpa"
         }
     },
     {
@@ -9084,7 +9187,8 @@
             "first": "fá",
             "second": "fæ",
             "third": "fengu",
-            "fourth": "fekk"
+            "fourth": "fekk",
+            "fifth": "fenga"
         }
     },
     {
@@ -9101,7 +9205,8 @@
             "first": "hefna",
             "second": "hefni",
             "third": "hefnðu",
-            "fourth": "hefnða"
+            "fourth": "hefnða",
+            "fifth": "hefnða"
         }
     },
     {
@@ -9118,7 +9223,8 @@
             "first": "liggja",
             "second": "ligg",
             "third": "lágu",
-            "fourth": "lá"
+            "fourth": "lá",
+            "fifth": "tók"
         }
     },
     {
@@ -9135,7 +9241,8 @@
             "first": "bera",
             "second": "ber",
             "third": "báru",
-            "fourth": "bar"
+            "fourth": "bar",
+            "fifth": "bæra"
         }
     },
     {
@@ -9152,7 +9259,8 @@
             "first": "kjósa",
             "second": "kýs",
             "third": "kusu",
-            "fourth": "kaus"
+            "fourth": "kaus",
+            "fifth": "kysa"
         }
     },
     {
@@ -9169,7 +9277,8 @@
             "first": "kvæna",
             "second": "kvæni",
             "third": "kvændu",
-            "fourth": "kvænda"
+            "fourth": "kvænda",
+            "fifth": "kvænda"
         }
     },
     {
@@ -9186,7 +9295,8 @@
             "first": "loga",
             "second": "loga",
             "third": "loguðu",
-            "fourth": "logaða"
+            "fourth": "logaða",
+            "fifth": "logaða"
         }
     },
     {
@@ -9203,7 +9313,8 @@
             "first": "verja",
             "second": "ver",
             "third": "vörðu",
-            "fourth": "varða"
+            "fourth": "varða",
+            "fifth": "verða"
         }
     },
     {
@@ -9220,7 +9331,8 @@
             "first": "yrkja",
             "second": "yrki",
             "third": "ortu",
-            "fourth": "orta"
+            "fourth": "orta",
+            "fifth": "ørta"
         }
     },
     {
@@ -9237,7 +9349,8 @@
             "first": "biðja",
             "second": "bið",
             "third": "báðu",
-            "fourth": "bað"
+            "fourth": "bað",
+            "fifth": "bæða"
         }
     },
     {
@@ -9254,7 +9367,8 @@
             "first": "festa",
             "second": "festi",
             "third": "festu",
-            "fourth": "festa"
+            "fourth": "festa",
+            "fifth": "festa"
         }
     },
     {
@@ -9271,7 +9385,8 @@
             "first": "gifta",
             "second": "gifti",
             "third": "giftu",
-            "fourth": "gifta"
+            "fourth": "gifta",
+            "fifth": "gifta"
         }
     },
     {
@@ -9288,7 +9403,8 @@
             "first": "horfa",
             "second": "horfi",
             "third": "horfðu",
-            "fourth": "horfða"
+            "fourth": "horfða",
+            "fifth": "hørfða"
         }
     },
     {
@@ -9305,7 +9421,8 @@
             "first": "hugsa",
             "second": "hugsa",
             "third": "hugsuðu",
-            "fourth": "hugsaða"
+            "fourth": "hugsaða",
+            "fifth": "hugsaða"
         }
     },
     {
@@ -9322,7 +9439,8 @@
             "first": "kasta",
             "second": "kasta",
             "third": "köstuðu",
-            "fourth": "kastaða"
+            "fourth": "kastaða",
+            "fifth": "kastaða"
         }
     },
     {
@@ -9340,7 +9458,8 @@
             "first": "kunnu",
             "second": "kann",
             "third": "kunnu",
-            "fourth": "kunna"
+            "fourth": "kunna",
+            "fifth": "kynna"
         }
     },
     {
@@ -9357,7 +9476,8 @@
             "first": "láta",
             "second": "læt",
             "third": "létu",
-            "fourth": "lét"
+            "fourth": "lét",
+            "fifth": "léta"
         }
     },
     {
@@ -9374,7 +9494,8 @@
             "first": "lægja",
             "second": "lægi",
             "third": "lægðu",
-            "fourth": "lægða"
+            "fourth": "lægða",
+            "fifth": "lægða"
         }
     },
     {
@@ -9392,7 +9513,8 @@
             "first": "megu",
             "second": "má",
             "third": "máttu",
-            "fourth": "mátta"
+            "fourth": "mátta",
+            "fifth": "mætta"
         }
     },
     {
@@ -9409,7 +9531,8 @@
             "first": "moeta",
             "second": "moeti",
             "third": "moettu",
-            "fourth": "moetta"
+            "fourth": "moetta",
+            "fifth": "moetta"
         }
     },
     {
@@ -9426,7 +9549,8 @@
             "first": "ríða",
             "second": "ríð",
             "third": "riðu",
-            "fourth": "reið"
+            "fourth": "reið",
+            "fifth": "riða"
         }
     },
     {
@@ -9443,7 +9567,8 @@
             "first": "roeða",
             "second": "roeði",
             "third": "roeddu",
-            "fourth": "roedda"
+            "fourth": "roedda",
+            "fifth": "roedda"
         }
     },
     {
@@ -9460,7 +9585,8 @@
             "first": "sakna",
             "second": "sakna",
             "third": "söknuðu",
-            "fourth": "saknaða"
+            "fourth": "saknaða",
+            "fifth": "saknaða"
         }
     },
     {
@@ -9477,7 +9603,8 @@
             "first": "sanna",
             "second": "sanna",
             "third": "sönnuðu",
-            "fourth": "sannaða"
+            "fourth": "sannaða",
+            "fifth": "sannaða"
         }
     },
     {
@@ -9495,7 +9622,8 @@
             "first": "unnu",
             "second": "ann",
             "third": "unnu",
-            "fourth": "unna"
+            "fourth": "unna",
+            "fifth": "ynna"
         }
     },
     {
@@ -9512,7 +9640,8 @@
             "first": "vekja",
             "second": "vek",
             "third": "vökðu",
-            "fourth": "vakða"
+            "fourth": "vakða",
+            "fifth": "vekða"
         }
     },
     {
@@ -9529,7 +9658,8 @@
             "first": "þykkja",
             "second": "þykki",
             "third": "þóttu",
-            "fourth": "þótta"
+            "fourth": "þótta",
+            "fifth": "þoetta"
         }
     },
     {
@@ -9546,7 +9676,8 @@
             "first": "ætla",
             "second": "ætla",
             "third": "ætluðu",
-            "fourth": "ætlaða"
+            "fourth": "ætlaða",
+            "fifth": "ætlaða"
         }
     },
     {
@@ -9563,7 +9694,8 @@
             "first": "hugfesta",
             "second": "hugfesti",
             "third": "hugfestu",
-            "fourth": "hugfesta"
+            "fourth": "hugfesta",
+            "fifth": "hugfesta"
         }
     },
     {
@@ -9580,7 +9712,8 @@
             "first": "ósanna",
             "second": "ósanna",
             "third": "ósönnuðu",
-            "fourth": "ósannaða"
+            "fourth": "ósannaða",
+            "fifth": "ósannaða"
         }
     },
     {

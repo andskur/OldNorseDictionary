@@ -13,7 +13,7 @@ enum Mood: String, CaseIterable, Codable {
     
     
     func Title(reflexive: Bool) -> String {
-        var title = self.rawValue
+        let title = self.rawValue
         
         return title
     }
